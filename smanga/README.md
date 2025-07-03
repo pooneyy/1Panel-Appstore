@@ -10,6 +10,12 @@
 
 漫画浏览器
 
+## 安装说明
+
+> 用户名：`smanga`
+>
+> 密码：`smanga`
+
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
