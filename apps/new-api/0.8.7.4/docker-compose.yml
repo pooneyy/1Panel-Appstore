@@ -1,6 +1,6 @@
 services:
   new-api:
-    image: calciumion/new-api:v0.8.7.2
+    image: calciumion/new-api:v0.8.7.4
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
@@ -12,6 +12,7 @@ services:
       - ./data:/data
       - ./logs:/app/logs
     environment:
+      - SQL_DSN=${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@tcp(${PANEL_DB_HOST}:3306)/${PANEL_DB_NAME}  # 修改此行，或注释掉以使用 SQLite 作为数据库
       - TZ=${TZ}
 #      - SESSION_SECRET=${SESSION_SECRET}
 #      - REDIS_CONN_STRING=redis://redis
