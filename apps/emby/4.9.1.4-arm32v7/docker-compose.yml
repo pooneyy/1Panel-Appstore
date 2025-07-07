@@ -16,10 +16,11 @@ services:
       - GID=100
       - GIDLIST=100
     #runtime: nvidia # Expose NVIDIA GPUs
+    #runtime: nvidia # Expose NVIDIA GPUs
     devices:
       - /dev/dri:/dev/dri # VAAPI/NVDEC/NVENC render nodes
       #- /dev/vchiq:/dev/vchiq # MMAL/OMX on Raspberry Pi
-    image: emby/embyserver:4.9.1.3
+    image: emby/embyserver_arm32v7:4.9.1.4
     labels:  
       createdBy: "Apps"
 
