@@ -77,6 +77,10 @@
       "allowedVersions": "/^v8.*/"
     },
     {
+      "matchPackageNames": ["emby/embyserver**"],
+      "groupName": "Emby Server"
+    },
+    {
       "matchPackageNames": ["kibana"],
       "matchCurrentVersion": "/^8.*/",
       "allowedVersions": "/^8.*/"
