@@ -1,6 +1,6 @@
 services:
   new-api:
-    image: ghcr.io/veloera/veloera:v0.3.28.1
+    image: ghcr.io/veloera/veloera:v0.3.29.1
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
