@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   whodb:
-    image: clidey/whodb:0.57.0
+    image: clidey/whodb:0.58.0
     container_name: ${CONTAINER_NAME}
     environment:
       - WHODB_OPENAI_COMPATIBLE_API_KEY=${PANEL_WHODB_OPENAI_API_KEY}
