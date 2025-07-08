@@ -4,7 +4,7 @@ networks:
 
 services:
   ghost:
-    image: ghost:5.129.0
+    image: ghost:5.129.1
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
