@@ -11,7 +11,7 @@ services:
     volumes:
       - "${DATA_PATH}:/data"
       - "${SSL_PATH}:/etc/letsencrypt"
-    image: chishin/nginx-proxy-manager-zh:2.12.3
+    image: chishin/nginx-proxy-manager-zh:2.12.5
     labels:  
       createdBy: "Apps"
 
