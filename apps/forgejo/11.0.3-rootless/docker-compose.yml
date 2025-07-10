@@ -1,6 +1,6 @@
 services:
   forgejo:
-    image: codeberg.org/forgejo/forgejo:11.0.2-rootless
+    image: codeberg.org/forgejo/forgejo:11.0.3-rootless
     container_name: ${CONTAINER_NAME}
     environment:
       - USER_UID=1000
