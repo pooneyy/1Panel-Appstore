@@ -11,7 +11,7 @@ services:
     volumes:
       - "${DATA_PATH}:/data"
       - "${SSL_PATH}:/etc/letsencrypt"
-    image: jc21/nginx-proxy-manager:2.12.4
+    image: jc21/nginx-proxy-manager:2.12.6
     labels:  
       createdBy: "Apps"
 
