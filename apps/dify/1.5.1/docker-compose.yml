@@ -771,7 +771,7 @@ services:
       ORACLE_CHARACTERSET: ${ORACLE_CHARACTERSET:-AL32UTF8}
 
   etcd:
-    image: quay.io/coreos/etcd:v3.6.1
+    image: quay.io/coreos/etcd:v3.6.2
     container_name: milvus-etcd-${CONTAINER_NAME}
     profiles:
       - milvus
