@@ -54,12 +54,7 @@
     },
     {
       "matchPackageNames": [
-        "chaitin/safeline-mgt", 
-        "chaitin/safeline-detector", 
-        "chaitin/safeline-tengine", 
-        "chaitin/safeline-luigi", 
-        "chaitin/safeline-fvm", 
-        "chaitin/safeline-chaos"
+        "chaitin/safeline**"
       ],
       "groupName": "SafeLine"
     },
@@ -164,6 +159,12 @@
         "apps/mysql/8.4.*/*.yml"
       ],
       "allowedVersions": "/^8.4.*/"
+    },
+    {
+      "matchFileNames": [
+        "apps/safeline/8.*.*/*.yml"
+      ],
+      "allowedVersions": "/^8.*.*/"
     },
     {
       "matchFileNames": [
