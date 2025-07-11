@@ -1,6 +1,6 @@
 services:
   lobe:
-    image: lobehub/lobe-chat-database:1.97.9
+    image: lobehub/lobe-chat-database:1.97.12
     container_name: lobe-chat
     network_mode: 'service:network-service'
     depends_on:
