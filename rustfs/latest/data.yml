@@ -28,7 +28,7 @@ additionalProperties:
       labelZh: 管理员密码
       labelEn: Secret Key
       required: true
-      type: text
+      type: password
     - default: "127.0.0.1:9000"
       edit: true
       envKey: RUSTFS_SERVER_DOMAINS
