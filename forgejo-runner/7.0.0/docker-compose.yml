@@ -6,23 +6,10 @@ services:
     container_name: ${CONTAINER_NAME:-forgejo-runner}
     restart: always
     user: "1000:1000"  # 非 root 用户运行容器
-    command: >-
-      /bin/sh -c '
-        cd /data &&
-        if [ ! -s .runner ]; then
-          echo ">>> Registering runner..."
-          forgejo-runner register --no-interactive \
-            --instance ${FORGEJO_INSTANCE_URL} \
-            --token ${RUNNER_REGISTRATION_TOKEN} \
-            --name ${RUNNER_NAME} \
-            --labels ${RUNNER_LABELS};
-          forgejo-runner generate-config > config.yml
-        fi;
-        echo ">>> Starting daemon..."
-        forgejo-runner --config config.yml daemon
-      '
+    command: "command: chmod +x /data/scripts/register.sh && /data/scripts/register.sh"
     volumes:
       - ./data:/data
+      - ./scripts/register.sh:/data/scripts/register.sh:ro
       - /var/run/docker.sock:/var/run/docker-forgejo-runner.sock
     environment:
       - FORGEJO_INSTANCE_URL=${FORGEJO_INSTANCE_URL}
