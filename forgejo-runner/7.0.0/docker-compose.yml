@@ -3,32 +3,35 @@ version: "3.9"
 services:
   forgejo_runner:
     image: code.forgejo.org/forgejo/runner:7.0.0
-    container_name: ${CONTAINER_NAME}
+    container_name: ${CONTAINER_NAME:-forgejo-runner}
     restart: always
-    networks:
-      - 1panel-network
+    user: "1000:1000"  # 非 root 用户运行容器
     command: >-
-      bash -c '
-        if [ ! -f /data/.runner ]; then
-          forgejo-runner create-runner-file --connect \
+      /bin/sh -c '
+        cd /data &&
+        if [ ! -s .runner ]; then
+          echo ">>> Registering runner..."
+          forgejo-runner register --no-interactive \
             --instance ${FORGEJO_INSTANCE_URL} \
+            --token ${RUNNER_REGISTRATION_TOKEN} \
             --name ${RUNNER_NAME} \
-            --secret ${RUNNER_SHARED_SECRET} ;
-          sed -i -e "s|\"labels\": null|\"labels\": [\"${RUNNER_LABELS}\"]|" /data/.runner ;
-          forgejo-runner generate-config --config /data/config.yml ;
-          sed -i -e "s|  level: info|  level: debug|" /data/config.yml ;
-        fi ;
-        forgejo-runner --config /data/config.yml daemon
+            --labels ${RUNNER_LABELS};
+          forgejo-runner generate-config > config.yml
+        fi;
+        echo ">>> Starting daemon..."
+        forgejo-runner --config config.yml daemon
       '
     volumes:
       - ./data:/data
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker-forgejo-runner.sock
     environment:
       - FORGEJO_INSTANCE_URL=${FORGEJO_INSTANCE_URL}
-      - RUNNER_NAME=${RUNNER_NAME}
-      - RUNNER_LABELS=${RUNNER_LABELS}
-      - RUNNER_SHARED_SECRET=${RUNNER_SHARED_SECRET}
-    labels:  
+      - RUNNER_REGISTRATION_TOKEN=${RUNNER_REGISTRATION_TOKEN}
+      - RUNNER_NAME=${RUNNER_NAME:-default-runner}
+      - RUNNER_LABELS=${RUNNER_LABELS:-docker:docker://node:20-bookworm}
+    networks:
+      - 1panel-network
+    labels:
       createdBy: "Apps"
 
 networks:
