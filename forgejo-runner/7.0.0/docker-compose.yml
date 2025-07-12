@@ -1,15 +1,14 @@
 version: "3.9"
-
 services:
   forgejo_runner:
     image: code.forgejo.org/forgejo/runner:7.0.0
     container_name: ${CONTAINER_NAME:-forgejo-runner}
     restart: always
     user: "1000:1000"  # 非 root 用户运行容器
-    command: "command: chmod +x /data/scripts/register.sh && /data/scripts/register.sh"
+    command: "/data/scripts/register.sh"
     volumes:
       - ./data:/data
-      - ./scripts/register.sh:/data/scripts/register.sh:ro
+      - ./scripts/register.sh:/data/scripts/register.sh
       - /var/run/docker.sock:/var/run/docker-forgejo-runner.sock
     environment:
       - FORGEJO_INSTANCE_URL=${FORGEJO_INSTANCE_URL}

@@ -14,6 +14,8 @@ chmod 775 data/.cache
 chmod g+s data/.runner
 chmod g+s data/.cache
 
+chmod +x ./scripts/register.sh
+
 # 创建自定义 docker context 指向 /var/run/docker-forgejo-runner.sock
 SOCK_PATH="/var/run/docker-forgejo-runner.sock"
 CONTEXT_NAME="forgejo-runner-context"
@@ -29,4 +31,5 @@ docker context create "$CONTEXT_NAME" \
 
 echo "✅ 初始化完成："
 echo " - 已创建 ./data 并配置权限"
+echo " - 已创建 ./scripts/register.sh 并配置权限"
 echo " - 已创建 Docker context: $CONTEXT_NAME -> $SOCK_PATH"
