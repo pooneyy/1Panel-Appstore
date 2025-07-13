@@ -4,6 +4,7 @@ services:
     image: code.forgejo.org/forgejo/runner:7.0.0
     container_name: ${CONTAINER_NAME:-forgejo-runner}
     restart: always
+    user: root
     command: "/data/scripts/register.sh"
     volumes:
       - ./data:/data
