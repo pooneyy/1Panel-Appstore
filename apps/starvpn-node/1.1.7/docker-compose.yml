@@ -1,5 +1,5 @@
 services:
-  stars.node:
+  stars-node:
     image: registry.cn-beijing.aliyuncs.com/ld_beijing/stars.node:1.1.7
     restart: always
     container_name: stars.node

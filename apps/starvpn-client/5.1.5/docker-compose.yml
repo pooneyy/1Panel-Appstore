@@ -1,5 +1,5 @@
 services:
-  stars.client:
+  stars-client:
     restart: always
     privileged: true
     network_mode: host
