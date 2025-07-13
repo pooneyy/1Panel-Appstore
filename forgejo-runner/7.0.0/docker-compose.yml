@@ -1,36 +1,20 @@
 version: "3.9"
 services:
-  dind:
-    image: docker:dind
-    container_name: forgejo-dind
-    privileged: true
-    restart: 'unless-stopped'
-    command: ['dockerd', '-H', 'tcp://0.0.0.0:2375', '--tls=false']
-    environment:
-      DOCKER_TLS_CERTDIR: ""
-    networks:
-      - 1panel-network
   forgejo_runner:
     image: code.forgejo.org/forgejo/runner:7.0.0
     container_name: ${CONTAINER_NAME:-forgejo-runner}
-    depends_on:
-      dind:
-        condition: service_started
-    links:
-      - dind
     restart: always
-    user: "1000:1000"  # 非 root 用户运行容器
     command: "/data/scripts/register.sh"
     volumes:
       - ./data:/data
       - ./scripts/register.sh:/data/scripts/register.sh:ro
-      # - /var/run/docker.sock:/var/run/docker-forgejo-runner.sock
+      - /var/run/docker.sock:/var/run/docker.sock  # 使用宿主机 Docker
     environment:
-      - DOCKER_HOST=tcp://dind:2375
+      - DOCKER_HOST=unix:///var/run/docker.sock  # 指定宿主机 socket
       - FORGEJO_INSTANCE_URL=${FORGEJO_INSTANCE_URL}
       - RUNNER_REGISTRATION_TOKEN=${RUNNER_REGISTRATION_TOKEN}
-      - RUNNER_NAME=${RUNNER_NAME:-default-runner}
-      - RUNNER_LABELS=${RUNNER_LABELS:-docker:docker://node:20-bookworm}
+      - RUNNER_NAME=${RUNNER_NAME}
+      - RUNNER_LABELS=${RUNNER_LABELS}
     networks:
       - 1panel-network
     labels:
