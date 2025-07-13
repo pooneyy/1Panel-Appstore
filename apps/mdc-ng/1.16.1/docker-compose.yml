@@ -1,6 +1,6 @@
 services:
   mdc-ng:
-    image: "mdcng/mdc:1.15.2"
+    image: "mdcng/mdc:1.16.1"
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
