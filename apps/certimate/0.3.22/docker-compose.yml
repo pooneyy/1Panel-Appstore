@@ -1,6 +1,6 @@
 services:
   certimate:
-    image: "certimate/certimate:v0.3.22"
+    image: "certimate/certimate:v0.3.23"
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
