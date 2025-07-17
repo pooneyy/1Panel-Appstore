@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   maxkb:
-    image: 1panel/maxkb:v1.9.1
+    image: 1panel/maxkb:v2.0.0
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
