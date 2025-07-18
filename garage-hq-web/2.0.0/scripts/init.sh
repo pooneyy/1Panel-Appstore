@@ -60,6 +60,14 @@ EOF
     echo "garage.toml written to ${CONFIG_FILE}"
   fi
 
+  META_DIR="${GARAGE_ROOT_PATH}/meta"
+  mkdir -p "${META_DIR}"
+  DATA_DIR="${GARAGE_ROOT_PATH}/data"
+  mkdir -p "${DATA_DIR}"
+  chmod -R 777 "$CONFIG_DIR"
+  chmod -R 777 "META_DIR"
+  chmod -R 777 "DATA_DIR"
+
   echo "Check Finish."
 
 else
