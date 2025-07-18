@@ -2,7 +2,7 @@ additionalProperties:
   key: garage-hq
   name: Garage HQ
   tags:
-    - Tool
+    - Storage
     - Local
   shortDescZh: 专为自托管而定制的开源分布式对象存储服务
   shortDescEn: An open-source distributed object storage service tailored for self-hosting
