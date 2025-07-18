@@ -2,7 +2,6 @@ networks:
   1panel-network:
     external: true
   seaweedfs-network:
-    external: true
 
 services:
   seaweedfs-master:
@@ -37,7 +36,7 @@ services:
       - ${PANEL_APP_PORT_VOLUME_SERVER}:8080
       - ${PANEL_APP_PORT_VOLUME_API}:18080
       - ${PANEL_APP_PORT_VOLUME_METRICS}:9325
-    command: 'volume -mserver="master:9333" -ip.bind=0.0.0.0 -port=8080  -metricsPort=9325'
+    command: 'volume -mserver="seaweedfs-master:9333" -ip.bind=0.0.0.0 -port=8080  -metricsPort=9325'
     env_file:
       - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
       - ${ENV_FILE:-/etc/1panel/envs/default.env}
@@ -60,7 +59,7 @@ services:
       - ${PANEL_APP_PORT_FILER_SERVER}:8888
       - ${PANEL_APP_PORT_FILER_API}:18888
       - ${PANEL_APP_PORT_FILER_METRICS}:9326
-    command: 'filer -master="master:9333" -ip.bind=0.0.0.0 -metricsPort=9326'
+    command: 'filer -master="seaweedfs-master:9333" -ip.bind=0.0.0.0 -metricsPort=9326'
     tty: true
     stdin_open: true
     env_file:
@@ -87,7 +86,7 @@ services:
     ports:
       - ${PANEL_APP_PORT_HTTP}:8333
       - ${PANEL_APP_PORT_S3_METRICS}:9327
-    command: 's3 -filer="filer:8888" -ip.bind=0.0.0.0 -metricsPort=9327'
+    command: 's3 -filer="seaweedfs-filer:8888" -ip.bind=0.0.0.0 -metricsPort=9327'
     env_file:
       - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
       - ${ENV_FILE:-/etc/1panel/envs/default.env}
@@ -109,7 +108,7 @@ services:
       - seaweedfs-network
     ports:
       - ${PANEL_APP_PORT_WEBDAV}:7333
-    command: 'webdav -filer="filer:8888"'
+    command: 'webdav -filer="seaweedfs-filer:8888"'
     env_file:
       - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
       - ${ENV_FILE:-/etc/1panel/envs/default.env}
