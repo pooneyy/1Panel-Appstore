@@ -1,5 +1,5 @@
 additionalProperties:
-  key: garage-hq
+  key: garage-hq-web
   name: Garage HQ
   tags:
     - Tool
