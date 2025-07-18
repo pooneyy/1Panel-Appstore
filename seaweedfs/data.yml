@@ -4,8 +4,8 @@ additionalProperties:
   tags:
     - WebSite
     - Local
-  shortDescZh: 中文简介
-  shortDescEn: 英文简介
+  shortDescZh: 分布式存储系统
+  shortDescEn: distributed storage system
   type: website
   crossVersionUpdate: true
   limit: 0
