@@ -27,8 +27,10 @@ services:
       - TZ=Asia/Shanghai
   garage-webui:
     image: khairul169/garage-webui:1.0.9
-    container_name: garage-webui
-    restart: unless-stopped
+    container_name: ${CONTAINER_NAME}-web
+    restart: always
+    networks:
+      - 1panel-network
     volumes:
       - ${GARAGE_ROOT_PATH}/config/garage.toml:/etc/garage.toml
     ports:
