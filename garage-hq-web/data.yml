@@ -1,6 +1,6 @@
 additionalProperties:
   key: garage-hq-web
-  name: Garage HQ
+  name: Garage HQ (WebUI版)
   tags:
     - WebSite
     - Storage
