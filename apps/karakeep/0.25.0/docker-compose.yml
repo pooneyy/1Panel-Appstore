@@ -1,6 +1,6 @@
 services:
   karakeep:
-    image: ghcr.io/karakeep-app/karakeep:0.25.0
+    image: ghcr.io/karakeep-app/karakeep:0.26.0
     container_name: ${CONTAINER_NAME}
     restart: unless-stopped
     volumes:
