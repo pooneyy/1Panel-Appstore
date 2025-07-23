@@ -1,7 +1,7 @@
 services:
     libretv:
         container_name: ${CONTAINER_NAME}
-        image: bestzwei/libretv:202507110114
+        image: bestzwei/libretv:202507222210
         networks:
             - 1panel-network
         restart: always
