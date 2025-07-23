@@ -42,3 +42,17 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - SEARCH_BACKEND_PASSWORD=${ADMIN_PASSWORD:-}
+
+  archivebox_scheduler:
+    image: archivebox/archivebox:0.8.5rc51
+    command: schedule --foreground --update --every=day
+    env_file:
+      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
+      - ${ENV_FILE:-/etc/1panel/envs/default.env}
+    volumes:
+      - ${ARCHIVEBOX_ROOT_PATH}/data:/data
+    environment:
+      - TIMEOUT=120
+      - SEARCH_BACKEND_ENGINE=sonic
+      - SEARCH_BACKEND_HOST_NAME=archivebox-sonic
+      - SEARCH_BACKEND_PASSWORD=${ADMIN_PASSWORD:-}
