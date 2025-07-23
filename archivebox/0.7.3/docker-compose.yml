@@ -29,6 +29,9 @@ services:
   archivebox-sonic:
     image: archivebox/sonic:latest
     container_name: sonic-${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
     expose:
       - 1491
     env_file:
