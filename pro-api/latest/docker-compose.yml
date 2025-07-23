@@ -1,0 +1,21 @@
+services:
+  pro-api:
+    image: duolabmeng/pro-api:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8000
+    volumes:
+      - "${DATA_PATH}:/app/data:rw"
+      - "${LOCAL_CONFIG_PATH}:/app/api.yaml"
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+
+networks:
+  1panel-network:
+    external: true

@@ -1,0 +1,24 @@
+additionalProperties:
+  formFields:
+  - default: ./config
+    edit: true
+    envKey: LOCAL_CONFIG_PATH
+    labelEn: local config file path
+    labelZh: 本地配置文件地址
+    required: true
+    type: text
+  - default: ./data
+    edit: true
+    envKey: DATA_PATH
+    labelEn: uni-api data path
+    labelZh: uni-api数据存储路径
+    required: true
+    type: text
+  - default: 8000
+    edit: true
+    envKey: PANEL_APP_PORT_HTTP
+    labelEn: Port
+    labelZh: 端口
+    required: true
+    rule: paramPort
+    type: number
