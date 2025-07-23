@@ -22,7 +22,7 @@ services:
       timeout: 2s
       retries: 3
     volumes:
-      - ${READECK_ROOT_PATH}/data:/data
+      - ${READECK_ROOT_PATH}/data:/readeck
     environment:
       - TZ=Asia/Shanghai
       - READECK_LOG_LEVEL=info
