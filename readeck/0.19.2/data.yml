@@ -88,7 +88,7 @@ additionalProperties:
     - default: "false"
       edit: true
       envKey: READECK_MAIL_INSECURE
-      labelZh: 服务器证书验证
+      labelZh: 邮件服务器证书验证
       labelEn: Server certificate verification
       required: false
       type: select
@@ -109,3 +109,10 @@ additionalProperties:
           value: "starttls"
         - label: SSL/TLS
           value: "ssltls"
+    - default: ""
+      edit: true
+      envKey: HTTP_PROXY
+      labelZh: 网络代理
+      labelEn: Network proxy
+      required: false
+      type: text
