@@ -4,7 +4,7 @@ networks:
 
 services:
   nodepassdash:
-    image: ghcr.io/nodepassproject/nodepassdash:2.2.0
+    image: ghcr.io/nodepassproject/nodepassdash:2.2.1
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
