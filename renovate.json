@@ -81,6 +81,10 @@
       "groupName": "Emby Server"
     },
     {
+      "matchPackageNames": ["henrygd/beszel**"],
+      "groupName": "beszel"
+    },
+    {
       "matchPackageNames": ["kibana"],
       "matchCurrentVersion": "/^8.*/",
       "allowedVersions": "/^8.*/"
