@@ -23,6 +23,13 @@
       "enabled": false
     },
     {
+      "matchPackageNames": [
+        "altran1502/immich**",
+        "ghcr.io/immich-app/immich**"
+      ],
+      "groupName": "immich"
+    },
+    {
       "matchPackageNames": ["budtmo/docker-android"],
       "matchCurrentVersion": "emulator_9.0_*",
       "allowedVersions": "/^emulator_9.0_*/"
@@ -53,9 +60,7 @@
       "allowedVersions": "/^emulator_14.0_*/"
     },
     {
-      "matchPackageNames": [
-        "chaitin/safeline**"
-      ],
+      "matchPackageNames": ["chaitin/safeline**"],
       "groupName": "SafeLine"
     },
     {
