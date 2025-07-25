@@ -1,7 +1,7 @@
 services:
   keepassxc:
     container_name: ${CONTAINER_NAME}
-    image: linuxserver/keepassxc:2.7.9
+    image: linuxserver/keepassxc:2.7.10
     restart: always
     networks:
       - 1panel-network
