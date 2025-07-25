@@ -1,6 +1,6 @@
 services:
   warp:
-    image: caomingjun/warp:2025.5.893.0-2.12.0
+    image: caomingjun/warp:2025.5.943.0-2.12.0
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
