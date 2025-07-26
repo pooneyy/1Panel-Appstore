@@ -33,7 +33,7 @@ additionalProperties:
       labelZh: JWT 密钥
       labelEn: JWT secret
       required: true
-      type: text
+      type: password
     - default: "127.0.0.1"
       edit: true
       envKey: DATABASE_HOST
