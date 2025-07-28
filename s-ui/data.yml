@@ -1,6 +1,6 @@
 additionalProperties:
   key: s-ui
-  name: s-ui
+  name: S-UI
   tags:
     - Tool
     - Local
