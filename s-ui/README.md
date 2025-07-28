@@ -1,4 +1,4 @@
-# S-UI
+# S-UI (Xray UI)
 
 高级 Web 面板 • 专为 SagerNet/Sing-Box 打造
 
