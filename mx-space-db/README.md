@@ -1,4 +1,4 @@
-# MixSpace
+# MixSpace (服务端)
 
 Mix Space 是一个现代化的前后端分离个人空间解决方案，也可以作为个人博客使用。
 
