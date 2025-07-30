@@ -1,0 +1,19 @@
+name: Message-Pusher
+tags:
+  - 实用工具
+title: 自托管消息推送服务
+description: 一款支持多平台的自托管消息推送服务，支持 Web UI 和 API 接口。
+additionalProperties:
+  key: message-pusher
+  name: Message-Pusher
+  tags:
+    - Tool
+  shortDescZh: 一款支持多平台的自托管消息推送服务
+  shortDescEn: A self-hosted multi-platform message pushing service
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/songquanpeng/message-pusher
+  github: https://github.com/songquanpeng/message-pusher
+  document: https://github.com/songquanpeng/message-pusher#readme
