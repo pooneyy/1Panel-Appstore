@@ -8,7 +8,7 @@ services:
       - 1panel-network
     ports:
       - "${PANEL_APP_PORT_HTTP}:3000"
-    image: songquanpeng/message-pusher:v0.4.12
+    image: justsong/message-pusher:v0.4.12
     volumes:
       - ./data:/data
     environment:
