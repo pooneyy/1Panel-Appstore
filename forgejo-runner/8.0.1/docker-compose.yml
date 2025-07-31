@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   forgejo_runner:
-    image: code.forgejo.org/forgejo/runner:8.0.1
+    image: code.forgejo.org/forgejo/runner:9.0.0
     container_name: ${CONTAINER_NAME:-forgejo-runner}
     restart: always
     user: root
