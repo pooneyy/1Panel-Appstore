@@ -14,7 +14,7 @@ services:
       - MYSQL_PASSWORD=${PANEL_DB_USER_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
       - ZBX_JAVAGATEWAY=zabbix-java-gateway
-    image: zabbix/zabbix-server-mysql:7.4.0-alpine
+    image: zabbix/zabbix-server-mysql:7.4.1-alpine
     depends_on:
       - zabbix-java-gateway
       - mysql-server
