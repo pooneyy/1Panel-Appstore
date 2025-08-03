@@ -1,6 +1,6 @@
 services:
   xiaomusic:
-    image: hanxi/xiaomusic:v0.3.83
+    image: hanxi/xiaomusic:v0.3.84
     container_name: xiaomusic
     restart: unless-stopped
     ports:
