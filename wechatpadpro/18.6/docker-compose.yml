@@ -41,3 +41,10 @@ services:
       - WEB_TASK_APP_NUMBER=
       - NEWS_SYN_WXID=true
       - DT=true
+      - MYSQL_HOST=${DB_HOST}
+      - MYSQL_PORT=${DB_PORT}
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_CONNECT_STR=${DB_USERNAME}:${DB_PASSWORD}@tcp(${DB_HOST}:${DB_PORT})/${DB_DATABASE}?charset=utf8mb4&parseTime=true&loc=Local
+      - REDIS_PASS=${REDIS_PASSWORD}
