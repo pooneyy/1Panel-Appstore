@@ -1,6 +1,6 @@
 additionalProperties:
-  key: astrbot
-  name: AstrBot
+  key: astrbot-napcat
+  name: AstrBot (集成NapCat)
   tags:
     - WebSite
     - Local
