@@ -1,0 +1,30 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  cloudsaver:
+    image: jiangrui1994/cloudsaver:v0.6.0
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8008
+    env_file:
+      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
+      - ${ENV_FILE:-/etc/1panel/envs/default.env}
+    volumes:
+      - ${CLOUDSAVER_ROOT_PATH}/data:/app/data
+      - ${CLOUDSAVER_ROOT_PATH}/config:/app/config
+    environment:
+      - TZ=Asia/Shanghai
+    healthcheck:
+      test: >
+        CMD-SHELL curl -s -o /dev/null -w "%{http_code}" http://localhost:8008/health | grep -E "^(200|204|301|302|304)$" || exit 1
+      interval: 30s
+      timeout: 3s
+      start_period: 5s
+      retries: 3
