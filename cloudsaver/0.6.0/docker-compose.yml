@@ -22,8 +22,7 @@ services:
     environment:
       - TZ=Asia/Shanghai
     healthcheck:
-      test: >
-        CMD-SHELL curl -s -o /dev/null -w "%{http_code}" http://localhost:8008/health | grep -E "^(200|204|301|302|304)$" || exit 1
+      test: [ "CMD", "sh", "-c", "curl -s -o /dev/null -w '%{http_code}' http://localhost:8008/health | grep -Eq '^(200|204|301|302|304)$'" ]
       interval: 30s
       timeout: 3s
       start_period: 5s
