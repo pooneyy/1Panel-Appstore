@@ -9,6 +9,6 @@ services:
       - STARS_PASS=${STARS_PASS}
     volumes:
       - ./data:/data
-    image: xianwei2022/stars.client:5.1.6
+    image: xianwei2022/stars.client:5.1.7
     labels:  
       createdBy: "Apps"
