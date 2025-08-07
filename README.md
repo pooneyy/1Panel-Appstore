@@ -52,7 +52,15 @@
 ```shell
 curl -sSL https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/script/update_local_appstore.sh | bash
 ```
-或者
+jsdelivr
+```shell
+curl -sSL https://fastly.jsdelivr.net/gh/pooneyy/1Panel-Appstore@script/update_local_appstore.sh | bash
+```
+JSDMirror(Tencent EdgeOne)
+```shell
+curl -sSL https://cdn.jsdmirror.com/gh/pooneyy/1Panel-Appstore@script/update_local_appstore.sh | bash
+```
+gh-proxy.com(Cloudflare)
 ```shell
 curl -sSL https://gh-proxy.com/raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/script/update_local_appstore.sh | bash
 ```
