@@ -1,0 +1,79 @@
+additionalProperties:
+  formFields:
+    - default: "always"
+      edit: true
+      envKey: RESTART_POLICY
+      labelEn: Restart Policy
+      labelZh: 重启策略
+      required: true
+      type: select
+      values:
+        - label: "一直重启"
+          value: "always"
+        - label: "除非容器被手动停止则重启"
+          value: "unless-stopped"
+        - label: "失败后重启"
+          value: "on-failure"
+        - label: "不重启"
+          value: "no"
+    - default: "40001"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "30022"
+      edit: true
+      envKey: PANEL_APP_PORT_SSH
+      labelEn: Internal Port (External access must be enabled)
+      labelZh: SSH 端口 (须勾选端口外部访问)
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "https://github.com/gogs/gogs/tree/main/docker#container-options"
+      disabled: false
+      envKey: X1
+      labelEn: For detailed descriptions of environment variables, see
+      labelZh: 详细的环境变量说明参见
+      required: false
+      type: text
+    - default: "true"
+      edit: true
+      envKey: SOCAT_LINK
+      labelEn: Bind linked docker container to localhost socket using socat.
+      labelZh: 使用 socat 将链接的 docker 容器绑定到 localhost 的套接字
+      required: false
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: RUN_CROND
+      labelEn: Request crond to be run inside the container
+      labelZh: 请求在容器内运行 crond
+      required: false
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"

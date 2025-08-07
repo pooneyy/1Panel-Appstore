@@ -1,0 +1,22 @@
+name: Gogs
+tags:
+  - 建站
+title: 一款极易搭建的自助 Git 服务
+description: 一款极易搭建的自助 Git 服务
+additionalProperties:
+  key: gogs
+  name: Gogs
+  tags:
+    - Website
+    - DevOps
+    - Storage
+    - Local
+  shortDescZh: 一款极易搭建的自助 Git 服务
+  shortDescEn: Gogs is a painless self-hosted Git service.
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://gogs.io/
+  github: https://github.com/gogs/gogs/
+  document: https://github.com/gogs/gogs/tree/main/docker/
