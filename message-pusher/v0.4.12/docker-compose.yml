@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   message-pusher:
     container_name: ${CONTAINER_NAME}

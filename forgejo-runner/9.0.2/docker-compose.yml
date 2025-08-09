@@ -1,4 +1,3 @@
-version: "3.9"
 services:
   forgejo_runner:
     image: code.forgejo.org/forgejo/runner:9.0.3
