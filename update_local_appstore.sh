@@ -36,7 +36,8 @@ repo_prefixs=(
 repo_suffix="/pooneyy/1Panel-Appstore.git"
 
 for repo_prefix in "${repo_prefixs[@]}"; do
-    git clone --depth 1 -b localApps $repo_prefix$repo_suffix $TEMP_DIR && break
+    full_url="${repo_prefix}${repo_suffix}"
+    git clone --depth 1 -b localApps $full_url $TEMP_DIR && echo "Successfully cloned from source ${full_url}" && break
 done
 
 cp -rf $TEMP_DIR/apps/* $BASE_DIR/1panel/resource/apps/local/
