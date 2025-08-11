@@ -1,6 +1,6 @@
 services:
     cup:
-        image: ghcr.io/sergi0g/cup:v3.4.0
+        image: ghcr.io/sergi0g/cup:v3.4.2
         container_name: ${CONTAINER_NAME}
         restart: unless-stopped
         ports:
