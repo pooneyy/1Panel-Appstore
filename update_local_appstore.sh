@@ -34,12 +34,18 @@ repo_prefixs=(
 )
 
 repo_suffix="/pooneyy/1Panel-Appstore.git"
-
+counter=0
 for repo_prefix in "${repo_prefixs[@]}"; do
     full_url="${repo_prefix}${repo_suffix}"
-    git clone --depth 1 -b localApps $full_url $TEMP_DIR && echo "Successfully cloned from source ${full_url}" && break
+    git clone --depth 1 -b localApps $full_url $TEMP_DIR > /dev/null 2>&1 && break
+    counter=$((counter + 1))
 done
-
-cp -rf $TEMP_DIR/apps/* $BASE_DIR/1panel/resource/apps/local/
-
-rm -rf $TEMP_DIR
+if [ $counter -eq ${#repo_prefixs[@]} ]; then
+    echo "All sources have been attempted, but cloning Failed"
+else
+    echo "Successfully cloned from source ${full_url}"
+    echo "Latest commit in the local repository:"
+    git -C $TEMP_DIR log --pretty=format:"%s - %h - %cr(%ci)" -n 1
+    cp -rf $TEMP_DIR/apps/* $BASE_DIR/1panel/resource/apps/local/
+    rm -rf $TEMP_DIR
+fi
