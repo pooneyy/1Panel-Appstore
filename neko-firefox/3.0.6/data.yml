@@ -10,7 +10,7 @@ additionalProperties:
       type: number
     - default: "56000-56100"
       edit: true
-      envKey: NEKO_WEBRTC_EPR
+      envKey: PANEL_APP_PORT_WEBRTC_EPR
       labelZh: WebRTC 端口范围
       labelEn: WebRTC port range
       required: true
