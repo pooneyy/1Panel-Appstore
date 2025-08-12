@@ -24,6 +24,5 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - NEKO_WEBRTC_EPR=${PANEL_APP_PORT_WEBRTC_EPR}
-      - NEKO_WEBRTC_NAT1TO1=127.0.0.1
       - NEKO_WEBRTC_ICELITE=1
       - NEKO_WEBRTC_IP_RETRIEVAL_URL=https://ifconfig.co/ip

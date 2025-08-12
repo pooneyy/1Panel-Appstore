@@ -36,3 +36,10 @@ additionalProperties:
       labelEn: Desktop Resolution
       required: true
       type: text
+    - default: "127.0.0.1"
+      edit: true
+      envKey: NEKO_WEBRTC_NAT1TO1
+      labelZh: 访问主机 (NAT1TO1)
+      labelEn: Access Host (NAT1TO1)
+      required: true
+      type: text

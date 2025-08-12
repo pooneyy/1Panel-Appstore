@@ -1,4 +1,4 @@
-# Neko
+# Neko (火狐版)
 
 在 docker 中运行并使用 WebRTC 的自托管虚拟浏览器
 
@@ -7,6 +7,8 @@
 ![](https://img.shields.io/badge/%E6%96%B0%E7%96%86%E8%90%8C%E6%A3%AE%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E6%8F%90%E4%BE%9B%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81-blue)
 
 ## 简介
+
+![firefox](https://neko.m1k1o.net/img/icons/firefox.svg)
 
 Neko，这是一个在 Docker 中运行并使用 WebRTC 技术的自托管虚拟浏览器。Neko
 是一款功能强大的工具，可让您在虚拟环境中运行功能齐全的浏览器，使您能够从任何地方安全、私密地访问互联网。使用
