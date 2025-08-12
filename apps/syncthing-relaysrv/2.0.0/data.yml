@@ -1,0 +1,10 @@
+additionalProperties:
+  formFields:
+    - default: "22067"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: 中继服务器端口
+      labelEn: Relay server port
+      required: true
+      rule: paramPort
+      type: number
