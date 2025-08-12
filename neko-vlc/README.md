@@ -15,6 +15,25 @@ Neko，这是一个在 Docker 中运行并使用 WebRTC 技术的自托管虚拟
 Neko，您可以像在普通浏览器上一样浏览网页、运行应用程序和执行其他任务，所有这些都在安全且隔离的环境中进行。无论您是想要测试
 Web 应用程序的开发人员、寻求安全浏览体验的注重隐私的用户，还是只是想利用虚拟浏览器的便利性和灵活性，Neko 都是完美的解决方案。
 
+| Application                                                                                        | AMD64 | ARM64 | ARMv7 |
+|----------------------------------------------------------------------------------------------------|-------|-------|-------|
+| [Firefox](https://neko.m1k1o.net/docs/v3/installation/docker-images#firefox)                       | ✅     | ✅ *   | ✅ *   |
+| [Tor Browser](https://neko.m1k1o.net/docs/v3/installation/docker-images#tor-browser)               | ✅     | ❌     | ❌     |
+| [Waterfox](https://neko.m1k1o.net/docs/v3/installation/docker-images#waterfox)                     | ✅     | ❌     | ❌     |
+| [Chromium](https://neko.m1k1o.net/docs/v3/installation/docker-images#chromium)                     | ✅     | ✅ *   | ✅ *   |
+| [Google Chrome](https://neko.m1k1o.net/docs/v3/installation/docker-images#google-chrome)           | ✅     | ❌     | ❌     |
+| [Ungoogled Chromium](https://neko.m1k1o.net/docs/v3/installation/docker-images#ungoogled-chromium) | ✅     | ❌     | ❌     |
+| [Microsoft Edge](https://neko.m1k1o.net/docs/v3/installation/docker-images#microsoft-edge)         | ✅     | ❌     | ❌     |
+| [Brave](https://neko.m1k1o.net/docs/v3/installation/docker-images#brave)                           | ✅     | ✅ *   | ❌     |
+| [Vivaldi](https://neko.m1k1o.net/docs/v3/installation/docker-images#vivaldi)                       | ✅     | ✅ *   | ✅ *   |
+| [Opera](https://neko.m1k1o.net/docs/v3/installation/docker-images#opera)                           | ✅     | ❌     | ❌     |
+| [Xfce](https://neko.m1k1o.net/docs/v3/installation/docker-images#xfce)                             | ✅     | ✅     | ✅     |
+| [KDE](https://neko.m1k1o.net/docs/v3/installation/docker-images#kde)                               | ✅     | ✅     | ✅     |
+| [Remmina](https://neko.m1k1o.net/docs/v3/installation/docker-images#remmina)                       | ✅     | ✅     | ✅     |
+| [VLC](https://neko.m1k1o.net/docs/v3/installation/docker-images#vlc)                               | ✅     | ✅     | ✅     |
+
+> `*` No DRM support.
+
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
