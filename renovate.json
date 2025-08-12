@@ -205,6 +205,12 @@
         "apps/reader/2.7.*/*.yml"
       ],
       "allowedVersions": "/^2.7.*/"
+    },
+    {
+      "matchFileNames": [
+        "apps/syncthing*/1.*/*.yml"
+      ],
+      "allowedVersions": "/^1.*/"
     }
   ],
   "prCreation": "immediate"
