@@ -1,0 +1,10 @@
+additionalProperties:
+  formFields:
+    - default: "8443"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: 发现服务器端口
+      labelEn: Discovery server port
+      required: true
+      rule: paramPort
+      type: number

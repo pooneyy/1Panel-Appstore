@@ -1,0 +1,22 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  syncthing_relaysrv:
+    command: -pools="" -listen=":22067"
+    container_name: ${CONTAINER_NAME}
+    environment:
+      - PUID=1001
+      - PGID=1001
+      - pools=""
+    image: syncthing/relaysrv:1.30.0
+    labels:
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:22067  # 中继服务器的数据连接端口（必须开启）
+      # - 22070:22070  # 用于公用的中继服务器池，显示数据传输、客户端数量等状态，可不开启
+    restart: always
+    volumes:
+      - ./data:/var/strelaysrv

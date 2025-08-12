@@ -1,0 +1,54 @@
+additionalProperties:
+  formFields:
+    - default: 40118
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 22000
+      edit: true
+      envKey: SYNCTHING_PORT
+      labelEn: Sync Port
+      labelZh: 同步端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 21027
+      edit: true
+      envKey: SYNCTHING_PORT_EXTRA_UDP
+      labelEn: Sync Port
+      labelZh: 同步端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data/config
+      edit: true
+      envKey: DATA_PATH_APP_CONFIG
+      labelEn: Config folder path
+      labelZh: 配置文件夹路径
+      required: true
+      type: text
+    - default: ./data/data1
+      edit: true
+      envKey: DATA_PATH_DATA1
+      labelEn: Data folder path (internal "/data1")
+      labelZh: 数据文件夹路径 (内部"/data1")
+      required: true
+      type: text
+    - default: ./data/data2
+      edit: true
+      envKey: DATA_PATH_DATA2
+      labelEn: Data folder path (internal "/data2")
+      labelZh: 数据文件夹路径 (内部"/data2")
+      required: true
+      type: text
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text
