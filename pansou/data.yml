@@ -1,0 +1,33 @@
+name: PanSou
+tags:
+  - 网盘
+  - 搜索
+  - 自托管
+title: 高性能网盘搜索 API 服务
+description: PanSou 是一个支持 Telegram 搜索和插件扩展的高性能网盘搜索 API 系统，支持多网盘类型分类、智能排序、异步插件扩展与二级缓存。
+additionalProperties:
+  key: pansou
+  name: PanSou
+  tags:
+    - WebSite
+    - Tool
+  shortDescZh: 高性能网盘搜索 API 服务
+  shortDescEn: High-performance cloud drive search API service
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/fish2018/pansou
+  github: https://github.com/fish2018/pansou
+  document: https://github.com/fish2018/pansou
+  description:
+    en: High-performance cloud drive search API service supporting Telegram search and plugin extensions, with intelligent sorting and multi-cloud categorization.
+    zh: 高性能网盘搜索 API 系统，支持 Telegram 搜索与插件扩展，具备智能排序和多网盘类型分类。
+    zh-Hant: 高效能網盤搜索 API 系統，支援 Telegram 搜索與插件擴展，具有智能排序和多網盤分類。
+    ja: Telegram検索とプラグイン拡張に対応した高性能クラウドドライブ検索APIシステムです。
+    ms: Perkhidmatan API carian storan awan berprestasi tinggi yang menyokong carian Telegram dan peluasan pemalam.
+    pt-br: Serviço de API de pesquisa de armazenamento em nuvem de alto desempenho com suporte a pesquisa no Telegram e extensões de plugins.
+    ru: Высокопроизводительный API поиска по облачным хранилищам с поддержкой поиска в Telegram и расширений плагинов.
+    ko: 텔레그램 검색과 플러그인 확장을 지원하는 고성능 클라우드 드라이브 검색 API 시스템입니다.
+  architectures:
+    - amd64
+    - arm64
