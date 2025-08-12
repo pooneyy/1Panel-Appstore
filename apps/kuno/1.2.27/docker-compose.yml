@@ -1,6 +1,6 @@
 services:
   kuno:
-    image: ictrun/kuno:v1.2.26
+    image: ictrun/kuno:v1.2.27
     container_name: ${CONTAINER_NAME}
     restart: unless-stopped
     pull_policy: always
