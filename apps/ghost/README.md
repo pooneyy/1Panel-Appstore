@@ -1,8 +1,8 @@
-# Gost
+# Ghost
 
-用于现代出版、会员制、订阅和通讯的独立技术
+用于现代出版、会员制、订阅服务及电子简讯的独立技术解决方案。
 
-![Gost](https://file.lifebus.top/imgs/gost_cover.png)
+![Ghost](https://file.lifebus.top/imgs/gost_cover.png)
 
 Ghost 是一个基于现代 Node.js 技术堆栈构建的开源专业发布平台，专为需要强大功能、灵活性和性能的团队而设计。
 
