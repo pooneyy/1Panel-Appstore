@@ -66,22 +66,22 @@ additionalProperties:
       type: text
 
     - default: true
-      envKey: MOONTV_ENABLE_REGISTER
+      envKey: CACHE_ENABLED
       required: true
       type: select
       label:
-        en: Enable Registration
-        ja: 登録を有効にする
-        ms: Dayakan Pendaftaran
-        pt-br: Habilitar Registro
-        ru: Включить регистрацию
-        ko: 회원가입 활성화
-        zh: 启用注册
-        zh-Hant: 啟用註冊
+        en: Enable Cache
+        ja: キャッシュを有効にする
+        ms: Dayakan Cache
+        pt-br: Habilitar Cache
+        ru: Включить кэш
+        ko: 캐시 활성화
+        zh: 启用缓存
+        zh-Hant: 啟用快取
       values:
-        - label: 启用
+        - label: 启用缓存
           value: "true"
-        - label: 禁用
+        - label: 禁用缓存
           value: "false"
 
     - default: "3600"
