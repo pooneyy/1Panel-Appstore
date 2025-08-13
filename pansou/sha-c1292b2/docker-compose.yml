@@ -1,6 +1,6 @@
 services:
   pansou:
-    image: ghcr.io/fish2018/pansou-web:sha-c1292b2
+    image: ghcr.io/fish2018/pansou-web:sha-c1292b2@sha256:a9e17506c3010e0aa6b5781366ec55c29099967f2a28097ee2bf1c138fba3e59
     container_name: ${CONTAINER_NAME}
     restart: always
     labels:
