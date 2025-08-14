@@ -48,7 +48,7 @@ services:
       - "tikv"
     restart: on-failure
   tiflash:
-    image: pingcap/tiflash:v8.5.2
+    image: pingcap/tiflash:v8.5.3
     volumes:
       - ./config/tiflash.toml:/tiflash.toml:ro
       - ./config/tiflash-learner.toml:/tiflash-learner.toml:ro
