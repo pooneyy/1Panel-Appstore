@@ -19,7 +19,7 @@ services:
       - --log-file=/logs/pd.log
     restart: on-failure
   tikv:
-    image: pingcap/tikv:v8.5.2
+    image: pingcap/tikv:v8.5.3
     volumes:
       - ./volumes/data:/data
       - ./volumes/logs:/logs
