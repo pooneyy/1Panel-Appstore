@@ -1,6 +1,6 @@
 services:
   pd0:
-    image: pingcap/pd:v8.5.2
+    image: pingcap/pd:v8.5.3
     # ports:
     #  - "2379"
     volumes:
