@@ -9,7 +9,7 @@ services:
       - PUID=1001
       - PGID=1001
       - pools=""
-    image: syncthing/relaysrv:2.0.0
+    image: syncthing/relaysrv:2.0.1
     labels:
       createdBy: "Apps"
     networks:
