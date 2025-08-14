@@ -9,7 +9,7 @@ services:
       - PUID=1001
       - PGID=1001
       - TZ=Asia/Shanghai
-    image: syncthing/discosrv:2.0.0
+    image: syncthing/discosrv:2.0.1
     labels:
       createdBy: "Apps"
     networks:
