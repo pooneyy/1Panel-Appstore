@@ -1,6 +1,6 @@
 services:
     linkwarden:
-        image: ghcr.io/linkwarden/linkwarden:v2.11.6
+        image: ghcr.io/linkwarden/linkwarden:v2.11.7
         container_name: ${CONTAINER_NAME}
         restart: always
         ports:
