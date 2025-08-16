@@ -21,7 +21,7 @@ jobs:
       - name: 获取可合并的 PR
         id: get-prs
         run: |
-          pr_list=$( gh pr list --state open --json number,mergeable --limit 1000 --jq 'sort_by(.number) | .[] | .number' )
+          pr_list=$( gh pr list --state open --author "app/renovate" --json number,mergeStateStatus --limit 1000 --jq 'sort_by(.number) | .[] | select(.mergeStateStatus == "CLEAN") | .number' )
           
           pr_list=$(echo "$pr_list" | tr '\n' ' ')
           
