@@ -23,8 +23,6 @@ jobs:
         run: |
           pr_list=$( gh pr list --state open --author "app/renovate" --json number,mergeStateStatus --limit 1000 --jq 'sort_by(.number) | .[] | select(.mergeStateStatus == "CLEAN") | .number' )
           
-          pr_list=$(echo "$pr_list" | tr '\n' ' ')
-          
           echo "PRs to merge: $pr_list"
           echo "pr_list=$pr_list" >> $GITHUB_OUTPUT
           
