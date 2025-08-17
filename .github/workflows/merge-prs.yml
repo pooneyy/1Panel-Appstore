@@ -18,7 +18,29 @@ jobs:
       - name: 登录到 GitHub CLI
         run: gh auth login --with-token <<< "${{ github.token }}"
         
+      - name: 检查 PR
+        id: check-prs
+        run: |
+          pr_list=$( gh pr list --state open --author "app/renovate" --json number --jq '.[] | .number' )
+          
+          if [ -z "$pr_list" ]; then
+            echo "没有开放的 PR"
+          else
+            for ((i=1; i<=60; i++)); do
+              if [ -n "$pr_list" ]; then
+                pr_list=$( gh pr list --state open --author "app/renovate" --json number,mergeStateStatus --limit 1000 --jq '.[] | select(.mergeStateStatus == "UNKNOWN") | .number' )
+                
+                echo "等待...($i/60)"
+              else
+                echo "prs_status=true" >> $GITHUB_OUTPUT
+                break
+              fi
+              sleep 1
+            done
+          fi
+
       - name: 获取可合并的 PR
+        if: ${{ steps.check-prs.outputs.prs_status == 'true'}}
         id: get-prs
         run: |
           pr_list=$( gh pr list --state open --author "app/renovate" --json number,mergeStateStatus --limit 1000 --jq 'sort_by(.number) | .[] | select(.mergeStateStatus == "CLEAN") | .number' )
@@ -29,6 +51,7 @@ jobs:
           echo "pr_list=$pr_list" >> $GITHUB_OUTPUT
           
       - name: 合并 PR
+        if: ${{ steps.get-prs.outputs.pr_list != '' }}
         run: |
           for pr in ${{ steps.get-prs.outputs.pr_list }}; do
             if ! gh pr merge $pr --squash --delete-branch --body ""; then
