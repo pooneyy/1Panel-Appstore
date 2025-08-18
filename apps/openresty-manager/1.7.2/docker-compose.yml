@@ -24,5 +24,6 @@ services:
       - ${OPENRESTY_MANAGER_ROOT_PATH}/acme:/opt/om/acme
       - ${OPENRESTY_MANAGER_ROOT_PATH}/data:/opt/om/data
       - ${OPENRESTY_MANAGER_ROOT_PATH}/conf:/opt/om/nginx/conf
+      - ${OPENRESTY_MANAGER_ROOT_PATH}/logs:/opt/om/nginx/logs
     environment:
       - TZ=Asia/Shanghai
