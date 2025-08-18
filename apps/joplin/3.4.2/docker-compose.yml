@@ -15,7 +15,7 @@ services:
       - POSTGRES_PORT=${POSTGRES_PORT}
       - POSTGRES_HOST=${POSTGRES_HOST}
       - DB_CLIENT=pg
-    image: joplin/server:3.4.1
+    image: joplin/server:3.4.2
     labels:  
       createdBy: "Apps"
 
