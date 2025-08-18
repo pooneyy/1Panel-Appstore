@@ -14,7 +14,7 @@ services:
       - PUID=0
       - PGID=0
       - UMASK=022
-    image: openlistteam/openlist:v4.1.0-ffmpeg
+    image: openlistteam/openlist:v4.1.1
     labels:  
       createdBy: "Apps"
 networks:  
