@@ -1,7 +1,7 @@
 version: "3.6" 
 services: 
   gitlab-jh: 
-    image: registry.gitlab.cn/omnibus/gitlab-jh:18.2.1-jh.0
+    image: registry.gitlab.cn/omnibus/gitlab-jh:18.2.2-jh.0
     container_name: ${CONTAINER_NAME}
     hostname: localhost
     restart: always
