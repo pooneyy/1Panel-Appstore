@@ -112,6 +112,10 @@
       "allowedVersions": "/^\\d{6}$/"
     },
     {
+      "matchPackageNames": ["snowdreamtech/frpc", "snowdreamtech/frps"],
+      "groupName": "Frp Cilent & Server"
+    },
+    {
       "matchPackageNames": ["syncthing/syncthing", "syncthing/discosrv", "syncthing/relaysrv"],
       "groupName": "Syncthing"
     },
