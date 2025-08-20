@@ -6,7 +6,7 @@ services:
       - 1panel-network
     ports:
       - "${PANEL_APP_PORT_HTTP}:6688"
-    image: imsyy/dailyhot-api:v2.0.7
+    image: imsyy/dailyhot-api:v2.0.8
     labels:  
       createdBy: "Apps"
 
