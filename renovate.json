@@ -155,6 +155,12 @@
     },
     {
       "matchFileNames": [
+        "apps/movie-pilot/1.*.*/*.yml"
+      ],
+      "allowedVersions": "<2"
+    },
+    {
+      "matchFileNames": [
         "apps/mysql/5.5.*/*.yml"
       ],
       "allowedVersions": "/^5.5.*/"
