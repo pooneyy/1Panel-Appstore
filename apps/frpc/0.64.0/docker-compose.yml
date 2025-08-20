@@ -1,12 +1,12 @@
 services:
-  frps:
+  frpc:
     container_name: ${CONTAINER_NAME}
     restart: always
     network_mode: "host"
     volumes:
-        #- "${CONFIG_FILE_PATH}:/etc/frp/frps.ini" #截止5.1.3版本使用ini
-        - "${CONFIG_FILE_PATH}:/etc/frp/frps.toml"
+        #- "${CONFIG_FILE_PATH}:/etc/frp/frpc.ini" #截止5.1.3版本使用ini
+        - "${CONFIG_FILE_PATH}:/etc/frp/frpc.toml"
         - "${SSL_FOLDER_PATH}:/etc/frp/ssl"
-    image: "snowdreamtech/frps:0.63.0"
+    image: "snowdreamtech/frpc:0.64.0"
     labels:  
       createdBy: "Apps"
