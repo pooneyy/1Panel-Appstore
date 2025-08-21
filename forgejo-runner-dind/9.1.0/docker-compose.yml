@@ -15,7 +15,7 @@ services:
     labels:
       createdBy: "Apps"
   forgejo_runner:
-    image: code.forgejo.org/forgejo/runner:9.1.0
+    image: code.forgejo.org/forgejo/runner:9.1.1
     container_name: ${CONTAINER_NAME:-forgejo-runner}
     depends_on:
       dind:
