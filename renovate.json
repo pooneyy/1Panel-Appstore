@@ -85,6 +85,10 @@
       "groupName": "beszel"
     },
     {
+      "matchPackageNames": ["jxxghp/moviepilot**"],
+      "groupName": "MoviePilot"
+    },
+    {
       "matchPackageNames": ["kibana"],
       "matchCurrentVersion": "/^8.*/",
       "allowedVersions": "/^8.*/"
