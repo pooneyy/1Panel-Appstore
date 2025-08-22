@@ -14,6 +14,6 @@ additionalProperties:
   crossVersionUpdate: true
   limit: 0
   recommend: 0
-  website: https://github.com/senshinya/MoonTV
-  github: https://github.com/senshinya/MoonTV
-  document: https://github.com/senshinya/MoonTV/blob/main/README.md
+  website: https://github.com/MoonTechLab/LunaTV
+  github: https://github.com/MoonTechLab/LunaTV
+  document: https://github.com/MoonTechLab/LunaTV

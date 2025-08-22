@@ -1,0 +1,17 @@
+additionalProperties:
+  formFields:
+    - default: 40249
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: PASSWORD
+      labelEn: Password
+      labelZh: 密码
+      required: true
+      type: text
