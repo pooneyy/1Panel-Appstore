@@ -1,6 +1,6 @@
 services:
   moontv:
-    image: ghcr.io/moontechlab/lunatv:3.1.2
+    image: ghcr.io/moontechlab/lunatv:3.2.1
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
