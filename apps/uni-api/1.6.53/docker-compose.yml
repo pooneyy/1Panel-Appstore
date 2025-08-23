@@ -1,6 +1,6 @@
 services:
   uni-api:
-    image: yym68686/uni-api:1.6.53
+    image: yym68686/uni-api:1.6.54
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
