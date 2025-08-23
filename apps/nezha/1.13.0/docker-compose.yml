@@ -1,6 +1,6 @@
 services:
   dashboard:
-    image: ghcr.io/nezhahq/nezha:v1.13.0
+    image: ghcr.io/nezhahq/nezha:v1.13.1
     container_name: nezha-dashboard
     restart: always
     volumes:
