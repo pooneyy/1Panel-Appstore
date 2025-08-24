@@ -1,0 +1,44 @@
+services:
+  dind:
+    image: docker:dind # [ignore]
+    container_name: forgejo-dind
+    privileged: true
+    restart: 'unless-stopped'
+    command: ['dockerd', '-H', 'tcp://0.0.0.0:2375', '--tls=false']
+    environment:
+      DOCKER_TLS_CERTDIR: ""
+    volumes:
+      - ./data/dind-data:/var/lib/docker
+      - ./data/daemon.json:/etc/docker/daemon.json:ro
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+  forgejo_runner:
+    image: code.forgejo.org/forgejo/runner:9.1.1
+    container_name: ${CONTAINER_NAME:-forgejo-runner}
+    depends_on:
+      dind:
+        condition: service_started
+    links:
+      - dind
+    restart: always
+    user: "1000:1000"  # 非 root 用户运行容器
+    command: "/data/scripts/register.sh"
+    volumes:
+      - ./data/runner-data:/data
+      - ./scripts/register.sh:/data/scripts/register.sh:ro
+    environment:
+      - DOCKER_HOST=tcp://dind:2375
+      - FORGEJO_INSTANCE_URL=${FORGEJO_INSTANCE_URL}
+      - RUNNER_REGISTRATION_TOKEN=${RUNNER_REGISTRATION_TOKEN}
+      - RUNNER_NAME=${RUNNER_NAME}
+      - RUNNER_LABELS=${RUNNER_LABELS}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

@@ -1,0 +1,26 @@
+services:
+  pansou:
+    image: willowgod/pansou-web:v1.0.2
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    labels:
+      createdBy: "Apps"
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    environment:
+      SOCKS5_PROXY: ${SOCKS5_PROXY}
+      HTTP_PROXY: ${HTTP_PROXY}
+      HTTPS_PROXY: ${HTTPS_PROXY}
+      CACHE_ENABLED: ${CACHE_ENABLED}
+      CACHE_TTL: ${CACHE_TTL}
+      MAX_CONCURRENCY: ${MAX_CONCURRENCY}
+      MAX_PAGES: ${MAX_PAGES}
+    volumes:
+      - ./data/data:/app/data
+      - ./data/logs:/app/logs
+    networks:
+      - 1panel-network
+
+networks:
+  1panel-network:
+    external: true

@@ -1,0 +1,19 @@
+services:
+  message-pusher:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    image: justsong/message-pusher:v0.4.12
+    volumes:
+      - ./data:/data
+    environment:
+      - TZ=Asia/Shanghai
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

@@ -1,0 +1,31 @@
+name: Forgejo Runner Docker in Docker
+tags:
+  - DevOps
+title: Forgejo Actions 的 Runner 基于 Dind
+description: Forgejo Actions 的 Runner
+additionalProperties:
+  key: forgejo-runner-dind
+  name: Forgejo Runner Docker in Docker
+  tags:
+    - DevOps
+  shortDescZh: Forgejo Actions 的 Runner
+  shortDescEn: A runner for Forgejo based on Forgejo fork of act
+  description:
+    en: A runner for Forgejo based on Forgejo fork of act
+    ja: act の Forgejo フォークに基づいた Forgejo 用ランナー
+    ms: Penjalank untuk Forgejo berdasarkan fork Forgejo dari act
+    pt-br: Um runner para Forgejo baseado no fork do Forgejo do act
+    ru: Раннер для Forgejo на основе форка Forgejo от act
+    ko: act의 Forgejo 포크를 기반으로 한 Forgejo용 러너
+    zh-Hant: 基於 Forgejo fork 的 act 的 Forgejo 執行器
+    zh: 基于 Forgejo fork 的 act 的 Forgejo 运行器
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://forgejo.org/docs/latest/admin/actions/
+  github: https://code.forgejo.org/forgejo/runner
+  document: https://forgejo.org/docs/latest/admin/actions/
+  architectures:
+    - amd64
+    - arm64
