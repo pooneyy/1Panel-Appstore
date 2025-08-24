@@ -116,6 +116,14 @@
       "allowedVersions": "/^\\d{6}$/"
     },
     {
+      "matchPackageNames": ["prom/prometheus"],
+      "matchCurrentVersion": "v2.21.0",
+      "matchFileNames": [
+        "apps/seaweedfs/**/docker-compose.yml"
+      ],
+      "enabled": false
+    },
+    {
       "matchPackageNames": ["snowdreamtech/frpc", "snowdreamtech/frps"],
       "groupName": "Frp Cilent & Server"
     },
@@ -192,6 +200,18 @@
         "apps/mysql/8.4.*/*.yml"
       ],
       "allowedVersions": "/^8.4.*/"
+    },
+    {
+      "matchFileNames": [
+        "apps/postgresql-postgis/16-*/*.yml"
+      ],
+      "allowedVersions": "/^16-*/"
+    },
+    {
+      "matchFileNames": [
+        "apps/postgresql-postgis/17-*/*.yml"
+      ],
+      "allowedVersions": "/^17-*/"
     },
     {
       "matchFileNames": [
