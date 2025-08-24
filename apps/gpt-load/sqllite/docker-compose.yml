@@ -1,0 +1,18 @@
+services:
+  gpt-load:
+    image: ghcr.io/tbphp/gpt-load:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3001
+    networks:
+      - 1panel-network
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env     
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
