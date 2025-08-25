@@ -2,7 +2,7 @@
 
 开源自托管网页存档。支持 URL、浏览器历史记录、书签、Pocket、Pinboard 等，保存 HTML、JS、PDF、媒体等
 
-![ArchiveBox](https://file.lifebus.top/imgs/archivebox.png)
+![ArchiveBox](https://archivebox.io/icon.png)
 
 ![](https://img.shields.io/badge/%E6%96%B0%E7%96%86%E8%90%8C%E6%A3%AE%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E6%8F%90%E4%BE%9B%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81-blue)
 
@@ -19,5 +19,3 @@ ArchiveBox 是一款开源工具，可帮助组织和个人归档公共和私人
 Facebook/Insta/Flickr 上的照片或 YouTube/Soundcloud 等媒体资源、保存研究论文等等。
 
 ---
-
-![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
