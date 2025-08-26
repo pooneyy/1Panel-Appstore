@@ -1,7 +1,7 @@
 services:
   zabbix-server-pgsql:
     container_name: ${CONTAINER_NAME}
-    image: zabbix/zabbix-server-pgsql:7.4.1-alpine
+    image: zabbix/zabbix-server-pgsql:7.4.2-alpine
     environment:
       - DB_SERVER_HOST=${PANEL_DB_HOST}
       - POSTGRES_USER=${PANEL_DB_USER}
@@ -21,7 +21,7 @@ services:
 
   zabbix-snmptraps:
     container_name: ${CONTAINER_NAME}-snmptraps
-    image: zabbix/zabbix-snmptraps:7.4.1-alpine
+    image: zabbix/zabbix-snmptraps:7.4.2-alpine
     volumes:
       - ./data/snmptraps:/var/lib/zabbix/snmptraps:rw
       - ./data/mibs:/usr/share/snmp/mibs:ro
@@ -35,7 +35,7 @@ services:
 
   zabbix-web-nginx-pgsql:
     container_name: ${CONTAINER_NAME}-nginx
-    image: zabbix/zabbix-web-nginx-pgsql:7.4.1-alpine
+    image: zabbix/zabbix-web-nginx-pgsql:7.4.2-alpine
     environment:
       - ZBX_SERVER_HOST=zabbix-server-pgsql
       - DB_SERVER_HOST=${PANEL_DB_HOST}

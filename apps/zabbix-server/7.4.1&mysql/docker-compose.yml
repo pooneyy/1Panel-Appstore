@@ -14,7 +14,7 @@ services:
       - MYSQL_PASSWORD=${PANEL_DB_USER_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
       - ZBX_JAVAGATEWAY=zabbix-java-gateway
-    image: zabbix/zabbix-server-mysql:7.4.1-alpine
+    image: zabbix/zabbix-server-mysql:7.4.2-alpine
     depends_on:
       - zabbix-java-gateway
       - mysql-server
@@ -47,7 +47,7 @@ services:
     restart: always
     networks:
       - 1panel-network
-    image: zabbix/zabbix-java-gateway:7.4.1-alpine
+    image: zabbix/zabbix-java-gateway:7.4.2-alpine
     labels:
       createdBy: Apps
 
@@ -65,7 +65,7 @@ services:
       - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
     ports:
       - ${PANEL_APP_PORT_HTTP}:8080
-    image: zabbix/zabbix-web-nginx-mysql:7.4.1-alpine
+    image: zabbix/zabbix-web-nginx-mysql:7.4.2-alpine
     depends_on:
       - zabbix-server-mysql
       - mysql-server
