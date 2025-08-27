@@ -4,7 +4,7 @@ networks:
 
 services:
   v2raya:
-    image: mzz2017/v2raya:v2.2.6.7
+    image: mzz2017/v2raya:v2.2.7.1
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
