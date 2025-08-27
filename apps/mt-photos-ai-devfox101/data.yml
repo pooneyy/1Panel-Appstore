@@ -5,7 +5,7 @@ tags:
 title: MT Photos AI 相关的独立服务
 description: MT Photos AI 相关的独立服务
 additionalProperties:
-  key: mt-photos-ai
+  key: mt-photos-ai-devfox101
   name: MT Photos AI
   tags:
     - Media
@@ -17,5 +17,5 @@ additionalProperties:
   limit: 0
   recommend: 0
   website: https://mtmt.tech
-  github: https://github.com/MT-Photos/mt-photos-ai
-  document: https://mtmt.tech
+  github: https://github.com/dev-fox-101/mt-photos-ai
+  document: https://github.com/dev-fox-101/mt-photos-ai
