@@ -1,4 +1,4 @@
-name: MT Photos AI
+name: MT Photos AI (devfox101)
 tags:
   - 多媒体
   - AI / 大模型
@@ -6,12 +6,12 @@ title: MT Photos AI 相关的独立服务
 description: MT Photos AI 相关的独立服务
 additionalProperties:
   key: mt-photos-ai-devfox101
-  name: MT Photos AI
+  name: MT Photos AI (devfox101)
   tags:
     - Media
     - AI
-  shortDescZh: MT Photos AI 相关的独立服务
-  shortDescEn: MT Photos AI-related standalone services
+  shortDescZh: MT Photos AI 相关的独立服务 (devfox101 版)
+  shortDescEn: MT Photos AI-related standalone services (devfox101 version)
   type: tool
   crossVersionUpdate: true
   limit: 0
