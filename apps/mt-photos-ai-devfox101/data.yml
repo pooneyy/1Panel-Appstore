@@ -1,0 +1,21 @@
+name: MT Photos AI
+tags:
+  - 多媒体
+  - AI / 大模型
+title: MT Photos AI 相关的独立服务
+description: MT Photos AI 相关的独立服务
+additionalProperties:
+  key: mt-photos-ai
+  name: MT Photos AI
+  tags:
+    - Media
+    - AI
+  shortDescZh: MT Photos AI 相关的独立服务
+  shortDescEn: MT Photos AI-related standalone services
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://mtmt.tech
+  github: https://github.com/MT-Photos/mt-photos-ai
+  document: https://mtmt.tech
