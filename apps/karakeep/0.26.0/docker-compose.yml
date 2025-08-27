@@ -33,7 +33,7 @@ services:
       - --remote-debugging-port=9222
       - --hide-scrollbars
   meilisearch:
-    image: getmeili/meilisearch:v1.19.0
+    image: getmeili/meilisearch:v1.19.1
     container_name: meili-${CONTAINER_NAME}
     restart: unless-stopped
     environment:
