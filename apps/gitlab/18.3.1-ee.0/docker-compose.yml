@@ -1,7 +1,7 @@
 version: "3.6" 
 services: 
   gitlab-jh: 
-    image: gitlab/gitlab-ee:18.3.0-ee.0
+    image: gitlab/gitlab-ee:18.3.1-ee.0
     container_name: ${CONTAINER_NAME}
     hostname: localhost
     restart: always
