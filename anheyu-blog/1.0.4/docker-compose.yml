@@ -1,0 +1,26 @@
+services:
+  anheyu:
+    # build: .
+    image: anheyu/anheyu-backend:1.0.4
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    labels:
+      createdBy: "Apps"
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8091
+    environment:
+      ANHEYU_DATABASE_TYPE: ${PANEL_DB_TYPE}
+      ANHEYU_DATABASE_HOST: ${PANEL_DB_HOST}
+      ANHEYU_DATABASE_USER: ${PANEL_DB_USER}
+      ANHEYU_DATABASE_NAME: ${PANEL_DB_NAME}
+      ANHEYU_DATABASE_PORT: ${PANEL_DB_PORT}
+      ANHEYU_DATABASE_PASSWORD: ${PANEL_DB_PASSWORD}
+      ANHEYU_REDIS_ADDR: redis://:${PANEL_REDIS_ROOT_PASSWORD}@${PANEL_REDIS_HOST}:6379
+    networks:
+      - 1panel-network
+    volumes:
+      - ./data:/anheyu/data
+      
+networks:
+  1panel-network:
+    external: true
