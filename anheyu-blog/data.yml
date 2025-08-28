@@ -1,14 +1,13 @@
 name: Anheyu Blog
 tags:
-  - 博客
+  - 建站
 title: 一个基于 Go + Vue3 的现代化博客与内容管理系统
 description: 基于 Go 语言后端与 Vue3 前端构建的高性能博客与内容管理平台
 additionalProperties:
   key: anheyu-blog
   name: Anheyu Blog
   tags:
-    - Blog
-    - CMS
+    - website
   shortDescZh: 一个基于 Go + Vue3 的现代化博客与内容管理系统
   shortDescEn: A modern blog and content management system built with Go and Vue3
   type: website
