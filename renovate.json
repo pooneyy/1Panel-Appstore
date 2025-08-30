@@ -7,7 +7,6 @@
     "githubaction@githubaction.com"
   ],
   "rebaseWhen": "never",
-  "prConcurrentLimit":0,
   "packageRules": [
     {
       "matchPackageNames": [
