@@ -18,5 +18,7 @@ jobs:
       - name: Run Renovate
         uses: renovatebot/github-action@a447f09147d00e00ae2a82ad5ef51ca89352da80 # v43.0.9
         with:
-          useSlim: false
+          configurationFile: renovate.json
           token: ${{ github.token }}
+        env:
+          RENOVATE_REPOSITORIES: '["pooneyy/1Panel-Appstore"]'

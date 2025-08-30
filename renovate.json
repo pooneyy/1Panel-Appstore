@@ -124,6 +124,10 @@
       "enabled": false
     },
     {
+      "matchPackageNames": ["qyg2297248353/bili-fetcher**"],
+      "groupName": "Bilibili History Fetcher"
+    },
+    {
       "matchPackageNames": ["snowdreamtech/frpc", "snowdreamtech/frps"],
       "groupName": "Frp Cilent & Server"
     },
