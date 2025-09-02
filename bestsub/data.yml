@@ -1,0 +1,31 @@
+name: BestSub
+tags:
+  - 网络工具
+title: 高性能的节点检测与订阅转换服务
+description: ⚡ BestSub 是一个基于 Go 语言开发的高性能节点检测与订阅转换服务，支持现代 WebUI、API、节点池管理、内置 Subconverter、多样化检测与通知方式等功能。
+additionalProperties:
+  key: bestsub
+  name: BestSub
+  tags:
+    - Tool
+  shortDescZh: 高性能的节点检测与订阅转换服务
+  shortDescEn: High-performance node detection and subscription conversion service
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/bestruirui/BestSub
+  github: https://github.com/bestruirui/BestSub
+  document: https://github.com/bestruirui/BestSub#readme
+  description:
+    en: ⚡ BestSub is a high-performance node detection and subscription conversion service built with Go. It provides a modern Web UI and complete API, supports multiple detection methods, subscription format conversions, persistent node pools, extensible modules, and flexible notification and storage options.
+    zh: ⚡ BestSub 是一个高性能的节点检测与订阅转换服务，基于 Go 语言开发。它提供现代化的 Web 管理界面与完整的 API，支持多种检测方式、订阅格式转换、节点池持久化、模块化扩展，以及灵活的通知与存储方案。
+    zh-Hant: ⚡ BestSub 是一個高效能的節點檢測與訂閱轉換服務，基於 Go 語言開發。提供現代化的 Web 管理介面與完整的 API，支援多種檢測方式、訂閱格式轉換、節點池持久化、模組化擴展，以及靈活的通知與存儲方案。
+    ja: ⚡ BestSub は Go で開発された高性能ノード検出およびサブスクリプション変換サービスです。最新の Web 管理画面と完全な API を提供し、複数の検出方式、サブスクリプション形式変換、ノードプールの永続化、モジュール拡張、柔軟な通知と保存方法をサポートします。
+    ms: ⚡ BestSub ialah perkhidmatan pengesanan nod berprestasi tinggi dan penukaran langganan yang dibangunkan dengan Go. Ia menyediakan antara muka pengurusan Web moden dan API lengkap, menyokong pelbagai kaedah pengesanan, penukaran format langganan, kolam nod berterusan, modul boleh diperluas, serta pilihan notifikasi dan simpanan yang fleksibel.
+    pt-br: ⚡ BestSub é um serviço de detecção de nós e conversão de assinaturas de alto desempenho, desenvolvido em Go. Ele fornece uma interface Web moderna e API completa, suporta vários métodos de detecção, conversões de formato de assinatura, pool de nós persistente, módulos extensíveis e opções flexíveis de notificação e armazenamento.
+    ru: ⚡ BestSub — это высокопроизводительный сервис для проверки узлов и преобразования подписок, разработанный на Go. Он предоставляет современный веб-интерфейс и полный API, поддерживает различные методы проверки, преобразование форматов подписок, постоянные пулы узлов, модульные расширения, а также гибкие варианты уведомлений и хранения данных.
+    ko: ⚡ BestSub는 Go로 개발된 고성능 노드 감지 및 구독 변환 서비스입니다. 현대적인 웹 UI와 완전한 API를 제공하며, 다양한 감지 방식, 구독 형식 변환, 노드 풀 영속화, 모듈 확장, 유연한 알림 및 저장 옵션을 지원합니다.
+  architectures:
+    - amd64
+    - arm64

@@ -1,0 +1,170 @@
+additionalProperties:
+  formFields:
+    # HTTP 端口
+    - default: 32094
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        ja: HTTPポート
+        ms: Port HTTP
+        pt-br: Porta HTTP
+        ru: HTTP порт
+        ko: HTTP 포트
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+      required: true
+      rule: paramPort
+      type: number
+
+    # 管理员账号
+    - default: admin
+      envKey: MOONTV_ADMIN_USER
+      labelEn: Admin Username
+      labelZh: 管理员用户名
+      label:
+        en: Admin Username
+        ja: 管理者ユーザー名
+        ms: Nama Pengguna Admin
+        pt-br: Nome de Usuário Admin
+        ru: Имя пользователя администратора
+        ko: 관리자 사용자 이름
+        zh: 管理员用户名
+        zh-Hant: 管理員用戶名
+      required: true
+      type: text
+
+    # 管理员密码
+    - default: "password"
+      envKey: MOONTV_ADMIN_PASSWORD
+      labelEn: Admin Password
+      labelZh: 管理员密码
+      label:
+        en: Admin Password
+        ja: 管理者パスワード
+        ms: Kata Laluan Admin
+        pt-br: Senha do Administrador
+        ru: Пароль администратора
+        ko: 관리자 비밀번호
+        zh: 管理员密码
+        zh-Hant: 管理員密碼
+      required: true
+      random: true
+      type: password
+
+    # 是否开启注册
+    - default: 启用
+      envKey: MOONTV_ENABLE_REGISTER
+      required: true
+      type: select
+      label:
+        en: Enable Registration
+        ja: 登録を有効にする
+        ms: Dayakan Pendaftaran
+        pt-br: Habilitar Registro
+        ru: Включить регистрацию
+        ko: 회원가입 활성화
+        zh: 启用注册
+        zh-Hant: 啟用註冊
+      values:
+        - label: 启用
+          value: "true"
+        - label: 禁用
+          value: "false"
+
+    # 站点名称
+    - default: MoonTV
+      envKey: MOONTV_SITE_NAME
+      labelEn: Site Name
+      labelZh: 站点名称
+      label:
+        en: Site Name
+        ja: サイト名
+        ms: Nama Laman
+        pt-br: Nome do Site
+        ru: Название сайта
+        ko: 사이트 이름
+        zh: 站点名称
+        zh-Hant: 網站名稱
+      required: false
+      type: text
+
+    # 站点公告
+    - default: 本网站仅提供影视信息搜索服务，所有内容均来自第三方网站。本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责。
+      envKey: MOONTV_ANNOUNCEMENT
+      labelEn: Announcement
+      labelZh: 站点公告
+      label:
+        en: Announcement
+        ja: お知らせ
+        ms: Pengumuman
+        pt-br: Anúncio
+        ru: Объявление
+        ko: 공지사항
+        zh: 站点公告
+        zh-Hant: 網站公告
+      required: false
+      type: text
+
+    # 存储类型选择
+    - default: kvrocks
+      envKey: MOONTV_STORAGE_TYPE
+      labelEn: Storage Type
+      labelZh: 存储类型
+      label:
+        en: Storage Type
+        ja: ストレージタイプ
+        ms: Jenis Stor
+        pt-br: Tipo de Armazenamento
+        ru: Тип хранилища
+        ko: 저장소 유형
+        zh: 存储类型
+        zh-Hant: 儲存類型
+      required: true
+      type: select
+      values:
+        - label: kvrocks
+          value: kvrocks
+        - label: redis
+          value: redis
+
+    # Kvrocks URL（可选）
+    - default: ""
+      envKey: KVROCKS_CONNECT_URL
+      labelEn: Kvrocks URL
+      labelZh: Kvrocks 连接 URL
+      label:
+        en: Kvrocks URL
+        ja: Kvrocks 接続 URL
+        ms: Kvrocks URL Sambungan
+        pt-br: URL Kvrocks
+        ru: URL подключения Kvrocks
+        ko: Kvrocks URL
+        zh: Kvrocks 连接 URL
+        zh-Hant: Kvrocks 連接 URL
+      required: false
+      type: text
+      dependsOn:
+        envKey: MOONTV_STORAGE_TYPE
+        value: kvrocks
+
+    # Redis URL（可选）
+    - default: ""
+      envKey: REDIS_CONNECT_URL
+      labelEn: Redis URL
+      labelZh: Redis 连接 URL
+      label:
+        en: Redis URL
+        ja: Redis 接続 URL
+        ms: Redis URL Sambungan
+        pt-br: URL Redis
+        ru: URL подключения Redis
+        ko: Redis URL
+        zh: Redis 连接 URL
+        zh-Hant: Redis 連接 URL
+      required: false
+      type: text
+      dependsOn:
+        envKey: MOONTV_STORAGE_TYPE
+        value: redis
