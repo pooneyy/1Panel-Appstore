@@ -2,7 +2,9 @@ name: "⏰应用有新版本了！ / App has a new version!"
 description: "当前应用商店中的应用有新版本，才可填此表单。 / Fill in this form only if the app in the appstore has a new version."
 title: "[需要更新应用] 哪个应用需要更新？ / Which app needs an update?"
 labels:
-  - Update Needed
+  - Update
+Assignees: 
+  - pooneyy
 body:
   - type: markdown
     attributes:

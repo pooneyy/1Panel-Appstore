@@ -3,14 +3,8 @@ name: Build Docker image
 on:
   workflow_dispatch:
     inputs:
-      github-server-url:
-        description: 'GitHub Server URL'
-        required: false
-        type: string
-        default: 'https://github.com'
-
       repo:
-        description: '仓库名称'
+        description: '仓库地址'
         required: true
         type: string
 
@@ -30,42 +24,164 @@ on:
         default: 'latest'
         type: string
 
+      build_target:
+        description: '构建目标'
+        required: false
+        type: string
+
+      architectures:
+        description: '构建架构'
+        required: false
+        type: string
+        default: "linux/amd64, linux/arm64, linux/arm/v7"
+
+      dockerfile:
+        description: 'Dockerfile 在仓库中的路径'
+        required: false
+        type: string
+        default: 'Dockerfile'
+
 permissions:
   contents: read
   packages: write
+  id-token: write
+  attestations: write
 
 jobs:
   publish-docker:
+    name: Build and publish
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-        with:
-          repository: ${{ github.event.inputs.repo }}
-          ref: ${{ github.event.inputs.ref }}
-          fetch-tags: true
-          github-server-url: ${{ github.event.inputs.github-server-url }}
+        env:
+          REPO_URL: ${{ github.event.inputs.repo }}
+          TARGET_REF: ${{ github.event.inputs.ref }}
+        run: |
+          git clone $REPO_URL .
+          git fetch --tags
+          git checkout $TARGET_REF
 
-      - name: GET lowercase repository owner
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+      - name: Get license
+        run: |
+          gem install licensee
+          license_result=$(licensee detect --json | jq -r '.licenses[0].spdx_id' 2>&1)
+          status=$?
+          if [ $status -eq 0 ]; then
+              if [ "$license_result" = "null" ] || [ -z "$license_result" ]; then
+                  echo "LICENSES=none" >> "$GITHUB_ENV"
+              else
+                  echo "LICENSES=$license_result" >> "$GITHUB_ENV"
+              fi
+          else
+              echo "LICENSES=none" >> "$GITHUB_ENV"
+          fi
+
+      - name: Confirm current version
+        run: |
+          git describe --tags --always
+
+      - name: Get lowercase repository owner
         id: lowercase
-        run: echo "owner=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_OUTPUT"
+        run: echo "OWNER=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_ENV"
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ steps.lowercase.outputs.owner }}
+          username: ${{ env.OWNER }}
           password: ${{ github.token }}
+
+      - name: Set env
+        run: |
+          echo "IMAGE_FULL_NAME=ghcr.io/${{ env.OWNER }}/${{ github.event.inputs.image_name }}" >> $GITHUB_ENV
+          echo "IMAGE_NAME=${{ github.event.inputs.image_name }}" >> $GITHUB_ENV
+          echo "IMAGE_TAG=${{ github.event.inputs.image_tag }}" >> $GITHUB_ENV
+          echo "IMAGE_DESCRIPTION=Built by GitHub Actions, the associated workflow is https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_ENV
+
+      - name: Extract metadata (tags, labels) for image registry
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.IMAGE_FULL_NAME }}
+          annotations: |
+            org.opencontainers.image.description=${{ env.IMAGE_DESCRIPTION }}
+            org.opencontainers.image.url=${{ github.event.inputs.repo }}
+            org.opencontainers.image.source=${{ github.event.inputs.repo }}
+            org.opencontainers.image.title=${{ env.IMAGE_NAME }}
+            org.opencontainers.image.version=${{ env.IMAGE_TAG }}
+            ${{ env.LICENSES != 'none' && format('org.opencontainers.image.licenses={0}', env.LICENSES) || '' }}
+          labels: |
+            org.opencontainers.image.description=${{ env.IMAGE_DESCRIPTION }}
+            org.opencontainers.image.url=${{ github.event.inputs.repo }}
+            org.opencontainers.image.source=${{ github.event.inputs.repo }}
+            org.opencontainers.image.title=${{ env.IMAGE_NAME }}
+            org.opencontainers.image.version=${{ env.IMAGE_TAG }}
+            ${{ env.LICENSES != 'none' && format('org.opencontainers.image.licenses={0}', env.LICENSES) || '' }}
+        env:
+          DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Build and push
-        uses: docker/build-push-action@v5
+        id: push
+        uses: docker/build-push-action@v6
         with:
           context: .
+          target: ${{ github.event.inputs.build_target }}
           push: true
-          tags: ghcr.io/${{ steps.lowercase.outputs.owner }}/${{ github.event.inputs.image_name }}:${{ github.event.inputs.image_tag }}
-          platforms: linux/amd64, linux/arm64, linux/arm/v7
+          file: ${{ github.event.inputs.dockerfile }}
+          tags: |
+            ${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }}
+            ${{ github.event.inputs.image_tag != 'latest' && format('{0}:latest', env.IMAGE_FULL_NAME) || '' }}
+          annotations: ${{ steps.meta.outputs.annotations }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          platforms: ${{ github.event.inputs.architectures }}
+
+      - name: Calculate image size
+        run: |
+          docker manifest inspect ${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }} -v > manifest.json
+          curl -o ./get_image_size.sh -s https://raw.githubusercontent.com/${{ github.repository }}/refs/heads/script/get_image_size.sh
+          chmod +x get_image_size.sh
+
+      - name: Add a summary for the job
+        run: |
+          arch_array=($(echo ${{ github.event.inputs.architectures }} | tr -d '"' | tr ',' '\n' | tr -d ' '))
+          echo "## Build Report" >> $GITHUB_STEP_SUMMARY
+          echo "### Get the image" >> $GITHUB_STEP_SUMMARY
+          echo "<pre lang="bash"><code>" >> $GITHUB_STEP_SUMMARY
+          echo "docker pull ${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }}" >> $GITHUB_STEP_SUMMARY
+          echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Image Url: https://github.com/${{ github.repository }}/pkgs/container/${{ env.IMAGE_NAME }}" >> $GITHUB_STEP_SUMMARY
+          echo "### Image info" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Repository | Reference / Branch / Tag | Push Time |" >> $GITHUB_STEP_SUMMARY
+          echo "|:-:|:-:|:-:|" >> $GITHUB_STEP_SUMMARY
+          echo "| ${{ github.event.inputs.repo }} | [$(git log --pretty=format:"%h" -n 1)](${{ github.event.inputs.repo }}/tree/$(git log --pretty=format:"%H" -n 1)) |$(git log --pretty=format:"%ci" -n 1)|" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Architecture | Image Size |" >> $GITHUB_STEP_SUMMARY
+          echo "|:-:|:-:|" >> $GITHUB_STEP_SUMMARY
+          for arch in "${arch_array[@]}"; do
+            echo "| $arch | $(./get_image_size.sh --arch $arch) |" >> $GITHUB_STEP_SUMMARY
+          done
+          echo "### Verify the image" >> $GITHUB_STEP_SUMMARY
+          echo "You can use github cli to verify the image, run the command:" >> $GITHUB_STEP_SUMMARY
+          echo "<pre lang="bash"><code>" >> $GITHUB_STEP_SUMMARY
+          echo "gh attestation verify oci://${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }} -R ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
+
+      - name: Generate artifact attestation
+        uses: actions/attest-build-provenance@v3
+        with:
+          subject-name: ${{ env.IMAGE_FULL_NAME }}
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true
