@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/prowlarr"
+    - default: "./data"
       edit: true
       envKey: PROWLARR_ROOT_PATH
       labelZh: 数据持久化路径

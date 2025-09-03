@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/uptime-kuma"
+    - default: "./data"
       edit: true
       envKey: UPTIME_KUMA_ROOT_PATH
       labelZh: 数据持久化路径

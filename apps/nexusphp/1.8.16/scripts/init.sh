@@ -3,14 +3,6 @@
 if [ -f .env ]; then
   source .env
 
-  # setup-1 add default values
-  CURRENT_DIR=$(pwd)
-  sed -i '/^ENV_FILE=/d' .env
-  sed -i '/^GLOBAL_ENV_FILE=/d' .env
-  echo "ENV_FILE=${CURRENT_DIR}/.env" >> .env
-  echo "GLOBAL_ENV_FILE=${CURRENT_DIR}/envs/global.env" >> .env
-
-  # setup-2 download geoip2
   GEOIP_DIR="$NEXUSPHP_ROOT_PATH/geoip2"
   mkdir -p "$GEOIP_DIR"
 
@@ -21,7 +13,6 @@ if [ -f .env ]; then
     echo "Error: Failed to download GeoIP2 database."
   fi
 
-  # setup-3 copy env file
   CONFIG_DIR="$NEXUSPHP_ROOT_PATH/config"
   mkdir -p "$CONFIG_DIR"
 

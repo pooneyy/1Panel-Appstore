@@ -9,14 +9,12 @@ services:
     labels:
       createdBy: "Apps"
     restart: always
-    network_mode: ${NETWORK_MODE}
+    networks:
+      - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:34567
       - ${PANEL_APP_PORT_NGINX_HTTP}:80
       - ${PANEL_APP_PORT_NGINX_HTTPS}:443
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/resolv.conf:/etc/resolv.conf:ro

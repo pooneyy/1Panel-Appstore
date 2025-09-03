@@ -28,7 +28,7 @@ additionalProperties:
       values:
         - label: Redis
           value: redis
-    - default: "/home/weblate"
+    - default: "./data"
       edit: true
       envKey: WEBLATE_ROOT_PATH
       labelZh: 数据持久化路径

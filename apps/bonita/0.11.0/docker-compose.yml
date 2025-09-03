@@ -13,9 +13,6 @@ services:
       - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:12346
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${BONITA_ROOT_PATH}/data:/app/backend/data
       - ${BONITA_ROOT_PATH}/media:/media
@@ -23,3 +20,6 @@ services:
       - PUID=0
       - PGID=0
       - TZ=Asia/Shanghai
+      - FIRST_SUPERUSER_EMAIL=${FIRST_SUPERUSER_EMAIL}
+      - FIRST_SUPERUSER_PASSWORD=${FIRST_SUPERUSER_PASSWORD}
+      - MAX_CONCURRENCY=${MAX_CONCURRENCY}

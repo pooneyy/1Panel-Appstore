@@ -15,13 +15,9 @@ services:
       - ${PANEL_APP_PORT_ADMIN}:8080
       - ${PANEL_APP_PORT_HTTP}:80
       - ${PANEL_APP_PORT_HTTPS}:443
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${DPANEL_ROOT_PATH}/data:/dpanel
       - ${DPANEL_ROOT_PATH}/compose:/dpanel/compose
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - APP_NAME=${CONTAINER_NAME}
-      - HTTPS_PROXY=${HTTP_PROXY}

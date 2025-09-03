@@ -1,32 +1,31 @@
-networks:
-  1panel-network:
-    external: true
-
 services:
   transmission:
-    image: linuxserver/transmission:4.0.6
     container_name: ${CONTAINER_NAME}
-    labels:
-      createdBy: "Apps"
     restart: always
-    network_mode: ${NETWORK_MODE}
+    networks:
+      - 1panel-network
     ports:
-      - ${PANEL_APP_PORT_HTTP}:9091
-      - ${PANEL_APP_PORT_TORRENTING}
-      - ${PANEL_APP_PORT_TORRENTING}/udp
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
+      - "${PANEL_APP_PORT_HTTP}:9091"
+      - "${PEER_PORT_VALUE}:${PEER_PORT_VALUE}"
+      - "${PEER_PORT_VALUE}:${PEER_PORT_VALUE}/udp"
     volumes:
-      - ${TRANSMISSION_ROOT_PATH}/themes:/themes
-      - ${TRANSMISSION_ROOT_PATH}/config:/config
-      - ${TRANSMISSION_ROOT_PATH}/downloads:/downloads
-      - ${TRANSMISSION_ROOT_PATH}/watch:/watch
-      - ${CUSTOM_MOUNT_DIRECTORY_1:-./default_mount_1}:${CUSTOM_MOUNT_DIRECTORY_1:-/default_mount_1}
-      - ${CUSTOM_MOUNT_DIRECTORY_2:-./default_mount_2}:${CUSTOM_MOUNT_DIRECTORY_2:-/default_mount_2}
-      - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
+      - "./data/config:/config"
+      - "${DOWNLOAD_PATH}:/downloads"
+      - "${WATCH_PATH}:/watch"
     environment:
       - PUID=1000
       - PGID=1000
-      - PEERPORT= ${PANEL_APP_PORT_TORRENTING}
       - TZ=Asia/Shanghai
+      - TRANSMISSION_WEB_HOME= #optional
+      - USER=${WEBUI_USER}
+      - PASS=${WEBUI_PWD}
+      - WHITELIST= #optional
+      - PEERPORT=${PEER_PORT_VALUE}
+      - HOST_WHITELIST= #optional
+    image: linuxserver/transmission:4.0.6
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true

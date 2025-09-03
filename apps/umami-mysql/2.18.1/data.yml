@@ -19,7 +19,7 @@ additionalProperties:
           value: mariadb
         - label: Percona
           value: percona
-    - default: "/home/umami"
+    - default: "./data"
       edit: true
       envKey: UMAMI_ROOT_PATH
       labelZh: 数据持久化路径

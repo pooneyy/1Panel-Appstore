@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/watchyourlan"
+    - default: "./data"
       edit: true
       envKey: WATCHYOURLAN_ROOT_PATH
       labelZh: 数据持久化路径

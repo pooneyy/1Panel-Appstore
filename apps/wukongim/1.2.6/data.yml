@@ -1,47 +1,49 @@
 additionalProperties:
   formFields:
-    - default: "/home/wukongim"
+    - default: ""
       edit: true
-      envKey: WUKONGIM_ROOT_PATH
-      labelZh: 数据持久化路径
-      labelEn: Data persistence path
+      envKey: EXTERNAL_IP
+      labelEn: ipAddress
+      labelZh: 外部访问 IP
       required: true
       type: text
-    - default: 5300
+    - default: "5001"
       edit: true
-      envKey: PANEL_APP_PORT_HTTP
-      labelZh: WebUI 端口
-      labelEn: WebUI port
+      envKey: PANEL_APP_PORT_WK_API
+      labelEn: WuKongIM api port
+      labelZh: 悟空 IM api 端口
       required: true
       rule: paramPort
       type: number
-    - default: 5001
-      envKey: PANEL_APP_PORT_WK_API
-      labelZh: API 端口
-      labelEn: API port
-      required: true
-      type: number
-    - default: 5100
+    - default: "5100"
+      edit: true
       envKey: PANEL_APP_PORT_WK_TCP
-      labelZh: TCP端口
-      labelEn: Tcp port
+      labelEn: WuKongIM tcp port
+      labelZh: 悟空 IM TCP 端口
       required: true
+      rule: paramPort
       type: number
-    - default: 5200
+    - default: "5200"
+      edit: true
       envKey: PANEL_APP_PORT_WK_WS
-      labelZh: WebSocket 端口
-      labelEn: WebSocket port
+      labelEn: WuKongIM ws port
+      labelZh: 悟空 IM WS 端口
       required: true
+      rule: paramPort
       type: number
-    - default: 5172
+    - default: "5300"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: WuKongIM web port
+      labelZh: 悟空 IM 监控端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "5172"
+      edit: true
       envKey: PANEL_APP_PORT_WK_DEMO_SERVER
-      labelZh: 悟空IM演示端口
       labelEn: WuKongIM demo port
+      labelZh: 悟空 IM demo 端口
       required: true
+      rule: paramPort
       type: number
-    - default: "127.0.0.1"
-      envKey: WK_EXTERNAL_IP
-      labelZh: 服务器IP
-      labelEn: Server IP
-      required: true
-      type: text

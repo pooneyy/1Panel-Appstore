@@ -20,7 +20,7 @@ additionalProperties:
           value: mariadb
         - label: Percona
           value: percona
-    - default: "/home/halo"
+    - default: "./data"
       edit: true
       envKey: HALO_ROOT_PATH
       labelZh: 数据持久化路径

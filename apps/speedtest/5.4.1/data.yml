@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/speedtest"
+    - default: "./data"
       edit: true
       envKey: SPEED_TEST_ROOT_PATH
       labelZh: 数据持久化路径

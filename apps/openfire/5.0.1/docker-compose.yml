@@ -1,0 +1,21 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  openfire:
+    image: ghcr.io/igniterealtime/openfire:v5.0.1
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:9090
+      - ${PANEL_APP_PORT_WSS}:9091
+      - ${PANEL_APP_PORT_SERVER}:5222
+      - ${PANEL_APP_PORT_MESSAGE}:7777
+    volumes:
+      - ${OPENFIRE_ROOT_PATH}/data:/var/lib/openfire
+      - ${OPENFIRE_ROOT_PATH}/logs:/var/log/openfire

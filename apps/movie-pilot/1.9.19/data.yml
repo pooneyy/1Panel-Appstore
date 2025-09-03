@@ -1,9 +1,16 @@
 additionalProperties:
   formFields:
-    - default: "/home/movie-pilot"
+    - default: "./data"
       edit: true
       envKey: MOVIEPILOT_ROOT_PATH
       labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      required: true
+      type: text
+    - default: "./downloads"
+      edit: true
+      envKey: MOVIEPILOT_DOWNLOADS_PATH
+      labelZh: 文件下载路径
       labelEn: Data persistence path
       required: true
       type: text
@@ -73,27 +80,6 @@ additionalProperties:
           value: "dev"
         - label: 关闭
           value: "false"
-    - default: ""
-      edit: true
-      envKey: CUSTOM_MOUNT_DIRECTORY_1
-      labelEn: Custom mount directory 1
-      labelZh: 自定义挂载目录 1
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: CUSTOM_MOUNT_DIRECTORY_2
-      labelEn: Custom mount directory 2
-      labelZh: 自定义挂载目录 2
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: CUSTOM_MOUNT_DIRECTORY_3
-      labelEn: Custom mount directory 3
-      labelZh: 自定义挂载目录 3
-      required: false
-      type: text
     - default: ""
       edit: true
       envKey: IYUU_SIGN

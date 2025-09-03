@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/immich-machine-learning"
+    - default: "./data"
       edit: true
       envKey: IMMICH_ROOT_PATH
       labelZh: 数据持久化路径

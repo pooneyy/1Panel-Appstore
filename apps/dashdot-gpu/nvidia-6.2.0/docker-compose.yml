@@ -1,0 +1,37 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  dashdot:
+    image: mauricenino/dashdot:nvidia-6.2.0
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    privileged: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities:
+                - gpu
+    devices:
+      - /dev/dri:/dev/dri
+      # - /dev/kfd:/dev/kfd
+      # - /dev/nvidia0:/dev/nvidia0
+      # - /dev/nvidiactl:/dev/nvidiactl
+      # - /dev/nvidia-modeset:/dev/nvidia-modeset
+      # - /dev/nvidia-nvswitchctl:/dev/nvidia-nvswitchctl
+      # - /dev/nvidia-uvm:/dev/nvidia-uvm
+      # - /dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools
+      # - /dev/video11:/dev/video11
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3001
+    volumes:
+      - /:/mnt/host:ro
+    environment:
+      - DASHDOT_WIDGET_LIST=os,cpu,storage,ram,network,gpu
+      - DASHDOT_ENABLE_CPU_TEMPS=${DASHDOT_ENABLE_CPU_TEMPS}

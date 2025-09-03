@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/garage"
+    - default: "/data"
       edit: true
       envKey: GARAGE_ROOT_PATH
       labelZh: 数据持久化路径

@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/reader3"
+    - default: "./data"
       edit: true
       envKey: READER3_ROOT_PATH
       labelZh: 数据持久化路径

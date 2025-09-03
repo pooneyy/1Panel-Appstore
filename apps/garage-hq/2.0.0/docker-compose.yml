@@ -16,9 +16,6 @@ services:
       - ${PANEL_APP_PORT_RPC}:3901
       - ${PANEL_APP_PORT_HTTP}:3902
       - ${PANEL_APP_PORT_API}:3903
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${GARAGE_ROOT_PATH}/config/garage.toml:/etc/garage.toml
       - ${GARAGE_ROOT_PATH}/meta:/var/lib/garage/meta

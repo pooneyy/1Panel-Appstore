@@ -13,12 +13,16 @@ services:
       - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:8117
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${JPROXY_ROOT_PATH}/data:/app/database
     environment:
       - PUID=0
       - PGID=0
       - TZ=Asia/Shanghai
+      - JAVA_OPTS=${JAVA_OPTS}
+      - CACHE_EXPIRES=${CACHE_EXPIRES}
+      - TOKEN_EXPIRES=${TOKEN_EXPIRES}
+      - SYNC_INTERVAL=${SYNC_INTERVAL}
+      - RENAME_FILE=${RENAME_FILE}
+      - MIN_COUNT=${MIN_COUNT}
+      - INDEXER_RESULT_CACHE_EXPIRES=${INDEXER_RESULT_CACHE_EXPIRES}

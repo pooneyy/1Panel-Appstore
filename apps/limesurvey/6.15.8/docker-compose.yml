@@ -1,0 +1,30 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  limesurvey:
+    image: martialblog/limesurvey:6.15.8-250825-apache
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8080
+    volumes:
+      - ${LIMESURVEY_ROOT_PATH}/surveys:/var/www/html/upload/surveys
+    environment:
+      - LISTEN_PORT=8080
+      - PUBLIC_URL=foobar.com
+      - ADMIN_USER=${ADMIN_USER}
+      - ADMIN_NAME=${ADMIN_NAME}
+      - ADMIN_EMAIL=${ADMIN_EMAIL}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - DB_TYPE=${DB_TYPE}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_NAME=${DB_NAME}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}

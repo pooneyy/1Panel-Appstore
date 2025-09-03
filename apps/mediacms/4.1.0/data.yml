@@ -28,7 +28,7 @@ additionalProperties:
       values:
         - label: Redis
           value: redis
-    - default: "/home/mediacms"
+    - default: "./data"
       edit: true
       envKey: MEDIACMS_ROOT_PATH
       labelZh: 数据持久化路径

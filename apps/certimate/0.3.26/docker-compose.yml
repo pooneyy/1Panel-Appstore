@@ -8,9 +8,15 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:8090"
     volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/etc/timezone:/etc/timezone:ro"
       - "${DATA_PATH}:/app/pb_data"
     labels:
       createdBy: "Apps"
+    environment:
+      - http_proxy=${PANEL_HTTP_PROXY}
+      - https_proxy=${PANEL_HTTPS_PROXY}
+      - NO_PROXY=${PANEL_NO_PROXY}
 
 networks:
   1panel-network:

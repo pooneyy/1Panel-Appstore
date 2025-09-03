@@ -9,7 +9,8 @@ services:
     labels:
       createdBy: "Apps"
     restart: always
-    network_mode: ${NETWORK_MODE:-host}
+    networks:
+      - 1panel-network
     tty: true
     stdin_open: true
     ulimits:
@@ -18,9 +19,6 @@ services:
         hard: 524288
     ports:
       - ${PANEL_APP_PORT_HTTP:-8080}:${PANEL_APP_PORT_HTTP:-8080}
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${AMMDS_ROOT_PATH}/data:/ammds/data
       - ${AMMDS_ROOT_PATH}/db:/ammds/db
@@ -32,3 +30,11 @@ services:
       - TZ=Asia/Shanghai
       - NGINX_PORT=${PANEL_APP_PORT_HTTP:-8080}
       - AMMDS_SERVER_PORT=${PANEL_APP_PORT_API:-9523}
+      - AMMDS_METATUBE_URL=${AMMDS_METATUBE_URL}
+      - AMMDS_METATUBE_TOKEN=${AMMDS_METATUBE_TOKEN}
+      - AMMDS_PROWLARR_URL=${AMMDS_PROWLARR_URL}
+      - AMMDS_PROWLARR_TOKEN=${AMMDS_PROWLARR_TOKEN}
+      - AMMDS_IYUU_TOKEN=${AMMDS_IYUU_TOKEN}
+      - AMMDS_QBITTORRENT_URL=${AMMDS_QBITTORRENT_URL}
+      - AMMDS_QBITTORRENT_USERNAME=${AMMDS_QBITTORRENT_USERNAME}
+      - AMMDS_QBITTORRENT_PASSWORD=${AMMDS_QBITTORRENT_PASSWORD}

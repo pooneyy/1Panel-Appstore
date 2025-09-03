@@ -14,7 +14,7 @@ additionalProperties:
       values:
         - label: Redis
           value: redis
-    - default: "/home/immich-app"
+    - default: "./data"
       edit: true
       envKey: IMMICH_ROOT_PATH
       labelZh: 数据持久化路径

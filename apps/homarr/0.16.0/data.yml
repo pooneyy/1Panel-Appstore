@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/homarr"
+    - default: "./data"
       edit: true
       envKey: HOMARR_ROOT_PATH
       labelZh: 数据持久化路径

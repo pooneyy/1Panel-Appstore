@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/nexus3"
+    - default: "./data"
       edit: true
       envKey: NEXUS3_ROOT_PATH
       labelZh: 数据持久化路径

@@ -21,29 +21,13 @@ additionalProperties:
           value: mariadb
         - label: Percona
           value: percona
-    - default: "/home/speedtest-tracker"
+    - default: "./data"
       edit: true
       envKey: SPEEDTEST_TRACKER_ROOT_PATH
       labelEn: Data persistence root path
       labelZh: 数据持久化 根路径
       required: true
       type: text
-    - default: "host"
-      edit: true
-      envKey: NETWORK_MODE
-      labelEn: Drive path
-      labelZh: 网络模式
-      required: true
-      type: select
-      values:
-        - label: 主机网络模式
-          value: "host"
-        - label: 桥接网络模式
-          value: "bridge"
-        - label: 无网络模式
-          value: "none"
-        - label: 1panel-network
-          value: "1panel-network"
     - default: 8080
       edit: true
       envKey: PANEL_APP_PORT_HTTP
@@ -52,11 +36,11 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: "base64:f0Ivk1nHd3QwXtR55WKC4fcc7QjrxxTnkiB02ipdl60="
+    - default: ""
       edit: true
       envKey: APP_KEY
-      labelZh: 应用密钥 (官网获取)
-      labelEn: App key (Get from official website)
+      labelZh: 应用密钥
+      labelEn: App key
       required: true
       type: text
     - default: "SpeedTest Tracker"

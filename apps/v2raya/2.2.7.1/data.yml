@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/v2raya"
+    - default: "./data"
       edit: true
       envKey: V2RAYA_ROOT_PATH
       labelZh: 数据持久化路径

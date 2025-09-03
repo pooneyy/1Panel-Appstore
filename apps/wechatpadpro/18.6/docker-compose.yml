@@ -14,9 +14,6 @@ services:
     ports:
       - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
       - ${PANEL_APP_PORT_WECHAT}:${PANEL_APP_PORT_WECHAT}
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${WECHATPADPRO_ROOT_PATH}/.env:/app/.env
       - ${WECHATPADPRO_ROOT_PATH}/config:/app/config

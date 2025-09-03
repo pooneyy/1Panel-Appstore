@@ -3,21 +3,12 @@
 if [ -f .env ]; then
   source .env
 
-  # setup-1 add default values
-  CURRENT_DIR=$(pwd)
-  sed -i '/^ENV_FILE=/d' .env
-  sed -i '/^GLOBAL_ENV_FILE=/d' .env
-  echo "ENV_FILE=${CURRENT_DIR}/.env" >> .env
-  echo "GLOBAL_ENV_FILE=${CURRENT_DIR}/envs/global.env" >> .env
-
-  # setup-2 update dir permissions
   mkdir -p "$NODEBB_ROOT_PATH"
   mkdir -p "$NODEBB_ROOT_PATH/node_modules"
   mkdir -p "$NODEBB_ROOT_PATH/build"
   mkdir -p "$NODEBB_ROOT_PATH/uploads"
   mkdir -p "$NODEBB_ROOT_PATH/config"
 
-  # setup-3 初始化参数配置
   if [ -z "$NODEBB_DB_NAME" ]; then
     NODEBB_DB_NAME="nodebb"
   fi
@@ -42,7 +33,6 @@ if [ -f .env ]; then
   " "$SETUP_JSON_PATH"
 
 
-  # setup-4 update dir permissions
   chown -R 1001:1001 "$NODEBB_ROOT_PATH"
   chown -R 1001:1001 "$NODEBB_ROOT_PATH/node_modules"
   chown -R 1001:1001 "$NODEBB_ROOT_PATH/build"

@@ -1,22 +1,17 @@
 additionalProperties:
   formFields:
-    - default: 3001
+    - default: 40094
       edit: true
       envKey: PANEL_APP_PORT_HTTP
-      labelZh: WebUI 端口
-      labelEn: WebUI port
+      labelEn: Port
+      labelZh: 端口
       required: true
       rule: paramPort
       type: number
-    - default: "true"
+    - default: /mnt
       edit: true
-      envKey: DASHDOT_ENABLE_CPU_TEMPS
-      labelZh: 启用 CPU 温度
-      labelEn: Enable CPU temps
+      envKey: DATA_PATH
+      labelEn: The drive for which you need to view statistics
+      labelZh: 需要查看统计信息的驱动器
       required: true
-      type: select
-      values:
-        - label: 启用
-          value: "true"
-        - label: 禁用
-          value: "false"
+      type: text

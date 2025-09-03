@@ -14,7 +14,7 @@ additionalProperties:
       values:
         - label: PostgreSQL
           value: postgresql
-    - default: "/home/metatube"
+    - default: "./data"
       edit: true
       envKey: METATUBE_ROOT_PATH
       labelZh: 数据持久化路径

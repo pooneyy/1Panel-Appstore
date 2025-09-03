@@ -13,5 +13,3 @@ services:
       - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:8050
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
