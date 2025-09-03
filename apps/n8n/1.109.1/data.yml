@@ -14,7 +14,7 @@ additionalProperties:
       values:
         - label: PostgreSQL
           value: postgresql
-    - default: "/home/n8n"
+    - default: "./data"
       edit: true
       envKey: N8N_ROOT_PATH
       labelZh: 数据持久化路径

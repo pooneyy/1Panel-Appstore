@@ -14,7 +14,7 @@ additionalProperties:
       values:
         - label: PostgreSQL
           value: postgresql
-    - default: "/home/readeck"
+    - default: "./data"
       edit: true
       envKey: READECK_ROOT_PATH
       labelZh: 数据持久化路径

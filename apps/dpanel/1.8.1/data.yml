@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/dpanel"
+    - default: "./data"
       edit: true
       envKey: DPANEL_ROOT_PATH
       labelZh: 数据持久化路径
@@ -31,24 +31,3 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: "admin"
-      edit: true
-      envKey: INSTALL_USERNAME
-      labelZh: 管理员 用户名
-      labelEn: Admin Username
-      required: true
-      type: text
-    - default: "admin"
-      edit: true
-      envKey: INSTALL_PASSWORD
-      labelZh: 管理员 密码
-      labelEn: Admin Password
-      required: true
-      type: text
-    - default: ""
-      edit: true
-      envKey: HTTP_PROXY
-      labelZh: 网络代理
-      labelEn: Network Proxy
-      required: false
-      type: text

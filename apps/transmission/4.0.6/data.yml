@@ -1,97 +1,48 @@
 additionalProperties:
   formFields:
-    - default: "host"
-      edit: true
-      envKey: NETWORK_MODE
-      labelZh: 网络模式
-      labelEn: Network Mode
-      required: true
-      type: select
-      values:
-        - label: 主机网络模式
-          value: "host"
-        - label: 桥接网络模式
-          value: "bridge"
-        - label: 无网络模式
-          value: "none"
-        - label: 1panel-network
-          value: "1panel-network"
-    - default: 9091
+    - default: 40154
       edit: true
       envKey: PANEL_APP_PORT_HTTP
-      labelZh: WebUI 端口
       labelEn: WebUI Port
+      labelZh: 网页端口
       required: true
       rule: paramPort
       type: number
-    - default: 51413
+    - default: 40152
       edit: true
-      envKey: PANEL_APP_PORT_TORRENTING
-      labelZh: Torrenting 端口
-      labelEn: Torrenting Port
+      envKey: PEER_PORT_VALUE
+      labelEn: Peer Port
+      labelZh: BT端口
       required: true
       rule: paramPort
       type: number
-    - default: "/home/transmission"
+    - default: ./data/watch
       edit: true
-      envKey: TRANSMISSION_ROOT_PATH
-      labelZh: 数据持久化路径
-      labelEn: Data persistence path
+      envKey: WATCH_PATH
+      labelEn: Watch folder for torrent files
+      labelZh: 监视种子文件的文件夹
       required: true
       type: text
-    - default: "admin"
+    - default: ./data/downloads
       edit: true
-      envKey: USER
-      labelZh: 用户名
-      labelEn: User
+      envKey: DOWNLOAD_PATH
+      labelEn: Download folder path
+      labelZh: 下载文件夹路径
       required: true
       type: text
     - default: ""
       edit: true
-      envKey: PASS
-      labelZh: 密码
-      labelEn: Password
-      required: true
+      envKey: WEBUI_USER
+      labelEn: Webui user
+      labelZh: 网页用户
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WEBUI_PWD
+      labelEn: Webui password
+      labelZh: 网页密码
+      random: false
+      required: false
+      rule: paramComplexity
       type: password
-    - default: ""
-      edit: true
-      envKey: TRANSMISSION_WEB_HOME
-      labelZh: 第三方 UI 文件夹
-      labelEn: Third-party UI folder
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: WHITELIST
-      labelZh: IP 白名单
-      labelEn: Whitelist
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: HOST_WHITELIST
-      labelZh: 主机白名单
-      labelEn: Host Whitelist
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: CUSTOM_MOUNT_DIRECTORY_1
-      labelEn: Custom mount directory 1
-      labelZh: 自定义挂载目录 1
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: CUSTOM_MOUNT_DIRECTORY_2
-      labelEn: Custom mount directory 2
-      labelZh: 自定义挂载目录 2
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: CUSTOM_MOUNT_DIRECTORY_3
-      labelEn: Custom mount directory 3
-      labelZh: 自定义挂载目录 3
-      required: false
-      type: text

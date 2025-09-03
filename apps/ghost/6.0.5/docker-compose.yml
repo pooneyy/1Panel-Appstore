@@ -13,9 +13,6 @@ services:
       - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:2368
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${GHOST_ROOT_PATH}/data:/var/lib/ghost/content
     environment:
@@ -25,3 +22,9 @@ services:
       - database__client=mysql
       - mail__options__service=Email
       - mail__options__secure=true
+      - url=${url}
+      - admin__url=${admin__url}
+      - database__connection__host=${database__connection__host}
+      - database__connection__user=${database__connection__user}
+      - database__connection__password=${database__connection__password}
+      - database__connection__database=${database__connection__database}

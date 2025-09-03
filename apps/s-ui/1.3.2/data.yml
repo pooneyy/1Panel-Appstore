@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/s-ui"
+    - default: "./data"
       edit: true
       envKey: S_UI_ROOT_PATH
       labelZh: 数据持久化路径

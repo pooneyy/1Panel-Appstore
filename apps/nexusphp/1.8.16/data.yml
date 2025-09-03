@@ -1,27 +1,27 @@
 additionalProperties:
   formFields:
-    - default: "/home/nexusphp"
+    - default: "./data"
       edit: true
       envKey: NEXUSPHP_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
       required: true
       type: text
-    - default: "/home/nexusphp"
+    - default: "./torrents"
       edit: true
       envKey: NEXUSPHP_TORRENTS_ROOT_PATH
       labelZh: 种子目录
       labelEn: Torrent persistence path
       required: true
       type: text
-    - default: "/home/nexusphp"
+    - default: "./bitbucket"
       edit: true
       envKey: NEXUSPHP_BITBUCKET_ROOT_PATH
       labelZh: 上传器目录
       labelEn: Uploader persistence path
       required: true
       type: text
-    - default: "/home/nexusphp"
+    - default: "./attachments"
       edit: true
       envKey: NEXUSPHP_ATTACHMENTS_ROOT_PATH
       labelZh: 附件目录

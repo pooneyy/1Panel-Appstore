@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/tissue"
+    - default: "./data"
       edit: true
       envKey: TISSUE_ROOT_PATH
       labelZh: 数据持久化路径

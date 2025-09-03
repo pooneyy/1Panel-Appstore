@@ -19,23 +19,7 @@ additionalProperties:
           value: mariadb
         - label: Percona
           value: percona
-    - default: "1panel-network"
-      edit: true
-      envKey: NETWORK_MODE
-      labelEn: Drive path
-      labelZh: 网络模式
-      required: true
-      type: select
-      values:
-        - label: 主机网络模式
-          value: "host"
-        - label: 桥接网络模式
-          value: "bridge"
-        - label: 无网络模式
-          value: "none"
-        - label: 1panel-network
-          value: "1panel-network"
-    - default: "/home/nacos"
+    - default: "./data"
       edit: true
       envKey: NACOS_ROOT_PATH
       labelZh: 数据持久化路径

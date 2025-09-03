@@ -9,12 +9,10 @@ services:
     labels:
       createdBy: "Apps"
     restart: always
-    network_mode: ${NETWORK_MODE}
+    networks:
+      - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${NODEPASSDASH_ROOT_PATH}/logs:/app/logs
       - ${NODEPASSDASH_ROOT_PATH}/public:/app/public

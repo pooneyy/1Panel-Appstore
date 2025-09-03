@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/mcy-shop"
+    - default: "./data"
       edit: true
       envKey: MCY_SHOP_ROOT_PATH
       labelZh: 数据持久化路径

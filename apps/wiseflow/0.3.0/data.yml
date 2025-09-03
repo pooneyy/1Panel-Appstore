@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/wiseflow"
+    - default: "./data"
       edit: true
       envKey: WISEFLOW_ROOT_PATH
       labelZh: 数据持久化路径

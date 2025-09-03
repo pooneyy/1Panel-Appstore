@@ -14,9 +14,6 @@ services:
     ports:
       - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
       - 20170-20172:20170-20172
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${V2RAYA_ROOT_PATH}/v2raya:/etc/v2raya
       - /etc/resolv.conf:/etc/resolv.conf

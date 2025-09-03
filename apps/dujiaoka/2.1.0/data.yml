@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/dujiaoka"
+    - default: "./data"
       edit: true
       envKey: DUJIAOKA_ROOT_PATH
       labelZh: 数据持久化路径

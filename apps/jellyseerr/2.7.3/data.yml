@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/jellyseerr"
+    - default: "./data"
       edit: true
       envKey: JELLYSEERR_ROOT_PATH
       labelZh: 数据持久化路径

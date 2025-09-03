@@ -28,7 +28,7 @@ additionalProperties:
       values:
         - label: PostgreSQL
           value: postgresql
-    - default: "/home/immich-app"
+    - default: "./data"
       edit: true
       envKey: IMMICH_ROOT_PATH
       labelZh: 数据持久化路径

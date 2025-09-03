@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/redis"
+    - default: "./data"
       envKey: REDIS_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path

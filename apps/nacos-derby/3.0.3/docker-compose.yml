@@ -9,14 +9,12 @@ services:
     restart: always
     labels:
       createdBy: "Apps"
-    network_mode: ${NETWORK_MODE}
+    networks:
+      - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP:-8080}:${PANEL_APP_PORT_HTTP:-8080}
       - ${PANEL_APP_PORT_API:-8848}:${PANEL_APP_PORT_API:-8080}
       - ${PANEL_APP_PORT_GRPC}:9848
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${NACOS_ROOT_PATH}/logs:/home/nacos/logs
       - ${NACOS_ROOT_PATH}/data:/home/nacos/data

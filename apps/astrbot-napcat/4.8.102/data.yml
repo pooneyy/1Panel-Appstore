@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/astrbot-napcat"
+    - default: "./astrbot-napcat-data"
       edit: true
       envKey: ASTRBOT_ROOT_PATH
       labelZh: 数据持久化路径

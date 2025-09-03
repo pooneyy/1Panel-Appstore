@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/gitea"
+    - default: "./data"
       edit: true
       envKey: GITEA_RUNNER_ROOT_PATH
       labelZh: 数据持久化路径

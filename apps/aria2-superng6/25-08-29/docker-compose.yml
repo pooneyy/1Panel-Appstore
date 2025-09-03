@@ -1,0 +1,43 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  aria2-superng6:
+    image: superng6/aria2:25-08-29
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8080
+      - ${PANEL_APP_PORT_RPC}:6800
+      - ${PANEL_APP_PORT_BTPORT}:32516
+      - ${PANEL_APP_PORT_BTPORT}:32516/udp
+    volumes:
+      - ${ARIA2_DOWNLOADS_PATH}:/downloads
+      - ${ARIA2_ROOT_PATH}/config:/config
+      - /lib/modules:/lib/modules
+    environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022
+      - PORT=6800
+      - WEBUI=true
+      - WEBUI_PORT=8080
+      - BTPORT=${PANEL_APP_PORT_BTPORT}
+      - PORT=${PANEL_APP_PORT_RPC}
+      - UT=true
+      - RUT=true
+      - SMD=true
+      - CRA2B=2h
+      - QUIET=true
+      - SECRET=${SECRET}
+      - CACHE=${CACHE}
+      - CTU=${CTU}
+      - FA=${FA}
+      - CRA2B=${CRA2B}
+      - QUIET=${QUIET}

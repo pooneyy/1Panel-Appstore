@@ -20,7 +20,7 @@ additionalProperties:
           value: mariadb
         - label: Percona
           value: percona
-    - default: "/home/shiori"
+    - default: "./data"
       edit: true
       envKey: SHIORI_ROOT_PATH
       labelZh: 数据持久化路径

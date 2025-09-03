@@ -18,9 +18,6 @@ services:
       - ${PANEL_APP_PORT_HTTP}:3333
       - ${PANEL_APP_PORT_BT}:3334/tcp
       - ${PANEL_APP_PORT_BT}:3334/udp
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${BITMAGNET_ROOT_PATH}/config:/root/.config/bitmagnet
       - ${BITMAGNET_ROOT_PATH}/bitmagnet:/root/.local/share/bitmagnet
@@ -31,6 +28,12 @@ services:
       - LOG_JSON=false
       - DHT_CRAWLER_SAVE_FILES_THRESHOLD=100
       - PROCESSOR_CONCURRENCY=1
+      - POSTGRES_HOST=${POSTGRES_HOST}:${DB_PORT}
+      - POSTGRES_NAME=${POSTGRES_NAME}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - TMDB_ENABLED=${TMDB_ENABLED}
+      - TMDB_API_KEY=${TMDB_API_KEY}
     command:
       - worker
       - run

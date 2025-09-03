@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/dify"
+    - default: "./data"
       edit: true
       envKey: DIFY_ROOT_PATH
       labelZh: 数据持久化路径

@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/ollama"
+    - default: "./data"
       edit: true
       envKey: OLLAMA_ROOT_PATH
       labelZh: 数据持久化路径

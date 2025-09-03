@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/macos"
+    - default: "./data"
       edit: true
       envKey: MACOS_STORAGE_ROOT_PATH
       labelZh: MacOS 存储目录

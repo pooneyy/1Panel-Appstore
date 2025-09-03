@@ -11,5 +11,5 @@
   crossVersionUpdate: true
   limit: 0
   website: https://github.com/SuperNG6/docker-aria2/
-  github: https://github.com/aria2/aria2/
+  github: https://github.com/SuperNG6/docker-aria2/
   document: https://github.com/SuperNG6/docker-aria2/

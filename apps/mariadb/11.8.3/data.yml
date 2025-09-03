@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/mariadb"
+    - default: "./data"
       edit: true
       envKey: MARIADB_ROOT_PATH
       labelZh: 数据持久化路径

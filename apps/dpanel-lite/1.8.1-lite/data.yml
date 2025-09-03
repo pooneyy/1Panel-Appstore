@@ -1,38 +1,31 @@
 additionalProperties:
   formFields:
-    - default: "/home/dpanel"
-      edit: true
-      envKey: DPANEL_ROOT_PATH
-      labelZh: 数据持久化路径
-      labelEn: Data persistence path
-      required: true
-      type: text
-    - default: 8080
+    - default: "40283"
       edit: true
       envKey: PANEL_APP_PORT_HTTP
-      labelZh: WebUI 端口
-      labelEn: WebUI port
+      labelEn: Port
+      labelZh: 端口
       required: true
       rule: paramPort
       type: number
-    - default: "admin"
+    - default: "./data"
       edit: true
-      envKey: INSTALL_USERNAME
-      labelZh: 管理员 用户名
-      labelEn: Admin Username
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
       required: true
       type: text
-    - default: "admin"
+    - default: "dpanel"
       edit: true
-      envKey: INSTALL_PASSWORD
-      labelZh: 管理员 密码
-      labelEn: Admin Password
+      envKey: APP_NAME
+      labelEn: Application Name
+      labelZh: 应用名称
       required: true
       type: text
-    - default: ""
+    - default: "/var/run/docker.sock"
       edit: true
-      envKey: HTTP_PROXY
-      labelZh: 网络代理
-      labelEn: Network Proxy
-      required: false
+      envKey: DOCKER_SOCK_PATH
+      labelEn: Docker Socket Path
+      labelZh: Docker 套接字路径
+      required: true
       type: text

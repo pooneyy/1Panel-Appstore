@@ -9,7 +9,8 @@ services:
     labels:
       createdBy: "Apps"
     restart: always
-    network_mode: ${NETWORK_MODE}
+    networks:
+      - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:8888
       - ${PANEL_APP_PORT_WEB_HTTP}:80
@@ -18,9 +19,6 @@ services:
       - ${PANEL_APP_PORT_SSH}:22
       - ${PANEL_APP_PORT_MYSQL}:3306
       - ${PANEL_APP_PORT_PHPADMIN}:888
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${BAOTA_ROOT_PATH}/wwwroot:/www/wwwroot
       - ${BAOTA_ROOT_PATH}/data:/www/server/data

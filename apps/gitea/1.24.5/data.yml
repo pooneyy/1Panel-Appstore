@@ -21,7 +21,7 @@ additionalProperties:
           value: mariadb
         - label: Percona
           value: percona
-    - default: "/home/gitea"
+    - default: "./data"
       edit: true
       envKey: GITEA_ROOT_PATH
       labelZh: 数据持久化路径

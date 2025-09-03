@@ -11,5 +11,5 @@ additionalProperties:
   crossVersionUpdate: true
   limit: 0
   website: https://www.zerotier.com/
-  github: https://github.com/zerotier/ZeroTierOne/
+  github: https://github.com/xubiaolin/docker-zerotier-planet/
   document: https://docs.zerotier.com/

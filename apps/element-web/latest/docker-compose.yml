@@ -9,6 +9,8 @@ services:
     image: vectorim/element-web:latest
     labels:  
       createdBy: "Apps"
+    volumes:
+    - ${ELEMENT_WEB_ROOT_PATH}:/app
 
 networks:  
   1panel-network:  

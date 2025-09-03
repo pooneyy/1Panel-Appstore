@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/nginx-ui"
+    - default: "./data"
       edit: true
       envKey: NGINX_UI_ROOT_PATH
       labelZh: 数据持久化路径

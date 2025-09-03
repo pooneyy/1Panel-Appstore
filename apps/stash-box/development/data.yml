@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/stash-box"
+    - default: "./data"
       edit: true
       envKey: STASH_BOX_ROOT_PATH
       labelZh: 数据持久化路径

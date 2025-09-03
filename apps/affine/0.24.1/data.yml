@@ -1,0 +1,70 @@
+additionalProperties:
+  formFields:
+    - default: 3010
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+      label:
+        en: Web Port
+        zh: HTTP 端口
+    - default: affine
+      envKey: DB_DATABASE
+      labelEn: Database
+      labelZh: 数据库名
+      required: true
+      rule: paramCommon
+      type: text
+      label:
+        en: Database
+        zh: 数据库名
+    - default: affine
+      envKey: DB_USERNAME
+      labelEn: User
+      labelZh: 数据库用户
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+      label:
+        en: User
+        zh: 数据库用户
+    - default: affine
+      envKey: DB_PASSWORD
+      labelEn: Password
+      labelZh: 数据库用户密码
+      random: true
+      required: true
+      type: password
+      label:
+        en: Password
+        zh: 数据库用户密码
+    - default: ./.affine/self-host/storage
+      envKey: UPLOAD_LOCATION
+      labelEn: Upload Location
+      labelZh: 上传目录
+      required: true
+      type: text
+      label:
+        en: Upload Location
+        zh: 上传目录
+    - default: ./.affine/self-host/storage
+      envKey: CONFIG_LOCATION
+      labelEn: Config Location
+      labelZh: 配置目录
+      required: true
+      type: text
+      label:
+        en: Config Location
+        zh: 配置目录
+    - default: ./.affine/self-host/postgres/pgdata
+      envKey: DB_DATA_LOCATION
+      labelEn: Postgre Data Location
+      labelZh: Postgre 数据目录
+      required: true
+      type: text
+      label:
+        en: Postgre Data Location
+        zh: Postgre 数据目录

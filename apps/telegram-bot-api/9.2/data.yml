@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/telegram-bot-api"
+    - default: "./data"
       edit: true
       envKey: TELEGRAM_BOT_API_ROOT_PATH
       labelZh: 数据持久化路径

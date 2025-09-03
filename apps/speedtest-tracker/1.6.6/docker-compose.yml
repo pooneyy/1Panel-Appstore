@@ -9,16 +9,17 @@ services:
     labels:
       createdBy: "Apps"
     restart: always
-    network_mode: ${NETWORK_MODE}
+    network_mode:
+      - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:80
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${SPEEDTEST_TRACKER_ROOT_PATH}/config:/config
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Shanghai
+      - APP_KEY=${APP_KEY}
       - DISPLAY_TIMEZONE=Asia/Shanghai
+      - DB_CONNECTION=${DB_CONNECTION}
+      - MAIL_MAILER=${MAIL_MAILER}

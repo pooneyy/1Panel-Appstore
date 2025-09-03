@@ -1,33 +1,28 @@
 #!/bin/bash
 
-if [ -f .env ]; then
-  source .env
+[ -f ./.env ] && source ./.env
 
-  # setup-1 add default values
-  CURRENT_DIR=$(pwd)
-  sed -i '/^ENV_FILE=/d' .env
-  sed -i '/^GLOBAL_ENV_FILE=/d' .env
-  sed -i '/^APP_ENV_FILE=/d' .env
-  echo "ENV_FILE=${CURRENT_DIR}/.env" >> .env
-  echo "GLOBAL_ENV_FILE=${CURRENT_DIR}/envs/global.env" >> .env
-  echo "APP_ENV_FILE=${CURRENT_DIR}/envs/casdoor.env" >> .env
+# Default configuration
+CASDOOR_DRIVER_NAME=${PANEL_DB_TYPE}
+CASDOOR_DATASOURCE_NAME="${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@tcp(${PANEL_DB_HOST}:${PANEL_DB_PORT})/"
 
-  if [ "$DB_TYPE" == "mysql" ]; then
-    echo "dataSourceName=$DB_USER:$DB_PASSWD@tcp($DB_HOSTNAME:$DB_PORT)/" >> .env
-  fi
-
-  if [ "$DB_TYPE" == "postgres" ]; then
-    echo "dataSourceName=\"user=$DB_USER password=$DB_PASSWD host=$DB_HOSTNAME port=$DB_PORT sslmode=disable dbname=$DB_NAME\"" >> .env
-  fi
-
-  if [ -n "$REDIS_PASSWORD" ]; then
-    echo "redisEndpoint=$REDIS_HOSTNAME:$REDIS_PORT,$REDIS_DBINDEX,$REDIS_PASSWORD" >> .env
-  else
-    echo "redisEndpoint=$REDIS_HOSTNAME:$REDIS_PORT,$REDIS_DBINDEX" >> .env
-  fi
-
-  echo "Check Finish."
-
-else
-  echo "Error: .env file not found."
+# Reset mariadb driver
+if [ "$PANEL_DB_TYPE" = "mariadb" ]; then
+  CASDOOR_DRIVER_NAME="mysql"
 fi
+
+# Reset postgresql datasource
+if [ "$PANEL_DB_TYPE" = "postgres" ]; then
+  CASDOOR_DATASOURCE_NAME="user=${PANEL_DB_USER} password=${PANEL_DB_USER_PASSWORD} host=${PANEL_DB_HOST} port=${PANEL_DB_PORT} dbname=${PANEL_DB_NAME} sslmode=disable"
+fi
+
+{
+  # Retain the original environment variables
+  grep -vE '^(CASDOOR_DRIVER_NAME|CASDOOR_DATASOURCE_NAME)' ./.env 2>/dev/null
+
+  # Add CASDOOR_xx environment variables
+  echo "CASDOOR_DRIVER_NAME=${CASDOOR_DRIVER_NAME}"
+  echo "CASDOOR_DATASOURCE_NAME=\"${CASDOOR_DATASOURCE_NAME}\""
+  echo ""
+} > ./.env.tmp && mv ./.env.tmp ./.env
+

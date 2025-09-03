@@ -1,0 +1,21 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  alist:
+    image: xhofe/alist:v3.40.0-ffmpeg
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:5244
+    volumes:
+      - ${ALIST_ROOT_PATH}:/opt/alist/data
+    environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022
+      - FORCE=false

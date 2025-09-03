@@ -9,6 +9,6 @@ additionalProperties:
   type: website
   crossVersionUpdate: true
   limit: 0
-  website: https://temp-mail-docs.awsl.uk/
+  website: https://mail.awsl.uk/
   github: https://github.com/dreamhunter2333/cloudflare_temp_email/
   document: https://temp-mail-docs.awsl.uk/

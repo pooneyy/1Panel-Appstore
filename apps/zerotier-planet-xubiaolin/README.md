@@ -5,10 +5,6 @@
 > 默认密码：`password`
 
 
-<a href="https://edgeone.ai/?from=github">
-  <img src="https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png" alt="Logo" /> 本项目的 CDN 加速和安全保护由腾讯 EdgeOne 赞助
-</a>
-
 # Docker ZeroTier Planet
 
 > 一键部署 ZeroTier Planet 服务器，支持 Docker 容器化部署
@@ -25,7 +21,7 @@
 - **4群**：1027678459
 
 ## 📱 微信公众号
-![二维码](assets/wechat.png)
+![二维码](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/wechat.png)
 
 ## ✨ 功能特性
 
@@ -38,7 +34,6 @@
 
 ## 📋 目录
 
-- [0. 托管服务](#0-托管服务)
 - [1. ZeroTier 介绍](#1-zerotier-介绍)
 - [2. 为什么要自建 PLANET 服务器](#2-为什么要自建-planet-服务器)
 - [3. 开始安装](#3-开始安装)
@@ -65,39 +60,6 @@
 
 ---
 
-## 0. 托管服务
-
-### 0.1 自运营容器服务
-
-**寻找便捷的解决方案？**
-
-我们提供专业的托管服务：
-
-| 服务项目 | 详情 |
-|---------|------|
-| **试用期** | 免费试用 3 天 |
-| **年费** | 仅需 99￥ |
-| **带宽** | 高速带宽 300Mbit |
-| **流量政策** | 每月 100G 转发流量，P2P 连接后不计流量，超出后每 10 元 100G |
-| **机房** | 优质线路：宁波电信机房 |
-| **联系方式** | Telegram：[https://t.me/uxkram](https://t.me/uxkram) 或加入 QQ 群咨询群主 |
-
-**测速图如下：**
-
-<img src="./assets/nb-speed-test.png" width="800" alt="宁波机房测速图" align="center" />
-
-### 0.2 雨云容器服务
-
-[![通过雨云一键部署](https://rainyun-apps.cn-nb1.rains3.com/materials/deploy-on-rainyun-cn.svg)](https://app.rainyun.com/apps/rca/store/6215?ref=220429)
-
-### 0.3 微信公众号
-
-欢迎关注公众号获取最新动态和技术分享
-
-<img src="./assets/wx_qrcode_pub.jpg" width="300" alt="微信公众号二维码" align="center" />
-
----
-
 ## 1. ZeroTier 介绍
 
 `ZeroTier` 是一款强大的 P2P VPN 工具，它能让你在互联网上搭建属于自己的虚拟局域网。通过它，你可以轻松实现远程访问家中设备的需求 - 比如在公司用手机直接访问家里的 NAS。最重要的是，设备之间是点对点直连的，无需经过中转服务器，既保证了速度，又提升了安全性。
@@ -108,7 +70,7 @@
 
 简单来说，`ZeroTier` 就像是一个跨越互联网的"虚拟交换机"，让分布在世界各地的设备，都能像在同一个局域网内一样方便地相互访问。
 
-![zerotier](assets/zerotier-network.png)
+![zerotier](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/zerotier-network.png)
 
 ### ZeroTier 网络中的关键概念
 
@@ -242,7 +204,7 @@ cd docker-zerotier-planet
 
 4. **安装成功标志：**
 
-![install-finish](./assets/install_finish.png)
+![install-finish](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/install_finish.png)
 
 ### 3.4 下载 planet 文件
 
@@ -261,7 +223,7 @@ cd docker-zerotier-planet
 
 访问 `http://ip:3443` 进入 controller 页面
 
-![ui](assets/ztncui.png)
+![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/ztncui.png)
 
 **默认登录信息：**
 - 用户名：`admin`
@@ -274,19 +236,19 @@ cd docker-zerotier-planet
 3. 输入一个便于识别的网络名称，其他选项可保持默认
 4. 点击 "Create Network" 按钮完成创建
 
-![ui](assets/ztncui_create_net.png)
+![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/ztncui_create_net.png)
 
 创建成功后系统会自动生成一个网络 ID，这个 ID 在后续客户端配置时会用到，请记录下来。
 
-![ui](assets/ztncui_net_id.png)
+![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/ztncui_net_id.png)
 
 #### 3.5.3 分配网络 IP
 
 1. 选中 "Easy Setup"
-![assign_id](./assets/easy_setup.png)
+![assign_id](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/easy_setup.png)
 
 2. 生成 IP 范围
-![ip_addr](./assets/network_addr.png)
+![ip_addr](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/network_addr.png)
 
 ---
 
@@ -308,10 +270,10 @@ ZeroTier 支持多种主流操作系统的客户端，包括：
 
 #### 步骤 3：重启服务
 1. 按 `Win + S` 搜索 "服务"
-![ui](assets/service.png)
+![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/service.png)
 
 2. 找到 ZeroTier One，并且重启服务
-![ui](assets/restart_service.png)
+![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/restart_service.png)
 
 #### 步骤 4：加入网络
 使用管理员身份打开 PowerShell，执行如下命令：
@@ -327,11 +289,11 @@ PS C:\Windows\system32>
 #### 步骤 5：授权设备
 登录管理后台可以看到有个新的客户端，勾选 `Authorized` 即可
 
-![ui](assets/join_net.png)
+![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/join_net.png)
 
 IP assignment 里面会出现 ZeroTier 的内网 IP
 
-![ip](./assets/allow_devices.png)
+![ip](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/allow_devices.png)
 
 #### 步骤 6：验证连接
 执行如下命令验证连接状态：
@@ -562,7 +524,7 @@ services:
 
 如果觉得本项目对您有帮助，欢迎通过扫描下方赞赏码捐助项目 :)
 
-<img src="assets/donate.png" alt="donate" width="400" height="400" />
+<img src="https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/donate.png" alt="donate" width="400" height="400" />
 
 ---
 

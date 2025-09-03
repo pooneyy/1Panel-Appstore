@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/rustdesk-api"
+    - default: "./data"
       edit: true
       envKey: RUSTDESK_API_ROOT_PATH
       labelZh: 数据持久化路径

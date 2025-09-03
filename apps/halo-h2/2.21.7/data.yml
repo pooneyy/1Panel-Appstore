@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/home/halo"
+    - default: "./data"
       edit: true
       envKey: HALO_ROOT_PATH
       labelZh: 数据持久化路径
