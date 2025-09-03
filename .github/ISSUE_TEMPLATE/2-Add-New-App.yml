@@ -2,7 +2,9 @@ name: "📝提交新应用 / Add New App"
 description: "有当前应用商店未收录的应用，请提交此表单。 / Please submit this form for apps not yet listed in the app store."
 title: "[需要增加应用] 需要增加哪个应用？ / Which app needs to be added?"
 labels:
-  - Add New App
+  - Add
+Assignees: 
+  - pooneyy
 body:
   - type: markdown
     attributes:

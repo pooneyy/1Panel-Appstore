@@ -1,0 +1,35 @@
+name: "📬其它问题反馈 / Feedback"
+description: "提交使用中的相关问题 / Submit issues you encounter while using the app"
+title: "[反馈问题] 哪个应用出现了问题？ / Which app has any problem?"
+labels:
+  - Feedback
+Assignees: 
+  - pooneyy
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome!
+
+  - type: input
+    attributes:
+      label: 应用名称 / App Name
+      placeholder: (e.g. gitlab-jh)
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: 该应用位于本仓库的路径？/ The path of the app in this repository?
+      description: 
+        用于定位出现问题的应用。
+        Used to locate the app with the problem.
+      placeholder: (e.g. apps/gitlab-jh)
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 问题描述 / Details
+    validations:
+      required: true
