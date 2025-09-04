@@ -1,6 +1,6 @@
 services:
   moontv:
-    image: bestrui/bestsub:v1.3.0
+    image: bestrui/bestsub:v1.4.1
     container_name: ${CONTAINER_NAME}
     restart: always
 
