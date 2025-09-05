@@ -41,6 +41,9 @@ on:
         type: string
         default: 'Dockerfile'
 
+env:
+  IMAGE_DESCRIPTION: Built by GitHub Actions, the associated workflow is https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
 permissions:
   contents: read
   packages: write
@@ -53,6 +56,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set env
+        env:
+          IMAGE_NAME=${{ github.event.inputs.image_name }}
+        run: |
+          owner=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')
+          echo "OWNER=$owner" >> "$GITHUB_ENV"
+          echo "IMAGE_FULL_NAME=ghcr.io/${{ env.OWNER }}/$IMAGE_NAME" >> $GITHUB_ENV
+          echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
+          echo "IMAGE_TAG=${{ github.event.inputs.image_tag }}" >> $GITHUB_ENV
+
       - name: Checkout repository
         env:
           REPO_URL: ${{ github.event.inputs.repo }}
@@ -85,23 +98,12 @@ jobs:
         run: |
           git describe --tags --always
 
-      - name: Get lowercase repository owner
-        id: lowercase
-        run: echo "OWNER=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_ENV"
-
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ env.OWNER }}
           password: ${{ github.token }}
-
-      - name: Set env
-        run: |
-          echo "IMAGE_FULL_NAME=ghcr.io/${{ env.OWNER }}/${{ github.event.inputs.image_name }}" >> $GITHUB_ENV
-          echo "IMAGE_NAME=${{ github.event.inputs.image_name }}" >> $GITHUB_ENV
-          echo "IMAGE_TAG=${{ github.event.inputs.image_tag }}" >> $GITHUB_ENV
-          echo "IMAGE_DESCRIPTION=Built by GitHub Actions, the associated workflow is https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_ENV
 
       - name: Extract metadata (tags, labels) for image registry
         id: meta
@@ -152,16 +154,26 @@ jobs:
           curl -o ./get_image_size.sh -s https://raw.githubusercontent.com/${{ github.repository }}/refs/heads/script/get_image_size.sh
           chmod +x get_image_size.sh
 
+      - name: Get the package id
+        run: |
+          gh auth login --with-token <<< "${{ github.token }}"
+          response=$(gh api \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /users/${{ env.OWNER }}/packages/container/${{ env.IMAGE_NAME }}/versions)
+          version_id=$(echo "$response" | jq -r '.[] | select(.metadata.container.tags[]? == "${{ env.IMAGE_TAG }}") | .id')
+          echo "VERSION_ID=$version_id" >> $GITHUB_ENV
+
       - name: Add a summary for the job
         run: |
           arch_array=($(echo ${{ github.event.inputs.architectures }} | tr -d '"' | tr ',' '\n' | tr -d ' '))
           echo "## Build Report" >> $GITHUB_STEP_SUMMARY
           echo "### Get the image" >> $GITHUB_STEP_SUMMARY
-          echo "<pre lang="bash"><code>" >> $GITHUB_STEP_SUMMARY
-          echo "docker pull ${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }}" >> $GITHUB_STEP_SUMMARY
-          echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
+          echo "<pre lang="bash">" >> $GITHUB_STEP_SUMMARY
+          echo "<code>docker pull ${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }}</code>" >> $GITHUB_STEP_SUMMARY
+          echo "</pre>" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Image Url: https://github.com/${{ github.repository }}/pkgs/container/${{ env.IMAGE_NAME }}" >> $GITHUB_STEP_SUMMARY
+          echo "Image Url: https://github.com/users/${{ env.OWNER }}/packages/container/${{ env.IMAGE_NAME }}/${{ env.VERSION_ID }}?tag=${{ env.IMAGE_TAG }}" >> $GITHUB_STEP_SUMMARY
           echo "### Image info" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Repository | Reference / Branch / Tag | Push Time |" >> $GITHUB_STEP_SUMMARY
