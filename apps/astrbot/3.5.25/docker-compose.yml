@@ -4,7 +4,7 @@ networks:
 
 services:
   astrbot:
-    image: soulter/astrbot:v3.5.25
+    image: soulter/astrbot:v3.5.27
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
