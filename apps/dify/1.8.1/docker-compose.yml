@@ -625,7 +625,7 @@ services:
       - '${PANEL_APP_PORT_HTTPS:-443}:${NGINX_SSL_PORT:-443}'
 
   weaviate:
-    image: semitechnologies/weaviate:1.32.4
+    image: semitechnologies/weaviate:1.32.6
     container_name: weaviate-${CONTAINER_NAME}
     profiles:
       - ''
