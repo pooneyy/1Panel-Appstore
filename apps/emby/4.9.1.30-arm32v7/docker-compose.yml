@@ -19,7 +19,7 @@ services:
     devices:
       - /dev/dri:/dev/dri # VAAPI/NVDEC/NVENC render nodes
       #- /dev/vchiq:/dev/vchiq # MMAL/OMX on Raspberry Pi
-    image: emby/embyserver_arm64v8:4.9.1.29
+    image: emby/embyserver_arm32v7:4.9.1.30
     labels:  
       createdBy: "Apps"
 
