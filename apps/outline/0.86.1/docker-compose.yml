@@ -4,7 +4,7 @@ networks:
 
 services:
   outline:
-    image: outlinewiki/outline:0.86.1
+    image: outlinewiki/outline:0.87.3
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
