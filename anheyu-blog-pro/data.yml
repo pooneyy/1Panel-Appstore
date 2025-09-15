@@ -1,0 +1,30 @@
+name: Anheyu Blog Pro
+tags:
+  - 建站
+title: [赞助版]一个基于 Go + Vue3 的现代化博客与内容管理系统
+description: [赞助版]基于 Go 语言后端与 Vue3 前端构建的高性能博客与内容管理平台
+additionalProperties:
+  key: anheyu-blog-pro
+  name: Anheyu Blog Pro
+  tags:
+    - website
+  shortDescZh: 一个基于 Go + Vue3 的现代化博客与内容管理系统
+  shortDescEn: A modern blog and content management system built with Go and Vue3
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://anheyu.com/
+  github: https://github.com/anzhiyu-c/anheyu-app
+  document: https://anheyu.com/posts/Z3MC
+  description:
+    en: A modern blog and content management system built with Go backend and Vue3 frontend.
+    zh: 一个基于 Go 语言后端与 Vue3 前端构建的现代化博客与内容管理系统。
+    zh-Hant: 一個基於 Go 語言後端與 Vue3 前端構建的現代化部落格與內容管理系統。
+    ja: Go バックエンドと Vue3 フロントエンドで構築されたモダンなブログ・コンテンツ管理システム。
+    ms: Sistem blog dan pengurusan kandungan moden dibina dengan Go backend dan Vue3 frontend.
+    pt-br: Um sistema moderno de blog e gerenciamento de conteúdo construído com Go e Vue3.
+    ru: Современная система ведения блогов и управления контентом, построенная на Go и Vue3.
+    ko: Go 백엔드와 Vue3 프론트엔드로 구축된 현대적인 블로그 및 콘텐츠 관리 시스템.
+  architectures:
+    - amd64
+    - arm64

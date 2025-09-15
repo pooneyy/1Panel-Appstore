@@ -99,6 +99,22 @@ additionalProperties:
       labelZh: 缓存服务服务密码
       required: false
       type: password
+    # 验证密钥
+    - default: ""
+      envKey: PANEL_LICENSE_KEY
+      labelEn: License Key
+      labelZh: 授权密钥
+      label:
+        en: License Key
+        ja: ライセンスキー
+        ms: Kunci Lesen
+        pt-br: Chave de Licença
+        ru: Лицензионный ключ
+        ko: 라이선스 키
+        zh: 授权密钥
+        zh-Hant: 授權密鑰
+      required: true
+      type: password
     - default: 37826
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
