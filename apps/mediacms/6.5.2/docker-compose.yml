@@ -4,7 +4,7 @@ networks:
 
 services:
   mediacms-migrations:
-    image: mediacms/mediacms:6.4.0
+    image: mediacms/mediacms:6.5.2
     container_name: migrations-${CONTAINER_NAME}
     volumes:
       - ${MEDIACMS_ROOT_PATH}:/home/mediacms.io/mediacms
@@ -21,7 +21,7 @@ services:
       - ADMIN_EMAIL=${ADMIN_EMAIL}
       - ADMIN_PASSWORD=${ADMIN_PASSWORD}
   mediacms:
-    image: mediacms/mediacms:6.4.0
+    image: mediacms/mediacms:6.5.2
     container_name: ${CONTAINER_NAME}
     depends_on:
       - mediacms-migrations
@@ -40,7 +40,7 @@ services:
       - ENABLE_CELERY_LONG=no
       - ENABLE_MIGRATIONS=no
   mediacms-celery-beat:
-    image: mediacms/mediacms:6.4.0
+    image: mediacms/mediacms:6.5.2
     container_name: celery-beat-${CONTAINER_NAME}
     volumes:
       - ${MEDIACMS_ROOT_PATH}:/home/mediacms.io/mediacms
@@ -51,7 +51,7 @@ services:
       - ENABLE_CELERY_LONG=no
       - ENABLE_MIGRATIONS=no
   mediacms-celery-worker:
-    image: mediacms/mediacms:6.4.0
+    image: mediacms/mediacms:6.5.2
     container_name: celery-worker-${CONTAINER_NAME}
     depends_on:
       - mediacms-migrations
