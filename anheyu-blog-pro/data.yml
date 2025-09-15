@@ -1,8 +1,8 @@
 name: Anheyu Blog Pro
 tags:
   - 建站
-title: [赞助版]一个基于 Go + Vue3 的现代化博客与内容管理系统
-description: [赞助版]基于 Go 语言后端与 Vue3 前端构建的高性能博客与内容管理平台
+title: 【赞助版】一个基于 Go + Vue3 的现代化博客与内容管理系统
+description: 【赞助版】基于 Go 语言后端与 Vue3 前端构建的高性能博客与内容管理平台
 additionalProperties:
   key: anheyu-blog-pro
   name: Anheyu Blog Pro
