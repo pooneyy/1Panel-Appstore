@@ -1,0 +1,210 @@
+additionalProperties:
+  formFields:
+    - default: 14389
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        ja: ポート
+        ms: Port
+        pt-br: Porta
+        ru: Порт
+        ko: 포트
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_APP_URL
+      labelEn: App URL
+      labelZh: 应用地址
+      label:
+        en: App URL
+        ja: アプリURL
+        ms: URL Aplikasi
+        pt-br: URL do Aplicativo
+        ru: URL приложения
+        ko: 앱 URL
+        zh: 应用地址
+        zh-Hant: 應用地址
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_SECRET
+      labelEn: Secret
+      labelZh: 密钥
+      label:
+        en: Secret
+        ja: シークレット
+        ms: Rahsia
+        pt-br: Segredo
+        ru: Секрет
+        ko: 비밀
+        zh: 密钥
+        zh-Hant: 密鑰
+      required: false
+      type: password
+
+    - default: "86400"
+      envKey: PANEL_TINYAUTH_SESSION_EXPIRY
+      labelEn: Session Expiry (seconds)
+      labelZh: 会话过期时间（秒）
+      label:
+        en: Session Expiry (seconds)
+        ja: セッション有効期限（秒）
+        ms: Tamat Sesi (saat)
+        pt-br: Expiração da Sessão (segundos)
+        ru: Время жизни сессии (секунды)
+        ko: 세션 만료 (초)
+        zh: 会话过期时间（秒）
+        zh-Hant: 會話過期時間（秒）
+      required: false
+      type: number
+
+    - default: "TinyAuth"
+      envKey: PANEL_TINYAUTH_APP_TITLE
+      labelEn: App Title
+      labelZh: 应用标题
+      label:
+        en: App Title
+        ja: アプリタイトル
+        ms: Tajuk Aplikasi
+        pt-br: Título do Aplicativo
+        ru: Заголовок приложения
+        ko: 앱 제목
+        zh: 应用标题
+        zh-Hant: 應用標題
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_OAUTH_AUTO_REDIRECT
+      labelEn: Auto Redirect Provider
+      labelZh: 自动跳转提供商
+      label:
+        en: Auto Redirect Provider
+        ja: 自動リダイレクトプロバイダー
+        ms: Penyedia Pengalihan Automatik
+        pt-br: Provedor de Redirecionamento Automático
+        ru: Автоматический редирект провайдера
+        ko: 자동 리디렉션 제공자
+        zh: 自动跳转提供商
+        zh-Hant: 自動跳轉提供商
+      required: false
+      type: select
+      values:
+        - label: None
+          value: "none"
+        - label: GitHub
+          value: "github"
+        - label: Google
+          value: "google"
+        - label: Generic
+          value: "generic"
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_BACKGROUND_IMAGE
+      labelEn: Background Image
+      labelZh: 背景图片
+      label:
+        en: Background Image
+        ja: 背景画像
+        ms: Imej Latar Belakang
+        pt-br: Imagem de Fundo
+        ru: Фоновое изображение
+        ko: 배경 이미지
+        zh: 背景图片
+        zh-Hant: 背景圖片
+      required: false
+      type: text
+
+    # GitHub
+    - default: ""
+      envKey: PANEL_TINYAUTH_GITHUB_CLIENT_ID
+      labelEn: GitHub Client ID
+      labelZh: GitHub 客户端ID
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GITHUB_CLIENT_SECRET
+      labelEn: GitHub Client Secret
+      labelZh: GitHub 客户端密钥
+      required: false
+      type: password
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GITHUB_REDIRECT_URI
+      labelEn: GitHub Redirect URI
+      labelZh: GitHub 回调地址
+      required: false
+      type: text
+
+    # Google
+    - default: ""
+      envKey: PANEL_TINYAUTH_GOOGLE_CLIENT_ID
+      labelEn: Google Client ID
+      labelZh: Google 客户端ID
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GOOGLE_CLIENT_SECRET
+      labelEn: Google Client Secret
+      labelZh: Google 客户端密钥
+      required: false
+      type: password
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GOOGLE_REDIRECT_URI
+      labelEn: Google Redirect URI
+      labelZh: Google 回调地址
+      required: false
+      type: text
+
+    # Generic
+    - default: ""
+      envKey: PANEL_TINYAUTH_GENERIC_NAME
+      labelEn: Generic Provider Name
+      labelZh: 通用提供商名称
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GENERIC_CLIENT_ID
+      labelEn: Generic Client ID
+      labelZh: 通用客户端ID
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GENERIC_CLIENT_SECRET
+      labelEn: Generic Client Secret
+      labelZh: 通用客户端密钥
+      required: false
+      type: password
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GENERIC_AUTH_URL
+      labelEn: Generic Auth URL
+      labelZh: 通用认证地址
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GENERIC_TOKEN_URL
+      labelEn: Generic Token URL
+      labelZh: 通用令牌地址
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GENERIC_USER_URL
+      labelEn: Generic User Info URL
+      labelZh: 通用用户信息地址
+      required: false
+      type: text
