@@ -1,0 +1,18 @@
+additionalProperties:
+  formFields:
+    - default: 13485
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        ja: ポート
+        ms: Port
+        pt-br: Porta
+        ru: Порт
+        ko: 포트
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+      required: true
+      rule: paramPort
+      type: number

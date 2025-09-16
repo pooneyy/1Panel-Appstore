@@ -1,0 +1,32 @@
+name: OAuth2 Proxy
+tags:
+  - 开发工具
+  - 安全
+title: OAuth2身份认证代理，支持多种身份提供商的统一登录解决方案
+description: 一个支持多种OAuth2和OIDC身份提供商的认证代理工具，常用于在现有Web服务前添加统一登录认证。
+additionalProperties:
+  key: oauth2-proxy
+  name: OAuth2 Proxy
+  tags:
+    - DevTool
+    - Security
+  shortDescZh: OAuth2认证代理，支持多身份提供商的一站式登录认证解决方案
+  shortDescEn: OAuth2 authentication proxy with multi-provider SSO support
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://oauth2-proxy.github.io/oauth2-proxy/
+  github: https://github.com/oauth2-proxy/oauth2-proxy
+  document: https://oauth2-proxy.github.io/oauth2-proxy/
+  description:
+    en: A reverse proxy and authentication provider that provides login using OAuth2 and OpenID Connect providers, suitable for securing existing web services with SSO.
+    zh: 一个反向代理和认证中间件，支持多种OAuth2和OIDC身份提供商，为现有Web服务提供统一登录保护。
+    zh-Hant: 一個反向代理與認證中介軟體，支援多種OAuth2和OIDC身份提供商，為既有Web服務提供單一登入保護。
+    ja: 複数のOAuth2およびOIDCプロバイダーに対応した認証プロキシで、既存のWebサービスにSSO保護を追加可能。
+    ms: Proksi pengesahan yang menyokong penyedia OAuth2 dan OIDC pelbagai, sesuai untuk melindungi perkhidmatan web sedia ada dengan SSO.
+    pt-br: Proxy de autenticação que suporta múltiplos provedores OAuth2 e OIDC, adequado para proteger serviços web existentes com SSO.
+    ru: Обратный прокси и провайдер аутентификации, поддерживающий OAuth2 и OIDC, обеспечивающий единую точку входа для существующих веб-сервисов.
+    ko: 다양한 OAuth2 및 OIDC 제공자를 지원하는 인증 프록시로, 기존 웹 서비스에 단일 로그인 보호를 제공합니다.
+  architectures:
+    - amd64
+    - arm64

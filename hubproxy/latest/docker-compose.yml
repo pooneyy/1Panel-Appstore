@@ -1,0 +1,22 @@
+services:
+  hubproxy:
+    image: ghcr.io/sky22333/hubproxy:latest
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8888"
+    volumes:
+      - ./src/config.toml:/root/config.toml
+    logging:
+      driver: json-file
+      options:
+        max-size: "1g"
+        max-file: "2"
+    labels:
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+    restart: always
+
+networks:
+  1panel-network:
+    external: true
