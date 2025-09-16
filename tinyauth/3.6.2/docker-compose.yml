@@ -36,7 +36,7 @@ services:
     networks:
       - 1panel-network
     restart: always
-    values:
+    volumes:
       - ./data:/data
 
 networks:
