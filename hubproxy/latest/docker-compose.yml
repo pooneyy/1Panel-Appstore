@@ -3,7 +3,7 @@ services:
     image: ghcr.io/sky22333/hubproxy:latest
     container_name: ${CONTAINER_NAME}
     ports:
-      - "${PANEL_APP_PORT_HTTP}:8888"
+      - "${PANEL_APP_PORT_HTTP}:5000"
     volumes:
       - ./data/config.toml:/root/config.toml
     logging:
