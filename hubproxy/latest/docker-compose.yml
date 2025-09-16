@@ -5,7 +5,7 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:8888"
     volumes:
-      - ./src/config.toml:/root/config.toml
+      - ./data/config.toml:/root/config.toml
     logging:
       driver: json-file
       options:
