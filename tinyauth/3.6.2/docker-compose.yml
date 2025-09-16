@@ -36,6 +36,8 @@ services:
     networks:
       - 1panel-network
     restart: always
+    values:
+      - ./data:/data
 
 networks:
   1panel-network:
