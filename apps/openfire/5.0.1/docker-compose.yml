@@ -4,7 +4,7 @@ networks:
 
 services:
   openfire:
-    image: ghcr.io/igniterealtime/openfire:v5.0.1
+    image: ghcr.io/igniterealtime/openfire:v5.0.2
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
