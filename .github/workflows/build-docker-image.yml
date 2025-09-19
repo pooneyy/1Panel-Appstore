@@ -169,7 +169,7 @@ jobs:
           arch_array=($(echo ${{ github.event.inputs.architectures }} | tr -d '"' | tr ',' '\n' | tr -d ' '))
           echo "## Build Report" >> $GITHUB_STEP_SUMMARY
           echo "### Get the image" >> $GITHUB_STEP_SUMMARY
-          echo "<pre lang="bash">" >> $GITHUB_STEP_SUMMARY
+          echo '<pre lang="bash">' >> $GITHUB_STEP_SUMMARY
           echo "<code>docker pull ${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }}</code>" >> $GITHUB_STEP_SUMMARY
           echo "</pre>" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -187,7 +187,7 @@ jobs:
           done
           echo "### Verify the image" >> $GITHUB_STEP_SUMMARY
           echo "You can use github cli to verify the image, run the command:" >> $GITHUB_STEP_SUMMARY
-          echo "<pre lang="bash"><code>" >> $GITHUB_STEP_SUMMARY
+          echo '<pre lang="bash"><code>' >> $GITHUB_STEP_SUMMARY
           echo "gh attestation verify oci://${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }} -R ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
           echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
 
