@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   allinssl:
-    image: allinssl/allinssl:v1.1.0
+    image: allinssl/allinssl:v1.1.1
     container_name: ${CONTAINER_NAME}
     environment:
       - ALLINSSL_USER=${PANEL_ALLINSSL_USER}
