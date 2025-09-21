@@ -10,7 +10,7 @@ services:
       - BING_MAP_API_KEY=${BING_MAP_API_KEY}
       - ALLOWED_DOMAINS=${ALLOWED_DOMAINS}
       - IPINFO_API_TOKEN=${IPINFO_API_TOKEN}
-    image: jason5ng32/myip:v5.0.5
+    image: jason5ng32/myip:v5.0.6
     labels:  
       createdBy: "Apps"
 
