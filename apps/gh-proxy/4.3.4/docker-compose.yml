@@ -1,6 +1,6 @@
 services:
   gh-proxy:
-    image: wjqserver/ghproxy:4.3.3
+    image: wjqserver/ghproxy:4.3.4
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
