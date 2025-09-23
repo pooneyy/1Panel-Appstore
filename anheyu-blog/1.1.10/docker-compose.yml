@@ -1,7 +1,7 @@
 services:
   anheyu:
     # build: .
-    image: anheyu/anheyu-backend:1.1.9
+    image: anheyu/anheyu-backend:1.1.10
     container_name: ${CONTAINER_NAME}
     restart: always
     labels:
@@ -18,7 +18,6 @@ services:
       ANHEYU_REDIS_ADDR: ${PANEL_REDIS_HOST}:6379
       ANHEYU_REDIS_PASSWORD: ${PANEL_REDIS_ROOT_PASSWORD}
       ANHEYU_REDIS_DB: 10
-      ANHEYU_LICENSE_KEY: ${PANEL_LICENSE_KEY}
     networks:
       - 1panel-network
     volumes:
