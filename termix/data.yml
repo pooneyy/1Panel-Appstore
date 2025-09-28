@@ -1,0 +1,33 @@
+name: Termix
+tags:
+  - 工具
+  - 终端
+title: 多功能跨平台终端工具
+description: 🖥️ Termix 是一个跨平台的终端工具，支持多种终端协议和插件扩展，帮助开发者更高效地管理和使用命令行环境。
+additionalProperties:
+  key: termix
+  name: Termix
+  tags:
+    - Tool
+    - Terminal
+  shortDescZh: 多功能跨平台终端工具
+  shortDescEn: A versatile cross-platform terminal tool
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/LukeGus/Termix
+  github: https://github.com/LukeGus/Termix
+  document: https://github.com/LukeGus/Termix#readme
+  description:
+    en: 🖥️ Termix is a versatile cross-platform terminal tool that supports multiple terminal protocols, plugins, and customizations, making it easier to manage and enhance your command-line experience.
+    zh: 🖥️ Termix 是一个多功能的跨平台终端工具，支持多种终端协议、插件与个性化扩展，帮助开发者更高效地管理和优化命令行体验。
+    zh-Hant: 🖥️ Termix 是一個多功能的跨平台終端工具，支援多種終端協議、外掛與自訂擴展，幫助開發者更高效地管理和優化命令列體驗。
+    ja: 🖥️ Termix は、多くのターミナルプロトコルやプラグイン、カスタマイズに対応した多機能クロスプラットフォームターミナルツールで、コマンドライン体験を効率的に管理・向上させます。
+    ms: 🖥️ Termix ialah alat terminal merentas platform yang serba boleh, menyokong pelbagai protokol terminal, pemalam dan penyesuaian untuk memudahkan pengurusan serta meningkatkan pengalaman baris perintah.
+    pt-br: 🖥️ Termix é uma ferramenta de terminal multiplataforma versátil, com suporte a vários protocolos, plugins e personalizações, tornando a experiência de linha de comando mais eficiente.
+    ru: 🖥️ Termix — это многофункциональный кроссплатформенный терминал, поддерживающий различные протоколы, плагины и кастомизации, упрощающий работу с командной строкой.
+    ko: 🖥️ Termix는 다양한 터미널 프로토콜, 플러그인 및 사용자 정의를 지원하는 다기능 크로스플랫폼 터미널 도구로, 명령줄 경험을 보다 효율적으로 관리하고 향상시킬 수 있습니다.
+  architectures:
+    - amd64
+    - arm64
