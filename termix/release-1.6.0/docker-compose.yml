@@ -11,7 +11,7 @@ services:
             
     networks:
       - 1panel-network
-    volume:
+    volumes:
       - ./data:/app/data
     environment:
       PORT: "8080"
