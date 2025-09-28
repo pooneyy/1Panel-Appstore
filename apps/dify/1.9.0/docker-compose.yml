@@ -726,7 +726,7 @@ services:
       retries: 30
 
   chroma:
-    image: ghcr.io/chroma-core/chroma:1.0.21
+    image: ghcr.io/chroma-core/chroma:1.1.0
     container_name: chroma-${CONTAINER_NAME}
     profiles:
       - chroma
