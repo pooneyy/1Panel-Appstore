@@ -11,7 +11,7 @@ services:
       - "${DATA_PATH}:/data"
     environment:
       - ALIST_PORT=${PANEL_APP_PORT_XIAOYA}
-    image: haroldli/xiaoya-tvbox:1.0.0
+    image: haroldli/xiaoya-tvbox:1.0.1
     labels:
       createdBy: "Apps"
 
