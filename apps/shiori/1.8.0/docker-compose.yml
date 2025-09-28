@@ -4,7 +4,7 @@ networks:
 
 services:
   shiori:
-    image: ghcr.io/go-shiori/shiori:v1.7.4
+    image: ghcr.io/go-shiori/shiori:v1.8.0
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
