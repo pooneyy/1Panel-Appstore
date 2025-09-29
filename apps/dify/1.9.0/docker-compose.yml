@@ -413,7 +413,7 @@ x-shared-env: &shared-api-worker-env
 
 services:
   api:
-    image: langgenius/dify-api:1.9.0
+    image: langgenius/dify-api:1.9.1
     container_name: api-${CONTAINER_NAME}
     restart: always
     environment:
@@ -434,7 +434,7 @@ services:
       - default
 
   worker:
-    image: langgenius/dify-api:1.9.0
+    image: langgenius/dify-api:1.9.1
     container_name: worker-${CONTAINER_NAME}
     restart: always
     environment:
@@ -455,7 +455,7 @@ services:
       - default
 
   web:
-    image: langgenius/dify-web:1.9.0
+    image: langgenius/dify-web:1.9.1
     container_name: ${CONTAINER_NAME}
     restart: always
     environment:
