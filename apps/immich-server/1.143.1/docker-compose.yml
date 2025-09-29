@@ -6,7 +6,7 @@ name: immich-server
 
 services:
   immich-server:
-    image: ghcr.io/immich-app/immich-server:v1.142.1
+    image: ghcr.io/immich-app/immich-server:v1.143.1
     container_name: immich-server-${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
