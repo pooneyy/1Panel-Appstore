@@ -4,7 +4,7 @@ services:
     restart: always
     networks:
       - 1panel-network
-    image: altran1502/immich-server:v1.142.1
+    image: altran1502/immich-server:v1.143.1
     volumes:
       - ${UPLOAD_LOCATION}:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
@@ -29,7 +29,7 @@ services:
     restart: always
     networks:
       - 1panel-network
-    image: altran1502/immich-machine-learning:v1.142.1
+    image: altran1502/immich-machine-learning:v1.143.1
     volumes:
       - ${CACHE_PATH}:/cache
     environment:
