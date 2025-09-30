@@ -18,7 +18,7 @@ services:
       - DERP_STUN_PORT=${PANEL_APP_PORT_STUN}
       - DERP_CERT_DIR=/app/certs
       - DERP_VERIFY_CLIENTS=${CLIENTS_VERIFY_SWITCH}
-    image: fredliang/derper:v1.88.1
+    image: fredliang/derper:v1.88.3
     labels:  
       createdBy: "Apps"
 
