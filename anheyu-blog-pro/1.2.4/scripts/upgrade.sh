@@ -26,8 +26,8 @@ elif [ -f "$CONF_FILE_OLD" ]; then
     mkdir -p "$BASE_DIR/data" "$BASE_DIR/themes" "$BASE_DIR/static" "$BASE_DIR/backup"
 
     # 2.3 把旧数据移到新的 data 目录
-    mv "$TEMP_DIR"/* "$BASE_DIR/data/" 2>/dev/null || true
-    mv "$TEMP_DIR"/.[!.]* "$BASE_DIR/data/" 2>/dev/null || true
+    cp -a "$TEMP_DIR"/* "$BASE_DIR/data/" 2>/dev/null || true
+    cp -a "$TEMP_DIR"/.[!.]* "$BASE_DIR/data/" 2>/dev/null || true
 
     echo "迁移完成！旧数据已移入 $BASE_DIR/data/ 下。"
     echo "请检查无误后再次运行脚本，以彻底删除 $TEMP_DIR"
