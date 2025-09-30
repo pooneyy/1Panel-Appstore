@@ -90,6 +90,10 @@
       "groupName": "MoviePilot"
     },
     {
+      "matchPackageNames": ["kasmweb/**"],
+      "groupName": "Kasm Workspaces"
+    },
+    {
       "matchPackageNames": ["kibana"],
       "matchCurrentVersion": "/^8.*/",
       "allowedVersions": "/^8.*/"
