@@ -22,7 +22,10 @@ services:
     networks:
       - 1panel-network
     volumes:
-      - ./data:/anheyu/data
+      - ./anheyu-data/data:/anheyu/data
+      - ./anheyu-data/themes:/anheyu/themes
+      - ./anheyu-data/static:/anheyu/static
+      - ./anheyu-data/backup:/anheyu/backup
       
 networks:
   1panel-network:
