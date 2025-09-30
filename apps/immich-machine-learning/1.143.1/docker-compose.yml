@@ -6,7 +6,7 @@ name: immich-machine-learning
 
 services:
   immich-machine-learning:
-    image: ghcr.io/immich-app/immich-machine-learning:v1.143.1
+    image: ghcr.io/immich-app/immich-machine-learning:v1.144.1
     container_name: immich-machine-learning-${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
