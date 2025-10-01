@@ -1,0 +1,50 @@
+additionalProperties:
+  formFields:
+    - default: 13489
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        ja: ポート
+        ms: Port
+        pt-br: Porta
+        ru: Порт
+        ko: 포트
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: ""
+      envKey: SOCKS5_PROXY
+      labelEn: SOCKS5 Proxy
+      labelZh: SOCKS5 代理
+      label:
+        en: SOCKS5 Proxy
+        ja: SOCKS5プロキシ
+        ms: Proksi SOCKS5
+        pt-br: Proxy SOCKS5
+        ru: SOCKS5 прокси
+        ko: SOCKS5 프록시
+        zh: SOCKS5 代理
+        zh-Hant: SOCKS5 代理
+      required: false
+      type: text
+
+    - default: ""
+      envKey: HTTP_PROXY
+      labelEn: HTTP Proxy
+      labelZh: HTTP 代理
+      label:
+        en: HTTP Proxy
+        ja: HTTPプロキシ
+        ms: Proksi HTTP
+        pt-br: Proxy HTTP
+        ru: HTTP прокси
+        ko: HTTP 프록시
+        zh: HTTP 代理
+        zh-Hant: HTTP 代理
+      required: false
+      type: text

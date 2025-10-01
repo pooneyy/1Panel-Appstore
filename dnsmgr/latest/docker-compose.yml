@@ -1,0 +1,17 @@
+services:
+  dnsmgr:
+    image: netcccyun/dnsmgr:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    labels:
+      createdBy: "Apps"
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    volumes:
+      - ./data:/app/www
+    networks:
+      - 1panel-network
+
+networks:
+  1panel-network:
+    external: true
