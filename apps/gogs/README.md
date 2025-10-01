@@ -1,4 +1,4 @@
-![gogs-brand](https://cdn.jsdmirror.com/gh/gogs/gogs@main/public/img/gogs-hero.png)
+![gogs-brand](https://fastly.jsdelivr.net/gh/gogs/gogs@main/public/img/gogs-hero.png)
 
 Gogs 是一款极易搭建的自助 Git 服务。
 

@@ -21,7 +21,7 @@
 - **4群**：1027678459
 
 ## 📱 微信公众号
-![二维码](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/wechat.png)
+![二维码](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/wechat.png)
 
 ## ✨ 功能特性
 
@@ -70,7 +70,7 @@
 
 简单来说，`ZeroTier` 就像是一个跨越互联网的"虚拟交换机"，让分布在世界各地的设备，都能像在同一个局域网内一样方便地相互访问。
 
-![zerotier](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/zerotier-network.png)
+![zerotier](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/zerotier-network.png)
 
 ### ZeroTier 网络中的关键概念
 
@@ -204,7 +204,7 @@ cd docker-zerotier-planet
 
 4. **安装成功标志：**
 
-![install-finish](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/install_finish.png)
+![install-finish](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/install_finish.png)
 
 ### 3.4 下载 planet 文件
 
@@ -223,7 +223,7 @@ cd docker-zerotier-planet
 
 访问 `http://ip:3443` 进入 controller 页面
 
-![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/ztncui.png)
+![ui](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/ztncui.png)
 
 **默认登录信息：**
 - 用户名：`admin`
@@ -236,19 +236,19 @@ cd docker-zerotier-planet
 3. 输入一个便于识别的网络名称，其他选项可保持默认
 4. 点击 "Create Network" 按钮完成创建
 
-![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/ztncui_create_net.png)
+![ui](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/ztncui_create_net.png)
 
 创建成功后系统会自动生成一个网络 ID，这个 ID 在后续客户端配置时会用到，请记录下来。
 
-![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/ztncui_net_id.png)
+![ui](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/ztncui_net_id.png)
 
 #### 3.5.3 分配网络 IP
 
 1. 选中 "Easy Setup"
-![assign_id](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/easy_setup.png)
+![assign_id](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/easy_setup.png)
 
 2. 生成 IP 范围
-![ip_addr](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/network_addr.png)
+![ip_addr](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/network_addr.png)
 
 ---
 
@@ -270,10 +270,10 @@ ZeroTier 支持多种主流操作系统的客户端，包括：
 
 #### 步骤 3：重启服务
 1. 按 `Win + S` 搜索 "服务"
-![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/service.png)
+![ui](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/service.png)
 
 2. 找到 ZeroTier One，并且重启服务
-![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/restart_service.png)
+![ui](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/restart_service.png)
 
 #### 步骤 4：加入网络
 使用管理员身份打开 PowerShell，执行如下命令：
@@ -289,11 +289,11 @@ PS C:\Windows\system32>
 #### 步骤 5：授权设备
 登录管理后台可以看到有个新的客户端，勾选 `Authorized` 即可
 
-![ui](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/join_net.png)
+![ui](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/join_net.png)
 
 IP assignment 里面会出现 ZeroTier 的内网 IP
 
-![ip](https://cdn.jsdmirror.com/gh/xubiaolin/docker-zerotier-planet@master/assets/allow_devices.png)
+![ip](https://fastly.jsdelivr.net/gh/xubiaolin/docker-zerotier-planet@master/assets/allow_devices.png)
 
 #### 步骤 6：验证连接
 执行如下命令验证连接状态：
