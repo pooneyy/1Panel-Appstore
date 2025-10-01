@@ -15,5 +15,17 @@ additionalProperties:
   limit: 0
   recommend: 0
   website: https://github.com/actions/runner
-  github: https://github.com/actions/runner
+  github: https://github.com/pooneyy/simple-actions-runner-in-docker
   document: https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners
+  description:
+    en: A simple self-hosted actions runner running in a container
+    zh: 运行在容器中的简单的自托管 GitHub Actions 运行器
+    zh-Hant: 運行在容器中的簡單自託管 GitHub Actions 運行器
+    ja: コンテナ内で動作するシンプルなセルフホスト型アクションナンナー
+    ms: Pelari tindakan berpangkalan sendiri yang mudah berjalan dalam bekas
+    pt-br: Um executor de ações auto-hospedado simples executado em um contêiner
+    ru: Простой самодостаточный раннер действий, работающий в контейнере
+    ko: 컨테이너에서 실행되는 간단한 자체 호스팅 액션 러너
+  architectures:
+  - amd64
+  - arm64
