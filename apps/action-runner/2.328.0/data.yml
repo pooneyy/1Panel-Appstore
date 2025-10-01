@@ -1,0 +1,77 @@
+additionalProperties:
+  formFields:
+    - default: "repos"
+      edit: true
+      envKey: ROLE
+      labelEn: Role (Repository or Organization)
+      labelZh: 角色 (个人仓库或者组织)
+      required: true
+      type: select
+      values:
+        - label: "个人仓库 Repository"
+          value: "repos"
+        - label: "企业 Enterprise"
+          value: "enterprises"
+        - label: "组织 Organization"
+          value: "orgs"
+
+    - default: "owner/repo"
+      edit: true
+      envKey: REPO
+      labelEn: Repository name or organization name
+      labelZh: 仓库名或组织名
+      required: true
+      type: text
+
+    - default: ""
+      edit: true
+      envKey: GITHUB_TOKEN
+      labelEn: Github Token
+      labelZh: Github 令牌
+      required: true
+      type: text
+
+    - default: ""
+      edit: true
+      envKey: RUNNER_NAME
+      labelEn: Runner Name
+      labelZh: 运行器名称
+      required: false
+      type: text
+
+    - default: "label1,label2"
+      edit: true
+      envKey: RUNNER_LABELS
+      labelEn: Runner Labels
+      labelZh: 运行器标签
+      required: false
+      type: text
+
+    - default: "_work"
+      edit: true
+      envKey: WORK_FOLDER
+      labelEn: Work Folder
+      labelZh: 工作文件夹
+      required: false
+      type: text
+
+    - default: "Default"
+      edit: true
+      envKey: RUNNER_GROUP
+      labelEn: Runner Group
+      labelZh: 运行器组
+      required: false
+      type: text
+
+    - default: "false"
+      edit: true
+      envKey: AUTO_UNREGISTER
+      labelEn: Unregister the Runner when the container is stopped
+      labelZh: 是否在容器停止时注销 Runner
+      required: false
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"

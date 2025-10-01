@@ -1,0 +1,26 @@
+services:
+  actions-runner:
+    image: ghcr.io/pooneyy/actions-runner:2.328.0
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    privileged: true
+    networks:
+      - 1panel-network
+    labels:  
+      createdBy: "Apps"
+    environment:
+      ROLE: ${ROLE}
+      REPO: ${REPO}
+      RUNNER_GITHUB_TOKEN: ${GITHUB_TOKEN}
+      RUNNER_NAME: ${RUNNER_NAME}
+      RUNNER_LABELS: ${RUNNER_LABELS}
+      WORK_FOLDER: ${WORK_FOLDER}
+      RUNNER_GROUP: ${RUNNER_GROUP}
+      AUTO_UNREGISTER: ${AUTO_UNREGISTER}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./config:/home/runner/.runner_config
+
+networks:
+  1panel-network:
+    external: true
