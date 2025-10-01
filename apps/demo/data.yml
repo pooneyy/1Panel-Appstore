@@ -17,3 +17,17 @@ additionalProperties:
   website: https://github.com/okxlin/appstore
   github: https://github.com/okxlin/appstore
   document: https://github.com/okxlin/appstore
+  description:
+    en: 
+    zh: 
+    zh-Hant: 
+    ja: 
+    ms: 
+    pt-br: 
+    ru: 
+    ko: 
+  architectures:
+  - amd64
+  - arm64
+  - arm/v6
+  - arm/v7
