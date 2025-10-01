@@ -1,0 +1,19 @@
+name: Action Runner
+tags:
+  - DevOps
+title: Github 自托管运行器
+description: Github 自托管运行器
+additionalProperties:
+  key: action-runner
+  name: Action Runner
+  tags:
+    - DevOps
+  shortDescZh: Github 自托管运行器
+  shortDescEn: The Self-hosted Runner for GitHub Actions
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/actions/runner
+  github: https://github.com/actions/runner
+  document: https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners
