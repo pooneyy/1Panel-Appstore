@@ -1,8 +1,6 @@
 services:
   php81:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/pooneyy/php:8.1.33-fpm-bookworm-php-unofficial
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

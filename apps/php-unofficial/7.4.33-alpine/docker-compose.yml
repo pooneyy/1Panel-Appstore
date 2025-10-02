@@ -1,8 +1,6 @@
 services:
   php74a:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/pooneyy/php:7.4.33-fpm-alpine-php-unofficial
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
