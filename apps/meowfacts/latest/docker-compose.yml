@@ -1,10 +1,6 @@
 services:
   meowfacts:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      args:
-        IMAGE_TAG: latest
+    image: ghcr.io/pooneyy/meowfacts:latest
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
