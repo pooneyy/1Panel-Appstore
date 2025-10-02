@@ -1,9 +1,6 @@
 services:
   picx:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: picx:latest
+    image: ghcr.io/pooneyy/picx:latest
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
