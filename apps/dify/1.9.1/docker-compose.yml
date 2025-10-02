@@ -528,7 +528,7 @@ services:
       - ssrf_proxy_network
 
   plugin_daemon:
-    image: langgenius/dify-plugin-daemon:0.2.0-local
+    image: langgenius/dify-plugin-daemon:0.3.1-local
     container_name: plugin_daemon-${CONTAINER_NAME}
     restart: always
     environment:
