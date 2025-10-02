@@ -1,14 +1,14 @@
 name: Port-Forward-Server
 tags:
   - 工具
-title: Go 语言开发的端口转发工具 (服务端)
-description: Go 语言开发的端口转发工具 (服务端)
+title: Go 语言开发的端口转发工具
+description: Go 语言开发的端口转发工具
 additionalProperties:
   key: port-forward-server
   name: Port-Forward-Server
   tags:
     - Tool
-  shortDescZh: Go 语言开发的端口转发工具 (服务端)
+  shortDescZh: Go 语言开发的端口转发工具
   shortDescEn: Port forwarding tool developed in Go (Server)
   type: tool
   crossVersionUpdate: true

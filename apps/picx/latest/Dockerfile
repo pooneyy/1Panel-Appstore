@@ -12,7 +12,7 @@ RUN apk update && \
 RUN git clone -b gh-pages https://github.com/XPoet/picx
 
 # 将entrypoint.sh脚本文件复制到工作目录/app/
-COPY entrypoint.sh /app/
+COPY apps/picx/latest/entrypoint.sh /app/
 # 赋予entrypoint.sh脚本文件可执行权限
 RUN chmod +x /app/entrypoint.sh
 

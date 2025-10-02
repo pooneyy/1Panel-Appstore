@@ -17,3 +17,13 @@ additionalProperties:
   website: https://picx.xpoet.cn
   github: https://github.com/XPoet/picx
   document: https://picx-docs.xpoet.cn
+  architecture: 
+    - linux/amd64
+    - linux/arm64
+    - linux/ppc64le
+    - linux/riscv64
+    - linux/s390x
+    - linux/arm/v7
+    - linux/arm/v6
+    - linux/386
+

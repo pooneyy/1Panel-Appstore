@@ -1,6 +1,6 @@
 #Reference Links ：https://github.com/docker-library/php/issues/926#issuecomment-567230723
 
-FROM php:8.4.13-fpm
+FROM php:8.4.13-fpm-bookworm
 
 ARG UNAME=www-data
 ARG UGROUP=www-data
@@ -42,19 +42,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libicu-dev && \
     rm -rf /var/lib/apt/lists/*
 
-
-
 # memcached
-RUN pecl install memcached
-RUN docker-php-ext-enable memcached
+RUN pecl install memcached && \
+    docker-php-ext-enable memcached
 
 # mcrypt
-RUN pecl install mcrypt
-RUN docker-php-ext-enable mcrypt
+RUN pecl install mcrypt && \
+    docker-php-ext-enable mcrypt
 
 # redis
-RUN pecl install redis
-RUN docker-php-ext-enable redis
+RUN pecl install redis && \
+    docker-php-ext-enable redis
+
+# imap
+RUN pecl install imap && \
+    docker-php-ext-enable imap
 
 #pecl temporarily does not support PHP8.1 api installation rar
 #Reference Links ：https://stackoverflow.com/questions/73564424/error-while-installing-php-rar-extension-on-ubuntu-server
@@ -68,14 +70,12 @@ RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg --with-w
 && docker-php-ext-configure mysqli --with-mysqli=mysqlnd \
 && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
 && docker-php-ext-configure zip \
-&& docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
 && docker-php-ext-install -j "$(nproc)" \
     gd \
     intl \
     mysqli \
     pdo_mysql \
     zip \
-    imap \
     fileinfo \
     xsl \
     bcmath \
@@ -91,5 +91,3 @@ RUN docker-php-ext-enable imagick
 RUN echo "extension=redis.so" >> /usr/local/etc/php/php.ini
 
 WORKDIR /www
-
-
