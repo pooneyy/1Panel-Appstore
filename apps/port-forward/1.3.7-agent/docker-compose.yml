@@ -1,10 +1,6 @@
 services:
-  port-forward-server:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      args:
-        IMAGE_TAG: 1.3.7
+  port-forward-agent:
+    image: ghcr.io/pooneyy/port-forward:1.3.7-agent
     container_name: ${CONTAINER_NAME}
     restart: always
     network_mode: host
