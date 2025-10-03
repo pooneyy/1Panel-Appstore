@@ -161,7 +161,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           build-args: |
-            ${{ github.event.inputs.repo }}
+            ${{ github.event.inputs.build_args }}
           context: .
           target: ${{ github.event.inputs.build_target }}
           push: true
