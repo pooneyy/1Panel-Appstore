@@ -4,7 +4,7 @@ networks:
 
 services:
   kotatsu-syncserver:
-    image: qyg2297248353/kotatsu-syncserver:v20250725
+    image: ghcr.io/pooneyy/kotatsu-syncserver:20250804
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
