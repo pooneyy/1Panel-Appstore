@@ -4,7 +4,7 @@ networks:
 
 services:
   acg-faka:
-    image: qyg2297248353/acg-faka:v1.3.9
+    image: ghcr.io/pooneyy/acg-faka:3.2.1
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
@@ -13,5 +13,3 @@ services:
       - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:80
-    volumes:
-      - ${ACG_FAKA_ROOT_PATH}:/var/www/html
