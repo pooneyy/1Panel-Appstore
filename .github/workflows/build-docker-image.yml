@@ -24,6 +24,12 @@ on:
         default: latest
         type: string
 
+      build_context:
+        description: 构建上下文目录
+        required: false
+        type: string
+        default: .
+
       dockerfile:
         description: Dockerfile 在仓库中的路径
         required: false
@@ -67,6 +73,7 @@ jobs:
           TARGET_REF: ${{ github.event.inputs.ref }}
           IMAGE_NAME: ${{ github.event.inputs.image_name }}
           IMAGE_TAG: ${{ github.event.inputs.image_tag }}
+          BUILD_CONTEXT: ${{ github.event.inputs.build_context }}
           DOCKERFILE: ${{ github.event.inputs.dockerfile }}
           ARCHITECTURES: ${{ github.event.inputs.architectures }}
           BUILD_ARGS: ${{ github.event.inputs.build_args }}
@@ -76,6 +83,7 @@ jobs:
           echo "TARGET_REF=$TARGET_REF"
           echo "IMAGE_NAME=$IMAGE_NAME"
           echo "IMAGE_TAG=$IMAGE_TAG"
+          echo "BUILD_CONTEXT=$BUILD_CONTEXT"
           echo "DOCKERFILE=$DOCKERFILE"
           echo "ARCHITECTURES=$ARCHITECTURES"
           echo "BUILD_ARGS=$BUILD_ARGS"
@@ -162,7 +170,7 @@ jobs:
         with:
           build-args: |
             ${{ github.event.inputs.build_args }}
-          context: .
+          context: ${{ github.event.inputs.build_context}}
           target: ${{ github.event.inputs.build_target }}
           push: true
           file: ${{ github.event.inputs.dockerfile }}
