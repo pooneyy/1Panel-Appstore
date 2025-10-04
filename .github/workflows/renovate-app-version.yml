@@ -22,7 +22,7 @@ jobs:
       - name: Configure repo
         run: |
           git config --local user.email "githubaction@githubaction.com"
-          git config --local user.name "github-action update-app-version"
+          git config --local user.name "github-action"
 
       - name: Get list of updated files by the last commit in this branch separated by space
         id: updated-files
