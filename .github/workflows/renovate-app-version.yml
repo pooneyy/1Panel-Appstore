@@ -27,7 +27,7 @@ jobs:
       - name: Get list of updated files by the last commit in this branch separated by space
         id: updated-files
         run: |
-          echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | tr '\n' ' ')"
+          echo "files=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | tr '\n' ' ')" >> $GITHUB_OUTPUT
 
       - name: Run renovate-app-version.sh on updated files
         run: |
@@ -49,6 +49,9 @@ jobs:
           for file in "${files[@]}"; do
             if [[ $file == *"docker-compose.yml"* ]]; then
               app_name=$(echo $file | cut -d'/' -f 2)
-              git add "apps/$app_name/*" && git commit -m "Update app version [skip ci]" --no-verify && git push || true
+              old_version=$(echo $file | cut -d'/' -f 3)
+              new_version=$(cat "apps/$app_name/${old_version}.version")
+              rm -f "apps/$app_name/${old_version}.version"
+              git add "apps/$app_name/*" && git commit -m "🔧 chore($app_name): update app version from $old_version to $new_version [skip ci]" --no-verify && git push || true
             fi
           done
