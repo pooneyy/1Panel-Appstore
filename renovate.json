@@ -3,9 +3,14 @@
   "extends": [
     "config:recommended"
   ],
+  "reviewers": ["pooneyy"],
   "gitIgnoredAuthors": [
-    "githubaction@githubaction.com"
+    "githubaction@githubaction.com",
+    "85266337+pooneyy@users.noreply.github.com"
   ],
+  "automerge": true,
+  "automergeType": "pr",
+  "automergeStrategy": "squash",
   "rebaseWhen": "never",
   "prConcurrentLimit":0,
   "packageRules": [
