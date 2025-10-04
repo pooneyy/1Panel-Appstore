@@ -3,11 +3,7 @@ name: Update app version in Renovate Branches
 on:
   push:
     branches: [ 'renovate/*' ]
-  workflow_dispatch:
-    inputs:
-      manual-trigger:
-        description: 'Manually trigger Renovate'
-        default: ''
+
 jobs:
   update-app-version:
     runs-on: ubuntu-latest
@@ -50,8 +46,10 @@ jobs:
             if [[ $file == *"docker-compose.yml"* ]]; then
               app_name=$(echo $file | cut -d'/' -f 2)
               old_version=$(echo $file | cut -d'/' -f 3)
-              new_version=$(cat "apps/$app_name/${old_version}.version")
-              rm -f "apps/$app_name/${old_version}.version"
-              git add "apps/$app_name/*" && git commit -m "🔧 chore($app_name): update app version from $old_version to $new_version [skip ci]" --no-verify && git push || true
+              if [ -f "apps/$app_name/${old_version}.version" ]; then
+                new_version=$(cat "apps/$app_name/${old_version}.version")
+                rm -f "apps/$app_name/${old_version}.version"
+                git add "apps/$app_name/*" && git commit -m "🔧 chore($app_name): update app version from $old_version to $new_version" --no-verify && git push || true
+              fi
             fi
           done
