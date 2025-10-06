@@ -3,7 +3,7 @@ description: "提交使用中的相关问题 / Submit issues you encounter while
 title: "[反馈问题] 哪个应用出现了问题？ / Which app has any problem?"
 labels:
   - Feedback
-Assignees: 
+assignees: 
   - pooneyy
 body:
   - type: markdown

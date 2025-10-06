@@ -3,7 +3,7 @@ description: "当前应用商店中的应用有新版本，才可填此表单。
 title: "[需要更新应用] 哪个应用需要更新？ / Which app needs an update?"
 labels:
   - Update
-Assignees: 
+assignees: 
   - pooneyy
 body:
   - type: markdown

@@ -3,7 +3,7 @@ description: "有当前应用商店未收录的应用，请提交此表单。 / 
 title: "[需要增加应用] 需要增加哪个应用？ / Which app needs to be added?"
 labels:
   - Add
-Assignees: 
+assignees: 
   - pooneyy
 body:
   - type: markdown
