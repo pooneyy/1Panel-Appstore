@@ -1,11 +1,42 @@
-name: Update app version in Renovate Branches
+name: App Version CI/CD
 
 on:
-  push:
-    branches: [ 'renovate/*' ]
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  PR_NUMBER: ${{ github.event.pull_request.number }}
 
 jobs:
+  get-latest-commit-author:
+    name: Get Latest Commit Author
+    runs-on: ubuntu-latest
+    outputs:
+      latest_commit_author: ${{ steps.latest-commit-author.outputs.latest_commit_author }}
+    steps:
+      - name: Get latest commit author
+        id: latest-commit-author
+        run: |
+          resp=$(gh api \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /repos/${{ github.repository}}/commits/${{ github.event.pull_request.head.ref }})
+          author=$(echo "$resp" | jq -r '.author.login // empty')
+          echo "the Author of Latest Commit on Head Branch: $author"
+          echo "latest_commit_author=$author" >> $GITHUB_OUTPUT
+
   update-app-version:
+    name: Update App Version
+    needs: get-latest-commit-author
+    if: |
+      github.actor == 'renovate[bot]' &&
+      github.triggering_actor == 'renovate[bot]' &&
+      needs.get-latest-commit-author.outputs.latest_commit_author != github.repository_owner &&
+      startsWith(github.head_ref, 'renovate/')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -16,11 +47,15 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: actions/setup-python@main
+        with:
+          python-version: 3.x
+          pip-install: PyYAML
+
       - name: Configure repo
         run: |
           git config --local user.email "githubaction@githubaction.com"
           git config --local user.name "github-action"
-          gh auth login --with-token <<< "${{ github.token }}"
 
       - name: Get list of updated files by the last commit in this branch separated by space
         id: updated-files
@@ -35,8 +70,8 @@ jobs:
             if [[ $file == *"docker-compose.yml"* ]]; then
               app_name=$(echo $file | cut -d'/' -f 2)
               old_version=$(echo $file | cut -d'/' -f 3)
-              chmod +x .github/workflows/renovate-app-version.sh
-              .github/workflows/renovate-app-version.sh $app_name $old_version
+              chmod +x .github/workflows/renovate-app-version.py
+              python3 .github/workflows/renovate-app-version.py $app_name $old_version
             fi
           done
 
@@ -60,5 +95,78 @@ jobs:
                   -f 'description=CI/CD' \
                   -f 'context=${{ github.workflow}}'
               fi
+            fi
+          done
+
+  check-labels:
+    name: Check labels
+    if: |
+      github.actor == 'renovate[bot]' &&
+      github.triggering_actor == 'renovate[bot]'
+    runs-on: ubuntu-latest
+    outputs:
+      enable: ${{ steps.check-labels.outputs.enable }}
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Check for major label
+        id: check-labels
+        run: |
+          pr_labels='${{ join(github.event.pull_request.labels.*.name, ',') }}'
+          if [[ $pr_labels =~ "major" ]]; then
+            echo "❌ PR has major label"
+            echo "enable=false" >> $GITHUB_OUTPUT
+          else
+            echo "✅ PR does not have major label"
+            echo "enable=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Add reviewer and comment for major PR
+        if: steps.check-labels.outputs.enable == 'false'
+        run: |
+          gh pr edit $PR_NUMBER --add-reviewer ${{ github.actor }}
+          gh pr edit $PR_NUMBER --add-assignee ${{ github.actor }}
+      
+      - name: remove labels
+        run: |
+          pr_labels='${{ join(github.event.pull_request.labels.*.name, ',') }}'
+          IFS=',' read -ra labels_array <<< "$pr_labels"
+          for label in "${labels_array[@]}"; do
+            echo "Removing label: $label"
+            gh pr edit $PR_NUMBER --remove-label="$label"
+          done
+
+  merge-prs:
+    name: Auto Merge the PR
+    runs-on: ubuntu-latest
+    needs: 
+      - update-app-version
+      - check-labels
+    if: |
+      needs.check-labels.outputs.enable == 'true' &&
+      (needs.update-app-version.result == 'success' || needs.update-app-version.result == 'skipped')
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.base_ref }}
+      
+      - name: Merge PR
+        run: |
+          max_attempts=5
+          for attempt in $(seq 1 $max_attempts); do
+            if gh pr merge $PR_NUMBER --squash --delete-branch --body ""; then
+              echo "✅ Merge PR #$PR_NUMBER Success"
+              exit 0
+            else
+              echo "⚠️ Merge PR #$PR_NUMBER Failed ($attempt / $max_attempts)"
+              sleep 5
             fi
           done
