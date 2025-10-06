@@ -5,7 +5,7 @@ import shutil
 import sys
 import yaml
 
-def extract_version_from_string(input_string):
+def extract_version_from_string(input_string) -> dict:
     """
     从字符串中提取版本号，支持镜像名和文件夹名
     
@@ -66,7 +66,7 @@ def extract_version_from_string(input_string):
     
     return {"success": False, "version": original_candidate}
 
-def replace_version_in_dirname(old_ver_dir, new_version):
+def replace_version_in_dirname(old_ver_dir : str, new_version : str) -> str:
     """
     将旧版本文件夹名中的版本号替换为新版本号
     
@@ -80,7 +80,7 @@ def replace_version_in_dirname(old_ver_dir, new_version):
     version_info = extract_version_from_string(old_ver_dir)
     
     if version_info["success"]:
-        old_version = version_info["original"]
+        old_version = version_info["version"]
         new_ver_dir = old_ver_dir.replace(old_version, new_version)
         return new_ver_dir
     else:
@@ -107,10 +107,10 @@ def main():
     image = services[first_service].get('image', '')
     print(f"该服务的镜像: {image}")
     
-    new_version = extract_version_from_string(image)
-    print(f"版本号: {new_version}")
-    
-    old_version = extract_version_from_string(old_ver_dir)
+    new_version = extract_version_from_string(image).get("version", "latest")
+    old_version = extract_version_from_string(old_ver_dir).get("version", "latest")
+    print(f"旧版本号: {old_version}")
+    print(f"新版本号: {new_version}")
     new_ver_dir = replace_version_in_dirname(old_ver_dir, new_version)
     if old_version != new_version:
         old_path = f"apps/{app_name}/{old_ver_dir}"
