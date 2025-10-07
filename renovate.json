@@ -4,7 +4,7 @@
     "config:recommended"
   ],
   "gitIgnoredAuthors": [
-    "githubaction@githubaction.com",
+    "41898282+github-actions[bot]@users.noreply.github.com",
     "85266337+pooneyy@users.noreply.github.com"
   ],
   "prBodyColumns": [
