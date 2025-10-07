@@ -1,6 +1,6 @@
 services:
   discourse:
-    image: "bitnami/discourse:9.0.4"
+    image: "discourse/discourse:3.5.1"
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
