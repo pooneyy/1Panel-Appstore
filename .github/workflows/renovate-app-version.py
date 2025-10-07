@@ -24,40 +24,9 @@ def extract_version_from_string(input_string) -> dict:
     # 保存原始候选字符串用于失败时返回
     original_candidate = candidate
     
-    # 标准的 major.minor.patch 格式（点号分隔）
-    pattern1 = r'(\d+\.\d+\.\d+)'
-    match1 = re.search(pattern1, candidate)
-    if match1:
-        return {"success": True, "version": match1.group(1)}
-    
-    # 连字符分隔的版本号 major-minor-patch
-    pattern2 = r'(\d+\-\d+\-\d+)'
-    match2 = re.search(pattern2, candidate)
-    if match2:
-        # 将连字符转换为点号
-        version_with_dots = match2.group(1).replace('-', '.')
-        return {"success": True, "version": version_with_dots}
-    
-    # 混合分隔符（如 major.minor-patch）
-    pattern3 = r'(\d+[\.\-]\d+[\.\-]\d+)'
-    match3 = re.search(pattern3, candidate)
-    if match3:
-        # 将所有分隔符统一为点号
-        version_mixed = match3.group(1)
-        version_normalized = re.sub(r'[\.\-]', '.', version_mixed)
-        return {"success": True, "version": version_normalized}
-    
-    # 两个部分的版本号 (major.minor 或 major-minor)
-    pattern4 = r'(\d+[\.\-]\d+)(?![\.\-]\d)'  # 确保后面没有第三个数字部分
-    match4 = re.search(pattern4, candidate)
-    if match4:
-        version_two_part = match4.group(1)
-        version_normalized = re.sub(r'[\.\-]', '.', version_two_part)
-        return {"success": True, "version": version_normalized}
-    
     # 从复杂标签中提取包含数字和分隔符的版本号部分
-    pattern5 = r'(\d+(?:[\.\-]\d+)+)'
-    matches = re.findall(pattern5, candidate)
+    pattern = r'(\d+(?:[\.\-]\d+)+)'
+    matches = re.findall(pattern, candidate)
     if matches:
         # 选择最长的匹配项，并统一分隔符为点号
         best_match = max(matches, key=len)
@@ -86,6 +55,69 @@ def replace_version_in_dirname(old_ver_dir : str, new_version : str) -> str:
     else:
         return new_version
 
+
+def safe_rename_directory(old_path: str, new_path: str) -> bool:
+    """
+    安全地重命名目录，包含错误处理
+    
+    Args:
+        old_path (str): 原目录路径
+        new_path (str): 新目录路径
+        
+    Returns:
+        bool: 重命名是否成功
+    """
+    try:
+        if not os.path.exists(old_path):
+            print(f"错误: 原目录不存在: {old_path}")
+            return False
+            
+        if os.path.exists(new_path):
+            print(f"错误: 目标目录已存在: {new_path}")
+            return False
+            
+        print(f"将 {old_path} 重命名为 {new_path}")
+        shutil.move(old_path, new_path)
+        
+        # 验证重命名是否成功
+        if os.path.exists(new_path) and not os.path.exists(old_path):
+            print(f"✓ 重命名成功")
+            return True
+        else:
+            print(f"✗ 重命名后验证失败")
+            return False
+            
+    except PermissionError as e:
+        print(f"✗ 权限错误: {e}")
+        return False
+    except OSError as e:
+        print(f"✗ 系统错误: {e}")
+        return False
+    except Exception as e:
+        print(f"✗ 未知错误: {e}")
+        return False
+
+def write_version_file(file_path: str, version: str) -> bool:
+    """
+    写入版本文件
+    
+    Args:
+        file_path (str): 版本文件路径
+        version (str): 版本号
+        
+    Returns:
+        bool: 写入是否成功
+    """
+    try:
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, 'w') as f:
+            f.write(version)
+        print(f"✓ 版本文件已更新: {file_path}")
+        return True
+    except Exception as e:
+        print(f"✗ 写入版本文件失败: {e}")
+        return False
+
 def main():
     app_name = sys.argv[1]
     old_ver_dir = sys.argv[2]
@@ -107,8 +139,8 @@ def main():
     image = services[first_service].get('image', '')
     print(f"该服务的镜像: {image}")
     
-    new_version = extract_version_from_string(image).get("version", "latest")
-    old_version = extract_version_from_string(old_ver_dir).get("version", "latest")
+    new_version : str = extract_version_from_string(image).get("version", "latest")
+    old_version : str = extract_version_from_string(old_ver_dir).get("version", "latest")
     print(f"旧版本号: {old_version}")
     print(f"新版本号: {new_version}")
     new_ver_dir = replace_version_in_dirname(old_ver_dir, new_version)
@@ -116,15 +148,13 @@ def main():
         old_path = f"apps/{app_name}/{old_ver_dir}"
         new_path = f"apps/{app_name}/{new_ver_dir}"
         
-        if not os.path.exists(new_path):
-            print(f"将 {old_path} 重命名为 {new_path}")
-            shutil.move(old_path, new_path)
-            
+        if safe_rename_directory(old_path, new_path):
+            # 更新版本文件
             version_file = f"apps/{app_name}/{old_version}.version"
-            with open(version_file, 'w') as f:
-                f.write(new_version)
+            if not write_version_file(version_file, new_version):
+                print("版本文件更新失败，但目录重命名成功")
         else:
-            print(f"错误: {new_path} 文件夹已存在")
+            print("错误: 目录重命名失败")
             sys.exit(1)
 
 if __name__ == "__main__":
