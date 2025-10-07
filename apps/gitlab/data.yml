@@ -11,3 +11,7 @@ additionalProperties:
   website: https://about.gitlab.com/
   github: https://about.gitlab.com/
   document: https://docs.gitlab.com/user/get_started/
+  memoryRequired: 2560
+  architectures:
+    - amd64
+    - arm64

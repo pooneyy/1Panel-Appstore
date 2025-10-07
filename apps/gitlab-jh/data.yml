@@ -11,3 +11,7 @@ additionalProperties:
   website: https://gitlab.cn/
   github: https://gitlab.cn/
   document: https://gitlab.cn/docs/jh/
+  memoryRequired: 2560
+  architectures:
+    - amd64
+    - arm64
