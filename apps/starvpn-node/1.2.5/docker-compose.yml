@@ -1,6 +1,6 @@
 services:
   stars-node:
-    image: registry.cn-beijing.aliyuncs.com/ld_beijing/stars.node:1.1.7
+    image: registry.cn-beijing.aliyuncs.com/ld_beijing/stars.node:1.2.5
     restart: always
     container_name: stars.node
     network_mode: "host"
