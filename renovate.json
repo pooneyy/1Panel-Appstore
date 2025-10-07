@@ -29,7 +29,8 @@
       "matchPackageNames": [
         "*.aliyuncs.com/**",
         "*.gitlab.cn/**",
-        "*.myhuaweicloud.com/**"
+        "*.myhuaweicloud.com/**",
+        "*.tencentyun.com/**"
         ],
       "enabled": false
     },
