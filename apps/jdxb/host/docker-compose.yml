@@ -1,6 +1,6 @@
 services:
   jdxb:
-    image: ionewu/owjdxb
+    image: ionewu/owjdxb:latest
     container_name: ${CONTAINER_NAME}
     network_mode: host
     volumes:

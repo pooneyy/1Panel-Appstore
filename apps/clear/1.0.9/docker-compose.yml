@@ -1,0 +1,19 @@
+services:
+  clear:
+    image: eastwind996/clear:v1.0.9
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:6633"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - JWT_SECRET=${PANEL_CLEAR_JWT_SECRET}
+    labels:
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+    restart: always
+
+networks:
+  1panel-network:
+    external: true

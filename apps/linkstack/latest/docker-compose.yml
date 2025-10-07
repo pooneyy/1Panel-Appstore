@@ -1,6 +1,6 @@
 services:
   linkstack:
-    image: linkstackorg/linkstack
+    image: linkstackorg/linkstack:latest
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

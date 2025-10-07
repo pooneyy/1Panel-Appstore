@@ -5,7 +5,7 @@ services:
     network_mode: "host"
     environment:
       - HTTP_PORT=${PANEL_APP_PORT_HTTP}
-    image: wikihostinc/looking-glass-server
+    image: wikihostinc/looking-glass-server:latest
     labels:  
       createdBy: "Apps"
 
