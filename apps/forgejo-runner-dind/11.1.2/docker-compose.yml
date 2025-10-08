@@ -1,19 +1,4 @@
 services:
-  dind:
-    image: docker:dind # [ignore]
-    container_name: forgejo-dind
-    privileged: true
-    restart: 'unless-stopped'
-    command: ['dockerd', '-H', 'tcp://0.0.0.0:2375', '--tls=false']
-    environment:
-      DOCKER_TLS_CERTDIR: ""
-    volumes:
-      - ./data/dind-data:/var/lib/docker
-      - ./data/daemon.json:/etc/docker/daemon.json:ro
-    networks:
-      - 1panel-network
-    labels:
-      createdBy: "Apps"
   forgejo_runner:
     image: code.forgejo.org/forgejo/runner:11.1.2
     container_name: ${CONTAINER_NAME:-forgejo-runner}
@@ -34,6 +19,21 @@ services:
       - RUNNER_REGISTRATION_TOKEN=${RUNNER_REGISTRATION_TOKEN}
       - RUNNER_NAME=${RUNNER_NAME}
       - RUNNER_LABELS=${RUNNER_LABELS}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+  dind:
+    image: docker:dind # [ignore]
+    container_name: forgejo-dind
+    privileged: true
+    restart: 'unless-stopped'
+    command: ['dockerd', '-H', 'tcp://0.0.0.0:2375', '--tls=false']
+    environment:
+      DOCKER_TLS_CERTDIR: ""
+    volumes:
+      - ./data/dind-data:/var/lib/docker
+      - ./data/daemon.json:/etc/docker/daemon.json:ro
     networks:
       - 1panel-network
     labels:
