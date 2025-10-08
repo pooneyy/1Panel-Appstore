@@ -55,6 +55,10 @@ def replace_version_in_dirname(old_ver_dir : str, new_version : str) -> str:
     else:
         return new_version
 
+def check_directory_contents(check_dir):
+    print(f"{check_dir} 目录内容:")
+    for item in os.listdir(check_dir):
+        print(f"  - {item}")
 
 def safe_rename_directory(old_path: str, new_path: str) -> bool:
     """
@@ -81,6 +85,7 @@ def safe_rename_directory(old_path: str, new_path: str) -> bool:
         
         # 验证重命名是否成功
         if os.path.exists(new_path) and not os.path.exists(old_path):
+            check_directory_contents(new_path)
             print(f"✓ 重命名成功")
             return True
         else:
