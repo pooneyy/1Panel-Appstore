@@ -48,6 +48,16 @@ Dedicated to running various Docker applications with just one click. Enjoy conv
 
 ## 2. Usage
 
+> [!TIP]
+>
+> The current script supports specifying the installation path for 1panel using parameters, as well as specifying the Apps to be imported. If your 1panel is installed in /opt, you just need to:
+>
+> ```bash
+> curl -sSL https:// ...  update_local_appstore.sh | bash -s -- --1panel-path /opt --app app_name_1  --app app_name_2
+> ```
+>
+> **app_name must be the name of the folder below the repository app/**
+
 In the `Shell Script` task type in the `1Panel` scheduled tasks, add and execute the following command, or run the following command in the terminal:
 
 ```shell

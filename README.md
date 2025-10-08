@@ -47,6 +47,16 @@
 
 ## 2. 使用方式
 
+> [!TIP]
+>
+> 当前脚本支持使用参数指定 1panel 的安装路径，以及指定想导入的Apps。假如你的 1panel 安装在 /opt，你只需要：
+>
+> ```bash
+> curl -sSL https:// ...  update_local_appstore.sh | bash -s -- --1panel-path /opt --app app_name_1  --app app_name_2
+> ```
+>
+> **app_name 必须是仓库 app/ 下面的文件夹名**
+
 `1Panel`计划任务类型`Shell 脚本`的计划任务框里，添加并执行以下命令，或者终端运行以下命令，
 
 ```shell
