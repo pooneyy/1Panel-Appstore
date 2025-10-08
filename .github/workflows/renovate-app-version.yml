@@ -141,8 +141,8 @@ jobs:
       - name: Add reviewer and comment for major PR
         if: steps.check-labels.outputs.enable == 'false'
         run: |
-          gh pr edit $PR_NUMBER --add-reviewer ${{ github.actor }}
-          gh pr edit $PR_NUMBER --add-assignee ${{ github.actor }}
+          gh pr edit $PR_NUMBER --add-reviewer ${{ github.repository_owner }}
+          gh pr edit $PR_NUMBER --add-assignee ${{ github.repository_owner }}
       
       - name: remove labels
         run: |
