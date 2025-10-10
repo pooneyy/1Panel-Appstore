@@ -121,8 +121,8 @@ jobs:
                   echo "第 $commits_counter 个提交"
                 fi
               else
+                echo "处理: $app_name - $old_version"
                 echo "⚠️ 没有找到版本标记文件: apps/$app_name/${old_version}.version"
-                exit 1
               fi
             fi
           done
