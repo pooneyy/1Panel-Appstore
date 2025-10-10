@@ -100,7 +100,6 @@ jobs:
                 new_version=$(cat "apps/$app_name/${old_version}.version")
                 rm -f "apps/$app_name/${old_version}.version"
                 echo "处理: $app_name - $old_version → $new_version"
-                # 检查目录是否存在
                 if [ ! -d "apps/$app_name/$old_version" ]; then
                   echo "✅ 旧目录不存在: apps/$app_name/$old_version"
                 fi
@@ -118,7 +117,8 @@ jobs:
                 else
                   git commit -m "🔧 chore($app_name): update app version from $old_version to $new_version" --no-verify
                   echo "✅ 已提交: $old_version → $new_version"
-                  ((commits_counter++))
+                  commits_counter=$((commits_counter + 1))
+                  echo "第 $commits_counter 个提交"
                 fi
               else
                 echo "⚠️ 没有找到版本标记文件: apps/$app_name/${old_version}.version"
