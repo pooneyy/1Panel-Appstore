@@ -104,10 +104,10 @@ def safe_rename_directory(old_path: str, new_path: str) -> bool:
 
 def write_version_file(file_path: str, version: str) -> bool:
     """
-    写入版本文件
+    写入版本标记文件
     
     Args:
-        file_path (str): 版本文件路径
+        file_path (str): 版本标记文件路径
         version (str): 版本号
         
     Returns:
@@ -117,10 +117,10 @@ def write_version_file(file_path: str, version: str) -> bool:
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, 'w') as f:
             f.write(version)
-        print(f"✓ 版本文件已更新: {file_path}")
+        print(f"✓ 版本标记文件已更新: {file_path}")
         return True
     except Exception as e:
-        print(f"✗ 写入版本文件失败: {e}")
+        print(f"✗ 写入版本标记文件失败: {e}")
         return False
 
 def main():
@@ -154,10 +154,10 @@ def main():
         new_path = f"apps/{app_name}/{new_ver_dir}"
         
         if safe_rename_directory(old_path, new_path):
-            # 更新版本文件
+            # 更新版本标记文件
             version_file = f"apps/{app_name}/{old_version}.version"
             if not write_version_file(version_file, new_version):
-                print("版本文件更新失败，但目录重命名成功")
+                print("版本标记文件更新失败，但目录重命名成功")
         else:
             print("错误: 目录重命名失败")
             sys.exit(1)
