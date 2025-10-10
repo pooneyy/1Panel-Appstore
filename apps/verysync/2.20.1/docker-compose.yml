@@ -1,6 +1,6 @@
 services:
   verysync:
-    image: jonnyan404/verysync:v2.20.1
+    image: jonnyan404/verysync:v2.21.3
     container_name: verysync
     environment:
       - PORT=${PANEL_APP_PORT_HTTP}
