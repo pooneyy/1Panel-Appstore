@@ -83,7 +83,6 @@ jobs:
             if [[ $file == *"docker-compose.yml"* ]]; then
               app_name=$(echo $file | cut -d'/' -f 2)
               old_version=$(echo $file | cut -d'/' -f 3)
-              chmod +x .github/workflows/renovate-app-version.py
               python3 .github/workflows/renovate-app-version.py $app_name $old_version
             fi
           done
