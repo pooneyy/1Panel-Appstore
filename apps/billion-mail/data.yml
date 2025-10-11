@@ -1,0 +1,24 @@
+name: BillionMail
+tags:
+  - 实用工具
+  - 邮件服务
+title: 一个开源的邮件服务器，为智能营销提供电子邮件解决方案
+description:
+  en: An Open-Source MailServer, NewsLetter, Email Marketing Solution for Smarter
+    Campaigns
+  zh: 一个开源的邮件服务器，为智能营销提供电子邮件解决方案
+additionalProperties:
+  key: billion-mail
+  name: BillionMail
+  tags:
+    - Tool
+    - Email
+  shortDescZh: 一个开源的邮件服务器，为智能营销提供电子邮件解决方案
+  shortDescEn: An Open-Source MailServer, NewsLetter, Email Marketing Solution for
+    Smarter Campaigns
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://www.billionmail.com
+  github: https://github.com/aaPanel/BillionMail
+  document: https://www.billionmail.com/start/what.html

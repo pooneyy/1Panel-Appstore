@@ -1,0 +1,254 @@
+additionalProperties:
+  formFields:
+    - default: ./data/billionmail
+      envKey: CORE_DATA_PATH
+      label:
+        en: Core service data path
+        zh: Core 数据持久化
+      required: true
+      type: text
+      edit: true
+      rule: paramCommon
+
+    - default: ./data/rspamd
+      envKey: RSPAMD_DATA_PATH
+      label:
+        en: Rspamd service data path
+        zh: Rspamd 数据持久化
+      required: true
+      type: text
+      edit: true
+      rule: paramCommon
+
+    - default: ./data/dovecot
+      envKey: DOCECOT_DATA_PATH
+      label:
+        en: Dovecot (IMAP/POP3) service data path
+        zh: Dovecot (IMAP/POP3) 数据持久化
+      required: true
+      type: text
+      edit: true
+      rule: paramCommon
+
+    - default: ./data/postfix
+      envKey: POSTFIX_DATA_PATH
+      label:
+        en: Postfix (SMTP) service data path
+        zh: Postfix (SMTP) 数据持久化
+      required: true
+      type: text
+      edit: true
+      rule: paramCommon
+
+    - default: ./data/roundcube
+      envKey: ROUNDCUBE_DATA_PATH
+      label:
+        en: Roundcube service data path
+        zh: Roundcube 数据持久化
+      required: true
+      type: text
+      edit: true
+      rule: paramCommon
+
+    - default: "80"
+      envKey: HTTP_PORT
+      label:
+        en: HTTP PORT
+        zh: HTTP 端口
+      required: false
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: "443"
+      envKey: HTTPS_PORT
+      label:
+        en: HTTPS PORT
+        zh: HTTPS 端口
+      required: false
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: "143"
+      envKey: IMAP_PORT
+      label:
+        en: IMAP PORT
+        zh: IMAP 端口
+      required: false
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: "993"
+      envKey: IMAPS_PORT
+      label:
+        en: IMAPS PORT
+        zh: IMAPS 端口
+      required: false
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: "110"
+      envKey: POP_PORT
+      label:
+        en: POP PORT
+        zh: POP 端口
+      required: false
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: "995"
+      envKey: POPS_PORT
+      label:
+        en: POPS PORT
+        zh: POPS  端口
+      required: false
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: "25"
+      envKey: SMTP_PORT
+      label:
+        en: SMTP PORT
+        zh: SMTP  端口
+      required: false
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: "465"
+      envKey: SMTPS_PORT
+      label:
+        en: SMTPS PORT
+        zh: SMTPS  端口
+      required: false
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: "587"
+      envKey: SUBMISSION_PORT
+      label:
+        en: SUBMISSION PORT
+        zh: SUBMISSION 端口
+      required: false
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: 127.0.0.1:5432
+      envKey: SQL_PORT
+      label:
+        en: Postgres DB Address Port
+        zh: Postgres DB 地址端口
+      required: true
+      type: text
+      edit: true
+
+    - default: DB_BILLIONMAIL
+      envKey: DBNAME
+      label:
+        en: Postgres DB Name
+        zh: Postgres 数据库名
+      required: false
+      type: text
+      edit: true
+
+    - default: BILLIONMAIL
+      envKey: DBUSER
+      label:
+        en: Postgres DB User Name
+        zh: Postgres 数据库用户名
+      required: false
+      type: text
+      edit: true
+
+    - default: BILLIONMAIL_
+      envKey: DBPASS
+      label:
+        en: Postgres DB Password
+        zh: Postgres 数据库密码
+      required: false
+      type: password
+      edit: true
+      rule: paramComplexity
+      random: true
+
+    - default: 127.0.0.1:6379
+      envKey: REDIS_PORT
+      label:
+        en: REDIS Address Port
+        zh: REDIS 地址端口
+      required: true
+      type: text
+      edit: true
+
+    - default: REDISPASS_
+      envKey: REDISPASS
+      label:
+        en: Redis Password
+        zh: Redis 密码
+      required: true
+      type: password
+      edit: true
+      rule: paramComplexity
+      random: true
+
+    - default: mail.example.com
+      envKey: BILLIONMAIL_HOSTNAME
+      label:
+        en: Billionmail myhostname
+        zh: Billionmail 邮箱域
+      required: false
+      type: text
+      edit: true
+
+    - default: "False"
+      envKey: IP_WHITELIST_ENABLE
+      label:
+        en: Console ip whitelist
+        zh: 控制台 ip 白名单
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+
+    - default: "7"
+      envKey: RETENTION_DAYS
+      label:
+        en: Number of days to keep log backup
+        zh: 保留日志备份的天数
+      required: false
+      type: text
+      edit: true
+
+    - default: y
+      envKey: FAIL2BAN_INIT
+      label:
+        en: Enable fail2ban Access restrictions
+        zh: 启用fail2ban访问限制
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: "Yes"
+          value: "y"
+        - label: "No"
+          value: "n"
+
+    - default: Etc/UTC
+      envKey: TZ
+      label:
+        en: Time Zone
+        zh: 时区
+      required: false
+      type: text
+      edit: true
