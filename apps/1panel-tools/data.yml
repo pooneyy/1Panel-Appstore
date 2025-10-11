@@ -1,0 +1,22 @@
+name: 1Panel-Tools
+tags:
+  - 实用工具
+  - 开发工具
+title: 轻松将您的 Docker Compose 文件转换为 1Panel 应用商店格式
+description:
+  en: Convert your Docker Compose files to 1Panel AppStore format with ease
+  zh: 轻松将您的 Docker Compose 文件转换为 1Panel 应用商店格式
+additionalProperties:
+  key: 1panel-tools
+  name: 1Panel-Tools
+  tags:
+    - Tool
+    - DevTool
+  shortDescZh: 轻松将您的 Docker Compose 文件转换为 1Panel 应用商店格式
+  shortDescEn: Convert your Docker Compose files to 1Panel AppStore format with ease
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/arch3rPro/1Panel-Tools
+  github: https://github.com/arch3rPro/1Panel-Tools
+  document: https://github.com/arch3rPro/1Panel-Tools

@@ -1,0 +1,16 @@
+services:
+  1panel-tools:
+    image: vuldocker/1panel-tools:latest
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8080"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    labels:
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+networks:
+  1panel-network:
+    external: true
