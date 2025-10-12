@@ -97,9 +97,9 @@ additionalProperties:
       required: false
       type: select
       values:
-        - label: False
+        - label: "关闭"
           value: "none"
-        - label: True
+        - label: "开启"
           value: "PROVIDER_ID_PLACEHOLDER" # 后面会替换掉为对应的提供商
 
     - default: ""
