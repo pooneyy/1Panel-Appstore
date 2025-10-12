@@ -137,13 +137,6 @@ additionalProperties:
       required: false
       type: password
 
-    - default: ""
-      envKey: PANEL_TINYAUTH_GITHUB_REDIRECT_URI
-      labelEn: GitHub Redirect URI
-      labelZh: GitHub 回调地址
-      required: false
-      type: text
-
     # Google
     - default: ""
       envKey: PANEL_TINYAUTH_GOOGLE_CLIENT_ID
@@ -158,13 +151,6 @@ additionalProperties:
       labelZh: Google 客户端密钥
       required: false
       type: password
-
-    - default: ""
-      envKey: PANEL_TINYAUTH_GOOGLE_REDIRECT_URI
-      labelEn: Google Redirect URI
-      labelZh: Google 回调地址
-      required: false
-      type: text
 
     # Generic
     - default: ""
@@ -206,5 +192,12 @@ additionalProperties:
       envKey: PANEL_TINYAUTH_GENERIC_USER_URL
       labelEn: Generic User Info URL
       labelZh: 通用用户信息地址
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GENERIC_SCOPES
+      labelEn: Generic Scopes
+      labelZh: 通用范围
       required: false
       type: text
