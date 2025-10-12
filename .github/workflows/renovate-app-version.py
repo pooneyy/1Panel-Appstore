@@ -155,7 +155,7 @@ def main():
         
         if safe_rename_directory(old_path, new_path):
             # 更新版本标记文件
-            version_file = f"apps/{app_name}/{old_version}.version"
+            version_file = f"apps/{app_name}/{old_ver_dir}.version"
             if not write_version_file(version_file, new_version):
                 print("版本标记文件更新失败，但目录重命名成功")
         else:
