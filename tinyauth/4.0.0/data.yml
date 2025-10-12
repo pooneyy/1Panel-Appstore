@@ -17,10 +17,10 @@ additionalProperties:
       rule: paramPort
       type: number
 
-    - default: ""
+    - default: "https://sso.example.com"
       envKey: PANEL_TINYAUTH_APP_URL
       labelEn: App URL
-      labelZh: 应用地址
+      labelZh: 应用地址（结尾不要添加斜杠）
       label:
         en: App URL
         ja: アプリURL
@@ -28,7 +28,7 @@ additionalProperties:
         pt-br: URL do Aplicativo
         ru: URL приложения
         ko: 앱 URL
-        zh: 应用地址
+        zh: 应用地址（结尾不要添加斜杠）
         zh-Hant: 應用地址
       required: false
       type: text
@@ -84,7 +84,7 @@ additionalProperties:
     - default: ""
       envKey: PANEL_TINYAUTH_OAUTH_AUTO_REDIRECT
       labelEn: Auto Redirect Provider
-      labelZh: 自动跳转提供商
+      labelZh: 自动跳转到登录页面
       label:
         en: Auto Redirect Provider
         ja: 自動リダイレクトプロバイダー
@@ -92,19 +92,15 @@ additionalProperties:
         pt-br: Provedor de Redirecionamento Automático
         ru: Автоматический редирект провайдера
         ko: 자동 리디렉션 제공자
-        zh: 自动跳转提供商
-        zh-Hant: 自動跳轉提供商
+        zh: 自动跳转到登录页面
+        zh-Hant: 自動跳轉到登錄頁面
       required: false
       type: select
       values:
-        - label: None
+        - label: False
           value: "none"
-        - label: GitHub
-          value: "github"
-        - label: Google
-          value: "google"
-        - label: Generic
-          value: "generic"
+        - label: True
+          value: "PROVIDER_ID_PLACEHOLDER" # 后面会替换掉为对应的提供商
 
     - default: ""
       envKey: PANEL_TINYAUTH_BACKGROUND_IMAGE
@@ -121,58 +117,44 @@ additionalProperties:
         zh-Hant: 背景圖片
       required: false
       type: text
-
-    # GitHub
-    - default: ""
-      envKey: PANEL_TINYAUTH_GITHUB_CLIENT_ID
-      labelEn: GitHub Client ID
-      labelZh: GitHub 客户端ID
-      required: false
+  
+    - default: "github"
+      envKey: PANEL_TINYAUTH_PROVIDER_ID
+      labelEn: Provider ID
+      labelZh: 提供商ID（仅填写一个，名称任意，如果为github或google，后面参数仅需要填写client_id和client_secret）
+      label:
+        en: Provider ID
+        ja: プロバイダーID
+        ms: ID Penyedia
+        pt-br: ID do Provedor
+        ru: ID провайдера
+        ko: 자동 리디렉션 제공자
+        zh: 提供商ID（仅填写一个，名称任意，如果为github或google，后面参数仅需要填写client_id和client_secret）
+        zh-Hant: 供應商ID（僅填寫一個，名稱任意，如果為github或google，後面參數僅需要填寫client_id和client_secret）
+      required: True
       type: text
-
-    - default: ""
-      envKey: PANEL_TINYAUTH_GITHUB_CLIENT_SECRET
-      labelEn: GitHub Client Secret
-      labelZh: GitHub 客户端密钥
-      required: false
-      type: password
-
-    # Google
-    - default: ""
-      envKey: PANEL_TINYAUTH_GOOGLE_CLIENT_ID
-      labelEn: Google Client ID
-      labelZh: Google 客户端ID
-      required: false
-      type: text
-
-    - default: ""
-      envKey: PANEL_TINYAUTH_GOOGLE_CLIENT_SECRET
-      labelEn: Google Client Secret
-      labelZh: Google 客户端密钥
-      required: false
-      type: password
 
     # Generic
-    - default: ""
-      envKey: PANEL_TINYAUTH_GENERIC_NAME
-      labelEn: Generic Provider Name
-      labelZh: 通用提供商名称
-      required: false
-      type: text
-
     - default: ""
       envKey: PANEL_TINYAUTH_GENERIC_CLIENT_ID
       labelEn: Generic Client ID
       labelZh: 通用客户端ID
-      required: false
+      required: true
       type: text
 
     - default: ""
       envKey: PANEL_TINYAUTH_GENERIC_CLIENT_SECRET
       labelEn: Generic Client Secret
       labelZh: 通用客户端密钥
-      required: false
+      required: true
       type: password
+
+    - default: ""
+      envKey: PANEL_TINYAUTH_GENERIC_NAME
+      labelEn: Generic Provider Name
+      labelZh: 通用提供商名称
+      required: false
+      type: text
 
     - default: ""
       envKey: PANEL_TINYAUTH_GENERIC_AUTH_URL
@@ -189,7 +171,7 @@ additionalProperties:
       type: text
 
     - default: ""
-      envKey: PANEL_TINYAUTH_GENERIC_USER_URL
+      envKey: PANEL_TINYAUTH_GENERIC_USER_INFO_URL
       labelEn: Generic User Info URL
       labelZh: 通用用户信息地址
       required: false
