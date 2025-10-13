@@ -1,6 +1,6 @@
 services:
   arcane:
-    image: ghcr.io/ofkm/arcane:v1.5.1
+    image: ghcr.io/ofkm/arcane:v1.5.2
     container_name: ${CONTAINER_NAME}
     ports:
       - "${PANEL_APP_PORT_HTTP}:3000" 
