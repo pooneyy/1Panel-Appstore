@@ -54,7 +54,7 @@ services:
       - 1panel-network
 
   dovecot-billionmail:
-    image: billionmail/dovecot:1.5
+    image: billionmail/dovecot:1.6
     container_name: ${CONTAINER_NAME}-dovecot
     hostname: billionmail-dovecot
     cap_add:
