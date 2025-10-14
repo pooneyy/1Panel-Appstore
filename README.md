@@ -55,7 +55,7 @@
 > curl -sSL https:// ...  update_local_appstore.sh | bash -s -- --1panel-path /opt --app app_name_1  --app app_name_2
 > ```
 >
-> **app_name 必须是仓库 app/ 下面的文件夹名**
+> **app_name 必须是仓库 apps 下面的文件夹名**
 
 `1Panel`计划任务类型`Shell 脚本`的计划任务框里，添加并执行以下命令，或者终端运行以下命令，
 
