@@ -9,7 +9,7 @@ services:
     volumes:
       - "./data:/www"
     tty: true
-    image: tznb/twonav:20250307
+    image: tznb/twonav:20250913
     labels:  
       createdBy: "Apps"
 
