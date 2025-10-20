@@ -18,6 +18,7 @@ services:
       RUNNER_GROUP: ${RUNNER_GROUP}
       AUTO_UNREGISTER: ${AUTO_UNREGISTER}
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock
       - ./config:/home/runner/.runner_config
 
