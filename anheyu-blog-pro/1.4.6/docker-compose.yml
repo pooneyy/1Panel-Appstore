@@ -1,7 +1,7 @@
 services:
   anheyu:
     # build: .
-    image: anheyu/pro:1.4.6
+    image: anheyu/pro:1.4.7
     container_name: ${CONTAINER_NAME}
     restart: always
     labels:
