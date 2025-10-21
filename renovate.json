@@ -129,7 +129,7 @@
     },
     {
       "matchPackageNames": ["louislam/uptime-kuma"],
-      "matchCurrentVersion": "/^v1.*/",
+      "matchCurrentVersion": "/^1.*/",
       "allowedVersions": "<2"
     },
     {
