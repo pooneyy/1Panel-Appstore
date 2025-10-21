@@ -129,7 +129,7 @@
     {
       "matchPackageNames": ["louislam/uptime-kuma"],
       "matchCurrentVersion": "/^v1.*/",
-      "allowedVersions": "<=2"
+      "allowedVersions": "<2"
     },
     {
       "matchPackageNames": ["photoprism/photoprism"],
