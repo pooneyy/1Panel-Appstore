@@ -4,7 +4,7 @@ networks:
 
 services:
   uptime-kuma:
-    image: louislam/uptime-kuma:2.0.0-beta.3
+    image: louislam/uptime-kuma:2.0.1
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
