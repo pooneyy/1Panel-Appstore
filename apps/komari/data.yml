@@ -1,38 +1,21 @@
-# 在应用商店列表顶部显示的应用名称
 name: Komari
-# 中文标签
 tags:
   - 工具
-# 鼠标悬浮在应用上时显示的标题
 title: 轻量级的服务器状态监控工具
-# 应用详情页的完整描述
 description: Komari 是一个轻量级的服务器状态监控工具，界面美观，易于部署。
-# 应用的核心属性
 additionalProperties:
-  # 应用的唯一英文ID，用于创建文件夹等
   key: komari
-  # 应用名称
   name: Komari
-  # 英文标签
   tags:
     - Tool
-  # 中文短描述
   shortDescZh: 一个轻量级的服务器状态监控工具。
-  # 英文短描述
   shortDescEn: A lightweight server status monitoring tool.
-  # 应用类型, 'tool' | 'website' | 'runtime'
   type: tool
-  # 是否允许跨版本升级
   crossVersionUpdate: true
-  # 允许安装的数量限制, 0 代表无限制
   limit: 0
-  # 官网地址
   website: https://github.com/komari-monitor/komari
-  # Github 地址
   github: https://github.com/komari-monitor/komari
-  # 文档地址
   document: https://github.com/komari-monitor/komari
-  # 支持的 CPU 架构
   architectures:
     - amd64
     - arm64
