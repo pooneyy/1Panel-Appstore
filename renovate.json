@@ -16,7 +16,7 @@
   "rebaseWhen": "never",
   "packageRules": [
     {
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump", "replacement"],
+      "matchUpdateTypes": ["major", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump", "replacement"],
       "addLabels": ["{{ updateType }}"]
     },
     {
