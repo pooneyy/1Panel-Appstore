@@ -1,0 +1,22 @@
+name: DecoTV
+tags:
+  - 实用工具
+title: DecoTV - 免费在线视频搜索与观看平台
+description: 免费在线视频搜索与观看平台
+additionalProperties:
+  key: DecoTV
+  name: DecoTV
+  tags:
+    - Tool
+  shortDescZh: 免费在线视频搜索与观看平台
+  shortDescEn: Free Online Video Search and Viewing Platform
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/Decohererk/DecoTV
+  github: https://github.com/Decohererk/DecoTV
+  document: https://github.com/Decohererk/DecoTV
+  architectures:
+  - amd64
+  - arm64
