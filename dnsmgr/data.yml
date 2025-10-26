@@ -31,4 +31,3 @@ additionalProperties:
     ko: 다중 업스트림 DNS 집합 관리 시스템으로, 지능형 라우팅, 캐시 가속 및 시각적 관리를 지원하며 DoH/DoT/DoQ 등 최신 프로토콜을 지원합니다.
   architectures:
     - amd64
-    - arm64

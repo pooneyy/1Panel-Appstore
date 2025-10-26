@@ -18,7 +18,7 @@ additionalProperties:
   recommend: 0
   website: https://github.com/LukeGus/Termix
   github: https://github.com/LukeGus/Termix
-  document: https://github.com/LukeGus/Termix#readme
+  document: https://github.com/LukeGus/Termix
   description:
     en: 🖥️ Termix is a versatile cross-platform terminal tool that supports multiple terminal protocols, plugins, and customizations, making it easier to manage and enhance your command-line experience.
     zh: 🖥️ Termix 是一个多功能的跨平台终端工具，支持多种终端协议、插件与个性化扩展，帮助开发者更高效地管理和优化命令行体验。

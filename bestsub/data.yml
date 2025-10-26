@@ -16,7 +16,7 @@ additionalProperties:
   recommend: 0
   website: https://github.com/bestruirui/BestSub
   github: https://github.com/bestruirui/BestSub
-  document: https://github.com/bestruirui/BestSub#readme
+  document: https://github.com/bestruirui/BestSub
   description:
     en: ⚡ BestSub is a high-performance node detection and subscription conversion service built with Go. It provides a modern Web UI and complete API, supports multiple detection methods, subscription format conversions, persistent node pools, extensible modules, and flexible notification and storage options.
     zh: ⚡ BestSub 是一个高性能的节点检测与订阅转换服务，基于 Go 语言开发。它提供现代化的 Web 管理界面与完整的 API，支持多种检测方式、订阅格式转换、节点池持久化、模块化扩展，以及灵活的通知与存储方案。
@@ -29,3 +29,4 @@ additionalProperties:
   architectures:
     - amd64
     - arm64
+    - arm/v7

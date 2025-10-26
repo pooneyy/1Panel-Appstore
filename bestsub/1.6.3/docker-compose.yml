@@ -3,15 +3,12 @@ services:
     image: bestrui/bestsub:v1.6.3
     container_name: ${CONTAINER_NAME}
     restart: always
-
     labels:
       createdBy: "Apps"
     ports:
       - ${PANEL_APP_PORT_HTTP}:8080
-    
     volumes:
       - ./data:/app/data
-            
     networks:
       - 1panel-network
 

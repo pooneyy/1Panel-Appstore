@@ -15,7 +15,7 @@ additionalProperties:
   limit: 0
   website: https://anheyu.com/
   github: https://github.com/anzhiyu-c/anheyu-app
-  document: https://anheyu.com/posts/Z3MC
+  document: https://dev.anheyu.com/docs/getting-started/
   description:
     en: A modern blog and content management system built with Go backend and Vue3 frontend.
     zh: 一个基于 Go 语言后端与 Vue3 前端构建的现代化博客与内容管理系统。

@@ -30,3 +30,6 @@ additionalProperties:
   architectures:
     - amd64
     - arm64
+    - ppc64le
+    - arm/v7
+    - s390x

@@ -1,6 +1,5 @@
 services:
   anheyu:
-    # build: .
     image: anheyu/pro:1.5.2
     container_name: ${CONTAINER_NAME}
     restart: always
