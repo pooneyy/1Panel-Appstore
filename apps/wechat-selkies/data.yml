@@ -1,0 +1,23 @@
+name: WeChat Selkies
+tags:
+  - 实用工具
+title: 基于 Docker 的微信/QQ Linux 客户端
+description:
+  en: Docker-based WeChat/QQ Linux client
+  zh: 基于 Docker 的微信/QQ Linux 客户端
+additionalProperties:
+  key: wechat-selkies
+  name: WeChat Selkies
+  tags:
+    - Tool
+  shortDescZh: 基于 Docker 的微信/QQ Linux 客户端
+  shortDescEn: Docker-based WeChat/QQ Linux client
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/nickrunning/wechat-selkies
+  github: https://github.com/nickrunning/wechat-selkies
+  document: https://github.com/nickrunning/wechat-selkies
+  architectures:
+  - amd64
+  - arm64
