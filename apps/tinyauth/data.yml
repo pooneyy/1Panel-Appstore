@@ -1,0 +1,32 @@
+name: TinyAuth
+tags:
+  - 开发工具
+  - 安全
+title: 轻量级OAuth2/OIDC认证代理，支持多身份提供商的统一登录解决方案
+description: 一个轻量级的OAuth2和OIDC认证代理工具，常用于在现有Web服务前添加统一登录认证。
+additionalProperties:
+  key: tinyauth
+  name: TinyAuth
+  tags:
+    - DevTool
+    - Security
+  shortDescZh: 轻量级OAuth2/OIDC认证代理，支持多身份提供商的一站式登录认证
+  shortDescEn: Lightweight OAuth2/OIDC authentication proxy with multi-provider SSO support
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://tinyauth.app/
+  github: https://github.com/tinyauth/tinyauth
+  document: https://tinyauth.app/docs/
+  description:
+    en: A lightweight reverse proxy and authentication middleware supporting multiple OAuth2 and OpenID Connect providers, ideal for securing existing web services with SSO.
+    zh: 一个轻量级的反向代理与认证中间件，支持多种OAuth2和OIDC身份提供商，为现有Web服务提供统一登录保护。
+    zh-Hant: 一個輕量級的反向代理與認證中介軟體，支援多種OAuth2和OIDC身份提供商，為既有Web服務提供單一登入保護。
+    ja: 複数のOAuth2およびOIDCプロバイダーに対応した軽量認証プロキシで、既存のWebサービスにSSO保護を追加可能。
+    ms: Proksi pengesahan ringan yang menyokong penyedia OAuth2 dan OIDC pelbagai, sesuai untuk melindungi perkhidmatan web sedia ada dengan SSO.
+    pt-br: Proxy de autenticação leve que suporta múltiplos provedores OAuth2 e OIDC, adequado para proteger serviços web existentes com SSO.
+    ru: Легковесный обратный прокси и провайдер аутентификации, поддерживающий OAuth2 и OIDC, обеспечивающий единую точку входа для существующих веб-сервисов.
+    ko: 다양한 OAuth2 및 OIDC 제공자를 지원하는 경량 인증 프록시로, 기존 웹 서비스에 단일 로그인 보호를 제공합니다.
+  architectures:
+    - amd64
+    - arm64

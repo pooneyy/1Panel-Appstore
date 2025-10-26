@@ -1,0 +1,193 @@
+additionalProperties:
+  formFields:
+    - default: 23847
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        ja: ポート
+        ms: Port
+        pt-br: Porta
+        ru: Порт
+        ko: 포트
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: oidc
+      envKey: PANEL_OAUTH2_PROXY_PROVIDER
+      labelEn: Provider
+      labelZh: 身份提供商
+      label:
+        en: Provider
+        ja: プロバイダー
+        ms: Penyedia
+        pt-br: Provedor
+        ru: Провайдер
+        ko: 제공자
+        zh: 身份提供商
+        zh-Hant: 身份提供商
+      required: true
+      type: text
+
+    - default: ""
+      envKey: PANEL_OAUTH2_PROXY_CLIENT_ID
+      labelEn: Client ID
+      labelZh: 客户端ID
+      label:
+        en: Client ID
+        ja: クライアントID
+        ms: ID Klien
+        pt-br: ID do Cliente
+        ru: ID клиента
+        ko: 클라이언트 ID
+        zh: 客户端ID
+        zh-Hant: 客戶端ID
+      required: true
+      type: text
+
+    - default: ""
+      envKey: PANEL_OAUTH2_PROXY_CLIENT_SECRET
+      labelEn: Client Secret
+      labelZh: 客户端密钥
+      label:
+        en: Client Secret
+        ja: クライアントシークレット
+        ms: Rahsia Klien
+        pt-br: Segredo do Cliente
+        ru: Секрет клиента
+        ko: 클라이언트 비밀
+        zh: 客户端密钥
+        zh-Hant: 客戶端密鑰
+      required: true
+      type: password
+
+    - default: "https://example.com/oauth2/callback"
+      envKey: PANEL_OAUTH2_PROXY_REDIRECT_URL
+      labelEn: Redirect URL
+      labelZh: 回调地址
+      label:
+        en: Redirect URL
+        ja: リダイレクトURL
+        ms: URL Pengalihan
+        pt-br: URL de Redirecionamento
+        ru: URL перенаправления
+        ko: 리디렉션 URL
+        zh: 回调地址
+        zh-Hant: 回調地址
+      required: true
+      type: text
+
+    - default: "https://keycloak.example.com/realms/master"
+      envKey: PANEL_OAUTH2_PROXY_OIDC_ISSUER_URL
+      labelEn: OIDC Issuer URL
+      labelZh: OIDC 颁发者地址
+      label:
+        en: OIDC Issuer URL
+        ja: OIDC発行者URL
+        ms: URL Pengeluar OIDC
+        pt-br: URL do emissor OIDC
+        ru: URL издателя OIDC
+        ko: OIDC 발급자 URL
+        zh: OIDC 颁发者地址
+        zh-Hant: OIDC 頒發者地址
+      required: true
+      type: text
+
+    - default: ""
+      envKey: PANEL_OAUTH2_PROXY_COOKIE_SECRET
+      labelEn: Cookie Secret
+      labelZh: Cookie 密钥
+      label:
+        en: Cookie Secret
+        ja: Cookieシークレット
+        ms: Rahsia Cookie
+        pt-br: Segredo do Cookie
+        ru: Секрет Cookie
+        ko: 쿠키 비밀
+        zh: Cookie 密钥
+        zh-Hant: Cookie 密鑰
+      required: true
+      type: password
+
+    - default: "*"
+      envKey: PANEL_OAUTH2_PROXY_EMAIL_DOMAINS
+      labelEn: Email Domains
+      labelZh: 邮箱域名
+      label:
+        en: Email Domains
+        ja: メールドメイン
+        ms: Domain E-mel
+        pt-br: Domínios de Email
+        ru: Домены электронной почты
+        ko: 이메일 도메인
+        zh: 邮箱域名
+        zh-Hant: 郵箱域名
+      required: true
+      type: text
+
+    - default: "false"
+      envKey: PANEL_OAUTH2_PROXY_INSECURE_OIDC_ALLOW_UNVERIFIED_EMAIL
+      labelEn: Allow Unverified Email
+      labelZh: 允许未验证邮箱
+      label:
+        en: Allow Unverified Email
+        ja: 未確認メールを許可
+        ms: Benarkan E-mel Tidak Disahkan
+        pt-br: Permitir Email Não Verificado
+        ru: Разрешить неподтвержденную почту
+        ko: 확인되지 않은 이메일 허용
+        zh: 允许未验证邮箱
+        zh-Hant: 允許未驗證郵箱
+      required: false
+      type: select
+      values:
+        - label: 启用
+          value: "true"
+        - label: 禁用
+          value: "false"
+
+    - default: "S256"
+      envKey: PANEL_OAUTH2_PROXY_CODE_CHALLENGE_METHOD
+      labelEn: Code Challenge Method
+      labelZh: 代码挑战方法
+      label:
+        en: Code Challenge Method
+        ja: コードチャレンジ方式
+        ms: Kaedah Cabaran Kod
+        pt-br: Método de Desafio de Código
+        ru: Метод проверки кода
+        ko: 코드 챌린지 방법
+        zh: 代码挑战方法
+        zh-Hant: 代碼挑戰方法
+      required: false
+      type: select
+      values:
+        - label: S256
+          value: S256
+        - label: plain
+          value: plain
+
+    - default: "true"
+      envKey: PANEL_OAUTH2_PROXY_REVERSE_PROXY
+      labelEn: Reverse Proxy
+      labelZh: 启用反向代理
+      label:
+        en: Reverse Proxy
+        ja: リバースプロキシ
+        ms: Proksi Songsang
+        pt-br: Proxy Reverso
+        ru: Обратный прокси
+        ko: 리버스 프록시
+        zh: 启用反向代理
+        zh-Hant: 啟用反向代理
+      required: false
+      type: select
+      values:
+        - label: 启用
+          value: "true"
+        - label: 禁用
+          value: "false"

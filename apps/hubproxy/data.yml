@@ -1,0 +1,36 @@
+name: HubProxy
+tags:
+  - Proxy
+  - Docker
+  - GitHub
+  - DevOps
+  - 加速
+title: 🚀 Docker 和 GitHub 加速代理服务器
+description: 一个轻量级、高性能的多功能代理服务，提供 Docker 镜像加速、GitHub 文件加速、离线镜像下载、AI 模型加速、智能限流等功能。
+additionalProperties:
+  key: hubproxy
+  name: HubProxy
+  tags:
+    - Tool
+    - DevOps
+    - Proxy
+  shortDescZh: Docker & GitHub 镜像加速代理服务器，支持多功能加速与离线镜像
+  shortDescEn: Lightweight proxy server for accelerating Docker, GitHub, and AI model downloads
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/sky22333/hubproxy
+  github: https://github.com/sky22333/hubproxy
+  document: https://github.com/sky22333/hubproxy
+  description:
+    en: A lightweight, high-performance proxy server for accelerating Docker images, GitHub files, Hugging Face models, and more. Supports offline image packages, intelligent rate limiting, and unified configuration.
+    zh: 一个轻量级、高性能的多功能代理服务，支持 Docker 镜像加速、GitHub 文件加速、Hugging Face 模型下载、离线镜像包、智能限流等功能。
+    zh-Hant: 輕量級高效能多功能代理服務，支援 Docker 鏡像加速、GitHub 檔案加速、Hugging Face 模型下載、離線鏡像包、智慧限流等功能。
+    ja: 軽量で高性能な多機能プロキシサーバー。Docker イメージや GitHub ファイル、Hugging Face モデルの加速、オフラインイメージパッケージ、インテリジェントレート制限などをサポート。
+    ms: Pelayan proksi ringan dan berprestasi tinggi untuk mempercepat imej Docker, fail GitHub, model Hugging Face, serta menyokong pakej imej luar talian dan had kadar pintar.
+    pt-br: Servidor proxy leve e de alto desempenho para acelerar imagens Docker, arquivos do GitHub, modelos Hugging Face e muito mais. Suporta pacotes de imagens offline, limitação de taxa inteligente e configuração unificada.
+    ru: Легковесный высокопроизводительный прокси-сервер для ускорения загрузки Docker-образов, файлов GitHub, моделей Hugging Face и др. Поддерживает офлайн-пакеты, интеллектуальное ограничение скорости и унифицированную конфигурацию.
+    ko: 가볍고 고성능의 다기능 프록시 서버로 Docker 이미지, GitHub 파일, Hugging Face 모델 가속을 지원하며 오프라인 이미지 패키지, 지능형 속도 제한, 통합 설정을 제공합니다.
+  architectures:
+    - amd64
+    - arm64
