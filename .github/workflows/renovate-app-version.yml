@@ -114,10 +114,11 @@ jobs:
                 if git diff --cached --quiet; then
                   echo "⚠️ 没有检测到文件变更，跳过提交"
                 else
-                  git commit -m "🔧 chore($app_name): update app version from $old_version to $new_version" --no-verify
-                  echo "✅ 已提交: $old_version → $new_version"
+                  git commit --quiet -m "🔧 chore($app_name): update app version from $old_version to $new_version" --no-verify
+                  echo $(git show -s --format=%H) >> /tmp/commit-shas.txt
                   commits_counter=$((commits_counter + 1))
                   echo "第 $commits_counter 个提交"
+                  echo "✅ 已提交: apps/$app_name/{$old_version → $new_version}"
                 fi
               else
                 echo "处理: $app_name - $old_version"
@@ -128,13 +129,17 @@ jobs:
           if [ $commits_counter -gt 0 ]; then
             echo "推送 $commits_counter 个提交到远程仓库..."
             git push
-            gh api --silent --method POST -H "Accept: application/vnd.github+json" \
-              -H "X-GitHub-Api-Version: 2022-11-28" \
-              /repos/${{ github.repository }}/statuses/$(git show -s --format=%H) \
-              -f 'state=success' \
-              -f 'target_url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}' \
-              -f 'description=CI/CD' \
-              -f 'context=${{ github.workflow}}'
+            while IFS= read -r sha; do
+              if [[ -n "$sha" ]]; then
+                gh api --silent --method POST -H "Accept: application/vnd.github+json" \
+                  -H "X-GitHub-Api-Version: 2022-11-28" \
+                  /repos/${{ github.repository }}/statuses/$sha \
+                  -f 'state=success' \
+                  -f 'target_url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}' \
+                  -f 'description=CI/CD' \
+                  -f 'context=${{ github.workflow}}'
+              fi
+            done < /tmp/commit-shas.txt
           else
             echo "没有提交需要推送"
           fi
