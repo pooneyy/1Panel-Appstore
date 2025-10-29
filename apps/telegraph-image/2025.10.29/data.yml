@@ -1,0 +1,71 @@
+additionalProperties:
+  formFields:
+    - default: ./date
+      envKey: KV_DATABASE_DIR
+      label:
+        en: KV Database Persistence Directory
+        zh: KV数据库持久化目录
+      required: true
+      type: text
+      edit: true
+
+    - default: ""
+      envKey: BASIC_USER
+      label:
+        en: Dashboard Username
+        zh: 管理面板用户名
+      required: true
+      type: text
+      edit: true
+      rule: paramCommon
+    - default: ""
+      envKey: BASIC_PASS
+      label:
+        en: Dashboard Password
+        zh: 管理面板密码
+      required: true
+      type: password
+      edit: true
+      rule: paramComplexity
+      random: true
+
+    - default: ""
+      envKey: TG_Chat_ID
+      label:
+        en: Telegram Channel ID
+        zh: Telegram 频道 ID
+      required: true
+      type: text
+      edit: true
+
+    - default: ""
+      envKey: TG_Bot_Token
+      label:
+        en: Telegram Bot Token
+        zh: Telegram Bot Token
+      required: true
+      type: text
+      edit: true
+
+    - default: false
+      envKey: WhiteList_Mode
+      label:
+        en: WhiteList Mode
+        zh: 白名单模式
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: True
+          value: true
+        - label: False
+          value: false
+
+    - default: ""
+      envKey: ModerateContentApiKey
+      label:
+        en: ModerateContent NSFW API key
+        zh: ModerateContent 图片审查 API key
+      required: false
+      type: text
+      edit: true

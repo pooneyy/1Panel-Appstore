@@ -1,0 +1,25 @@
+name: Telegraph Image
+tags:
+  - 实用工具
+  - 图片托管
+title: 免费图片托管解决方案，使用 Cloudflare Pages 和 Telegraph
+description:
+  en: Image Hosting solution, Using Cloudflare Pages and Telegraph.
+  zh: 免费图片托管解决方案，使用 Cloudflare Pages 和 Telegraph
+additionalProperties:
+  key: telegraph-image
+  name: Telegraph Image
+  tags:
+    - Tool
+  shortDescZh: 免费图片托管解决方案，使用 Cloudflare Pages 和 Telegraph
+  shortDescEn: Image Hosting solution, Using Cloudflare Pages and Telegraph.
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/cf-pages/Telegraph-Image
+  github: https://github.com/cf-pages/Telegraph-Image
+  document: https://github.com/cf-pages/Telegraph-Image
+  architecture:
+    - amd64
+    - arm64
+
