@@ -1,0 +1,23 @@
+services:
+  telegraph-image:
+    image: ghcr.io/pooneyy/telegraph-image:2025.10.29
+    container_name: telegraph-image
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8080
+    volumes:
+      - ${KV_DATABASE_DIR}:/app/data
+    environment:
+      - BASIC_USER=${BASIC_USER}
+      - BASIC_PASS=${BASIC_PASS}
+      - TG_Chat_ID=${TG_Chat_ID}
+      - TG_Bot_Token=${TG_Bot_Token}
+      - WhiteList_Mode=${WhiteList_Mode}
+      - ModerateContentApiKey=${ModerateContentApiKey}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
