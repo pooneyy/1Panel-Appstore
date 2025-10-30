@@ -1,7 +1,7 @@
 services:
   telegraph-image:
     image: ghcr.io/pooneyy/telegraph-image:2025.10.29
-    container_name: telegraph-image
+    container_name: ${CONTAINER_NAME}
     ports:
       - ${PANEL_APP_PORT_HTTP}:8080
     volumes:
