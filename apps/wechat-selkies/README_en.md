@@ -4,6 +4,8 @@ Docker-based WeChat/QQ Linux client with browser access support using Selkies We
 
 **Reverse proxy requires the use of the HTTPS protocol, for example, https://127.0.0.1:30001**
 
+![](https://f.pz.al/pzal/2025/10/30/21291889a2726.png)
+
 ## Project Overview
 
 This project packages the official WeChat/QQ Linux client in a Docker container, enabling direct WeChat/QQ usage in browsers through Selkies technology without local installation. Suitable for server deployment, remote work, and other scenarios.
