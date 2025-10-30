@@ -93,6 +93,14 @@
       "groupName": "Emby Server"
     },
     {
+      "matchPackageNames": ["gitlab/gitlab**"],
+      "groupName": "GitLab"
+    },
+    {
+      "matchPackageNames": ["tdengine/tsdb**"],
+      "groupName": "TDengine"
+    },
+    {
       "matchPackageNames": ["henrygd/beszel**"],
       "groupName": "beszel"
     },
