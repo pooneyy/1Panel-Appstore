@@ -3,7 +3,7 @@ services:
     image: ghcr.io/pooneyy/actions-runner:2.329.0
     container_name: ${CONTAINER_NAME}
     restart: always
-    privileged: true
+    privileged: ${PRIVILEGED}
     networks:
       - 1panel-network
     labels:  

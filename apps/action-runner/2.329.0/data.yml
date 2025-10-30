@@ -1,5 +1,18 @@
 additionalProperties:
   formFields:
+    - default: "false"
+      edit: true
+      envKey: PRIVILEGED
+      labelEn: "Privilege Mode: Manually enabled for permission issues"
+      labelZh: "特权模式: 遇到权限问题时手动启用"
+      required: false
+      type: select
+      values:
+        - label: "启用 Enabled"
+          value: "true"
+        - label: "禁用 Disabled"
+          value: "false"
+
     - default: "repos"
       edit: true
       envKey: ROLE
