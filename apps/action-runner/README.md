@@ -6,7 +6,7 @@
 
 ## 功能
 
-- 支持 Docker-in-Docker
+- 支持 Docker-out-of-Docker
 
 ### 环境变量
 | 参数 | 是否必须 | 说明 |

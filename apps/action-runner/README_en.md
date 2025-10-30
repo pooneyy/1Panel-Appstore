@@ -6,7 +6,7 @@ A simple self-hosted actions runner running in a container
 
 ## Features
 
-- Supports Docker-in-Docker
+- Supports Docker-out-of-Docker
 
 ### Environment Variables
 | Parameter | Required | Description |
