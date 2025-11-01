@@ -1,6 +1,6 @@
 services:
   nps:
-    image: yisier1/nps:v0.26.26
+    image: yisier1/nps:v0.26.27
     container_name: ${CONTAINER_NAME}
     ports:
       - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
