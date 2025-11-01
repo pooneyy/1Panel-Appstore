@@ -1,0 +1,33 @@
+name: Open Notebook
+tags:
+  - 实用工具
+title: 一个开源的、注重隐私的 Google Notebook LM 替代方案
+description:
+  en: An open source, privacy-focused alternative to Google's Notebook LM
+  zh: 一个开源的、注重隐私的 Google Notebook LM 替代方案
+additionalProperties:
+  key: open-notebook
+  name: Open Notebook
+  tags:
+    - Tool
+  shortDescZh: 一个开源的、注重隐私的 Google Notebook LM 替代方案
+  shortDescEn: An open source, privacy-focused alternative to Google's Notebook LM
+  description:
+    en: An open source, privacy-focused alternative to Google's Notebook LM
+    zh: 一个开源的、注重隐私的 Google Notebook LM 替代方案
+    zh-Hant: 一個開源、注重隱私的 Google Notebook LM 替代方案
+    ja: Google Notebook LM のオープンソースでプライバシー重視の代替案
+    ms: Alternatif sumber terbuka dan berfokus privasi untuk Google Notebook LM
+    pt-br: Uma alternativa de código aberto e com foco em privacidade ao Google Notebook LM
+    ru: Альтернатива Google Notebook LM с открытым исходным кодом и ориентацией на конфиденциальность
+    ko: Google Notebook LM의 오픈 소스, 프라이버시 중심 대안
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://www.open-notebook.ai
+  github: https://github.com/lfnovo/open-notebook
+  document: https://github.com/lfnovo/open-notebook
+  memoryRequired: 2048
+  architectures:
+    - amd64
+    - arm64

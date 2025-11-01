@@ -1,0 +1,733 @@
+additionalProperties:
+  formFields:
+    - default: "8502"
+      envKey: REACT_FRONTEND_PORT
+      labelZh: 前端端口
+      labelEn: Frontend Port
+      label:
+        zh: 前端端口
+        zh-Hant: 前端通訊埠
+        en: Frontend Port
+        ja: フロントエンドポート
+        ko: 프론트엔드 포트
+        ms: Port Frontend
+        pt-br: Porta do Frontend
+        ru: Фронтенд-порт
+        tr: Ön Uç Bağlantı Noktası
+      description:
+        zh: "设置应用的 HTTP 访问端口，有效范围: 1-65535"
+        zh-Hant: "設定應用程式的 HTTP 存取連接埠，有效範圍: 1-65535"
+        en: "Set the HTTP access port for the application, valid range: 1-65535"
+        ja: "アプリケーションのHTTPアクセスポートを設定します。有効範囲: 1-65535"
+        ko: "애플리케이션의 HTTP 접근 포트를 설정합니다. 유효 범위: 1-65535"
+        ms: "Tetapkan port akses HTTP untuk aplikasi, julat sah: 1-65535"
+        pt-br: "Defina a porta de acesso HTTP para o aplicativo, intervalo válido: 1-65535"
+        ru: "Установите порт доступа HTTP для приложения, допустимый диапазон: 1-65535"
+        tr: "Uygulama için HTTP erişim portunu ayarlayın, geçerli aralık: 1-65535"
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: "5055"
+      envKey: REST_API_BACKEND_PORT
+      labelZh: 后端端口
+      labelEn: Backend Port
+      label:
+        en: Backend Port
+        zh-Hant: 後端通訊埠
+        zh: 后端端口
+        ja: バックエンドポート
+        ms: Port Backend
+        pt-br: Porta do Backend
+        ru: Бэкенд-порт
+        ko: 백엔드 포트
+        tr: Arka Uç Bağlantı Noktası
+      description:
+        zh: "设置应用的 HTTP 访问端口，有效范围: 1-65535"
+        zh-Hant: "設定應用程式的 HTTP 存取連接埠，有效範圍: 1-65535"
+        en: "Set the HTTP access port for the application, valid range: 1-65535"
+        ja: "アプリケーションのHTTPアクセスポートを設定します。有効範囲: 1-65535"
+        ko: "애플리케이션의 HTTP 접근 포트를 설정합니다. 유효 범위: 1-65535"
+        ms: "Tetapkan port akses HTTP untuk aplikasi, julat sah: 1-65535"
+        pt-br: "Defina a porta de acesso HTTP para o aplicativo, intervalo válido: 1-65535"
+        ru: "Установите порт доступа HTTP для приложения, допустимый диапазон: 1-65535"
+        tr: "Uygulama için HTTP erişim portunu ayarlayın, geçerli aralık: 1-65535"
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: "pass"
+      envKey: OPEN_NOTEBOOK_PASSWORD
+      labelZh: 访问密码
+      labelEn: Access Password
+      label:
+        zh: 访问密码
+        en: Access Password
+        zh-Hant: 访问密碼
+        ja: アクセスパスワード
+        ms: Kata Laluan Akses
+        pt-br: Senha de Acesso
+        ru: Пароль доступа
+        ko: 액세스 비밀번호
+        tr: Erişim Parolası
+      required: false
+      type: password
+      edit: true
+      rule: paramComplexity
+      random: true
+    - default: ""
+      envKey: OPENAI_API_KEY
+      labelZh: Openai API 密钥
+      labelEn: Openai API Key
+      label:
+        zh: Openai API 密钥
+        zh-Hant: OpenAI API 金鑰
+        en: Openai API Key
+        ja: OpenAI API キー
+        ms: Kunci API OpenAI
+        pt-br: Chave da API OpenAI
+        ru: Ключ API OpenAI
+        ko: OpenAI API 키
+        tr: OpenAI API Anahtarı
+      description:
+        en: "Provides: Language models, embeddings, TTS, STT"
+        zh-Hant: 提供：語言模型、嵌入、文字轉語音、語音轉文字
+        zh: 提供：语言模型，嵌入，文字转语音，语音转文字
+        ja: 提供：言語モデル、埋め込み、音声合成、音声認識
+        ms: "Menyediakan: Model bahasa, penyematan, TTS, STT"
+        pt-br: "Fornece: Modelos de linguagem, embeddings, TTS, STT"
+        ru: "Предоставляет: Языковые модели, эмбеддинги, преобразование текста в речь, распознавание речи"
+        ko: "제공: 언어 모델, 임베딩, TTS, STT"
+        tr: "Sağlar: Dil modelleri, yerleştirmeler, metin okuma, konuşma tanıma"
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: ANTHROPIC_API_KEY
+      labelZh: Anthropic API 密钥
+      labelEn: Anthropic API Key
+      label:
+        en: Anthropic API Key
+        zh-Hant: Anthropic API 金鑰
+        ja: Anthropic API キー
+        ms: Kunci API Anthropic
+        zh: Anthropic API 密钥
+        pt-br: Chave da API Anthropic
+        ru: Ключ API Anthropic
+        ko: Anthropic API 키
+        tr: Anthropic API Anahtarı
+      description:
+        en: "Claude models, Provides: High-quality language models"
+        zh: Claude 模型, 提供：高质量的语言模型
+        zh-Hant: Claude 模型, 提供：高質量語言模型
+        ja: Claude モデル, 提供：高品質言語モデル
+        ms: "Model Claude, Menyediakan: Model bahasa berkualiti tinggi"
+        pt-br: "Modelos Claude, Fornece: Modelos de linguagem de alta qualidade"
+        ru: "Модели Claude, Предоставляет: Высококачественные языковые модели"
+        ko: "Claude 모델, 제공: 고품질 언어 모델"
+        tr: "Claude Modelleri, Sağlar: Yüksek kaliteli dil modelleri"
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: GEMINI_API_KEY
+      labelZh: Gemini API 密钥
+      labelEn: Gemini API Key
+      label:
+        zh: Gemini API 密钥
+        zh-Hant: Gemini API 金鑰
+        en: Gemini API Key
+        ja: Gemini API キー
+        ms: Kunci API Gemini
+        pt-br: Chave da API Gemini
+        ru: Ключ API Gemini
+        ko: Gemini API 키
+        tr: Gemini API Anahtarı
+      description:
+        zh: Google Gemini，提供：大型上下文模型，嵌入，文字转语音
+        zh-Hant: Google Gemini，提供：大上下文模型、嵌入、文字轉語音
+        en: "Google Gemini, Provides: Large context models, embeddings, TTS"
+        ja: Google Gemini，提供：大規模コンテキストモデル、埋め込み、音声合成
+        ko: "Google Gemini, 제공: 대규모 컨텍스트 모델, 임베딩, TTS"
+        ms: "Google Gemini, Menyediakan: Model konteks besar, penyematan, TTS"
+        pt-br: "Google Gemini, Fornece: Modelos de contexto grande, embeddings, TTS"
+        ru: "Google Gemini, Предоставляет: Модели с большим контекстом, эмбеддинги, преобразование текста в речь"
+        tr: "Google Gemini, Sağlar: Büyük bağlam modelleri, yerleştirmeler, metin okuma"
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: VERTEX_PROJECT
+      labelZh: Vertex 项目名称
+      labelEn: Vertex Project Name
+      label:
+        zh: Vertex 项目名称
+        zh-Hant: Vertex 專案名稱
+        en: Vertex Project Name
+        ja: Vertex プロジェクト名
+        ms: Nama Projek Vertex
+        pt-br: Nome do Projeto Vertex
+        ru: Название проекта Vertex
+        ko: Vertex 프로젝트 이름
+        tr: Vertex Proje Adı
+      description:
+        zh: Vertex AI（谷歌云）- 提供：企业级AI模型
+        zh-Hant: Vertex AI（谷歌雲）- 提供：企業級AI模型
+        en: "Vertex AI (Google Cloud), Provides: Enterprise-grade AI models"
+        ja: Vertex AI（Google Cloud）- 提供：エンタープライズグレードのAIモデル
+        ko: "Vertex AI(Google Cloud) - 제공: 엔터프라이즈급 AI 모델"
+        ms: "Vertex AI (Google Cloud) - Menyediakan: Model AI peringkat perusahaan"
+        pt-br: "Vertex AI (Google Cloud) - Fornece: Modelos de AI de nível empresarial"
+        ru: "Vertex AI (Google Cloud) - Предоставляет: Корпоративные AI-модели"
+        tr: "Vertex AI (Google Cloud) - Sağlar: Kurumsal seviye AI modelleri"
+      required: false
+      type: text
+      edit: true
+    - default: "./google-credentials.json"
+      envKey: GOOGLE_APPLICATION_CREDENTIALS
+      labelZh: 谷歌应用凭据
+      labelEn: Google Application Credentials
+      label:
+        zh: 谷歌应用凭据
+        zh-Hant: 谷歌應用憑據
+        en: Google Application Credentials
+        ja: Google アプリケーション認証情報
+        ko: Google 애플리케이션 자격 증명
+        ms: Kelayakan Aplikasi Google
+        pt-br: Credenciais de Aplicação Google
+        ru: Учетные данные приложения Google
+        tr: Google Uygulama Kimlik Bilgileri
+      description:
+        zh: 如果你计划配置 Vertex AI，此项值不应被修改；如果你不使用 Vertex AI，请删除它
+        zh-Hant: 如果你計劃配置 Vertex AI，此項值不應被修改；如果你不使用 Vertex AI，請刪除它
+        en: If you plan to configure Vertex AI, this value should not be modified; if you do not use Vertex AI, please delete it
+        ja: Vertex AI を設定する場合は、この値を変更しないでください。使用しない場合は削除してください
+        ko: Vertex AI를 구성할 계획이라면 이 값은 수정하지 않아야 합니다. 사용하지 않는다면 삭제하세요
+        ms: Jika anda merancang untuk mengkonfigurasi Vertex AI, nilai ini tidak sepatutnya diubah; jika anda tidak menggunakan Vertex AI, sila hapuskannya
+        pt-br: Se você planeja configurar o Vertex AI, este valor não deve ser modificado; se você não usa o Vertex AI, por favor exclua-o
+        ru: Если вы планируете настраивать Vertex AI, это значение не следует изменять; если вы не используете Vertex AI, удалите его
+        tr: Vertex AI'yı yapılandırmayı planlıyorsanız, bu değer değiştirilmemelidir; Vertex AI kullanmıyorsanız lütfen silin
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: VERTEX_LOCATION
+      labelZh: Vertex 位置
+      labelEn: Vertex Location
+      label:
+        zh: Vertex 位置
+        zh-Hant: Vertex 位置
+        en: Vertex Location
+        ja: Vertex ロケーション
+        ko: Vertex 위치
+        ms: Lokasi Vertex
+        pt-br: Localização do Vertex
+        ru: Расположение Vertex
+        tr: Vertex Konumu
+      description:
+        zh: 例如：us-east5
+        zh-Hant: 例如：us-east5
+        en: "Example: us-east5"
+        ja: 例：us-east5
+        ko: "예: us-east5"
+        ms: "Contoh: us-east5"
+        pt-br: "Exemplo: us-east5"
+        ru: "Пример: us-east5"
+        tr: "Örnek: us-east5"
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: DEEPSEEK_API_KEY
+      labelZh: Deepseek API 密钥
+      labelEn: Deepseek API Key
+      label:
+        en: Deepseek API Key
+        zh-Hant: Deepseek API 金鑰
+        zh: Deepseek API 密钥
+        ja: Deepseek API キー
+        ms: Kunci API Deepseek
+        pt-br: Chave da API Deepseek
+        ru: Ключ API Deepseek
+        tr: Deepseek API Anahtarı
+        ko: Deepseek API 키
+      description:
+        zh-Hant: DeepSeek - 高性價比模型
+        zh: DeepSeek - 性价比模型
+        en: DeepSeek - Cost-effective models
+        ja: DeepSeek - コストパフォーマンスに優れたモデル
+        ms: DeepSeek - Model berkos efektif
+        pt-br: DeepSeek - Modelos Custo-eficazes
+        ru: DeepSeek - Рентабельные модели
+        ko: DeepSeek - 비용 효율적인 모델
+        tr: DeepSeek - Düşük maliyetli modeller
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: MISTRAL_API_KEY
+      labelZh: Mistral API 密钥
+      labelEn: Mistral API Key
+      label:
+        en: Mistral API Key
+        zh-Hant: Mistral API 金鑰
+        zh: Mistral API 密钥
+        ja: Mistral API キー
+        ko: Mistral API 키
+        ms: Kunci API Mistral
+        pt-br: Chave da API Mistral
+        ru: Ключ API Mistral
+        tr: Mistral API Anahtarı
+      description:
+        en: Mistral - European AI provider
+        zh-Hant: Mistral - 歐洲AI提供商
+        zh: Mistral - 欧洲AI提供商
+        ja: Mistral -欧州のAIプロバイダー
+        ms: Mistral -Pembekal AI Eropah
+        pt-br: Mistral -Provedor de IA Europeu
+        ru: Mistral -Европейский поставщик ИИ
+        ko: Mistral -유럽 AI 공급자
+        tr: Mistral -Avrupa AI Sağlayıcısı
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: GROQ_API_KEY
+      labelZh: Groq API 密钥
+      labelEn: Groq API Key
+      label:
+        zh-Hant: Groq API 金鑰
+        en: Groq API Key
+        zh: Groq API 密钥
+        ja: Groq API キー
+        ms: Kunci API Groq
+        pt-br: Chave da API Groq
+        ru: Ключ API Groq
+        ko: Groq API 키
+        tr: Groq API Anahtarı
+      description:
+        en: Groq - Fast inference
+        zh: Groq - 快速推理
+        zh-Hant: Groq - 快速推理
+        ja: Groq - 高速推論
+        ms: Groq - Inferens Pantas
+        pt-br: Groq - Inferência Rápida
+        ru: Groq - Быстрый вывод
+        ko: Groq - 고속 추론
+        tr: Groq - Hızlı Çıkarım
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: XAI_API_KEY
+      labelZh: xAI API 密钥
+      labelEn: xAI API Key
+      label:
+        zh: xAI API 密钥
+        en: xAI API Key
+        zh-Hant: xAI API 金鑰
+        ja: xAI API キー
+        ms: Kunci API xAI
+        pt-br: Chave da API xAI
+        ru: Ключ API xAI
+        ko: xAI API 키
+        tr: xAI API Anahtarı
+      description:
+        en: xAI (Grok) - Cutting-edge models
+        zh: xAI (Grok) - 前沿模型
+        zh-Hant: xAI (Grok) - 尖端模型
+        ja: xAI (Grok) - 最先端モデル
+        ko: xAI (Grok) - 최첨단 모델
+        ms: xAI (Grok) - Model terkini
+        pt-br: xAI (Grok) - Modelos de ponta
+        ru: xAI (Grok) - Передовые модели
+        tr: xAI (Grok) - Çığır açan modeller
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: ELEVENLABS_API_KEY
+      labelZh: ElevenLabs API 密钥
+      labelEn: ElevenLabs API Key
+      label:
+        en: ElevenLabs API Key
+        zh: ElevenLabs API 密钥
+        zh-Hant: ElevenLabs API 金鑰
+        ja: ElevenLabs API キー
+        ko: ElevenLabs API 키
+        ms: Kunci API ElevenLabs
+        pt-br: Chave da API ElevenLabs
+        ru: Ключ API ElevenLabs
+        tr: ElevenLabs API Anahtarı
+      description:
+        en: ElevenLabs - High-quality voice synthesis
+        zh: ElevenLabs - 高质量语音合成
+        zh-Hant: ElevenLabs - 高質量語音合成
+        ja: ElevenLabs - 高品質音声合成
+        ko: ElevenLabs - 고품질 음성 합성
+        ms: ElevenLabs - Sintesis suara berkualiti tinggi
+        pt-br: ElevenLabs - Síntese de voz de alta qualidade
+        ru: ElevenLabs - Высококачественный синтез речи
+        tr: ElevenLabs - Yüksek kaliteli ses sentezi
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: OLLAMA_API_BASE
+      labelZh: Ollama API 基础 URL
+      labelEn: Ollama API Base URL
+      label:
+        en: Ollama API Base URL
+        zh: Ollama API 基础 URL
+        zh-Hant: Ollama API 基礎 URL
+        ja: Ollama API ベース URL
+        ko: Ollama API 베이스 URL
+        ms: URL Asas API Ollama
+        pt-br: URL Base da API Ollama
+        ru: Базовый URL API Ollama
+        tr: Ollama API Temel URL
+      description:
+        en: Ollama - Local AI models
+        zh: Ollama - 本地 AI 模型
+        zh-Hant: Ollama - 本地 AI 模型
+        ja: Ollama - ローカルAIモデル
+        ko: Ollama - 로컬 AI 모델
+        ms: Ollama - Model AI tempatan
+        pt-br: Ollama - Modelos de AI locais
+        ru: Ollama - Локальные AI-модели
+        tr: Ollama - Yerel AI modelleri
+      required: false
+      type: text
+      edit: true
+    - default: https://openrouter.ai/api/v1
+      envKey: OPENROUTER_BASE_URL
+      labelZh: Openrouter 基础 URL
+      labelEn: Openrouter Base URL
+      label:
+        en: Openrouter Base URL
+        zh: Openrouter 基础 URL
+        zh-Hant: Openrouter 基礎 URL
+        ja: Openrouter ベース URL
+        ko: Openrouter 베이스 URL
+        ms: URL Asas Openrouter
+        pt-br: URL Base do Openrouter
+        ru: Базовый URL Openrouter
+        tr: Openrouter Temel URL
+      description:
+        zh: OpenRouter - 访问多个模型
+        en: OpenRouter - Access to multiple models
+        zh-Hant: OpenRouter - 訪問多個模型
+        ja: OpenRouter - 複数モデルへのアクセス
+        ko: OpenRouter - 다중 모델 액세스
+        ms: OpenRouter - Akses kepada pelbagai model
+        pt-br: OpenRouter - Acesso a múltiplos modelos
+        ru: OpenRouter - Доступ к множеству моделей
+        tr: OpenRouter - Çoklu modellere erişim
+      required: false
+      type: text
+      edit: true
+      rule: paramExtUrl
+    - default: ""
+      envKey: OPENROUTER_API_KEY
+      labelZh: Openrouter API 密钥
+      labelEn: Openrouter API Key
+      label:
+        en: Openrouter API Key
+        zh: Openrouter API 密钥
+        zh-Hant: Openrouter API 金鑰
+        ja: Openrouter API キー
+        ko: Openrouter API 키
+        ms: Kunci API Openrouter
+        pt-br: Chave da API Openrouter
+        ru: Ключ API Openrouter
+        tr: Openrouter API Anahtarı
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: AZURE_OPENAI_API_KEY
+      labelZh: Azure Openai API 密钥
+      labelEn: Azure Openai API Key
+      label:
+        en: Azure Openai API Key
+        zh: Azure Openai API 密钥
+        zh-Hant: Azure Openai API 金鑰
+        ja: Azure OpenAI API キー
+        ko: Azure OpenAI API 키
+        ms: Kunci API Azure OpenAI
+        pt-br: Chave da API Azure OpenAI
+        ru: Ключ API Azure OpenAI
+        tr: Azure OpenAI API Anahtarı
+      description:
+        zh: Azure OpenAI
+        zh-Hant: Azure OpenAI
+        en: Azure OpenAI
+        ja: Azure OpenAI
+        ko: Azure OpenAI
+        ms: Azure OpenAI
+        pt-br: Azure OpenAI
+        ru: Azure OpenAI
+        tr: Azure OpenAI
+      required: false
+      type: text
+      edit: true
+    - default: https://your-endpoint.openai.azure.com/
+      envKey: AZURE_OPENAI_ENDPOINT
+      labelZh: Azure OpenAI 端点
+      labelEn: Azure OpenAI Endpoint
+      label:
+        zh: Azure OpenAI 端点
+        zh-Hant: Azure OpenAI 端點
+        en: Azure OpenAI Endpoint
+        ja: Azure OpenAI エンドポイント
+        ko: Azure OpenAI 엔드포인트
+        ms: Titik Akhir Azure OpenAI
+        pt-br: Ponto de Extremidade Azure OpenAI
+        ru: Конечная точка Azure OpenAI
+        tr: Azure OpenAI Uç Noktası
+      required: false
+      type: text
+      edit: true
+      rule: paramExtUrl
+    - default: 2024-12-01-preview
+      envKey: AZURE_OPENAI_API_VERSION
+      labelZh: Azure OpenAI API 版本
+      labelEn: Azure OpenAI API Version
+      label:
+        zh: Azure OpenAI API 版本
+        zh-Hant: Azure OpenAI API 版本
+        en: Azure OpenAI API Version
+        ja: Azure OpenAI API バージョン
+        ko: Azure OpenAI API 버전
+        ms: Versi API Azure OpenAI
+        pt-br: Versão da API Azure OpenAI
+        ru: Версия API Azure OpenAI
+        tr: Azure OpenAI API Sürümü
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: AZURE_OPENAI_DEPLOYMENT_NAME
+      labelZh: Azure OpenAI 部署名称
+      labelEn: Azure OpenAI Deployment Name
+      label:
+        en: Azure OpenAI Deployment Name
+        zh: Azure OpenAI 部署名称
+        zh-Hant: Azure OpenAI 部署名稱
+        ja: Azure OpenAI デプロイ名
+        ko: Azure OpenAI 배포 이름
+        ms: Nama Penempatan Azure OpenAI
+        pt-br: Nome da Implantação do Azure OpenAI
+        ru: Имя развертывания Azure OpenAI
+        tr: Azure OpenAI Dağıtım Adı
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: OPENAI_COMPATIBLE_BASE_URL
+      labelZh: OpenAI 兼容基础 URL
+      labelEn: OpenAI Compatible Base Url
+      label:
+        zh: OpenAI 兼容基础 URL
+        zh-Hant: OpenAI 相容基礎 URL
+        en: OpenAI Compatible Base Url
+        ja: OpenAI 互換ベース URL
+        ko: OpenAI 호환 베이스 URL
+        ms: Url Asas Serasi OpenAI
+        pt-br: Url Base Compatível com OpenAI
+        ru: Совместимый базовый URL OpenAI
+        tr: OpenAI Uyumlu Temel Url
+      description:
+        zh: OpenAI 兼容 (LM Studio 等) http://localhost:1234/v1
+        zh-Hant: OpenAI 相容 (LM Studio 等) http://localhost:1234/v1
+        en: OpenAI Compatible (LM Studio, etc.) http://localhost:1234/v1
+        ja: OpenAI 互換 (LM Studio など) http://localhost:1234/v1
+        ko: OpenAI 호환 (LM Studio 등) http://localhost:1234/v1
+        ms: Serasi OpenAI (LM Studio, dll.) http://localhost:1234/v1
+        pt-br: Compatível com OpenAI (LM Studio, etc.) http://localhost:1234/v1
+        ru: Совместимый с OpenAI (LM Studio и т.д.) http://localhost:1234/v1
+        tr: OpenAI Uyumlu (LM Studio vb.) http://localhost:1234/v1
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: OPENAI_COMPATIBLE_API_KEY
+      labelZh: OpenAI 兼容 API 密钥
+      labelEn: OpenAI Compatible API Key
+      label:
+        zh: OpenAI 兼容 API 密钥
+        zh-Hant: OpenAI 相容 API 金鑰
+        en: OpenAI Compatible API Key
+        ja: OpenAI 互換 API キー
+        ko: OpenAI 호환 API 키
+        ms: Kunci API Serasi OpenAI
+        pt-br: Chave de API Compatível com OpenAI
+        ru: Совместимый с OpenAI ключ API
+        tr: OpenAI Uyumlu API Anahtarı
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: FIRECRAWL_API_KEY
+      labelZh: Firecrawl API 密钥
+      labelEn: Firecrawl API Key
+      label:
+        zh: Firecrawl API 密钥
+        zh-Hant: Firecrawl API 金鑰
+        en: Firecrawl API Key
+        ja: Firecrawl API キー
+        ko: Firecrawl API 키
+        ms: Kunci API Firecrawl
+        pt-br: Chave da API Firecrawl
+        ru: Ключ API Firecrawl
+        tr: Firecrawl API Anahtarı
+      description:
+        en: Firecrawl - Enhanced web scraping
+        zh: Firecrawl - 增强型网络爬取
+        zh-Hant: Firecrawl - 增強型網路爬取
+        ja: Firecrawl - 強化版ウェブスクレイピング
+        ko: Firecrawl - 향상된 웹 스크래핑
+        ms: Firecrawl - Pengerakan web dipertingkatkan
+        pt-br: Firecrawl - Raspagem web aprimorada
+        ru: Firecrawl - Улучшенное веб-скрейпинг
+        tr: Firecrawl - Gelişmiş web kazıma
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: JINA_API_KEY
+      labelZh: Jina API 密钥
+      labelEn: Jina API Key
+      label:
+        zh: Jina API 密钥
+        zh-Hant: Jina API 金鑰
+        en: Jina API Key
+        ja: Jina API キー
+        ko: Jina API 키
+        ms: Kunci API Jina
+        pt-br: Chave da API Jina
+        ru: Ключ API Jina
+        tr: Jina API Anahtarı
+      description:
+        en: Jina - Advanced embeddings
+        zh: Jina - 高级嵌入
+        zh-Hant: Jina - 高級嵌入
+        ja: Jina - 高度な埋め込み
+        ko: Jina - 고급 임베딩
+        ms: Jina - Penyemetan lanjutan
+        pt-br: Jina - Incorporações avançadas
+        ru: Jina - Продвинутые эмбеддинги
+        tr: Jina - Gelişmiş yerleştirmeler
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: VOYAGE_API_KEY
+      labelZh: Voyage API 密钥
+      labelEn: Voyage API Key
+      label:
+        zh: Voyage API 密钥
+        zh-Hant: Voyage API 金鑰
+        en: Voyage API Key
+        ja: Voyage API キー
+        ko: Voyage API 키
+        ms: Kunci API Voyage
+        pt-br: Chave da API Voyage
+        ru: Ключ API Voyage
+        tr: Voyage API Anahtarı
+      description:
+        en: Voyage AI - Specialized embeddings
+        zh: Voyage AI - 专用嵌入
+        zh-Hant: Voyage AI - 專用嵌入
+        ja: Voyage AI - 専門的な埋め込み
+        ko: Voyage AI - 전문 임베딩
+        ms: Voyage AI - Penyemetan khusus
+        pt-br: Voyage AI - Incorporações especializadas
+        ru: Voyage AI - Специализированные эмбеддинги
+        tr: Voyage AI - Özelleştirilmiş yerleştirmeler
+      required: false
+      type: text
+      edit: true
+    - default: "false"
+      envKey: LANGCHAIN_TRACING_V2
+      labelZh: Langchain Tracing V2
+      labelEn: Langchain Tracing V2
+      label:
+        zh: Langchain Tracing V2
+        zh-Hant: Langchain Tracing V2
+        en: Langchain Tracing V2
+        ja: Langchain トレーシング V2
+        ko: Langchain 트레이싱 V2
+        ms: Penjejakan Langchain V2
+        pt-br: Rastreamento Langchain V2
+        ru: Трассировка Langchain V2
+        tr: Langchain İzleme V2
+      description:
+        en: LangSmith - Debugging and monitoring
+        zh: LangSmith - 调试与监控
+        zh-Hant: LangSmith - 調試與監控
+        ja: LangSmith - デバッグとモニタリング
+        ko: LangSmith - 디버깅 및 모니터링
+        ms: LangSmith - Penyahpepijat dan pemantauan
+        pt-br: LangSmith - Depuração e monitoramento
+        ru: LangSmith - Отладка и мониторинг
+        tr: LangSmith - Hata ayıklama ve izleme
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: Enable / 启用
+          value: "true"
+        - label: Disable / 禁用
+          value: "false"
+    - default: https://api.smith.langchain.com
+      envKey: LANGCHAIN_ENDPOINT
+      labelZh: Langchain 端点
+      labelEn: Langchain Endpoint
+      label:
+        zh-Hant: Langchain 端點
+        zh: Langchain 端点
+        en: Langchain Endpoint
+        ja: Langchain エンドポイント
+        ko: Langchain 엔드포인트
+        ms: Titik Akhir Langchain
+        pt-br: Ponto de Extremidade Langchain
+        ru: Конечная точка Langchain
+        tr: Langchain Uç Noktası
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: LANGCHAIN_API_KEY
+      labelZh: Langchain API 密钥
+      labelEn: Langchain API Key
+      label:
+        zh: Langchain API 密钥
+        zh-Hant: Langchain API 金鑰
+        en: Langchain API Key
+        ja: Langchain API キー
+        ko: Langchain API 키
+        ms: Kunci API Langchain
+        pt-br: Chave da API Langchain
+        ru: Ключ API Langchain
+        tr: Langchain API Anahtarı
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: LANGCHAIN_PROJECT
+      labelZh: Langchain 项目名
+      labelEn: Langchain Project Name
+      label:
+        zh: Langchain 项目名
+        zh-Hant: Langchain 專案名
+        en: Langchain Project Name
+        ja: Langchain プロジェクト名
+        ko: Langchain 프로젝트 이름
+        ms: Nama Projek Langchain
+        pt-br: Nome do Projeto Langchain
+        ru: Название проекта Langchain
+        tr: Langchain Proje Adı
+      required: false
+      type: text
+      edit: true
