@@ -2,15 +2,19 @@ additionalProperties:
   formFields:
     - default: "30001"
       envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
       label:
-        en: Port
-        zh: 端口
+        en: HTTP Port
+        zh: HTTP 端口
       required: true
       type: number
       edit: true
       rule: paramPort
     - default: ./config
       envKey: CONFIG_PATH
+      labelEn: Config Path
+      labelZh: 数据持久化
       label:
         en: Config Path
         zh: 数据持久化
@@ -19,6 +23,8 @@ additionalProperties:
       edit: true
     - default: selkies-username
       envKey: PANEL_USER
+      labelEn: Panel Username
+      labelZh: 面板用户名
       label:
         en: Panel Username
         zh: 面板用户名
@@ -27,8 +33,10 @@ additionalProperties:
       edit: true
     - default: PaSswoRd
       envKey: PANEL_PASSWORD
+      labelEn: Panel Password
+      labelZh: 面板密码
       label:
-        en: PANEL_PASSWORD
+        en: Panel Password
         zh: 面板密码
       required: true
       type: password

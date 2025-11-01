@@ -2,6 +2,8 @@ additionalProperties:
   formFields:
     - default: ./data/billionmail
       envKey: CORE_DATA_PATH
+      labelEn: Core service data path
+      labelZh: Core 数据持久化
       label:
         en: Core service data path
         zh: Core 数据持久化
@@ -12,6 +14,8 @@ additionalProperties:
 
     - default: ./data/rspamd
       envKey: RSPAMD_DATA_PATH
+      labelEn: Rspamd service data path
+      labelZh: Rspamd 数据持久化
       label:
         en: Rspamd service data path
         zh: Rspamd 数据持久化
@@ -22,6 +26,8 @@ additionalProperties:
 
     - default: ./data/dovecot
       envKey: DOCECOT_DATA_PATH
+      labelEn: Dovecot (IMAP/POP3) service data path
+      labelZh: Dovecot (IMAP/POP3) 数据持久化
       label:
         en: Dovecot (IMAP/POP3) service data path
         zh: Dovecot (IMAP/POP3) 数据持久化
@@ -32,6 +38,8 @@ additionalProperties:
 
     - default: ./data/postfix
       envKey: POSTFIX_DATA_PATH
+      labelEn: Postfix (SMTP) service data path
+      labelZh: Postfix (SMTP) 数据持久化
       label:
         en: Postfix (SMTP) service data path
         zh: Postfix (SMTP) 数据持久化
@@ -42,6 +50,8 @@ additionalProperties:
 
     - default: ./data/roundcube
       envKey: ROUNDCUBE_DATA_PATH
+      labelEn: Roundcube service data path
+      labelZh: Roundcube 数据持久化
       label:
         en: Roundcube service data path
         zh: Roundcube 数据持久化
@@ -52,6 +62,8 @@ additionalProperties:
 
     - default: "80"
       envKey: HTTP_PORT
+      labelEn: HTTP PORT
+      labelZh: HTTP 端口
       label:
         en: HTTP PORT
         zh: HTTP 端口
@@ -62,6 +74,8 @@ additionalProperties:
 
     - default: "443"
       envKey: HTTPS_PORT
+      labelEn: HTTPS PORT
+      labelZh: HTTPS 端口
       label:
         en: HTTPS PORT
         zh: HTTPS 端口
@@ -72,6 +86,8 @@ additionalProperties:
 
     - default: "143"
       envKey: IMAP_PORT
+      labelEn: IMAP PORT
+      labelZh: IMAP 端口
       label:
         en: IMAP PORT
         zh: IMAP 端口
@@ -82,6 +98,8 @@ additionalProperties:
 
     - default: "993"
       envKey: IMAPS_PORT
+      labelEn: IMAPS PORT
+      labelZh: IMAPS 端口
       label:
         en: IMAPS PORT
         zh: IMAPS 端口
@@ -92,6 +110,8 @@ additionalProperties:
 
     - default: "110"
       envKey: POP_PORT
+      labelEn: POP PORT
+      labelZh: POP 端口
       label:
         en: POP PORT
         zh: POP 端口
@@ -102,6 +122,8 @@ additionalProperties:
 
     - default: "995"
       envKey: POPS_PORT
+      labelEn: POPS PORT
+      labelZh: POPS  端口
       label:
         en: POPS PORT
         zh: POPS  端口
@@ -112,6 +134,8 @@ additionalProperties:
 
     - default: "25"
       envKey: SMTP_PORT
+      labelEn: SMTP PORT
+      labelZh: SMTP  端口
       label:
         en: SMTP PORT
         zh: SMTP  端口
@@ -122,6 +146,8 @@ additionalProperties:
 
     - default: "465"
       envKey: SMTPS_PORT
+      labelEn: SMTPS PORT
+      labelZh: SMTPS  端口
       label:
         en: SMTPS PORT
         zh: SMTPS  端口
@@ -132,6 +158,8 @@ additionalProperties:
 
     - default: "587"
       envKey: SUBMISSION_PORT
+      labelEn: SUBMISSION PORT
+      labelZh: SUBMISSION 端口
       label:
         en: SUBMISSION PORT
         zh: SUBMISSION 端口
@@ -142,6 +170,8 @@ additionalProperties:
 
     - default: 127.0.0.1:5432
       envKey: SQL_PORT
+      labelEn: Postgres DB Address Port
+      labelZh: Postgres DB 地址端口
       label:
         en: Postgres DB Address Port
         zh: Postgres DB 地址端口
@@ -151,6 +181,8 @@ additionalProperties:
 
     - default: DB_BILLIONMAIL
       envKey: DBNAME
+      labelEn: Postgres DB Name
+      labelZh: Postgres 数据库名
       label:
         en: Postgres DB Name
         zh: Postgres 数据库名
@@ -160,6 +192,8 @@ additionalProperties:
 
     - default: BILLIONMAIL
       envKey: DBUSER
+      labelEn: Postgres DB User Name
+      labelZh: Postgres 数据库用户名
       label:
         en: Postgres DB User Name
         zh: Postgres 数据库用户名
@@ -169,6 +203,8 @@ additionalProperties:
 
     - default: BILLIONMAIL_
       envKey: DBPASS
+      labelEn: Postgres DB Password
+      labelZh: Postgres 数据库密码
       label:
         en: Postgres DB Password
         zh: Postgres 数据库密码
@@ -180,6 +216,8 @@ additionalProperties:
 
     - default: 127.0.0.1:6379
       envKey: REDIS_PORT
+      labelEn: REDIS Address Port
+      labelZh: REDIS 地址端口
       label:
         en: REDIS Address Port
         zh: REDIS 地址端口
@@ -189,6 +227,8 @@ additionalProperties:
 
     - default: REDISPASS_
       envKey: REDISPASS
+      labelEn: Redis Password
+      labelZh: Redis 密码
       label:
         en: Redis Password
         zh: Redis 密码
@@ -200,6 +240,8 @@ additionalProperties:
 
     - default: mail.example.com
       envKey: BILLIONMAIL_HOSTNAME
+      labelEn: Billionmail myhostname
+      labelZh: Billionmail 邮箱域
       label:
         en: Billionmail myhostname
         zh: Billionmail 邮箱域
@@ -209,6 +251,8 @@ additionalProperties:
 
     - default: "False"
       envKey: IP_WHITELIST_ENABLE
+      labelEn: Console ip whitelist
+      labelZh: 控制台 ip 白名单
       label:
         en: Console ip whitelist
         zh: 控制台 ip 白名单
@@ -223,6 +267,8 @@ additionalProperties:
 
     - default: "7"
       envKey: RETENTION_DAYS
+      labelEn: Number of days to keep log backup
+      labelZh: 保留日志备份的天数
       label:
         en: Number of days to keep log backup
         zh: 保留日志备份的天数
@@ -232,9 +278,11 @@ additionalProperties:
 
     - default: y
       envKey: FAIL2BAN_INIT
+      labelEn: Enable fail2ban Access restrictions
+      labelZh: 启用 fail2ban 访问限制
       label:
         en: Enable fail2ban Access restrictions
-        zh: 启用fail2ban访问限制
+        zh: 启用 fail2ban 访问限制
       required: false
       type: select
       edit: true
@@ -246,6 +294,8 @@ additionalProperties:
 
     - default: Etc/UTC
       envKey: TZ
+      labelEn: Time Zone (TZ identifier)
+      labelZh: 时区 (时区标识符)
       label:
         en: Time Zone (TZ identifier)
         zh: 时区 (时区标识符)

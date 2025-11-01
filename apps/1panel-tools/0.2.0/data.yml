@@ -2,9 +2,11 @@ additionalProperties:
   formFields:
     - default: "8080"
       envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web Port
+      labelZh: Web 端口
       label:
-        en: Web-Port
-        zh: Web端口
+        en: Web Port
+        zh: Web 端口
       required: true
       type: number
       edit: true

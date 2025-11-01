@@ -5,6 +5,12 @@ additionalProperties:
       envKey: PRIVILEGED
       labelEn: "Privilege Mode: Manually enabled for permission issues"
       labelZh: "特权模式: 遇到权限问题时手动启用"
+      label:
+        en: Privilege Mode
+        zh: 特权模式
+      description:
+        en: Manually enabled for permission issues
+        zh: 遇到权限问题时手动启用
       required: false
       type: select
       values:
@@ -16,8 +22,14 @@ additionalProperties:
     - default: "repos"
       edit: true
       envKey: ROLE
-      labelEn: Role (Repository or Organization)
-      labelZh: 角色 (个人仓库或者组织)
+      labelEn: Role (Repository, Enterprise or Organization)
+      labelZh: 角色 (个人仓库、企业或者组织)
+      label:
+        en: Role
+        zh: 角色
+      description:
+        en: Repository, Enterprise or Organization
+        zh: 个人仓库、企业或者组织
       required: true
       type: select
       values:
@@ -31,8 +43,14 @@ additionalProperties:
     - default: "owner/repo"
       edit: true
       envKey: REPO
-      labelEn: Repository name or organization name
-      labelZh: 仓库名或组织名
+      labelEn: Repository name, enterprise name or organization name
+      labelZh: 仓库名、企业名或组织名
+      label:
+        en: Repository name, enterprise name or organization name
+        zh: 仓库名、企业名或组织名
+      description:
+        en: Personal repository format is owner/repo, enterprise format is enterpriseName, organization format is orgName
+        zh: 个人仓库格式为 owner/repo，企业格式为 enterpriseName，组织格式为 orgName
       required: true
       type: text
 
@@ -41,6 +59,9 @@ additionalProperties:
       envKey: GITHUB_TOKEN
       labelEn: Github Token
       labelZh: Github 令牌
+      label:
+        en: Github Token
+        zh: Github 令牌
       required: true
       type: text
 
@@ -49,6 +70,9 @@ additionalProperties:
       envKey: RUNNER_NAME
       labelEn: Runner Name
       labelZh: 运行器名称
+      label:
+        en: Runner Name
+        zh: 运行器名称
       required: false
       type: text
 
@@ -57,6 +81,9 @@ additionalProperties:
       envKey: RUNNER_LABELS
       labelEn: Runner Labels
       labelZh: 运行器标签
+      label:
+        en: Runner Labels
+        zh: 运行器标签
       required: false
       type: text
 
@@ -65,6 +92,9 @@ additionalProperties:
       envKey: WORK_FOLDER
       labelEn: Work Folder
       labelZh: 工作文件夹
+      label:
+        en: Work Folder
+        zh: 工作文件夹
       required: false
       type: text
 
@@ -73,6 +103,9 @@ additionalProperties:
       envKey: RUNNER_GROUP
       labelEn: Runner Group
       labelZh: 运行器组
+      label:
+        en: Runner Group
+        zh: 运行器组
       required: false
       type: text
 
@@ -81,6 +114,9 @@ additionalProperties:
       envKey: AUTO_UNREGISTER
       labelEn: Unregister the Runner when the container is stopped
       labelZh: 是否在容器停止时注销 Runner
+      label:
+        en: Unregister the Runner when the container is stopped
+        zh: 是否在容器停止时注销 Runner
       required: false
       type: select
       values:
