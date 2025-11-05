@@ -1,0 +1,42 @@
+name: Update Notice Board
+
+on:
+  push:
+    branches:
+      - config
+    paths:
+      - .github/workflows/notice-board.json
+
+jobs:
+  update-notice-board:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+
+      - name: Configure SSH
+        uses: photostructure/git-ssh-signing-action@v1
+        with:
+          ssh-signing-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          git-user-name: ${{ github.actor }}
+          git-user-email: ${{ secrets.EMAIL }}
+
+      - uses: actions/setup-python@main
+        with:
+          python-version: 3.x
+
+      - name: Run script
+        run: |
+          curl -o /tmp/update_notice_board.py -fsSL {{ secrets.UPDATE_NOTICE_BOARD }}
+          python3 /tmp/update_notice_board.py README.md zh
+          python3 /tmp/update_notice_board.py README-en.md en
+
+      - name: Create Commit and Push
+        run: |
+          git add README.md README-en.md
+          git commit -m "📝 docs(readme): update notice board"
+          git push
