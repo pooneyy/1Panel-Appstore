@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PIHOLE_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: WEBPASSWORD
       labelZh: WebUI 密码
       labelEn: WebUI password
+      label:
+        en: WebUI password
+        zh: WebUI 密码
       required: true
       type: text
     - default: "127.0.0.1"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: FTLCONF_LOCAL_IPV4
       labelZh: 本地 IPv4 地址
       labelEn: Local IPv4 address
+      label:
+        en: Local IPv4 address
+        zh: 本地 IPv4 地址
       required: true
       type: text
     - default: "1.1.1.1;8.8.8.8;114.114.114.114;"
@@ -34,5 +46,8 @@ additionalProperties:
       envKey: PIHOLE_DNS_
       labelZh: 上游 DNS 服务器
       labelEn: Upstream DNS server
+      label:
+        en: Upstream DNS server
+        zh: 上游 DNS 服务器
       required: true
       type: text

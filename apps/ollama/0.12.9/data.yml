@@ -5,6 +5,9 @@ additionalProperties:
       envKey: OLLAMA_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 11434
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: OLLAMA_MAX_LOADED_MODELS
       labelZh: 最大加载模型数量
       labelEn: Maximum number of loaded models
+      label:
+        en: Maximum number of loaded models
+        zh: 最大加载模型数量
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: OLLAMA_MAX_QUEUE
       labelZh: 最大队列长度
       labelEn: Maximum queue length
+      label:
+        en: Maximum queue length
+        zh: 最大队列长度
       required: true
       rule: paramPort
       type: number
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: OLLAMA_NUM_PARALLEL
       labelZh: 并行推理数量
       labelEn: Number of parallel inferences
+      label:
+        en: Number of parallel inferences
+        zh: 并行推理数量
       required: true
       type: select
       values:
@@ -48,6 +63,9 @@ additionalProperties:
       envKey: OLLAMA_KV_CACHE_TYPE
       labelZh: 缓存类型
       labelEn: Cache type
+      label:
+        en: Cache type
+        zh: 缓存类型
       required: true
       type: select
       values:
@@ -62,6 +80,9 @@ additionalProperties:
       envKey: OLLAMA_FLASH_ATTENTION
       labelZh: 启用 Flash Attention
       labelEn: Enable Flash Attention
+      label:
+        en: Enable Flash Attention
+        zh: 启用 Flash Attention
       required: true
       type: select
       values:

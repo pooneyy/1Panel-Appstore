@@ -21,9 +21,12 @@ additionalProperties:
       envKey: PANEL_WHODB_OPENAI_ENDPOINT
       labelEn: OpenAI Endpoint
       labelZh: OpenAI 接口地址
+      label:
+        en: OpenAI Endpoint
+        zh: OpenAI 接口地址
       required: false
       type: text
-    
+
     - default: ""
       envKey: PANEL_WHODB_OPENAI_API_KEY
       labelEn: OpenAI API Key
@@ -39,11 +42,14 @@ additionalProperties:
         zh-Hant: OpenAI API 密鑰
       required: false
       type: password
-      
+
     - default: ""
       envKey: PANEL_WHODB_CUSTOM_MODELS
       labelEn: model list
       labelZh: 模型列表
+      label:
+        en: model list
+        zh: 模型列表
       required: false
       type: text
 
@@ -51,6 +57,9 @@ additionalProperties:
       envKey: PANEL_WHODB_ANTHROPIC_API_KEY
       labelEn: Anthropic API Key
       labelZh: Anthropic API 密钥
+      label:
+        en: Anthropic API Key
+        zh: Anthropic API 密钥
       required: false
       type: password
 
@@ -58,6 +67,9 @@ additionalProperties:
       envKey: PANEL_WHODB_ANTHROPIC_ENDPOINT
       labelEn: Anthropic Endpoint
       labelZh: Anthropic 接口地址
+      label:
+        en: Anthropic Endpoint
+        zh: Anthropic 接口地址
       required: false
       type: text
 
@@ -65,6 +77,9 @@ additionalProperties:
       envKey: PANEL_WHODB_OLLAMA_HOST
       labelEn: Ollama Host
       labelZh: Ollama 主机地址
+      label:
+        en: Ollama Host
+        zh: Ollama 主机地址
       required: false
       type: text
 
@@ -72,6 +87,9 @@ additionalProperties:
       envKey: PANEL_WHODB_OLLAMA_PORT
       labelEn: Ollama Port
       labelZh: Ollama 端口
+      label:
+        en: Ollama Port
+        zh: Ollama 端口
       required: false
       rule: paramPort
       type: number

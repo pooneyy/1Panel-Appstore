@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: OPENAI_API_KEY
       labelEn: OpenAI API Key
       labelZh: OpenAI API 密钥
+      label:
+        en: OpenAI API Key
+        zh: OpenAI API 密钥
       required: false
       type: password
     - default: "https://api.openai.com/v1"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: OPENAI_PROXY_URL
       labelEn: OpenAI Proxy URL
       labelZh: OpenAI 代理 URL
+      label:
+        en: OpenAI Proxy URL
+        zh: OpenAI 代理 URL
       required: false
       type: text
     - default: ""
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: ACCESS_CODE
       labelEn: Access Code
       labelZh: 访问密码
+      label:
+        en: Access Code
+        zh: 访问密码
       random: true
       required: false
       rule: paramComplexity
@@ -36,5 +48,8 @@ additionalProperties:
       envKey: OPENAI_MODEL_LIST
       labelEn: OpenAI Model List
       labelZh: OpenAI 模型列表
+      label:
+        en: OpenAI Model List
+        zh: OpenAI 模型列表
       required: false
       type: text

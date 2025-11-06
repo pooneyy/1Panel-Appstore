@@ -1,49 +1,67 @@
 additionalProperties:
-    formFields:
-        - default: 8886
-          edit: true
-          envKey: PANEL_APP_PORT_HTTP
-          labelEn: Web Port
-          labelZh: Web管理端口
-          required: true
-          rule: paramPort
-          type: number
-        - default: 22330
-          edit: true
-          envKey: VERYSYNC_TRANSFER_PORT
-          labelEn: Transfer Port
-          labelZh: 数据传输端口
-          required: true
-          rule: paramPort
-          type: number
-        - default: 3000
-          edit: true
-          envKey: PUBLIC_RELAY_PORT
-          labelEn: Public Relay Port
-          labelZh: 公共中继端口
-          required: true
-          rule: paramPort
-          type: number
-        - default: 22027
-          edit: true
-          envKey: LOCAL_AREA_NETWORK_UDP_DISCOVERY_PORT_1
-          labelEn: Local Area Network UDP discovery port 1
-          labelZh: 内网udp发现端口1
-          required: true
-          rule: paramPort
-          type: number
-        - default: 22037
-          edit: true
-          envKey: LOCAL_AREA_NETWORK_UDP_DISCOVERY_PORT_2
-          labelEn: Local Area Network UDP discovery port 2
-          labelZh: 内网udp发现端口2
-          required: true
-          rule: paramPort
-          type: number
-        - default: ./data
-          edit: true
-          envKey: VERYSYNC_DATA_PATH
-          labelEn: Data Path
-          labelZh: 数据目录
-          required: true
-          type: text
+  formFields:
+    - default: 8886
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web Port
+      labelZh: Web管理端口
+      label:
+        en: Web Port
+        zh: Web管理端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 22330
+      edit: true
+      envKey: VERYSYNC_TRANSFER_PORT
+      labelEn: Transfer Port
+      labelZh: 数据传输端口
+      label:
+        en: Transfer Port
+        zh: 数据传输端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 3000
+      edit: true
+      envKey: PUBLIC_RELAY_PORT
+      labelEn: Public Relay Port
+      labelZh: 公共中继端口
+      label:
+        en: Public Relay Port
+        zh: 公共中继端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 22027
+      edit: true
+      envKey: LOCAL_AREA_NETWORK_UDP_DISCOVERY_PORT_1
+      labelEn: Local Area Network UDP discovery port 1
+      labelZh: 内网udp发现端口1
+      label:
+        en: Local Area Network UDP discovery port 1
+        zh: 内网udp发现端口1
+      required: true
+      rule: paramPort
+      type: number
+    - default: 22037
+      edit: true
+      envKey: LOCAL_AREA_NETWORK_UDP_DISCOVERY_PORT_2
+      labelEn: Local Area Network UDP discovery port 2
+      labelZh: 内网udp发现端口2
+      label:
+        en: Local Area Network UDP discovery port 2
+        zh: 内网udp发现端口2
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: VERYSYNC_DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据目录
+      label:
+        en: Data Path
+        zh: 数据目录
+      required: true
+      type: text

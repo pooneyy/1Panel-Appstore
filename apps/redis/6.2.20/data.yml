@@ -4,12 +4,18 @@ additionalProperties:
       envKey: REDIS_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 6379
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 端口
       labelEn: Port
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -17,6 +23,9 @@ additionalProperties:
       envKey: REDIS_ROOT_PASSWORD
       labelZh: 密码
       labelEn: Password
+      label:
+        en: Password
+        zh: 密码
       random: true
       required: false
       rule: paramComplexity

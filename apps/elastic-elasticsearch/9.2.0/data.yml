@@ -5,6 +5,9 @@ additionalProperties:
       envKey: ELASTICSEARCH_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 9200
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTPS
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_CLUSTER
       labelZh: 集群端口
       labelEn: Cluster port
+      label:
+        en: Cluster port
+        zh: 集群端口
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: ELASTIC_PASSWORD
       labelZh: Elasticsearch 密码 (elastic)
       labelEn: Elasticsearch password (elastic)
+      label:
+        en: Elasticsearch password (elastic)
+        zh: Elasticsearch 密码 (elastic)
       required: true
       type: password
     - default: ""
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: KIBANA_PASSWORD
       labelZh: Kibana 密码 (kibana_system)
       labelEn: Kibana password (kibana_system)
+      label:
+        en: Kibana password (kibana_system)
+        zh: Kibana 密码 (kibana_system)
       required: false
       type: password
     - default: "elasticsearch"
@@ -42,6 +57,9 @@ additionalProperties:
       envKey: ES_SETTING_CLUSTER_NAME
       labelZh: 集群名称
       labelEn: Cluster name
+      label:
+        en: Cluster name
+        zh: 集群名称
       required: true
       type: text
     - default: "es-node"
@@ -49,6 +67,9 @@ additionalProperties:
       envKey: ES_SETTING_NODE_NAME
       labelZh: 节点名称
       labelEn: Node name
+      label:
+        en: Node name
+        zh: 节点名称
       required: true
       type: text
     - default: "-Xms1g -Xmx1g"
@@ -56,5 +77,8 @@ additionalProperties:
       envKey: ES_JAVA_OPTS
       labelZh: Java 启动参数 (可选)
       labelEn: Java startup parameters (optional)
+      label:
+        en: Java startup parameters (optional)
+        zh: Java 启动参数 (可选)
       required: false
       type: text

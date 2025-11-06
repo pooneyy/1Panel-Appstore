@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: NEXT_PUBLIC_SITE_NAME
       labelZh: 网站名称
       labelEn: Site Name
+      label:
+        en: Site Name
+        zh: 网站名称
       required: true
       type: text
     - default: "本网站仅提供影视信息搜索服务，所有内容均来自第三方网站。本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责。"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: ANNOUNCEMENT
       labelZh: 站点公告
       labelEn: Site Announcement
+      label:
+        en: Site Announcement
+        zh: 站点公告
       required: true
       type: text
     - default: 5
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: NEXT_PUBLIC_SEARCH_MAX_PAGE
       labelZh: 搜索结果最大页数
       labelEn: Search result maximum number of pages
+      label:
+        en: Search result maximum number of pages
+        zh: 搜索结果最大页数
       required: true
       type: number
     - default: ""
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: USERNAME
       labelZh: 管理员用户名
       labelEn: Admin Username
+      label:
+        en: Admin Username
+        zh: 管理员用户名
       required: true
       type: text
     - default: ""
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: PASSWORD
       labelZh: 管理员密码
       labelEn: Admin Password
+      label:
+        en: Admin Password
+        zh: 管理员密码
       required: true
       type: password
     - default: "false"
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: NEXT_PUBLIC_ENABLE_REGISTER
       labelZh: 是否允许注册
       labelEn: Enable Register
+      label:
+        en: Enable Register
+        zh: 是否允许注册
       required: true
       type: select
       values:
@@ -60,6 +81,9 @@ additionalProperties:
       envKey: NEXT_PUBLIC_DISABLE_YELLOW_FILTER
       labelZh: 关闭色情内容过滤
       labelEn: Disable Yellow Filter
+      label:
+        en: Disable Yellow Filter
+        zh: 关闭色情内容过滤
       required: true
       type: select
       values:
@@ -72,6 +96,9 @@ additionalProperties:
       envKey: NEXT_PUBLIC_STORAGE_TYPE
       labelZh: 数据存储类型
       labelEn: Storage Type
+      label:
+        en: Storage Type
+        zh: 数据存储类型
       required: true
       type: select
       values:
@@ -86,6 +113,9 @@ additionalProperties:
       envKey: REDIS_URL
       labelZh: Redis 地址 (Redis 存储)
       labelEn: Redis Address (Redis Storage)
+      label:
+        en: Redis Address (Redis Storage)
+        zh: Redis 地址 (Redis 存储)
       required: false
       type: text
     - default: "redis://127.0.0.1:6666"
@@ -93,6 +123,9 @@ additionalProperties:
       envKey: KVROCKS_URL
       labelZh: Kvrocks 地址 (Kvrocks 存储)
       labelEn: Kvrocks Address (Kvrocks Storage)
+      label:
+        en: Kvrocks Address (Kvrocks Storage)
+        zh: Kvrocks 地址 (Kvrocks 存储)
       required: false
       type: text
     - default: ""
@@ -100,6 +133,9 @@ additionalProperties:
       envKey: UPSTASH_URL
       labelZh: Upstash 地址 (Upstash 存储)
       labelEn: Upstash Address (Upstash Storage)
+      label:
+        en: Upstash Address (Upstash Storage)
+        zh: Upstash 地址 (Upstash 存储)
       required: false
       type: text
     - default: ""
@@ -107,5 +143,8 @@ additionalProperties:
       envKey: UPSTASH_TOKEN
       labelZh: Upstash 授权码 (Upstash 存储)
       labelEn: Upstash Token (Upstash Storage)
+      label:
+        en: Upstash Token (Upstash Storage)
+        zh: Upstash 授权码 (Upstash 存储)
       required: false
       type: password

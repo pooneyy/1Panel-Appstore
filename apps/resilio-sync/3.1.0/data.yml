@@ -4,6 +4,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       type: number
       edit: true
@@ -11,6 +14,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_SYNC
       labelEn: Sync Port
       labelZh: 同步端口
+      label:
+        en: Sync Port
+        zh: 同步端口
       required: true
       type: number
       edit: true
@@ -18,6 +24,9 @@ additionalProperties:
       envKey: CONFIG_PATH
       labelEn: Config Path
       labelZh: 配置路径
+      label:
+        en: Config Path
+        zh: 配置路径
       required: true
       type: text
       edit: true
@@ -25,6 +34,9 @@ additionalProperties:
       envKey: DOWNLOADS_PATH
       labelEn: Downloads Path
       labelZh: 下载路径
+      label:
+        en: Downloads Path
+        zh: 下载路径
       required: true
       type: text
       edit: true
@@ -32,6 +44,9 @@ additionalProperties:
       envKey: SYNC_PATH
       labelEn: Sync Path
       labelZh: 同步路径
+      label:
+        en: Sync Path
+        zh: 同步路径
       required: true
       type: text
       edit: true
@@ -39,6 +54,9 @@ additionalProperties:
       envKey: EXTERNAL_MOUNT_PATH
       labelEn: External mount path
       labelZh: 外部挂载路径
+      label:
+        en: External mount path
+        zh: 外部挂载路径
       required: true
       type: text
       edit: true
@@ -46,6 +64,9 @@ additionalProperties:
       envKey: INTERNAL_MOUNT_PATH
       labelEn: Internal mount path
       labelZh: 内部挂载路径
+      label:
+        en: Internal mount path
+        zh: 内部挂载路径
       required: true
       type: text
       edit: true
@@ -53,6 +74,9 @@ additionalProperties:
       envKey: USER_ID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: true
       type: number
       edit: true
@@ -60,6 +84,9 @@ additionalProperties:
       envKey: GROUP_ID
       labelEn: Group ID
       labelZh: 用户组 ID
+      label:
+        en: Group ID
+        zh: 用户组 ID
       required: true
       type: number
       edit: true
@@ -67,6 +94,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text
       edit: true

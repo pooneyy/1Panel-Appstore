@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Service Port 12712
       labelZh: 服务端口 12712
+      label:
+        en: Service Port 12712
+        zh: 服务端口 12712
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: SECRET_KEY
       labelEn: secretKey
       labelZh: 密码，不少于八位且非纯数字
+      label:
+        en: secretKey
+        zh: 密码，不少于八位且非纯数字
       random: true
       required: true
       rule: paramComplexity

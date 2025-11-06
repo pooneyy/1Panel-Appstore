@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: FIREFLY_PASSWORD
       labelEn: Webui password
       labelZh: 网页密码
+      label:
+        en: Webui password
+        zh: 网页密码
       random: true
       required: true
       rule: paramComplexity
@@ -22,6 +28,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time zone
       labelZh: 时区
+      label:
+        en: Time zone
+        zh: 时区
       required: true
       type: text
     - default: "false"
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: FIREFLY_AUTO_SSL
       labelEn: Should automatic SSL certificate acquisition be enabled? If enabled, the port needs to be set to 443.
       labelZh: 是否启用自动获取 SSL 证书 (开启则需要将端口设置为 443)
+      label:
+        en: Should automatic SSL certificate acquisition be enabled? If enabled, the port needs to be set to 443.
+        zh: 是否启用自动获取 SSL 证书 (开启则需要将端口设置为 443)
       required: true
       type: select
       values:
@@ -41,5 +53,8 @@ additionalProperties:
       envKey: FIREFLY_DEVICE
       labelEn: The network interface names for inbound and outbound traffic with WireGuard
       labelZh: WireGuard 出入流量网卡名称
+      label:
+        en: The network interface names for inbound and outbound traffic with WireGuard
+        zh: WireGuard 出入流量网卡名称
       required: false
       type: text

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: IMAGE_NAME
       labelEn: Image Name
       labelZh: 镜像名称
+      label:
+        en: Image Name
+        zh: 镜像名称
       required: true
       type: select
       values:
@@ -39,6 +42,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -47,6 +53,9 @@ additionalProperties:
       envKey: NEKO_SCREEN
       labelEn: Screen Resolution
       labelZh: 屏幕分辨率
+      label:
+        en: Screen Resolution
+        zh: 屏幕分辨率
       required: true
       type: text
     - default: "neko"
@@ -54,6 +63,9 @@ additionalProperties:
       envKey: NEKO_PASSWORD
       labelEn: User Password
       labelZh: 用户密码
+      label:
+        en: User Password
+        zh: 用户密码
       required: true
       type: password
     - default: "admin"
@@ -61,6 +73,9 @@ additionalProperties:
       envKey: NEKO_PASSWORD_ADMIN
       labelEn: Admin Password
       labelZh: 管理员密码
+      label:
+        en: Admin Password
+        zh: 管理员密码
       required: true
       type: password
     - default: "52000-52100"
@@ -68,6 +83,9 @@ additionalProperties:
       envKey: NEKO_EPR
       labelEn: WebRTC UDP Port Range
       labelZh: WebRTC UDP 端口范围
+      label:
+        en: WebRTC UDP Port Range
+        zh: WebRTC UDP 端口范围
       required: true
       type: text
     - default: "1"
@@ -75,6 +93,9 @@ additionalProperties:
       envKey: NEKO_ICELITE
       labelEn: ICELite Mode
       labelZh: ICELite 模式
+      label:
+        en: ICELite Mode
+        zh: ICELite 模式
       required: true
       type: number
     - default: "2048m"
@@ -82,6 +103,9 @@ additionalProperties:
       envKey: MEM_USE
       labelEn: Shared memory footprint (1gb)
       labelZh: 共享内存占用 (1gb)
+      label:
+        en: Shared memory footprint (1gb)
+        zh: 共享内存占用 (1gb)
       required: true
       type: text
     - default: "./data/Downloads"
@@ -89,6 +113,9 @@ additionalProperties:
       envKey: DOWNLOAD_PATH
       labelEn: Download Path (Pay attention to folder permissions)
       labelZh: 下载文件路径 (注意文件夹权限)
+      label:
+        en: Download Path (Pay attention to folder permissions)
+        zh: 下载文件路径 (注意文件夹权限)
       required: true
       type: text
     - default: "false"
@@ -96,6 +123,9 @@ additionalProperties:
       envKey: NEKO_CONTROL_PROTECTION
       labelEn: Control Protection
       labelZh: 控制保护
+      label:
+        en: Control Protection
+        zh: 控制保护
       required: true
       type: select
       values:
@@ -108,6 +138,9 @@ additionalProperties:
       envKey: NEKO_IMPLICIT_CONTROL
       labelEn: Implicit Control
       labelZh: 隐式控制
+      label:
+        en: Implicit Control
+        zh: 隐式控制
       required: true
       type: select
       values:
@@ -120,6 +153,9 @@ additionalProperties:
       envKey: NEKO_LOCKS
       labelEn: Locks
       labelZh: 锁定
+      label:
+        en: Locks
+        zh: 锁定
       required: false
       type: text
     - default: ""
@@ -127,6 +163,9 @@ additionalProperties:
       envKey: NEKO_NAT1TO1
       labelEn: NAT1to1 IP
       labelZh: NAT1to1 IP
+      label:
+        en: NAT1to1 IP
+        zh: NAT1to1 IP
       required: false
       type: text
     - default: ""
@@ -134,6 +173,9 @@ additionalProperties:
       envKey: NEKO_IPFETCH
       labelEn: IP Fetch URL
       labelZh: IP 获取URL
+      label:
+        en: IP Fetch URL
+        zh: IP 获取URL
       required: false
       type: text
     - default: ""
@@ -141,6 +183,9 @@ additionalProperties:
       envKey: NEKO_ICESERVER
       labelEn: ICE Server
       labelZh: ICE 服务器
+      label:
+        en: ICE Server
+        zh: ICE 服务器
       required: false
       type: text
     - default: ""
@@ -148,6 +193,9 @@ additionalProperties:
       envKey: NEKO_ICESERVERS
       labelEn: ICE Servers
       labelZh: ICE 服务器组
+      label:
+        en: ICE Servers
+        zh: ICE 服务器组
       required: false
       type: text
     - default: "vp8"
@@ -155,6 +203,9 @@ additionalProperties:
       envKey: NEKO_VIDEO_CODEC
       labelEn: Video Codec
       labelZh: 视频编解码器
+      label:
+        en: Video Codec
+        zh: 视频编解码器
       required: false
       type: text
     - default: "3500"
@@ -162,6 +213,9 @@ additionalProperties:
       envKey: NEKO_VIDEO_BITRATE
       labelEn: Video Bitrate
       labelZh: 视频比特率
+      label:
+        en: Video Bitrate
+        zh: 视频比特率
       required: false
       type: number
     - default: "0"
@@ -169,6 +223,9 @@ additionalProperties:
       envKey: NEKO_MAX_FPS
       labelEn: Max FPS
       labelZh: 最大FPS
+      label:
+        en: Max FPS
+        zh: 最大FPS
       required: false
       type: number
     - default: "none"
@@ -176,6 +233,9 @@ additionalProperties:
       envKey: NEKO_HWENC
       labelEn: Hardware Encoder
       labelZh: 硬件编码器
+      label:
+        en: Hardware Encoder
+        zh: 硬件编码器
       required: false
       type: text
     - default: "opus"
@@ -183,6 +243,9 @@ additionalProperties:
       envKey: NEKO_AUDIO_CODEC
       labelEn: Audio Codec
       labelZh: 音频编解码器
+      label:
+        en: Audio Codec
+        zh: 音频编解码器
       required: false
       type: text
     - default: 196
@@ -190,6 +253,9 @@ additionalProperties:
       envKey: NEKO_AUDIO_BITRATE
       labelEn: Audio Bitrate
       labelZh: 音频比特率
+      label:
+        en: Audio Bitrate
+        zh: 音频比特率
       required: false
       type: number
     - default: ""
@@ -197,6 +263,9 @@ additionalProperties:
       envKey: NEKO_BROADCAST_PIPELINE
       labelEn: Broadcast Pipeline
       labelZh: 广播管道
+      label:
+        en: Broadcast Pipeline
+        zh: 广播管道
       required: false
       type: text
     - default: ""
@@ -204,6 +273,9 @@ additionalProperties:
       envKey: NEKO_BROADCAST_URL
       labelEn: Broadcast URL
       labelZh: 广播URL
+      label:
+        en: Broadcast URL
+        zh: 广播URL
       required: false
       type: text
     - default: "false"
@@ -211,6 +283,9 @@ additionalProperties:
       envKey: NEKO_BROADCAST_AUTOSTART
       labelEn: Broadcast Autostart
       labelZh: 广播自动启动
+      label:
+        en: Broadcast Autostart
+        zh: 广播自动启动
       required: true
       type: select
       values:
@@ -223,6 +298,9 @@ additionalProperties:
       envKey: NEKO_BIND
       labelEn: Bind Address
       labelZh: 绑定地址
+      label:
+        en: Bind Address
+        zh: 绑定地址
       required: true
       rule: paramPort
       type: number
@@ -231,6 +309,9 @@ additionalProperties:
       envKey: NEKO_CERT
       labelEn: SSL Certificate Path
       labelZh: SSL证书路径
+      label:
+        en: SSL Certificate Path
+        zh: SSL证书路径
       required: false
       type: text
     - default: ""
@@ -238,6 +319,9 @@ additionalProperties:
       envKey: NEKO_KEY
       labelEn: SSL Key Path
       labelZh: SSL 密钥路径
+      label:
+        en: SSL Key Path
+        zh: SSL 密钥路径
       required: false
       type: text
     - default: "false"
@@ -245,6 +329,9 @@ additionalProperties:
       envKey: NEKO_PROXY
       labelEn: Proxy Mode
       labelZh: 代理模式
+      label:
+        en: Proxy Mode
+        zh: 代理模式
       required: true
       type: select
       values:
@@ -257,6 +344,9 @@ additionalProperties:
       envKey: NEKO_PATH_PREFIX
       labelEn: Path Prefix
       labelZh: 路径前缀
+      label:
+        en: Path Prefix
+        zh: 路径前缀
       required: false
       type: text
     - default: ""
@@ -264,6 +354,9 @@ additionalProperties:
       envKey: NEKO_CORS
       labelEn: CORS
       labelZh: 跨域资源共享
+      label:
+        en: CORS
+        zh: 跨域资源共享
       required: false
       type: text
     - default: "true"
@@ -271,6 +364,9 @@ additionalProperties:
       envKey: NEKO_FILE_TRANSFER_ENABLED
       labelEn: File Transfer Enabled
       labelZh: 文件传输已启用
+      label:
+        en: File Transfer Enabled
+        zh: 文件传输已启用
       required: true
       type: select
       values:
@@ -283,6 +379,9 @@ additionalProperties:
       envKey: NEKO_FILE_TRANSFER_PATH
       labelEn: File Transfer Path
       labelZh: 文件传输路径
+      label:
+        en: File Transfer Path
+        zh: 文件传输路径
       required: false
       type: text
     - default: ""
@@ -290,6 +389,9 @@ additionalProperties:
       envKey: NEKO_DISPLAY
       labelEn: Display
       labelZh: 显示
+      label:
+        en: Display
+        zh: 显示
       required: false
       type: text
     - default: ""
@@ -297,6 +399,9 @@ additionalProperties:
       envKey: NEKO_DEVICE
       labelEn: Device
       labelZh: 设备
+      label:
+        en: Device
+        zh: 设备
       required: false
       type: text
     - default: ""
@@ -304,5 +409,8 @@ additionalProperties:
       envKey: NEKO_STATIC
       labelEn: Static Files Path
       labelZh: 静态文件路径
+      label:
+        en: Static Files Path
+        zh: 静态文件路径
       required: false
       type: text

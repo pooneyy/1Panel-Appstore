@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_CALLS
       labelEn: RTC Port
       labelZh: RTC 服务端口
+      label:
+        en: RTC Port
+        zh: RTC 服务端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: MATTERMOST_CONTAINER_READONLY
       labelEn: Read Only Container
       labelZh: 只读容器
+      label:
+        en: Read Only Container
+        zh: 只读容器
       required: false
       type: select
       values:
@@ -33,6 +42,9 @@ additionalProperties:
       envKey: MATTERMOST_CONFIG_PATH
       labelEn: Config Path
       labelZh: 配置路径
+      label:
+        en: Config Path
+        zh: 配置路径
       required: true
       type: text
     - default: "./data/data"
@@ -40,6 +52,9 @@ additionalProperties:
       envKey: MATTERMOST_DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text
     - default: "./data/logs"
@@ -47,6 +62,9 @@ additionalProperties:
       envKey: MATTERMOST_LOGS_PATH
       labelEn: Logs Path
       labelZh: 日志路径
+      label:
+        en: Logs Path
+        zh: 日志路径
       required: true
       type: text
     - default: "./data/plugins"
@@ -54,6 +72,9 @@ additionalProperties:
       envKey: MATTERMOST_PLUGINS_PATH
       labelEn: Plugins Path
       labelZh: 插件路径
+      label:
+        en: Plugins Path
+        zh: 插件路径
       required: true
       type: text
     - default: "./data/client/plugins"
@@ -61,6 +82,9 @@ additionalProperties:
       envKey: MATTERMOST_CLIENT_PLUGINS_PATH
       labelEn: Client Plugins Path
       labelZh: 客户端插件路径
+      label:
+        en: Client Plugins Path
+        zh: 客户端插件路径
       required: true
       type: text
     - default: ""
@@ -68,6 +92,9 @@ additionalProperties:
       envKey: GITLAB_PKI_CHAIN_PATH
       labelEn: GitLab PKI Chain Path (Edit to remove comments in compose.yml to take effect)
       labelZh: GitLab PKI 链路径 (编辑去除compose.yml里的注释生效)
+      label:
+        en: GitLab PKI Chain Path (Edit to remove comments in compose.yml to take effect)
+        zh: GitLab PKI 链路径 (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: "./data/bleve/indexes"
@@ -75,6 +102,9 @@ additionalProperties:
       envKey: MATTERMOST_BLEVE_INDEXES_PATH
       labelEn: Bleve Indexes Path
       labelZh: Bleve 索引路径
+      label:
+        en: Bleve Indexes Path
+        zh: Bleve 索引路径
       required: true
       type: text
     - default: "Asia/Shanghai"
@@ -82,6 +112,9 @@ additionalProperties:
       envKey: TZ
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text
     - default: "postgres"
@@ -89,6 +122,9 @@ additionalProperties:
       envKey: MM_SQLSETTINGS_DRIVERNAME
       labelEn: SQL Driver Name
       labelZh: SQL 驱动名称
+      label:
+        en: SQL Driver Name
+        zh: SQL 驱动名称
       required: true
       type: text
     - default: "/mattermost/bleve-indexes"
@@ -96,6 +132,9 @@ additionalProperties:
       envKey: MM_BLEVESETTINGS_INDEXDIR
       labelEn: Bleve Index Directory
       labelZh: Bleve 索引目录
+      label:
+        en: Bleve Index Directory
+        zh: Bleve 索引目录
       required: true
       type: text
     - default: "http://localhost:40271"
@@ -103,6 +142,9 @@ additionalProperties:
       envKey: MM_SERVICESETTINGS_SITEURL
       labelEn: Site URL
       labelZh: 站点 URL
+      label:
+        en: Site URL
+        zh: 站点 URL
       required: true
       rule: paramExtUrl
       type: text
@@ -110,6 +152,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelEn: Database Service
       labelZh: 数据库服务
+      label:
+        en: Database Service
+        zh: 数据库服务
       required: true
       type: apps
       child:
@@ -124,6 +169,9 @@ additionalProperties:
       envKey: PANEL_DB_NAME
       labelEn: Database
       labelZh: 数据库名
+      label:
+        en: Database
+        zh: 数据库名
       random: true
       required: true
       rule: paramCommon
@@ -132,6 +180,9 @@ additionalProperties:
       envKey: PANEL_DB_USER
       labelEn: User
       labelZh: 数据库用户
+      label:
+        en: User
+        zh: 数据库用户
       random: true
       required: true
       rule: paramCommon
@@ -140,6 +191,9 @@ additionalProperties:
       envKey: PANEL_DB_USER_PASSWORD
       labelEn: Password
       labelZh: 数据库用户密码
+      label:
+        en: Password
+        zh: 数据库用户密码
       random: true
       required: true
       rule: paramComplexity

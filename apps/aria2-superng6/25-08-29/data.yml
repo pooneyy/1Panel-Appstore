@@ -5,6 +5,9 @@ additionalProperties:
       envKey: ARIA2_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: "./downloads"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: ARIA2_DOWNLOADS_PATH
       labelZh: 下载文件保存路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 下载文件保存路径
       required: true
       type: text
     - default: 8080
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_RPC
       labelZh: RPC 通讯端口
       labelEn: RPC communication port
+      label:
+        en: RPC communication port
+        zh: RPC 通讯端口
       required: true
       rule: paramPort
       type: number
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_BTPORT
       labelZh: DHT 和 BT 通讯端口
       labelEn: DHT and BT communication port
+      label:
+        en: DHT and BT communication port
+        zh: DHT 和 BT 通讯端口
       required: true
       rule: paramPort
       type: number
@@ -43,6 +58,9 @@ additionalProperties:
       envKey: SECRET
       labelZh: 鉴权密钥
       labelEn: Authentication key
+      label:
+        en: Authentication key
+        zh: 鉴权密钥
       required: true
       type: password
     - default: "1024M"
@@ -50,6 +68,9 @@ additionalProperties:
       envKey: CACHE
       labelZh: 写入缓存大小
       labelEn: Write cache size
+      label:
+        en: Write cache size
+        zh: 写入缓存大小
       required: true
       type: text
     - default: "https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best_aria2.txt"
@@ -57,6 +78,9 @@ additionalProperties:
       envKey: CTU
       labelZh: 自定义 Trackes 地址
       labelEn: Custom Trackes address
+      label:
+        en: Custom Trackes address
+        zh: 自定义 Trackes 地址
       required: true
       type: text
     - default: "falloc"
@@ -64,6 +88,9 @@ additionalProperties:
       envKey: FA
       labelZh: 下载预分配模式
       labelEn: Download pre-allocation mode
+      label:
+        en: Download pre-allocation mode
+        zh: 下载预分配模式
       required: true
       type: select
       values:
@@ -80,6 +107,9 @@ additionalProperties:
       envKey: CRA2B
       labelZh: 重启Aria2B时间
       labelEn: Restart Aria2B time
+      label:
+        en: Restart Aria2B time
+        zh: 重启Aria2B时间
       required: true
       type: select
       values:
@@ -108,6 +138,9 @@ additionalProperties:
       envKey: QUIET
       labelZh: 静默下载
       labelEn: Silent download
+      label:
+        en: Silent download
+        zh: 静默下载
       required: true
       type: select
       values:

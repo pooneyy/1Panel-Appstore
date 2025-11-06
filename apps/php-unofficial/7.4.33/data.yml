@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,5 +16,8 @@ additionalProperties:
       envKey: SITE_PATH
       labelEn: Website directory file path
       labelZh: 网站目录文件路径
+      label:
+        en: Website directory file path
+        zh: 网站目录文件路径
       required: true
       type: text

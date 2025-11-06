@@ -5,6 +5,9 @@ additionalProperties:
       envKey: APIFOX_RUNNER_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 4524
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: SERVER_APP_BASE_URL
       labelZh: 应用服务地址
       labelEn: App Server address
+      label:
+        en: App Server address
+        zh: 应用服务地址
       required: true
       type: text
     - default: ""
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: ACCESS_TOKEN
       labelZh: 访问令牌
       labelEn: Access Token
+      label:
+        en: Access Token
+        zh: 访问令牌
       required: true
       type: text
     - default: 0
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: TEAM_ID
       labelZh: 团队 ID
       labelEn: Team ID
+      label:
+        en: Team ID
+        zh: 团队 ID
       required: true
       type: number
     - default: 0
@@ -41,5 +56,8 @@ additionalProperties:
       envKey: RUNNER_ID
       labelZh: Runner ID
       labelEn: Runner ID
+      label:
+        en: Runner ID
+        zh: Runner ID
       required: true
       type: number

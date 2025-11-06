@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: ""
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: BOT_TOKEN
       labelEn: Telegram Bot token (@BotFather)
       labelZh: Telegram Bot token (@BotFather)
+      label:
+        en: Telegram Bot token (@BotFather)
+        zh: Telegram Bot token (@BotFather)
       required: true
       type: text
     - default: ""
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: TELEGRAM_USER_ID
       labelEn: Telegram user id (@userinfobot)
       labelZh: Telegram用户ID (@userinfobot)
+      label:
+        en: Telegram user id (@userinfobot)
+        zh: Telegram用户ID (@userinfobot)
       required: true
       type: text
     - default: ""
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: TELEGRAPH_API_TOKEN1
       labelEn: Telegram api token 1
       labelZh: Telegram api token 1
+      label:
+        en: Telegram api token 1
+        zh: Telegram api token 1
       required: true
       type: text
     - default: ""
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: TELEGRAPH_API_TOKEN2
       labelEn: Telegram api token 2
       labelZh: Telegram api token 2
+      label:
+        en: Telegram api token 2
+        zh: Telegram api token 2
       required: true
       type: text
     - default: ""
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: TELEGRAPH_API_TOKEN3
       labelEn: Telegram api token 3
       labelZh: Telegram api token 3
+      label:
+        en: Telegram api token 3
+        zh: Telegram api token 3
       required: true
       type: text
     - default: ""
@@ -55,6 +76,9 @@ additionalProperties:
       envKey: TELEGRAPH_API_TOKEN4
       labelEn: Telegram api token 4
       labelZh: Telegram api token 4
+      label:
+        en: Telegram api token 4
+        zh: Telegram api token 4
       required: true
       type: text
     - default: ""
@@ -62,6 +86,9 @@ additionalProperties:
       envKey: TELEGRAPH_API_TOKEN5
       labelEn: Telegram api token 5
       labelZh: Telegram api token 5
+      label:
+        en: Telegram api token 5
+        zh: Telegram api token 5
       required: true
       type: text
     - default: ""
@@ -69,6 +96,9 @@ additionalProperties:
       envKey: TELEGRAPH_API_TOKEN6
       labelEn: Telegram api token 6
       labelZh: Telegram api token 6
+      label:
+        en: Telegram api token 6
+        zh: Telegram api token 6
       required: true
       type: text
     - default: ""
@@ -76,6 +106,9 @@ additionalProperties:
       envKey: TG_API_ID
       labelEn: Telegram api id (https://core.telegram.org/api/obtaining_api_id)
       labelZh: Telegram api id (https://core.telegram.org/api/obtaining_api_id)
+      label:
+        en: Telegram api id (https://core.telegram.org/api/obtaining_api_id)
+        zh: Telegram api id (https://core.telegram.org/api/obtaining_api_id)
       required: false
       type: text
     - default: ""
@@ -83,6 +116,9 @@ additionalProperties:
       envKey: TG_API_HASH
       labelEn: Telegram api hash
       labelZh: Telegram api hash
+      label:
+        en: Telegram api hash
+        zh: Telegram api hash
       required: false
       type: text
     - default: "Mozilla/5.0 (Android 12; Mobile; rv:68.0) Gecko/68.0 Firefox/96.0"
@@ -90,6 +126,9 @@ additionalProperties:
       envKey: USERAGENT
       labelEn: User-Agent
       labelZh: User-Agent
+      label:
+        en: User-Agent
+        zh: User-Agent
       required: false
       type: text
     - default: ""
@@ -97,5 +136,8 @@ additionalProperties:
       envKey: PROXY_SERVER
       labelEn: SOCKS5 Proxy (socks5://172.17.0.1:1080)
       labelZh: SOCKS5代理 (socks5://172.17.0.1:1080)
+      label:
+        en: SOCKS5 Proxy (socks5://172.17.0.1:1080)
+        zh: SOCKS5代理 (socks5://172.17.0.1:1080)
       required: false
       type: text

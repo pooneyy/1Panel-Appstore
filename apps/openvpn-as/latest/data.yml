@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_CONSOLE
       labelEn: Console Port
       labelZh: 控制台端口
+      label:
+        en: Console Port
+        zh: 控制台端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTPS
       labelEn: HTTPS Port
       labelZh: HTTPS 端口
+      label:
+        en: HTTPS Port
+        zh: HTTPS 端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP
       labelEn: UDP Port
       labelZh: UDP 端口
+      label:
+        en: UDP Port
+        zh: UDP 端口
       required: true
       rule: paramPort
       type: number

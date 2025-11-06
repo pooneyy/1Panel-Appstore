@@ -4,6 +4,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelEn: Database Service
       labelZh: 数据库服务
+      label:
+        en: Database Service
+        zh: 数据库服务
       required: true
       type: apps
       values:
@@ -22,6 +25,9 @@ additionalProperties:
       envKey: PANEL_DB_ROOT_PASSWORD
       labelEn: Database root password
       labelZh: 数据库 root 密码
+      label:
+        en: Database root password
+        zh: 数据库 root 密码
       required: true
       type: password
     - default: ""
@@ -30,6 +36,9 @@ additionalProperties:
       key: redis
       labelEn: Redis Service
       labelZh: Redis服务
+      label:
+        en: Redis Service
+        zh: Redis服务
       required: true
       type: service
     - default: "6379"
@@ -37,6 +46,9 @@ additionalProperties:
       envKey: REDIS_PORT
       labelEn: Redis Service Port
       labelZh: Redis服务端口
+      label:
+        en: Redis Service Port
+        zh: Redis服务端口
       required: true
       rule: paramPort
       type: number
@@ -44,6 +56,9 @@ additionalProperties:
       envKey: PANEL_REDIS_ROOT_PASSWORD
       labelEn: Redis Password
       labelZh: Redis 密码
+      label:
+        en: Redis Password
+        zh: Redis 密码
       required: true
       type: password
     - default: 40154
@@ -51,6 +66,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: HTTP Port
       labelZh: HTTP端口
+      label:
+        en: HTTP Port
+        zh: HTTP端口
       required: true
       rule: paramPort
       type: number
@@ -59,6 +77,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: Asia/Shanghai
@@ -66,12 +87,18 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time zone
       labelZh: 时区
+      label:
+        en: Time zone
+        zh: 时区
       required: true
       type: text
     - default: memcached
       envKey: MEMCACHED_TYPE
       labelEn: Memcached Service
       labelZh: Memcached 服务
+      label:
+        en: Memcached Service
+        zh: Memcached 服务
       required: true
       type: apps
       values:
@@ -91,5 +118,8 @@ additionalProperties:
       envKey: SERVER_HOSTNAME
       labelEn: Server hostname
       labelZh: 服务端主机名
+      label:
+        en: Server hostname
+        zh: 服务端主机名
       required: true
       type: text

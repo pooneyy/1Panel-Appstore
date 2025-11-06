@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,5 +16,8 @@ additionalProperties:
       envKey: COMMAND
       labelEn: Startup command
       labelZh: 启动命令
+      label:
+        en: Startup command
+        zh: 启动命令
       required: true
       type: text

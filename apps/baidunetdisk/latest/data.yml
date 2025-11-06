@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: WebUI Port
       labelZh: 网页端口
+      label:
+        en: WebUI Port
+        zh: 网页端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: VNC_PASSWORD
       labelEn: Access Password
       labelZh: 访问密码
+      label:
+        en: Access Password
+        zh: 访问密码
       random: true
       required: true
       rule: paramComplexity
@@ -22,6 +28,9 @@ additionalProperties:
       envKey: CONFIG_PATH
       labelEn: Config file path
       labelZh: 配置文件所在路径
+      label:
+        en: Config file path
+        zh: 配置文件所在路径
       required: true
       type: text
     - default: ./data/downloads
@@ -29,5 +38,8 @@ additionalProperties:
       envKey: DOWNLOAD_PATH
       labelEn: Download folder path
       labelZh: 下载文件夹路径
+      label:
+        en: Download folder path
+        zh: 下载文件夹路径
       required: true
       type: text

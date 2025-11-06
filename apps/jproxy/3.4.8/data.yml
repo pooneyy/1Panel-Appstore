@@ -5,12 +5,18 @@ additionalProperties:
       envKey: JPROXY_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8117
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: JAVA_OPTS
       labelZh: 运行参数
       labelEn: Run parameters
+      label:
+        en: Run parameters
+        zh: 运行参数
       required: true
       type: text
     - default: 4320
@@ -26,6 +35,9 @@ additionalProperties:
       envKey: CACHE_EXPIRES
       labelZh: 缓存过期时间 (分钟)
       labelEn: Cache expiration time (minutes)
+      label:
+        en: Cache expiration time (minutes)
+        zh: 缓存过期时间 (分钟)
       required: true
       type: number
     - default: 10080
@@ -33,6 +45,9 @@ additionalProperties:
       envKey: TOKEN_EXPIRES
       labelZh: 登录过期时间 (分钟)
       labelEn: Login expiration time (minutes)
+      label:
+        en: Login expiration time (minutes)
+        zh: 登录过期时间 (分钟)
       required: true
       type: number
     - default: 3
@@ -40,6 +55,9 @@ additionalProperties:
       envKey: SYNC_INTERVAL
       labelZh: 同步间隔 (分钟)
       labelEn: Synchronization interval (minutes)
+      label:
+        en: Synchronization interval (minutes)
+        zh: 同步间隔 (分钟)
       required: true
       type: number
     - default: "true"
@@ -47,6 +65,9 @@ additionalProperties:
       envKey: RENAME_FILE
       labelZh: 允许文件重命名
       labelEn: Allow file renaming
+      label:
+        en: Allow file renaming
+        zh: 允许文件重命名
       required: true
       type: select
       values:
@@ -59,6 +80,9 @@ additionalProperties:
       envKey: MIN_COUNT
       labelZh: 追加语言标题 (结果小于设定值)
       labelEn: Append language title (result is less than the set value)
+      label:
+        en: Append language title (result is less than the set value)
+        zh: 追加语言标题 (结果小于设定值)
       required: true
       type: number
     - default: 15
@@ -66,5 +90,8 @@ additionalProperties:
       envKey: INDEXER_RESULT_CACHE_EXPIRES
       labelZh: 索引器结果缓存过期时间 (分钟)
       labelEn: Indexer result cache expiration time (minutes)
+      label:
+        en: Indexer result cache expiration time (minutes)
+        zh: 索引器结果缓存过期时间 (分钟)
       required: true
       type: number

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: "APP_DATA"
       labelEn: "Data Storage Path"
       labelZh: "数据存储路径"
+      label:
+        en: "Data Storage Path"
+        zh: "数据存储路径"
       required: true
       type: "text"
     - default: "58090"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: "Service Port"
       labelZh: "服务端口"
+      label:
+        en: "Service Port"
+        zh: "服务端口"
       required: true
       rule: paramPort
       type: number
@@ -20,5 +26,8 @@ additionalProperties:
       envKey: "TZ"
       labelEn: "Time Zone"
       labelZh: "时区"
+      label:
+        en: "Time Zone"
+        zh: "时区"
       required: true
       type: "text"

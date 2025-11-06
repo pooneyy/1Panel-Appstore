@@ -5,6 +5,9 @@ additionalProperties:
       envKey: NEXUSPHP_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: "./torrents"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: NEXUSPHP_TORRENTS_ROOT_PATH
       labelZh: 种子目录
       labelEn: Torrent persistence path
+      label:
+        en: Torrent persistence path
+        zh: 种子目录
       required: true
       type: text
     - default: "./bitbucket"
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: NEXUSPHP_BITBUCKET_ROOT_PATH
       labelZh: 上传器目录
       labelEn: Uploader persistence path
+      label:
+        en: Uploader persistence path
+        zh: 上传器目录
       required: true
       type: text
     - default: "./attachments"
@@ -26,6 +35,9 @@ additionalProperties:
       envKey: NEXUSPHP_ATTACHMENTS_ROOT_PATH
       labelZh: 附件目录
       labelEn: Attachment persistence path
+      label:
+        en: Attachment persistence path
+        zh: 附件目录
       required: true
       type: text
     - default: 8080
@@ -33,6 +45,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 访问端口
       labelEn: Port
+      label:
+        en: Port
+        zh: 访问端口
       required: true
       rule: paramPort
       type: number
@@ -41,5 +56,8 @@ additionalProperties:
       envKey: APP_KEY
       labelZh: 应用密钥
       labelEn: Application Key
+      label:
+        en: Application Key
+        zh: 应用密钥
       required: true
       type: text

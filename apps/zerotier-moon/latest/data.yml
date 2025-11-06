@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: HOST_IPV4
       labelEn: Native IPV4 address
       labelZh: 本机IPV4地址
+      label:
+        en: Native IPV4 address
+        zh: 本机IPV4地址
       required: false
       type: text
     - default: ''
@@ -20,5 +26,8 @@ additionalProperties:
       envKey: HOST_IPV6
       labelEn: Native IPV6 address
       labelZh: 本机IPV6地址
+      label:
+        en: Native IPV6 address
+        zh: 本机IPV6地址
       required: false
       type: text

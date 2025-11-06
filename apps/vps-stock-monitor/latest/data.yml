@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text
     - default: "http://flaresolverr:8191"
@@ -20,5 +26,8 @@ additionalProperties:
       envKey: PROXY_HOST
       labelEn: Proxy Host
       labelZh: 代理主机
+      label:
+        en: Proxy Host
+        zh: 代理主机
       required: false
       type: text

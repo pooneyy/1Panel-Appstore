@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text
     - default: "0.0.0.0"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: BARK_SERVER_ADDRESS
       labelEn: Bark Server Address
       labelZh: Bark 服务器地址
+      label:
+        en: Bark Server Address
+        zh: Bark 服务器地址
       required: true
       type: text
     - default: "/"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: BARK_SERVER_URL_PREFIX
       labelEn: Bark Server URL Prefix
       labelZh: Bark 服务器 URL 前缀
+      label:
+        en: Bark Server URL Prefix
+        zh: Bark 服务器 URL 前缀
       required: true
       type: text
     - default: "/data"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: BARK_SERVER_DATA_DIR
       labelEn: Bark Server Data Directory
       labelZh: Bark 服务器数据目录
+      label:
+        en: Bark Server Data Directory
+        zh: Bark 服务器数据目录
       required: true
       type: text
     - default: ""
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: BARK_SERVER_DSN
       labelEn: Bark Server DSN
       labelZh: Bark 服务器 DSN
+      label:
+        en: Bark Server DSN
+        zh: Bark 服务器 DSN
       required: false
       type: text
     - default: "false"
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: BARK_SERVER_SERVERLESS
       labelEn: Bark Server Serverless
       labelZh: Bark 服务器无服务器
+      label:
+        en: Bark Server Serverless
+        zh: Bark 服务器无服务器
       required: true
       type: select
       values:
@@ -60,6 +81,9 @@ additionalProperties:
       envKey: BARK_SERVER_CERT
       labelEn: Bark Server Certificate
       labelZh: Bark 服务器证书
+      label:
+        en: Bark Server Certificate
+        zh: Bark 服务器证书
       required: false
       type: text
     - default: ""
@@ -67,6 +91,9 @@ additionalProperties:
       envKey: BARK_SERVER_KEY
       labelEn: Bark Server Key
       labelZh: Bark 服务器密钥
+      label:
+        en: Bark Server Key
+        zh: Bark 服务器密钥
       required: false
       type: text
     - default: "false"
@@ -74,6 +101,9 @@ additionalProperties:
       envKey: BARK_SERVER_CASE_SENSITIVE
       labelEn: Bark Server Case Sensitive
       labelZh: Bark 服务器区分大小写
+      label:
+        en: Bark Server Case Sensitive
+        zh: Bark 服务器区分大小写
       required: true
       type: select
       values:
@@ -86,6 +116,9 @@ additionalProperties:
       envKey: BARK_SERVER_STRICT_ROUTING
       labelEn: Bark Server Strict Routing
       labelZh: Bark 服务器严格路由
+      label:
+        en: Bark Server Strict Routing
+        zh: Bark 服务器严格路由
       required: true
       type: select
       values:
@@ -98,6 +131,9 @@ additionalProperties:
       envKey: BARK_SERVER_REDUCE_MEMORY_USAGE
       labelEn: Bark Server Reduce Memory Usage
       labelZh: Bark 服务器减少内存使用
+      label:
+        en: Bark Server Reduce Memory Usage
+        zh: Bark 服务器减少内存使用
       required: true
       type: select
       values:
@@ -110,6 +146,9 @@ additionalProperties:
       envKey: BARK_SERVER_BASIC_AUTH_USER
       labelEn: Bark Server Basic Auth User
       labelZh: Bark 服务器基本身份验证用户
+      label:
+        en: Bark Server Basic Auth User
+        zh: Bark 服务器基本身份验证用户
       required: false
       type: text
     - default: ""
@@ -117,6 +156,9 @@ additionalProperties:
       envKey: BARK_SERVER_BASIC_AUTH_PASSWORD
       labelEn: Bark Server Basic Auth Password
       labelZh: Bark 服务器基本身份验证密码
+      label:
+        en: Bark Server Basic Auth Password
+        zh: Bark 服务器基本身份验证密码
       required: false
       type: password
     - default: ""
@@ -124,6 +166,9 @@ additionalProperties:
       envKey: BARK_SERVER_PROXY_HEADER
       labelEn: Bark Server Proxy Header
       labelZh: Bark 服务器代理头
+      label:
+        en: Bark Server Proxy Header
+        zh: Bark 服务器代理头
       required: false
       type: text
     - default: "262144"
@@ -131,6 +176,9 @@ additionalProperties:
       envKey: BARK_SERVER_CONCURRENCY
       labelEn: Bark Server Concurrency
       labelZh: Bark 服务器并发
+      label:
+        en: Bark Server Concurrency
+        zh: Bark 服务器并发
       required: true
       type: number
     - default: "3s"
@@ -138,6 +186,9 @@ additionalProperties:
       envKey: BARK_SERVER_READ_TIMEOUT
       labelEn: Bark Server Read Timeout
       labelZh: Bark 服务器读取超时
+      label:
+        en: Bark Server Read Timeout
+        zh: Bark 服务器读取超时
       required: true
       type: text
     - default: "3s"
@@ -145,6 +196,9 @@ additionalProperties:
       envKey: BARK_SERVER_WRITE_TIMEOUT
       labelEn: Bark Server Write Timeout
       labelZh: Bark 服务器写入超时
+      label:
+        en: Bark Server Write Timeout
+        zh: Bark 服务器写入超时
       required: true
       type: text
     - default: "10s"
@@ -152,5 +206,8 @@ additionalProperties:
       envKey: BARK_SERVER_IDLE_TIMEOUT
       labelEn: Bark Server Idle Timeout
       labelZh: Bark 服务器空闲超时
+      label:
+        en: Bark Server Idle Timeout
+        zh: Bark 服务器空闲超时
       required: true
       type: text

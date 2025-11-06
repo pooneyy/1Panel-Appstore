@@ -5,6 +5,9 @@ additionalProperties:
       envKey: MX_SERVER_SHIRO_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 2323
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: NEXT_PUBLIC_API_URL
       labelZh: API 地址
       labelEn: API URL
+      label:
+        en: API URL
+        zh: API 地址
       required: true
       type: text
     - default: "http://127.0.0.1:2333/"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: NEXT_PUBLIC_GATEWAY_URL
       labelZh: 网关地址
       labelEn: Gateway URL
+      label:
+        en: Gateway URL
+        zh: 网关地址
       required: true
       type: text
     - default: ""
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: TMDB_API_KEY
       labelZh: TMDB API KEY
       labelEn: TMDB API KEY
+      label:
+        en: TMDB API KEY
+        zh: TMDB API KEY
       required: false
       type: text
     - default: ""
@@ -41,5 +56,8 @@ additionalProperties:
       envKey: GH_TOKEN
       labelZh: Github Token
       labelEn: Github Token
+      label:
+        en: Github Token
+        zh: Github Token
       required: false
       type: text

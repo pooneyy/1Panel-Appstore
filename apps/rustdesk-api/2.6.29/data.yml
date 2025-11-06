@@ -5,6 +5,9 @@ additionalProperties:
       envKey: RUSTDESK_API_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 21114
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: RUSTDESK_SERVER_URL
       labelZh: RustDesk 服务地址
       labelEn: RustDesk server address
+      label:
+        en: RustDesk server address
+        zh: RustDesk 服务地址
       required: true
       type: text
     - default: "RustDesk API Admin"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: RUSTDESK_API_ADMIN_TITLE
       labelZh: 后台页面标题
       labelEn: Admin page title
+      label:
+        en: Admin page title
+        zh: 后台页面标题
       required: true
       type: text
     - default: ""
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: RUSTDESK_API_RUSTDESK_KEY
       labelZh: RustDesk API 密钥
       labelEn: RustDesk API key
+      label:
+        en: RustDesk API key
+        zh: RustDesk API 密钥
       required: true
       type: password
     - default: "168h"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: RUSTDESK_API_APP_TOKEN_EXPIRE
       labelZh: 登录有效期
       labelEn: Login validity period
+      label:
+        en: Login validity period
+        zh: 登录有效期
       required: true
       type: text
     - default: "1"
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: RUSTDESK_API_APP_WEB_CLIENT
       labelZh: 启用 Web Client
       labelEn: Enable Web Client
+      label:
+        en: Enable Web Client
+        zh: 启用 Web Client
       required: true
       type: select
       values:
@@ -60,6 +81,9 @@ additionalProperties:
       envKey: RUSTDESK_API_APP_SHOW_SWAGGER
       labelZh: 开启 Swagger 文档
       labelEn: Enable Swagger docs
+      label:
+        en: Enable Swagger docs
+        zh: 开启 Swagger 文档
       required: true
       type: select
       values:
@@ -72,6 +96,9 @@ additionalProperties:
       envKey: RUSTDESK_API_APP_REGISTER
       labelZh: 启用注册
       labelEn: Enable register
+      label:
+        en: Enable register
+        zh: 启用注册
       required: true
       type: select
       values:
@@ -84,6 +111,9 @@ additionalProperties:
       envKey: RUSTDESK_API_APP_DISABLE_PWD_LOGIN
       labelZh: 登录策略
       labelEn: Login strategy
+      label:
+        en: Login strategy
+        zh: 登录策略
       required: true
       type: select
       values:
@@ -96,6 +126,9 @@ additionalProperties:
       envKey: RUSTDESK_API_PROXY_ENABLE
       labelZh: 启用代理
       labelEn: Enable proxy
+      label:
+        en: Enable proxy
+        zh: 启用代理
       required: true
       type: select
       values:
@@ -108,6 +141,9 @@ additionalProperties:
       envKey: RUSTDESK_API_PROXY_HOST
       labelZh: 代理地址
       labelEn: Proxy address
+      label:
+        en: Proxy address
+        zh: 代理地址
       required: false
       type: text
     - default: "sqlite"
@@ -115,6 +151,9 @@ additionalProperties:
       envKey: RUSTDESK_API_GORM_TYPE
       labelZh: 数据库类型
       labelEn: Database type
+      label:
+        en: Database type
+        zh: 数据库类型
       required: true
       type: select
       values:
@@ -127,6 +166,9 @@ additionalProperties:
       envKey: RUSTDESK_API_MYSQL_ADDR
       labelZh: 数据库地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库地址
       required: false
       type: text
     - default: "rustdesk"
@@ -134,6 +176,9 @@ additionalProperties:
       envKey: RUSTDESK_API_MYSQL_DBNAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: false
       rule: paramCommon
       type: text
@@ -142,6 +187,9 @@ additionalProperties:
       envKey: RUSTDESK_API_MYSQL_USERNAME
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: false
       type: text
     - default: ""
@@ -149,6 +197,9 @@ additionalProperties:
       envKey: RUSTDESK_API_MYSQL_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       required: false
       rule: paramComplexity
       type: password

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: ENV1
       labelEn: Environmental parameters (split by ;)
       labelZh: 环境参数(以;分割)
+      label:
+        en: Environmental parameters (split by ;)
+        zh: 环境参数(以;分割)
       required: true
       type: text
     - default: --interval 3600 --cleanup
@@ -12,5 +15,8 @@ additionalProperties:
       envKey: COMMAND1
       labelEn: Command parameters (separated by spaces)
       labelZh: 命令参数(以空格分割)
+      label:
+        en: Command parameters (separated by spaces)
+        zh: 命令参数(以空格分割)
       required: true
       type: text

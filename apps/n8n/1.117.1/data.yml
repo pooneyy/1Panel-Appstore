@@ -9,6 +9,9 @@ additionalProperties:
       envKey: PANEL_POSTGRES_TYPE
       labelZh: Postgres 服务 (前置检查)
       labelEn: Postgres Service (Pre-check)
+      label:
+        en: Postgres Service (Pre-check)
+        zh: Postgres 服务 (前置检查)
       required: false
       type: apps
       values:
@@ -19,6 +22,9 @@ additionalProperties:
       envKey: N8N_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 5678
@@ -26,6 +32,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -34,6 +43,9 @@ additionalProperties:
       envKey: N8N_EDITOR_BASE_URL
       labelZh: 编辑器基础URL
       labelEn: Editor Base URL
+      label:
+        en: Editor Base URL
+        zh: 编辑器基础URL
       required: true
       type: text
     - default: "postgresdb"
@@ -41,6 +53,9 @@ additionalProperties:
       envKey: DB_TYPE
       labelZh: 数据库类型
       labelEn: Database type
+      label:
+        en: Database type
+        zh: 数据库类型
       required: true
       type: select
       values:
@@ -53,6 +68,9 @@ additionalProperties:
       envKey: DB_POSTGRESDB_HOST
       labelZh: 数据库 主机地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
       required: false
       type: text
     - default: 5432
@@ -60,6 +78,9 @@ additionalProperties:
       envKey: DB_POSTGRESDB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: false
       rule: paramPort
       type: number
@@ -68,6 +89,9 @@ additionalProperties:
       envKey: DB_POSTGRESDB_DATABASE
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: false
       rule: paramCommon
       type: text
@@ -76,6 +100,9 @@ additionalProperties:
       envKey: DB_POSTGRESDB_USER
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: false
       type: text
     - default: ""
@@ -83,6 +110,9 @@ additionalProperties:
       envKey: DB_POSTGRESDB_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       random: true
       required: false
       rule: paramComplexity
@@ -92,6 +122,9 @@ additionalProperties:
       envKey: N8N_DISABLE_UI
       labelZh: 禁用UI
       labelEn: Disable UI
+      label:
+        en: Disable UI
+        zh: 禁用UI
       required: true
       type: select
       values:
@@ -104,6 +137,9 @@ additionalProperties:
       envKey: N8N_PREVIEW_MODE
       labelZh: 预览模式
       labelEn: Preview Mode
+      label:
+        en: Preview Mode
+        zh: 预览模式
       required: true
       type: select
       values:
@@ -116,6 +152,9 @@ additionalProperties:
       envKey: N8N_TEMPLATES_ENABLED
       labelZh: 工作流模板
       labelEn: Workflow Templates
+      label:
+        en: Workflow Templates
+        zh: 工作流模板
       required: true
       type: select
       values:
@@ -128,6 +167,9 @@ additionalProperties:
       envKey: N8N_PERSONALIZATION_ENABLED
       labelZh: 个性化问题询问
       labelEn: Personalization Question
+      label:
+        en: Personalization Question
+        zh: 个性化问题询问
       required: true
       type: select
       values:
@@ -140,6 +182,9 @@ additionalProperties:
       envKey: N8N_PUBLIC_API_SWAGGERUI_DISABLED
       labelZh: 禁用API文档
       labelEn: Disable API Documentation
+      label:
+        en: Disable API Documentation
+        zh: 禁用API文档
       required: true
       type: select
       values:
@@ -152,6 +197,9 @@ additionalProperties:
       envKey: N8N_PUBLIC_API_DISABLED
       labelZh: 禁用公共API
       labelEn: Disable Public API
+      label:
+        en: Disable Public API
+        zh: 禁用公共API
       required: true
       type: select
       values:

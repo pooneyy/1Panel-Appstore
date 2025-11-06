@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Web Panel Port
       labelZh: 面板端口
+      label:
+        en: Web Panel Port
+        zh: 面板端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: HTTP_PORT
       labelEn: HTTP Port
       labelZh: HTTP端口
+      label:
+        en: HTTP Port
+        zh: HTTP端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: HTTPS_PORT
       labelEn: HTTPS Port
       labelZh: HTTPS端口
+      label:
+        en: HTTPS Port
+        zh: HTTPS端口
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: PHPMYADMIN_PORT
       labelEn: phpMyAdmin Port
       labelZh: phpMyAdmin端口
+      label:
+        en: phpMyAdmin Port
+        zh: phpMyAdmin端口
       required: true
       rule: paramPort
       type: number
@@ -37,6 +49,9 @@ additionalProperties:
       envKey: SSH_PORT
       labelEn: SSH Port
       labelZh: 面板内SSH端口
+      label:
+        en: SSH Port
+        zh: 面板内SSH端口
       required: true
       rule: paramPort
       type: number
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: FTP_PORT
       labelEn: SSH Port
       labelZh: 面板内FTP端口
+      label:
+        en: SSH Port
+        zh: 面板内FTP端口
       required: true
       rule: paramPort
       type: number

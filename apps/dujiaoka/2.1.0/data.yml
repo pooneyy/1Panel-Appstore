@@ -5,6 +5,9 @@ additionalProperties:
       envKey: DUJIAOKA_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_API
       labelZh: API 端口
       labelEn: API port
+      label:
+        en: API port
+        zh: API 端口
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: APP_NAME
       labelZh: 网站名称
       labelEn: Website name
+      label:
+        en: Website name
+        zh: 网站名称
       required: true
       type: text
     - default: "base64:sKDhhXG+bHhlnH8hAVX2MbETkYABNhWNXALo0FU8WH0="
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: APP_KEY
       labelZh: 应用密钥
       labelEn: Application key
+      label:
+        en: Application key
+        zh: 应用密钥
       required: true
       type: text
     - default: "http://127.0.0.1:8080"
@@ -42,6 +57,9 @@ additionalProperties:
       envKey: APP_URL
       labelZh: 网站域名
       labelEn: Website domain
+      label:
+        en: Website domain
+        zh: 网站域名
       required: true
       type: text
     - default: "/admin"
@@ -49,6 +67,9 @@ additionalProperties:
       envKey: ADMIN_ROUTE_PREFIX
       labelZh: 后台路径
       labelEn: Admin path
+      label:
+        en: Admin path
+        zh: 后台路径
       required: true
       type: text
     - default: "redis"
@@ -56,6 +77,9 @@ additionalProperties:
       envKey: QUEUE_CONNECTION
       labelZh: 异步消息队列模式
       labelEn: Asynchronous message queue mode
+      label:
+        en: Asynchronous message queue mode
+        zh: 异步消息队列模式
       required: true
       type: select
       values:
@@ -68,6 +92,9 @@ additionalProperties:
       envKey: CACHE_DRIVER
       labelZh: 缓存驱动
       labelEn: Cache driver
+      label:
+        en: Cache driver
+        zh: 缓存驱动
       required: true
       type: select
       values:
@@ -80,6 +107,9 @@ additionalProperties:
       envKey: ADMIN_HTTPS
       labelZh: 启用后台 HTTPS
       labelEn: Enable admin HTTPS
+      label:
+        en: Enable admin HTTPS
+        zh: 启用后台 HTTPS
       required: true
       type: select
       values:

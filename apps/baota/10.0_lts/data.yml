@@ -5,6 +5,9 @@ additionalProperties:
       envKey: BAOTA_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8888
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WEB_HTTP
       labelZh: 网站服务 HTTP
       labelEn: Website service HTTP
+      label:
+        en: Website service HTTP
+        zh: 网站服务 HTTP
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WEB_HTTPS
       labelZh: 网站服务 HTTPS
       labelEn: Website service HTTPS
+      label:
+        en: Website service HTTPS
+        zh: 网站服务 HTTPS
       required: true
       rule: paramPort
       type: number
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_SSH
       labelZh: SSH 端口
       labelEn: SSH port
+      label:
+        en: SSH port
+        zh: SSH 端口
       required: true
       rule: paramPort
       type: number
@@ -44,6 +59,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_FTP
       labelZh: FTP 端口
       labelEn: FTP port
+      label:
+        en: FTP port
+        zh: FTP 端口
       required: true
       rule: paramPort
       type: number
@@ -52,6 +70,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_MYSQL
       labelZh: MySQL 端口
       labelEn: MySQL port
+      label:
+        en: MySQL port
+        zh: MySQL 端口
       required: true
       rule: paramPort
       type: number
@@ -60,6 +81,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_PHPADMIN
       labelZh: phpMyAdmin 端口
       labelEn: phpMyAdmin port
+      label:
+        en: phpMyAdmin port
+        zh: phpMyAdmin 端口
       required: true
       rule: paramPort
       type: number

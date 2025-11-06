@@ -5,6 +5,9 @@ additionalProperties:
       envKey: MOVIEPILOT_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: "./downloads"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: MOVIEPILOT_DOWNLOADS_PATH
       labelZh: 文件下载路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 文件下载路径
       required: true
       type: text
     - default: 3000
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI Port
+      label:
+        en: WebUI Port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_API
       labelZh: API 端口
       labelEn: API Port
+      label:
+        en: API Port
+        zh: API 端口
       required: true
       rule: paramPort
       type: number
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: SUPERUSER
       labelZh: 管理员用户名
       labelEn: Superuser Username
+      label:
+        en: Superuser Username
+        zh: 管理员用户名
       required: true
       type: text
     - default: "moviepilot"
@@ -42,6 +57,9 @@ additionalProperties:
       envKey: API_TOKEN
       labelZh: API 令牌
       labelEn: API Token
+      label:
+        en: API Token
+        zh: API 令牌
       required: true
       type: password
     - default: ""
@@ -49,6 +67,9 @@ additionalProperties:
       envKey: PROXY_HOST
       labelZh: 网络代理
       labelEn: Proxy Host
+      label:
+        en: Proxy Host
+        zh: 网络代理
       required: false
       rule: paramExtUrl
       type: text
@@ -57,6 +78,9 @@ additionalProperties:
       envKey: AUTO_UPDATE_RESOURCES
       labelZh: 自动更新资源包
       labelEn: Auto Update Resources
+      label:
+        en: Auto Update Resources
+        zh: 自动更新资源包
       required: true
       type: select
       values:
@@ -69,6 +93,9 @@ additionalProperties:
       envKey: MOVIEPILOT_AUTO_UPDATE
       labelZh: 自动更新
       labelEn: Auto Update
+      label:
+        en: Auto Update
+        zh: 自动更新
       required: true
       type: select
       values:
@@ -85,6 +112,9 @@ additionalProperties:
       envKey: IYUU_SIGN
       labelEn: IYUU Sign
       labelZh: IYUU登录令牌
+      label:
+        en: IYUU Sign
+        zh: IYUU登录令牌
       required: false
       type: password
     - default: ""
@@ -92,6 +122,9 @@ additionalProperties:
       envKey: HHCLUB_USERNAME
       labelZh: hhclub 用户名
       labelEn: hhclub username
+      label:
+        en: hhclub username
+        zh: hhclub 用户名
       required: false
       type: text
     - default: ""
@@ -99,6 +132,9 @@ additionalProperties:
       envKey: HHCLUB_PASSKEY
       labelZh: hhclub 密钥
       labelEn: hhclub passkay
+      label:
+        en: hhclub passkay
+        zh: hhclub 密钥
       required: false
       type: password
     - default: ""
@@ -106,6 +142,9 @@ additionalProperties:
       envKey: AUDIENCES_UID
       labelZh: audiences 用户ID
       labelEn: audiences username
+      label:
+        en: audiences username
+        zh: audiences 用户ID
       required: false
       type: text
     - default: ""
@@ -113,6 +152,9 @@ additionalProperties:
       envKey: AUDIENCES_PASSKEY
       labelZh: audiences 密钥
       labelEn: audiences passkay
+      label:
+        en: audiences passkay
+        zh: audiences 密钥
       required: false
       type: password
     - default: ""
@@ -120,6 +162,9 @@ additionalProperties:
       envKey: HDDOLBY_ID
       labelZh: hddolby 用户ID
       labelEn: hddolby username
+      label:
+        en: hddolby username
+        zh: hddolby 用户ID
       required: false
       type: text
     - default: ""
@@ -127,6 +172,9 @@ additionalProperties:
       envKey: HDDOLBY_PASSKEY
       labelZh: hddolby 密钥
       labelEn: hddolby passkay
+      label:
+        en: hddolby passkay
+        zh: hddolby 密钥
       required: false
       type: password
     - default: ""
@@ -134,6 +182,9 @@ additionalProperties:
       envKey: ZMPT_UID
       labelZh: zmpt 用户ID
       labelEn: zmpt username
+      label:
+        en: zmpt username
+        zh: zmpt 用户ID
       required: false
       type: text
     - default: ""
@@ -141,6 +192,9 @@ additionalProperties:
       envKey: ZMPT_PASSKEY
       labelZh: zmpt 密钥
       labelEn: zmpt passkay
+      label:
+        en: zmpt passkay
+        zh: zmpt 密钥
       required: false
       type: password
     - default: ""
@@ -148,6 +202,9 @@ additionalProperties:
       envKey: FREEFARM_UID
       labelZh: freefarm 用户ID
       labelEn: freefarm username
+      label:
+        en: freefarm username
+        zh: freefarm 用户ID
       required: false
       type: text
     - default: ""
@@ -155,6 +212,9 @@ additionalProperties:
       envKey: FREEFARM_PASSKEY
       labelZh: freefarm 密钥
       labelEn: freefarm passkay
+      label:
+        en: freefarm passkay
+        zh: freefarm 密钥
       required: false
       type: password
     - default: ""
@@ -162,6 +222,9 @@ additionalProperties:
       envKey: HDFANS_UID
       labelZh: hdfans 用户ID
       labelEn: hdfans username
+      label:
+        en: hdfans username
+        zh: hdfans 用户ID
       required: false
       type: text
     - default: ""
@@ -169,6 +232,9 @@ additionalProperties:
       envKey: HDFANS_PASSKEY
       labelZh: hdfans 密钥
       labelEn: hdfans passkay
+      label:
+        en: hdfans passkay
+        zh: hdfans 密钥
       required: false
       type: password
     - default: ""
@@ -176,6 +242,9 @@ additionalProperties:
       envKey: WINTERSAKURA_UID
       labelZh: wintersakura 用户ID
       labelEn: wintersakura username
+      label:
+        en: wintersakura username
+        zh: wintersakura 用户ID
       required: false
       type: text
     - default: ""
@@ -183,6 +252,9 @@ additionalProperties:
       envKey: WINTERSAKURA_PASSKEY
       labelZh: wintersakura 密钥
       labelEn: wintersakura passkay
+      label:
+        en: wintersakura passkay
+        zh: wintersakura 密钥
       required: false
       type: password
     - default: ""
@@ -190,6 +262,9 @@ additionalProperties:
       envKey: LEAVES_UID
       labelZh: leaves 用户ID
       labelEn: leaves username
+      label:
+        en: leaves username
+        zh: leaves 用户ID
       required: false
       type: text
     - default: ""
@@ -197,6 +272,9 @@ additionalProperties:
       envKey: LEAVES_PASSKEY
       labelZh: leaves 密钥
       labelEn: leaves passkay
+      label:
+        en: leaves passkay
+        zh: leaves 密钥
       required: false
       type: password
     - default: ""
@@ -204,6 +282,9 @@ additionalProperties:
       envKey: PTBA_UID
       labelZh: ptba 用户ID
       labelEn: ptba username
+      label:
+        en: ptba username
+        zh: ptba 用户ID
       required: false
       type: text
     - default: ""
@@ -211,6 +292,9 @@ additionalProperties:
       envKey: PTBA_PASSKEY
       labelZh: ptba 密钥
       labelEn: ptba passkay
+      label:
+        en: ptba passkay
+        zh: ptba 密钥
       required: false
       type: password
     - default: ""
@@ -218,6 +302,9 @@ additionalProperties:
       envKey: ICC2022_UID
       labelZh: icc2022 用户ID
       labelEn: icc2022 username
+      label:
+        en: icc2022 username
+        zh: icc2022 用户ID
       required: false
       type: text
     - default: ""
@@ -225,6 +312,9 @@ additionalProperties:
       envKey: ICC2022_PASSKEY
       labelZh: icc2022 密钥
       labelEn: icc2022 passkay
+      label:
+        en: icc2022 passkay
+        zh: icc2022 密钥
       required: false
       type: password
     - default: ""
@@ -232,6 +322,9 @@ additionalProperties:
       envKey: XINGTAN_UID
       labelZh: xingtan 用户ID
       labelEn: xingtan username
+      label:
+        en: xingtan username
+        zh: xingtan 用户ID
       required: false
       type: text
     - default: ""
@@ -239,6 +332,9 @@ additionalProperties:
       envKey: XINGTAN_PASSKEY
       labelZh: xingtan 密钥
       labelEn: xingtan passkay
+      label:
+        en: xingtan passkay
+        zh: xingtan 密钥
       required: false
       type: password
     - default: ""
@@ -246,6 +342,9 @@ additionalProperties:
       envKey: PTVICOMO_UID
       labelZh: ptvicomo 用户ID
       labelEn: ptvicomo username
+      label:
+        en: ptvicomo username
+        zh: ptvicomo 用户ID
       required: false
       type: text
     - default: ""
@@ -253,6 +352,9 @@ additionalProperties:
       envKey: PTVICOMO_PASSKEY
       labelZh: ptvicomo 密钥
       labelEn: ptvicomo passkay
+      label:
+        en: ptvicomo passkay
+        zh: ptvicomo 密钥
       required: false
       type: password
     - default: ""
@@ -260,6 +362,9 @@ additionalProperties:
       envKey: AGSVPT_UID
       labelZh: agsvpt 用户ID
       labelEn: agsvpt username
+      label:
+        en: agsvpt username
+        zh: agsvpt 用户ID
       required: false
       type: text
     - default: ""
@@ -267,6 +372,9 @@ additionalProperties:
       envKey: AGSVPT_PASSKEY
       labelZh: agsvpt 密钥
       labelEn: agsvpt passkay
+      label:
+        en: agsvpt passkay
+        zh: agsvpt 密钥
       required: false
       type: password
     - default: ""
@@ -274,6 +382,9 @@ additionalProperties:
       envKey: HDKYL_UID
       labelZh: hdkyl 用户ID
       labelEn: hdkyl username
+      label:
+        en: hdkyl username
+        zh: hdkyl 用户ID
       required: false
       type: text
     - default: ""
@@ -281,6 +392,9 @@ additionalProperties:
       envKey: HDKYL_PASSKEY
       labelZh: hdkyl 密钥
       labelEn: hdkyl passkay
+      label:
+        en: hdkyl passkay
+        zh: hdkyl 密钥
       required: false
       type: password
     - default: ""
@@ -288,6 +402,9 @@ additionalProperties:
       envKey: QINGWA_UID
       labelZh: qingwa 用户ID
       labelEn: qingwa username
+      label:
+        en: qingwa username
+        zh: qingwa 用户ID
       required: false
       type: text
     - default: ""
@@ -295,6 +412,9 @@ additionalProperties:
       envKey: QINGWA_PASSKEY
       labelZh: qingwa 密钥
       labelEn: qingwa passkay
+      label:
+        en: qingwa passkay
+        zh: qingwa 密钥
       required: false
       type: password
     - default: ""
@@ -302,6 +422,9 @@ additionalProperties:
       envKey: DISCFAN_UID
       labelZh: discfan 用户ID
       labelEn: discfan username
+      label:
+        en: discfan username
+        zh: discfan 用户ID
       required: false
       type: text
     - default: ""
@@ -309,6 +432,9 @@ additionalProperties:
       envKey: DISCFAN_PASSKEY
       labelZh: discfan 密钥
       labelEn: discfan passkay
+      label:
+        en: discfan passkay
+        zh: discfan 密钥
       required: false
       type: password
     - default: ""
@@ -316,6 +442,9 @@ additionalProperties:
       envKey: ROUSI_UID
       labelZh: rousi 用户ID
       labelEn: rousi username
+      label:
+        en: rousi username
+        zh: rousi 用户ID
       required: false
       type: text
     - default: ""
@@ -323,5 +452,8 @@ additionalProperties:
       envKey: ROUSI_PASSKEY
       labelZh: rousi 密钥
       labelEn: rousi passkay
+      label:
+        en: rousi passkay
+        zh: rousi 密钥
       required: false
       type: password

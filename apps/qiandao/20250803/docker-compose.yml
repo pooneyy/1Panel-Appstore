@@ -12,7 +12,7 @@ services:
       # 监听地址
       # - BIND=0.0.0.0
       # 监听端口
-       - PORT=80
+      - PORT=80
       # 是否启用Debug模式
       # - QIANDAO_DEBUG=False
       # 任务定时执行方式，默认为Queue，可选Queue或Batch
@@ -20,19 +20,19 @@ services:
       # 是否启用多进程模式，Windows平台无效
       # - MULTI_PROCESS=False
       # 是否启用自动热加载，MULTI_PROCESS=True时无效
-       - AUTO_RELOAD=False
+      - AUTO_RELOAD=False
       # 发送的邮件链接启用HTTPS，非框架前端使用HTTPS，如果前端需要HTTPS，请使用反向代理
       # - ENABLE_HTTPS=False
       # 指定访问域名，建议修改，否则通过邮件重置密码等功能无效
       # - DOMAIN=
       # AES加密密钥，强烈建议修改
-       - AES_KEY=${AES_PWD}
+      - AES_KEY=${AES_PWD}
       # cookie加密密钥，强烈建议修改
-       - COOKIE_SECRET=${COOKIE_PWD}
+      - COOKIE_SECRET=${COOKIE_PWD}
       # Cookie在客户端中保留的天数
       # - COOKIE_DAY=5
       # 需要使用MySQL时设置为'mysql'
-       - DB_TYPE=sqlite3
+      - DB_TYPE=sqlite3
       # 需要使用MySQL时，设置为(mysql://用户名:密码@hostname:port/数据库名?auth_plugin=)
       # - JAWSDB_MARIA_URL=mysql://user:pass@localhost:3306/dbname\?auth_plugin=
       # 是否启用SQLAlchmey的日志输出，默认为False
@@ -106,7 +106,7 @@ services:
       # - NOT_RETRY_CODE=301|302|303|304|305|307|400|401|403|404|405|407|408|409|410|412|415|413|414|500|501|502|503|504|599
       # - EMPTY_RETRY=True
       # 第一个注册用户为管理员，False关闭
-       - USER0ISADMIN=False
+      - USER0ISADMIN=False
       # config目录下自定义ONNX文件名（不填 ".onnx" 后缀），多个onnx文件名用"|"分隔
       # - EXTRA_ONNX_NAME=''
       # config目录下自定义ONNX对应自定义charsets.json文件名（不填 ".json" 后缀），多个json文件名用"|"分隔
@@ -123,9 +123,9 @@ services:
       # - WS_MAX_CONNECTIONS_SUBSCRIBE=30
       # 订阅加速方式或地址，用于加速公共模板更新，仅适用于GitHub
       # - SUBSCRIBE_ACCELERATE_URL=jsdelivr_cdn
-       - GZIP=True
+      - GZIP=True
       # - QUEUE_NUM=50
-       - ACCESS_LOG=True
+      - ACCESS_LOG=True
       # - PUSH_BATCH_DELTA=60
       # - QIANDAO_SQL_POOL_LOGGING_NAME=qiandao.sql.pool
       # - QIANDAO_SQL_POOL_LOGGING_LEVEL=WARNING

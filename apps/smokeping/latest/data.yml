@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: http://<master-host-ip>:40213/smokeping/
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: MASTER_URL
       labelEn: Master url
       labelZh: 外部访问地址
+      label:
+        en: Master url
+        zh: 外部访问地址
       required: true
       rule: paramHttp
       type: text
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time zone
       labelZh: 时区
+      label:
+        en: Time zone
+        zh: 时区
       required: true
       type: text
     - default: ''
@@ -35,5 +47,8 @@ additionalProperties:
       envKey: SHARED_SECRET
       labelEn: Master shared secret (slave mode)
       labelZh: 主共享密钥 (从属模式)
+      label:
+        en: Master shared secret (slave mode)
+        zh: 主共享密钥 (从属模式)
       required: false
       type: text

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: JELLYSEERR_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 5055
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI Port
+      label:
+        en: WebUI Port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: JELLYFIN_TYPE
       labelZh: 播放媒体服务器类型
       labelEn: Play media server type
+      label:
+        en: Play media server type
+        zh: 播放媒体服务器类型
       required: true
       type: select
       values:
@@ -32,5 +41,8 @@ additionalProperties:
       envKey: http_proxy
       labelZh: HTTP(s) 网络代理
       labelEn: HTTP(s) Proxy
+      label:
+        en: HTTP(s) Proxy
+        zh: HTTP(s) 网络代理
       required: false
       type: text

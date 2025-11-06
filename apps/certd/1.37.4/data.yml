@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text
     - default: "223.5.5.5"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: DNS_1
       labelEn: Primary DNS
       labelZh: 主 DNS
+      label:
+        en: Primary DNS
+        zh: 主 DNS
       required: true
       type: text
     - default: "119.29.29.29"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: DNS_2
       labelEn: Secondary DNS
       labelZh: 次 DNS
+      label:
+        en: Secondary DNS
+        zh: 次 DNS
       required: true
       type: text
     - default: "Asia/Shanghai"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text
     - default: ""
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: HTTPS_PROXY
       labelEn: HTTPS Proxy
       labelZh: HTTPS 代理
+      label:
+        en: HTTPS Proxy
+        zh: HTTPS 代理
       required: false
       type: text
     - default: ""
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: HTTP_PROXY
       labelEn: HTTP Proxy
       labelZh: HTTP 代理
+      label:
+        en: HTTP Proxy
+        zh: HTTP 代理
       required: false
       type: text
     - default: "false"
@@ -55,6 +76,9 @@ additionalProperties:
       envKey: RESET_ADMIN_PASSWD
       labelEn: Reset Admin Password
       labelZh: 重置管理员密码
+      label:
+        en: Reset Admin Password
+        zh: 重置管理员密码
       required: true
       type: select
       values:
@@ -67,6 +91,9 @@ additionalProperties:
       envKey: IMMEDIATE_TRIGGER
       labelEn: Immediate trigger of cron
       labelZh: 立即触发定时任务
+      label:
+        en: Immediate trigger of cron
+        zh: 立即触发定时任务
       required: true
       type: select
       values:

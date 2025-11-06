@@ -1,17 +1,23 @@
 additionalProperties:
   formFields:
-  - default: 48080
-    edit: true
-    envKey: PANEL_APP_PORT_HTTP
-    labelEn: Port
-    labelZh: 端口
-    required: true
-    rule: paramPort
-    type: number
-  - default: ./data
-    edit: true
-    envKey: DATA_PATH
-    labelEn: Data folder path
-    labelZh: 数据文件夹路径
-    required: true
-    type: text
+    - default: 48080
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
+      required: true
+      type: text

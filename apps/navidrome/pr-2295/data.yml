@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: HTTP Port
       labelZh: HTTP端口
+      label:
+        en: HTTP Port
+        zh: HTTP端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: ./data/music
@@ -20,5 +26,8 @@ additionalProperties:
       envKey: MUSIC_PATH
       labelEn: Music folder path
       labelZh: 音乐文件夹路径
+      label:
+        en: Music folder path
+        zh: 音乐文件夹路径
       required: true
       type: text

@@ -1,10 +1,13 @@
 additionalProperties:
-    formFields:
-        - default: "12080"
-          edit: true
-          envKey: PANEL_APP_PORT_HTTP
-          labelEn: Service Port 8000
-          labelZh: 服务端口 8000
-          required: true
-          rule: paramPort
-          type: number
+  formFields:
+    - default: "12080"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Service Port 8000
+      labelZh: 服务端口 8000
+      label:
+        en: Service Port 8000
+        zh: 服务端口 8000
+      required: true
+      rule: paramPort
+      type: number

@@ -9,6 +9,9 @@ additionalProperties:
       envKey: PANEL_REDIS_TYPE
       labelZh: Redis 服务 (前置检查)
       labelEn: Redis Service (Pre-check)
+      label:
+        en: Redis Service (Pre-check)
+        zh: Redis 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -23,6 +26,9 @@ additionalProperties:
       envKey: PANEL_POSTGRES_TYPE
       labelZh: Postgres 服务 (前置检查)
       labelEn: Postgres Service (Pre-check)
+      label:
+        en: Postgres Service (Pre-check)
+        zh: Postgres 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -33,6 +39,9 @@ additionalProperties:
       envKey: OUTLINE_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 3000
@@ -40,6 +49,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -48,6 +60,9 @@ additionalProperties:
       envKey: SECRET_KEY
       labelZh: 加密密钥
       labelEn: Secret Key
+      label:
+        en: Secret Key
+        zh: 加密密钥
       required: true
       type: password
     - default: "b2be1c54acbfe6d965bda01e63195cc815e4743a6fb5ba5f82eae916d98989b5"
@@ -55,6 +70,9 @@ additionalProperties:
       envKey: UTILS_SECRET
       labelZh: 工具密钥
       labelEn: Utils Secret
+      label:
+        en: Utils Secret
+        zh: 工具密钥
       required: true
       type: password
     - default: "http://127.0.0.1:3000"
@@ -62,6 +80,9 @@ additionalProperties:
       envKey: URL
       labelZh: 域名
       labelEn: Domain
+      label:
+        en: Domain
+        zh: 域名
       required: true
       rule: paramExtUrl
       type: text
@@ -70,6 +91,9 @@ additionalProperties:
       envKey: CDN_URL
       labelZh: CDN 域名
       labelEn: CDN Domain
+      label:
+        en: CDN Domain
+        zh: CDN 域名
       required: false
       type: text
     - default: "https://iframe.ly/api/iframely"
@@ -77,6 +101,9 @@ additionalProperties:
       envKey: IFRAMELY_URL
       labelZh: iFramely 地址
       labelEn: iFramely URL
+      label:
+        en: iFramely URL
+        zh: iFramely 地址
       required: true
       rule: paramExtUrl
       type: text
@@ -85,6 +112,9 @@ additionalProperties:
       envKey: IFRAMELY_API_KEY
       labelZh: iFramely 密钥
       labelEn: iFramely API Key
+      label:
+        en: iFramely API Key
+        zh: iFramely 密钥
       required: false
       type: text
     - default: "127.0.0.1"
@@ -92,6 +122,9 @@ additionalProperties:
       envKey: DB_HOSTNAME
       labelZh: 数据库 主机地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
       required: true
       type: text
     - default: 5432
@@ -99,6 +132,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -107,6 +143,9 @@ additionalProperties:
       envKey: DB_USERNAME
       labelZh: 数据库 用户名
       labelEn: Database User
+      label:
+        en: Database User
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -114,6 +153,9 @@ additionalProperties:
       envKey: DB_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       random: true
       required: true
       rule: paramComplexity
@@ -123,6 +165,9 @@ additionalProperties:
       envKey: DB_DATABASE_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text
     - default: "redis://localhost:6379"
@@ -130,6 +175,9 @@ additionalProperties:
       envKey: REDIS_URL
       labelZh: Redis 链接
       labelEn: Redis URL
+      label:
+        en: Redis URL
+        zh: Redis 链接
       required: true
       type: text
     - default: ""
@@ -137,6 +185,9 @@ additionalProperties:
       envKey: SLACK_CLIENT_ID
       labelZh: Slack 客户端 ID (鉴权)
       labelEn: Slack Client ID (Auth)
+      label:
+        en: Slack Client ID (Auth)
+        zh: Slack 客户端 ID (鉴权)
       required: false
       type: text
     - default: ""
@@ -144,6 +195,9 @@ additionalProperties:
       envKey: SLACK_CLIENT_SECRET
       labelZh: Slack 客户端密钥 (鉴权)
       labelEn: Slack Client Secret (Auth)
+      label:
+        en: Slack Client Secret (Auth)
+        zh: Slack 客户端密钥 (鉴权)
       required: false
       type: password
     - default: ""
@@ -151,6 +205,9 @@ additionalProperties:
       envKey: GOOGLE_CLIENT_ID
       labelZh: Google 客户端 ID (鉴权)
       labelEn: Google Client ID (Auth)
+      label:
+        en: Google Client ID (Auth)
+        zh: Google 客户端 ID (鉴权)
       required: false
       type: text
     - default: ""
@@ -158,6 +215,9 @@ additionalProperties:
       envKey: GOOGLE_CLIENT_SECRET
       labelZh: Google 客户端密钥 (鉴权)
       labelEn: Google Client Secret (Auth)
+      label:
+        en: Google Client Secret (Auth)
+        zh: Google 客户端密钥 (鉴权)
       required: false
       type: password
     - default: ""
@@ -165,6 +225,9 @@ additionalProperties:
       envKey: DISCORD_CLIENT_ID
       labelZh: Discord 客户端 ID (鉴权)
       labelEn: Discord Client ID (Auth)
+      label:
+        en: Discord Client ID (Auth)
+        zh: Discord 客户端 ID (鉴权)
       required: false
       type: text
     - default: ""
@@ -172,6 +235,9 @@ additionalProperties:
       envKey: DISCORD_CLIENT_SECRET
       labelZh: Discord 客户端密钥 (鉴权)
       labelEn: Discord Client Secret (Auth)
+      label:
+        en: Discord Client Secret (Auth)
+        zh: Discord 客户端密钥 (鉴权)
       required: false
       type: password
     - default: ""
@@ -179,6 +245,9 @@ additionalProperties:
       envKey: DISCORD_SERVER_ID
       labelZh: Discord 服务端 ID (鉴权)
       labelEn: Discord Server ID (Auth)
+      label:
+        en: Discord Server ID (Auth)
+        zh: Discord 服务端 ID (鉴权)
       required: false
       type: text
     - default: ""
@@ -186,6 +255,9 @@ additionalProperties:
       envKey: DISCORD_SERVER_ROLES
       labelZh: Discord 服务端角色 (鉴权)
       labelEn: Discord Server Roles (Auth)
+      label:
+        en: Discord Server Roles (Auth)
+        zh: Discord 服务端角色 (鉴权)
       required: false
       type: text
     - default: ""
@@ -193,6 +265,9 @@ additionalProperties:
       envKey: SMTP_HOST
       labelZh: SMTP 主机
       labelEn: SMTP Host
+      label:
+        en: SMTP Host
+        zh: SMTP 主机
       required: false
       type: text
     - default: 465
@@ -200,6 +275,9 @@ additionalProperties:
       envKey: SMTP_PORT
       labelZh: SMTP 端口
       labelEn: SMTP Port
+      label:
+        en: SMTP Port
+        zh: SMTP 端口
       required: false
       type: number
     - default: ""
@@ -207,6 +285,9 @@ additionalProperties:
       envKey: SMTP_USERNAME
       labelZh: SMTP 用户名
       labelEn: SMTP Username
+      label:
+        en: SMTP Username
+        zh: SMTP 用户名
       required: false
       type: text
     - default: ""
@@ -214,6 +295,9 @@ additionalProperties:
       envKey: SMTP_PASSWORD
       labelZh: SMTP 密码
       labelEn: SMTP Password
+      label:
+        en: SMTP Password
+        zh: SMTP 密码
       required: false
       type: password
     - default: ""
@@ -221,6 +305,9 @@ additionalProperties:
       envKey: SMTP_FROM_EMAIL
       labelZh: SMTP 发件人
       labelEn: SMTP From Email
+      label:
+        en: SMTP From Email
+        zh: SMTP 发件人
       required: false
       type: text
     - default: ""
@@ -228,6 +315,9 @@ additionalProperties:
       envKey: SLACK_VERIFICATION_TOKEN
       labelZh: Slack 验证令牌 (Slack 集成)
       labelEn: Slack Verification Token (Slack Integration)
+      label:
+        en: Slack Verification Token (Slack Integration)
+        zh: Slack 验证令牌 (Slack 集成)
       required: false
       type: text
     - default: ""
@@ -235,6 +325,9 @@ additionalProperties:
       envKey: SLACK_APP_ID
       labelZh: Slack 应用ID (Slack 集成)
       labelEn: Slack App ID (Slack Integration)
+      label:
+        en: Slack App ID (Slack Integration)
+        zh: Slack 应用ID (Slack 集成)
       required: false
       type: text
     - default: ""
@@ -242,6 +335,9 @@ additionalProperties:
       envKey: GITHUB_CLIENT_ID
       labelZh: GitHub 客户端 ID (GitHub 集成)
       labelEn: GitHub Client ID (GitHub Integration)
+      label:
+        en: GitHub Client ID (GitHub Integration)
+        zh: GitHub 客户端 ID (GitHub 集成)
       required: false
       type: text
     - default: ""
@@ -249,6 +345,9 @@ additionalProperties:
       envKey: GITHUB_CLIENT_SECRET
       labelZh: GitHub 客户端密钥 (GitHub 集成)
       labelEn: GitHub Client Secret (GitHub Integration)
+      label:
+        en: GitHub Client Secret (GitHub Integration)
+        zh: GitHub 客户端密钥 (GitHub 集成)
       required: false
       type: password
     - default: ""
@@ -256,6 +355,9 @@ additionalProperties:
       envKey: GITHUB_APP_NAME
       labelZh: GitHub 应用名称 (GitHub 集成)
       labelEn: GitHub App Name (GitHub Integration)
+      label:
+        en: GitHub App Name (GitHub Integration)
+        zh: GitHub 应用名称 (GitHub 集成)
       required: false
       type: text
     - default: ""
@@ -263,6 +365,9 @@ additionalProperties:
       envKey: GITHUB_APP_ID
       labelZh: GitHub 应用ID (GitHub 集成)
       labelEn: GitHub App ID (GitHub Integration)
+      label:
+        en: GitHub App ID (GitHub Integration)
+        zh: GitHub 应用ID (GitHub 集成)
       required: false
       type: text
     - default: ""
@@ -270,5 +375,8 @@ additionalProperties:
       envKey: GITHUB_APP_PRIVATE_KEY
       labelZh: GitHub 应用私钥 (GitHub 集成)
       labelEn: GitHub App Private Key (GitHub Integration)
+      label:
+        en: GitHub App Private Key (GitHub Integration)
+        zh: GitHub 应用私钥 (GitHub 集成)
       required: false
       type: password

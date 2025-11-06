@@ -5,6 +5,9 @@ additionalProperties:
       envKey: IYUUCN_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8780
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口 (Nginx)
       labelEn: WebUI port (Nginx)
+      label:
+        en: WebUI port (Nginx)
+        zh: WebUI 端口 (Nginx)
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_IYUU
       labelZh: WebUI 端口 (IYUU)
       labelEn: WebUI port (IYUU)
+      label:
+        en: WebUI port (IYUU)
+        zh: WebUI 端口 (IYUU)
       required: false
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WS
       labelZh: WebUI 端口 (WS)
       labelEn: WebUI port (WS)
+      label:
+        en: WebUI port (WS)
+        zh: WebUI 端口 (WS)
       required: false
       rule: paramPort
       type: number

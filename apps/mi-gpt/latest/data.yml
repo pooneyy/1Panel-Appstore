@@ -5,6 +5,9 @@ additionalProperties:
       envKey: OPENAI_MODEL
       labelEn: Model
       labelZh: 模型
+      label:
+        en: Model
+        zh: 模型
       required: false
       type: text
     - default: "sk-xxxxxxxxxxxxxxx"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: OPENAI_API_KEY
       labelEn: API Key
       labelZh: API 密钥
+      label:
+        en: API Key
+        zh: API 密钥
       required: false
       type: password
     - default: "https://api.openai.com/v1"
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: OPENAI_BASE_URL
       labelEn: Base URL
       labelZh: 基础 URL
+      label:
+        en: Base URL
+        zh: 基础 URL
       required: false
       type: text
     - default: ""
@@ -26,6 +35,9 @@ additionalProperties:
       envKey: OPENAI_API_VERSION
       labelEn: Azure OpenAI API Version (Edit to remove comments in compose.yml to take effect)
       labelZh: Azure OpenAI API 版本 (编辑去除compose.yml里的注释生效)
+      label:
+        en: Azure OpenAI API Version (Edit to remove comments in compose.yml to take effect)
+        zh: Azure OpenAI API 版本 (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -33,6 +45,9 @@ additionalProperties:
       envKey: AZURE_OPENAI_API_KEY
       labelEn: Azure OpenAI API Key (Edit to remove comments in compose.yml to take effect)
       labelZh: Azure OpenAI API 密钥 (编辑去除compose.yml里的注释生效)
+      label:
+        en: Azure OpenAI API Key (Edit to remove comments in compose.yml to take effect)
+        zh: Azure OpenAI API 密钥 (编辑去除compose.yml里的注释生效)
       required: false
       type: password
     - default: ""
@@ -40,6 +55,9 @@ additionalProperties:
       envKey: AZURE_OPENAI_ENDPOINT
       labelEn: Azure OpenAI Endpoint (Edit to remove comments in compose.yml to take effect)
       labelZh: Azure OpenAI 端点 (编辑去除compose.yml里的注释生效)
+      label:
+        en: Azure OpenAI Endpoint (Edit to remove comments in compose.yml to take effect)
+        zh: Azure OpenAI 端点 (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -47,6 +65,9 @@ additionalProperties:
       envKey: AZURE_OPENAI_DEPLOYMENT
       labelEn: Azure OpenAI Deployment (Edit to remove comments in compose.yml to take effect)
       labelZh: Azure OpenAI 部署名 (编辑去除compose.yml里的注释生效)
+      label:
+        en: Azure OpenAI Deployment (Edit to remove comments in compose.yml to take effect)
+        zh: Azure OpenAI 部署名 (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -54,6 +75,9 @@ additionalProperties:
       envKey: AUDIO_SILENT
       labelEn: Audio Silent URL (Edit to remove comments in compose.yml to take effect)
       labelZh: 静音音频链接 (编辑去除compose.yml里的注释生效)
+      label:
+        en: Audio Silent URL (Edit to remove comments in compose.yml to take effect)
+        zh: 静音音频链接 (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -61,6 +85,9 @@ additionalProperties:
       envKey: AUDIO_BEEP
       labelEn: Audio Beep URL (Edit to remove comments in compose.yml to take effect)
       labelZh: 提示音链接 (编辑去除compose.yml里的注释生效)
+      label:
+        en: Audio Beep URL (Edit to remove comments in compose.yml to take effect)
+        zh: 提示音链接 (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -68,6 +95,9 @@ additionalProperties:
       envKey: AUDIO_ACTIVE
       labelEn: Audio Active URL (Edit to remove comments in compose.yml to take effect)
       labelZh: 唤醒音频链接 (编辑去除compose.yml里的注释生效)
+      label:
+        en: Audio Active URL (Edit to remove comments in compose.yml to take effect)
+        zh: 唤醒音频链接 (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -75,6 +105,9 @@ additionalProperties:
       envKey: AUDIO_ERROR
       labelEn: Audio Error URL (Edit to remove comments in compose.yml to take effect)
       labelZh: 错误音频链接 (编辑去除compose.yml里的注释生效)
+      label:
+        en: Audio Error URL (Edit to remove comments in compose.yml to take effect)
+        zh: 错误音频链接 (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -82,5 +115,8 @@ additionalProperties:
       envKey: TTS_BASE_URL
       labelEn: TTS Base URL (Edit to remove comments in compose.yml to take effect)
       labelZh: TTS 接口地址 (编辑去除compose.yml里的注释生效)
+      label:
+        en: TTS Base URL (Edit to remove comments in compose.yml to take effect)
+        zh: TTS 接口地址 (编辑去除compose.yml里的注释生效)
       required: false
       type: text

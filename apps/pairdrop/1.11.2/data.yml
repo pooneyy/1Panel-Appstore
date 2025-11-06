@@ -1,26 +1,29 @@
 name: PairDrop
 tags:
-    - Other
+  - Other
 title: PairDrop
 description: A 1Panel deployment for PairDrop
 additionalProperties:
-    key: pairdrop
-    name: PairDrop
-    tags:
-        - Other
-    shortDescZh: PairDrop 应用
-    shortDescEn: PairDrop Application
-    type: website
-    crossVersionUpdate: true
-    architectures:
-        - amd64
-        - arm64
-    formFields:
-        - default: "3000"
-          edit: true
-          envKey: PANEL_APP_PORT_HTTP
-          labelEn: Service Port 3000
-          labelZh: 服务端口 3000
-          required: true
-          rule: paramPort
-          type: number
+  key: pairdrop
+  name: PairDrop
+  tags:
+    - Other
+  shortDescZh: PairDrop 应用
+  shortDescEn: PairDrop Application
+  type: website
+  crossVersionUpdate: true
+  architectures:
+    - amd64
+    - arm64
+  formFields:
+    - default: "3000"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Service Port 3000
+      labelZh: 服务端口 3000
+      label:
+        en: Service Port 3000
+        zh: 服务端口 3000
+      required: true
+      rule: paramPort
+      type: number

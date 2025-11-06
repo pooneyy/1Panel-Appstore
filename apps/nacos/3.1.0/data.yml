@@ -10,6 +10,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelZh: MySQL 服务 (前置检查)
       labelEn: Database Service (Pre-check)
+      label:
+        en: Database Service (Pre-check)
+        zh: MySQL 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -24,6 +27,9 @@ additionalProperties:
       envKey: NACOS_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -31,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -39,6 +48,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_API
       labelZh: WebUI API 端口
       labelEn: WebUI API port
+      label:
+        en: WebUI API port
+        zh: WebUI API 端口
       required: true
       rule: paramPort
       type: number
@@ -47,6 +59,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_GRPC
       labelZh: Nacos gRPC 端口
       labelEn: Nacos gRPC port
+      label:
+        en: Nacos gRPC port
+        zh: Nacos gRPC 端口
       required: true
       rule: paramPort
       type: number
@@ -54,6 +69,9 @@ additionalProperties:
       envKey: PREFER_HOST_MODE
       labelZh: IP模式/域名模式
       labelEn: IP mode/hostname mode
+      label:
+        en: IP mode/hostname mode
+        zh: IP模式/域名模式
       required: true
       type: select
       values:
@@ -66,6 +84,9 @@ additionalProperties:
       envKey: NACOS_SERVER_IP
       labelZh: 服务IP
       labelEn: Server IP
+      label:
+        en: Server IP
+        zh: 服务IP
       required: true
       type: text
     - default: "serverIdentity"
@@ -73,6 +94,9 @@ additionalProperties:
       envKey: NACOS_AUTH_IDENTITY_KEY
       labelZh: Nacos身份验证密钥键
       labelEn: Nacos auth identity key
+      label:
+        en: Nacos auth identity key
+        zh: Nacos身份验证密钥键
       required: true
       type: text
     - default: "security"
@@ -80,6 +104,9 @@ additionalProperties:
       envKey: NACOS_AUTH_IDENTITY_VALUE
       labelZh: Nacos身份验证密钥值
       labelEn: Nacos auth identity value
+      label:
+        en: Nacos auth identity value
+        zh: Nacos身份验证密钥值
       required: true
       type: text
     - default: "SecretKey012345678901234567890123456789012345678901234567890123456789"
@@ -87,6 +114,9 @@ additionalProperties:
       envKey: NACOS_AUTH_TOKEN
       labelZh: Nacos身份验证令牌（至少32位字符的Base64编码）
       labelEn: Nacos auth token
+      label:
+        en: Nacos auth token
+        zh: Nacos身份验证令牌（至少32位字符的Base64编码）
       required: true
       type: text
     - default: "512m"
@@ -94,6 +124,9 @@ additionalProperties:
       envKey: JVM_XMS
       labelZh: JVM_XMS (初始内存大小)
       labelEn: JVM_XMS (Initial memory size)
+      label:
+        en: JVM_XMS (Initial memory size)
+        zh: JVM_XMS (初始内存大小)
       required: true
       type: text
     - default: "2g"
@@ -101,6 +134,9 @@ additionalProperties:
       envKey: JVM_XMX
       labelEn: JVM_XMX (Maximum memory size)
       labelZh: JVM_XMX (最大内存大小)
+      label:
+        en: JVM_XMX (Maximum memory size)
+        zh: JVM_XMX (最大内存大小)
       required: true
       type: text
     - default: "128m"
@@ -108,6 +144,9 @@ additionalProperties:
       envKey: JVM_XMN
       labelEn: JVM_XMN (New generation memory)
       labelZh: JVM_XMN (新生代内存)
+      label:
+        en: JVM_XMN (New generation memory)
+        zh: JVM_XMN (新生代内存)
       required: true
       type: text
     - default: "128m"
@@ -115,6 +154,9 @@ additionalProperties:
       envKey: JVM_MS
       labelEn: JVM_MS (Initial metaspace)
       labelZh: JVM_MS (初始元空间大小)
+      label:
+        en: JVM_MS (Initial metaspace)
+        zh: JVM_MS (初始元空间大小)
       required: true
       type: text
     - default: "320m"
@@ -122,6 +164,9 @@ additionalProperties:
       envKey: JVM_MMS
       labelEn: JVM_MMS (Maximum metaspace)
       labelZh: JVM_MMS (最大元空间大小)
+      label:
+        en: JVM_MMS (Maximum metaspace)
+        zh: JVM_MMS (最大元空间大小)
       required: true
       type: text
     - default: "127.0.0.1"
@@ -129,6 +174,9 @@ additionalProperties:
       envKey: MYSQL_SERVICE_HOST
       labelZh: 数据库 主机
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机
       required: true
       type: text
     - default: 3306
@@ -136,6 +184,9 @@ additionalProperties:
       envKey: MYSQL_SERVICE_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -144,6 +195,9 @@ additionalProperties:
       envKey: MYSQL_SERVICE_USER
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -151,6 +205,9 @@ additionalProperties:
       envKey: MYSQL_SERVICE_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       required: true
       type: password
     - default: "nacos"
@@ -158,6 +215,9 @@ additionalProperties:
       envKey: MYSQL_SERVICE_DB_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text
     - default: "characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true"
@@ -165,5 +225,8 @@ additionalProperties:
       envKey: MYSQL_SERVICE_DB_PARAM
       labelZh: 数据库 连接参数
       labelEn: Database Connection Parameters
+      label:
+        en: Database Connection Parameters
+        zh: 数据库 连接参数
       required: true
       type: text

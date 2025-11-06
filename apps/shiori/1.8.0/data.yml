@@ -9,6 +9,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelZh: 数据库服务 (前置检查)
       labelEn: Database Service
+      label:
+        en: Database Service
+        zh: 数据库服务 (前置检查)
       required: true
       type: apps
       values:
@@ -25,6 +28,9 @@ additionalProperties:
       envKey: SHIORI_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -32,6 +38,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 访问端口
       labelEn: Port
+      label:
+        en: Port
+        zh: 访问端口
       required: true
       rule: paramPort
       type: number
@@ -40,6 +49,9 @@ additionalProperties:
       envKey: SHIORI_HTTP_SERVE_WEB_UI
       labelZh: 服务模式
       labelEn: Serve Mode
+      label:
+        en: Serve Mode
+        zh: 服务模式
       required: true
       type: select
       values:
@@ -52,6 +64,9 @@ additionalProperties:
       envKey: SHIORI_HTTP_SECRET_KEY
       labelZh: Web UI 密钥
       labelEn: Web UI Secret Key
+      label:
+        en: Web UI Secret Key
+        zh: Web UI 密钥
       required: true
       type: text
     - default: ""
@@ -59,5 +74,8 @@ additionalProperties:
       envKey: SHIORI_DATABASE_URL
       labelZh: 数据库链接 URL
       labelEn: Database URL
+      label:
+        en: Database URL
+        zh: 数据库链接 URL
       required: true
       type: text

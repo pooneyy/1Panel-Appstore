@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: ""
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PROXY
       labelEn: Specify the proxy in the format：protocol://user:pass@ip:port.
       labelZh: 指定代理，格式：protocol://user:pass@ip:port。
+      label:
+        en: Specify the proxy in the format：protocol://user:pass@ip:port.
+        zh: 指定代理，格式：protocol://user:pass@ip:port。
       required: false
       type: text
     - default: https://ai.fakeopen.com
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: API_BASE_URL
       labelEn: OpenAI API interface address
       labelZh: OpenAI API接口地址
+      label:
+        en: OpenAI API interface address
+        zh: OpenAI API接口地址
       required: true
       type: text
     - default: https://ai.fakeopen.com
@@ -34,5 +46,8 @@ additionalProperties:
       envKey: REVERSE_PROXY
       labelEn: ChatGPT API reverse proxy
       labelZh: ChatGPT API反向代理
+      label:
+        en: ChatGPT API reverse proxy
+        zh: ChatGPT API反向代理
       required: true
       type: text

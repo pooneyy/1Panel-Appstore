@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: HTTP Port
       labelZh: HTTP端口
+      label:
+        en: HTTP Port
+        zh: HTTP端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP1
       labelEn: Console Port
       labelZh: 控制台端口
+      label:
+        en: Console Port
+        zh: 控制台端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP2
       labelEn: HTTPS Port
       labelZh: HTTPS端口
+      label:
+        en: HTTPS Port
+        zh: HTTPS端口
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: ./data/ssl
@@ -36,5 +48,8 @@ additionalProperties:
       envKey: SSL_PATH
       labelEn: SSL folder path
       labelZh: 证书文件夹路径
+      label:
+        en: SSL folder path
+        zh: 证书文件夹路径
       required: true
       type: text

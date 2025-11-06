@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -14,6 +17,9 @@ additionalProperties:
       key: redis
       labelEn: Redis Service
       labelZh: Redis服务
+      label:
+        en: Redis Service
+        zh: Redis服务
       required: true
       type: service
     - default: "6379"
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: REDIS_PORT
       labelEn: Redis Service Port
       labelZh: Redis服务端口
+      label:
+        en: Redis Service Port
+        zh: Redis服务端口
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: REDIS_PASS
       labelEn: Redis Service Password
       labelZh: Redis服务密码
+      label:
+        en: Redis Service Password
+        zh: Redis服务密码
       required: true
       rule: paramCommon
       type: password

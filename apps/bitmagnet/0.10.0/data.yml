@@ -9,6 +9,9 @@ additionalProperties:
       envKey: PANEL_POSTGRES_TYPE
       labelZh: Postgres 服务 (前置检查)
       labelEn: Postgres Service (Pre-check)
+      label:
+        en: Postgres Service (Pre-check)
+        zh: Postgres 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -19,6 +22,9 @@ additionalProperties:
       envKey: BITMAGNET_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 3333
@@ -26,6 +32,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -34,6 +43,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_BT
       labelZh: BitTorrent 端口
       labelEn: BitTorrent port
+      label:
+        en: BitTorrent port
+        zh: BitTorrent 端口
       required: true
       rule: paramPort
       type: number
@@ -42,6 +54,9 @@ additionalProperties:
       envKey: POSTGRES_HOST
       labelZh: 数据库 主机地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
       required: true
       type: text
     - default: 5432
@@ -49,6 +64,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -57,6 +75,9 @@ additionalProperties:
       envKey: POSTGRES_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       rule: paramCommon
       type: text
@@ -65,6 +86,9 @@ additionalProperties:
       envKey: POSTGRES_USER
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -72,6 +96,9 @@ additionalProperties:
       envKey: POSTGRES_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       random: true
       required: true
       rule: paramComplexity
@@ -81,6 +108,9 @@ additionalProperties:
       envKey: TMDB_ENABLED
       labelZh: 获取 TMDB 元数据
       labelEn: Fetch TMDB metadata
+      label:
+        en: Fetch TMDB metadata
+        zh: 获取 TMDB 元数据
       required: true
       type: select
       values:
@@ -93,5 +123,8 @@ additionalProperties:
       envKey: TMDB_API_KEY
       labelZh: TMDB API 密钥
       labelEn: TMDB API Key
+      label:
+        en: TMDB API Key
+        zh: TMDB API 密钥
       required: false
       type: text

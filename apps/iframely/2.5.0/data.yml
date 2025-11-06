@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: HTTP_PROXY
       labelZh: HTTP 代理
       labelEn: HTTP Proxy
+      label:
+        en: HTTP Proxy
+        zh: HTTP 代理
       required: false
       type: text
     - default: 4
@@ -20,5 +26,8 @@ additionalProperties:
       envKey: MAX_REDIRECTS
       labelZh: 最大重定向次数
       labelEn: Max Redirects
+      label:
+        en: Max Redirects
+        zh: 最大重定向次数
       required: false
       type: number

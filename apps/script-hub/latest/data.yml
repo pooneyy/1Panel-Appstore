@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: BASE_URL
       labelEn: Base URL
       labelZh: 基本 URL
+      label:
+        en: Base URL
+        zh: 基本 URL
       required: true
       rule: paramExtUrl
       type: text
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: BETA_PORT
       labelEn: Beta Port
       labelZh: Beta 端口
+      label:
+        en: Beta Port
+        zh: Beta 端口
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: BETA_BASE_URL
       labelEn: Beta Base URL
       labelZh: Beta 基本 URL
+      label:
+        en: Beta Base URL
+        zh: Beta 基本 URL
       required: true
       rule: paramExtUrl
       type: text

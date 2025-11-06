@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text
     - default: ""
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_HTTP_PROXY
       labelEn: HTTP_PROXY (e.g., http://<URL_ADDRESS>:<Port>)
       labelZh: HTTP 代理服务器 (例如：http://<URL_ADDRESS>:<Port>)
+      label:
+        en: HTTP_PROXY (e.g., http://<URL_ADDRESS>:<Port>)
+        zh: HTTP 代理服务器 (例如：http://<URL_ADDRESS>:<Port>)
       required: false
       rule: paramExtUrl
       type: text
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: PANEL_HTTPS_PROXY
       labelEn: HTTPS_PROXY (e.g., http://<URL_ADDRESS>:<Port>)
       labelZh: HTTPS 代理服务器 (例如：http://<URL_ADDRESS>:<Port>)
+      label:
+        en: HTTPS_PROXY (e.g., http://<URL_ADDRESS>:<Port>)
+        zh: HTTPS 代理服务器 (例如：http://<URL_ADDRESS>:<Port>)
       required: false
       rule: paramExtUrl
       type: text
@@ -36,5 +48,8 @@ additionalProperties:
       envKey: PANEL_NO_PROXY
       labelEn: NO_PROXY (e.g., 172.18.0.0/16,127.0.0.1,localhost)
       labelZh: 跳过代理地址 (例如：172.18.0.0/16,127.0.0.1,localhost)
+      label:
+        en: NO_PROXY (e.g., 172.18.0.0/16,127.0.0.1,localhost)
+        zh: 跳过代理地址 (例如：172.18.0.0/16,127.0.0.1,localhost)
       required: false
       type: text

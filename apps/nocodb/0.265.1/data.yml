@@ -10,6 +10,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelZh: 数据库 服务 (前置检查)
       labelEn: Database Service (Pre-check)
+      label:
+        en: Database Service (Pre-check)
+        zh: 数据库 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -26,6 +29,9 @@ additionalProperties:
       envKey: NOCODB_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -33,6 +39,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -41,6 +50,9 @@ additionalProperties:
       envKey: NC_ADMIN_EMAIL
       labelZh: 管理员邮箱
       labelEn: Administrator email
+      label:
+        en: Administrator email
+        zh: 管理员邮箱
       required: true
       type: text
     - default: ""
@@ -48,6 +60,9 @@ additionalProperties:
       envKey: NC_ADMIN_PASSWORD
       labelZh: 管理员密码
       labelEn: Administrator password
+      label:
+        en: Administrator password
+        zh: 管理员密码
       required: true
       rule: paramComplexity
       type: password
@@ -56,6 +71,9 @@ additionalProperties:
       envKey: NC_AUTH_JWT_SECRET
       labelZh: 数据加密密钥
       labelEn: Data encryption key
+      label:
+        en: Data encryption key
+        zh: 数据加密密钥
       required: true
       type: password
     - default: pg
@@ -63,6 +81,9 @@ additionalProperties:
       envKey: DB_TYPE
       labelZh: 数据库 类型
       labelEn: Database Type
+      label:
+        en: Database Type
+        zh: 数据库 类型
       required: true
       type: select
       values:
@@ -75,6 +96,9 @@ additionalProperties:
       envKey: DB_HOSTNAME
       labelZh: 数据库 主机地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
       required: true
       type: text
     - default: 5432
@@ -82,6 +106,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -90,6 +117,9 @@ additionalProperties:
       envKey: DB_USER
       labelZh: 数据库 用户名
       labelEn: Database User
+      label:
+        en: Database User
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -97,6 +127,9 @@ additionalProperties:
       envKey: DB_PASSWD
       labelEn: Database Password
       labelZh: 数据库 密码
+      label:
+        en: Database Password
+        zh: 数据库 密码
       random: true
       required: true
       rule: paramComplexity
@@ -106,6 +139,9 @@ additionalProperties:
       envKey: DB_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text
     - default: ""
@@ -113,6 +149,9 @@ additionalProperties:
       envKey: NC_REDIS_URL
       labelZh: Redis 缓存地址
       labelEn: Redis Cache Address
+      label:
+        en: Redis Cache Address
+        zh: Redis 缓存地址
       required: false
       type: text
     - default: ""
@@ -120,6 +159,9 @@ additionalProperties:
       envKey: NC_PUBLIC_URL
       labelZh: 域名
       labelEn: Domain Name
+      label:
+        en: Domain Name
+        zh: 域名
       required: false
       type: text
     - default: ""
@@ -127,6 +169,9 @@ additionalProperties:
       envKey: NC_SMTP_HOST
       labelZh: 邮件服务器地址
       labelEn: Mailer Server Address
+      label:
+        en: Mailer Server Address
+        zh: 邮件服务器地址
       required: false
       type: text
     - default: 465
@@ -134,6 +179,9 @@ additionalProperties:
       envKey: NC_SMTP_PORT
       labelZh: 邮件服务器端口
       labelEn: Mailer Server Port
+      label:
+        en: Mailer Server Port
+        zh: 邮件服务器端口
       required: false
       type: number
     - default: ""
@@ -141,6 +189,9 @@ additionalProperties:
       envKey: NC_SMTP_USERNAME
       labelZh: 邮件服务用户名
       labelEn: Mailer Username
+      label:
+        en: Mailer Username
+        zh: 邮件服务用户名
       required: false
       type: text
     - default: ""
@@ -148,6 +199,9 @@ additionalProperties:
       envKey: NC_SMTP_PASSWORD
       labelZh: 邮件服务密码
       labelEn: Mailer Password
+      label:
+        en: Mailer Password
+        zh: 邮件服务密码
       required: false
       type: text
     - default: ""
@@ -155,5 +209,8 @@ additionalProperties:
       envKey: NC_SMTP_FROM
       labelZh: 邮件服务发件人
       labelEn: Mailer From
+      label:
+        en: Mailer From
+        zh: 邮件服务发件人
       required: false
       type: text

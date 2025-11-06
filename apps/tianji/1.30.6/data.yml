@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -14,12 +17,18 @@ additionalProperties:
       key: postgresql
       labelEn: Database Service
       labelZh: 数据库服务
+      label:
+        en: Database Service
+        zh: 数据库服务
       required: true
       type: service
     - default: tianji
       envKey: PANEL_DB_NAME
       labelEn: Database Name
       labelZh: 数据库名
+      label:
+        en: Database Name
+        zh: 数据库名
       random: true
       required: true
       rule: paramCommon
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: PANEL_DB_USER
       labelEn: Database User
       labelZh: 数据库用户
+      label:
+        en: Database User
+        zh: 数据库用户
       random: true
       required: true
       rule: paramCommon
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: PANEL_DB_USER_PASSWORD
       labelEn: Database Password
       labelZh: 数据库用户密码
+      label:
+        en: Database Password
+        zh: 数据库用户密码
       random: true
       required: true
       rule: paramComplexity
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: JWT_SECRET
       labelEn: Secret
       labelZh: 秘钥
+      label:
+        en: Secret
+        zh: 秘钥
       random: true
       required: true
       rule: paramComplexity
@@ -53,6 +71,9 @@ additionalProperties:
       envKey: ALLOW_OPENAPI
       labelEn: Allow OpenAPI
       labelZh: 是否开启OpenAPI
+      label:
+        en: Allow OpenAPI
+        zh: 是否开启OpenAPI
       required: true
       type: select
       values:
@@ -64,6 +85,9 @@ additionalProperties:
       envKey: ALLOW_REGISTER
       labelEn: Allow Register
       labelZh: 是否允许注册
+      label:
+        en: Allow Register
+        zh: 是否允许注册
       required: true
       type: select
       values:

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_IMAGE
       labelEn: WebUI video list with the port used to read pictures (127.0.0.1:port)
       labelZh: webui 视频列表读取图片用的端口 (127.0.0.1:port)
+      label:
+        en: WebUI video list with the port used to read pictures (127.0.0.1:port)
+        zh: webui 视频列表读取图片用的端口 (127.0.0.1:port)
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: ./data/media
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: MEDIA_PATH
       labelEn: Media folder path
       labelZh: 媒体文件夹路径
+      label:
+        en: Media folder path
+        zh: 媒体文件夹路径
       required: true
       type: text
     - default: ./data/media2
@@ -35,5 +47,8 @@ additionalProperties:
       envKey: MEDIA_PATH2
       labelEn: Media folder path
       labelZh: 媒体文件夹路径
+      label:
+        en: Media folder path
+        zh: 媒体文件夹路径
       required: true
       type: text

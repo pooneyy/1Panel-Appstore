@@ -5,6 +5,9 @@ additionalProperties:
       envKey: HOSTNAME
       labelEn: Hostname
       labelZh: 主机名
+      label:
+        en: Hostname
+        zh: 主机名
       required: true
       type: text
     - default: "nitter"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: TITLE
       labelEn: Title
       labelZh: 标题
+      label:
+        en: Title
+        zh: 标题
       required: true
       type: text
     - default: "0.0.0.0"
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: ADDRESS
       labelEn: Listening Address (in container)
       labelZh: 监听地址 (容器内)
+      label:
+        en: Listening Address (in container)
+        zh: 监听地址 (容器内)
       required: true
       type: text
     - default: "40238"
@@ -26,6 +35,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: HTTP Port
       labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        zh: HTTP 端口
       required: true
       rule: paramPort
       type: number
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: "false"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: HTTPS
       labelEn: HTTPS Enabled
       labelZh: 启用 HTTPS
+      label:
+        en: HTTPS Enabled
+        zh: 启用 HTTPS
       required: true
       type: select
       values:
@@ -53,6 +71,9 @@ additionalProperties:
       envKey: HTTP_MAX_CONNECTIONS
       labelEn: Max HTTP Connections
       labelZh: 最大 HTTP 连接数
+      label:
+        en: Max HTTP Connections
+        zh: 最大 HTTP 连接数
       required: true
       type: number
     - default: "./public"
@@ -60,6 +81,9 @@ additionalProperties:
       envKey: STATIC_DIR
       labelEn: Static Directory
       labelZh: 静态文件目录
+      label:
+        en: Static Directory
+        zh: 静态文件目录
       required: true
       type: text
     - default: "240"
@@ -67,6 +91,9 @@ additionalProperties:
       envKey: LIST_MINUTES
       labelEn: List Cache Minutes
       labelZh: 列表缓存分钟数
+      label:
+        en: List Cache Minutes
+        zh: 列表缓存分钟数
       required: true
       type: number
     - default: "10"
@@ -74,6 +101,9 @@ additionalProperties:
       envKey: RSS_MINUTES
       labelEn: RSS Cache Minutes
       labelZh: RSS 缓存分钟数
+      label:
+        en: RSS Cache Minutes
+        zh: RSS 缓存分钟数
       required: true
       type: number
     - default: ""
@@ -82,6 +112,9 @@ additionalProperties:
       key: redis
       labelEn: Redis Service
       labelZh: Redis服务
+      label:
+        en: Redis Service
+        zh: Redis服务
       required: true
       type: service
     - default: "6379"
@@ -89,6 +122,9 @@ additionalProperties:
       envKey: REDIS_PORT
       labelEn: Redis Service Port
       labelZh: Redis服务端口
+      label:
+        en: Redis Service Port
+        zh: Redis服务端口
       required: true
       rule: paramPort
       type: number
@@ -97,6 +133,9 @@ additionalProperties:
       envKey: PANEL_REDIS_ROOT_PASSWORD
       labelEn: Redis Password
       labelZh: Redis 密码
+      label:
+        en: Redis Password
+        zh: Redis 密码
       required: true
       type: password
     - default: "20"
@@ -104,6 +143,9 @@ additionalProperties:
       envKey: REDIS_CONNECTIONS
       labelEn: Redis Connections
       labelZh: Redis 连接数
+      label:
+        en: Redis Connections
+        zh: Redis 连接数
       required: true
       type: number
     - default: "30"
@@ -111,6 +153,9 @@ additionalProperties:
       envKey: REDIS_MAX_CONNECTIONS
       labelEn: Redis Max Connections
       labelZh: Redis 最大连接数
+      label:
+        en: Redis Max Connections
+        zh: Redis 最大连接数
       required: true
       type: number
     - default: "C7PPBcaNCL5B5Zkt6uHU"
@@ -118,6 +163,9 @@ additionalProperties:
       envKey: HMAC_KEY
       labelEn: Random key for cryptographic signing of video urls
       labelZh: 用于视频网址加密签名的随机密钥
+      label:
+        en: Random key for cryptographic signing of video urls
+        zh: 用于视频网址加密签名的随机密钥
       required: true
       type: text
     - default: "false"
@@ -125,6 +173,9 @@ additionalProperties:
       envKey: BASE64_MEDIA
       labelEn: Base64 Media
       labelZh: Base64 媒体
+      label:
+        en: Base64 Media
+        zh: Base64 媒体
       required: true
       type: text
     - default: "true"
@@ -132,6 +183,9 @@ additionalProperties:
       envKey: ENABLE_RSS
       labelEn: Enable RSS
       labelZh: 启用 RSS
+      label:
+        en: Enable RSS
+        zh: 启用 RSS
       required: true
       type: select
       values:
@@ -144,6 +198,9 @@ additionalProperties:
       envKey: ENABLE_DEBUG
       labelEn: Enable Debug
       labelZh: 启用调试
+      label:
+        en: Enable Debug
+        zh: 启用调试
       required: true
       type: select
       values:
@@ -156,6 +213,9 @@ additionalProperties:
       envKey: PROXY
       labelEn: Proxy
       labelZh: 代理
+      label:
+        en: Proxy
+        zh: 代理
       required: false
       type: text
     - default: ""
@@ -163,6 +223,9 @@ additionalProperties:
       envKey: PROXY_AUTH
       labelEn: Proxy Auth
       labelZh: 代理认证
+      label:
+        en: Proxy Auth
+        zh: 代理认证
       required: false
       type: text
     - default: "10"
@@ -170,6 +233,9 @@ additionalProperties:
       envKey: TOKEN_COUNT
       labelEn: Token Count
       labelZh: Token 数量
+      label:
+        en: Token Count
+        zh: Token 数量
       required: true
       type: number
     - default: "Nitter"
@@ -177,6 +243,9 @@ additionalProperties:
       envKey: THEME
       labelEn: Theme
       labelZh: 主题
+      label:
+        en: Theme
+        zh: 主题
       required: true
       type: text
     - default: "nitter.net"
@@ -184,6 +253,9 @@ additionalProperties:
       envKey: REPLACE_TWITTER
       labelEn: Replace Twitter
       labelZh: 替换 Twitter
+      label:
+        en: Replace Twitter
+        zh: 替换 Twitter
       required: true
       type: text
     - default: "piped.video"
@@ -191,6 +263,9 @@ additionalProperties:
       envKey: REPLACE_YOUTUBE
       labelEn: Replace YouTube
       labelZh: 替换 YouTube
+      label:
+        en: Replace YouTube
+        zh: 替换 YouTube
       required: true
       type: text
     - default: "teddit.net"
@@ -198,6 +273,9 @@ additionalProperties:
       envKey: REPLACE_REDDIT
       labelEn: Replace Reddit
       labelZh: 替换 Reddit
+      label:
+        en: Replace Reddit
+        zh: 替换 Reddit
       required: true
       type: text
     - default: "true"
@@ -205,6 +283,9 @@ additionalProperties:
       envKey: PROXY_VIDEOS
       labelEn: Proxy Videos
       labelZh: 代理视频
+      label:
+        en: Proxy Videos
+        zh: 代理视频
       required: true
       type: select
       values:
@@ -217,6 +298,9 @@ additionalProperties:
       envKey: HLS_PLAYBACK
       labelEn: HLS Playback
       labelZh: HLS 播放
+      label:
+        en: HLS Playback
+        zh: HLS 播放
       required: true
       type: select
       values:
@@ -229,6 +313,9 @@ additionalProperties:
       envKey: INFINITE_SCROLL
       labelEn: Infinite Scroll
       labelZh: 无限滚动
+      label:
+        en: Infinite Scroll
+        zh: 无限滚动
       required: true
       type: select
       values:

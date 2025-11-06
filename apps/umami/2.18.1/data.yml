@@ -9,6 +9,9 @@ additionalProperties:
       envKey: PANEL_POSTGRES_TYPE
       labelZh: Postgres 服务 (前置检查)
       labelEn: Postgres Service (Pre-check)
+      label:
+        en: Postgres Service (Pre-check)
+        zh: Postgres 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -19,6 +22,9 @@ additionalProperties:
       envKey: UMAMI_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 3000
@@ -26,6 +32,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 连接端口
       labelEn: Connection Port
+      label:
+        en: Connection Port
+        zh: 连接端口
       required: true
       rule: paramPort
       type: number
@@ -34,6 +43,9 @@ additionalProperties:
       envKey: APP_SECRET
       labelZh: 应用密钥
       labelEn: Application Secret
+      label:
+        en: Application Secret
+        zh: 应用密钥
       random: true
       required: false
       rule: paramComplexity
@@ -43,6 +55,9 @@ additionalProperties:
       envKey: BASE_PATH
       labelZh: 基础路径
       labelEn: Base Path
+      label:
+        en: Base Path
+        zh: 基础路径
       required: true
       type: text
     - default: ""
@@ -50,6 +65,9 @@ additionalProperties:
       envKey: ALLOWED_FRAME_URLS
       labelZh: 允许的 frame 地址
       labelEn: Allowed frame urls
+      label:
+        en: Allowed frame urls
+        zh: 允许的 frame 地址
       required: false
       type: text
     - default: "0"
@@ -57,6 +75,9 @@ additionalProperties:
       envKey: DISABLE_BOT_CHECK
       labelZh: 禁用机器人检测
       labelEn: Disable bot detection
+      label:
+        en: Disable bot detection
+        zh: 禁用机器人检测
       required: true
       type: select
       values:
@@ -69,6 +90,9 @@ additionalProperties:
       envKey: DB_HOSTNAME
       labelZh: 数据库 主机地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
       required: true
       type: text
     - default: 5432
@@ -76,6 +100,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -84,6 +111,9 @@ additionalProperties:
       envKey: DB_USERNAME
       labelZh: 数据库 用户名
       labelEn: Database User
+      label:
+        en: Database User
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -91,6 +121,9 @@ additionalProperties:
       envKey: DB_PASSWORD
       labelEn: Database Password
       labelZh: 数据库 密码
+      label:
+        en: Database Password
+        zh: 数据库 密码
       random: true
       required: true
       rule: paramComplexity
@@ -100,5 +133,8 @@ additionalProperties:
       envKey: DB_DATABASE_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text

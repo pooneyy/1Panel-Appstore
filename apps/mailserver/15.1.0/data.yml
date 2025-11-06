@@ -5,6 +5,9 @@ additionalProperties:
       envKey: MAILSERVER_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 25
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_SMTP
       labelZh: SMTP 端口 (保持默认)
       labelEn: SMTP Port (keep default)
+      label:
+        en: SMTP Port (keep default)
+        zh: SMTP 端口 (保持默认)
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_IMAP
       labelZh: IMAP 端口 (保持默认)
       labelEn: IMAP Port (keep default)
+      label:
+        en: IMAP Port (keep default)
+        zh: IMAP 端口 (保持默认)
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_SMTPS
       labelZh: SMTP SSL 端口 (保持默认)
       labelEn: SMTP SSL Port (keep default)
+      label:
+        en: SMTP SSL Port (keep default)
+        zh: SMTP SSL 端口 (保持默认)
       required: true
       rule: paramPort
       type: number
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_ESMTP
       labelZh: SMTP 提交端口 (保持默认)
       labelEn: SMTP Submission Port (keep default)
+      label:
+        en: SMTP Submission Port (keep default)
+        zh: SMTP 提交端口 (保持默认)
       required: true
       rule: paramPort
       type: number
@@ -44,6 +59,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_IPAPS
       labelZh: IMAP SSL 端口 (保持默认)
       labelEn: IMAP SSL Port (keep default)
+      label:
+        en: IMAP SSL Port (keep default)
+        zh: IMAP SSL 端口 (保持默认)
       required: true
       rule: paramPort
       type: number
@@ -52,6 +70,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_MANAGESIEVE
       labelZh: ManageSieve 端口 (保持默认)
       labelEn: ManageSieve Port (keep default)
+      label:
+        en: ManageSieve Port (keep default)
+        zh: ManageSieve 端口 (保持默认)
       required: true
       rule: paramPort
       type: number
@@ -60,6 +81,9 @@ additionalProperties:
       envKey: ENABLE_POP3
       labelZh: 启用 POP3
       labelEn: Enable POP3
+      label:
+        en: Enable POP3
+        zh: 启用 POP3
       required: true
       type: select
       values:
@@ -72,6 +96,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_POP
       labelZh: POP3 端口 (保持默认)
       labelEn: POP3 Port (keep default)
+      label:
+        en: POP3 Port (keep default)
+        zh: POP3 端口 (保持默认)
       required: false
       rule: paramPort
       type: number
@@ -80,6 +107,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_POPS
       labelZh: POP3 SSL 端口 (保持默认)
       labelEn: POP3 SSL Port (keep default)
+      label:
+        en: POP3 SSL Port (keep default)
+        zh: POP3 SSL 端口 (保持默认)
       required: false
       rule: paramPort
       type: number
@@ -88,6 +118,9 @@ additionalProperties:
       envKey: HOSTNAME_FQDN
       labelZh: 邮件服务器域名
       labelEn: Mail server domain name
+      label:
+        en: Mail server domain name
+        zh: 邮件服务器域名
       required: true
       type: text
     - default: "postmaster@domain.com"
@@ -95,6 +128,9 @@ additionalProperties:
       envKey: POSTMASTER_ADDRESS
       labelZh: 管理员邮箱地址
       labelEn: Postmaster email address
+      label:
+        en: Postmaster email address
+        zh: 管理员邮箱地址
       required: true
       type: text
     - default: "0"
@@ -102,6 +138,9 @@ additionalProperties:
       envKey: ENABLE_AMAVIS
       labelZh: 内容过滤器 (Amavis支持)
       labelEn: Content filter (Amavis support)
+      label:
+        en: Content filter (Amavis support)
+        zh: 内容过滤器 (Amavis支持)
       required: true
       type: select
       values:
@@ -114,6 +153,9 @@ additionalProperties:
       envKey: ENABLE_CLAMAV
       labelZh: 邮件病毒扫描 (ClamAV支持)
       labelEn: Mail virus scanning (ClamAV support)
+      label:
+        en: Mail virus scanning (ClamAV support)
+        zh: 邮件病毒扫描 (ClamAV支持)
       required: true
       type: select
       values:
@@ -126,6 +168,9 @@ additionalProperties:
       envKey: SSL_TYPE
       labelZh: SSL 证书类型
       labelEn: SSL certificate type
+      label:
+        en: SSL certificate type
+        zh: SSL 证书类型
       required: true
       type: select
       values:
@@ -138,6 +183,9 @@ additionalProperties:
       envKey: CERTS_PUBLIC_CRT
       labelZh: SSL Public 证书文件名
       labelEn: SSL Public certificate file name
+      label:
+        en: SSL Public certificate file name
+        zh: SSL Public 证书文件名
       required: false
       type: text
     - default: "private.key"
@@ -145,6 +193,9 @@ additionalProperties:
       envKey: CERTS_PRIVATE_KEY
       labelZh: SSL Private 证书文件名
       labelEn: SSL Private certificate file name
+      label:
+        en: SSL Private certificate file name
+        zh: SSL Private 证书文件名
       required: false
       type: text
     - default: ""
@@ -152,6 +203,9 @@ additionalProperties:
       envKey: RELAY_HOST
       labelZh: SMTP 中继主机
       labelEn: SMTP relay host
+      label:
+        en: SMTP relay host
+        zh: SMTP 中继主机
       required: false
       type: text
     - default: 587
@@ -159,6 +213,9 @@ additionalProperties:
       envKey: RELAY_PORT
       labelZh: SMTP 中继端口
       labelEn: SMTP relay port
+      label:
+        en: SMTP relay port
+        zh: SMTP 中继端口
       required: false
       type: number
     - default: ""
@@ -166,6 +223,9 @@ additionalProperties:
       envKey: RELAY_USER
       labelZh: SMTP 中继用户名
       labelEn: SMTP relay username
+      label:
+        en: SMTP relay username
+        zh: SMTP 中继用户名
       required: false
       type: text
     - default: ""
@@ -173,6 +233,9 @@ additionalProperties:
       envKey: RELAY_PASSWORD
       labelZh: SMTP 中继密码
       labelEn: SMTP relay password
+      label:
+        en: SMTP relay password
+        zh: SMTP 中继密码
       required: false
       type: text
     - default: ""
@@ -180,6 +243,9 @@ additionalProperties:
       envKey: HTTP_PROXY
       labelZh: 网络代理
       labelEn: Network proxy
+      label:
+        en: Network proxy
+        zh: 网络代理
       required: false
       type: text
     - default: "localhost:127.0.0.1"
@@ -187,6 +253,9 @@ additionalProperties:
       envKey: DOMAIN_HOSTS1
       labelZh: 固定域名解析
       labelEn: Domain resolution
+      label:
+        en: Domain resolution
+        zh: 固定域名解析
       required: true
       type: text
     - default: "1.1.1.1"
@@ -194,6 +263,9 @@ additionalProperties:
       envKey: DNS1
       labelZh: 域名解析 (DNS)
       labelEn: Domain resolution (DNS)
+      label:
+        en: Domain resolution (DNS)
+        zh: 域名解析 (DNS)
       required: true
       type: text
     - default: "114.114.114.114"
@@ -201,5 +273,8 @@ additionalProperties:
       envKey: DNS2
       labelZh: 域名解析 (备用 DNS)
       labelEn: Domain resolution (Backup DNS)
+      label:
+        en: Domain resolution (Backup DNS)
+        zh: 域名解析 (备用 DNS)
       required: true
       type: text

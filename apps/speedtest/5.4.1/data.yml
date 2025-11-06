@@ -5,6 +5,9 @@ additionalProperties:
       envKey: SPEED_TEST_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 2283
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: TITLE
       labelZh: 网页标题
       labelEn: Web title
+      label:
+        en: Web title
+        zh: 网页标题
       required: true
       type: text
     - default: "false"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: TELEMETRY
       labelZh: 启用遥测
       labelEn: Enable telemetry
+      label:
+        en: Enable telemetry
+        zh: 启用遥测
       required: true
       type: select
       values:
@@ -39,6 +51,9 @@ additionalProperties:
       envKey: PASSWORD
       labelZh: 访问密码 (开启遥测)
       labelEn: Access password (Enable telemetry)
+      label:
+        en: Access password (Enable telemetry)
+        zh: 访问密码 (开启遥测)
       required: true
       type: text
     - default: "false"
@@ -46,6 +61,9 @@ additionalProperties:
       envKey: ENABLE_ID_OBFUSCATION
       labelZh: ID 混淆 (开启遥测)
       labelEn: ID obfuscation (Enable telemetry)
+      label:
+        en: ID obfuscation (Enable telemetry)
+        zh: ID 混淆 (开启遥测)
       required: true
       type: select
       values:
@@ -58,6 +76,9 @@ additionalProperties:
       envKey: REDACT_IP_ADDRESSES
       labelZh: 隐藏 IP 地址 (开启遥测)
       labelEn: Hide IP addresses (Enable telemetry)
+      label:
+        en: Hide IP addresses (Enable telemetry)
+        zh: 隐藏 IP 地址 (开启遥测)
       required: true
       type: select
       values:
@@ -70,6 +91,9 @@ additionalProperties:
       envKey: EMAIL
       labelZh: 邮箱地址 (开启遥测)
       labelEn: Email address (Enable telemetry)
+      label:
+        en: Email address (Enable telemetry)
+        zh: 邮箱地址 (开启遥测)
       required: false
       type: text
     - default: ""
@@ -77,6 +101,9 @@ additionalProperties:
       envKey: IPINFO_APIKEY
       labelZh: ipinfo.io 的 API 密钥 (开启遥测)
       labelEn: ipinfo.io API key (Enable telemetry)
+      label:
+        en: ipinfo.io API key (Enable telemetry)
+        zh: ipinfo.io 的 API 密钥 (开启遥测)
       required: false
       type: text
     - default: "false"
@@ -84,6 +111,9 @@ additionalProperties:
       envKey: DISABLE_IPINFO
       labelZh: 禁用 ipinfo.io (开启遥测)
       labelEn: Disable ipinfo.io (Enable telemetry)
+      label:
+        en: Disable ipinfo.io (Enable telemetry)
+        zh: 禁用 ipinfo.io (开启遥测)
       required: true
       type: select
       values:
@@ -96,5 +126,8 @@ additionalProperties:
       envKey: DISTANCE
       labelZh: 距离单位 (km/mi)
       labelEn: Distance unit (km/mi)
+      label:
+        en: Distance unit (km/mi)
+        zh: 距离单位 (km/mi)
       required: false
       type: text

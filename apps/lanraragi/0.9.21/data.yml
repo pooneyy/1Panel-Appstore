@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: CONTENT_DIRECTORY
       labelEn: Content Directory
       labelZh: 媒体库目录
+      label:
+        en: Content Directory
+        zh: 媒体库目录
       required: true
       type: text
     - default: "./data/thumb"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: THUMBNAIL_DIRECTORY
       labelEn: Thumbnail Directory
       labelZh: 缩略图目录
+      label:
+        en: Thumbnail Directory
+        zh: 缩略图目录
       required: true
       type: text
     - default: "./data/database"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: DATABASE_DIRECTORY
       labelEn: Database Directory
       labelZh: 数据库目录
+      label:
+        en: Database Directory
+        zh: 数据库目录
       required: true
       type: text
     - default: "./data/plugin"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: PLUGIN_DIRECTORY
       labelEn: Plugin Directory
       labelZh: 插件目录
+      label:
+        en: Plugin Directory
+        zh: 插件目录
       required: true
       type: text
     - default: ""
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: HTTP_PROXY
       labelEn: HTTP Proxy
       labelZh: HTTP 代理
+      label:
+        en: HTTP Proxy
+        zh: HTTP 代理
       required: false
       type: text
     - default: ""
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: HTTPS_PROXY
       labelEn: HTTPS Proxy
       labelZh: HTTPS 代理
+      label:
+        en: HTTPS Proxy
+        zh: HTTPS 代理
       required: false
       type: text
     - default: "Asia/Shanghai"
@@ -55,5 +76,8 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text

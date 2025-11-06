@@ -5,6 +5,9 @@ additionalProperties:
       envKey: OPEN_WEBUI_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: OLLAMA_BASE_URL
       labelZh: Ollama 服务地址
       labelEn: Ollama service address
+      label:
+        en: Ollama service address
+        zh: Ollama 服务地址
       required: true
       type: text
     - default: ""
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: OLLAMA_BASE_URLS
       labelZh: Ollama 负载均衡服务列表
       labelEn: Ollama load balancing service list
+      label:
+        en: Ollama load balancing service list
+        zh: Ollama 负载均衡服务列表
       required: false
       type: text
     - default: ""
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: WEBUI_SECRET_KEY
       labelZh: 访问令牌密钥
       labelEn: Access token key
+      label:
+        en: Access token key
+        zh: 访问令牌密钥
       required: false
       type: text
     - default: "Open WebUI"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: WEBUI_NAME
       labelZh: 应用名称
       labelEn: Application name
+      label:
+        en: Application name
+        zh: 应用名称
       required: true
       type: text
     - default: "http://localhost:8080"
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: WEBUI_URL
       labelZh: 应用服务地址
       labelEn: Application service address
+      label:
+        en: Application service address
+        zh: 应用服务地址
       required: true
       type: text
     - default: "0"
@@ -55,6 +76,9 @@ additionalProperties:
       envKey: HF_HUB_OFFLINE
       labelZh: 离线模式
       labelEn: Offline mode
+      label:
+        en: Offline mode
+        zh: 离线模式
       required: true
       type: select
       values:
@@ -67,6 +91,9 @@ additionalProperties:
       envKey: http_proxy
       labelZh: 网络代理
       labelEn: Network proxy
+      label:
+        en: Network proxy
+        zh: 网络代理
       required: false
       type: text
     - default: ""
@@ -74,5 +101,8 @@ additionalProperties:
       envKey: no_proxy
       labelZh: 忽略代理
       labelEn: Ignore proxy
+      label:
+        en: Ignore proxy
+        zh: 忽略代理
       required: false
       type: text

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: IMMICH_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 2283
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: API 端口
       labelEn: API port
+      label:
+        en: API port
+        zh: API 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: IMMICH_DRIVE_PATH
       labelZh: 硬件驱动路径
       labelEn: Drive path
+      label:
+        en: Drive path
+        zh: 硬件驱动路径
       required: true
       type: text
     - default: "Asia/Shanghai"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: TZ
       labelZh: 时区
       labelEn: Timezone
+      label:
+        en: Timezone
+        zh: 时区
       required: true
       type: text
     - default: "XLM-Roberta-Large-Vit-B-16Plus"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: MACHINE_LEARNING_PRELOAD__CLIP
       labelEn: Machine Learning Preload Model
       labelZh: 机器学习 预加载模型
+      label:
+        en: Machine Learning Preload Model
+        zh: 机器学习 预加载模型
       required: false
       type: text
     - default: "buffalo_l"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: MACHINE_LEARNING_PRELOAD__FACIAL_RECOGNITION
       labelEn: Machine Learning Preload Model
       labelZh: 人脸识别 预加载模型
+      label:
+        en: Machine Learning Preload Model
+        zh: 人脸识别 预加载模型
       required: false
       type: select
       values:
@@ -57,5 +75,8 @@ additionalProperties:
       envKey: HF_ENDPOINT
       labelZh: Hugging Face 服务地址
       labelEn: Hugging Face Endpoint
+      label:
+        en: Hugging Face Endpoint
+        zh: Hugging Face 服务地址
       required: false
       type: text

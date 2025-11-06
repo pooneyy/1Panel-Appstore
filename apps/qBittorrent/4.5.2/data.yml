@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: WebUI Port
       labelZh: 网页端口
+      label:
+        en: WebUI Port
+        zh: 网页端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PEER_PORT_VALUE
       labelEn: Peer Port
       labelZh: BT端口
+      label:
+        en: Peer Port
+        zh: BT端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: CACHE_PATH
       labelEn: Cache folder path
       labelZh: 缓存文件夹路径
+      label:
+        en: Cache folder path
+        zh: 缓存文件夹路径
       required: true
       type: text
     - default: ./data/downloads
@@ -28,5 +37,8 @@ additionalProperties:
       envKey: DOWNLOAD_PATH
       labelEn: Download folder path
       labelZh: 下载文件夹路径
+      label:
+        en: Download folder path
+        zh: 下载文件夹路径
       required: true
       type: text

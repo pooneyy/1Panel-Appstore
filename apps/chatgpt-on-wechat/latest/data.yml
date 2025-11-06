@@ -5,6 +5,9 @@ additionalProperties:
       envKey: OPEN_AI_API_KEY
       labelEn: OpenAI API Key
       labelZh: OpenAI API 密钥
+      label:
+        en: OpenAI API Key
+        zh: OpenAI API 密钥
       required: false
       type: text
     - default: "https://api.openai.com/v1"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: OPEN_AI_API_BASE
       labelEn: OpenAI API Base
       labelZh: OpenAI API 基础地址
+      label:
+        en: OpenAI API Base
+        zh: OpenAI API 基础地址
       required: false
       type: text
     - default: "gpt-3.5-turbo"
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: MODEL
       labelEn: Model
       labelZh: 模型
+      label:
+        en: Model
+        zh: 模型
       required: false
       type: text
     - default: "false"
@@ -26,6 +35,9 @@ additionalProperties:
       envKey: USE_AZURE_CHATGPT
       labelEn: Use Azure ChatGPT
       labelZh: 使用 Azure ChatGPT
+      label:
+        en: Use Azure ChatGPT
+        zh: 使用 Azure ChatGPT
       required: false
       type: select
       values:
@@ -38,6 +50,9 @@ additionalProperties:
       envKey: AZURE_DEPLOYMENT_ID
       labelEn: Azure Deployment ID
       labelZh: Azure 部署 ID
+      label:
+        en: Azure Deployment ID
+        zh: Azure 部署 ID
       required: false
       type: text
     - default: ""
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: AZURE_API_VERSION
       labelEn: Azure API Version
       labelZh: Azure API 版本
+      label:
+        en: Azure API Version
+        zh: Azure API 版本
       required: false
       type: text
     - default: ""
@@ -52,6 +70,9 @@ additionalProperties:
       envKey: PROXY
       labelEn: Proxy
       labelZh: 代理
+      label:
+        en: Proxy
+        zh: 代理
       required: false
       type: text
     - default: '["bot", "@bot"]'
@@ -59,6 +80,9 @@ additionalProperties:
       envKey: SINGLE_CHAT_PREFIX
       labelEn: Single Chat Prefix
       labelZh: 私聊前缀
+      label:
+        en: Single Chat Prefix
+        zh: 私聊前缀
       required: true
       type: text
     - default: "[bot] "
@@ -66,6 +90,9 @@ additionalProperties:
       envKey: SINGLE_CHAT_REPLY_PREFIX
       labelEn: Single Chat Reply Prefix
       labelZh: 私聊回复前缀
+      label:
+        en: Single Chat Reply Prefix
+        zh: 私聊回复前缀
       required: false
       type: text
     - default: ""
@@ -73,6 +100,9 @@ additionalProperties:
       envKey: SINGLE_CHAT_REPLY_SUFFIX
       labelEn: Single Chat Reply Suffix
       labelZh: 私聊回复后缀
+      label:
+        en: Single Chat Reply Suffix
+        zh: 私聊回复后缀
       required: false
       type: text
     - default: '["@bot"]'
@@ -80,6 +110,9 @@ additionalProperties:
       envKey: GROUP_CHAT_PREFIX
       labelEn: Group Chat Prefix
       labelZh: 群聊前缀
+      label:
+        en: Group Chat Prefix
+        zh: 群聊前缀
       required: false
       type: text
     - default: ""
@@ -87,6 +120,9 @@ additionalProperties:
       envKey: GROUP_CHAT_REPLY_PREFIX
       labelEn: Group Chat Reply Prefix
       labelZh: 群聊回复前缀
+      label:
+        en: Group Chat Reply Prefix
+        zh: 群聊回复前缀
       required: false
       type: text
     - default: ""
@@ -94,6 +130,9 @@ additionalProperties:
       envKey: GROUP_CHAT_REPLY_SUFFIX
       labelEn: Group Chat Reply Suffix
       labelZh: 群聊回复后缀
+      label:
+        en: Group Chat Reply Suffix
+        zh: 群聊回复后缀
       required: false
       type: text
     - default: '[]'
@@ -101,6 +140,9 @@ additionalProperties:
       envKey: GROUP_CHAT_KEYWORD
       labelEn: Keywords for triggering replies in group chats
       labelZh: 群聊触发回复的关键词
+      label:
+        en: Keywords for triggering replies in group chats
+        zh: 群聊触发回复的关键词
       required: false
       type: text
     - default: "false"
@@ -108,6 +150,9 @@ additionalProperties:
       envKey: GROUP_AT_OFF
       labelEn: Group At Off
       labelZh: 关闭群聊@bot触发
+      label:
+        en: Group At Off
+        zh: 关闭群聊@bot触发
       required: false
       type: select
       values:
@@ -120,6 +165,9 @@ additionalProperties:
       envKey: GROUP_NAME_WHITE_LIST
       labelEn: Group Name White List
       labelZh: 群名称白名单
+      label:
+        en: Group Name White List
+        zh: 群名称白名单
       required: false
       type: text
     - default: '[]'
@@ -127,6 +175,9 @@ additionalProperties:
       envKey: GROUP_NAME_KEYWORD_WHITE_LIST
       labelEn: Group Name Keyword White List
       labelZh: 群名称关键词白名单
+      label:
+        en: Group Name Keyword White List
+        zh: 群名称关键词白名单
       required: false
       type: text
     - default: '["ChatGPT测试群"]'
@@ -134,6 +185,9 @@ additionalProperties:
       envKey: GROUP_CHAT_IN_ONE_SESSION
       labelEn: Group names that support session context sharing
       labelZh: 支持会话上下文共享的群名称
+      label:
+        en: Group names that support session context sharing
+        zh: 支持会话上下文共享的群名称
       required: false
       type: text
     - default: '[]'
@@ -141,6 +195,9 @@ additionalProperties:
       envKey: NICK_NAME_BLACK_LIST
       labelEn: Nickname Blacklist
       labelZh: 昵称黑名单
+      label:
+        en: Nickname Blacklist
+        zh: 昵称黑名单
       required: false
       type: text
     - default: ""
@@ -148,6 +205,9 @@ additionalProperties:
       envKey: GROUP_WELCOME_MSG
       labelEn: Group Welcome Message
       labelZh: 群欢迎信息
+      label:
+        en: Group Welcome Message
+        zh: 群欢迎信息
       required: false
       type: text
     - default: "false"
@@ -155,6 +215,9 @@ additionalProperties:
       envKey: TRIGGER_BY_SELF
       labelEn: Trigger by Self
       labelZh: 是否允许机器人触发
+      label:
+        en: Trigger by Self
+        zh: 是否允许机器人触发
       required: false
       type: select
       values:
@@ -167,6 +230,9 @@ additionalProperties:
       envKey: TEXT_TO_IMAGE
       labelEn: Text to Image Model
       labelZh: 图片生成模型
+      label:
+        en: Text to Image Model
+        zh: 图片生成模型
       required: false
       type: select
       values:
@@ -179,6 +245,9 @@ additionalProperties:
       envKey: DALLE3_IMAGE_STYLE
       labelEn: Dall-E 3 Image Style
       labelZh: Dall-E 3 图片风格
+      label:
+        en: Dall-E 3 Image Style
+        zh: Dall-E 3 图片风格
       required: false
       type: select
       values:
@@ -191,6 +260,9 @@ additionalProperties:
       envKey: DALLE3_IMAGE_QUALITY
       labelEn: Dall-E 3 Image Quality
       labelZh: Dall-E 3 图片质量
+      label:
+        en: Dall-E 3 Image Quality
+        zh: Dall-E 3 图片质量
       required: false
       type: select
       values:
@@ -203,6 +275,9 @@ additionalProperties:
       envKey: AZURE_OPENAI_DALLE_API_BASE
       labelEn: Azure OpenAI Dall-E API Base
       labelZh: Azure OpenAI Dall-E API 基础地址
+      label:
+        en: Azure OpenAI Dall-E API Base
+        zh: Azure OpenAI Dall-E API 基础地址
       required: false
       type: text
     - default: ""
@@ -210,6 +285,9 @@ additionalProperties:
       envKey: AZURE_OPENAI_DALLE_API_KEY
       labelEn: Azure OpenAI Dall-E API Key
       labelZh: Azure OpenAI Dall-E API 密钥
+      label:
+        en: Azure OpenAI Dall-E API Key
+        zh: Azure OpenAI Dall-E API 密钥
       required: false
       type: text
     - default: ""
@@ -217,6 +295,9 @@ additionalProperties:
       envKey: AZURE_OPENAI_DALLE_DEPLOYMENT_ID
       labelEn: Azure OpenAI Dall-E Deployment ID
       labelZh: Azure OpenAI Dall-E 部署 ID
+      label:
+        en: Azure OpenAI Dall-E Deployment ID
+        zh: Azure OpenAI Dall-E 部署 ID
       required: false
       type: text
     - default: "true"
@@ -224,6 +305,9 @@ additionalProperties:
       envKey: IMAGE_PROXY
       labelEn: Image Proxy
       labelZh: 图片代理
+      label:
+        en: Image Proxy
+        zh: 图片代理
       required: false
       type: select
       values:
@@ -236,6 +320,9 @@ additionalProperties:
       envKey: IMAGE_CREATE_PREFIX
       labelEn: Prefix when image reply needs to be enabled
       labelZh: 开启图片回复的前缀
+      label:
+        en: Prefix when image reply needs to be enabled
+        zh: 开启图片回复的前缀
       required: false
       type: text
     - default: "1"
@@ -243,6 +330,9 @@ additionalProperties:
       envKey: CONCURRENCY_IN_SESSION
       labelEn: Concurrency in Session
       labelZh: 会话并发数
+      label:
+        en: Concurrency in Session
+        zh: 会话并发数
       required: false
       type: number
     - default: "256x256"
@@ -250,6 +340,9 @@ additionalProperties:
       envKey: IMAGE_CREATE_SIZE
       labelEn: Image Create Size
       labelZh: 图片生成大小
+      label:
+        en: Image Create Size
+        zh: 图片生成大小
       required: false
       type: select
       values:
@@ -264,6 +357,9 @@ additionalProperties:
       envKey: GROUP_CHAT_EXIT_GROUP
       labelEn: Group Chat Exit Group
       labelZh: 退出群聊
+      label:
+        en: Group Chat Exit Group
+        zh: 退出群聊
       required: false
       type: select
       values:
@@ -276,6 +372,9 @@ additionalProperties:
       envKey: EXPIRES_IN_SECONDS
       labelEn: Expires in Seconds
       labelZh: 会话过期时间
+      label:
+        en: Expires in Seconds
+        zh: 会话过期时间
       required: false
       type: number
     - default: "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。"
@@ -283,6 +382,9 @@ additionalProperties:
       envKey: CHARACTER_DESC
       labelEn: Character Description
       labelZh: 人格描述
+      label:
+        en: Character Description
+        zh: 人格描述
       required: false
       type: text
     - default: "1000"
@@ -290,6 +392,9 @@ additionalProperties:
       envKey: CONVERSATION_MAX_TOKENS
       labelEn: Conversation Max Tokens
       labelZh: 会话最大字符数
+      label:
+        en: Conversation Max Tokens
+        zh: 会话最大字符数
       required: false
       type: number
     - default: "20"
@@ -297,6 +402,9 @@ additionalProperties:
       envKey: RATE_LIMIT_CHATGPT
       labelEn: Rate Limit ChatGPT
       labelZh: ChatGPT 调用频率限制
+      label:
+        en: Rate Limit ChatGPT
+        zh: ChatGPT 调用频率限制
       required: false
       type: number
     - default: "50"
@@ -304,6 +412,9 @@ additionalProperties:
       envKey: RATE_LIMIT_DALLE
       labelEn: Rate Limit DALL-E
       labelZh: DALL-E 调用频率限制
+      label:
+        en: Rate Limit DALL-E
+        zh: DALL-E 调用频率限制
       required: false
       type: number
     - default: "0.9"
@@ -311,6 +422,9 @@ additionalProperties:
       envKey: TEMPERATURE
       labelEn: Temperature
       labelZh: 温度
+      label:
+        en: Temperature
+        zh: 温度
       required: false
       type: text
     - default: "0.9"
@@ -318,6 +432,9 @@ additionalProperties:
       envKey: TOP_P
       labelEn: Top P
       labelZh: Top P
+      label:
+        en: Top P
+        zh: Top P
       required: false
       type: text
     - default: "0.0"
@@ -325,6 +442,9 @@ additionalProperties:
       envKey: FREQUENCY_PENALTY
       labelEn: Frequency Penalty
       labelZh: 频率惩罚
+      label:
+        en: Frequency Penalty
+        zh: 频率惩罚
       required: false
       type: text
     - default: "0.0"
@@ -332,6 +452,9 @@ additionalProperties:
       envKey: PRESENCE_PENALTY
       labelEn: Presence Penalty
       labelZh: 存在惩罚
+      label:
+        en: Presence Penalty
+        zh: 存在惩罚
       required: false
       type: text
     - default: "30"
@@ -339,6 +462,9 @@ additionalProperties:
       envKey: REQUEST_TIMEOUT
       labelEn: Request Timeout
       labelZh: 请求超时时间
+      label:
+        en: Request Timeout
+        zh: 请求超时时间
       required: false
       type: number
     - default: "30"
@@ -346,6 +472,9 @@ additionalProperties:
       envKey: TIMEOUT
       labelEn: Timeout
       labelZh: 超时时间
+      label:
+        en: Timeout
+        zh: 超时时间
       required: false
       type: number
     - default: "eb-instant"
@@ -353,6 +482,9 @@ additionalProperties:
       envKey: BAIDU_WENXIN_MODEL
       labelEn: Baidu Wenxin Model
       labelZh: 百度文心模型
+      label:
+        en: Baidu Wenxin Model
+        zh: 百度文心模型
       required: false
       type: text
     - default: ""
@@ -360,6 +492,9 @@ additionalProperties:
       envKey: BAIDU_WENXIN_API_KEY
       labelEn: Baidu Wenxin API Key
       labelZh: 百度文心 API 密钥
+      label:
+        en: Baidu Wenxin API Key
+        zh: 百度文心 API 密钥
       required: false
       type: text
     - default: ""
@@ -367,6 +502,9 @@ additionalProperties:
       envKey: BAIDU_WENXIN_SECRET_KEY
       labelEn: Baidu Wenxin Secret Key
       labelZh: 百度文心 Secret 密钥
+      label:
+        en: Baidu Wenxin Secret Key
+        zh: 百度文心 Secret 密钥
       required: false
       type: text
     - default: ""
@@ -374,6 +512,9 @@ additionalProperties:
       envKey: XUNFEI_APP_ID
       labelEn: Xunfei App ID
       labelZh: 讯飞 App ID
+      label:
+        en: Xunfei App ID
+        zh: 讯飞 App ID
       required: false
       type: text
     - default: ""
@@ -381,6 +522,9 @@ additionalProperties:
       envKey: XUNFEI_API_KEY
       labelEn: Xunfei API Key
       labelZh: 讯飞 API 密钥
+      label:
+        en: Xunfei API Key
+        zh: 讯飞 API 密钥
       required: false
       type: text
     - default: ""
@@ -388,6 +532,9 @@ additionalProperties:
       envKey: XUNFEI_API_SECRET
       labelEn: Xunfei API Secret
       labelZh: 讯飞 API Secret
+      label:
+        en: Xunfei API Secret
+        zh: 讯飞 API Secret
       required: false
       type: text
     - default: ""
@@ -395,6 +542,9 @@ additionalProperties:
       envKey: CLAUDE_API_COOKIE
       labelEn: Claude API Cookie
       labelZh: Claude API Cookie
+      label:
+        en: Claude API Cookie
+        zh: Claude API Cookie
       required: false
       type: text
     - default: ""
@@ -402,6 +552,9 @@ additionalProperties:
       envKey: CLAUDE_UUID
       labelEn: Claude UUID
       labelZh: Claude UUID
+      label:
+        en: Claude UUID
+        zh: Claude UUID
       required: false
       type: text
     - default: ""
@@ -409,6 +562,9 @@ additionalProperties:
       envKey: CLAUDE_API_KEY
       labelEn: Claude API Key
       labelZh: Claude API 密钥
+      label:
+        en: Claude API Key
+        zh: Claude API 密钥
       required: false
       type: text
     - default: ""
@@ -416,6 +572,9 @@ additionalProperties:
       envKey: QWEN_ACCESS_KEY_ID
       labelEn: Qwen Access Key ID
       labelZh: 通义千问 Access Key ID
+      label:
+        en: Qwen Access Key ID
+        zh: 通义千问 Access Key ID
       required: false
       type: text
     - default: ""
@@ -423,6 +582,9 @@ additionalProperties:
       envKey: QWEN_ACCESS_KEY_SECRET
       labelEn: Qwen Access Key Secret
       labelZh: 通义千问 Access Key Secret
+      label:
+        en: Qwen Access Key Secret
+        zh: 通义千问 Access Key Secret
       required: false
       type: text
     - default: ""
@@ -430,6 +592,9 @@ additionalProperties:
       envKey: QWEN_AGENT_KEY
       labelEn: Qwen Agent Key
       labelZh: 通义千问 Agent Key
+      label:
+        en: Qwen Agent Key
+        zh: 通义千问 Agent Key
       required: false
       type: text
     - default: ""
@@ -437,6 +602,9 @@ additionalProperties:
       envKey: QWEN_APP_ID
       labelEn: Qwen App ID
       labelZh: 通义千问 App ID
+      label:
+        en: Qwen App ID
+        zh: 通义千问 App ID
       required: false
       type: text
     - default: ""
@@ -444,6 +612,9 @@ additionalProperties:
       envKey: QWEN_NODE_ID
       labelEn: Qwen Node ID
       labelZh: 通义千问 Node ID
+      label:
+        en: Qwen Node ID
+        zh: 通义千问 Node ID
       required: false
       type: text
     - default: ""
@@ -451,6 +622,9 @@ additionalProperties:
       envKey: DASHSCOPE_API_KEY
       labelEn: Dashscope API Key
       labelZh: Dashscope API 密钥
+      label:
+        en: Dashscope API Key
+        zh: Dashscope API 密钥
       required: false
       type: text
     - default: ""
@@ -458,6 +632,9 @@ additionalProperties:
       envKey: GEMINI_API_KEY
       labelEn: Gemini API Key
       labelZh: Gemini API 密钥
+      label:
+        en: Gemini API Key
+        zh: Gemini API 密钥
       required: false
       type: text
     - default: "true"
@@ -465,6 +642,9 @@ additionalProperties:
       envKey: WEWORK_SMART
       labelEn: WeWork Smart
       labelZh: WeWork 智能
+      label:
+        en: WeWork Smart
+        zh: WeWork 智能
       required: true
       type: select
       values:
@@ -477,6 +657,9 @@ additionalProperties:
       envKey: SPEECH_RECOGNITION
       labelEn: Speech Recognition
       labelZh: 语音识别
+      label:
+        en: Speech Recognition
+        zh: 语音识别
       required: true
       type: select
       values:
@@ -489,6 +672,9 @@ additionalProperties:
       envKey: GROUP_SPEECH_RECOGNITION
       labelEn: Group Speech Recognition
       labelZh: 群聊语音识别
+      label:
+        en: Group Speech Recognition
+        zh: 群聊语音识别
       required: true
       type: select
       values:
@@ -501,6 +687,9 @@ additionalProperties:
       envKey: VOICE_REPLY_VOICE
       labelEn: Speech Response Speech
       labelZh: 语音回复语音
+      label:
+        en: Speech Response Speech
+        zh: 语音回复语音
       required: true
       type: select
       values:
@@ -513,6 +702,9 @@ additionalProperties:
       envKey: ALWAYS_REPLY_VOICE
       labelEn: Always Reply Voice
       labelZh: 总是语音回复
+      label:
+        en: Always Reply Voice
+        zh: 总是语音回复
       required: true
       type: select
       values:
@@ -525,6 +717,9 @@ additionalProperties:
       envKey: VOICE_TO_TEXT
       labelEn: Speech Recognition Engines
       labelZh: 语音识别引擎
+      label:
+        en: Speech Recognition Engines
+        zh: 语音识别引擎
       required: false
       type: text
     - default: "false"
@@ -532,6 +727,9 @@ additionalProperties:
       envKey: TEXT_TO_VOICE
       labelEn: Speech Synthesis Engines
       labelZh: 语音合成引擎
+      label:
+        en: Speech Synthesis Engines
+        zh: 语音合成引擎
       required: false
       type: text
     - default: "tts-1"
@@ -539,6 +737,9 @@ additionalProperties:
       envKey: TEXT_TO_VOICE_MODEL
       labelEn: Text to Voice Model
       labelZh: 文字转语音模型
+      label:
+        en: Text to Voice Model
+        zh: 文字转语音模型
       required: false
       type: text
     - default: "alloy"
@@ -546,6 +747,9 @@ additionalProperties:
       envKey: TTS_VOICE_ID
       labelEn: TTS Voice ID
       labelZh: TTS 语音 ID
+      label:
+        en: TTS Voice ID
+        zh: TTS 语音 ID
       required: false
       type: text
     - default: ""
@@ -553,6 +757,9 @@ additionalProperties:
       envKey: BAIDU_APP_ID
       labelEn: Baidu App ID
       labelZh: 百度 App ID
+      label:
+        en: Baidu App ID
+        zh: 百度 App ID
       required: false
       type: text
     - default: ""
@@ -560,6 +767,9 @@ additionalProperties:
       envKey: BAIDU_API_KEY
       labelEn: Baidu API Key
       labelZh: 百度 API 密钥
+      label:
+        en: Baidu API Key
+        zh: 百度 API 密钥
       required: false
       type: text
     - default: ""
@@ -567,12 +777,19 @@ additionalProperties:
       envKey: BAIDU_SECRET_KEY
       labelEn: Baidu Secret Key
       labelZh: 百度 Secret 密钥
+      label:
+        en: Baidu Secret Key
+        zh: 百度 Secret 密钥
       required: false
       type: text
     - default: "1537"
       edit: true
       envKey: BAIDU_DEV_PID
+      labelEn: Baidu Dev PID
       labelZh: Baidu Dev PID
+      label:
+        en: Baidu Dev PID
+        zh: Baidu Dev PID
       required: false
       type: text
     - default: ""
@@ -580,6 +797,9 @@ additionalProperties:
       envKey: AZURE_VOICE_API_KEY
       labelEn: Azure Voice API Key
       labelZh: Azure 语音 API 密钥
+      label:
+        en: Azure Voice API Key
+        zh: Azure 语音 API 密钥
       required: false
       type: text
     - default: "japaneast"
@@ -587,6 +807,9 @@ additionalProperties:
       envKey: AZURE_VOICE_REGION
       labelEn: Azure Voice Region
       labelZh: Azure 语音区域
+      label:
+        en: Azure Voice Region
+        zh: Azure 语音区域
       required: false
       type: text
     - default: ""
@@ -594,6 +817,9 @@ additionalProperties:
       envKey: XI_API_KEY
       labelEn: Elevenlabs API Key
       labelZh: Elevenlabs API 密钥
+      label:
+        en: Elevenlabs API Key
+        zh: Elevenlabs API 密钥
       required: false
       type: text
     - default: ""
@@ -601,6 +827,9 @@ additionalProperties:
       envKey: XI_VOICE_ID
       labelEn: Elevenlabs Voice ID
       labelZh: Elevenlabs 语音 ID
+      label:
+        en: Elevenlabs Voice ID
+        zh: Elevenlabs 语音 ID
       required: false
       type: text
     - default: "false"
@@ -608,6 +837,9 @@ additionalProperties:
       envKey: CHAT_TIME_MODULE
       labelEn: Chat Time Module
       labelZh: 服务时间限制
+      label:
+        en: Chat Time Module
+        zh: 服务时间限制
       required: true
       type: select
       values:
@@ -620,6 +852,9 @@ additionalProperties:
       envKey: CHAT_START_TIME
       labelEn: Chat Start Time
       labelZh: 服务开始时间
+      label:
+        en: Chat Start Time
+        zh: 服务开始时间
       required: false
       type: text
     - default: "24:00"
@@ -627,6 +862,9 @@ additionalProperties:
       envKey: CHAT_STOP_TIME
       labelEn: Chat Stop Time
       labelZh: 服务结束时间
+      label:
+        en: Chat Stop Time
+        zh: 服务结束时间
       required: false
       type: text
     - default: "baidu"
@@ -634,6 +872,9 @@ additionalProperties:
       envKey: TRANSLATE
       labelEn: Translate
       labelZh: 翻译引擎
+      label:
+        en: Translate
+        zh: 翻译引擎
       required: false
       type: text
     - default: ""
@@ -641,6 +882,9 @@ additionalProperties:
       envKey: BAIDU_TRANSLATE_APP_ID
       labelEn: Baidu Translate App ID
       labelZh: 百度翻译 App ID
+      label:
+        en: Baidu Translate App ID
+        zh: 百度翻译 App ID
       required: false
       type: text
     - default: ""
@@ -648,6 +892,9 @@ additionalProperties:
       envKey: BAIDU_TRANSLATE_APP_KEY
       labelEn: Baidu Translate App Key
       labelZh: 百度翻译 App 密钥
+      label:
+        en: Baidu Translate App Key
+        zh: 百度翻译 App 密钥
       required: false
       type: text
     - default: "false"
@@ -655,6 +902,9 @@ additionalProperties:
       envKey: HOT_RELOAD
       labelEn: Hot Reload
       labelZh: 热重载
+      label:
+        en: Hot Reload
+        zh: 热重载
       required: true
       type: select
       values:
@@ -667,6 +917,9 @@ additionalProperties:
       envKey: WECHATY_PUPPET_SERVICE_TOKEN
       labelEn: Wechaty Puppet Service Token
       labelZh: Wechaty 机器人服务 Token
+      label:
+        en: Wechaty Puppet Service Token
+        zh: Wechaty 机器人服务 Token
       required: false
       type: text
     - default: ""
@@ -674,6 +927,9 @@ additionalProperties:
       envKey: WECHATMP_TOKEN
       labelEn: WechatMP Token
       labelZh: 微信公众平台 Token
+      label:
+        en: WechatMP Token
+        zh: 微信公众平台 Token
       required: false
       type: text
     - default: "8080"
@@ -681,6 +937,9 @@ additionalProperties:
       envKey: WECHATMP_PORT
       labelEn: WechatMP Port
       labelZh: 微信公众平台端口
+      label:
+        en: WechatMP Port
+        zh: 微信公众平台端口
       required: false
       type: number
     - default: ""
@@ -688,6 +947,9 @@ additionalProperties:
       envKey: WECHATMP_APP_ID
       labelEn: WechatMP App ID
       labelZh: 微信公众平台 App ID
+      label:
+        en: WechatMP App ID
+        zh: 微信公众平台 App ID
       required: false
       type: text
     - default: ""
@@ -695,6 +957,9 @@ additionalProperties:
       envKey: WECHATMP_APP_SECRET
       labelEn: WechatMP App Secret
       labelZh: 微信公众平台 App Secret
+      label:
+        en: WechatMP App Secret
+        zh: 微信公众平台 App Secret
       required: false
       type: text
     - default: ""
@@ -702,6 +967,9 @@ additionalProperties:
       envKey: WECHATMP_AES_KEY
       labelEn: WechatMP AES Key
       labelZh: 微信公众平台 AES Key
+      label:
+        en: WechatMP AES Key
+        zh: 微信公众平台 AES Key
       required: false
       type: text
     - default: ""
@@ -709,6 +977,9 @@ additionalProperties:
       envKey: WECHATCOM_CORP_ID
       labelEn: Wechatcom Corp ID
       labelZh: 企业微信公司 Corp ID
+      label:
+        en: Wechatcom Corp ID
+        zh: 企业微信公司 Corp ID
       required: false
       type: text
     - default: ""
@@ -716,6 +987,9 @@ additionalProperties:
       envKey: WECHATCOMAPP_TOKEN
       labelEn: WechatcomApp Token
       labelZh: 企业微信 App Token
+      label:
+        en: WechatcomApp Token
+        zh: 企业微信 App Token
       required: false
       type: text
     - default: "9898"
@@ -723,6 +997,9 @@ additionalProperties:
       envKey: WECHATCOMAPP_PORT
       labelEn: WechatcomApp Port
       labelZh: 企业微信 App 端口
+      label:
+        en: WechatcomApp Port
+        zh: 企业微信 App 端口
       required: false
       type: number
     - default: ""
@@ -730,6 +1007,9 @@ additionalProperties:
       envKey: WECHATCOMAPP_SECRET
       labelEn: WechatcomApp Secret
       labelZh: 企业微信 App Secret
+      label:
+        en: WechatcomApp Secret
+        zh: 企业微信 App Secret
       required: false
       type: text
     - default: ""
@@ -737,6 +1017,9 @@ additionalProperties:
       envKey: WECHATCOMAPP_AGENT_ID
       labelEn: WechatcomApp Agent ID
       labelZh: 企业微信 App Agent ID
+      label:
+        en: WechatcomApp Agent ID
+        zh: 企业微信 App Agent ID
       required: false
       type: text
     - default: ""
@@ -744,6 +1027,9 @@ additionalProperties:
       envKey: WECHATCOMAPP_AES_KEY
       labelEn: WechatcomApp AES Key
       labelZh: 企业微信 App AES Key
+      label:
+        en: WechatcomApp AES Key
+        zh: 企业微信 App AES Key
       required: false
       type: text
     - default: "80"
@@ -751,6 +1037,9 @@ additionalProperties:
       envKey: FEISHU_PORT
       labelEn: Feishu Port
       labelZh: 飞书 Bot 监听端口
+      label:
+        en: Feishu Port
+        zh: 飞书 Bot 监听端口
       required: false
       type: number
     - default: ""
@@ -758,6 +1047,9 @@ additionalProperties:
       envKey: FEISHU_APP_ID
       labelEn: Feishu App ID
       labelZh: 飞书机器人应用 App ID
+      label:
+        en: Feishu App ID
+        zh: 飞书机器人应用 App ID
       required: false
       type: text
     - default: ""
@@ -765,6 +1057,9 @@ additionalProperties:
       envKey: FEISHU_APP_SECRET
       labelEn: Feishu App Secret
       labelZh: 飞书机器人 App Secret
+      label:
+        en: Feishu App Secret
+        zh: 飞书机器人 App Secret
       required: false
       type: text
     - default: ""
@@ -772,6 +1067,9 @@ additionalProperties:
       envKey: FEISHU_TOKEN
       labelEn: Feishu Token
       labelZh: 飞书 Verification Token
+      label:
+        en: Feishu Token
+        zh: 飞书 Verification Token
       required: false
       type: text
     - default: ""
@@ -779,6 +1077,9 @@ additionalProperties:
       envKey: FEISHU_BOT_NAME
       labelEn: Feishu Bot Name
       labelZh: 飞书机器人名称
+      label:
+        en: Feishu Bot Name
+        zh: 飞书机器人名称
       required: false
       type: text
     - default: ""
@@ -786,6 +1087,9 @@ additionalProperties:
       envKey: DINGTALK_CLIENT_ID
       labelEn: Dingtalk Client ID
       labelZh: 钉钉机器人 Client ID
+      label:
+        en: Dingtalk Client ID
+        zh: 钉钉机器人 Client ID
       required: false
       type: text
     - default: ""
@@ -793,6 +1097,9 @@ additionalProperties:
       envKey: DINGTALK_CLIENT_SECRET
       labelEn: Dingtalk Client Secret
       labelZh: 钉钉机器人 Client Secret
+      label:
+        en: Dingtalk Client Secret
+        zh: 钉钉机器人 Client Secret
       required: false
       type: text
     - default: "false"
@@ -800,6 +1107,9 @@ additionalProperties:
       envKey: DINGTALK_CARD_ENABLED
       labelEn: Dingtalk Card Enabled
       labelZh: 钉钉卡片开启
+      label:
+        en: Dingtalk Card Enabled
+        zh: 钉钉卡片开启
       required: true
       type: select
       values:
@@ -812,6 +1122,9 @@ additionalProperties:
       envKey: CLEAR_MEMORY_COMMANDS
       labelEn: Clear Memory Commands
       labelZh: 清除记忆指令
+      label:
+        en: Clear Memory Commands
+        zh: 清除记忆指令
       required: false
       type: text
     - default: "wx"
@@ -819,6 +1132,9 @@ additionalProperties:
       envKey: CHANNEL_TYPE
       labelEn: Channel Type
       labelZh: 通道类型
+      label:
+        en: Channel Type
+        zh: 通道类型
       required: true
       type: select
       values:
@@ -841,6 +1157,9 @@ additionalProperties:
       envKey: SUBSCRIBE_MSG
       labelEn: Subscribe Message
       labelZh: 订阅消息
+      label:
+        en: Subscribe Message
+        zh: 订阅消息
       required: false
       type: text
     - default: "false"
@@ -848,6 +1167,9 @@ additionalProperties:
       envKey: DEBUG
       labelEn: Debug
       labelZh: 调试模式
+      label:
+        en: Debug
+        zh: 调试模式
       required: true
       type: select
       values:
@@ -860,6 +1182,9 @@ additionalProperties:
       envKey: APPDATA_DIR
       labelEn: Appdata Directory
       labelZh: 数据目录
+      label:
+        en: Appdata Directory
+        zh: 数据目录
       required: false
       type: text
     - default: "$"
@@ -867,6 +1192,9 @@ additionalProperties:
       envKey: PLUGIN_TRIGGER_PREFIX
       labelEn: Plugin Trigger Prefix
       labelZh: 插件触发前缀
+      label:
+        en: Plugin Trigger Prefix
+        zh: 插件触发前缀
       required: false
       type: text
     - default: "false"
@@ -874,6 +1202,9 @@ additionalProperties:
       envKey: USE_GLOBAL_PLUGIN_CONFIG
       labelEn: Use Global Plugin Config
       labelZh: 使用全局插件配置
+      label:
+        en: Use Global Plugin Config
+        zh: 使用全局插件配置
       required: true
       type: select
       values:
@@ -886,6 +1217,9 @@ additionalProperties:
       envKey: MAX_MEDIA_SEND_COUNT
       labelEn: Max Media Send Count
       labelZh: 单次最大发送媒体资源数量
+      label:
+        en: Max Media Send Count
+        zh: 单次最大发送媒体资源数量
       required: false
       type: number
     - default: "1"
@@ -893,6 +1227,9 @@ additionalProperties:
       envKey: MEDIA_SEND_INTERVAL
       labelEn: Media Send Interval
       labelZh: 发送图片事件间隔（秒）
+      label:
+        en: Media Send Interval
+        zh: 发送图片事件间隔（秒）
       required: false
       type: number
     - default: ""
@@ -900,6 +1237,9 @@ additionalProperties:
       envKey: ZHIPU_AI_API_KEY
       labelEn: Zhipu AI API Key
       labelZh: 智谱 AI API 密钥
+      label:
+        en: Zhipu AI API Key
+        zh: 智谱 AI API 密钥
       required: false
       type: text
     - default: "https://open.bigmodel.cn/api/paas/v4"
@@ -907,6 +1247,9 @@ additionalProperties:
       envKey: ZHIPU_AI_API_BASE
       labelEn: Zhipu AI API Base
       labelZh: 智谱 AI API 地址
+      label:
+        en: Zhipu AI API Base
+        zh: 智谱 AI API 地址
       required: false
       type: text
     - default: ""
@@ -914,6 +1257,9 @@ additionalProperties:
       envKey: MOONSHOT_API_KEY
       labelEn: Moonshot API Key
       labelZh: Moonshot API 密钥
+      label:
+        en: Moonshot API Key
+        zh: Moonshot API 密钥
       required: false
       type: text
     - default: "https://api.moonshot.cn/v1/chat/completions"
@@ -921,6 +1267,9 @@ additionalProperties:
       envKey: MOONSHOT_BASE_URL
       labelEn: Moonshot Base URL
       labelZh: Moonshot API 地址
+      label:
+        en: Moonshot Base URL
+        zh: Moonshot API 地址
       required: false
       type: text
     - default: "false"
@@ -928,6 +1277,9 @@ additionalProperties:
       envKey: USE_LINKAI
       labelEn: Use LinkAI
       labelZh: 使用 LinkAI
+      label:
+        en: Use LinkAI
+        zh: 使用 LinkAI
       required: true
       type: select
       values:
@@ -940,6 +1292,9 @@ additionalProperties:
       envKey: LINKAI_API_KEY
       labelEn: LinkAI API Key
       labelZh: LinkAI API 密钥
+      label:
+        en: LinkAI API Key
+        zh: LinkAI API 密钥
       required: false
       type: text
     - default: ""
@@ -947,6 +1302,9 @@ additionalProperties:
       envKey: LINKAI_APP_CODE
       labelEn: LinkAI App Code
       labelZh: LinkAI App Code
+      label:
+        en: LinkAI App Code
+        zh: LinkAI App Code
       required: false
       type: text
     - default: "https://api.link-ai.tech"
@@ -954,5 +1312,8 @@ additionalProperties:
       envKey: LINKAI_API_BASE
       labelEn: LinkAI API Base
       labelZh: LinkAI API 地址
+      label:
+        en: LinkAI API Base
+        zh: LinkAI API 地址
       required: false
       type: text

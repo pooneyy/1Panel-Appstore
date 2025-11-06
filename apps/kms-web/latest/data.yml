@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: KMS_PORT
       labelEn: KMS Port
       labelZh: KMS端口
+      label:
+        en: KMS Port
+        zh: KMS端口
       required: true
       rule: paramPort
       type: number

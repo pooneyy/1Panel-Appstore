@@ -5,6 +5,9 @@ additionalProperties:
       envKey: STREAM_REC_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 15275
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_API
       labelZh: API 端口
       labelEn: API port
+      label:
+        en: API port
+        zh: API 端口
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: LOGIN_USERNAME
       labelZh: 默认用户名
       labelEn: Default Username
+      label:
+        en: Default Username
+        zh: 默认用户名
       required: true
       type: text
     - default: "stream-rec"
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: LOGIN_SECRET
       labelZh: 登录密码 (初始化)
       labelEn: Login Password (Initialization)
+      label:
+        en: Login Password (Initialization)
+        zh: 登录密码 (初始化)
       required: true
       random: true
       type: password
@@ -43,6 +58,9 @@ additionalProperties:
       envKey: AUTH_SECRET
       labelZh: 加密密钥
       labelEn: Encryption Key
+      label:
+        en: Encryption Key
+        zh: 加密密钥
       required: true
       random: true
       type: text
@@ -51,6 +69,9 @@ additionalProperties:
       envKey: NEXT_PUBLIC_BASE_URL
       labelZh: 访问域名
       labelEn: Access Domain
+      label:
+        en: Access Domain
+        zh: 访问域名
       required: true
       type: text
     - default: "ws://127.0.0.1:12555/live/update"
@@ -58,6 +79,9 @@ additionalProperties:
       envKey: WS_API_URL
       labelZh: WebSocket API 地址
       labelEn: WebSocket API URL
+      label:
+        en: WebSocket API URL
+        zh: WebSocket API 地址
       required: true
       type: text
     - default: ""
@@ -65,5 +89,8 @@ additionalProperties:
       envKey: HTTP_PROXY
       labelZh: 网络代理
       labelEn: Network Proxy
+      label:
+        en: Network Proxy
+        zh: 网络代理
       required: false
       type: text

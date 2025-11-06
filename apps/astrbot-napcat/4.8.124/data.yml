@@ -5,6 +5,9 @@ additionalProperties:
       envKey: ASTRBOT_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 6185
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WECOM
       labelZh: 企业微信 WebHook
       labelEn: WeCom WebHook
+      label:
+        en: WeCom WebHook
+        zh: 企业微信 WebHook
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WECHAT
       labelZh: 个人微信 WebHook
       labelEn: WeChat WebHook
+      label:
+        en: WeChat WebHook
+        zh: 个人微信 WebHook
       required: true
       rule: paramPort
       type: number
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_QQ_WH
       labelZh: QQ WebHook
       labelEn: QQ WebHook
+      label:
+        en: QQ WebHook
+        zh: QQ WebHook
       required: true
       rule: paramPort
       type: number
@@ -44,6 +59,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_QQ_API
       labelZh: QQ API
       labelEn: QQ API
+      label:
+        en: QQ API
+        zh: QQ API
       required: true
       rule: paramPort
       type: number
@@ -52,6 +70,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_NAPCAT
       labelZh: NapCat 端口
       labelEn: NapCat port
+      label:
+        en: NapCat port
+        zh: NapCat 端口
       required: true
       rule: paramPort
       type: number
@@ -60,6 +81,9 @@ additionalProperties:
       envKey: NAPCAT_MAC_ADDRESS
       labelZh: NapCat 容器 MAC 地址
       labelEn: NapCat container MAC address
+      label:
+        en: NapCat container MAC address
+        zh: NapCat 容器 MAC 地址
       required: true
       type: text
     - default: 1000
@@ -67,6 +91,9 @@ additionalProperties:
       envKey: NAPCAT_UID
       labelZh: NapCat 容器 UID
       labelEn: NapCat container UID
+      label:
+        en: NapCat container UID
+        zh: NapCat 容器 UID
       required: true
       type: number
     - default: 1000
@@ -74,5 +101,8 @@ additionalProperties:
       envKey: NAPCAT_GID
       labelZh: NapCat 容器 GID
       labelEn: NapCat container GID
+      label:
+        en: NapCat container GID
+        zh: NapCat 容器 GID
       required: true
       type: number

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: MX_SERVER_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 2333
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: JWT_SECRET
       labelZh: JWT 密钥
       labelEn: JWT Secret
+      label:
+        en: JWT Secret
+        zh: JWT 密钥
       required: true
       type: text
     - default: ",localhost"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: ALLOWED_ORIGINS
       labelZh: 允许的访问来源
       labelEn: 允许的访问来源
+      label:
+        en: 允许的访问来源
+        zh: 允许的访问来源
       required: true
       type: text
     - default: "127.0.0.1"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: DB_HOST
       labelZh: 数据库 主机地址 (MongoDB)
       labelEn: Database Host (MongoDB)
+      label:
+        en: Database Host (MongoDB)
+        zh: 数据库 主机地址 (MongoDB)
       required: true
       type: text
     - default: 27017
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口 (MongoDB)
       labelEn: Database Port (MongoDB)
+      label:
+        en: Database Port (MongoDB)
+        zh: 数据库 端口 (MongoDB)
       required: true
       rule: paramPort
       type: number
@@ -49,6 +67,9 @@ additionalProperties:
       envKey: DB_COLLECTION_NAME
       labelZh: 数据库 名称 (MongoDB)
       labelEn: Database Name (MongoDB)
+      label:
+        en: Database Name (MongoDB)
+        zh: 数据库 名称 (MongoDB)
       required: true
       rule: paramCommon
       type: text
@@ -57,6 +78,9 @@ additionalProperties:
       envKey: DB_USER
       labelZh: 数据库 用户名 (MongoDB)
       labelEn: Database Username (MongoDB)
+      label:
+        en: Database Username (MongoDB)
+        zh: 数据库 用户名 (MongoDB)
       required: false
       type: text
     - default: "mx-space"
@@ -64,6 +88,9 @@ additionalProperties:
       envKey: DB_PASSWORD
       labelZh: 数据库 密码 (MongoDB)
       labelEn: Database Password (MongoDB)
+      label:
+        en: Database Password (MongoDB)
+        zh: 数据库 密码 (MongoDB)
       random: true
       required: false
       rule: paramComplexity
@@ -73,6 +100,9 @@ additionalProperties:
       envKey: REDIS_HOST
       labelZh: Redis 主机
       labelEn: Redis Host
+      label:
+        en: Redis Host
+        zh: Redis 主机
       required: true
       type: text
     - default: 6379
@@ -80,6 +110,9 @@ additionalProperties:
       envKey: REDIS_PORT
       labelZh: Redis 端口
       labelEn: Redis Port
+      label:
+        en: Redis Port
+        zh: Redis 端口
       required: true
       rule: paramPort
       type: number
@@ -88,5 +121,8 @@ additionalProperties:
       envKey: REDIS_PASSWORD
       labelZh: Redis 密码
       labelEn: Redis Password
+      label:
+        en: Redis Password
+        zh: Redis 密码
       required: false
       type: password

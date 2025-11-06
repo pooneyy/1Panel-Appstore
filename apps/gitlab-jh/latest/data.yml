@@ -1,18 +1,24 @@
 additionalProperties:
-    formFields:
-        - default: 8080
-          envKey: PANEL_APP_PORT_HTTP
-          labelEn: HTTP Port
-          labelZh: HTTP 端口
-          random: false
-          required: true
-          rule: paramPort
-          type: number
-        - default: 8022
-          envKey: PANEL_APP_PORT_22
-          labelEn: Port 22 in container
-          labelZh: 容器内的 22 端口
-          random: false
-          required: true
-          rule: paramPort
-          type: number
+  formFields:
+    - default: 8080
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        zh: HTTP 端口
+      random: false
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8022
+      envKey: PANEL_APP_PORT_22
+      labelEn: Port 22 in container
+      labelZh: 容器内的 22 端口
+      label:
+        en: Port 22 in container
+        zh: 容器内的 22 端口
+      random: false
+      required: true
+      rule: paramPort
+      type: number

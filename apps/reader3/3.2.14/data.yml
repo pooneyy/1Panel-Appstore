@@ -5,6 +5,9 @@ additionalProperties:
       envKey: READER3_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: READER_APP_SECUREKEY
       labelZh: 管理员 密码
       labelEn: Admin Password
+      label:
+        en: Admin Password
+        zh: 管理员 密码
       required: true
       type: password
     - default: ""
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: READER_APP_INVITECODE
       labelZh: 邀请码
       labelEn: Invite Code
+      label:
+        en: Invite Code
+        zh: 邀请码
       required: false
       type: text
     - default: "true"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: READER_APP_CACHECHAPTERCONTENT
       labelZh: 缓存章节内容
       labelEn: Cache Chapter Content
+      label:
+        en: Cache Chapter Content
+        zh: 缓存章节内容
       required: true
       type: select
       values:
@@ -46,6 +61,9 @@ additionalProperties:
       envKey: READER_APP_AUTOCLEARINACTIVEUSER
       labelZh: 自动清理不活跃用户 (天)
       labelEn: Auto Clear Inactive User (Days)
+      label:
+        en: Auto Clear Inactive User (Days)
+        zh: 自动清理不活跃用户 (天)
       required: true
       type: number
     - default: ""
@@ -53,6 +71,9 @@ additionalProperties:
       envKey: READER_APP_REMOTEWEBVIEWAPI
       labelZh: 远程 WebView API 地址 (插件)
       labelEn: Remote WebView API Address (Plugin)
+      label:
+        en: Remote WebView API Address (Plugin)
+        zh: 远程 WebView API 地址 (插件)
       required: false
       type: text
     - default: "false"
@@ -60,6 +81,9 @@ additionalProperties:
       envKey: READER_APP_DEFAULTUSERENABLEWEBDAV
       labelZh: 新用户默认启用 WebDAV
       labelEn: New User Default Enable WebDAV
+      label:
+        en: New User Default Enable WebDAV
+        zh: 新用户默认启用 WebDAV
       required: true
       type: select
       values:
@@ -72,6 +96,9 @@ additionalProperties:
       envKey: READER_APP_DEFAULTUSERENABLELOCALSTORE
       labelZh: 新用户默认启用 LocalStore
       labelEn: New User Default Enable LocalStore
+      label:
+        en: New User Default Enable LocalStore
+        zh: 新用户默认启用 LocalStore
       required: true
       type: select
       values:
@@ -84,6 +111,9 @@ additionalProperties:
       envKey: READER_APP_DEFAULTUSERENABLEBOOKSOURCE
       labelZh: 允许新用户编辑书源
       labelEn: Allow New User Edit Book Source
+      label:
+        en: Allow New User Edit Book Source
+        zh: 允许新用户编辑书源
       required: true
       type: select
       values:
@@ -96,6 +126,9 @@ additionalProperties:
       envKey: READER_APP_DEFAULTUSERENABLERSSSOURCE
       labelZh: 允许新用户编辑 RSS 源
       labelEn: Allow New User Edit RSS Source
+      label:
+        en: Allow New User Edit RSS Source
+        zh: 允许新用户编辑 RSS 源
       required: true
       type: select
       values:
@@ -108,6 +141,9 @@ additionalProperties:
       envKey: READER_APP_DEFAULTUSERBOOKSOURCELIMIT
       labelZh: 新用户书源数量限制
       labelEn: New User Book Source Limit
+      label:
+        en: New User Book Source Limit
+        zh: 新用户书源数量限制
       required: true
       type: number
     - default: 8
@@ -115,5 +151,8 @@ additionalProperties:
       envKey: READER_APP_minUserPasswordLength
       labelZh: 用户密码最小长度
       labelEn: User Password Min Length
+      label:
+        en: User Password Min Length
+        zh: 用户密码最小长度
       required: true
       type: number

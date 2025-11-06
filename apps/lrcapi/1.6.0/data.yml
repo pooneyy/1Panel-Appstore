@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: MUSIC_PATH
       labelEn: Music Path
       labelZh: 音乐路径
+      label:
+        en: Music Path
+        zh: 音乐路径
       required: true
       type: text
     - default: "authkey"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: API_AUTH
       labelEn: API Auth Key
       labelZh: API 鉴权 Key
+      label:
+        en: API Auth Key
+        zh: API 鉴权 Key
       random: true
       required: true
       rule: paramComplexity

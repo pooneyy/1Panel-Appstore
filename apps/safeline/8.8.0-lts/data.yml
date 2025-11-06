@@ -5,6 +5,9 @@ additionalProperties:
       envKey: POSTGRES_PASSWORD
       labelEn: Postgres database User Password
       labelZh: Postgres数据库密码
+      label:
+        en: Postgres database User Password
+        zh: Postgres数据库密码
       required: true
       rule: paramCommon
       type: password
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: SAFELINE_DIR
       labelEn: Data storage folder
       labelZh: 数据存放文件夹
+      label:
+        en: Data storage folder
+        zh: 数据存放文件夹
       required: true
       type: text
     - default: 169.254.0
@@ -28,5 +37,8 @@ additionalProperties:
       envKey: SUBNET_PREFIX
       labelEn: New docker network subnet prefix
       labelZh: 新 docker 网络子网前缀
+      label:
+        en: New docker network subnet prefix
+        zh: 新 docker 网络子网前缀
       required: true
       type: text

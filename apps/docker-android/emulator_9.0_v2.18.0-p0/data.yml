@@ -5,6 +5,9 @@ additionalProperties:
       envKey: RESTART_POLICY
       labelEn: Restart Policy
       labelZh: 重启策略
+      label:
+        en: Restart Policy
+        zh: 重启策略
       required: true
       type: select
       values:
@@ -19,6 +22,9 @@ additionalProperties:
       envKey: EMULATOR_DEVICE
       labelEn: Emulator Device
       labelZh: 模拟的设备
+      label:
+        en: Emulator Device
+        zh: 模拟的设备
       required: true
       type: text
     - default: "true"
@@ -26,6 +32,9 @@ additionalProperties:
       envKey: WEB_VNC
       labelEn: Web VNC
       labelZh: Web VNC
+      label:
+        en: Web VNC
+        zh: Web VNC
       required: true
       type: select
       values:
@@ -38,6 +47,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number

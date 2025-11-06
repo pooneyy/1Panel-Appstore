@@ -5,6 +5,9 @@ additionalProperties:
       envKey: RPC_PORT_VALUE
       labelEn: RPC port
       labelZh: RPC端口
+      label:
+        en: RPC port
+        zh: RPC端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Listening port
       labelZh: 监听端口
+      label:
+        en: Listening port
+        zh: 监听端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: TOKEN
       labelEn: RPC secret
       labelZh: RPC密钥
+      label:
+        en: RPC secret
+        zh: RPC密钥
       random: true
       required: true
       rule: paramCommon
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: CONFIG_PATH
       labelEn: Path to the configuration file
       labelZh: 配置文件所在路径
+      label:
+        en: Path to the configuration file
+        zh: 配置文件所在路径
       required: true
       type: text
     - default: ./data/downloads
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: DOWNLOAD_PATH
       labelEn: Download folder path
       labelZh: 下载文件夹路径
+      label:
+        en: Download folder path
+        zh: 下载文件夹路径
       required: true
       type: text
     - default: https://trackerslist.com/all_aria2.txt
@@ -43,5 +58,8 @@ additionalProperties:
       envKey: TRACKER_URL
       labelEn: TRACKER URL
       labelZh: TRACKER链接
+      label:
+        en: TRACKER URL
+        zh: TRACKER链接
       required: true
       type: text

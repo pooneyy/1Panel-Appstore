@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DASHDOT_ENABLE_CPU_TEMPS
       labelZh: 启用 CPU 温度
       labelEn: Enable CPU temps
+      label:
+        en: Enable CPU temps
+        zh: 启用 CPU 温度
       required: true
       type: select
       values:

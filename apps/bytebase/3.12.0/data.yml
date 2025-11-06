@@ -6,6 +6,9 @@ additionalProperties:
       key: postgresql
       labelEn: Postgres database Service
       labelZh: Postgres数据库服务
+      label:
+        en: Postgres database Service
+        zh: Postgres数据库服务
       required: true
       type: service
     - default: "5432"
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: POSTGRES_PORT
       labelEn: Postgres database Service Port
       labelZh: Postgres数据库服务端口
+      label:
+        en: Postgres database Service Port
+        zh: Postgres数据库服务端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: PANEL_DB_NAME
       labelEn: Database
       labelZh: 数据库名
+      label:
+        en: Database
+        zh: 数据库名
       required: true
       rule: paramCommon
       type: text
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: PANEL_DB_USER
       labelEn: User
       labelZh: 数据库用户
+      label:
+        en: User
+        zh: 数据库用户
       required: true
       rule: paramCommon
       type: text
@@ -37,6 +49,9 @@ additionalProperties:
       envKey: PANEL_DB_USER_PASSWORD
       labelEn: Password
       labelZh: 数据库用户密码
+      label:
+        en: Password
+        zh: 数据库用户密码
       required: true
       rule: paramCommon
       type: password
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -53,5 +71,8 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data storage folder
       labelZh: 数据存放文件夹
+      label:
+        en: Data storage folder
+        zh: 数据存放文件夹
       required: true
       type: text

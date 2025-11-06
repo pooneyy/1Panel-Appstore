@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: APP_NAME
       labelEn: App Name
       labelZh: 应用名
+      label:
+        en: App Name
+        zh: 应用名
       required: true
       type: text
     - default: "local"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: APP_ENV
       labelEn: App Environment
       labelZh: 应用环境
+      label:
+        en: App Environment
+        zh: 应用环境
       required: true
       type: select
       values:
@@ -32,6 +41,9 @@ additionalProperties:
       envKey: APP_TIMEZONE
       labelEn: Timezone
       labelZh: 时区
+      label:
+        en: Timezone
+        zh: 时区
       required: true
       type: text
     - default: "false"
@@ -39,6 +51,9 @@ additionalProperties:
       envKey: APP_DEBUG
       labelEn: Debug Mode
       labelZh: 调试模式
+      label:
+        en: Debug Mode
+        zh: 调试模式
       required: true
       type: select
       values:
@@ -51,6 +66,9 @@ additionalProperties:
       envKey: SITE_OWNER
       labelEn: Site Owner
       labelZh: 站点拥有者
+      label:
+        en: Site Owner
+        zh: 站点拥有者
       required: true
       type: text
     - default: "yuBiR9dlyokasPeguSPl8oPRLpHiqAbr"
@@ -58,6 +76,9 @@ additionalProperties:
       envKey: APP_KEY
       labelEn: App Key (32 characters)
       labelZh: 应用密钥 (32 位字符)
+      label:
+        en: App Key (32 characters)
+        zh: 应用密钥 (32 位字符)
       required: true
       type: text
     - default: "http://localhost:40273"
@@ -65,6 +86,9 @@ additionalProperties:
       envKey: APP_URL
       labelEn: App URL (External URL)
       labelZh: 应用网址 (外部访问地址)
+      label:
+        en: App URL (External URL)
+        zh: 应用网址 (外部访问地址)
       required: true
       rule: paramExtUrl
       type: text
@@ -73,6 +97,9 @@ additionalProperties:
       envKey: IS_DEMO_APP
       labelEn: Demo Mode
       labelZh: 演示模式
+      label:
+        en: Demo Mode
+        zh: 演示模式
       required: true
       type: select
       values:
@@ -85,6 +112,9 @@ additionalProperties:
       envKey: LOG_CHANNEL
       labelEn: Log Channel
       labelZh: 日志通道
+      label:
+        en: Log Channel
+        zh: 日志通道
       required: true
       type: text
     - default: "notice"
@@ -92,6 +122,9 @@ additionalProperties:
       envKey: LOG_LEVEL
       labelEn: Log Level
       labelZh: 日志级别
+      label:
+        en: Log Level
+        zh: 日志级别
       required: true
       type: select
       values:
@@ -116,6 +149,9 @@ additionalProperties:
       envKey: DB_DATABASE
       labelEn: Database Path
       labelZh: 数据库路径
+      label:
+        en: Database Path
+        zh: 数据库路径
       required: true
       type: text
     - default: "file"
@@ -123,6 +159,9 @@ additionalProperties:
       envKey: CACHE_DRIVER
       labelEn: Cache Driver
       labelZh: 缓存驱动
+      label:
+        en: Cache Driver
+        zh: 缓存驱动
       required: true
       type: text
     - default: "file"
@@ -130,6 +169,9 @@ additionalProperties:
       envKey: SESSION_DRIVER
       labelEn: Session Driver
       labelZh: 会话驱动
+      label:
+        en: Session Driver
+        zh: 会话驱动
       required: true
       type: text
     - default: "log"
@@ -137,6 +179,9 @@ additionalProperties:
       envKey: MAIL_MAILER
       labelEn: Mailer
       labelZh: 邮件发送方式
+      label:
+        en: Mailer
+        zh: 邮件发送方式
       required: true
       type: text
     - default: ""
@@ -144,6 +189,9 @@ additionalProperties:
       envKey: MAIL_HOST
       labelEn: Mail Host
       labelZh: 邮件服务器
+      label:
+        en: Mail Host
+        zh: 邮件服务器
       required: false
       type: text
     - default: ""
@@ -151,6 +199,9 @@ additionalProperties:
       envKey: MAIL_PORT
       labelEn: Mail Port
       labelZh: 邮件端口
+      label:
+        en: Mail Port
+        zh: 邮件端口
       required: false
       type: number
     - default: ""
@@ -158,6 +209,9 @@ additionalProperties:
       envKey: MAIL_USERNAME
       labelEn: Mail Username
       labelZh: 邮件用户名
+      label:
+        en: Mail Username
+        zh: 邮件用户名
       required: false
       type: text
     - default: ""
@@ -165,6 +219,9 @@ additionalProperties:
       envKey: MAIL_PASSWORD
       labelEn: Mail Password
       labelZh: 邮件密码
+      label:
+        en: Mail Password
+        zh: 邮件密码
       required: false
       type: password
     - default: ""
@@ -172,6 +229,9 @@ additionalProperties:
       envKey: MAIL_ENCRYPTION
       labelEn: Mail Encryption
       labelZh: 邮件加密方式
+      label:
+        en: Mail Encryption
+        zh: 邮件加密方式
       required: false
       type: text
     - default: ""
@@ -179,6 +239,9 @@ additionalProperties:
       envKey: MAIL_FROM_NAME
       labelEn: Mail From Name
       labelZh: 邮件发件人姓名
+      label:
+        en: Mail From Name
+        zh: 邮件发件人姓名
       required: false
       type: text
     - default: ""
@@ -186,6 +249,9 @@ additionalProperties:
       envKey: MAIL_FROM_ADDRESS
       labelEn: Mail From Address
       labelZh: 邮件发件人地址
+      label:
+        en: Mail From Address
+        zh: 邮件发件人地址
       required: false
       type: text
     - default: "true"
@@ -193,6 +259,9 @@ additionalProperties:
       envKey: MAIL_VERIFY_SSL_PEER
       labelEn: Mail Verify SSL Peer
       labelZh: 邮件验证 SSL 证书
+      label:
+        en: Mail Verify SSL Peer
+        zh: 邮件验证 SSL 证书
       required: true
       type: select
       values:
@@ -205,6 +274,9 @@ additionalProperties:
       envKey: THROTTLE_API
       labelEn: API Throttle
       labelZh: API 限制
+      label:
+        en: API Throttle
+        zh: API 限制
       required: true
       type: number
     - default: "5"
@@ -212,6 +284,9 @@ additionalProperties:
       envKey: LOGIN_THROTTLE
       labelEn: Login Throttle
       labelZh: 登录限制
+      label:
+        en: Login Throttle
+        zh: 登录限制
       required: true
       type: number
     - default: "web-guard"
@@ -219,6 +294,9 @@ additionalProperties:
       envKey: AUTHENTICATION_GUARD
       labelEn: Authentication Guard
       labelZh: 认证保护
+      label:
+        en: Authentication Guard
+        zh: 认证保护
       required: true
       type: select
       values:
@@ -231,6 +309,9 @@ additionalProperties:
       envKey: AUTHENTICATION_LOG_RETENTION
       labelEn: Authentication Log Retention
       labelZh: 认证日志保留
+      label:
+        en: Authentication Log Retention
+        zh: 认证日志保留
       required: true
       type: number
     - default: ""
@@ -238,6 +319,9 @@ additionalProperties:
       envKey: AUTH_PROXY_HEADER_FOR_USER
       labelEn: Authentication Proxy Header for User
       labelZh: 用户认证代理头
+      label:
+        en: Authentication Proxy Header for User
+        zh: 用户认证代理头
       required: false
       type: text
     - default: ""
@@ -245,6 +329,9 @@ additionalProperties:
       envKey: AUTH_PROXY_HEADER_FOR_EMAIL
       labelEn: Authentication Proxy Header for Email
       labelZh: 邮箱认证代理头
+      label:
+        en: Authentication Proxy Header for Email
+        zh: 邮箱认证代理头
       required: false
       type: text
     - default: ""
@@ -252,6 +339,9 @@ additionalProperties:
       envKey: PROXY_LOGOUT_URL
       labelEn: Proxy Logout URL
       labelZh: 代理注销网址
+      label:
+        en: Proxy Logout URL
+        zh: 代理注销网址
       required: false
       type: text
     - default: "2FAuth"
@@ -259,6 +349,9 @@ additionalProperties:
       envKey: WEBAUTHN_NAME
       labelEn: WebAuthn Name
       labelZh: WebAuthn 名称
+      label:
+        en: WebAuthn Name
+        zh: WebAuthn 名称
       required: true
       type: text
     - default: ""
@@ -266,6 +359,9 @@ additionalProperties:
       envKey: WEBAUTHN_ID
       labelEn: WebAuthn ID
       labelZh: WebAuthn ID
+      label:
+        en: WebAuthn ID
+        zh: WebAuthn ID
       required: false
       type: text
     - default: "preferred"
@@ -273,6 +369,9 @@ additionalProperties:
       envKey: WEBAUTHN_USER_VERIFICATION
       labelEn: WebAuthn User Verification
       labelZh: WebAuthn 用户验证
+      label:
+        en: WebAuthn User Verification
+        zh: WebAuthn 用户验证
       required: true
       type: select
       values:
@@ -287,6 +386,9 @@ additionalProperties:
       envKey: TRUSTED_PROXIES
       labelEn: Trusted Proxies
       labelZh: 信任代理
+      label:
+        en: Trusted Proxies
+        zh: 信任代理
       required: false
       type: text
     - default: ""
@@ -294,6 +396,9 @@ additionalProperties:
       envKey: PROXY_FOR_OUTGOING_REQUESTS
       labelEn: Proxy for Outgoing Requests
       labelZh: 出站请求代理
+      label:
+        en: Proxy for Outgoing Requests
+        zh: 出站请求代理
       required: false
       type: text
     - default: "log"
@@ -301,6 +406,9 @@ additionalProperties:
       envKey: BROADCAST_DRIVER
       labelEn: Broadcast Driver
       labelZh: 广播驱动
+      label:
+        en: Broadcast Driver
+        zh: 广播驱动
       required: true
       type: text
     - default: "sync"
@@ -308,6 +416,9 @@ additionalProperties:
       envKey: QUEUE_DRIVER
       labelEn: Queue Driver
       labelZh: 队列驱动
+      label:
+        en: Queue Driver
+        zh: 队列驱动
       required: true
       type: text
     - default: "120"
@@ -315,6 +426,9 @@ additionalProperties:
       envKey: SESSION_LIFETIME
       labelEn: Session Lifetime
       labelZh: 会话有效期
+      label:
+        en: Session Lifetime
+        zh: 会话有效期
       required: true
       type: number
     - default: ""
@@ -323,6 +437,9 @@ additionalProperties:
       key: redis
       labelEn: Redis Service
       labelZh: Redis服务
+      label:
+        en: Redis Service
+        zh: Redis服务
       required: true
       type: service
     - default: "6379"
@@ -330,6 +447,9 @@ additionalProperties:
       envKey: REDIS_PORT
       labelEn: Redis Service Port
       labelZh: Redis服务端口
+      label:
+        en: Redis Service Port
+        zh: Redis服务端口
       required: true
       rule: paramPort
       type: number
@@ -338,6 +458,9 @@ additionalProperties:
       envKey: PANEL_REDIS_ROOT_PASSWORD
       labelEn: Redis Password
       labelZh: Redis 密码
+      label:
+        en: Redis Password
+        zh: Redis 密码
       required: true
       type: password
     - default: ""
@@ -345,6 +468,9 @@ additionalProperties:
       envKey: PUSHER_APP_ID
       labelEn: Pusher App ID
       labelZh: Pusher 应用 ID
+      label:
+        en: Pusher App ID
+        zh: Pusher 应用 ID
       required: false
       type: text
     - default: ""
@@ -352,6 +478,9 @@ additionalProperties:
       envKey: PUSHER_APP_KEY
       labelEn: Pusher App Key
       labelZh: Pusher 应用密钥
+      label:
+        en: Pusher App Key
+        zh: Pusher 应用密钥
       required: false
       type: text
     - default: ""
@@ -359,6 +488,9 @@ additionalProperties:
       envKey: PUSHER_APP_SECRET
       labelEn: Pusher App Secret
       labelZh: Pusher 应用密钥
+      label:
+        en: Pusher App Secret
+        zh: Pusher 应用密钥
       required: false
       type: password
     - default: "mt1"
@@ -366,6 +498,9 @@ additionalProperties:
       envKey: PUSHER_APP_CLUSTER
       labelEn: Pusher App Cluster
       labelZh: Pusher 应用集群
+      label:
+        en: Pusher App Cluster
+        zh: Pusher 应用集群
       required: true
       type: text
     - default: "local"
@@ -373,6 +508,9 @@ additionalProperties:
       envKey: MIX_ENV
       labelEn: Mix Environment
       labelZh: Mix 环境
+      label:
+        en: Mix Environment
+        zh: Mix 环境
       required: true
       type: text
     - default: ""
@@ -380,6 +518,9 @@ additionalProperties:
       envKey: OPENID_AUTHORIZE_URL
       labelEn: OpenID Authorize URL (Edit to remove comments in compose.yml to take effect)
       labelZh: OpenID 授权 URL (编辑去除compose.yml里的注释生效)
+      label:
+        en: OpenID Authorize URL (Edit to remove comments in compose.yml to take effect)
+        zh: OpenID 授权 URL (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -387,6 +528,9 @@ additionalProperties:
       envKey: OPENID_TOKEN_URL
       labelEn: OpenID Token URL (Edit to remove comments in compose.yml to take effect)
       labelZh: OpenID 令牌 URL (编辑去除compose.yml里的注释生效)
+      label:
+        en: OpenID Token URL (Edit to remove comments in compose.yml to take effect)
+        zh: OpenID 令牌 URL (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -394,6 +538,9 @@ additionalProperties:
       envKey: OPENID_USERINFO_URL
       labelEn: OpenID Userinfo URL (Edit to remove comments in compose.yml to take effect)
       labelZh: OpenID 用户信息 URL (编辑去除compose.yml里的注释生效)
+      label:
+        en: OpenID Userinfo URL (Edit to remove comments in compose.yml to take effect)
+        zh: OpenID 用户信息 URL (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -401,6 +548,9 @@ additionalProperties:
       envKey: OPENID_CLIENT_ID
       labelEn: OpenID Client ID (Edit to remove comments in compose.yml to take effect)
       labelZh: OpenID 客户端 ID (编辑去除compose.yml里的注释生效)
+      label:
+        en: OpenID Client ID (Edit to remove comments in compose.yml to take effect)
+        zh: OpenID 客户端 ID (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -408,6 +558,9 @@ additionalProperties:
       envKey: OPENID_CLIENT_SECRET
       labelEn: OpenID Client Secret (Edit to remove comments in compose.yml to take effect)
       labelZh: OpenID 客户端密钥 (编辑去除compose.yml里的注释生效)
+      label:
+        en: OpenID Client Secret (Edit to remove comments in compose.yml to take effect)
+        zh: OpenID 客户端密钥 (编辑去除compose.yml里的注释生效)
       required: false
       type: password
     - default: ""
@@ -415,6 +568,9 @@ additionalProperties:
       envKey: GITHUB_CLIENT_ID
       labelEn: GitHub Client ID (Edit to remove comments in compose.yml to take effect)
       labelZh: GitHub 客户端 ID (编辑去除compose.yml里的注释生效)
+      label:
+        en: GitHub Client ID (Edit to remove comments in compose.yml to take effect)
+        zh: GitHub 客户端 ID (编辑去除compose.yml里的注释生效)
       required: false
       type: text
     - default: ""
@@ -422,5 +578,8 @@ additionalProperties:
       envKey: GITHUB_CLIENT_SECRET
       labelEn: GitHub Client Secret (Edit to remove comments in compose.yml to take effect)
       labelZh: GitHub 客户端密钥 (编辑去除compose.yml里的注释生效)
+      label:
+        en: GitHub Client Secret (Edit to remove comments in compose.yml to take effect)
+        zh: GitHub 客户端密钥 (编辑去除compose.yml里的注释生效)
       required: false
       type: password

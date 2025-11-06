@@ -5,6 +5,9 @@ additionalProperties:
       envKey: VPN_PORT_53
       labelEn: VPN Port 53
       labelZh: VPN 端口 53
+      label:
+        en: VPN Port 53
+        zh: VPN 端口 53
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: VPN_PORT_443
       labelEn: VPN Port 443
       labelZh: VPN 端口 443
+      label:
+        en: VPN Port 443
+        zh: VPN 端口 443
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: VPN_PORT_992
       labelEn: VPN Port 992
       labelZh: VPN 端口 992
+      label:
+        en: VPN Port 992
+        zh: VPN 端口 992
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: VPN_PORT_1194_UDP
       labelEn: VPN Port 1194 (UDP)
       labelZh: VPN 端口 1194 (UDP)
+      label:
+        en: VPN Port 1194 (UDP)
+        zh: VPN 端口 1194 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -37,6 +49,9 @@ additionalProperties:
       envKey: VPN_PORT_5555
       labelEn: VPN Port 5555
       labelZh: VPN 端口 5555
+      label:
+        en: VPN Port 5555
+        zh: VPN 端口 5555
       required: true
       rule: paramPort
       type: number
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: VPN_PORT_500_UDP
       labelEn: VPN Port 500 (UDP)
       labelZh: VPN 端口 500 (UDP)
+      label:
+        en: VPN Port 500 (UDP)
+        zh: VPN 端口 500 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -53,6 +71,9 @@ additionalProperties:
       envKey: VPN_PORT_4500_UDP
       labelEn: VPN Port 4500 (UDP)
       labelZh: VPN 端口 4500 (UDP)
+      label:
+        en: VPN Port 4500 (UDP)
+        zh: VPN 端口 4500 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -61,6 +82,9 @@ additionalProperties:
       envKey: VPN_PORT_1701_UDP
       labelEn: VPN Port 1701 (UDP)
       labelZh: VPN 端口 1701 (UDP)
+      label:
+        en: VPN Port 1701 (UDP)
+        zh: VPN 端口 1701 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -69,6 +93,9 @@ additionalProperties:
       envKey: SOFTETHER_DATA_PATH
       labelEn: SoftEther Data Path
       labelZh: SoftEther 数据路径
+      label:
+        en: SoftEther Data Path
+        zh: SoftEther 数据路径
       required: true
       type: text
     - default: "./data/softether_log"
@@ -76,6 +103,9 @@ additionalProperties:
       envKey: SOFTETHER_LOG_PATH
       labelEn: SoftEther Log Path
       labelZh: SoftEther 日志路径
+      label:
+        en: SoftEther Log Path
+        zh: SoftEther 日志路径
       required: true
       type: text
     - default: "./data/softether_packetlog"
@@ -83,6 +113,9 @@ additionalProperties:
       envKey: SOFTETHER_PACKETLOG_PATH
       labelEn: SoftEther Packet Log Path
       labelZh: SoftEther 数据包日志路径
+      label:
+        en: SoftEther Packet Log Path
+        zh: SoftEther 数据包日志路径
       required: true
       type: text
     - default: "./data/softether_securitylog"
@@ -90,5 +123,8 @@ additionalProperties:
       envKey: SOFTETHER_SECURITYLOG_PATH
       labelEn: SoftEther Security Log Path
       labelZh: SoftEther 安全日志路径
+      label:
+        en: SoftEther Security Log Path
+        zh: SoftEther 安全日志路径
       required: true
       type: text

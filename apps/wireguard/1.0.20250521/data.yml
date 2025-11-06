@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PUID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: true
       type: number
     - default: "1000"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PGID
       labelEn: Group ID
       labelZh: 组 ID
+      label:
+        en: Group ID
+        zh: 组 ID
       required: true
       type: number
     - default: "Asia/Shanghai"
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text
     - default: "51820"
@@ -26,6 +35,9 @@ additionalProperties:
       envKey: SERVERPORT
       labelEn: Wireguard port
       labelZh: Wireguard 端口
+      label:
+        en: Wireguard port
+        zh: Wireguard 端口
       required: true
       rule: paramPort
       type: number
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: SERVERURL
       labelEn: Host address (must change item)
       labelZh: 本机地址 (必改项)
+      label:
+        en: Host address (must change item)
+        zh: 本机地址 (必改项)
       required: true
       type: text
     - default: "1"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: PEERS
       labelEn: Number of Peers
       labelZh: 客户端数量
+      label:
+        en: Number of Peers
+        zh: 客户端数量
       required: true
       type: number
     - default: "119.29.29.29,1.1.1.1"
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: PEERDNS
       labelEn: Peer DNS
       labelZh: 客户端 DNS
+      label:
+        en: Peer DNS
+        zh: 客户端 DNS
       required: true
       type: text
     - default: "10.0.8.0"
@@ -55,6 +76,9 @@ additionalProperties:
       envKey: INTERNAL_SUBNET
       labelEn: Default Wireguard Segment Subnet
       labelZh: 默认 Wireguard 网段子网
+      label:
+        en: Default Wireguard Segment Subnet
+        zh: 默认 Wireguard 网段子网
       required: true
       type: text
     - default: "10.0.8.0/24"
@@ -62,6 +86,9 @@ additionalProperties:
       envKey: ALLOWEDIPS
       labelEn: Wireguard Allowed IPs
       labelZh: Wireguard 允许的 IP 段
+      label:
+        en: Wireguard Allowed IPs
+        zh: Wireguard 允许的 IP 段
       required: true
       type: text
     - default: "25"
@@ -69,6 +96,9 @@ additionalProperties:
       envKey: PERSISTENTKEEPALIVE_PEERS
       labelEn: Wireguard Persistent Keepalive
       labelZh: Wireguard 保活间隔
+      label:
+        en: Wireguard Persistent Keepalive
+        zh: Wireguard 保活间隔
       required: true
       type: number
     - default: "true"
@@ -76,6 +106,9 @@ additionalProperties:
       envKey: LOG_CONFS
       labelEn: Log Configurations
       labelZh: 日志配置
+      label:
+        en: Log Configurations
+        zh: 日志配置
       required: true
       type: select
       values:
@@ -88,5 +121,8 @@ additionalProperties:
       envKey: CONFIG_PATH
       labelEn: Config Path
       labelZh: 配置路径
+      label:
+        en: Config Path
+        zh: 配置路径
       required: true
       type: text

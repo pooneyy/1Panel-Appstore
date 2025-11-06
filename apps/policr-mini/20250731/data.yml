@@ -9,6 +9,9 @@ additionalProperties:
       envKey: PANEL_POSTGRES_TYPE
       labelZh: Postgres 服务 (前置检查)
       labelEn: Postgres Service (Pre-check)
+      label:
+        en: Postgres Service (Pre-check)
+        zh: Postgres 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -19,6 +22,9 @@ additionalProperties:
       envKey: POLICR_MINI_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -26,6 +32,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -34,6 +43,9 @@ additionalProperties:
       envKey: POLICR_MINI_SERVER_ROOT_URL
       labelZh: 服务地址 URL
       labelEn: Service address URL
+      label:
+        en: Service address URL
+        zh: 服务地址 URL
       required: true
       type: text
     - default: ""
@@ -41,6 +53,9 @@ additionalProperties:
       envKey: POLICR_MINI_SERVER_SECRET_KEY_BASE
       labelZh: 服务密钥
       labelEn: Service secret key
+      label:
+        en: Service secret key
+        zh: 服务密钥
       required: true
       type: text
     - default: ""
@@ -48,6 +63,9 @@ additionalProperties:
       envKey: POLICR_MINI_BOT_TOKEN
       labelZh: 机器人 Token
       labelEn: Bot Token
+      label:
+        en: Bot Token
+        zh: 机器人 Token
       required: true
       type: text
     - default: "Policr Mini"
@@ -55,6 +73,9 @@ additionalProperties:
       envKey: POLICR_MINI_BOT_NAME
       labelZh: 机器人名称
       labelEn: Bot name
+      label:
+        en: Bot name
+        zh: 机器人名称
       required: true
       type: text
     - default: ""
@@ -62,6 +83,9 @@ additionalProperties:
       envKey: POLICR_MINI_BOT_OWNER_ID
       labelZh: 机器人所有者 ID
       labelEn: Bot owner ID
+      label:
+        en: Bot owner ID
+        zh: 机器人所有者 ID
       required: true
       type: text
     - default: "127.0.0.1"
@@ -69,6 +93,9 @@ additionalProperties:
       envKey: POSTGRES_HOST
       labelZh: 数据库 主机地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
       required: true
       type: text
     - default: 5432
@@ -76,6 +103,9 @@ additionalProperties:
       envKey: POSTGRES_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -84,6 +114,9 @@ additionalProperties:
       envKey: POSTGRES_DATABSE
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       rule: paramCommon
       type: text
@@ -92,6 +125,9 @@ additionalProperties:
       envKey: POSTGRES_USERNAME
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -99,6 +135,9 @@ additionalProperties:
       envKey: POSTGRES_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       random: true
       required: true
       rule: paramComplexity
@@ -108,5 +147,8 @@ additionalProperties:
       envKey: POLICR_MINI_OPTS
       labelZh: 配置参数
       labelEn: Configuration parameters
+      label:
+        en: Configuration parameters
+        zh: 配置参数
       required: false
       type: text

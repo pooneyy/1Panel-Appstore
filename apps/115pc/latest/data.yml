@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: WebUI Port
       labelZh: 网页端口
+      label:
+        en: WebUI Port
+        zh: 网页端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: VNC_PASSWORD
       labelEn: Access Password
       labelZh: 访问密码
+      label:
+        en: Access Password
+        zh: 访问密码
       random: false
       required: true
       rule: paramComplexity
@@ -22,6 +28,9 @@ additionalProperties:
       envKey: CONFIG_PATH
       labelEn: Config file path
       labelZh: 配置文件所在路径
+      label:
+        en: Config file path
+        zh: 配置文件所在路径
       required: true
       type: text
     - default: ./data/downloads
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: DOWNLOAD_PATH
       labelEn: Download folder path
       labelZh: 下载文件夹路径
+      label:
+        en: Download folder path
+        zh: 下载文件夹路径
       required: true
       type: text
     - default: mirrors.ustc.edu.cn
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: APT_SOURCE
       labelEn: apt source
       labelZh: apt 源
+      label:
+        en: apt source
+        zh: apt 源
       required: true
       type: text
     - default: 1920
@@ -43,6 +58,9 @@ additionalProperties:
       envKey: VNC_DISPLAY_WIDTH
       labelEn: VNC display width
       labelZh: VNC显示宽度
+      label:
+        en: VNC display width
+        zh: VNC显示宽度
       required: true
       type: number
     - default: 1080
@@ -50,5 +68,8 @@ additionalProperties:
       envKey: VNC_DISPLAY_HEIGHT
       labelEn: VNC display height
       labelZh: VNC显示高度
+      label:
+        en: VNC display height
+        zh: VNC显示高度
       required: true
       type: number

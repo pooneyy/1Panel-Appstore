@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port 32400 (TCP)
       labelZh: 端口 32400 (TCP)
+      label:
+        en: Port 32400 (TCP)
+        zh: 端口 32400 (TCP)
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_TCP_3005
       labelEn: Port 3005 (TCP)
       labelZh: 端口 3005 (TCP)
+      label:
+        en: Port 3005 (TCP)
+        zh: 端口 3005 (TCP)
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_TCP_8324
       labelEn: Port 8324 (TCP)
       labelZh: 端口 8324 (TCP)
+      label:
+        en: Port 8324 (TCP)
+        zh: 端口 8324 (TCP)
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_TCP_32469
       labelEn: Port 32469 (TCP)
       labelZh: 端口 32469 (TCP)
+      label:
+        en: Port 32469 (TCP)
+        zh: 端口 32469 (TCP)
       required: true
       rule: paramPort
       type: number
@@ -37,6 +49,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_1900
       labelEn: Port 1900 (UDP)
       labelZh: 端口 1900 (UDP)
+      label:
+        en: Port 1900 (UDP)
+        zh: 端口 1900 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_32410
       labelEn: Port 32410 (UDP)
       labelZh: 端口 32410 (UDP)
+      label:
+        en: Port 32410 (UDP)
+        zh: 端口 32410 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -53,6 +71,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_32412
       labelEn: Port 32412 (UDP)
       labelZh: 端口 32412 (UDP)
+      label:
+        en: Port 32412 (UDP)
+        zh: 端口 32412 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -61,6 +82,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_32413
       labelEn: Port 32413 (UDP)
       labelZh: 端口 32413 (UDP)
+      label:
+        en: Port 32413 (UDP)
+        zh: 端口 32413 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -69,6 +93,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_32414
       labelEn: Port 32414 (UDP)
       labelZh: 端口 32414 (UDP)
+      label:
+        en: Port 32414 (UDP)
+        zh: 端口 32414 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -77,6 +104,9 @@ additionalProperties:
       envKey: TIMEZONE
       labelEn: Timezone
       labelZh: 时区
+      label:
+        en: Timezone
+        zh: 时区
       required: true
       type: text
     - default: ""
@@ -84,6 +114,9 @@ additionalProperties:
       envKey: PLEX_CLAIM
       labelEn: Plex Claim
       labelZh: Plex 认证令牌
+      label:
+        en: Plex Claim
+        zh: Plex 认证令牌
       required: false
       type: text
     - default: "1000"
@@ -91,6 +124,9 @@ additionalProperties:
       envKey: PUID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: false
       type: number
     - default: "1000"
@@ -98,6 +134,9 @@ additionalProperties:
       envKey: PGID
       labelEn: Group ID
       labelZh: 组 ID
+      label:
+        en: Group ID
+        zh: 组 ID
       required: false
       type: number
     - default: "./data/library"
@@ -105,6 +144,9 @@ additionalProperties:
       envKey: LIBRARY_PATH
       labelEn: Library Path
       labelZh: Library 路径
+      label:
+        en: Library Path
+        zh: Library 路径
       required: true
       type: text
     - default: "./data/tv"
@@ -112,6 +154,9 @@ additionalProperties:
       envKey: TVSERIES_PATH
       labelEn: TV Series Path
       labelZh: 电视剧路径
+      label:
+        en: TV Series Path
+        zh: 电视剧路径
       required: true
       type: text
     - default: "./data/movies"
@@ -119,5 +164,8 @@ additionalProperties:
       envKey: MOVIES_PATH
       labelEn: Movies Path
       labelZh: 电影路径
+      label:
+        en: Movies Path
+        zh: 电影路径
       required: true
       type: text

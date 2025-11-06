@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port (Internal 9000)
       labelZh: 端口 (对应内部 9000)
+      label:
+        en: Port (Internal 9000)
+        zh: 端口 (对应内部 9000)
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_RPC
       labelEn: RPC Port (Internal 9001)
       labelZh: RPC 端口 (对应内部 9001)
+      label:
+        en: RPC Port (Internal 9001)
+        zh: RPC 端口 (对应内部 9001)
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: ''
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: APP_GLOBAL_SECRET
       labelEn: Secret Keys
       labelZh: 通信密钥
+      label:
+        en: Secret Keys
+        zh: 通信密钥
       random: true
       required: true
       rule: paramComplexity
@@ -37,5 +49,8 @@ additionalProperties:
       envKey: MASTER_RPC_HOST
       labelEn: The IP that RPC is listening on
       labelZh: RPC 监听 IP
+      label:
+        en: The IP that RPC is listening on
+        zh: RPC 监听 IP
       required: true
       type: text

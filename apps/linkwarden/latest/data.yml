@@ -1,34 +1,46 @@
 additionalProperties:
-    formFields:
-        - default: "3000"
-          edit: true
-          envKey: PANEL_APP_PORT_HTTP
-          labelEn: Service Port 3000
-          labelZh: 服务端口 3000
-          required: true
-          rule: paramPort
-          type: number
-        - default: ""
-          edit: true
-          envKey: NEXTAUTH_SECRET
-          labelEn: NEXTAuth Secret
-          labelZh: NEXTAuth 密钥
-          required: true
-          rule: paramComplexity
-          type: password
-        - default: ""
-          edit: true
-          envKey: POSTGRES_PASSWORD
-          labelEn: Postgres Password
-          labelZh: Postgres 数据库密码
-          required: true
-          rule: paramComplexity
-          type: password
-        - default: ""
-          edit: true
-          envKey: MEILI_MASTER_KEY
-          labelEn: Meilisearch Master Key
-          labelZh: Meilisearch 主密钥
-          required: true
-          rule: paramComplexity
-          type: password
+  formFields:
+    - default: "3000"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Service Port 3000
+      labelZh: 服务端口 3000
+      label:
+        en: Service Port 3000
+        zh: 服务端口 3000
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: NEXTAUTH_SECRET
+      labelEn: NEXTAuth Secret
+      labelZh: NEXTAuth 密钥
+      label:
+        en: NEXTAuth Secret
+        zh: NEXTAuth 密钥
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: ""
+      edit: true
+      envKey: POSTGRES_PASSWORD
+      labelEn: Postgres Password
+      labelZh: Postgres 数据库密码
+      label:
+        en: Postgres Password
+        zh: Postgres 数据库密码
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: ""
+      edit: true
+      envKey: MEILI_MASTER_KEY
+      labelEn: Meilisearch Master Key
+      labelZh: Meilisearch 主密钥
+      label:
+        en: Meilisearch Master Key
+        zh: Meilisearch 主密钥
+      required: true
+      rule: paramComplexity
+      type: password

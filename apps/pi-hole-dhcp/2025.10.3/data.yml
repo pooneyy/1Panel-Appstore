@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PIHOLE_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: WEBPASSWORD
       labelZh: WebUI 密码
       labelEn: WebUI password
+      label:
+        en: WebUI password
+        zh: WebUI 密码
       required: true
       type: text
     - default: "all"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: DNSMASQ_LISTENING
       labelZh: 监听地址
       labelEn: Listening address
+      label:
+        en: Listening address
+        zh: 监听地址
       required: true
       type: select
       values:
@@ -41,6 +53,9 @@ additionalProperties:
       envKey: FTLCONF_LOCAL_IPV4
       labelZh: 本地 IPv4 地址
       labelEn: Local IPv4 address
+      label:
+        en: Local IPv4 address
+        zh: 本地 IPv4 地址
       required: true
       type: text
     - default: "1.1.1.1;8.8.8.8;114.114.114.114;"
@@ -48,6 +63,9 @@ additionalProperties:
       envKey: PIHOLE_DNS_
       labelZh: 上游 DNS 服务器
       labelEn: Upstream DNS server
+      label:
+        en: Upstream DNS server
+        zh: 上游 DNS 服务器
       required: true
       type: text
     - default: ""
@@ -55,6 +73,9 @@ additionalProperties:
       envKey: DHCP_START
       labelZh: DHCP 起始地址
       labelEn: DHCP start address
+      label:
+        en: DHCP start address
+        zh: DHCP 起始地址
       required: true
       type: text
     - default: ""
@@ -62,6 +83,9 @@ additionalProperties:
       envKey: DHCP_END
       labelZh: DHCP 结束地址
       labelEn: DHCP end address
+      label:
+        en: DHCP end address
+        zh: DHCP 结束地址
       required: true
       type: text
     - default: ""
@@ -69,6 +93,9 @@ additionalProperties:
       envKey: DHCP_ROUTER
       labelZh: DHCP 路由/网关 IP
       labelEn: DHCP router/gateway IP
+      label:
+        en: DHCP router/gateway IP
+        zh: DHCP 路由/网关 IP
       required: true
       type: text
     - default: 24
@@ -76,6 +103,9 @@ additionalProperties:
       envKey: DHCP_LEASETIME
       labelZh: DHCP 租约时间
       labelEn: DHCP lease time
+      label:
+        en: DHCP lease time
+        zh: DHCP 租约时间
       required: true
       type: number
     - default: "lan"
@@ -83,6 +113,9 @@ additionalProperties:
       envKey: PIHOLE_DOMAIN
       labelZh: DHCP 域名
       labelEn: DHCP domain
+      label:
+        en: DHCP domain
+        zh: DHCP 域名
       required: true
       type: text
     - default: "true"
@@ -90,6 +123,9 @@ additionalProperties:
       envKey: IPv6
       labelZh: IPv6 支持
       labelEn: IPv6 support
+      label:
+        en: IPv6 support
+        zh: IPv6 支持
       required: true
       type: select
       values:
@@ -102,6 +138,9 @@ additionalProperties:
       envKey: DHCP_IPv6
       labelZh: DHCP IPv6 支持
       labelEn: DHCP IPv6 support
+      label:
+        en: DHCP IPv6 support
+        zh: DHCP IPv6 支持
       required: true
       type: select
       values:

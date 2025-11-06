@@ -5,5 +5,8 @@ additionalProperties:
       envKey: TIPS
       labelEn: Here's a hint note
       labelZh: 这是一个提示说明
+      label:
+        en: Here's a hint note
+        zh: 这是一个提示说明
       required: true
       type: text

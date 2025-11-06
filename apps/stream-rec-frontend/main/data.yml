@@ -5,6 +5,9 @@ additionalProperties:
       envKey: STREAM_REC_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 15275
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: NEXTAUTH_SECRET
       labelZh: NextAuth 加密密钥
       labelEn: NextAuth Secret
+      label:
+        en: NextAuth Secret
+        zh: NextAuth 加密密钥
       required: true
       random: true
       type: text
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: API_URL
       labelZh: API 地址
       labelEn: API URL
+      label:
+        en: API URL
+        zh: API 地址
       required: true
       type: text
     - default: "ws://stream-rec-backend:12555/live/update"
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: WS_API_URL
       labelZh: WebSocket API 地址
       labelEn: WebSocket API URL
+      label:
+        en: WebSocket API URL
+        zh: WebSocket API 地址
       required: true
       type: text
     - default: "http://localhost:15275/"
@@ -42,5 +57,8 @@ additionalProperties:
       envKey: NEXTAUTH_URL
       labelZh: NextAuth 服务器地址
       labelEn: NextAuth Server URL
+      label:
+        en: NextAuth Server URL
+        zh: NextAuth 服务器地址
       required: true
       type: text

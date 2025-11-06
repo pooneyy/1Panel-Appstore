@@ -5,6 +5,9 @@ additionalProperties:
       envKey: NAT_TEST_PORT
       labelEn: NAT type test port
       labelZh: NAT类型测试端口
+      label:
+        en: NAT type test port
+        zh: NAT类型测试端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: HBBS_PORT
       labelEn: hbbs port (used with IP/domain)
       labelZh: hbbs端口(配合IP/域名使用)
+      label:
+        en: hbbs port (used with IP/domain)
+        zh: hbbs端口(配合IP/域名使用)
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: HBBR_PORT
       labelEn: hbbr port (client relay server port)
       labelZh: hbbr端口(客户端中继服务器端口)
+      label:
+        en: hbbr port (client relay server port)
+        zh: hbbr端口(客户端中继服务器端口)
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: WEB_CLIENT_PORT1
       labelEn: Web Client Support Port 1
       labelZh: 网页客户端支持端口1
+      label:
+        en: Web Client Support Port 1
+        zh: 网页客户端支持端口1
       required: true
       rule: paramPort
       type: number
@@ -37,6 +49,9 @@ additionalProperties:
       envKey: WEB_CLIENT_PORT2
       labelEn: Web Client Support Port 2
       labelZh: 网页客户端支持端口2
+      label:
+        en: Web Client Support Port 2
+        zh: 网页客户端支持端口2
       required: true
       rule: paramPort
       type: number
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: HOST_ADDRESS
       labelEn: IP address or domain name (must change item)
       labelZh: IP地址或域名(必改项)
+      label:
+        en: IP address or domain name (must change item)
+        zh: IP地址或域名(必改项)
       required: true
       rule: paramCommon
       type: text

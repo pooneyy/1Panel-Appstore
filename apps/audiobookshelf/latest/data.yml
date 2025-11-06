@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: ./data/audiobooks
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: DATA_PATH1
       labelEn: audiobooks folder path
       labelZh: audiobooks 文件夹路径
+      label:
+        en: audiobooks folder path
+        zh: audiobooks 文件夹路径
       required: true
       type: text
     - default: ./data/podcasts
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: DATA_PATH2
       labelEn: podcasts folder path
       labelZh: podcasts 文件夹路径
+      label:
+        en: podcasts folder path
+        zh: podcasts 文件夹路径
       required: true
       type: text
     - default: ./data/metadata
@@ -34,5 +46,8 @@ additionalProperties:
       envKey: DATA_PATH3
       labelEn: metadata folder path
       labelZh: metadata 文件夹路径
+      label:
+        en: metadata folder path
+        zh: metadata 文件夹路径
       required: true
       type: text

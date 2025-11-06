@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DELUGE_PEER_PORT
       labelEn: Peer Port
       labelZh: Peer 端口
+      label:
+        en: Peer Port
+        zh: Peer 端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: DELUGE_PORT_RPC
       labelEn: RPC Port
       labelZh: RPC 端口
+      label:
+        en: RPC Port
+        zh: RPC 端口
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: PUID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: true
       type: number
     - default: "1000"
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: PGID
       labelEn: Group ID
       labelZh: 组 ID
+      label:
+        en: Group ID
+        zh: 组 ID
       required: true
       type: number
     - default: "Asia/Shanghai"
@@ -43,6 +58,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text
     - default: "error"
@@ -50,6 +68,9 @@ additionalProperties:
       envKey: DELUGE_LOGLEVEL
       labelEn: Deluge Log Level
       labelZh: Deluge 日志级别
+      label:
+        en: Deluge Log Level
+        zh: Deluge 日志级别
       required: true
       type: text
     - default: "./data/config"
@@ -57,6 +78,9 @@ additionalProperties:
       envKey: CONFIG_PATH
       labelEn: Deluge Config Path
       labelZh: Deluge 配置路径
+      label:
+        en: Deluge Config Path
+        zh: Deluge 配置路径
       required: true
       type: text
     - default: "./data/downloads"
@@ -64,5 +88,8 @@ additionalProperties:
       envKey: DOWNLOAD_PATH
       labelEn: Downloads Path
       labelZh: 下载路径
+      label:
+        en: Downloads Path
+        zh: 下载路径
       required: true
       type: text

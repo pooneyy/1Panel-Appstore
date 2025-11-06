@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 中继服务器端口
       labelEn: Relay server port
+      label:
+        en: Relay server port
+        zh: 中继服务器端口
       required: true
       rule: paramPort
       type: number

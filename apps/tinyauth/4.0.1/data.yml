@@ -117,7 +117,7 @@ additionalProperties:
         zh-Hant: 背景圖片
       required: false
       type: text
-  
+
     - default: "github"
       envKey: PANEL_TINYAUTH_PROVIDER_ID
       labelEn: Provider ID
@@ -131,7 +131,7 @@ additionalProperties:
         ko: 자동 리디렉션 제공자
         zh: 提供商ID（仅填写一个，名称任意，如果为github或google，后面参数仅需要填写client_id和client_secret）
         zh-Hant: 供應商ID（僅填寫一個，名稱任意，如果為github或google，後面參數僅需要填寫client_id和client_secret）
-      required: True
+      required: true
       type: text
 
     # Generic
@@ -139,6 +139,9 @@ additionalProperties:
       envKey: PANEL_TINYAUTH_GENERIC_CLIENT_ID
       labelEn: Generic Client ID
       labelZh: 通用客户端ID
+      label:
+        en: Generic Client ID
+        zh: 通用客户端ID
       required: true
       type: text
 
@@ -146,6 +149,9 @@ additionalProperties:
       envKey: PANEL_TINYAUTH_GENERIC_CLIENT_SECRET
       labelEn: Generic Client Secret
       labelZh: 通用客户端密钥
+      label:
+        en: Generic Client Secret
+        zh: 通用客户端密钥
       required: true
       type: password
 
@@ -153,6 +159,9 @@ additionalProperties:
       envKey: PANEL_TINYAUTH_GENERIC_NAME
       labelEn: Generic Provider Name
       labelZh: 通用提供商名称
+      label:
+        en: Generic Provider Name
+        zh: 通用提供商名称
       required: false
       type: text
 
@@ -160,6 +169,9 @@ additionalProperties:
       envKey: PANEL_TINYAUTH_GENERIC_AUTH_URL
       labelEn: Generic Auth URL
       labelZh: 通用认证地址
+      label:
+        en: Generic Auth URL
+        zh: 通用认证地址
       required: false
       type: text
 
@@ -167,6 +179,9 @@ additionalProperties:
       envKey: PANEL_TINYAUTH_GENERIC_TOKEN_URL
       labelEn: Generic Token URL
       labelZh: 通用令牌地址
+      label:
+        en: Generic Token URL
+        zh: 通用令牌地址
       required: false
       type: text
 
@@ -174,6 +189,9 @@ additionalProperties:
       envKey: PANEL_TINYAUTH_GENERIC_USER_INFO_URL
       labelEn: Generic User Info URL
       labelZh: 通用用户信息地址
+      label:
+        en: Generic User Info URL
+        zh: 通用用户信息地址
       required: false
       type: text
 
@@ -181,5 +199,8 @@ additionalProperties:
       envKey: PANEL_TINYAUTH_GENERIC_SCOPES
       labelEn: Generic Scopes
       labelZh: 通用范围
+      label:
+        en: Generic Scopes
+        zh: 通用范围
       required: false
       type: text

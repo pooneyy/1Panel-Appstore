@@ -5,6 +5,9 @@ additionalProperties:
       envKey: SMANGA_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: "./compressed"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: SMANGA_COMPRESS_PATH
       labelZh: 压缩包解压目录，请挂在到对容量有信心的硬盘上
       labelEn: Compressed package decompression path
+      label:
+        en: Compressed package decompression path
+        zh: 压缩包解压目录，请挂在到对容量有信心的硬盘上
       required: true
       type: text
     - default: 9797
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -27,5 +36,8 @@ additionalProperties:
       envKey: HTTP_PROXY
       labelZh: HTTP(s) 网络代理
       labelEn: HTTP(s) Proxy
+      label:
+        en: HTTP(s) Proxy
+        zh: HTTP(s) 网络代理
       required: false
       type: text

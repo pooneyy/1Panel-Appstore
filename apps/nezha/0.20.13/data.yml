@@ -5,6 +5,9 @@ additionalProperties:
       envKey: NEZHA_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8008
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_GRPC
       labelZh: gRPC 端口
       labelEn: gRPC Port
+      label:
+        en: gRPC Port
+        zh: gRPC 端口
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: OAUTH2_TYPE
       labelZh: OAuth 服务商
       labelEn: OAuth Provider
+      label:
+        en: OAuth Provider
+        zh: OAuth 服务商
       required: true
       type: select
       values:
@@ -48,6 +60,9 @@ additionalProperties:
       envKey: OAUTH2_ADMIN
       labelZh: 管理员账号ID
       labelEn: Admin Account ID
+      label:
+        en: Admin Account ID
+        zh: 管理员账号ID
       required: true
       type: text
     - default: ""
@@ -55,6 +70,9 @@ additionalProperties:
       envKey: OAUTH2_CLIENTID
       labelEn: OAuth Client ID
       labelZh: OAuth 客户端 ID
+      label:
+        en: OAuth Client ID
+        zh: OAuth 客户端 ID
       required: true
       type: text
     - default: ""
@@ -62,6 +80,9 @@ additionalProperties:
       envKey: OAUTH2_CLIENTSECRET
       labelEn: OAuth Client Secret
       labelZh: OAuth 客户端 Secret
+      label:
+        en: OAuth Client Secret
+        zh: OAuth 客户端 Secret
       required: true
       type: text
     - default: ""
@@ -69,6 +90,9 @@ additionalProperties:
       envKey: OAUTH2_ENDPOINT
       labelEn: OAuth Callback
       labelZh: OAuth 端点 (可选)
+      label:
+        en: OAuth Callback
+        zh: OAuth 端点 (可选)
       required: false
       type: text
     - default: "哪吒监控"
@@ -76,6 +100,9 @@ additionalProperties:
       envKey: NZ_SITE_TITLE
       labelZh: 网站标题
       labelEn: Site Title
+      label:
+        en: Site Title
+        zh: 网站标题
       required: true
       type: text
     - default: "nezha-dashboard"
@@ -83,6 +110,9 @@ additionalProperties:
       envKey: NZ_COOKIE_NAME
       labelZh: Cookie 名称 (默认)
       labelEn: Cookie Name
+      label:
+        en: Cookie Name
+        zh: Cookie 名称 (默认)
       required: true
       type: text
     - default: "default"
@@ -90,5 +120,8 @@ additionalProperties:
       envKey: NZ_THEME
       labelZh: 网站主题 (默认)
       labelEn: Theme
+      label:
+        en: Theme
+        zh: 网站主题 (默认)
       required: true
       type: text

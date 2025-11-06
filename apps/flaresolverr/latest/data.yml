@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: LOG_LEVEL
       labelEn: Log Level
       labelZh: 日志级别
+      label:
+        en: Log Level
+        zh: 日志级别
       required: true
       type: select
       values:
@@ -27,6 +33,9 @@ additionalProperties:
       envKey: LOG_HTML
       labelEn: Log HTML
       labelZh: 日志 HTML 输出
+      label:
+        en: Log HTML
+        zh: 日志 HTML 输出
       required: true
       type: select
       values:
@@ -39,6 +48,9 @@ additionalProperties:
       envKey: CAPTCHA_SOLVER
       labelEn: CAPTCHA Solver
       labelZh: CAPTCHA 解密器
+      label:
+        en: CAPTCHA Solver
+        zh: CAPTCHA 解密器
       required: true
       type: text
     - default: "Asia/Shanghai"
@@ -46,6 +58,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text
     - default: "none"
@@ -53,6 +68,9 @@ additionalProperties:
       envKey: LANG
       labelEn: Language
       labelZh: 语言
+      label:
+        en: Language
+        zh: 语言
       required: true
       type: text
     - default: "true"
@@ -60,6 +78,9 @@ additionalProperties:
       envKey: HEADLESS
       labelEn: Headless Mode
       labelZh: 无头模式
+      label:
+        en: Headless Mode
+        zh: 无头模式
       required: true
       type: select
       values:
@@ -72,6 +93,9 @@ additionalProperties:
       envKey: BROWSER_TIMEOUT
       labelEn: Browser Timeout
       labelZh: 浏览器超时时间
+      label:
+        en: Browser Timeout
+        zh: 浏览器超时时间
       required: true
       type: number
     - default: "https://www.google.com"
@@ -79,6 +103,9 @@ additionalProperties:
       envKey: TEST_URL
       labelEn: Test URL
       labelZh: 测试 URL
+      label:
+        en: Test URL
+        zh: 测试 URL
       required: true
       type: text
     - default: "0.0.0.0"
@@ -86,6 +113,9 @@ additionalProperties:
       envKey: HOST
       labelEn: Host
       labelZh: 监听地址
+      label:
+        en: Host
+        zh: 监听地址
       required: true
       type: text
     - default: "false"
@@ -93,6 +123,9 @@ additionalProperties:
       envKey: PROMETHEUS_ENABLED
       labelEn: Prometheus Enabled
       labelZh: 启用 Prometheus
+      label:
+        en: Prometheus Enabled
+        zh: 启用 Prometheus
       required: true
       type: select
       values:

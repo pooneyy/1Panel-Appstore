@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text
     - default: "0.0.0.0"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: RI_APP_HOST
       labelEn: Application Host
       labelZh: 应用主机
+      label:
+        en: Application Host
+        zh: 应用主机
       required: true
       type: text
     - default: ""
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: RI_SERVER_TLS_KEY
       labelEn: TLS Key Path
       labelZh: TLS 密钥路径
+      label:
+        en: TLS Key Path
+        zh: TLS 密钥路径
       required: false
       type: text
     - default: ""
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: RI_SERVER_TLS_CERT
       labelEn: TLS Cert Path
       labelZh: TLS 证书路径
+      label:
+        en: TLS Cert Path
+        zh: TLS 证书路径
       required: false
       type: text
     - default: ""
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: RI_ENCRYPTION_KEY
       labelEn: Encryption Key
       labelZh: 加密密钥
+      label:
+        en: Encryption Key
+        zh: 加密密钥
       required: false
       type: password
     - default: "info"
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: RI_LOG_LEVEL
       labelEn: Log Level
       labelZh: 日志级别
+      label:
+        en: Log Level
+        zh: 日志级别
       required: true
       type: select
       values:
@@ -70,6 +91,9 @@ additionalProperties:
       envKey: RI_FILES_LOGGER
       labelEn: Files Logger
       labelZh: 文件日志
+      label:
+        en: Files Logger
+        zh: 文件日志
       required: false
       type: select
       values:
@@ -82,6 +106,9 @@ additionalProperties:
       envKey: RI_STDOUT_LOGGER
       labelEn: Stdout Logger
       labelZh: 标准输出日志
+      label:
+        en: Stdout Logger
+        zh: 标准输出日志
       required: false
       type: select
       values:
@@ -94,5 +121,8 @@ additionalProperties:
       envKey: RI_PROXY_PATH
       labelEn: Proxy Path
       labelZh: 代理路径
+      label:
+        en: Proxy Path
+        zh: 代理路径
       required: false
       type: text

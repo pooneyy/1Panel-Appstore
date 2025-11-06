@@ -5,6 +5,9 @@ additionalProperties:
       envKey: POSTGRES_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: ""
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: POSTGRES_PASSWORD
       labelZh: Postgres 密码 (首次生效)
       labelEn: Postgres Password (First Time)
+      label:
+        en: Postgres Password (First Time)
+        zh: Postgres 密码 (首次生效)
       required: true
       random: true
       rule: paramComplexity
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: Postgres 端口
       labelEn: Postgres Port
+      label:
+        en: Postgres Port
+        zh: Postgres 端口
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: POSTGRES_USER
       labelZh: Postgres 用户（不建议改动）
       labelEn: Postgres User
+      label:
+        en: Postgres User
+        zh: Postgres 用户（不建议改动）
       required: false
       type: text
     - default: "postgres"
@@ -36,5 +48,8 @@ additionalProperties:
       envKey: POSTGRES_DB
       labelZh: Postgres 数据库名称（不建议改动）
       labelEn: Postgres Database Name
+      label:
+        en: Postgres Database Name
+        zh: Postgres 数据库名称（不建议改动）
       required: false
       type: text

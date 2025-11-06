@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: VNC_PORT
       labelEn: VNC Port
       labelZh: VNC 端口
+      label:
+        en: VNC Port
+        zh: VNC 端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: DISPLAY_WIDTH
       labelEn: Display Width
       labelZh: 显示宽度
+      label:
+        en: Display Width
+        zh: 显示宽度
       required: true
       type: number
     - default: "750"
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: DISPLAY_HEIGHT
       labelEn: Display Height
       labelZh: 显示高度
+      label:
+        en: Display Height
+        zh: 显示高度
       required: true
       type: number
     - default: "password"
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: VNC_PASSWORD
       labelEn: VNC Password
       labelZh: VNC 密码
+      label:
+        en: VNC Password
+        zh: VNC 密码
       random: true
       required: true
       rule: paramComplexity
@@ -44,6 +59,9 @@ additionalProperties:
       envKey: CONFIG_PATH
       labelEn: Config Path
       labelZh: 配置路径
+      label:
+        en: Config Path
+        zh: 配置路径
       required: true
       type: text
     - default: "./data/mdcx-config"
@@ -51,6 +69,9 @@ additionalProperties:
       envKey: MDCX_CONFIG_PATH
       labelEn: MDCx Config Path
       labelZh: MDCx 配置路径
+      label:
+        en: MDCx Config Path
+        zh: MDCx 配置路径
       required: true
       type: text
     - default: "./data/mdcx-config/MDCx.config"
@@ -58,6 +79,9 @@ additionalProperties:
       envKey: MDCX_CONFIG_FILE
       labelEn: MDCx Config File
       labelZh: MDCx 配置文件
+      label:
+        en: MDCx Config File
+        zh: MDCx 配置文件
       required: true
       type: text
     - default: "./data/logs"
@@ -65,6 +89,9 @@ additionalProperties:
       envKey: LOGS_PATH
       labelEn: Logs Path
       labelZh: 日志路径
+      label:
+        en: Logs Path
+        zh: 日志路径
       required: true
       type: text
     - default: "./data/media"
@@ -72,6 +99,9 @@ additionalProperties:
       envKey: MEDIA_PATH
       labelEn: Media Path
       labelZh: 媒体路径
+      label:
+        en: Media Path
+        zh: 媒体路径
       required: true
       type: text
     - default: "/media"
@@ -79,6 +109,9 @@ additionalProperties:
       envKey: MEDIA_PATH_INTERNAL
       labelEn: Internal Media Path
       labelZh: 容器内部媒体路径
+      label:
+        en: Internal Media Path
+        zh: 容器内部媒体路径
       required: true
       type: text
     - default: "./data/media2"
@@ -86,6 +119,9 @@ additionalProperties:
       envKey: MEDIA_PATH_2
       labelEn: Media Path 2
       labelZh: 媒体路径 2
+      label:
+        en: Media Path 2
+        zh: 媒体路径 2
       required: true
       type: text
     - default: "/media2"
@@ -93,6 +129,9 @@ additionalProperties:
       envKey: MEDIA_PATH_INTERNAL_2
       labelEn: Internal Media Path 2
       labelZh: 容器内部媒体路径 2
+      label:
+        en: Internal Media Path 2
+        zh: 容器内部媒体路径 2
       required: true
       type: text
     - default: "1000"
@@ -100,6 +139,9 @@ additionalProperties:
       envKey: USER_ID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: true
       type: number
     - default: "1000"
@@ -107,6 +149,9 @@ additionalProperties:
       envKey: GROUP_ID
       labelEn: Group ID
       labelZh: 用户组 ID
+      label:
+        en: Group ID
+        zh: 用户组 ID
       required: true
       type: number
     - default: "Asia/Shanghai"
@@ -114,5 +159,8 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time zone
       labelZh: 时区
+      label:
+        en: Time zone
+        zh: 时区
       required: true
       type: text

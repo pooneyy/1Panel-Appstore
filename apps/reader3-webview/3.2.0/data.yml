@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: API 端口
       labelEn: API port
+      label:
+        en: API port
+        zh: API 端口
       required: true
       rule: paramPort
       type: number

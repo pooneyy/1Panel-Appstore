@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: HOSTNAME
       labelEn: Native host name
       labelZh: 本机主机名
+      label:
+        en: Native host name
+        zh: 本机主机名
       required: true
       type: text
     - default: 192.168.8.8
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: ZABBIX_SERVER
       labelEn: Zabbix server
       labelZh: Zabbix服务端
+      label:
+        en: Zabbix server
+        zh: Zabbix服务端
       required: true
       type: text
     - default: 10051
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: ZABBIX_SERVER_PORT
       labelEn: Zabbix server P-port
       labelZh: Zabbix服务端端口
+      label:
+        en: Zabbix server P-port
+        zh: Zabbix服务端端口
       required: true
       rule: paramPort
       type: number

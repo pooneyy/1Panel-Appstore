@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: WebUI Port
       labelZh: 网页端口
+      label:
+        en: WebUI Port
+        zh: 网页端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WIREGUARD
       labelEn: Wireguard port
       labelZh: Wireguard 端口
+      label:
+        en: Wireguard port
+        zh: Wireguard 端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: WEBUI_USER
       labelEn: Webui user
       labelZh: 网页用户
+      label:
+        en: Webui user
+        zh: 网页用户
       required: true
       type: text
     - default: "password"
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: WEBUI_PWD
       labelEn: Webui password
       labelZh: 网页密码
+      label:
+        en: Webui password
+        zh: 网页密码
       random: true
       required: true
       rule: paramComplexity

@@ -68,6 +68,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -76,6 +79,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: 1000
@@ -83,6 +89,9 @@ additionalProperties:
       envKey: UID
       labelEn: UID
       labelZh: UID
+      label:
+        en: UID
+        zh: UID
       required: true
       type: number
     - default: 1000
@@ -90,6 +99,9 @@ additionalProperties:
       envKey: GID
       labelEn: GID
       labelZh: GID
+      label:
+        en: GID
+        zh: GID
       required: true
       type: number
     - default: admin
@@ -97,6 +109,9 @@ additionalProperties:
       envKey: ADMIN_USER
       labelEn: Admin user
       labelZh: 管理员用户名
+      label:
+        en: Admin user
+        zh: 管理员用户名
       required: true
       type: text
     - default: photoprism
@@ -104,6 +119,9 @@ additionalProperties:
       envKey: ADMIN_PASSWORD
       labelEn: Admin Password
       labelZh: 管理员密码
+      label:
+        en: Admin Password
+        zh: 管理员密码
       random: false
       required: true
       rule: paramComplexity
@@ -113,6 +131,9 @@ additionalProperties:
       envKey: PHOTOPRISM_EXTERNAL_URL
       labelEn: External URL
       labelZh: 外部访问地址
+      label:
+        en: External URL
+        zh: 外部访问地址
       required: true
       type: text
     - default: ""
@@ -120,6 +141,9 @@ additionalProperties:
       envKey: SITE_DESCRIPTION
       labelEn: Site description
       labelZh: 网站描述
+      label:
+        en: Site description
+        zh: 网站描述
       required: false
       type: text
     - default: ""
@@ -127,6 +151,9 @@ additionalProperties:
       envKey: SITE_AUTHOR
       labelEn: Site description
       labelZh: 网站作者
+      label:
+        en: Site description
+        zh: 网站作者
       required: false
       type: text
     - default: "AI-Powered Photos App"
@@ -134,5 +161,8 @@ additionalProperties:
       envKey: SITE_CAPTION
       labelEn: Site caption
       labelZh: 网站标题
+      label:
+        en: Site caption
+        zh: 网站标题
       required: false
       type: text

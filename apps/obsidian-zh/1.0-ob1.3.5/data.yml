@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: HTTP Port
       labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        zh: HTTP 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_VNC
       labelEn: VNC Port
       labelZh: VNC 端口
+      label:
+        en: VNC Port
+        zh: VNC 端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_SSH
       labelEn: SSH Port
       labelZh: SSH 端口
+      label:
+        en: SSH Port
+        zh: SSH 端口
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: password
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: HTTP_PWD
       labelEn: Auth password
       labelZh: 密码
+      label:
+        en: Auth password
+        zh: 密码
       random: true
       required: true
       rule: paramComplexity
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: DISPLAY_SIZE
       labelEn: Display size
       labelZh: 画面尺寸
+      label:
+        en: Display size
+        zh: 画面尺寸
       required: true
       type: text
     - default: "true"
@@ -52,5 +70,8 @@ additionalProperties:
       envKey: PRIVILEGED_MODE
       labelEn: Privilege mode switch
       labelZh: 特权模式开关
+      label:
+        en: Privilege mode switch
+        zh: 特权模式开关
       required: true
       type: text

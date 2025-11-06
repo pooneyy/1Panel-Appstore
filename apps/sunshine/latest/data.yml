@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTPS
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP2
       labelEn: Port 2
       labelZh: 端口 2
+      label:
+        en: Port 2
+        zh: 端口 2
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_TCP
       labelEn: TCP Port Range
       labelZh: TCP 端口范围
+      label:
+        en: TCP Port Range
+        zh: TCP 端口范围
       required: true
       type: text
     - default: "47998-48000"
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP
       labelEn: TUDP Port Range
       labelZh: UDP 端口范围
+      label:
+        en: TUDP Port Range
+        zh: UDP 端口范围
       required: true
       type: text
     - default: "1001"
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: PUID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: true
       type: number
     - default: "1001"
@@ -42,6 +57,9 @@ additionalProperties:
       envKey: PGID
       labelEn: Group ID
       labelZh: 用户组 ID
+      label:
+        en: Group ID
+        zh: 用户组 ID
       required: true
       type: number
     - default: "Asia/Shanghai"
@@ -49,6 +67,9 @@ additionalProperties:
       envKey: TZ
       labelEn: Timezone
       labelZh: 时区
+      label:
+        en: Timezone
+        zh: 时区
       required: true
       type: text
     - default: "./data"
@@ -56,5 +77,8 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text

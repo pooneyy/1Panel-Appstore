@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DOCKER_SOCK_PATH
       labelEn: Docker Socket Path
       labelZh: Docker 套接字路径
+      label:
+        en: Docker Socket Path
+        zh: Docker 套接字路径
       required: true
       type: text
     - default: "ssh-xxx"
@@ -20,5 +26,8 @@ additionalProperties:
       envKey: KEY
       labelEn: Key
       labelZh: 密钥
+      label:
+        en: Key
+        zh: 密钥
       required: true
       type: password

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port 32400 (TCP)
       labelZh: 端口 32400 (TCP)
+      label:
+        en: Port 32400 (TCP)
+        zh: 端口 32400 (TCP)
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_TCP_3005
       labelEn: Port 3005 (TCP)
       labelZh: 端口 3005 (TCP)
+      label:
+        en: Port 3005 (TCP)
+        zh: 端口 3005 (TCP)
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_TCP_8324
       labelEn: Port 8324 (TCP)
       labelZh: 端口 8324 (TCP)
+      label:
+        en: Port 8324 (TCP)
+        zh: 端口 8324 (TCP)
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_TCP_32469
       labelEn: Port 32469 (TCP)
       labelZh: 端口 32469 (TCP)
+      label:
+        en: Port 32469 (TCP)
+        zh: 端口 32469 (TCP)
       required: true
       rule: paramPort
       type: number
@@ -37,6 +49,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_1900
       labelEn: Port 1900 (UDP)
       labelZh: 端口 1900 (UDP)
+      label:
+        en: Port 1900 (UDP)
+        zh: 端口 1900 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_32410
       labelEn: Port 32410 (UDP)
       labelZh: 端口 32410 (UDP)
+      label:
+        en: Port 32410 (UDP)
+        zh: 端口 32410 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -53,6 +71,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_32412
       labelEn: Port 32412 (UDP)
       labelZh: 端口 32412 (UDP)
+      label:
+        en: Port 32412 (UDP)
+        zh: 端口 32412 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -61,6 +82,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_32413
       labelEn: Port 32413 (UDP)
       labelZh: 端口 32413 (UDP)
+      label:
+        en: Port 32413 (UDP)
+        zh: 端口 32413 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -69,6 +93,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_UDP_32414
       labelEn: Port 32414 (UDP)
       labelZh: 端口 32414 (UDP)
+      label:
+        en: Port 32414 (UDP)
+        zh: 端口 32414 (UDP)
       required: true
       rule: paramPort
       type: number
@@ -77,6 +104,9 @@ additionalProperties:
       envKey: TIMEZONE
       labelEn: Timezone
       labelZh: 时区
+      label:
+        en: Timezone
+        zh: 时区
       required: true
       type: text
     - default: ""
@@ -84,6 +114,9 @@ additionalProperties:
       envKey: CLAIM_TOKEN
       labelEn: Claim Token
       labelZh: 声明令牌
+      label:
+        en: Claim Token
+        zh: 声明令牌
       required: false
       type: text
     - default: "http://localhost:32400/"
@@ -91,6 +124,9 @@ additionalProperties:
       envKey: ADVERTISE_IP
       labelEn: External URL
       labelZh: 外部访问地址
+      label:
+        en: External URL
+        zh: 外部访问地址
       required: true
       rule: paramExtUrl
       type: text
@@ -99,6 +135,9 @@ additionalProperties:
       envKey: HOSTNAME
       labelEn: Hostname
       labelZh: 主机名
+      label:
+        en: Hostname
+        zh: 主机名
       required: true
       type: text
     - default: "./data/plex/database"
@@ -106,6 +145,9 @@ additionalProperties:
       envKey: DATABASE_PATH
       labelEn: Database Path
       labelZh: 数据库路径
+      label:
+        en: Database Path
+        zh: 数据库路径
       required: true
       type: text
     - default: "./data/transcode/temp"
@@ -113,6 +155,9 @@ additionalProperties:
       envKey: TRANSCODE_PATH
       labelEn: Transcode Path
       labelZh: 转码路径
+      label:
+        en: Transcode Path
+        zh: 转码路径
       required: true
       type: text
     - default: "./data/media"
@@ -120,6 +165,9 @@ additionalProperties:
       envKey: MEDIA_PATH
       labelEn: Media Path
       labelZh: 媒体路径
+      label:
+        en: Media Path
+        zh: 媒体路径
       required: true
       type: text
     - default: ""
@@ -127,6 +175,9 @@ additionalProperties:
       envKey: PLEX_UID
       labelEn: Plex UID
       labelZh: Plex 用户 ID
+      label:
+        en: Plex UID
+        zh: Plex 用户 ID
       required: false
       type: text
     - default: ""
@@ -134,12 +185,18 @@ additionalProperties:
       envKey: PLEX_GID
       labelEn: Plex GID
       labelZh: Plex 组 ID
+      label:
+        en: Plex GID
+        zh: Plex 组 ID
       required: false
       type: text
     - default: "true"
       envKey: CHANGE_CONFIG_DIR_OWNERSHIP
       labelEn: Change Config Dir Ownership
       labelZh: 更改配置目录所有权
+      label:
+        en: Change Config Dir Ownership
+        zh: 更改配置目录所有权
       required: true
       type: select
       edit: true
@@ -153,5 +210,8 @@ additionalProperties:
       envKey: ALLOWED_NETWORKS
       labelEn: Allowed Networks
       labelZh: 允许的网络
+      label:
+        en: Allowed Networks
+        zh: 允许的网络
       required: false
       type: text

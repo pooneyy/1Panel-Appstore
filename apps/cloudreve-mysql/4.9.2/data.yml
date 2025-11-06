@@ -95,6 +95,9 @@ additionalProperties:
       envKey: PANEL_REDIS_ROOT_PASSWORD
       labelEn: Redis Service Password
       labelZh: 缓存服务服务密码
+      label:
+        en: Redis Service Password
+        zh: 缓存服务服务密码
       required: false
       type: password
     - default: 40033

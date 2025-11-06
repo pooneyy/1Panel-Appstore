@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: USER_NAME
       labelEn: WebUI Username
       labelZh: WebUI 的用户名
+      label:
+        en: WebUI Username
+        zh: WebUI 的用户名
       required: true
       type: text
     - default: admin
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: USER_PASSWORD
       labelEn: WebUI access password
       labelZh: WebUI 的访问密码
+      label:
+        en: WebUI access password
+        zh: WebUI 的访问密码
       random: true
       required: true
       rule: paramComplexity
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: WORK_SPACE_PATH
       labelEn: work space path (Pay attention to folder permissions)
       labelZh: 工作目录路径 (注意文件夹权限)
+      label:
+        en: work space path (Pay attention to folder permissions)
+        zh: 工作目录路径 (注意文件夹权限)
       required: true
       type: text
     - default: "022"
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: UMASK
       labelEn: UMASK
       labelZh: 文件权限掩码
+      label:
+        en: UMASK
+        zh: 文件权限掩码
       required: true
       type: text
     - default: "1000"
@@ -43,6 +58,9 @@ additionalProperties:
       envKey: PUID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: true
       type: number
     - default: "1000"
@@ -50,5 +68,8 @@ additionalProperties:
       envKey: PGID
       labelEn: Group ID
       labelZh: 用户组 ID
+      label:
+        en: Group ID
+        zh: 用户组 ID
       required: true
       type: number

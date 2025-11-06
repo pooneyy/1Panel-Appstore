@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: '/opt/1panel/apps/local/headscale/headscale/data/config'
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: HEADSCALE_PATH
       labelEn: Headscale configuration file path
       labelZh: Headscale 配置文件路径
+      label:
+        en: Headscale configuration file path
+        zh: Headscale 配置文件路径
       required: true
       type: text
     - default: http://172.18.0.241:8080
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: HS_SERVER
       labelEn: Headscale server url
       labelZh: Headscale 服务器链接
+      label:
+        en: Headscale server url
+        zh: Headscale 服务器链接
       required: true
       rule: paramExtUrl
       type: text
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: External_URL
       labelEn: External URL (Domain URL)
       labelZh: 外部访问地址 (域名地址)
+      label:
+        en: External URL (Domain URL)
+        zh: 外部访问地址 (域名地址)
       required: true
       rule: paramExtUrl
       type: text
@@ -43,6 +58,9 @@ additionalProperties:
       envKey: URL_PATH
       labelEn: Admin console path
       labelZh: 后台管理路径
+      label:
+        en: Admin console path
+        zh: 后台管理路径
       required: true
       type: text
     - default: Asia/Shanghai
@@ -50,6 +68,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time zone
       labelZh: 时区
+      label:
+        en: Time zone
+        zh: 时区
       required: true
       type: text
     - default: 'TvMhk7FDnAfaIwp0RDRsq3AVNdrYBuhNT0NTPNw4vIQ='
@@ -57,6 +78,9 @@ additionalProperties:
       envKey: SECRET_KEY
       labelEn: Secret key (Obtained by running 'openssl rand -base64 32')
       labelZh: 加密密钥 (终端执行'openssl rand -base64 32'获得)
+      label:
+        en: Secret key (Obtained by running 'openssl rand -base64 32')
+        zh: 加密密钥 (终端执行'openssl rand -base64 32'获得)
       required: true
       type: text
     - default: Basic
@@ -64,6 +88,9 @@ additionalProperties:
       envKey: AUTH_TYPE
       labelEn: Authentication method (leave blank without http validation)
       labelZh: 验证方式 (留空无 http 验证)
+      label:
+        en: Authentication method (leave blank without http validation)
+        zh: 验证方式 (留空无 http 验证)
       required: false
       type: text
     - default: user
@@ -71,6 +98,9 @@ additionalProperties:
       envKey: HTTP_USER
       labelEn: http auth user
       labelZh: HTTP 用户
+      label:
+        en: http auth user
+        zh: HTTP 用户
       required: false
       type: text
     - default: password
@@ -78,6 +108,9 @@ additionalProperties:
       envKey: HTTP_PWD
       labelEn: http auth password
       labelZh: HTTP 密码
+      label:
+        en: http auth password
+        zh: HTTP 密码
       random: true
       required: false
       rule: paramComplexity

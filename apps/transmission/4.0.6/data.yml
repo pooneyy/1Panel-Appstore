@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: WebUI Port
       labelZh: 网页端口
+      label:
+        en: WebUI Port
+        zh: 网页端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PEER_PORT_VALUE
       labelEn: Peer Port
       labelZh: BT端口
+      label:
+        en: Peer Port
+        zh: BT端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: WATCH_PATH
       labelEn: Watch folder for torrent files
       labelZh: 监视种子文件的文件夹
+      label:
+        en: Watch folder for torrent files
+        zh: 监视种子文件的文件夹
       required: true
       type: text
     - default: ./data/downloads
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: DOWNLOAD_PATH
       labelEn: Download folder path
       labelZh: 下载文件夹路径
+      label:
+        en: Download folder path
+        zh: 下载文件夹路径
       required: true
       type: text
     - default: ""
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: WEBUI_USER
       labelEn: Webui user
       labelZh: 网页用户
+      label:
+        en: Webui user
+        zh: 网页用户
       required: false
       type: text
     - default: ""
@@ -42,6 +57,9 @@ additionalProperties:
       envKey: WEBUI_PWD
       labelEn: Webui password
       labelZh: 网页密码
+      label:
+        en: Webui password
+        zh: 网页密码
       random: false
       required: false
       rule: paramComplexity

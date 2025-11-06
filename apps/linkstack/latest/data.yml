@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Application HTTP Port
       labelZh: 应用 HTTP 端口
+      label:
+        en: Application HTTP Port
+        zh: 应用 HTTP 端口
       required: true
       type: number
     - default: 40226
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTPS
       labelEn: Application HTTPS Port
       labelZh: 应用 HTTPS 端口
+      label:
+        en: Application HTTPS Port
+        zh: 应用 HTTPS 端口
       required: true
       type: number
     - default: www.example.xyz
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: HTTP_SERVER_NAME
       labelEn: HTTP Server Name
       labelZh: HTTP 服务器名称
+      label:
+        en: HTTP Server Name
+        zh: HTTP 服务器名称
       required: true
       type: text
     - default: www.example.xyz
@@ -26,6 +35,9 @@ additionalProperties:
       envKey: HTTPS_SERVER_NAME
       labelEn: HTTPS Server Name
       labelZh: HTTPS 服务器名称
+      label:
+        en: HTTPS Server Name
+        zh: HTTPS 服务器名称
       required: true
       type: text
     - default: admin@example.xyz
@@ -33,6 +45,9 @@ additionalProperties:
       envKey: SERVER_ADMIN
       labelEn: Server Admin
       labelZh: 服务器管理员
+      label:
+        en: Server Admin
+        zh: 服务器管理员
       required: true
       type: text
     - default: Asia/Shanghai
@@ -40,6 +55,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time zone
       labelZh: 时区
+      label:
+        en: Time zone
+        zh: 时区
       required: true
       type: text
     - default: 512M
@@ -47,6 +65,9 @@ additionalProperties:
       envKey: PHP_MEMORY_LIMIT
       labelEn: PHP Memory Limit
       labelZh: PHP 内存限制
+      label:
+        en: PHP Memory Limit
+        zh: PHP 内存限制
       required: true
       type: text
     - default: 8M
@@ -54,5 +75,8 @@ additionalProperties:
       envKey: UPLOAD_MAX_FILESIZE
       labelEn: Upload Max Filesize
       labelZh: 上传文件最大限制
+      label:
+        en: Upload Max Filesize
+        zh: 上传文件最大限制
       required: true
       type: text

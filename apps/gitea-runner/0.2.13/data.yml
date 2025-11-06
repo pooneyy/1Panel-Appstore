@@ -5,6 +5,9 @@ additionalProperties:
       envKey: GITEA_RUNNER_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: ""
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: GITEA_INSTANCE_URL
       labelZh: Gitea 实例 URL
       labelEn: Gitea instance URL
+      label:
+        en: Gitea instance URL
+        zh: Gitea 实例 URL
       required: true
       type: text
     - default: ""
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: GITEA_RUNNER_REGISTRATION_TOKEN
       labelZh: 注册令牌
       labelEn: Registration token
+      label:
+        en: Registration token
+        zh: 注册令牌
       required: true
       type: text
     - default: ""
@@ -26,6 +35,9 @@ additionalProperties:
       envKey: GITEA_RUNNER_NAME
       labelZh: Runner 名称
       labelEn: Runner name
+      label:
+        en: Runner name
+        zh: Runner 名称
       required: true
       type: text
     - default: ""
@@ -33,5 +45,8 @@ additionalProperties:
       envKey: GITEA_RUNNER_LABELS
       labelZh: Runner 标签
       labelEn: Runner labels
+      label:
+        en: Runner labels
+        zh: Runner 标签
       required: true
       type: text

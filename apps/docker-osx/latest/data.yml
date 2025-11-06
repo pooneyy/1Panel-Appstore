@@ -5,6 +5,9 @@ additionalProperties:
       envKey: DISPLAY
       labelEn: Display
       labelZh: 显示
+      label:
+        en: Display
+        zh: 显示
       required: true
       type: text
     - default: "40287"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_SSH
       labelEn: SSH Port
       labelZh: SSH 端口
+      label:
+        en: SSH Port
+        zh: SSH 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: RESTART_POLICY
       labelEn: Restart Policy
       labelZh: 重启策略
+      label:
+        en: Restart Policy
+        zh: 重启策略
       required: true
       type: select
       values:
@@ -34,6 +43,9 @@ additionalProperties:
       envKey: IMAGE_FILE
       labelEn: System Image File
       labelZh: 系统镜像文件路径
+      label:
+        en: System Image File
+        zh: 系统镜像文件路径
       required: true
       type: text
     - default: "50G"
@@ -41,6 +53,9 @@ additionalProperties:
       envKey: DISK_SIZE
       labelEn: Disk Size
       labelZh: 磁盘大小
+      label:
+        en: Disk Size
+        zh: 磁盘大小
       required: true
       type: text
     - default: "4"
@@ -48,6 +63,9 @@ additionalProperties:
       envKey: RAM_SIZE
       labelEn: RAM Size
       labelZh: 内存大小
+      label:
+        en: RAM Size
+        zh: 内存大小
       required: true
       type: number
     - default: "2"
@@ -55,6 +73,9 @@ additionalProperties:
       envKey: CPU_CORES
       labelEn: CPU Cores
       labelZh: CPU 核心数
+      label:
+        en: CPU Cores
+        zh: CPU 核心数
       required: true
       type: number
     - default: "docker"
@@ -62,6 +83,9 @@ additionalProperties:
       envKey: USERNAME
       labelEn: Login Username
       labelZh: 登录用户名
+      label:
+        en: Login Username
+        zh: 登录用户名
       required: true
       type: text
     - default: "password"
@@ -69,6 +93,9 @@ additionalProperties:
       envKey: PASSWORD
       labelEn: Login Password
       labelZh: 登录密码
+      label:
+        en: Login Password
+        zh: 登录密码
       random: true
       required: true
       rule: paramComplexity

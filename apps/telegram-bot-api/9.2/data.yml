@@ -5,6 +5,9 @@ additionalProperties:
       envKey: TELEGRAM_BOT_API_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8082
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: API 端口
       labelEn: API port
+      label:
+        en: API port
+        zh: API 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTPS
       labelZh: API 端口 (HTTPS)
       labelEn: API port (HTTPS)
+      label:
+        en: API port (HTTPS)
+        zh: API 端口 (HTTPS)
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: TELEGRAM_API_ID
       labelZh: Telegram Bot 应用 ID
       labelEn: Telegram Bot Application ID
+      label:
+        en: Telegram Bot Application ID
+        zh: Telegram Bot 应用 ID
       required: true
       type: text
     - default: ""
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: TELEGRAM_API_HASH
       labelZh: Telegram Bot 应用 Hash
       labelEn: Telegram Bot Application Hash
+      label:
+        en: Telegram Bot Application Hash
+        zh: Telegram Bot 应用 Hash
       required: true
       type: password
     - default: ""
@@ -42,5 +57,8 @@ additionalProperties:
       envKey: TELEGRAM_PROXY
       labelZh: 网络代理
       labelEn: Network proxy
+      label:
+        en: Network proxy
+        zh: 网络代理
       required: false
       type: text

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: LOGIN_USER
       labelEn: Username
       labelZh: 用户名
+      label:
+        en: Username
+        zh: 用户名
       random: true
       required: true
       rule: paramCommon
@@ -22,6 +28,9 @@ additionalProperties:
       envKey: LOGIN_PASSWORD
       labelEn: Password
       labelZh: 密码
+      label:
+        en: Password
+        zh: 密码
       random: true
       required: true
       rule: paramComplexity

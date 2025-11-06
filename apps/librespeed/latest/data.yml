@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: MODE
       labelEn: Mode
       labelZh: 模式
+      label:
+        en: Mode
+        zh: 模式
       required: true
       type: text
     - default: "LibreSpeed"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: TITLE
       labelEn: Title
       labelZh: 标题
+      label:
+        en: Title
+        zh: 标题
       required: true
       type: text
     - default: "false"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: TELEMETRY
       labelEn: Telemetry
       labelZh: 遥测
+      label:
+        en: Telemetry
+        zh: 遥测
       required: true
       type: select
       values:
@@ -39,6 +51,9 @@ additionalProperties:
       envKey: ENABLE_ID_OBFUSCATION
       labelEn: Enable ID Obfuscation
       labelZh: 启用 ID 混淆
+      label:
+        en: Enable ID Obfuscation
+        zh: 启用 ID 混淆
       required: true
       type: select
       values:
@@ -51,6 +66,9 @@ additionalProperties:
       envKey: REDACT_IP_ADDRESSES
       labelEn: Redact IP Addresses
       labelZh: 隐藏 IP 地址
+      label:
+        en: Redact IP Addresses
+        zh: 隐藏 IP 地址
       required: true
       type: select
       values:
@@ -63,6 +81,9 @@ additionalProperties:
       envKey: PASSWORD
       labelEn: Password
       labelZh: 密码
+      label:
+        en: Password
+        zh: 密码
       random: true
       required: false
       rule: paramCommon
@@ -72,6 +93,9 @@ additionalProperties:
       envKey: EMAIL
       labelEn: Email address for GDPR requests (must be specified when telemetry is enabled)
       labelZh: GDPR 请求的电子邮件地址 (启用遥测时必须指定)
+      label:
+        en: Email address for GDPR requests (must be specified when telemetry is enabled)
+        zh: GDPR 请求的电子邮件地址 (启用遥测时必须指定)
       required: false
       type: text
     - default: "false"
@@ -79,6 +103,9 @@ additionalProperties:
       envKey: DISABLE_IPINFO
       labelEn: Disable IPInfo
       labelZh: 禁用 IPInfo
+      label:
+        en: Disable IPInfo
+        zh: 禁用 IPInfo
       required: true
       type: select
       values:
@@ -91,6 +118,9 @@ additionalProperties:
       envKey: DISTANCE
       labelEn: Distance
       labelZh: 距离
+      label:
+        en: Distance
+        zh: 距离
       required: false
       type: select
       values:

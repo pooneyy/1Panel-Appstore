@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: AUTH_SECRET
       labelEn: Auth Secret
       labelZh: 认证密钥
+      label:
+        en: Auth Secret
+        zh: 认证密钥
       random: true
       required: true
       rule: paramComplexity
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelEn: Database Service
       labelZh: 数据库服务
+      label:
+        en: Database Service
+        zh: 数据库服务
       required: true
       type: apps
       child:
@@ -35,6 +44,9 @@ additionalProperties:
       envKey: PANEL_DB_NAME
       labelEn: Database
       labelZh: 数据库名
+      label:
+        en: Database
+        zh: 数据库名
       random: true
       required: true
       rule: paramCommon
@@ -43,6 +55,9 @@ additionalProperties:
       envKey: PANEL_DB_USER
       labelEn: User
       labelZh: 数据库用户
+      label:
+        en: User
+        zh: 数据库用户
       random: true
       required: true
       rule: paramCommon
@@ -51,6 +66,9 @@ additionalProperties:
       envKey: PANEL_DB_USER_PASSWORD
       labelEn: Password
       labelZh: 数据库用户密码
+      label:
+        en: Password
+        zh: 数据库用户密码
       random: true
       required: true
       rule: paramComplexity

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 发现服务器端口
       labelEn: Discovery server port
+      label:
+        en: Discovery server port
+        zh: 发现服务器端口
       required: true
       rule: paramPort
       type: number

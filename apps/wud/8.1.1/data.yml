@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Service Port 3000
       labelZh: 服务端口 3000
+      label:
+        en: Service Port 3000
+        zh: 服务端口 3000
       required: true
       rule: paramPort
       type: number

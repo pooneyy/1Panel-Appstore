@@ -5,6 +5,9 @@ additionalProperties:
       envKey: EXTERNAL_IP
       labelEn: ipAddress
       labelZh: 外部访问 IP
+      label:
+        en: ipAddress
+        zh: 外部访问 IP
       required: true
       type: text
     - default: "5001"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WK_API
       labelEn: WuKongIM api port
       labelZh: 悟空 IM api 端口
+      label:
+        en: WuKongIM api port
+        zh: 悟空 IM api 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WK_TCP
       labelEn: WuKongIM tcp port
       labelZh: 悟空 IM TCP 端口
+      label:
+        en: WuKongIM tcp port
+        zh: 悟空 IM TCP 端口
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WK_WS
       labelEn: WuKongIM ws port
       labelZh: 悟空 IM WS 端口
+      label:
+        en: WuKongIM ws port
+        zh: 悟空 IM WS 端口
       required: true
       rule: paramPort
       type: number
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: WuKongIM web port
       labelZh: 悟空 IM 监控端口
+      label:
+        en: WuKongIM web port
+        zh: 悟空 IM 监控端口
       required: true
       rule: paramPort
       type: number
@@ -44,6 +59,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WK_DEMO_SERVER
       labelEn: WuKongIM demo port
       labelZh: 悟空 IM demo 端口
+      label:
+        en: WuKongIM demo port
+        zh: 悟空 IM demo 端口
       required: true
       rule: paramPort
       type: number

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTPS
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_STUN
       labelEn: STUN Service Port
       labelZh: STUN 服务端口
+      label:
+        en: STUN Service Port
+        zh: STUN 服务端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path (Domain certificate needs to be replaced, certificate file name is the same as the server hostname)
       labelZh: 数据文件夹路径 (需要替换域名证书，证书文件名与服务器主机名相同)
+      label:
+        en: Data folder path (Domain certificate needs to be replaced, certificate file name is the same as the server hostname)
+        zh: 数据文件夹路径 (需要替换域名证书，证书文件名与服务器主机名相同)
       required: true
       type: text
     - default: 'derper.your-domain.com'
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: DERP_DOMAIN
       labelEn: Derper server hostname
       labelZh: Derper服务器主机名
+      label:
+        en: Derper server hostname
+        zh: Derper服务器主机名
       required: true
       type: text
     - default: "false"
@@ -35,5 +47,8 @@ additionalProperties:
       envKey: CLIENTS_VERIFY_SWITCH
       labelEn: "Client verify (On: true, Off: false)"
       labelZh: 客户端验证(开启:true，关闭:false)
+      label:
+        en: "Client verify (On: true, Off: false)"
+        zh: 客户端验证(开启:true，关闭:false)
       required: true
       type: text

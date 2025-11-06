@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: NEXTAUTH_SECRET
       labelEn: NextAuth Secret
       labelZh: NextAuth密钥
+      label:
+        en: NextAuth Secret
+        zh: NextAuth密钥
       required: true
       type: text
     - default: "a+BQCRpK74QuCSqZPhJ6hDeryTn/1rFKhwuc5DC19hOrI8VR"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: MEILI_MASTER_KEY
       labelEn: Meilisearch Master Key
       labelZh: Meilisearch主密钥
+      label:
+        en: Meilisearch Master Key
+        zh: Meilisearch主密钥
       required: true
       type: text
     - default: ""
@@ -27,5 +36,8 @@ additionalProperties:
       envKey: OPENAI_API_KEY
       labelEn: OpenAI API Key
       labelZh: OpenAI API 密钥
+      label:
+        en: OpenAI API Key
+        zh: OpenAI API 密钥
       required: false
       type: text

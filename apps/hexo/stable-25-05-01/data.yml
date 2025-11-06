@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: ""
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: GIT_USERNAME
       labelEn: Git username
       labelZh: Git 用户名
+      label:
+        en: Git username
+        zh: Git 用户名
       required: true
       type: text
     - default: ""
@@ -27,5 +36,8 @@ additionalProperties:
       envKey: GIT_MAIL
       labelEn: Git Email
       labelZh: Git 邮箱
+      label:
+        en: Git Email
+        zh: Git 邮箱
       required: true
       type: text

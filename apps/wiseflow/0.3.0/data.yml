@@ -5,6 +5,9 @@ additionalProperties:
       envKey: WISEFLOW_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8090
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_BACKEND
       labelZh: 后端服务端口
       labelEn: Backend service port
+      label:
+        en: Backend service port
+        zh: 后端服务端口
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: LLM_API_BASE
       labelZh: LLM API 地址
       labelEn: LLM API address
+      label:
+        en: LLM API address
+        zh: LLM API 地址
       required: true
       rule: paramExtUrl
       type: text
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: LLM_API_KEY
       labelZh: LLM API 密钥
       labelEn: LLM API key
+      label:
+        en: LLM API key
+        zh: LLM API 密钥
       required: false
       type: text
     - default: "test@example.com|1234567890"
@@ -43,6 +58,9 @@ additionalProperties:
       envKey: PB_API_AUTH
       labelZh: PB数据库 账户密码
       labelEn: PB database account password
+      label:
+        en: PB database account password
+        zh: PB数据库 账户密码
       required: false
       type: text
     - default: "zhipuai/glm4-9B-chat"
@@ -50,6 +68,9 @@ additionalProperties:
       envKey: GET_INFO_MODEL
       labelZh: 信息提炼与标签匹配任务模型
       labelEn: Information extraction and label matching task model
+      label:
+        en: Information extraction and label matching task model
+        zh: 信息提炼与标签匹配任务模型
       required: true
       type: text
     - default: "alibaba/Qwen2-7B-Instruct"
@@ -57,6 +78,9 @@ additionalProperties:
       envKey: REWRITE_MODEL
       labelZh: 近似信息合并改写任务模型
       labelEn: Approximate information merge rewrite task model
+      label:
+        en: Approximate information merge rewrite task model
+        zh: 近似信息合并改写任务模型
       required: true
       type: text
     - default: "alibaba/Qwen2-7B-Instruct"
@@ -64,5 +88,8 @@ additionalProperties:
       envKey: HTML_PARSE_MODEL
       labelZh: 网页解析模型
       labelEn: Web page parsing model
+      label:
+        en: Web page parsing model
+        zh: 网页解析模型
       required: true
       type: text

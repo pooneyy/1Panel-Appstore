@@ -5,5 +5,8 @@ additionalProperties:
       envKey: ENV1
       labelEn: Environmental parameters
       labelZh: 环境参数
+      label:
+        en: Environmental parameters
+        zh: 环境参数
       required: true
       type: text

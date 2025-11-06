@@ -5,6 +5,9 @@ additionalProperties:
       envKey: ZTNCUI_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 3000
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_API
       labelZh: API 端口
       labelEn: API Port
+      label:
+        en: API Port
+        zh: API 端口
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_FILE
       labelZh: 文件传输端口
       labelEn: File transfer port
+      label:
+        en: File transfer port
+        zh: 文件传输端口
       required: true
       rule: paramPort
       type: number
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: ZTNCUI_PASSWD
       labelZh: 面板管理员 密码
       labelEn: Admin Password
+      label:
+        en: Admin Password
+        zh: 面板管理员 密码
       required: true
       type: password
     - default: ""
@@ -43,5 +58,8 @@ additionalProperties:
       envKey: MYADDR
       labelZh: 服务器域名(IP)
       labelEn: Server Domain(IP)
+      label:
+        en: Server Domain(IP)
+        zh: 服务器域名(IP)
       required: true
       type: text

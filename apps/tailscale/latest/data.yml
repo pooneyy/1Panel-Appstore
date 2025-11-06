@@ -5,6 +5,9 @@ additionalProperties:
       envKey: TS_AUTHKEY
       labelEn: Tailscale Auth Key
       labelZh: Tailscale 认证密钥（建议重新生成）
+      label:
+        en: Tailscale Auth Key
+        zh: Tailscale 认证密钥（建议重新生成）
       random: true
       required: true
       type: text
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: TS_ROUTES
       labelEn: Advertise Subnet Routes
       labelZh: 广播子网路由
+      label:
+        en: Advertise Subnet Routes
+        zh: 广播子网路由
       required: true
       type: text
     - default: 'false'
@@ -20,30 +26,39 @@ additionalProperties:
       envKey: TS_ACCEPT_DNS
       labelEn: Accept DNS configuration
       labelZh: 是否接受 DNS 配置
+      label:
+        en: Accept DNS configuration
+        zh: 是否接受 DNS 配置
       required: false
       type: select
       values:
-          - label: 'true'
-            value: 'true'
-          - label: 'false'
-            value: 'false'
+        - label: 'true'
+          value: 'true'
+        - label: 'false'
+          value: 'false'
     - default: 'false'
       edit: true
       envKey: TS_AUTH_ONCE
       labelEn: Attempt to log in once
       labelZh: 尝试仅登录一次
+      label:
+        en: Attempt to log in once
+        zh: 尝试仅登录一次
       required: false
       type: select
       values:
-          - label: 'true'
-            value: 'true'
-          - label: 'false'
-            value: 'false'
+        - label: 'true'
+          value: 'true'
+        - label: 'false'
+          value: 'false'
     - default: ''
       edit: true
       envKey: TS_DEST_IP
       labelEn: Destination IP
       labelZh: 目标 IP
+      label:
+        en: Destination IP
+        zh: 目标 IP
       required: false
       type: text
     - default: tailscale
@@ -51,6 +66,9 @@ additionalProperties:
       envKey: TS_KUBE_SECRET
       labelEn: Kubernetes Secret Name
       labelZh: Kubernetes 密钥名称
+      label:
+        en: Kubernetes Secret Name
+        zh: Kubernetes 密钥名称
       required: false
       type: text
     - default: my-tailscale-node
@@ -58,6 +76,9 @@ additionalProperties:
       envKey: TS_HOSTNAME
       labelEn: Node Hostname
       labelZh: 节点主机名
+      label:
+        en: Node Hostname
+        zh: 节点主机名
       required: false
       type: text
     - default: ''
@@ -65,6 +86,9 @@ additionalProperties:
       envKey: TS_OUTBOUND_HTTP_PROXY_LISTEN
       labelEn: HTTP Proxy Address and Port (127.0.0.1:1081)
       labelZh: HTTP代理地址和端口 (127.0.0.1:1081)
+      label:
+        en: HTTP Proxy Address and Port (127.0.0.1:1081)
+        zh: HTTP代理地址和端口 (127.0.0.1:1081)
       required: false
       type: text
     - default: /var/run/tailscale/tailscaled.sock
@@ -72,6 +96,9 @@ additionalProperties:
       envKey: TS_SOCKET
       labelEn: Tailscale Socket Path
       labelZh: Tailscale Socket 路径
+      label:
+        en: Tailscale Socket Path
+        zh: Tailscale Socket 路径
       required: false
       type: text
     - default: ''
@@ -79,6 +106,9 @@ additionalProperties:
       envKey: TS_SOCKS5_SERVER
       labelEn: SOCKS5 Proxy Address and Port (127.0.0.1:1080)
       labelZh: SOCKS5代理地址和端口 (127.0.0.1:1080)
+      label:
+        en: SOCKS5 Proxy Address and Port (127.0.0.1:1080)
+        zh: SOCKS5代理地址和端口 (127.0.0.1:1080)
       required: false
       type: text
     - default: /var/lib/tailscale
@@ -86,6 +116,9 @@ additionalProperties:
       envKey: TS_STATE_DIR
       labelEn: Tailscale State Directory
       labelZh: Tailscale 状态目录
+      label:
+        en: Tailscale State Directory
+        zh: Tailscale 状态目录
       required: false
       type: text
     - default: 'true'
@@ -93,17 +126,23 @@ additionalProperties:
       envKey: TS_USERSPACE
       labelEn: Enable Userspace Networking
       labelZh: 启用用户空间网络
+      label:
+        en: Enable Userspace Networking
+        zh: 启用用户空间网络
       required: false
       type: select
       values:
-          - label: 'true'
-            value: 'true'
-          - label: 'false'
-            value: 'false'
+        - label: 'true'
+          value: 'true'
+        - label: 'false'
+          value: 'false'
     - default: ''
       edit: true
       envKey: TS_EXTRA_ARGS
       labelEn: Any other flags for tailscaled (--login-server=https://login.example.com)
       labelZh: 更多命令参数 (--login-server=https://login.example.com)
+      label:
+        en: Any other flags for tailscaled (--login-server=https://login.example.com)
+        zh: 更多命令参数 (--login-server=https://login.example.com)
       required: false
       type: text

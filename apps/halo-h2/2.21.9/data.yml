@@ -5,6 +5,9 @@ additionalProperties:
       envKey: HALO_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8090
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 访问端口
       labelEn: Port
+      label:
+        en: Port
+        zh: 访问端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: HALO_EXTERNAL_URL
       labelZh: 公网访问地址
       labelEn: External URL
+      label:
+        en: External URL
+        zh: 公网访问地址
       required: true
       rule: paramExtUrl
       type: text

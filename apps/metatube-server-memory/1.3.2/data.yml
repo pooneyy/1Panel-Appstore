@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: TOKEN
       labelZh: 访问令牌
       labelEn: Access Token
+      label:
+        en: Access Token
+        zh: 访问令牌
       required: true
       type: password
     - default: "1m"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: REQUEST_TIMEOUT
       labelZh: 请求超时时间
       labelEn: Request Timeout
+      label:
+        en: Request Timeout
+        zh: 请求超时时间
       required: true
       type: text
     - default: ""
@@ -27,5 +36,8 @@ additionalProperties:
       envKey: HTTP_PROXY
       labelZh: 网络代理 (HTTP/Socket5)
       labelEn: Network Proxy (HTTP/Socket5)
+      label:
+        en: Network Proxy (HTTP/Socket5)
+        zh: 网络代理 (HTTP/Socket5)
       required: false
       type: text

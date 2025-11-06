@@ -5,6 +5,9 @@ additionalProperties:
       envKey: HOSTNAME
       labelEn: Hostname
       labelZh: 主机名
+      label:
+        en: Hostname
+        zh: 主机名
       required: true
       type: text
     - default: "40296"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: CONFIG_PATH
       labelEn: Config Path
       labelZh: 配置路径
+      label:
+        en: Config Path
+        zh: 配置路径
       required: true
       type: text
     - default: "./data/media"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: MEDIA_PATH
       labelEn: Media Path
       labelZh: 媒体路径
+      label:
+        en: Media Path
+        zh: 媒体路径
       required: true
       type: text
     - default: "0"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: PUID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: true
       type: number
     - default: "0"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: PGID
       labelEn: Group ID
       labelZh: 组 ID
+      label:
+        en: Group ID
+        zh: 组 ID
       required: true
       type: number
     - default: "000"
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: UMASK
       labelEn: Umask
       labelZh: 掩码权限
+      label:
+        en: Umask
+        zh: 掩码权限
       required: true
       type: text
     - default: "false"
@@ -55,6 +76,9 @@ additionalProperties:
       envKey: NASTOOL_AUTO_UPDATE
       labelEn: Auto Update
       labelZh: 自动更新
+      label:
+        en: Auto Update
+        zh: 自动更新
       required: true
       type: select
       values:
@@ -67,6 +91,9 @@ additionalProperties:
       envKey: NASTOOL_CN_UPDATE
       labelEn: CN Update
       labelZh: 国内更新
+      label:
+        en: CN Update
+        zh: 国内更新
       required: true
       type: select
       values:

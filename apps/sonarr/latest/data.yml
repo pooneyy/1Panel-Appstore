@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PUID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: true
       type: number
     - default: "1000"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PGID
       labelEn: Group ID
       labelZh: 组 ID
+      label:
+        en: Group ID
+        zh: 组 ID
       required: true
       type: number
     - default: "Asia/Shanghai"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text
     - default: "./data/config"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: SONARR_CONFIG_PATH
       labelEn: Sonarr Config Path
       labelZh: Sonarr 配置路径
+      label:
+        en: Sonarr Config Path
+        zh: Sonarr 配置路径
       required: true
       type: text
     - default: "./data/tv"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: TV_SERIES_PATH
       labelEn: TV Series Path
       labelZh: 电视剧路径
+      label:
+        en: TV Series Path
+        zh: 电视剧路径
       required: true
       type: text
     - default: "./data/downloads"
@@ -48,5 +66,8 @@ additionalProperties:
       envKey: DOWNLOADS_PATH
       labelEn: Downloads Path
       labelZh: 下载路径
+      label:
+        en: Downloads Path
+        zh: 下载路径
       required: true
       type: text

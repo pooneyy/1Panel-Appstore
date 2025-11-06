@@ -1,23 +1,32 @@
 additionalProperties:
-    formFields:
-        - default: ""
-          edit: true
-          envKey: SERVER_ADDR
-          labelEn: Server IP
-          labelZh: 服务器IP地址
-          required: true
-          type: text
-        - default: ""
-          edit: true
-          envKey: STARS_ACCOUNT
-          labelEn: Starvpn Account
-          labelZh: 星空组网账号
-          required: true
-          type: text
-        - default: ""
-          edit: true
-          envKey: TOKEN
-          labelEn: Custom Security Token
-          labelZh: 自定义安全令牌
-          required: true
-          type: text
+  formFields:
+    - default: ""
+      edit: true
+      envKey: SERVER_ADDR
+      labelEn: Server IP
+      labelZh: 服务器IP地址
+      label:
+        en: Server IP
+        zh: 服务器IP地址
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: STARS_ACCOUNT
+      labelEn: Starvpn Account
+      labelZh: 星空组网账号
+      label:
+        en: Starvpn Account
+        zh: 星空组网账号
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: TOKEN
+      labelEn: Custom Security Token
+      labelZh: 自定义安全令牌
+      label:
+        en: Custom Security Token
+        zh: 自定义安全令牌
+      required: true
+      type: text

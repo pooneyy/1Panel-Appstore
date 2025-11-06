@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: 50
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: USER_LIMIT
       labelEn: User limit
       labelZh: 用户数量限制
+      label:
+        en: User limit
+        zh: 用户数量限制
       required: true
       rule: paramCommon
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: BOOK_LIMIT
       labelEn: Book limit
       labelZh: 书本数量限制
+      label:
+        en: Book limit
+        zh: 书本数量限制
       required: true
       rule: paramCommon
       type: number
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: PASSWORD
       labelEn: Admin Password
       labelZh: 管理员密码
+      label:
+        en: Admin Password
+        zh: 管理员密码
       random: true
       required: true
       rule: paramCommon
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: INVITE_CODE
       labelEn: Invitation code
       labelZh: 邀请码
+      label:
+        en: Invitation code
+        zh: 邀请码
       random: true
       required: true
       rule: paramCommon

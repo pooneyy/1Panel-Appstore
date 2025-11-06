@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: "true"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: SIGNUPS_ALLOWED
       labelEn: Allow Signups
       labelZh: 允许注册
+      label:
+        en: Allow Signups
+        zh: 允许注册
       required: true
       type: select
       values:
@@ -32,6 +41,9 @@ additionalProperties:
       envKey: INVITATIONS_ALLOWED
       labelEn: Allow Invitations
       labelZh: 允许邀请
+      label:
+        en: Allow Invitations
+        zh: 允许邀请
       required: true
       type: select
       values:
@@ -44,6 +56,9 @@ additionalProperties:
       envKey: WEBSOCKET_ENABLED
       labelEn: WebSocket Enabled
       labelZh: 启用 WebSocket
+      label:
+        en: WebSocket Enabled
+        zh: 启用 WebSocket
       required: true
       type: select
       values:
@@ -56,5 +71,8 @@ additionalProperties:
       envKey: ADMIN_TOKEN
       labelEn: Admin Token
       labelZh: 管理员令牌
+      label:
+        en: Admin Token
+        zh: 管理员令牌
       required: false
       type: password

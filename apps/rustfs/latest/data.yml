@@ -5,6 +5,9 @@ additionalProperties:
       envKey: RUSTFS_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 9000
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: RUSTFS_ACCESS_KEY
       labelZh: 管理员账号
       labelEn: Access Key
+      label:
+        en: Access Key
+        zh: 管理员账号
       required: true
       type: text
     - default: "rustfsadmin"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: RUSTFS_SECRET_KEY
       labelZh: 管理员密码
       labelEn: Secret Key
+      label:
+        en: Secret Key
+        zh: 管理员密码
       required: true
       type: password
     - default: "127.0.0.1:9000"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: RUSTFS_SERVER_DOMAINS
       labelZh: 域名
       labelEn: Domains
+      label:
+        en: Domains
+        zh: 域名
       required: false
       type: text
     - default: "true"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: RUSTFS_CONSOLE_ENABLE
       labelZh: 启用控制台
       labelEn: Enable Console
+      label:
+        en: Enable Console
+        zh: 启用控制台
       required: true
       type: select
       values:

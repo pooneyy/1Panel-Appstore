@@ -5,6 +5,9 @@ additionalProperties:
       envKey: ARCHIVEBOX_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8000
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: ADMIN_USERNAME
       labelZh: 管理员用户名
       labelEn: Admin Username
+      label:
+        en: Admin Username
+        zh: 管理员用户名
       required: true
       type: text
     - default: "archivebox"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: ADMIN_PASSWORD
       labelZh: 管理员密码
       labelEn: Admin Password
+      label:
+        en: Admin Password
+        zh: 管理员密码
       required: true
       type: password
     - default: "True"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: PUBLIC_INDEX
       labelZh: 是否公开快照列表
       labelEn: Whether to make the snapshot list public
+      label:
+        en: Whether to make the snapshot list public
+        zh: 是否公开快照列表
       required: true
       type: select
       values:
@@ -46,6 +61,9 @@ additionalProperties:
       envKey: PUBLIC_SNAPSHOTS
       labelZh: 是否公开快照内容
       labelEn: Whether to make snapshot content public
+      label:
+        en: Whether to make snapshot content public
+        zh: 是否公开快照内容
       required: true
       type: select
       values:
@@ -58,6 +76,9 @@ additionalProperties:
       envKey: PUBLIC_ADD_VIEW
       labelZh: 是否允许匿名用户提交存档
       labelEn: Whether to allow anonymous users to submit archives
+      label:
+        en: Whether to allow anonymous users to submit archives
+        zh: 是否允许匿名用户提交存档
       required: true
       type: select
       values:

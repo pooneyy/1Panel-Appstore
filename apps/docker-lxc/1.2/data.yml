@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: SSH Port
       labelZh: SSH 端口
+      label:
+        en: SSH Port
+        zh: SSH 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: EXTERNAL_PORT
       labelEn: External port
       labelZh: 外部端口
+      label:
+        en: External port
+        zh: 外部端口
       required: true
       type: text
     - default: 50000-50010
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: INTERNAL_PORT
       labelEn: Internal port
       labelZh: 内部端口
+      label:
+        en: Internal port
+        zh: 内部端口
       required: true
       type: text
     - default: ./data/data
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: EXTERNAL_DATA1
       labelEn: External folder path 1
       labelZh: 外部文件夹路径1
+      label:
+        en: External folder path 1
+        zh: 外部文件夹路径1
       required: true
       type: text
     - default: /data
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: INTERNAL_DATA1
       labelEn: Internal folder path 1
       labelZh: 内部文件夹路径1
+      label:
+        en: Internal folder path 1
+        zh: 内部文件夹路径1
       required: true
       type: text
     - default: ./data/www
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: EXTERNAL_DATA2
       labelEn: External folder path 2
       labelZh: 外部文件夹路径2
+      label:
+        en: External folder path 2
+        zh: 外部文件夹路径2
       required: true
       type: text
     - default: /www
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: INTERNAL_DATA2
       labelEn: Internal folder path 2
       labelZh: 内部文件夹路径2
+      label:
+        en: Internal folder path 2
+        zh: 内部文件夹路径2
       required: true
       type: text
     - default: ""
@@ -55,6 +76,9 @@ additionalProperties:
       envKey: SSH_KEY
       labelEn: SSH public key
       labelZh: SSH 公钥
+      label:
+        en: SSH public key
+        zh: SSH 公钥
       required: false
       type: text
     - default: "lxc1"
@@ -62,5 +86,8 @@ additionalProperties:
       envKey: LXC_HOSTNAME
       labelEn: LXC hostname
       labelZh: LXC主机名
+      label:
+        en: LXC hostname
+        zh: LXC主机名
       required: true
       type: text

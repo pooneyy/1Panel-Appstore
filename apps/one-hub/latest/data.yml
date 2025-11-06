@@ -5,12 +5,18 @@ additionalProperties:
       key: mysql
       labelEn: Database Service
       labelZh: 数据库服务
+      label:
+        en: Database Service
+        zh: 数据库服务
       required: true
       type: service
     - default: onehub
       envKey: PANEL_DB_NAME
       labelEn: Database
       labelZh: 数据库名
+      label:
+        en: Database
+        zh: 数据库名
       random: true
       required: true
       rule: paramCommon
@@ -19,6 +25,9 @@ additionalProperties:
       envKey: PANEL_DB_USER
       labelEn: User
       labelZh: 数据库用户
+      label:
+        en: User
+        zh: 数据库用户
       random: true
       required: true
       rule: paramCommon
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: PANEL_DB_USER_PASSWORD
       labelEn: Password
       labelZh: 数据库用户密码
+      label:
+        en: Password
+        zh: 数据库用户密码
       random: true
       required: true
       rule: paramComplexity
@@ -36,6 +48,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -44,12 +59,18 @@ additionalProperties:
       envKey: TZ
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text
     - default: onehub
       envKey: USER_TOKEN_SECRET
       labelEn: USER_TOKEN_SECRET
       labelZh: SECRET随机字符串
+      label:
+        en: USER_TOKEN_SECRET
+        zh: SECRET随机字符串
       random: true
       required: true
       rule: paramComplexity

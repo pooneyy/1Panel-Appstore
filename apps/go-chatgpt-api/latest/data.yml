@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: API_PANDORA
       labelEn: Pandora API mode
       labelZh: 潘多拉API模式
+      label:
+        en: Pandora API mode
+        zh: 潘多拉API模式
       required: false
       type: text
     - default: ""
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: ARKOSE_TOKEN_URL
       labelEn: ARKOSE Token URL
       labelZh: ARKOSE_TOKEN 链接
+      label:
+        en: ARKOSE Token URL
+        zh: ARKOSE_TOKEN 链接
       required: false
       type: text
     - default: ""
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: OPENAI_EMAIL
       labelEn: OpenAI account email
       labelZh: OpenAI账户邮箱
+      label:
+        en: OpenAI account email
+        zh: OpenAI账户邮箱
       required: false
       type: text
     - default: ""
@@ -34,5 +46,8 @@ additionalProperties:
       envKey: OPENAI_PASSWORD
       labelEn: OpenAI account password
       labelZh: OpenAI账户密码
+      label:
+        en: OpenAI account password
+        zh: OpenAI账户密码
       required: false
       type: text

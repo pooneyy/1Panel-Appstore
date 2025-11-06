@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DAV
       labelEn: WebDAV Configuration (referring to the path inside the container)
       labelZh: WebDAV 配置 (指的容器内部的路径)
+      label:
+        en: WebDAV Configuration (referring to the path inside the container)
+        zh: WebDAV 配置 (指的容器内部的路径)
       required: true
       type: text
     - default: ./data/data
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 外部数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 外部数据文件夹路径
       required: true
       type: text
     - default: /data
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: INNER_DATA_PATH
       labelEn: Path to the internal data folder corresponding to the external data
       labelZh: 外部数据对应的内部数据文件夹路径
+      label:
+        en: Path to the internal data folder corresponding to the external data
+        zh: 外部数据对应的内部数据文件夹路径
       required: true
       type: text
     - default: ./data/data2
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: DATA_PATH2
       labelEn: Data folder path 2
       labelZh: 外部数据文件夹路径2
+      label:
+        en: Data folder path 2
+        zh: 外部数据文件夹路径2
       required: true
       type: text
     - default: /data2
@@ -41,5 +56,8 @@ additionalProperties:
       envKey: INNER_DATA_PATH2
       labelEn: Path to internal data folder corresponding to external data2
       labelZh: 外部数据对应的内部数据文件夹路径2
+      label:
+        en: Path to internal data folder corresponding to external data2
+        zh: 外部数据对应的内部数据文件夹路径2
       required: true
       type: text

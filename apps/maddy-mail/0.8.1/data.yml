@@ -5,6 +5,9 @@ additionalProperties:
       envKey: SMTP_IN_PORT
       labelEn: SMTP inbound port
       labelZh: SMTP 入站端口
+      label:
+        en: SMTP inbound port
+        zh: SMTP 入站端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: IMAP4_PORT
       labelEn: IMAP4 port
       labelZh: IMAP4 端口
+      label:
+        en: IMAP4 port
+        zh: IMAP4 端口
       required: true
       rule: paramPort
       type: number
@@ -21,6 +27,9 @@ additionalProperties:
       envKey: IMAP4_PORT2
       labelEn: IMAP4 port
       labelZh: IMAP4 端口
+      label:
+        en: IMAP4 port
+        zh: IMAP4 端口
       required: true
       rule: paramPort
       type: number
@@ -29,6 +38,9 @@ additionalProperties:
       envKey: SMTP_S_PORT
       labelEn: SMTP Submission ports
       labelZh: SMTP 提交端口
+      label:
+        en: SMTP Submission ports
+        zh: SMTP 提交端口
       required: true
       rule: paramPort
       type: number
@@ -37,6 +49,9 @@ additionalProperties:
       envKey: SMTP_S_PORT2
       labelEn: SMTP Submission ports
       labelZh: SMTP 提交端口
+      label:
+        en: SMTP Submission ports
+        zh: SMTP 提交端口
       required: true
       rule: paramPort
       type: number
@@ -45,6 +60,9 @@ additionalProperties:
       envKey: MAIL_HOSTNAME
       labelEn: Mail MX hostname
       labelZh: 邮箱 MX 主机名
+      label:
+        en: Mail MX hostname
+        zh: 邮箱 MX 主机名
       required: true
       type: text
     - default: example.com
@@ -52,5 +70,8 @@ additionalProperties:
       envKey: MAIL_DOMAIN
       labelEn: Mail domain
       labelZh: 邮箱域名
+      label:
+        en: Mail domain
+        zh: 邮箱域名
       required: true
       type: text

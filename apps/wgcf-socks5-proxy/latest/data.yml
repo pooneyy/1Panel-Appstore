@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: ""
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: IP_COMMAND
       labelEn: IPV4/IPV6 ONLY (FILL IN "-4"; "-6")
       labelZh: 仅IPV4/IPV6(填"-4";"-6")
+      label:
+        en: IPV4/IPV6 ONLY (FILL IN "-4"; "-6")
+        zh: 仅IPV4/IPV6(填"-4";"-6")
       required: false
       type: text
     - default: ""
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: SOCKS_USER
       labelEn: Socks user
       labelZh: Socks用户名
+      label:
+        en: Socks user
+        zh: Socks用户名
       required: false
       type: text
     - default: ""
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: SOCKS_PWD
       labelEn: Socks password
       labelZh: Socks密码
+      label:
+        en: Socks password
+        zh: Socks密码
       random: false
       required: false
       rule: paramComplexity
@@ -43,6 +58,9 @@ additionalProperties:
       envKey: SOCKS_PORT
       labelEn: Internal Socks port
       labelZh: 内部Socks端口
+      label:
+        en: Internal Socks port
+        zh: 内部Socks端口
       required: true
       type: text
     - default: "0.0.0.0"
@@ -50,5 +68,8 @@ additionalProperties:
       envKey: SOCKS_HOST
       labelEn: Internal Socks host
       labelZh: 内部Socks主机
+      label:
+        en: Internal Socks host
+        zh: 内部Socks主机
       required: true
       type: text

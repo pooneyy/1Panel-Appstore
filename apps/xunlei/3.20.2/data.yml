@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text
     - default: "./data/downloads"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: DOWNLOAD_PATH
       labelEn: Download Path
       labelZh: 下载路径
+      label:
+        en: Download Path
+        zh: 下载路径
       required: true
       type: text
     - default: "0.0.0.0"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: XL_DASHBOARD_IP
       labelEn: Dashboard IP
       labelZh: 控制台 IP
+      label:
+        en: Dashboard IP
+        zh: 控制台 IP
       required: true
       type: text
     - default: "user"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: XL_DASHBOARD_USERNAME
       labelEn: Dashboard Username
       labelZh: 控制台用户名
+      label:
+        en: Dashboard Username
+        zh: 控制台用户名
       required: false
       type: text
     - default: "xunlei"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: XL_DASHBOARD_PASSWORD
       labelEn: Dashboard Password
       labelZh: 控制台密码
+      label:
+        en: Dashboard Password
+        zh: 控制台密码
       required: false
       rule: paramComplexity
       type: password
@@ -49,6 +67,9 @@ additionalProperties:
       envKey: XL_DIR_DOWNLOAD
       labelEn: Download Directory (in container)
       labelZh: 下载目录 (容器内)
+      label:
+        en: Download Directory (in container)
+        zh: 下载目录 (容器内)
       required: true
       type: text
     - default: "/xunlei/data"
@@ -56,6 +77,9 @@ additionalProperties:
       envKey: XL_DIR_DATA
       labelEn: Data Directory (in container)
       labelZh: 数据目录 (容器内)
+      label:
+        en: Data Directory (in container)
+        zh: 数据目录 (容器内)
       required: true
       type: text
     - default: "1000"
@@ -63,6 +87,9 @@ additionalProperties:
       envKey: XL_UID
       labelEn: User ID
       labelZh: 用户 ID
+      label:
+        en: User ID
+        zh: 用户 ID
       required: true
       type: number
     - default: "1000"
@@ -70,6 +97,9 @@ additionalProperties:
       envKey: XL_GID
       labelEn: Group ID
       labelZh: 用户组 ID
+      label:
+        en: Group ID
+        zh: 用户组 ID
       required: true
       type: number
     - default: "true"
@@ -77,6 +107,9 @@ additionalProperties:
       envKey: XL_PREVENT_UPDATE
       labelEn: Prevent Update
       labelZh: 阻止更新
+      label:
+        en: Prevent Update
+        zh: 阻止更新
       required: true
       type: select
       values:
@@ -89,6 +122,9 @@ additionalProperties:
       envKey: XL_DEBUG
       labelEn: Debug Mode
       labelZh: 调试模式
+      label:
+        en: Debug Mode
+        zh: 调试模式
       required: true
       type: select
       values:
@@ -101,6 +137,9 @@ additionalProperties:
       envKey: HOSTNAME
       labelEn: Hostname
       labelZh: 主机名
+      label:
+        en: Hostname
+        zh: 主机名
       required: false
       type: text
     - default: "true"
@@ -108,5 +147,8 @@ additionalProperties:
       envKey: PRIVILEGED_MODE
       labelEn: Privilege mode switch
       labelZh: 特权模式开关
+      label:
+        en: Privilege mode switch
+        zh: 特权模式开关
       required: true
       type: text

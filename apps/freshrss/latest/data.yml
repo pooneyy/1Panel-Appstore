@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text
     - default: "./data/extensions"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: EXTENSIONS_PATH
       labelEn: Extensions Path
       labelZh: 扩展路径
+      label:
+        en: Extensions Path
+        zh: 扩展路径
       required: true
       type: text
     - default: "Asia/Shanghai"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: TIME_ZONE
       labelEn: Time Zone
       labelZh: 时区
+      label:
+        en: Time Zone
+        zh: 时区
       required: true
       type: text
     - default: "2,32"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: CRON_MIN
       labelEn: Cron Min
       labelZh: 定时任务分钟
+      label:
+        en: Cron Min
+        zh: 定时任务分钟
       required: true
       type: text
     - default: "development"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: FRESHRSS_ENV
       labelEn: Environment
       labelZh: 环境
+      label:
+        en: Environment
+        zh: 环境
       required: true
       type: select
       values:

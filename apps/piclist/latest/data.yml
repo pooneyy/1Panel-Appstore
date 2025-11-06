@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data Path
       labelZh: 数据路径
+      label:
+        en: Data Path
+        zh: 数据路径
       required: true
       type: text
     - default: "password"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: AUTH_KEY
       labelEn: Auth Key
       labelZh: 授权密钥
+      label:
+        en: Auth Key
+        zh: 授权密钥
       random: true
       required: true
       rule: paramComplexity

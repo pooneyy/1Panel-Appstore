@@ -5,6 +5,9 @@ additionalProperties:
       envKey: MACOS_STORAGE_ROOT_PATH
       labelZh: MacOS 存储目录
       labelEn: MacOS Storage Path
+      label:
+        en: MacOS Storage Path
+        zh: MacOS 存储目录
       required: true
       type: text
     - default: 8006
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_REMOTE
       labelZh: Mac 远程桌面 端口
       labelEn: Mac Remote Desktop Port
+      label:
+        en: Mac Remote Desktop Port
+        zh: Mac 远程桌面 端口
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: VERSION
       labelZh: MacOS 版本
       labelEn: MacOS Version
+      label:
+        en: MacOS Version
+        zh: MacOS 版本
       required: true
       type: select
       values:
@@ -46,6 +58,9 @@ additionalProperties:
       envKey: RAM_SIZE
       labelZh: 内存大小
       labelEn: RAM Size
+      label:
+        en: RAM Size
+        zh: 内存大小
       required: true
       type: text
     - default: "64G"
@@ -53,6 +68,9 @@ additionalProperties:
       envKey: DISK_SIZE
       labelZh: 硬盘大小
       labelEn: Disk Size
+      label:
+        en: Disk Size
+        zh: 硬盘大小
       required: true
       type: text
     - default: 4
@@ -60,5 +78,8 @@ additionalProperties:
       envKey: CPU_CORES
       labelZh: CPU 核心数
       labelEn: CPU Cores
+      label:
+        en: CPU Cores
+        zh: CPU 核心数
       required: true
       type: number

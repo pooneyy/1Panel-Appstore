@@ -10,6 +10,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelZh: MySQL 服务 (前置检查)
       labelEn: Database Service (Pre-check)
+      label:
+        en: Database Service (Pre-check)
+        zh: MySQL 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -24,6 +27,9 @@ additionalProperties:
       envKey: GHOST_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 2368
@@ -31,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -39,6 +48,9 @@ additionalProperties:
       envKey: url
       labelZh: 域名
       labelEn: Domain
+      label:
+        en: Domain
+        zh: 域名
       required: true
       rule: paramExtUrl
       type: text
@@ -47,6 +59,9 @@ additionalProperties:
       envKey: admin__url
       labelZh: 域名 (后台)
       labelEn: Domain (Admin)
+      label:
+        en: Domain (Admin)
+        zh: 域名 (后台)
       required: true
       rule: paramExtUrl
       type: text
@@ -55,6 +70,9 @@ additionalProperties:
       envKey: database__connection__host
       labelZh: 数据库 主机
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机
       required: true
       type: text
     - default: 3306
@@ -62,6 +80,9 @@ additionalProperties:
       envKey: database__connection__port
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -70,6 +91,9 @@ additionalProperties:
       envKey: database__connection__user
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -77,6 +101,9 @@ additionalProperties:
       envKey: database__connection__password
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       required: true
       type: password
     - default: "ghost"
@@ -84,6 +111,9 @@ additionalProperties:
       envKey: database__connection__database
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text
     - default: "SMTP"
@@ -91,6 +121,9 @@ additionalProperties:
       envKey: mail__transport
       labelZh: 邮件传输协议
       labelEn: Mail Transport Protocol
+      label:
+        en: Mail Transport Protocol
+        zh: 邮件传输协议
       required: true
       type: text
     - default: "smtp.qq.com"
@@ -98,6 +131,9 @@ additionalProperties:
       envKey: mail__options__host
       labelZh: 邮件服务器
       labelEn: Mail Server
+      label:
+        en: Mail Server
+        zh: 邮件服务器
       required: true
       type: text
     - default: 465
@@ -105,6 +141,9 @@ additionalProperties:
       envKey: mail__options__port
       labelZh: 邮件服务器 端口
       labelEn: Mail Server Port
+      label:
+        en: Mail Server Port
+        zh: 邮件服务器 端口
       required: true
       type: number
     - default: ""
@@ -112,6 +151,9 @@ additionalProperties:
       envKey: mail__options__auth__user
       labelZh: 邮件鉴权 用户名
       labelEn: Mail Username
+      label:
+        en: Mail Username
+        zh: 邮件鉴权 用户名
       required: true
       type: text
     - default: ""
@@ -119,6 +161,9 @@ additionalProperties:
       envKey: mail__options__auth__pass
       labelZh: 邮件鉴权 密码
       labelEn: Mail Password
+      label:
+        en: Mail Password
+        zh: 邮件鉴权 密码
       required: true
       type: password
     - default: ""
@@ -126,5 +171,8 @@ additionalProperties:
       envKey: mail__from
       labelZh: 邮件发送者
       labelEn: Mail Sender
+      label:
+        en: Mail Sender
+        zh: 邮件发送者
       required: true
       type: text

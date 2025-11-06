@@ -10,6 +10,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelZh: MySQL 服务 (前置检查)
       labelEn: Database Service (Pre-check)
+      label:
+        en: Database Service (Pre-check)
+        zh: MySQL 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -24,6 +27,9 @@ additionalProperties:
       envKey: PHOTOPRISM_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 2342
@@ -31,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -39,6 +48,9 @@ additionalProperties:
       envKey: PHOTOPRISM_ADMIN_USER
       labelZh: 管理员用户名
       labelEn: Admin username
+      label:
+        en: Admin username
+        zh: 管理员用户名
       required: true
       type: text
     - default: "password_random"
@@ -46,6 +58,9 @@ additionalProperties:
       envKey: PHOTOPRISM_ADMIN_PASSWORD
       labelZh: 管理员密码 (8-72 字符)
       labelEn: Admin password
+      label:
+        en: Admin password
+        zh: 管理员密码 (8-72 字符)
       required: true
       rule: paramComplexity
       random: true
@@ -55,6 +70,9 @@ additionalProperties:
       envKey: PHOTOPRISM_AUTH_MODE
       labelZh: 认证模式
       labelEn: Authentication mode
+      label:
+        en: Authentication mode
+        zh: 认证模式
       required: true
       type: select
       values:
@@ -67,6 +85,9 @@ additionalProperties:
       envKey: PHOTOPRISM_SITE_URL
       labelZh: 网站 URL
       labelEn: Site URL
+      label:
+        en: Site URL
+        zh: 网站 URL
       required: true
       type: text
     - default: "AI-Powered Photos App"
@@ -74,6 +95,9 @@ additionalProperties:
       envKey: PHOTOPRISM_SITE_CAPTION
       labelZh: 网站标题
       labelEn: Site caption
+      label:
+        en: Site caption
+        zh: 网站标题
       required: true
       type: text
     - default: ""
@@ -81,6 +105,9 @@ additionalProperties:
       envKey: PHOTOPRISM_SITE_DESCRIPTION
       labelZh: 网站描述
       labelEn: Site description
+      label:
+        en: Site description
+        zh: 网站描述
       required: false
       type: text
     - default: ""
@@ -88,6 +115,9 @@ additionalProperties:
       envKey: PHOTOPRISM_SITE_AUTHOR
       labelZh: 网站作者
       labelEn: Site author
+      label:
+        en: Site author
+        zh: 网站作者
       required: false
       type: text
     - default: "127.0.0.1:3306"
@@ -95,6 +125,9 @@ additionalProperties:
       envKey: PHOTOPRISM_DATABASE_SERVER
       labelZh: 数据库 地址
       labelEn: Database Server
+      label:
+        en: Database Server
+        zh: 数据库 地址
       required: true
       type: text
     - default: "photoprism"
@@ -102,6 +135,9 @@ additionalProperties:
       envKey: PHOTOPRISM_DATABASE_USER
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -109,6 +145,9 @@ additionalProperties:
       envKey: PHOTOPRISM_DATABASE_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       required: true
       type: password
     - default: "photoprism"
@@ -116,6 +155,9 @@ additionalProperties:
       envKey: PHOTOPRISM_DATABASE_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text
     - default: 5000
@@ -123,6 +165,9 @@ additionalProperties:
       envKey: PHOTOPRISM_ORIGINALS_LIMIT
       labelZh: 原始文件限制最大值 (MB)
       labelEn: Originals limit max value (MB)
+      label:
+        en: Originals limit max value (MB)
+        zh: 原始文件限制最大值 (MB)
       required: true
       type: number
     - default: "true"
@@ -130,6 +175,9 @@ additionalProperties:
       envKey: PHOTOPRISM_BACKUP_DATABASE
       labelZh: 开启定时备份计划
       labelEn: Enable scheduled backup plan
+      label:
+        en: Enable scheduled backup plan
+        zh: 开启定时备份计划
       required: true
       type: select
       values:
@@ -142,6 +190,9 @@ additionalProperties:
       envKey: PHOTOPRISM_BACKUP_SCHEDULE
       labelZh: 定时备份计划周期 (daily, weekly, cron)
       labelEn: Scheduled backup plan cycle (daily, weekly, cron format)
+      label:
+        en: Scheduled backup plan cycle (daily, weekly, cron format)
+        zh: 定时备份计划周期 (daily, weekly, cron)
       required: true
       type: text
     - default: "software"
@@ -149,6 +200,9 @@ additionalProperties:
       envKey: PHOTOPRISM_FFMPEG_ENCODER
       labelZh: 视频编码器
       labelEn: Video encoder
+      label:
+        en: Video encoder
+        zh: 视频编码器
       required: true
       type: select
       values:
@@ -169,6 +223,9 @@ additionalProperties:
       envKey: PHOTOPRISM_FFMPEG_SIZE
       labelZh: 视频分辨率限制
       labelEn: Video resolution limit
+      label:
+        en: Video resolution limit
+        zh: 视频分辨率限制
       required: true
       type: text
     - default: "32"
@@ -176,5 +233,8 @@ additionalProperties:
       envKey: PHOTOPRISM_FFMPEG_BITRATE
       labelZh: 视频比特率限制
       labelEn: Video bitrate limit
+      label:
+        en: Video bitrate limit
+        zh: 视频比特率限制
       required: true
       type: text

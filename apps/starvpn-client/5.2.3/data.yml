@@ -1,25 +1,34 @@
 additionalProperties:
-    formFields:
-        - default: user
-          edit: true
-          envKey: STARS_USER
-          labelEn: User User
-          labelZh: 成员账号
-          required: true
-          type: text
-        - default: password
-          edit: true
-          envKey: STARS_PASS
-          labelEn: User Password
-          labelZh: 成员密码
-          required: true
-          rule: paramCommon
-          type: text
-        - default: 8080
-          edit: true
-          envKey: PANEL_APP_PORT_HTTP
-          labelEn: Web Port
-          labelZh: 管理端口
-          required: true
-          rule: paramPort
-          type: number
+  formFields:
+    - default: user
+      edit: true
+      envKey: STARS_USER
+      labelEn: User User
+      labelZh: 成员账号
+      label:
+        en: User User
+        zh: 成员账号
+      required: true
+      type: text
+    - default: password
+      edit: true
+      envKey: STARS_PASS
+      labelEn: User Password
+      labelZh: 成员密码
+      label:
+        en: User Password
+        zh: 成员密码
+      required: true
+      rule: paramCommon
+      type: text
+    - default: 8080
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web Port
+      labelZh: 管理端口
+      label:
+        en: Web Port
+        zh: 管理端口
+      required: true
+      rule: paramPort
+      type: number

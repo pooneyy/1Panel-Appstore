@@ -10,6 +10,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelZh: MySQL 服务 (前置检查)
       labelEn: Database Service (Pre-check)
+      label:
+        en: Database Service (Pre-check)
+        zh: MySQL 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -24,6 +27,9 @@ additionalProperties:
       envKey: BOOKSTACK_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -31,6 +37,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -39,6 +48,9 @@ additionalProperties:
       envKey: APP_KEY
       labelZh: 应用密钥
       labelEn: Application key
+      label:
+        en: Application key
+        zh: 应用密钥
       required: true
       type: text
     - default: "http://127.0.0.1:8080"
@@ -46,6 +58,9 @@ additionalProperties:
       envKey: APP_URL
       labelZh: 应用 URL
       labelEn: Application URL
+      label:
+        en: Application URL
+        zh: 应用 URL
       required: true
       type: text
     - default: "127.0.0.1"
@@ -53,6 +68,9 @@ additionalProperties:
       envKey: DB_HOST
       labelZh: 数据库 主机
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机
       required: true
       type: text
     - default: 3306
@@ -60,6 +78,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -68,6 +89,9 @@ additionalProperties:
       envKey: DB_DATABASE
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text
     - default: "bookstack"
@@ -75,6 +99,9 @@ additionalProperties:
       envKey: DB_USERNAME
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -82,5 +109,8 @@ additionalProperties:
       envKey: DB_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       required: true
       type: password

@@ -9,6 +9,9 @@ additionalProperties:
       envKey: PANEL_POSTGRES_TYPE
       labelZh: Postgres 服务 (前置检查)
       labelEn: Postgres Service (Pre-check)
+      label:
+        en: Postgres Service (Pre-check)
+        zh: Postgres 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -23,6 +26,9 @@ additionalProperties:
       envKey: PANEL_REDIS_TYPE
       labelZh: Redis 服务 (前置检查)
       labelEn: Redis Service (Pre-check)
+      label:
+        en: Redis Service (Pre-check)
+        zh: Redis 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -33,6 +39,9 @@ additionalProperties:
       envKey: MEDIACMS_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -40,6 +49,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -48,6 +60,9 @@ additionalProperties:
       envKey: ADMIN_USER
       labelZh: 管理员 用户名
       labelEn: Admin Username
+      label:
+        en: Admin Username
+        zh: 管理员 用户名
       required: true
       type: text
     - default: ""
@@ -55,6 +70,9 @@ additionalProperties:
       envKey: ADMIN_EMAIL
       labelZh: 管理员邮箱
       labelEn: Admin Email
+      label:
+        en: Admin Email
+        zh: 管理员邮箱
       required: true
       type: text
     - default: ""
@@ -62,6 +80,9 @@ additionalProperties:
       envKey: ADMIN_PASSWORD
       labelZh: 管理员密码
       labelEn: Admin Password
+      label:
+        en: Admin Password
+        zh: 管理员密码
       required: true
       type: password
     - default: "http://localhost"
@@ -69,6 +90,9 @@ additionalProperties:
       envKey: FRONTEND_HOST
       labelZh: 公开地址
       labelEn: Public address
+      label:
+        en: Public address
+        zh: 公开地址
       required: true
       type: text
     - default: "MediaCMS"
@@ -76,6 +100,9 @@ additionalProperties:
       envKey: PORTAL_NAME
       labelZh: 站点名称
       labelEn: Site Name
+      label:
+        en: Site Name
+        zh: 站点名称
       required: true
       type: text
     - default: "redis://127.0.0.1:6379/1"
@@ -83,6 +110,9 @@ additionalProperties:
       envKey: REDIS_LOCATION
       labelZh: Redis 地址
       labelEn: Redis Location
+      label:
+        en: Redis Location
+        zh: Redis 地址
       required: true
       type: text
     - default: "127.0.0.1"
@@ -90,6 +120,9 @@ additionalProperties:
       envKey: POSTGRES_HOST
       labelZh: 数据库 主机地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
       required: true
       type: text
     - default: 5432
@@ -97,6 +130,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -105,6 +141,9 @@ additionalProperties:
       envKey: DB_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       rule: paramCommon
       type: text
@@ -113,6 +152,9 @@ additionalProperties:
       envKey: DB_USER
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -120,6 +162,9 @@ additionalProperties:
       envKey: DB_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       random: true
       required: true
       rule: paramComplexity

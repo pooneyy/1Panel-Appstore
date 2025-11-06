@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: META_TEMPLATE
       labelEn: Meta Template
       labelZh: 默认 meta 模板文件名
+      label:
+        en: Meta Template
+        zh: 默认 meta 模板文件名
       required: true
       type: text
     - default: "template_clash.yaml"
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PROXY_TEMPLATE
       labelEn: Clash Template
       labelZh: 默认 clash 模板文件名
+      label:
+        en: Clash Template
+        zh: 默认 clash 模板文件名
       required: true
       type: text
     - default: "template_clash.yaml"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: CLASH_TEMPLATE
       labelEn: Clash Template
       labelZh: 默认 clash 模板文件名
+      label:
+        en: Clash Template
+        zh: 默认 clash 模板文件名
       required: true
       type: text
     - default: "3"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: REQUEST_RETRY_TIMES
       labelEn: Request Retry Times
       labelZh: Get 请求重试次数
+      label:
+        en: Request Retry Times
+        zh: Get 请求重试次数
       required: true
       type: number
     - default: "1048576"
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: REQUEST_MAX_FILE_SIZE
       labelEn: Request Max File Size
       labelZh: Get 请求订阅文件最大大小（byte）
+      label:
+        en: Request Max File Size
+        zh: Get 请求订阅文件最大大小（byte）
       required: true
       type: number
     - default: "300"
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: CACHE_EXPIRE
       labelEn: Cache Expire
       labelZh: 订阅缓存时间（秒）
+      label:
+        en: Cache Expire
+        zh: 订阅缓存时间（秒）
       required: true
       type: number
     - default: "info"
@@ -55,6 +76,9 @@ additionalProperties:
       envKey: LOG_LEVEL
       labelEn: Log Level
       labelZh: 日志等级
+      label:
+        en: Log Level
+        zh: 日志等级
       required: true
       type: select
       values:
@@ -71,5 +95,8 @@ additionalProperties:
       envKey: SHORT_LINK_LENGTH
       labelEn: Short Link Length
       labelZh: 短链长度
+      label:
+        en: Short Link Length
+        zh: 短链长度
       required: true
       type: number

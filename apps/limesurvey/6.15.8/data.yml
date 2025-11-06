@@ -9,6 +9,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelZh: 数据库服务 (前置检查)
       labelEn: Database Service
+      label:
+        en: Database Service
+        zh: 数据库服务 (前置检查)
       required: true
       type: apps
       values:
@@ -25,6 +28,9 @@ additionalProperties:
       envKey: LIMESURVEY_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -32,6 +38,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 访问端口
       labelEn: Port
+      label:
+        en: Port
+        zh: 访问端口
       required: true
       rule: paramPort
       type: number
@@ -40,6 +49,9 @@ additionalProperties:
       envKey: ADMIN_NAME
       labelZh: 管理员 昵称
       labelEn: Admin Name
+      label:
+        en: Admin Name
+        zh: 管理员 昵称
       required: true
       type: text
     - default: ""
@@ -47,6 +59,9 @@ additionalProperties:
       envKey: ADMIN_EMAIL
       labelZh: 管理员 邮箱
       labelEn: Admin Email
+      label:
+        en: Admin Email
+        zh: 管理员 邮箱
       required: true
       type: text
     - default: "admin"
@@ -54,6 +69,9 @@ additionalProperties:
       envKey: ADMIN_USER
       labelZh: 管理员 用户名
       labelEn: Admin Username
+      label:
+        en: Admin Username
+        zh: 管理员 用户名
       required: true
       type: text
     - default: ""
@@ -61,6 +79,9 @@ additionalProperties:
       envKey: ADMIN_PASSWORD
       labelZh: 管理员 密码
       labelEn: Admin Password
+      label:
+        en: Admin Password
+        zh: 管理员 密码
       required: true
       type: password
     - default: "pgsql"
@@ -68,6 +89,9 @@ additionalProperties:
       envKey: DB_TYPE
       labelZh: 数据库 类型
       labelEn: Database Type
+      label:
+        en: Database Type
+        zh: 数据库 类型
       required: true
       type: select
       values:
@@ -80,6 +104,9 @@ additionalProperties:
       envKey: DB_HOST
       labelZh: 数据库 主机地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
       required: true
       type: text
     - default: 5432
@@ -87,6 +114,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -95,6 +125,9 @@ additionalProperties:
       envKey: DB_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       rule: paramCommon
       type: text
@@ -103,6 +136,9 @@ additionalProperties:
       envKey: DB_USERNAME
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -110,6 +146,9 @@ additionalProperties:
       envKey: DB_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       random: true
       required: true
       rule: paramComplexity
@@ -119,5 +158,8 @@ additionalProperties:
       envKey: PUBLIC_URL
       labelZh: 公网域名
       labelEn: Public URL
+      label:
+        en: Public URL
+        zh: 公网域名
       required: true
       type: text

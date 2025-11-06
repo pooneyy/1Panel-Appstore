@@ -5,6 +5,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_SMTP
       labelZh: SMTP 端口
       labelEn: SMTP port
+      label:
+        en: SMTP port
+        zh: SMTP 端口
       required: true
       rule: paramPort
       type: number
@@ -13,6 +16,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_IMAP
       labelZh: IMAP 端口
       labelEn: IMAP port
+      label:
+        en: IMAP port
+        zh: IMAP 端口
       required: true
       rule: paramPort
       type: number
@@ -21,5 +27,8 @@ additionalProperties:
       envKey: PROXY_URL
       labelZh: 服务地址
       labelEn: Server Address
+      label:
+        en: Server Address
+        zh: 服务地址
       required: true
       type: text

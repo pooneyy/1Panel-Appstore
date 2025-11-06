@@ -5,12 +5,18 @@ additionalProperties:
       envKey: PERCONA_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 3306
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 连接端口
       labelEn: Connection Port
+      label:
+        en: Connection Port
+        zh: 连接端口
       required: true
       rule: paramPort
       type: number
@@ -18,6 +24,9 @@ additionalProperties:
       envKey: MYSQL_ROOT_PASSWORD
       labelZh: 管理员密码
       labelEn: Admin Password
+      label:
+        en: Admin Password
+        zh: 管理员密码
       random: true
       required: true
       rule: paramComplexity

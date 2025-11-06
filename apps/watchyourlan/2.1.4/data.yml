@@ -5,6 +5,9 @@ additionalProperties:
       envKey: WATCHYOURLAN_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8840
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 访问端口
       labelEn: Port
+      label:
+        en: Port
+        zh: 访问端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: THEME
       labelZh: 主题
       labelEn: Theme
+      label:
+        en: Theme
+        zh: 主题
       required: true
       type: select
       values:
@@ -40,6 +49,9 @@ additionalProperties:
       envKey: COLOR
       labelZh: 颜色
       labelEn: Color
+      label:
+        en: Color
+        zh: 颜色
       required: true
       type: select
       values:
@@ -52,6 +64,9 @@ additionalProperties:
       envKey: SHOUTRRR_URL
       labelZh: 通知地址
       labelEn: Notification URL
+      label:
+        en: Notification URL
+        zh: 通知地址
       required: false
       type: text
     - default: "enp2s0"
@@ -59,6 +74,9 @@ additionalProperties:
       envKey: IFACES
       labelZh: 监听网卡 (多个用逗号分隔)
       labelEn: Listening network card (separated by commas)
+      label:
+        en: Listening network card (separated by commas)
+        zh: 监听网卡 (多个用逗号分隔)
       required: true
       type: text
     - default: 120
@@ -66,6 +84,9 @@ additionalProperties:
       envKey: TIMEOUT
       labelZh: 超时时间 (秒)
       labelEn: Timeout (seconds)
+      label:
+        en: Timeout (seconds)
+        zh: 超时时间 (秒)
       required: true
       type: number
     - default: 48
@@ -73,6 +94,9 @@ additionalProperties:
       envKey: TRIM_HIST
       labelZh: 历史记录保留失效 (小时)
       labelEn: Historical record retention invalid (hours)
+      label:
+        en: Historical record retention invalid (hours)
+        zh: 历史记录保留失效 (小时)
       required: true
       type: number
     - default: "false"
@@ -80,6 +104,9 @@ additionalProperties:
       envKey: HIST_IN_DB
       labelZh: 历史记录存储方式
       labelEn: Historical record storage method
+      label:
+        en: Historical record storage method
+        zh: 历史记录存储方式
       required: true
       type: select
       values:
@@ -92,6 +119,9 @@ additionalProperties:
       envKey: USE_DB
       labelZh: 数据存储方式
       labelEn: Data storage method
+      label:
+        en: Data storage method
+        zh: 数据存储方式
       required: true
       type: select
       values:
@@ -104,5 +134,8 @@ additionalProperties:
       envKey: PG_CONNECT
       labelZh: PostgreSQL 连接地址
       labelEn: PostgreSQL connection address
+      label:
+        en: PostgreSQL connection address
+        zh: PostgreSQL 连接地址
       required: false
       type: text

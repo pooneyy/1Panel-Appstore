@@ -10,6 +10,9 @@ additionalProperties:
       default: mysql
       labelEn: Database Service
       labelZh: 数据库服务
+      label:
+        en: Database Service
+        zh: 数据库服务
       params:
         - envKey: YOURLS_DB_PORT
           key: mysql
@@ -28,6 +31,9 @@ additionalProperties:
       envKey: PANEL_DB_NAME
       labelEn: Database
       labelZh: 数据库名
+      label:
+        en: Database
+        zh: 数据库名
       random: true
       required: true
       rule: paramCommon
@@ -36,6 +42,9 @@ additionalProperties:
       envKey: PANEL_DB_USER
       labelEn: User
       labelZh: 数据库用户
+      label:
+        en: User
+        zh: 数据库用户
       random: true
       required: true
       rule: paramCommon
@@ -44,6 +53,9 @@ additionalProperties:
       envKey: PANEL_DB_USER_PASSWORD
       labelEn: Password
       labelZh: 数据库用户密码
+      label:
+        en: Password
+        zh: 数据库用户密码
       random: true
       required: true
       rule: paramComplexity
@@ -52,6 +64,9 @@ additionalProperties:
       envKey: PANEL_DB_PREFIX
       labelEn: Database prefix
       labelZh: 数据库前缀
+      label:
+        en: Database prefix
+        zh: 数据库前缀
       required: true
       type: text
     - default: 40037
@@ -59,6 +74,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: 端口
+      label:
+        en: Port
+        zh: 端口
       required: true
       rule: paramPort
       type: number
@@ -67,12 +85,18 @@ additionalProperties:
       envKey: DATA_PATH
       labelEn: Data folder path
       labelZh: 数据文件夹路径
+      label:
+        en: Data folder path
+        zh: 数据文件夹路径
       required: true
       type: text
     - default: yourls
       envKey: USERNAME
       labelEn: User
       labelZh: 用户
+      label:
+        en: User
+        zh: 用户
       random: true
       required: true
       rule: paramCommon
@@ -81,6 +105,9 @@ additionalProperties:
       envKey: PASSWORD
       labelEn: Password
       labelZh: 用户密码
+      label:
+        en: Password
+        zh: 用户密码
       random: true
       required: true
       rule: paramComplexity
@@ -90,5 +117,8 @@ additionalProperties:
       envKey: YOURLS_EXTERNAL_URL
       labelEn: External URL
       labelZh: 外部访问地址
+      label:
+        en: External URL
+        zh: 外部访问地址
       required: true
       type: text

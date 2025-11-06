@@ -10,6 +10,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelZh: MySQL 服务 (前置检查)
       labelEn: Database Service (Pre-check)
+      label:
+        en: Database Service (Pre-check)
+        zh: MySQL 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -28,6 +31,9 @@ additionalProperties:
       envKey: PANEL_REDIS_TYPE
       labelZh: Redis 服务 (前置检查)
       labelEn: Redis Service (Pre-check)
+      label:
+        en: Redis Service (Pre-check)
+        zh: Redis 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -38,12 +44,18 @@ additionalProperties:
       envKey: TOPIAM_CE_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 1898
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -52,6 +64,9 @@ additionalProperties:
       envKey: DB_HOST
       labelZh: 数据库 主机
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机
       required: true
       type: text
     - default: 3306
@@ -59,6 +74,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -67,6 +85,9 @@ additionalProperties:
       envKey: DB_USER
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -74,6 +95,9 @@ additionalProperties:
       envKey: DB_USER_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       required: true
       type: password
     - default: "topiam"
@@ -81,6 +105,9 @@ additionalProperties:
       envKey: DB_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text
     - default: "127.0.0.1"
@@ -88,6 +115,9 @@ additionalProperties:
       envKey: REDIS_HOSTNAME
       labelZh: Redis 主机
       labelEn: Redis Host
+      label:
+        en: Redis Host
+        zh: Redis 主机
       required: true
       type: text
     - default: 6379
@@ -95,6 +125,9 @@ additionalProperties:
       envKey: REDIS_PORT
       labelZh: Redis 端口
       labelEn: Redis Port
+      label:
+        en: Redis Port
+        zh: Redis 端口
       required: true
       rule: paramPort
       type: number
@@ -103,6 +136,9 @@ additionalProperties:
       envKey: REDIS_DBINDEX
       labelZh: Redis 索引
       labelEn: Redis Index
+      label:
+        en: Redis Index
+        zh: Redis 索引
       required: true
       type: number
     - default: ""
@@ -110,5 +146,8 @@ additionalProperties:
       envKey: REDIS_PASSWORD
       labelZh: Redis 密码
       labelEn: Redis Password
+      label:
+        en: Redis Password
+        zh: Redis 密码
       required: false
       type: password

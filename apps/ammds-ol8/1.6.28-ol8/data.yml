@@ -5,6 +5,9 @@ additionalProperties:
       envKey: AMMDS_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 8080
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_API
       labelZh: API 端口
       labelEn: API port
+      label:
+        en: API port
+        zh: API 端口
       required: true
       rule: paramPort
       type: number
@@ -28,6 +37,9 @@ additionalProperties:
       envKey: AMMDS_METATUBE_URL
       labelZh: MetaTube URL
       labelEn: MetaTube URL
+      label:
+        en: MetaTube URL
+        zh: MetaTube URL
       required: false
       type: text
     - default: ""
@@ -35,6 +47,9 @@ additionalProperties:
       envKey: AMMDS_METATUBE_TOKEN
       labelZh: MetaTube 密钥
       labelEn: MetaTube token
+      label:
+        en: MetaTube token
+        zh: MetaTube 密钥
       required: false
       type: text
     - default: ""
@@ -42,6 +57,9 @@ additionalProperties:
       envKey: AMMDS_PROWLARR_URL
       labelZh: Prowlarr URL
       labelEn: Prowlarr URL
+      label:
+        en: Prowlarr URL
+        zh: Prowlarr URL
       required: false
       type: text
     - default: ""
@@ -49,6 +67,9 @@ additionalProperties:
       envKey: AMMDS_PROWLARR_TOKEN
       labelZh: Prowlarr 密钥
       labelEn: Prowlarr token
+      label:
+        en: Prowlarr token
+        zh: Prowlarr 密钥
       required: false
       type: text
     - default: ""
@@ -56,6 +77,9 @@ additionalProperties:
       envKey: AMMDS_IYUU_TOKEN
       labelZh: IYUU 密钥
       labelEn: IYUU token
+      label:
+        en: IYUU token
+        zh: IYUU 密钥
       required: false
       type: text
     - default: ""
@@ -63,6 +87,9 @@ additionalProperties:
       envKey: AMMDS_QBITTORRENT_URL
       labelZh: qBittorrent URL
       labelEn: qBittorrent URL
+      label:
+        en: qBittorrent URL
+        zh: qBittorrent URL
       required: false
       type: text
     - default: ""
@@ -70,6 +97,9 @@ additionalProperties:
       envKey: AMMDS_QBITTORRENT_USERNAME
       labelZh: qBittorrent 用户名
       labelEn: qBittorrent Username
+      label:
+        en: qBittorrent Username
+        zh: qBittorrent 用户名
       required: false
       type: text
     - default: ""
@@ -77,6 +107,9 @@ additionalProperties:
       envKey: AMMDS_QBITTORRENT_PASSWORD
       labelZh: qBittorrent 密码
       labelEn: qBittorrent Password
+      label:
+        en: qBittorrent Password
+        zh: qBittorrent 密码
       required: false
       type: text
     - default: ""
@@ -84,6 +117,9 @@ additionalProperties:
       envKey: CUSTOM_MOUNT_DIRECTORY_1
       labelEn: Custom mount directory 1
       labelZh: 自定义挂载目录 1
+      label:
+        en: Custom mount directory 1
+        zh: 自定义挂载目录 1
       required: false
       type: text
     - default: ""
@@ -91,6 +127,9 @@ additionalProperties:
       envKey: CUSTOM_MOUNT_DIRECTORY_2
       labelEn: Custom mount directory 2
       labelZh: 自定义挂载目录 2
+      label:
+        en: Custom mount directory 2
+        zh: 自定义挂载目录 2
       required: false
       type: text
     - default: ""
@@ -98,5 +137,8 @@ additionalProperties:
       envKey: CUSTOM_MOUNT_DIRECTORY_3
       labelEn: Custom mount directory 3
       labelZh: 自定义挂载目录 3
+      label:
+        en: Custom mount directory 3
+        zh: 自定义挂载目录 3
       required: false
       type: text

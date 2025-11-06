@@ -5,5 +5,8 @@ additionalProperties:
       envKey: COMMAND_LINE
       labelEn: Command parameters (Determined by the control node)
       labelZh: 命令参数 (由控制节点决定，注意修改具体)
+      label:
+        en: Command parameters (Determined by the control node)
+        zh: 命令参数 (由控制节点决定，注意修改具体)
       required: true
       type: text

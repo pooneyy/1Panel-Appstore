@@ -5,6 +5,9 @@ additionalProperties:
       envKey: NPS_SERVER_ADDR
       labelEn: NPS server address
       labelZh: NPS 服务端地址
+      label:
+        en: NPS server address
+        zh: NPS 服务端地址
       required: true
       type: text
     - default: "xly7traGe3r0t6UWltristuh1"
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: NPS_VKEY
       labelEn: Client connection key displayed by the server
       labelZh: 服务端显示的客户端连接密钥
+      label:
+        en: Client connection key displayed by the server
+        zh: 服务端显示的客户端连接密钥
       required: true
       rule: paramCommon
       type: text

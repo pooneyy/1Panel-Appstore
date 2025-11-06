@@ -5,6 +5,9 @@ additionalProperties:
       envKey: QINGLONG_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 5700
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI Port
+      label:
+        en: WebUI Port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -20,5 +26,8 @@ additionalProperties:
       envKey: QINGLONG_BASE_URL
       labelZh: 部署路径
       labelEn: Deployment path
+      label:
+        en: Deployment path
+        zh: 部署路径
       required: false
       type: text

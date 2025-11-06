@@ -9,6 +9,9 @@ additionalProperties:
       envKey: PANEL_REDIS_TYPE
       labelZh: Redis 服务 (前置检查)
       labelEn: Redis Service (Pre-check)
+      label:
+        en: Redis Service (Pre-check)
+        zh: Redis 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -19,6 +22,9 @@ additionalProperties:
       envKey: IMMICH_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 2283
@@ -26,6 +32,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -34,6 +43,9 @@ additionalProperties:
       envKey: DB_PASSWORD
       labelEn: Database Password
       labelZh: 数据库连接密码
+      label:
+        en: Database Password
+        zh: 数据库连接密码
       random: true
       required: true
       rule: paramComplexity
@@ -43,6 +55,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_DB
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -51,6 +66,9 @@ additionalProperties:
       envKey: DB_HOSTNAME
       labelZh: 数据库 主机地址
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
       required: true
       type: text
     - default: "postgres"
@@ -58,6 +76,9 @@ additionalProperties:
       envKey: DB_USERNAME
       labelZh: 数据库 用户名
       labelEn: Database User
+      label:
+        en: Database User
+        zh: 数据库 用户名
       required: true
       type: text
     - default: "immich"
@@ -65,6 +86,9 @@ additionalProperties:
       envKey: DB_DATABASE_NAME
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text
     - default: "127.0.0.1"
@@ -72,6 +96,9 @@ additionalProperties:
       envKey: REDIS_HOSTNAME
       labelZh: Redis 主机
       labelEn: Redis Host
+      label:
+        en: Redis Host
+        zh: Redis 主机
       required: true
       type: text
     - default: 6379
@@ -79,6 +106,9 @@ additionalProperties:
       envKey: REDIS_PORT
       labelZh: Redis 端口
       labelEn: Redis Port
+      label:
+        en: Redis Port
+        zh: Redis 端口
       required: true
       rule: paramPort
       type: number
@@ -87,6 +117,9 @@ additionalProperties:
       envKey: REDIS_DBINDEX
       labelZh: Redis 索引
       labelEn: Redis Index
+      label:
+        en: Redis Index
+        zh: Redis 索引
       required: true
       type: number
     - default: ""
@@ -94,6 +127,9 @@ additionalProperties:
       envKey: REDIS_USERNAME
       labelZh: Redis 用户名
       labelEn: Redis Username
+      label:
+        en: Redis Username
+        zh: Redis 用户名
       required: false
       type: text
     - default: ""
@@ -101,6 +137,9 @@ additionalProperties:
       envKey: REDIS_PASSWORD
       labelZh: Redis 密码
       labelEn: Redis Password
+      label:
+        en: Redis Password
+        zh: Redis 密码
       required: false
       type: password
     - default: "false"
@@ -108,6 +147,9 @@ additionalProperties:
       envKey: IMMICH_IGNORE_MOUNT_CHECK_ERRORS
       labelZh: 是否跳过目录检查
       labelEn: Skip Mount Check
+      label:
+        en: Skip Mount Check
+        zh: 是否跳过目录检查
       required: false
       type: select
       values:

@@ -5,6 +5,9 @@ additionalProperties:
       envKey: STREAM_REC_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 12555
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: API 端口
       labelEn: API port
+      label:
+        en: API port
+        zh: API 端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: LOGIN_SECRET
       labelZh: 登录密码 (初始化)
       labelEn: Login Password (Initialization)
+      label:
+        en: Login Password (Initialization)
+        zh: 登录密码 (初始化)
       required: true
       random: true
       type: text
@@ -28,5 +37,8 @@ additionalProperties:
       envKey: HTTP_PROXY
       labelZh: 网络代理
       labelEn: Network Proxy
+      label:
+        en: Network Proxy
+        zh: 网络代理
       required: false
       type: text

@@ -10,6 +10,9 @@ additionalProperties:
       envKey: PANEL_DB_TYPE
       labelZh: MySQL 服务 (前置检查)
       labelEn: Database Service (Pre-check)
+      label:
+        en: Database Service (Pre-check)
+        zh: MySQL 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -28,6 +31,9 @@ additionalProperties:
       envKey: PANEL_REDIS_TYPE
       labelZh: Redis 服务 (前置检查)
       labelEn: Redis Service (Pre-check)
+      label:
+        en: Redis Service (Pre-check)
+        zh: Redis 服务 (前置检查)
       required: true
       type: apps
       values:
@@ -38,6 +44,9 @@ additionalProperties:
       envKey: WECHATPADPRO_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
       required: true
       type: text
     - default: 1238
@@ -45,6 +54,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
       labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
@@ -53,6 +65,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_WECHAT
       labelZh: 微信 API 端口
       labelEn: WeChat API port
+      label:
+        en: WeChat API port
+        zh: 微信 API 端口
       required: true
       rule: paramPort
       type: number
@@ -61,6 +76,9 @@ additionalProperties:
       envKey: DB_HOST
       labelZh: 数据库 主机
       labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机
       required: true
       type: text
     - default: 3306
@@ -68,6 +86,9 @@ additionalProperties:
       envKey: DB_PORT
       labelZh: 数据库 端口
       labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
       required: true
       rule: paramPort
       type: number
@@ -76,6 +97,9 @@ additionalProperties:
       envKey: DB_DATABASE
       labelZh: 数据库 名称
       labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
       required: true
       type: text
     - default: "wechatpadpro"
@@ -83,6 +107,9 @@ additionalProperties:
       envKey: DB_USERNAME
       labelZh: 数据库 用户名
       labelEn: Database Username
+      label:
+        en: Database Username
+        zh: 数据库 用户名
       required: true
       type: text
     - default: ""
@@ -90,6 +117,9 @@ additionalProperties:
       envKey: DB_PASSWORD
       labelZh: 数据库 密码
       labelEn: Database Password
+      label:
+        en: Database Password
+        zh: 数据库 密码
       required: true
       type: password
     - default: "127.0.0.1"
@@ -97,6 +127,9 @@ additionalProperties:
       envKey: REDIS_HOST
       labelZh: Redis 主机
       labelEn: Redis Host
+      label:
+        en: Redis Host
+        zh: Redis 主机
       required: true
       type: text
     - default: 6379
@@ -104,6 +137,9 @@ additionalProperties:
       envKey: REDIS_PORT
       labelZh: Redis 端口
       labelEn: Redis Port
+      label:
+        en: Redis Port
+        zh: Redis 端口
       required: true
       rule: paramPort
       type: number
@@ -112,6 +148,9 @@ additionalProperties:
       envKey: REDIS_DB
       labelZh: Redis 索引 (0-20)
       labelEn: Redis Index (0-20)
+      label:
+        en: Redis Index (0-20)
+        zh: Redis 索引 (0-20)
       required: true
       type: number
     - default: ""
@@ -119,6 +158,9 @@ additionalProperties:
       envKey: REDIS_PASSWORD
       labelZh: Redis 密码
       labelEn: Redis Password
+      label:
+        en: Redis Password
+        zh: Redis 密码
       required: false
       type: password
     - default: ""
@@ -126,6 +168,9 @@ additionalProperties:
       envKey: ADMIN_KEY
       labelZh: 管理员密钥
       labelEn: Admin Key
+      label:
+        en: Admin Key
+        zh: 管理员密钥
       required: true
       type: text
     - default: ""
@@ -133,6 +178,9 @@ additionalProperties:
       envKey: GH_WXID
       labelZh: 推广公众号微信ID
       labelEn: Promotion WeChat ID
+      label:
+        en: Promotion WeChat ID
+        zh: 推广公众号微信ID
       required: false
       type: text
     - default: ""
@@ -140,5 +188,8 @@ additionalProperties:
       envKey: API_VERSION
       labelZh: API 版本前缀
       labelEn: API Version Prefix
+      label:
+        en: API Version Prefix
+        zh: API 版本前缀
       required: false
       type: text

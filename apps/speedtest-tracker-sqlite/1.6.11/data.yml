@@ -5,6 +5,9 @@ additionalProperties:
       envKey: SPEEDTEST_TRACKER_ROOT_PATH
       labelEn: Data persistence root path
       labelZh: 数据持久化 根路径
+      label:
+        en: Data persistence root path
+        zh: 数据持久化 根路径
       required: true
       type: text
     - default: 8080
@@ -12,6 +15,9 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Server port
       labelZh: Web 服务端口
+      label:
+        en: Server port
+        zh: Web 服务端口
       required: true
       rule: paramPort
       type: number
@@ -20,6 +26,9 @@ additionalProperties:
       envKey: APP_KEY
       labelZh: 应用密钥
       labelEn: App key
+      label:
+        en: App key
+        zh: 应用密钥
       required: true
       type: text
     - default: "SpeedTest Tracker"
@@ -27,6 +36,9 @@ additionalProperties:
       envKey: APP_NAME
       labelZh: 应用名称
       labelEn: App Name
+      label:
+        en: App Name
+        zh: 应用名称
       required: true
       type: text
     - default: "http://127.0.0.1:8080"
@@ -34,6 +46,9 @@ additionalProperties:
       envKey: APP_URL
       labelZh: 应用访问地址
       labelEn: App URL
+      label:
+        en: App URL
+        zh: 应用访问地址
       required: true
       type: text
     - default: 0
@@ -41,6 +56,9 @@ additionalProperties:
       envKey: PRUNE_RESULTS_OLDER_THAN
       labelZh: 测试结果保留天数
       labelEn: Prune results older than
+      label:
+        en: Prune results older than
+        zh: 测试结果保留天数
       required: true
       type: text
     - default: "0 */6 * * *"
@@ -48,6 +66,9 @@ additionalProperties:
       envKey: SPEEDTEST_SCHEDULE
       labelZh: 测试计划任务
       labelEn: Speedtest schedule
+      label:
+        en: Speedtest schedule
+        zh: 测试计划任务
       required: false
       type: text
     - default: ""
@@ -55,6 +76,9 @@ additionalProperties:
       envKey: SPEEDTEST_SERVERS
       labelZh: 指定测试服务器
       labelEn: Specify servers
+      label:
+        en: Specify servers
+        zh: 指定测试服务器
       required: false
       type: text
     - default: "smtp"
@@ -62,6 +86,9 @@ additionalProperties:
       envKey: MAIL_MAILER
       labelZh: 邮件 协议
       labelEn: Mail mailer
+      label:
+        en: Mail mailer
+        zh: 邮件 协议
       required: true
       type: text
     - default: "smtp.gmail.com"
@@ -69,6 +96,9 @@ additionalProperties:
       envKey: MAIL_HOST
       labelZh: 邮件 主机地址
       labelEn: Mail host
+      label:
+        en: Mail host
+        zh: 邮件 主机地址
       required: true
       type: text
     - default: 465
@@ -76,6 +106,9 @@ additionalProperties:
       envKey: MAIL_PORT
       labelZh: 邮件 主机端口
       labelEn: Mail port
+      label:
+        en: Mail port
+        zh: 邮件 主机端口
       required: true
       type: number
     - default: ""
@@ -83,6 +116,9 @@ additionalProperties:
       envKey: MAIL_USERNAME
       labelZh: 邮件 鉴权用户名
       labelEn: Mail username
+      label:
+        en: Mail username
+        zh: 邮件 鉴权用户名
       required: false
       type: text
     - default: ""
@@ -90,6 +126,9 @@ additionalProperties:
       envKey: MAIL_PASSWORD
       labelZh: 邮件 鉴权密码
       labelEn: Mail password
+      label:
+        en: Mail password
+        zh: 邮件 鉴权密码
       required: false
       type: text
     - default: ""
@@ -97,6 +136,9 @@ additionalProperties:
       envKey: MAIL_FROM_ADDRESS
       labelZh: 邮件 发件地址
       labelEn: Mail from address
+      label:
+        en: Mail from address
+        zh: 邮件 发件地址
       required: false
       type: text
     - default: "Speedtest Tracker"
@@ -104,6 +146,9 @@ additionalProperties:
       envKey: MAIL_FROM_NAME
       labelZh: 邮件 发件名称
       labelEn: Mail from name
+      label:
+        en: Mail from name
+        zh: 邮件 发件名称
       required: true
       type: text
     - default: "tls"
@@ -111,6 +156,9 @@ additionalProperties:
       envKey: MAIL_ENCRYPTION
       labelZh: 邮件 加密方式
       labelEn: Mail encryption
+      label:
+        en: Mail encryption
+        zh: 邮件 加密方式
       required: true
       type: text
     - default: ""
@@ -118,6 +166,9 @@ additionalProperties:
       envKey: TELEGRAM_BOT_TOKEN
       labelZh: Telegram 机器人令牌
       labelEn: Telegram bot token
+      label:
+        en: Telegram bot token
+        zh: Telegram 机器人令牌
       required: false
       type: text
     - default: "file"
@@ -125,6 +176,9 @@ additionalProperties:
       envKey: CACHE_DRIVER
       labelZh: 缓存 驱动
       labelEn: Cache driver
+      label:
+        en: Cache driver
+        zh: 缓存 驱动
       required: true
       type: select
       values:
