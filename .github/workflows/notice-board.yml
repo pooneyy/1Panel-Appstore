@@ -1,0 +1,50 @@
+name: Update Notice Board
+
+on:
+  push:
+    branches:
+      - config
+    paths:
+      - .github/notice-board.yml
+
+jobs:
+  update-notice-board:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref }}
+
+      - name: Configure SSH
+        uses: photostructure/git-ssh-signing-action@v1
+        with:
+          ssh-signing-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          git-user-name: ${{ github.actor }}
+          git-user-email: ${{ secrets.EMAIL }}
+
+      - uses: actions/setup-python@main
+        with:
+          python-version: 3.x
+          pip-install: PyYAML requests
+
+      - name: Run script
+        run: |
+          filename="update_notice_board.py"
+          raw_url=$(curl -s https://api.github.com/gists/${{ secrets.GIST_ID }} | jq -r .files.\"$filename\".raw_url)
+          curl -o /tmp/$filename -s $raw_url
+          python3 /tmp/$filename README.md
+          python3 /tmp/$filename README-en.md
+
+      - name: Create Commit and Push
+        run: |
+          git add README.md README-en.md
+          if git diff --cached --quiet; then
+            echo "没有文件变更，跳过提交"
+          else
+            git commit --quiet "📝 docs(readme): update notice board"
+          fi
+          git push
