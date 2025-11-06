@@ -10,6 +10,9 @@ additionalProperties:
     - CI/CD
   shortDescZh: 具有极强可扩展性的简单 CI 引擎
   shortDescEn: A simple CI engine with great extensibility
+  description:
+    en: A simple CI engine with great extensibility
+    zh: 具有极强可扩展性的简单 CI 引擎
   type: tool
   crossVersionUpdate: true
   limit: 1

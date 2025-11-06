@@ -10,6 +10,9 @@ additionalProperties:
     - Game
   shortDescZh: 支持大部分游戏服务端和控制台程序的管理面板(前端)
   shortDescEn: Distributed, Docker-supported, Multilingual, and Lightweight control panel for Minecraft server and more (webui)
+  description:
+    en: Distributed, Docker-supported, Multilingual, and Lightweight control panel for Minecraft server and more (webui)
+    zh: 支持大部分游戏服务端和控制台程序的管理面板(前端)
   type: tool
   crossVersionUpdate: true
   limit: 0

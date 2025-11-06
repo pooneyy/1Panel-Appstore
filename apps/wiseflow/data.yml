@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: wiseflow
   name: Wiseflow
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: Wiseflow 首席情报官
   shortDescEn: Wiseflow Chief Intelligence Officer
+  description:
+    en: Wiseflow Chief Intelligence Officer
+    zh: Wiseflow 首席情报官
   type: website
   crossVersionUpdate: true
   limit: 0

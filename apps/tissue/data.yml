@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 老师教材刮削工具，提供海报下载、元数据匹配等功能
   shortDescEn: A scraping tool for teachers' teaching materials, providing functions such as poster download and metadata matching
+  description:
+    en: A scraping tool for teachers' teaching materials, providing functions such as poster download and metadata matching
+    zh: 老师教材刮削工具，提供海报下载、元数据匹配等功能
   type: website
   crossVersionUpdate: true
   limit: 0

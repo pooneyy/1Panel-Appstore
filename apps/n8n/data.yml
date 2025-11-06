@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 为技术团队提供安全的工作流自动化
   shortDescEn: Secure Workflow Automation for Technical Teams
+  description:
+    en: Secure Workflow Automation for Technical Teams
+    zh: 为技术团队提供安全的工作流自动化
   type: website
   crossVersionUpdate: true
   limit: 0

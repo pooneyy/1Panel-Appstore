@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: casdoor
   name: Casdoor
   tags:
@@ -8,6 +8,9 @@
     - Local
   shortDescZh: 身份和访问管理(IAM)/单点登录(SSO)平台
   shortDescEn: Identity and Access Management (IAM)/Single Sign-On (SSO) platform
+  description:
+    en: Identity and Access Management (IAM)/Single Sign-On (SSO) platform
+    zh: 身份和访问管理(IAM)/单点登录(SSO)平台
   type: website
   crossVersionUpdate: true
   limit: 0

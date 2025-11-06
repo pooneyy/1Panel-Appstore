@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个和自架服务器同步 Cookie 的小工具（服务器端）
   shortDescEn: A small tool for syncing cookies with your self-hosted server (server-side)
+  description:
+    en: A small tool for syncing cookies with your self-hosted server (server-side)
+    zh: 一个和自架服务器同步 Cookie 的小工具（服务器端）
   type: tool
   crossVersionUpdate: true
   limit: 0

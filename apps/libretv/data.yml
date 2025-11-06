@@ -6,8 +6,11 @@ additionalProperties:
   limit: 0
   name: LibreTV
   shortDescEn: mPure Go open-source one-stop streaming media server development framework
+  description:
+    en: mPure Go open-source one-stop streaming media server development framework
+    zh: 轻量级、免费的在线视频搜索与观看平台
   shortDescZh: 轻量级、免费的在线视频搜索与观看平台
   tags:
-  - Tool
+    - Tool
   type: website
   website: https://libretv.is-an.org/

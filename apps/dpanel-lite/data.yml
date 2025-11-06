@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: dpanel-lite
   name: DPanel Lite
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: Docker可视化管理面板
   shortDescEn: Docker visual management panel
+  description:
+    en: Docker visual management panel
+    zh: Docker可视化管理面板
   type: website
   crossVersionUpdate: true
   limit: 0

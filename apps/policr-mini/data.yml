@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 专注于验证的 Telegram 机器人
   shortDescEn: A Telegram bot focused on verification
+  description:
+    en: A Telegram bot focused on verification
+    zh: 专注于验证的 Telegram 机器人
   type: website
   crossVersionUpdate: true
   limit: 0

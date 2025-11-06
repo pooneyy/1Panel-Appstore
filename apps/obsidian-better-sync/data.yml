@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Obsidian 在线同步插件
   shortDescEn: Obsidian BetterSync
+  description:
+    en: Obsidian BetterSync
+    zh: Obsidian 在线同步插件
   type: website
   crossVersionUpdate: true
   limit: 0

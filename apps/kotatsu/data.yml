@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 口袋里的漫画
   shortDescEn: Manga in your pocket
+  description:
+    en: Manga in your pocket
+    zh: 口袋里的漫画
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款以智能表格为基础的新型数字化平台
   shortDescEn: A spreadsheet/database like Airtable
+  description:
+    en: A spreadsheet/database like Airtable
+    zh: 一款以智能表格为基础的新型数字化平台
   type: tool
   crossVersionUpdate: true
   limit: 1

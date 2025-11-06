@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 适用于 PT 玩家的追剧刷流一体化综合管理工具
   shortDescEn: An all-in-one comprehensive management tool for PT players
+  description:
+    en: An all-in-one comprehensive management tool for PT players
+    zh: 适用于 PT 玩家的追剧刷流一体化综合管理工具
   type: tool
   crossVersionUpdate: true
   limit: 0

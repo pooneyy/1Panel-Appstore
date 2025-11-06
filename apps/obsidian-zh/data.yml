@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个使用Markdown语法的闭源笔记软件
   shortDescEn: A private and flexible writing app
+  description:
+    en: A private and flexible writing app
+    zh: 一个使用Markdown语法的闭源笔记软件
   type: tool
   crossVersionUpdate: true
   limit: 0

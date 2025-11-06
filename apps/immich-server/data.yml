@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: immich-server
   name: Immich 服务端
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 高性能自托管照片和视频备份解决方案
   shortDescEn: High performance self-hosted photo and video backup solution
+  description:
+    en: High performance self-hosted photo and video backup solution
+    zh: 高性能自托管照片和视频备份解决方案
   type: website
   crossVersionUpdate: true
   limit: 0

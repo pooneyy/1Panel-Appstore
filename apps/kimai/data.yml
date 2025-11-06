@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: kimai
   name: Kimai
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 基于网络的多用户时间追踪应用
   shortDescEn: Web-based multi-user time tracking application
+  description:
+    en: Web-based multi-user time tracking application
+    zh: 基于网络的多用户时间追踪应用
   type: website
   crossVersionUpdate: true
   limit: 0

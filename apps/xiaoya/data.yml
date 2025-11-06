@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 基于 Alist 的网盘聚合站
   shortDescEn: Alist-based cloud disk aggregation station
+  description:
+    en: Alist-based cloud disk aggregation station
+    zh: 基于 Alist 的网盘聚合站
   type: tool
   crossVersionUpdate: true
   limit: 0

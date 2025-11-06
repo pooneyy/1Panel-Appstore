@@ -12,6 +12,9 @@ additionalProperties:
     - Security
   shortDescZh: 开源多协议 VPN 软件
   shortDescEn: Open-source multi-protocol VPN software
+  description:
+    en: Open-source multi-protocol VPN software
+    zh: 开源多协议 VPN 软件
   type: tool
   crossVersionUpdate: true
   limit: 0

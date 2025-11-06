@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: stream-rec-backend
   name: Stream Rec 后端服务
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 自动流媒体录制工具
   shortDescEn: Automatic streaming media recording tool
+  description:
+    en: Automatic streaming media recording tool
+    zh: 自动流媒体录制工具
   type: tool
   crossVersionUpdate: true
   limit: 0

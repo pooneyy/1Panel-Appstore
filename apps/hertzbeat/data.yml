@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个易用友好的开源实时监控告警系统
   shortDescEn: An open source, real-time monitoring system with custom-monitoring
+  description:
+    en: An open source, real-time monitoring system with custom-monitoring
+    zh: 一个易用友好的开源实时监控告警系统
   type: tool
   crossVersionUpdate: true
   limit: 0

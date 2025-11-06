@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Go 语言开发的端口转发工具
   shortDescEn: Port forwarding tool developed in Go (Server)
+  description:
+    en: Port forwarding tool developed in Go (Server)
+    zh: Go 语言开发的端口转发工具
   type: tool
   crossVersionUpdate: true
   limit: 1

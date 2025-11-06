@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 解锁网易云音乐客户端变灰歌曲
   shortDescEn: Revive unavailable songs for Netease Cloud Music
+  description:
+    en: Revive unavailable songs for Netease Cloud Music
+    zh: 解锁网易云音乐客户端变灰歌曲
   type: tool
   crossVersionUpdate: true
   limit: 0

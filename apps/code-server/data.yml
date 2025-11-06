@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: 在任何地方的任何计算机上运行 VS Code 并在浏览器中访问它
   shortDescEn: Run VS Code on any machine anywhere and access it in the browser
+  description:
+    en: Run VS Code on any machine anywhere and access it in the browser
+    zh: 在任何地方的任何计算机上运行 VS Code 并在浏览器中访问它
   type: tool
   crossVersionUpdate: true
   limit: 0

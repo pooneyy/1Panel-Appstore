@@ -1,24 +1,27 @@
 name: Glance-Agent
 tags:
+  - 实用工具
+  - 监控
+  - Dashboard
+  - Other
+title: glance-agent
+description: 为Glance Dashboard提供远程服务器监控数据采集API接口
+additionalProperties:
+  key: glance-agent
+  name: Glance-Agent
+  tags:
     - 实用工具
     - 监控
     - Dashboard
     - Other
-title: glance-agent
-description: 为Glance Dashboard提供远程服务器监控数据采集API接口
-additionalProperties:
-    key: glance-agent
-    name: Glance-Agent
-    tags:
-        - 实用工具
-        - 监控
-        - Dashboard
-        - Other
-    shortDescZh: 远程服务器监控数据采集agent
-    shortDescEn: Remote server monitoring data collection agent
-    type: tools
-    crossVersionUpdate: true
-    website: https://github.com/arch3rPro/Glance-Monitor
-    github: https://github.com/arch3rPro/Glance-Monitor
-    document: https://github.com/arch3rPro/Glance-Monitor/blob/main/server-status-agent/README.md
+  shortDescZh: 远程服务器监控数据采集agent
+  shortDescEn: Remote server monitoring data collection agent
+  description:
+    en: Remote server monitoring data collection agent
+    zh: 远程服务器监控数据采集agent
+  type: tools
+  crossVersionUpdate: true
+  website: https://github.com/arch3rPro/Glance-Monitor
+  github: https://github.com/arch3rPro/Glance-Monitor
+  document: https://github.com/arch3rPro/Glance-Monitor/blob/main/server-status-agent/README.md
 

@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 一个自托管有声读物和播客服务器
   shortDescEn: A Self-hosted audiobook and podcast server
+  description:
+    en: A Self-hosted audiobook and podcast server
+    zh: 一个自托管有声读物和播客服务器
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 网站更改检测、补货监控和通知。
   shortDescEn: Web Site Change Detection, Restock monitoring and notifications
+  description:
+    en: Web Site Change Detection, Restock monitoring and notifications
+    zh: 网站更改检测、补货监控和通知。
   type: tool
   crossVersionUpdate: true
   limit: 0

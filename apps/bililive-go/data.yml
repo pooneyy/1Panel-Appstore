@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个支持多种直播平台的直播录制工具
   shortDescEn: A live recording tool that supports multiple live streaming platforms
+  description:
+    en: A live recording tool that supports multiple live streaming platforms
+    zh: 一个支持多种直播平台的直播录制工具
   type: tool
   crossVersionUpdate: true
   limit: 0

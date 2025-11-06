@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个简单的 API，它返回一个 catfact
   shortDescEn: a simple api which returns a catfact
+  description:
+    en: a simple api which returns a catfact
+    zh: 一个简单的 API，它返回一个 catfact
   type: tool
   crossVersionUpdate: true
   limit: 0

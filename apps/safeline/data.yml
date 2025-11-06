@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款足够简单、足够好用、足够强的免费 WAF
   shortDescEn: A simple and easy to use WAF tool
+  description:
+    en: A simple and easy to use WAF tool
+    zh: 一款足够简单、足够好用、足够强的免费 WAF
   type: tool
   crossVersionUpdate: true
   limit: 1

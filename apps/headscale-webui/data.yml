@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 适用于小规模部署的简单 Headscale 网络用户界面
   shortDescEn: A simple Headscale web UI for small-scale deployments
+  description:
+    en: A simple Headscale web UI for small-scale deployments
+    zh: 适用于小规模部署的简单 Headscale 网络用户界面
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: page-spy-web
   name: PageSpy
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 开源调试平台
   shortDescEn: Open source debugging platform
+  description:
+    en: Open source debugging platform
+    zh: 开源调试平台
   type: website
   crossVersionUpdate: true
   limit: 0

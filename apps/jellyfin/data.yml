@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 多媒体应用程序软件套装
   shortDescEn: Multimedia application software suite
+  description:
+    en: Multimedia application software suite
+    zh: 多媒体应用程序软件套装
   type: tool
   crossVersionUpdate: true
   limit: 0

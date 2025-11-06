@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 一个图像托管平台
   shortDescEn: An image hosting platform
+  description:
+    en: An image hosting platform
+    zh: 一个图像托管平台
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 一个高级TODO列表应用程序，具有时间框和时间跟踪功能，该应用程序支持您的日历，JIRA，GITHUB等导入任务
   shortDescEn: An advanced TODO list application with time boxing and time tracking features that supports importing tasks from your calendar, JIRA, GITHUB, etc.
+  description:
+    en: An advanced TODO list application with time boxing and time tracking features that supports importing tasks from your calendar, JIRA, GITHUB, etc.
+    zh: 一个高级TODO列表应用程序，具有时间框和时间跟踪功能，该应用程序支持您的日历，JIRA，GITHUB等导入任务
   type: website
   crossVersionUpdate: true
   limit: 0

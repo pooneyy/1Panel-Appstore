@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 现代化的 NodePass 管理界面
   shortDescEn: NodePass Dashboard
+  description:
+    en: NodePass Dashboard
+    zh: 现代化的 NodePass 管理界面
   type: website
   crossVersionUpdate: true
   limit: 0

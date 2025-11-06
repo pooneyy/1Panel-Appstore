@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个现代的、完全静态的、快速的、安全的、完全代理的、高度可定制的应用程序仪表板
   shortDescEn: A modern, fully static, fast, secure fully proxied, highly customizable application dashboard
+  description:
+    en: A modern, fully static, fast, secure fully proxied, highly customizable application dashboard
+    zh: 一个现代的、完全静态的、快速的、安全的、完全代理的、高度可定制的应用程序仪表板
   type: tool
   crossVersionUpdate: true
   limit: 0

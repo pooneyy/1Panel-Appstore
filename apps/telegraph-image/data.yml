@@ -13,6 +13,9 @@ additionalProperties:
     - Tool
   shortDescZh: 免费图片托管解决方案，使用 Cloudflare Pages 和 Telegraph
   shortDescEn: Image Hosting solution, Using Cloudflare Pages and Telegraph.
+  description:
+    en: Image Hosting solution, Using Cloudflare Pages and Telegraph.
+    zh: 免费图片托管解决方案，使用 Cloudflare Pages 和 Telegraph
   type: website
   crossVersionUpdate: true
   limit: 0

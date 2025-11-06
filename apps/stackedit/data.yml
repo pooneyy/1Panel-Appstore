@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 浏览器里的全功能开源 Markdown 编辑器
   shortDescEn: In-browser Markdown editor
+  description:
+    en: In-browser Markdown editor
+    zh: 浏览器里的全功能开源 Markdown 编辑器
   type: tool
   crossVersionUpdate: true
   limit: 0

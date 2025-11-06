@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 图像共享平台（图床）
   shortDescEn: Image Sharing Platform
+  description:
+    en: Image Sharing Platform
+    zh: 图像共享平台（图床）
   type: tool
   crossVersionUpdate: true
   limit: 0

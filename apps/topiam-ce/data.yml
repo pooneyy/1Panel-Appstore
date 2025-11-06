@@ -7,6 +7,9 @@ additionalProperties:
     - Local
   shortDescZh: IAM/IDaaS 身份管理平台
   shortDescEn: IAM/IDaaS Identity Management Platform
+  description:
+    en: IAM/IDaaS Identity Management Platform
+    zh: IAM/IDaaS 身份管理平台
   type: website
   crossVersionUpdate: true
   limit: 0

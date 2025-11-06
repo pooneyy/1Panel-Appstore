@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: AFFiNE是一个具有完全合并文档、白板和数据库的工作空间
   shortDescEn: AFFiNE is a workspace with fully merged docs, whiteboards and databases.
+  description:
+    en: AFFiNE is a workspace with fully merged docs, whiteboards and databases.
+    zh: AFFiNE是一个具有完全合并文档、白板和数据库的工作空间
   type: website
   crossVersionUpdate: true
   limit: 0

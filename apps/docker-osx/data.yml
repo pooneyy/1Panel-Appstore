@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 在 Docker 中运行 macOS
   shortDescEn: Run macOS in Docker
+  description:
+    en: Run macOS in Docker
+    zh: 在 Docker 中运行 macOS
   type: tool
   crossVersionUpdate: true
   limit: 0

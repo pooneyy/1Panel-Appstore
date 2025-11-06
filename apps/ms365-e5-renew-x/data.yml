@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Docker 版本的 Microsoft 365 E5 调用 API 续订服务
   shortDescEn: Docker version of Microsoft 365 E5 calls API renewal service
+  description:
+    en: Docker version of Microsoft 365 E5 calls API renewal service
+    zh: Docker 版本的 Microsoft 365 E5 调用 API 续订服务
   type: tool
   crossVersionUpdate: true
   limit: 0

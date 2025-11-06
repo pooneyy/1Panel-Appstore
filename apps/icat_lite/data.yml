@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 喵空间社区程序 Lite 版
   shortDescEn: A mini bbs/forum/talk communicaty program
+  description:
+    en: A mini bbs/forum/talk communicaty program
+    zh: 喵空间社区程序 Lite 版
   type: website
   crossVersionUpdate: true
   limit: 0

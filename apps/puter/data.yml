@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 先进的开源互联网操作系统
   shortDescEn: An advanced, open-source internet operating system
+  description:
+    en: An advanced, open-source internet operating system
+    zh: 先进的开源互联网操作系统
   type: tool
   crossVersionUpdate: true
   limit: 0

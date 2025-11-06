@@ -11,6 +11,9 @@ additionalProperties:
     - Tools
   shortDescZh: 🚀 讯飞星火大模型逆向API【特长：办公助手】
   shortDescEn: A 1Panel deployment for spark-free-api
+  description:
+    en: A 1Panel deployment for spark-free-api
+    zh: 🚀 讯飞星火大模型逆向API【特长：办公助手】
   type: website
   crossVersionUpdate: true
   limit: 0

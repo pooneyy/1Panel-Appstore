@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个通过网络传递密码的开源应用程序
   shortDescEn: An opensource application to communicate passwords over the web
+  description:
+    en: An opensource application to communicate passwords over the web
+    zh: 一个通过网络传递密码的开源应用程序
   type: tool
   crossVersionUpdate: true
   limit: 0

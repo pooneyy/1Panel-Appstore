@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个更好的 IP 工具箱
   shortDescEn: A better IP Toolbox
+  description:
+    en: A better IP Toolbox
+    zh: 一个更好的 IP 工具箱
   type: tool
   crossVersionUpdate: true
   limit: 0

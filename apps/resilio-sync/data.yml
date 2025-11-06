@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 文件同步工具
   shortDescEn: File Sync Tool
+  description:
+    en: File Sync Tool
+    zh: 文件同步工具
   type: tool
   crossVersionUpdate: true
   limit: 0

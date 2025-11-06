@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 为多种 LLM 提供了一个轻快好用的 Web 图形界面和众多附加功能
   shortDescEn: Lightweight and User-friendly Web-UI for LLMs
+  description:
+    en: Lightweight and User-friendly Web-UI for LLMs
+    zh: 为多种 LLM 提供了一个轻快好用的 Web 图形界面和众多附加功能
   type: tool
   crossVersionUpdate: true
   limit: 0

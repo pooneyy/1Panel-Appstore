@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 网络唤醒工具
   shortDescEn: Wake-on-LAN tool
+  description:
+    en: Wake-on-LAN tool
+    zh: 网络唤醒工具
   type: tool
   crossVersionUpdate: true
   limit: 0

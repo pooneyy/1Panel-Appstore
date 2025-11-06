@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 现代化设计的开源 ChatGPT/LLMs 聊天应用与开发框架
   shortDescEn: An open-source, modern-design ChatGPT/LLMs UI/Framework
+  description:
+    en: An open-source, modern-design ChatGPT/LLMs UI/Framework
+    zh: 现代化设计的开源 ChatGPT/LLMs 聊天应用与开发框架
   type: tool
   crossVersionUpdate: true
   limit: 0

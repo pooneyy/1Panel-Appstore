@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款功能强大的办公软件
   shortDescEn: A free and powerful office suite
+  description:
+    en: A free and powerful office suite
+    zh: 一款功能强大的办公软件
   type: tool
   crossVersionUpdate: true
   limit: 0

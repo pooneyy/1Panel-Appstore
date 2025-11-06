@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: VPS 库存监控工具
   shortDescEn: VPS Stock Monitor Tool
+  description:
+    en: VPS Stock Monitor Tool
+    zh: VPS 库存监控工具
   type: tool
   crossVersionUpdate: true
   limit: 0

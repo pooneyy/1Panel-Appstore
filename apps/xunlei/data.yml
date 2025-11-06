@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 提取自群晖平台的迅雷下载套件
   shortDescEn: Thunder download kit extracted from Synology platform
+  description:
+    en: Thunder download kit extracted from Synology platform
+    zh: 提取自群晖平台的迅雷下载套件
   type: tool
   crossVersionUpdate: true
   limit: 0

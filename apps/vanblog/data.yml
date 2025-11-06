@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 一款简洁实用优雅的个人博客系统
   shortDescEn: A simple, practical and elegant personal blog system
+  description:
+    en: A simple, practical and elegant personal blog system
+    zh: 一款简洁实用优雅的个人博客系统
   type: website
   crossVersionUpdate: true
   limit: 0

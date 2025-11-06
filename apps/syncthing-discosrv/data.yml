@@ -5,6 +5,9 @@ additionalProperties:
     - Tool
   shortDescZh: syncthing 发现服务器
   shortDescEn: discovery server for the syncthing
+  description:
+    en: discovery server for the syncthing
+    zh: syncthing 发现服务器
   type: tool
   crossVersionUpdate: true
   limit: 1

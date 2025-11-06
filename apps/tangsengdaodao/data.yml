@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 让企业轻松拥有自己的即时通讯
   shortDescEn: Make it easy for businesses to have their own instant messaging
+  description:
+    en: Make it easy for businesses to have their own instant messaging
+    zh: 让企业轻松拥有自己的即时通讯
   type: tool
   crossVersionUpdate: true
   limit: 1

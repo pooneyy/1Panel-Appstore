@@ -1,6 +1,6 @@
 name: Dify
 tags:
-    - AI / 大模型
+  - AI / 大模型
 title: Dify 是一个开源的 LLM 应用开发平台
 description: Dify 是一个开源的 LLM 应用开发平台。支持 AI 工作流、RAG 管道、Agent、模型管理、可观测性等功能
 additionalProperties:
@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: Dify 是一个开源的 LLM 应用开发平台
   shortDescEn: Dify is an open-source LLM application development platform
+  description:
+    en: Dify is an open-source LLM application development platform
+    zh: Dify 是一个开源的 LLM 应用开发平台
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个 HTTP 请求定时任务自动执行框架
   shortDescEn: An HTTP request timed task automation framework
+  description:
+    en: An HTTP request timed task automation framework
+    zh: 一个 HTTP 请求定时任务自动执行框架
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: movie-pilot
   name: MoviePilot
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: NAS媒体库自动化管理工具
   shortDescEn: NAS media library automation management tool
+  description:
+    en: NAS media library automation management tool
+    zh: NAS媒体库自动化管理工具
   type: website
   crossVersionUpdate: false
   limit: 0

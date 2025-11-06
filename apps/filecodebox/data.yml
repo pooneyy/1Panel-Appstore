@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 文件快递柜-匿名口令分享文本，文件，像拿快递一样取文件
   shortDescEn: Anonymous Passcode Sharing Text, Files, Like Taking Express Delivery for Files
+  description:
+    en: Anonymous Passcode Sharing Text, Files, Like Taking Express Delivery for Files
+    zh: 文件快递柜-匿名口令分享文本，文件，像拿快递一样取文件
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 现代化、开源的 Linux 服务器运维管理面板
   shortDescEn: Modern and Open-Source Linux Server Operation and Management Panel
+  description:
+    en: Modern and Open-Source Linux Server Operation and Management Panel
+    zh: 现代化、开源的 Linux 服务器运维管理面板
   type: tool
   crossVersionUpdate: true
   limit: 1

@@ -8,6 +8,9 @@ additionalProperties:
     - Local
   shortDescZh: 分布式键值 NoSQL 数据库
   shortDescEn: Distributed key-value NoSQL database
+  description:
+    en: Distributed key-value NoSQL database
+    zh: 分布式键值 NoSQL 数据库
   type: website
   crossVersionUpdate: true
   limit: 0

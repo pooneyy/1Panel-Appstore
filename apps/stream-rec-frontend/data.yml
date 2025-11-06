@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: stream-rec-frontend
   name: Stream Rec WebUI
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 自动流媒体录制工具
   shortDescEn: Automatic streaming media recording tool
+  description:
+    en: Automatic streaming media recording tool
+    zh: 自动流媒体录制工具
   type: website
   crossVersionUpdate: true
   limit: 0

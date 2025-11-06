@@ -10,6 +10,9 @@ additionalProperties:
     - Game
   shortDescZh: 一个免费的开源游戏服务器管理面板（前端）
   shortDescEn: open-source game server management panel(panel)
+  description:
+    en: open-source game server management panel(panel)
+    zh: 一个免费的开源游戏服务器管理面板（前端）
   type: tool
   crossVersionUpdate: true
   limit: 0

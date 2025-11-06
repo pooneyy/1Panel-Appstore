@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: nezha
   name: 哪吒监控
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 开源、轻量、易用的服务器监控、运维工具
   shortDescEn: Open source, lightweight, easy-to-use server monitoring and operation and maintenance tools
+  description:
+    en: Open source, lightweight, easy-to-use server monitoring and operation and maintenance tools
+    zh: 开源、轻量、易用的服务器监控、运维工具
   type: tool
   crossVersionUpdate: true
   limit: 0

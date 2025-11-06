@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Fullcone NAT 端口打洞工具
   shortDescEn: Expose your port behind full-cone NAT to the Internet
+  description:
+    en: Expose your port behind full-cone NAT to the Internet
+    zh: Fullcone NAT 端口打洞工具
   type: tool
   crossVersionUpdate: true
   limit: 0

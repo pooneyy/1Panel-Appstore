@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: speedtest
   name: SpeedTest
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 轻量级的速度测试
   shortDescEn: Lightweight speed test
+  description:
+    en: Lightweight speed test
+    zh: 轻量级的速度测试
   type: website
   crossVersionUpdate: true
   limit: 0

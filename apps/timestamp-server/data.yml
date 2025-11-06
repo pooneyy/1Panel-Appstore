@@ -6,8 +6,11 @@ additionalProperties:
   limit: 0
   name: timestamp-server
   shortDescEn: timestamp-server
+  description:
+    en: timestamp-server
+    zh: 时间戳服务器
   shortDescZh: 时间戳服务器
   tags:
-  - Tool
+    - Tool
   type: runtime
   website: https://github.com/dnl50/tsa

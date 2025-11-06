@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款简洁的自托管评论系统
   shortDescEn: A concise self hosted comment system
+  description:
+    en: A concise self hosted comment system
+    zh: 一款简洁的自托管评论系统
   type: tool
   crossVersionUpdate: true
   limit: 0

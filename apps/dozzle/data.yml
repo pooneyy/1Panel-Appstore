@@ -8,6 +8,9 @@ additionalProperties:
     - Local
   shortDescZh: 一个轻量级的小应用程序，有一个基于web的界面来监控Docker日志
   shortDescEn: web-based interface to monitor Docker logs
+  description:
+    en: web-based interface to monitor Docker logs
+    zh: 一个轻量级的小应用程序，有一个基于web的界面来监控Docker日志
   type: website
   crossVersionUpdate: true
   recommend: 0

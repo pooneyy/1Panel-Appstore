@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个快速，简单，免费的BitTorrent客户端
   shortDescEn: A fast, easy, and free BitTorrent client
+  description:
+    en: A fast, easy, and free BitTorrent client
+    zh: 一个快速，简单，免费的BitTorrent客户端
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Google Chrome 浏览器
   shortDescEn: Google Chrome
+  description:
+    en: Google Chrome
+    zh: Google Chrome 浏览器
   type: tool
   crossVersionUpdate: true
   limit: 0

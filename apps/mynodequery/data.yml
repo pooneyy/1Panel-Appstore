@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款简洁好用的探针
   shortDescEn: A simple and easy-to-use probe
+  description:
+    en: A simple and easy-to-use probe
+    zh: 一款简洁好用的探针
   type: tool
   crossVersionUpdate: true
   limit: 0

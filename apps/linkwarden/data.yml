@@ -1,24 +1,27 @@
 name: linkwarden
 tags:
+  - 工具
+  - 书签
+  - 协作
+  - 开源
+title: Linkwarden
+description: Linkwarden 是一个自托管、开源的协作书签管理工具，支持网页归档、团队协作、全文搜索等功能。
+additionalProperties:
+  key: linkwarden
+  name: Linkwarden
+  tags:
     - 工具
     - 书签
     - 协作
     - 开源
-title: Linkwarden
-description: Linkwarden 是一个自托管、开源的协作书签管理工具，支持网页归档、团队协作、全文搜索等功能。
-additionalProperties:
-    key: linkwarden
-    name: Linkwarden
-    tags:
-        - 工具
-        - 书签
-        - 协作
-        - 开源
-    shortDescZh: Linkwarden 书签归档与协作工具
-    shortDescEn: Linkwarden - Collaborative Bookmark Manager
-    type: website
-    crossVersionUpdate: true
-    website: https://linkwarden.app
-    github: https://github.com/linkwarden/linkwarden
-    document: https://docs.linkwarden.app
+  shortDescZh: Linkwarden 书签归档与协作工具
+  shortDescEn: Linkwarden - Collaborative Bookmark Manager
+  description:
+    en: Linkwarden - Collaborative Bookmark Manager
+    zh: Linkwarden 书签归档与协作工具
+  type: website
+  crossVersionUpdate: true
+  website: https://linkwarden.app
+  github: https://github.com/linkwarden/linkwarden
+  document: https://docs.linkwarden.app
 

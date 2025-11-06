@@ -10,6 +10,9 @@ additionalProperties:
     - Storage
   shortDescZh: 多架构 Samba 镜像构建
   shortDescEn: Multi-architecture Samba image build
+  description:
+    en: Multi-architecture Samba image build
+    zh: 多架构 Samba 镜像构建
   type: tool
   crossVersionUpdate: true
   limit: 0

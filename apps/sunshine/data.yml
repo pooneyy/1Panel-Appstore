@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 开源游戏串流服务
   shortDescEn: Open-source game streaming service
+  description:
+    en: Open-source game streaming service
+    zh: 开源游戏串流服务
   type: tool
   crossVersionUpdate: true
   limit: 0

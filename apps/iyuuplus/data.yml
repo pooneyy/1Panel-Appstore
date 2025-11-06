@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 自动辅种工具
   shortDescEn: Automatic seeding tools
+  description:
+    en: Automatic seeding tools
+    zh: 自动辅种工具
   type: tool
   crossVersionUpdate: true
   limit: 0

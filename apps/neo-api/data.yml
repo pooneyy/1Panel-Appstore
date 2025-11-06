@@ -1,6 +1,6 @@
 name: neo api
 tags:
-    - AI / 大模型
+  - AI / 大模型
 title: OpenAI 接口管理 & 分发系统 new-api魔改版
 description: OpenAI 接口管理 & 分发系统 ，new-api魔改版
 additionalProperties:
@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: AI模型接口管理与分发系统，支持将多种大模型转为OpenAI格式调用、支持Midjourney Proxy、Suno、Rerank，兼容易支付协议，可供个人或者企业内部管理与分发渠道使用，本项目基于One API二次开发。
   shortDescEn: Access all LLM through the standard OpenAI API format, easy to deploy & use
+  description:
+    en: Access all LLM through the standard OpenAI API format, easy to deploy & use
+    zh: AI模型接口管理与分发系统，支持将多种大模型转为OpenAI格式调用、支持Midjourney Proxy、Suno、Rerank，兼容易支付协议，可供个人或者企业内部管理与分发渠道使用，本项目基于One API二次开发。
   type: tool
   crossVersionUpdate: true
   limit: 0

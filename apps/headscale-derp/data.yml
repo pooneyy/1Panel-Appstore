@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Headscale 的中继服务
   shortDescEn: Headscale relay service
+  description:
+    en: Headscale relay service
+    zh: Headscale 的中继服务
   type: tool
   crossVersionUpdate: true
   limit: 0

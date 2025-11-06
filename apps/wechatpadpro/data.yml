@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 基于 WeChat Pad 的高级微信管理工具
   shortDescEn: A high-level WeChat management tool based on WeChat Pad
+  description:
+    en: A high-level WeChat management tool based on WeChat Pad
+    zh: 基于 WeChat Pad 的高级微信管理工具
   type: website
   crossVersionUpdate: true
   limit: 0

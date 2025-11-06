@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: docker 里的 CloudFlare warp socks5
   shortDescEn: CloudFlare warp socks5 in docker
+  description:
+    en: CloudFlare warp socks5 in docker
+    zh: docker 里的 CloudFlare warp socks5
   type: tool
   crossVersionUpdate: false
   limit: 0

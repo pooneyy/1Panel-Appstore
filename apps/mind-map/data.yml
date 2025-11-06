@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个还算强大的 Web 思维导图
   shortDescEn: A relatively powerful web mind map
+  description:
+    en: A relatively powerful web mind map
+    zh: 一个还算强大的 Web 思维导图
   type: tool
   crossVersionUpdate: true
   limit: 0

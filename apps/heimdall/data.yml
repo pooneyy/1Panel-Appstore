@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 应用程序仪表板和启动器
   shortDescEn: An Application dashboard and launcher
+  description:
+    en: An Application dashboard and launcher
+    zh: 应用程序仪表板和启动器
   type: tool
   crossVersionUpdate: true
   limit: 0

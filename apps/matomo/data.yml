@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 开源的网站分析应用程序
   shortDescEn: Liberating Web Analytics
+  description:
+    en: Liberating Web Analytics
+    zh: 开源的网站分析应用程序
   type: tool
   crossVersionUpdate: true
   limit: 0

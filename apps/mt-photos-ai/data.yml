@@ -12,6 +12,9 @@ additionalProperties:
     - AI
   shortDescZh: MT Photos AI 相关的独立服务
   shortDescEn: MT Photos AI-related standalone services
+  description:
+    en: MT Photos AI-related standalone services
+    zh: MT Photos AI 相关的独立服务
   type: tool
   crossVersionUpdate: true
   limit: 0

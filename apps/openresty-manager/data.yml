@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 主机管理面板
   shortDescEn: Host management panel
+  description:
+    en: Host management panel
+    zh: 主机管理面板
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: frp 是一种反向代理工具，常用于内网穿透(客户端)
   shortDescEn: frp is a reverse proxy tool that is commonly used for intranet penetration(Client)
+  description:
+    en: frp is a reverse proxy tool that is commonly used for intranet penetration(Client)
+    zh: frp 是一种反向代理工具，常用于内网穿透(客户端)
   type: tool
   crossVersionUpdate: true
   limit: 0

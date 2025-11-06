@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 在 Docker 中运行 Cloudflare WARP
   shortDescEn: Run Cloudflare WARP in Docker
+  description:
+    en: Run Cloudflare WARP in Docker
+    zh: 在 Docker 中运行 Cloudflare WARP
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: emby
   name: Emby
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 主从式架构的媒体服务器软件
   shortDescEn: A media server software with master-slave architecture
+  description:
+    en: A media server software with master-slave architecture
+    zh: 主从式架构的媒体服务器软件
   type: website
   crossVersionUpdate: true
   limit: 0

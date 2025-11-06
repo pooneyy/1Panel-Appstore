@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个强大的 IPTV 源后端服务，具有视频缓冲区功能
   shortDescEn: A powerful IPTV source backend service with video buffer function
+  description:
+    en: A powerful IPTV source backend service with video buffer function
+    zh: 一个强大的 IPTV 源后端服务，具有视频缓冲区功能
   type: tool
   crossVersionUpdate: true
   limit: 0

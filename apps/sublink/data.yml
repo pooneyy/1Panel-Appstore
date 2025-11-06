@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 节点转换成订阅
   shortDescEn: Convert node links into subscription
+  description:
+    en: Convert node links into subscription
+    zh: 节点转换成订阅
   type: tool
   crossVersionUpdate: true
   limit: 0

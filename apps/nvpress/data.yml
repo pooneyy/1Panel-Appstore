@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个完全由 Javascript 驱动的内容管理程序
   shortDescEn: A content management program driven entirely by Javascript
+  description:
+    en: A content management program driven entirely by Javascript
+    zh: 一个完全由 Javascript 驱动的内容管理程序
   type: tool
   crossVersionUpdate: true
   limit: 0

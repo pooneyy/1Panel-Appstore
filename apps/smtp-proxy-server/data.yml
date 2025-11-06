@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 搭建 CloudFlare 免费收发 临时域名邮箱
   shortDescEn: Build CloudFlare to send and receive temporary domain name emails for free
+  description:
+    en: Build CloudFlare to send and receive temporary domain name emails for free
+    zh: 搭建 CloudFlare 免费收发 临时域名邮箱
   type: website
   crossVersionUpdate: true
   limit: 0

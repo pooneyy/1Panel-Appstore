@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 云数据库管理器
   shortDescEn: Cloud Database Manager
+  description:
+    en: Cloud Database Manager
+    zh: 云数据库管理器
   type: tool
   crossVersionUpdate: true
   limit: 0

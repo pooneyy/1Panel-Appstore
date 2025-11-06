@@ -10,6 +10,9 @@ additionalProperties:
     - Tools
   shortDescZh: 监控Docker基础镜像自动更新
   shortDescEn: Keep your containers up-to-date!
+  description:
+    en: Keep your containers up-to-date!
+    zh: 监控Docker基础镜像自动更新
   type: website
   crossVersionUpdate: true
   limit: 0

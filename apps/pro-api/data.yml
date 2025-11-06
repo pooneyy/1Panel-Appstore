@@ -1,15 +1,18 @@
 name: pro-api
 tags:
-- AI / 大模型
+  - AI / 大模型
 title: 统一管理大模型 API 的项目，可以通过一个统一的API 接口调用多种不同提供商的服务，统一转换为 OpenAI 格式。
 description: 这是一个统一管理大模型API的项目，可以通过OpenAI 的API接口格式调用多个后端服务。该项目旨在简化与不同AI模型的交互，支持多种后端服务的调用
 additionalProperties:
   key: pro-api
   name: pro-api
   tags:
-  - Tool
+    - Tool
   shortDescZh: 统一管理大模型 API 的项目，可以通过一个统一的API 接口调用多种不同提供商的服务，统一转换为 OpenAI 格式。
   shortDescEn: This is a project that centrally manages a large model API and can call multiple backend services through OpenAI's API interface format. The project aims to simplify interactions with different AI models and support the calling of multiple backend services
+  description:
+    en: This is a project that centrally manages a large model API and can call multiple backend services through OpenAI's API interface format. The project aims to simplify interactions with different AI models and support the calling of multiple backend services
+    zh: 统一管理大模型 API 的项目，可以通过一个统一的API 接口调用多种不同提供商的服务，统一转换为 OpenAI 格式。
   type: tool
   crossVersionUpdate: true
   limit: 0

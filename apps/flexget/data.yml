@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 多用途自动化工具
   shortDescEn: A multi-purpose automation tool
+  description:
+    en: A multi-purpose automation tool
+    zh: 多用途自动化工具
   type: tool
   crossVersionUpdate: true
   limit: 0

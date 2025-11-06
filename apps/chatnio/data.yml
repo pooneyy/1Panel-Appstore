@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 下一代 AI 一站式解决方案
   shortDescEn: Next Generation AI One-Stop Internationalization Solution
+  description:
+    en: Next Generation AI One-Stop Internationalization Solution
+    zh: 下一代 AI 一站式解决方案
   type: tool
   crossVersionUpdate: true
   limit: 0

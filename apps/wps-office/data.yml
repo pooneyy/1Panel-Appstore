@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 多功能免费办公套件
   shortDescEn: A lightweight, feature-rich comprehensive office suite with high compatibility
+  description:
+    en: A lightweight, feature-rich comprehensive office suite with high compatibility
+    zh: 多功能免费办公套件
   type: tool
   crossVersionUpdate: true
   limit: 0

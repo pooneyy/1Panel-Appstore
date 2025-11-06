@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: Nextcloud 服务器，所有数据的安全家园
   shortDescEn: Nextcloud server, a safe home for all your data
+  description:
+    en: Nextcloud server, a safe home for all your data
+    zh: Nextcloud 服务器，所有数据的安全家园
   type: website
   crossVersionUpdate: true
   limit: 0

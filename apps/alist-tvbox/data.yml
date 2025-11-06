@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: AList 代理，支持 xiaoya 版 AList 界面管理
   shortDescEn: AList proxy server for TvBox, support playlist and search
+  description:
+    en: AList proxy server for TvBox, support playlist and search
+    zh: AList 代理，支持 xiaoya 版 AList 界面管理
   type: tool
   crossVersionUpdate: true
   limit: 0

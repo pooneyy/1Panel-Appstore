@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 免费在线视频搜索与观看平台
   shortDescEn: Free Online Video Search and Viewing Platform
+  description:
+    en: Free Online Video Search and Viewing Platform
+    zh: 免费在线视频搜索与观看平台
   type: tool
   crossVersionUpdate: true
   limit: 0
@@ -18,5 +21,5 @@ additionalProperties:
   github: https://github.com/Decohererk/DecoTV
   document: https://github.com/Decohererk/DecoTV
   architectures:
-  - amd64
-  - arm64
+    - amd64
+    - arm64

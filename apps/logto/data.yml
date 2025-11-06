@@ -7,6 +7,9 @@ additionalProperties:
     - Local
   shortDescZh: 开发者更好的身份基础设施，以及 Auth0 的开源替代方案。
   shortDescEn: A better identity infrastructure for developers, and an open-source alternative to Auth0.
+  description:
+    en: A better identity infrastructure for developers, and an open-source alternative to Auth0.
+    zh: 开发者更好的身份基础设施，以及 Auth0 的开源替代方案。
   type: website
   crossVersionUpdate: true
   limit: 0

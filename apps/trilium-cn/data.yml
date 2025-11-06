@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个层次化的笔记应用程序，专注于建立大型个人知识库
   shortDescEn: A hierarchical note taking application with focus on building large personal knowledge bases
+  description:
+    en: A hierarchical note taking application with focus on building large personal knowledge bases
+    zh: 一个层次化的笔记应用程序，专注于建立大型个人知识库
   type: tool
   crossVersionUpdate: true
   limit: 0

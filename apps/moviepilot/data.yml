@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: NAS 媒体库自动化管理工具
   shortDescEn: NAS Media Library Automation Management Tool
+  description:
+    en: NAS Media Library Automation Management Tool
+    zh: NAS 媒体库自动化管理工具
   type: tool
   crossVersionUpdate: true
   limit: 0

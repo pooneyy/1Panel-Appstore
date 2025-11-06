@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 115网盘是115科技推出的云存储服务
   shortDescEn: 115 network disk is a cloud storage service launched by 115 Technology
+  description:
+    en: 115 network disk is a cloud storage service launched by 115 Technology
+    zh: 115网盘是115科技推出的云存储服务
   type: tool
   crossVersionUpdate: true
   limit: 0

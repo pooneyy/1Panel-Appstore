@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Docker 可视化面板系统
   shortDescEn: Docker Visualization Panel System
+  description:
+    en: Docker Visualization Panel System
+    zh: Docker 可视化面板系统
   type: tool
   crossVersionUpdate: true
   limit: 0

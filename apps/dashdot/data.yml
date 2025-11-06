@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个简单、现代的服务器仪表板
   shortDescEn: A simple, modern server dashboard
+  description:
+    en: A simple, modern server dashboard
+    zh: 一个简单、现代的服务器仪表板
   type: tool
   crossVersionUpdate: true
   limit: 0

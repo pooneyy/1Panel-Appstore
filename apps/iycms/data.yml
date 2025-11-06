@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: iycms
   name: 爱影CMS
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 高性能高并发永久免费影视CMS
   shortDescEn: High-performance high-concurrency permanent free video CMS
+  description:
+    en: High-performance high-concurrency permanent free video CMS
+    zh: 高性能高并发永久免费影视CMS
   type: website
   crossVersionUpdate: true
   limit: 0

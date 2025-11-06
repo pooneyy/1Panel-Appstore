@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 漫画浏览器
   shortDescEn: manga browser
+  description:
+    en: manga browser
+    zh: 漫画浏览器
   type: website
   crossVersionUpdate: true
   limit: 0

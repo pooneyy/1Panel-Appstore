@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 在 Docker 容器内运行 Windows
   shortDescEn: Windows inside a Docker container
+  description:
+    en: Windows inside a Docker container
+    zh: 在 Docker 容器内运行 Windows
   type: tool
   crossVersionUpdate: true
   limit: 0

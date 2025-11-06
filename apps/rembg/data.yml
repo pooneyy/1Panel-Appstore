@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 图像背景去除工具
   shortDescEn: A tool to remove images background
+  description:
+    en: A tool to remove images background
+    zh: 图像背景去除工具
   type: tool
   crossVersionUpdate: true
   limit: 0

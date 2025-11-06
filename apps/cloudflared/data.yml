@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Cloudflare Tunnel 客户端
   shortDescEn: Client for Cloudflare Tunnel
+  description:
+    en: Client for Cloudflare Tunnel
+    zh: Cloudflare Tunnel 客户端
   type: tool
   crossVersionUpdate: true
   limit: 0

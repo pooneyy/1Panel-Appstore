@@ -12,6 +12,9 @@ additionalProperties:
     - Media
   shortDescZh: 智能压缩 JPEG、PNG、WEBP、AVIF、SVG 和 GIF 图片
   shortDescEn: Compress JPEG, PNG, WEBP, AVIF, SVG and GIF images intelligently
+  description:
+    en: Compress JPEG, PNG, WEBP, AVIF, SVG and GIF images intelligently
+    zh: 智能压缩 JPEG、PNG、WEBP、AVIF、SVG 和 GIF 图片
   type: tool
   crossVersionUpdate: true
   limit: 0

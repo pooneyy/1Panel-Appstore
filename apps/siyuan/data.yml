@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款隐私优先的个人知识管理系统
   shortDescEn: A privacy-first personal knowledge management system
+  description:
+    en: A privacy-first personal knowledge management system
+    zh: 一款隐私优先的个人知识管理系统
   type: tool
   crossVersionUpdate: true
   limit: 0

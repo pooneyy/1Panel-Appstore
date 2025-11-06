@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: umami-mysql
   name: Umami MySQL版
   tags:
@@ -9,6 +9,9 @@
     - Local
   shortDescZh: 为速度和效率而构建的网站分析
   shortDescEn: A website analytics tool that is built for speed and efficiency
+  description:
+    en: A website analytics tool that is built for speed and efficiency
+    zh: 为速度和效率而构建的网站分析
   type: website
   crossVersionUpdate: true
   limit: 0

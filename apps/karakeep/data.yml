@@ -12,6 +12,9 @@ additionalProperties:
     - AI
   shortDescZh: 智能书签和笔记管理工具
   shortDescEn: Smart Bookmark and Note Manager
+  description:
+    en: Smart Bookmark and Note Manager
+    zh: 智能书签和笔记管理工具
   type: website
   crossVersionUpdate: true
   limit: 0

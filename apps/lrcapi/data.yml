@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: StreamMusic 的 Flask 应用程序接口
   shortDescEn: A Flask API For StreamMusic
+  description:
+    en: A Flask API For StreamMusic
+    zh: StreamMusic 的 Flask 应用程序接口
   type: tool
   crossVersionUpdate: true
   limit: 0

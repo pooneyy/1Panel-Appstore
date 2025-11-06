@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个轻量级的服务器状态监控工具。
   shortDescEn: A lightweight server status monitoring tool.
+  description:
+    en: A lightweight server status monitoring tool.
+    zh: 一个轻量级的服务器状态监控工具。
   type: tool
   crossVersionUpdate: true
   limit: 0

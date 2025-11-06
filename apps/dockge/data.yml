@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个精美的、易于使用的、反应式的自托管 docker compose.yaml 面向堆栈的管理器
   shortDescEn: A fancy, easy-to-use and reactive self-hosted docker compose.yaml stack-oriented manager
+  description:
+    en: A fancy, easy-to-use and reactive self-hosted docker compose.yaml stack-oriented manager
+    zh: 一个精美的、易于使用的、反应式的自托管 docker compose.yaml 面向堆栈的管理器
   type: tool
   crossVersionUpdate: true
   limit: 0

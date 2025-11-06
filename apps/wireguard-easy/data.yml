@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 运行 WireGuard VPN + 基于 Web 的管理 UI 的最简单方法
   shortDescEn: The easiest way to run WireGuard VPN + Web-based Admin UI
+  description:
+    en: The easiest way to run WireGuard VPN + Web-based Admin UI
+    zh: 运行 WireGuard VPN + 基于 Web 的管理 UI 的最简单方法
   type: tool
   crossVersionUpdate: true
   limit: 0

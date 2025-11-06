@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 更优雅的微信公众号订阅方式
   shortDescEn: A more elegant way to subscribe to WeChat
+  description:
+    en: A more elegant way to subscribe to WeChat
+    zh: 更优雅的微信公众号订阅方式
   type: website
   crossVersionUpdate: true
   limit: 0

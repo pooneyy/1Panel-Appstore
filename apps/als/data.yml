@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Another Looking-glass Server，测速服务端
   shortDescEn: Another Looking-glass Server,Speed measurement server
+  description:
+    en: Another Looking-glass Server,Speed measurement server
+    zh: Another Looking-glass Server，测速服务端
   type: tool
   crossVersionUpdate: false
   limit: 0

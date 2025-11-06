@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: minio
   name: MinIO
   tags:
@@ -9,6 +9,9 @@
     - Local
   shortDescZh: 开源的对象存储服务器
   shortDescEn: Open source object storage server
+  description:
+    en: Open source object storage server
+    zh: 开源的对象存储服务器
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -1,19 +1,22 @@
 name: md
 tags:
-    - 实用工具
+  - 实用工具
 title: 微信Markdown编辑器
 description: 一款高度简洁的微信Markdown编辑器
 additionalProperties:
-    key: md
-    name: md
-    tags:
-        - Tool
-    shortDescZh: 一款高度简洁的微信 Markdown 编辑器
-    shortDescEn: WeChat Markdown Editor
-    type: tool
-    crossVersionUpdate: true
-    limit: 0
-    recommend: 0
-    website: https://doocs.github.io/md/
-    github: https://github.com/doocs/md
-    document: https://github.com/doocs/md
+  key: md
+  name: md
+  tags:
+    - Tool
+  shortDescZh: 一款高度简洁的微信 Markdown 编辑器
+  shortDescEn: WeChat Markdown Editor
+  description:
+    en: WeChat Markdown Editor
+    zh: 一款高度简洁的微信 Markdown 编辑器
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://doocs.github.io/md/
+  github: https://github.com/doocs/md
+  document: https://github.com/doocs/md

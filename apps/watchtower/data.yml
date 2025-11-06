@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 自动更新 Docker 容器基础镜像的工具
   shortDescEn: Tool to automatically update Docker container base images
+  description:
+    en: Tool to automatically update Docker container base images
+    zh: 自动更新 Docker 容器基础镜像的工具
   type: tool
   crossVersionUpdate: true
   limit: 1

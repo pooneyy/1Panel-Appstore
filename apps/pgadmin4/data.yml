@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: PostgreSQL 的开源管理和开发平台
   shortDescEn: Open Source administration and development platform for PostgreSQL
+  description:
+    en: Open Source administration and development platform for PostgreSQL
+    zh: PostgreSQL 的开源管理和开发平台
   type: tool
   crossVersionUpdate: true
   limit: 0

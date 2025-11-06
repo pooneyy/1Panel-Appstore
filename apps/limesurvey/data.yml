@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: limesurvey
   name: 问卷星
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 在线问卷调查程序
   shortDescEn: Online survey software
+  description:
+    en: Online survey software
+    zh: 在线问卷调查程序
   type: website
   crossVersionUpdate: true
   limit: 0

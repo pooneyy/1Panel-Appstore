@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 使用简单、强大的界面管理 Nginx 代理主机
   shortDescEn: managing Nginx proxy hosts with a simple, powerful interface
+  description:
+    en: managing Nginx proxy hosts with a simple, powerful interface
+    zh: 使用简单、强大的界面管理 Nginx 代理主机
   type: tool
   crossVersionUpdate: true
   limit: 0

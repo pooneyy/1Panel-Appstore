@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 具有 Web UI 的 ZeroTier 网络控制器
   shortDescEn: Zerotier network controller with web UI in a Docker container
+  description:
+    en: Zerotier network controller with web UI in a Docker container
+    zh: 具有 Web UI 的 ZeroTier 网络控制器
   type: tool
   crossVersionUpdate: true
   limit: 1

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: traccar
   name: Traccar 轨迹
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 现代 GPS 追踪系统
   shortDescEn: Modern GPS tracking system
+  description:
+    en: Modern GPS tracking system
+    zh: 现代 GPS 追踪系统
   type: website
   crossVersionUpdate: true
   limit: 0

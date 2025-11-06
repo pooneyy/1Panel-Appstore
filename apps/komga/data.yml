@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 漫画、漫画、蓝光光盘、杂志和电子书的媒体服务器
   shortDescEn: A media server for comics, manga, magazines and electronic books
+  description:
+    en: A media server for comics, manga, magazines and electronic books
+    zh: 漫画、漫画、蓝光光盘、杂志和电子书的媒体服务器
   type: website
   crossVersionUpdate: true
   limit: 0

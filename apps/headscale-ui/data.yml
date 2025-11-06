@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Headscale 与 Tailscale 兼容的协调服务器的 Web 前端
   shortDescEn: A web frontend for the headscale Tailscale-compatible coordination server
+  description:
+    en: A web frontend for the headscale Tailscale-compatible coordination server
+    zh: Headscale 与 Tailscale 兼容的协调服务器的 Web 前端
   type: tool
   crossVersionUpdate: true
   limit: 0

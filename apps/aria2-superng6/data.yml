@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: aria2-superng6
   name: Aria2 Superng6版
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: Docker Aria2的最佳实践
   shortDescEn: Docker Aria2's best practice
+  description:
+    en: Docker Aria2's best practice
+    zh: Docker Aria2的最佳实践
   type: website
   crossVersionUpdate: true
   limit: 0

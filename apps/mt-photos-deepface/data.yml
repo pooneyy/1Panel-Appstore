@@ -12,6 +12,9 @@ additionalProperties:
     - AI
   shortDescZh: MT Photos 人脸识别 API
   shortDescEn: MT Photos Face Recognition API
+  description:
+    en: MT Photos Face Recognition API
+    zh: MT Photos 人脸识别 API
   type: tool
   crossVersionUpdate: true
   limit: 0

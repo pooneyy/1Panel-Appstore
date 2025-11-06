@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 一个服务器、NAS导航面板、Homepage、浏览器首页
   shortDescEn: Server, NAS navigation panel, Homepage, Browser homepage
+  description:
+    en: Server, NAS navigation panel, Homepage, Browser homepage
+    zh: 一个服务器、NAS导航面板、Homepage、浏览器首页
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 开源个人订阅跟踪器
   shortDescEn: Open-Source Personal Subscription Tracker
+  description:
+    en: Open-Source Personal Subscription Tracker
+    zh: 开源个人订阅跟踪器
   type: tool
   crossVersionUpdate: true
   limit: 0

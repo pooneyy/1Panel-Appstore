@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款简单、易架设的 WireGuard 服务端软件
   shortDescEn: A simple and easy to install WireGuard server software
+  description:
+    en: A simple and easy to install WireGuard server software
+    zh: 一款简单、易架设的 WireGuard 服务端软件
   type: tool
   crossVersionUpdate: true
   limit: 1

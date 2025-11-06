@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 适用于Kasm Workspaces 的 qBittorrent
   shortDescEn: qBittorrent for Kasm Workspaces
+  description:
+    en: qBittorrent for Kasm Workspaces
+    zh: 适用于Kasm Workspaces 的 qBittorrent
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 高度集成了版本控制功能的web-based翻译工具
   shortDescEn: A highly integrated web-based translation tool with version control functions
+  description:
+    en: A highly integrated web-based translation tool with version control functions
+    zh: 高度集成了版本控制功能的web-based翻译工具
   type: website
   crossVersionUpdate: true
   limit: 0

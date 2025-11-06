@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款仿 Win11，适合创建属于自己的私有云/存储的网页系统
   shortDescEn: An imitation of Windows 11, suitable for creating your own private cloud
+  description:
+    en: An imitation of Windows 11, suitable for creating your own private cloud
+    zh: 一款仿 Win11，适合创建属于自己的私有云/存储的网页系统
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款基于 GitHub API 开发的图床工具
   shortDescEn: A picture bed tool based on GitHub API
+  description:
+    en: A picture bed tool based on GitHub API
+    zh: 一款基于 GitHub API 开发的图床工具
   type: tool
   crossVersionUpdate: true
   limit: 0
@@ -17,7 +20,7 @@ additionalProperties:
   website: https://picx.xpoet.cn
   github: https://github.com/XPoet/picx
   document: https://picx-docs.xpoet.cn
-  architecture: 
+  architecture:
     - linux/amd64
     - linux/arm64
     - linux/ppc64le

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 适用于 QX、Loon、Surge、Stash 和 Shadowrocket 的高级订阅管理器
   shortDescEn: Advanced Subscription Manager for QX, Loon, Surge, Stash and Shadowrocket
+  description:
+    en: Advanced Subscription Manager for QX, Loon, Surge, Stash and Shadowrocket
+    zh: 适用于 QX、Loon、Surge、Stash 和 Shadowrocket 的高级订阅管理器
   type: tool
   crossVersionUpdate: true
   limit: 0

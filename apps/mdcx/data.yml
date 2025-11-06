@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 电影元数据搜刮器
   shortDescEn: Movie metadata scraper
+  description:
+    en: Movie metadata scraper
+    zh: 电影元数据搜刮器
   type: tool
   crossVersionUpdate: true
   limit: 0

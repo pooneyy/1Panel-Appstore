@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 匿名浏览 Twitter 的开源工具
   shortDescEn: Alternative Twitter front-end
+  description:
+    en: Alternative Twitter front-end
+    zh: 匿名浏览 Twitter 的开源工具
   type: tool
   crossVersionUpdate: true
   limit: 0

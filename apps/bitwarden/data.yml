@@ -10,6 +10,9 @@ additionalProperties:
     - Security
   shortDescZh: 一个开源的密码管理服务
   shortDescEn: An open source password management service
+  description:
+    en: An open source password management service
+    zh: 一个开源的密码管理服务
   type: tool
   crossVersionUpdate: true
   limit: 0

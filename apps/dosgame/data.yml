@@ -10,6 +10,9 @@ additionalProperties:
     - Game
   shortDescZh: 中文 DOS 游戏合集
   shortDescEn: Chinese DOS games collections
+  description:
+    en: Chinese DOS games collections
+    zh: 中文 DOS 游戏合集
   type: tool
   crossVersionUpdate: false
   limit: 0

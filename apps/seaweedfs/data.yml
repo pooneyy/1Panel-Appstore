@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 分布式存储系统
   shortDescEn: distributed storage system
+  description:
+    en: distributed storage system
+    zh: 分布式存储系统
   type: website
   crossVersionUpdate: true
   limit: 0

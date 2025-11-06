@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: DeepL 免费 API（无需 TOKEN）
   shortDescEn: DeepL Free API (No TOKEN required)
+  description:
+    en: DeepL Free API (No TOKEN required)
+    zh: DeepL 免费 API（无需 TOKEN）
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -12,6 +12,9 @@ additionalProperties:
     - Media
   shortDescZh: 轻松将 IPA 侧载到 AppleTV
   shortDescEn: Easily sideload the IPA to AppleTV
+  description:
+    en: Easily sideload the IPA to AppleTV
+    zh: 轻松将 IPA 侧载到 AppleTV
   type: tool
   crossVersionUpdate: true
   limit: 0

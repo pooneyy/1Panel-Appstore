@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 面向新闻组和 Bittorrent 流媒体用户的智能 PVR
   shortDescEn: Smart PVR for newsgroup and bittorrent users
+  description:
+    en: Smart PVR for newsgroup and bittorrent users
+    zh: 面向新闻组和 Bittorrent 流媒体用户的智能 PVR
   type: tool
   crossVersionUpdate: true
   limit: 0

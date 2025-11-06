@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: Docker 容器内的 Mac OS
   shortDescEn: Mac OS in Docker container
+  description:
+    en: Mac OS in Docker container
+    zh: Docker 容器内的 Mac OS
   type: website
   crossVersionUpdate: true
   limit: 0

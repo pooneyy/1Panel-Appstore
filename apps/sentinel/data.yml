@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: sentinel
   name: Sentinel Dashboard
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 阿里巴巴流量卫兵
   shortDescEn: Alibaba Traffic Guard
+  description:
+    en: Alibaba Traffic Guard
+    zh: 阿里巴巴流量卫兵
   type: runtime
   crossVersionUpdate: true
   limit: 0

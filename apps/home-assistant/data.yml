@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 开源家庭自动化，将本地控制和隐私放在首位。
   shortDescEn: Open source home automation that puts local control and privacy first.
+  description:
+    en: Open source home automation that puts local control and privacy first.
+    zh: 开源家庭自动化，将本地控制和隐私放在首位。
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个书签管理器，您可以自己托管
   shortDescEn: A bookmark manager that you can host yourself
+  description:
+    en: A bookmark manager that you can host yourself
+    zh: 一个书签管理器，您可以自己托管
   type: tool
   crossVersionUpdate: false
   limit: 0

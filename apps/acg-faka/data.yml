@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: acg-faka
   name: 异次元店铺系统V3
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 二次元发卡系统
   shortDescEn: Secondary Card Issuing System
+  description:
+    en: Secondary Card Issuing System
+    zh: 二次元发卡系统
   type: website
   crossVersionUpdate: true
   limit: 0

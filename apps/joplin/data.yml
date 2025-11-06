@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个开源的记事本应用程序
   shortDescEn: An open source note-taking app
+  description:
+    en: An open source note-taking app
+    zh: 一个开源的记事本应用程序
   type: tool
   crossVersionUpdate: true
   limit: 0

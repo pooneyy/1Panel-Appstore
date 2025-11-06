@@ -12,6 +12,9 @@ additionalProperties:
     - AI
   shortDescZh: MT Photos AI 相关的独立服务 (devfox101 版)
   shortDescEn: MT Photos AI-related standalone services (devfox101 version)
+  description:
+    en: MT Photos AI-related standalone services (devfox101 version)
+    zh: MT Photos AI 相关的独立服务 (devfox101 版)
   type: tool
   crossVersionUpdate: true
   limit: 0

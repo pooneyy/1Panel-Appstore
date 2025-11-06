@@ -12,6 +12,9 @@ additionalProperties:
     - Media
   shortDescZh: 通用文件转换器和图像处理器
   shortDescEn: Universal File Converter & Image Processor
+  description:
+    en: Universal File Converter & Image Processor
+    zh: 通用文件转换器和图像处理器
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 安全、快速的给你的小爱音箱接入人工智能
   shortDescEn: Securely and Quickly Access Artificial Intelligence for Xiaomi Speaker
+  description:
+    en: Securely and Quickly Access Artificial Intelligence for Xiaomi Speaker
+    zh: 安全、快速的给你的小爱音箱接入人工智能
   type: tool
   crossVersionUpdate: true
   limit: 0

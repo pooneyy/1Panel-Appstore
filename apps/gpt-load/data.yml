@@ -1,15 +1,18 @@
 name: gpt-load
 tags:
-- AI / 大模型
+  - AI / 大模型
 title: 智能密钥轮询的多渠道 AI 代理
 description: 智能密钥轮询的多渠道 AI 代理
 additionalProperties:
   key: gpt-load
   name: gpt-load
   tags:
-  - AI
+    - AI
   shortDescZh: 一个高性能、企业级的 AI 接口透明代理服务，专门为需要集成多种 AI 服务的企业和开发者设计。采用 Go 语言开发，具备智能密钥管理、负载均衡和完善的监控功能，专为高并发生产环境而设计。
   shortDescEn: A high-performance, enterprise-grade AI API transparent proxy service designed specifically for enterprises and developers who need to integrate multiple AI services. Built with Go, featuring intelligent key management, load balancing, 和 comprehensive monitoring capabilities, designed for high-concurrency production environments.
+  description:
+    en: A high-performance, enterprise-grade AI API transparent proxy service designed specifically for enterprises and developers who need to integrate multiple AI services. Built with Go, featuring intelligent key management, load balancing, 和 comprehensive monitoring capabilities, designed for high-concurrency production environments.
+    zh: 一个高性能、企业级的 AI 接口透明代理服务，专门为需要集成多种 AI 服务的企业和开发者设计。采用 Go 语言开发，具备智能密钥管理、负载均衡和完善的监控功能，专为高并发生产环境而设计。
   type: tool
   crossVersionUpdate: true
   limit: 0

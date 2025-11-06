@@ -10,6 +10,9 @@ additionalProperties:
     - Server
   shortDescZh: Nginx 网页管理工具
   shortDescEn: Nginx Web page configuration tool
+  description:
+    en: Nginx Web page configuration tool
+    zh: Nginx 网页管理工具
   type: runtime
   crossVersionUpdate: true
   limit: 1

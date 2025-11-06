@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: paopao-ce
   name: 泡泡(PaoPao)
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 清新文艺微社区
   shortDescEn: An artistic "twitter like" community
+  description:
+    en: An artistic "twitter like" community
+    zh: 清新文艺微社区
   type: website
   crossVersionUpdate: true
   limit: 0

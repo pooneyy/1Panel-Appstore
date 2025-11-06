@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 实时监控 IT 组件和服务(服务端)
   shortDescEn: Real-time monitoring of IT components and services (Server)
+  description:
+    en: Real-time monitoring of IT components and services (Server)
+    zh: 实时监控 IT 组件和服务(服务端)
   type: tool
   crossVersionUpdate: true
   limit: 1

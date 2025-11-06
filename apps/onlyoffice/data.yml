@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个免费的在线办公套件
   shortDescEn: A free collaborative online office suite
+  description:
+    en: A free collaborative online office suite
+    zh: 一个免费的在线办公套件
   type: tool
   crossVersionUpdate: true
   limit: 0

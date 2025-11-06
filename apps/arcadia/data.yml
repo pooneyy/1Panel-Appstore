@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: 一站式代码运维平台
   shortDescEn: One-stop code operation and maintenance platform
+  description:
+    en: One-stop code operation and maintenance platform
+    zh: 一站式代码运维平台
   type: tool
   crossVersionUpdate: true
   limit: 0

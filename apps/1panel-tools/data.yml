@@ -14,6 +14,9 @@ additionalProperties:
     - DevTool
   shortDescZh: 轻松将您的 Docker Compose 文件转换为 1Panel 应用商店格式
   shortDescEn: Convert your Docker Compose files to 1Panel AppStore format with ease
+  description:
+    en: Convert your Docker Compose files to 1Panel AppStore format with ease
+    zh: 轻松将您的 Docker Compose 文件转换为 1Panel 应用商店格式
   type: website
   crossVersionUpdate: true
   limit: 0

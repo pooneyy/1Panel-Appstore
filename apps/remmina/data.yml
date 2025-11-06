@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 远程桌面客户端
   shortDescEn: Remote desktop client
+  description:
+    en: Remote desktop client
+    zh: 远程桌面客户端
   type: tool
   crossVersionUpdate: true
   limit: 0

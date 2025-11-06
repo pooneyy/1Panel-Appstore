@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 基于 Web 的开源音乐收藏服务器和流媒体
   shortDescEn: An open source web-based music collection server and streamer
+  description:
+    en: An open source web-based music collection server and streamer
+    zh: 基于 Web 的开源音乐收藏服务器和流媒体
   type: tool
   crossVersionUpdate: true
   limit: 0

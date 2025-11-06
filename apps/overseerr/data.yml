@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 管理您的媒体库请求
   shortDescEn: Manage your media library requests
+  description:
+    en: Manage your media library requests
+    zh: 管理您的媒体库请求
   type: website
   crossVersionUpdate: true
   limit: 0

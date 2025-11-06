@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: ghost
   name: Ghost
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 用于现代出版、会员制、订阅服务及电子简讯的人性化博客系统
   shortDescEn: Human blogging systems for modern publishing, memberships, subscriptions and newsletters
+  description:
+    en: Human blogging systems for modern publishing, memberships, subscriptions and newsletters
+    zh: 用于现代出版、会员制、订阅服务及电子简讯的人性化博客系统
   type: website
   crossVersionUpdate: true
   limit: 0

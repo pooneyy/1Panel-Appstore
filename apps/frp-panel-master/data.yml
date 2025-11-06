@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 多节点 FRP WebUI (控制节点)
   shortDescEn: A multi node frp webui (Console)
+  description:
+    en: A multi node frp webui (Console)
+    zh: 多节点 FRP WebUI (控制节点)
   type: tool
   crossVersionUpdate: true
   limit: 0

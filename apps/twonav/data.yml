@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 一款开源免费的书签（导航）管理程序
   shortDescEn: An open source free bookmark (navigation) management program
+  description:
+    en: An open source free bookmark (navigation) management program
+    zh: 一款开源免费的书签（导航）管理程序
   type: website
   crossVersionUpdate: true
   limit: 0

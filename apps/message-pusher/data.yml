@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款支持多平台的自托管消息推送服务
   shortDescEn: A self-hosted multi-platform message pushing service
+  description:
+    en: A self-hosted multi-platform message pushing service
+    zh: 一款支持多平台的自托管消息推送服务
   type: tool
   crossVersionUpdate: true
   limit: 0

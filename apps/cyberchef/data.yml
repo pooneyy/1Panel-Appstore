@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 一个用于加密、编码、压缩和数据分析的网页应用程序
   shortDescEn: a web app for encryption, encoding, compression and data analysis
+  description:
+    en: a web app for encryption, encoding, compression and data analysis
+    zh: 一个用于加密、编码、压缩和数据分析的网页应用程序
   type: website
   crossVersionUpdate: true
   limit: 0

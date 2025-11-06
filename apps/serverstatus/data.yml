@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 多服务器状态监控
   shortDescEn: Multi-server status monitoring
+  description:
+    en: Multi-server status monitoring
+    zh: 多服务器状态监控
   type: tool
   crossVersionUpdate: true
   limit: 0

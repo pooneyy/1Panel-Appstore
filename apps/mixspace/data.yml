@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 开源自部署个人前后端分离博客系统
   shortDescEn: Open source self-deployed personal front-end and back-end separation blogging system
+  description:
+    en: Open source self-deployed personal front-end and back-end separation blogging system
+    zh: 开源自部署个人前后端分离博客系统
   type: website
   crossVersionUpdate: true
   limit: 0

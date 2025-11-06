@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个简单、安全、去中心化的内网穿透 VPN 组网方案
   shortDescEn: A simple, safe and decentralized VPN networking solution
+  description:
+    en: A simple, safe and decentralized VPN networking solution
+    zh: 一个简单、安全、去中心化的内网穿透 VPN 组网方案
   type: tool
   crossVersionUpdate: true
   limit: 1

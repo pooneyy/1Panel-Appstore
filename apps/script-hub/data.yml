@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 高级脚本转换器
   shortDescEn: Advanced Script Converter
+  description:
+    en: Advanced Script Converter
+    zh: 高级脚本转换器
   type: tool
   crossVersionUpdate: true
   limit: 0

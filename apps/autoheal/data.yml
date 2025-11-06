@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 监视和重启不正常的 docker 容器
   shortDescEn: Monitor and restart unhealthy docker containers
+  description:
+    en: Monitor and restart unhealthy docker containers
+    zh: 监视和重启不正常的 docker 容器
   type: tool
   crossVersionUpdate: true
   limit: 1

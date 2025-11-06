@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: pixman
   name: Pixman
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: IPTV、M3U8 流媒体代理方案
   shortDescEn: IPTV、M3U8 streaming media proxy solution
+  description:
+    en: IPTV、M3U8 streaming media proxy solution
+    zh: IPTV、M3U8 流媒体代理方案
   type: website
   crossVersionUpdate: true
   limit: 0

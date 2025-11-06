@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: Linux 命令大全搜索工具
   shortDescEn: Comprehensive Linux command search tool
+  description:
+    en: Comprehensive Linux command search tool
+    zh: Linux 命令大全搜索工具
   type: tool
   crossVersionUpdate: true
   limit: 0

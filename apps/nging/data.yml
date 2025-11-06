@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Go 语言 Web 管理面板
   shortDescEn: Go Language Web Management Panel
+  description:
+    en: Go Language Web Management Panel
+    zh: Go 语言 Web 管理面板
   type: tool
   crossVersionUpdate: true
   limit: 0

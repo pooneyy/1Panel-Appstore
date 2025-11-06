@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个可自建的文件分享平台
   shortDescEn: s self-hosted file sharing platform
+  description:
+    en: s self-hosted file sharing platform
+    zh: 一个可自建的文件分享平台
   type: tool
   crossVersionUpdate: true
   limit: 0

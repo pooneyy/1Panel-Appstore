@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 基于 Langchain 与 ChatGLM 等语言模型的本地知识库问答
   shortDescEn: A LLM application aims to implement knowledge and search engine based QA based on Langchain and open-source or remote LLM API
+  description:
+    en: A LLM application aims to implement knowledge and search engine based QA based on Langchain and open-source or remote LLM API
+    zh: 基于 Langchain 与 ChatGLM 等语言模型的本地知识库问答
   type: tool
   crossVersionUpdate: true
   limit: 0

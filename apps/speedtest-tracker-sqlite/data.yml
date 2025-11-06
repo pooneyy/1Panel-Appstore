@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: speedtest-tracker-sqlite
   name: SpeedTest Tracker SQLite版
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 托管互联网性能跟踪应用程序
   shortDescEn: Hosted internet performance tracking application
+  description:
+    en: Hosted internet performance tracking application
+    zh: 托管互联网性能跟踪应用程序
   type: website
   crossVersionUpdate: true
   limit: 0

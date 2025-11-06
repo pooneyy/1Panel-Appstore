@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: jellyseerr
   name: Jellyseerr
   tags:
@@ -8,6 +8,9 @@
     - Local
   shortDescZh: 满足您所有媒体需求的一站式平台
   shortDescEn: A one-stop platform to meet all your media needs
+  description:
+    en: A one-stop platform to meet all your media needs
+    zh: 满足您所有媒体需求的一站式平台
   type: website
   crossVersionUpdate: true
   limit: 0

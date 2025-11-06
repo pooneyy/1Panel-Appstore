@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Tailscale 控制服务器的开源自托管实现
   shortDescEn: An open source, self-hosted implementation of the Tailscale control server
+  description:
+    en: An open source, self-hosted implementation of the Tailscale control server
+    zh: Tailscale 控制服务器的开源自托管实现
   type: tool
   crossVersionUpdate: true
   limit: 0

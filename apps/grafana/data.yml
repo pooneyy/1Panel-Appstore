@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 用于监控和可观察性的开源平台
   shortDescEn: The open-source platform for monitoring and observability
+  description:
+    en: The open-source platform for monitoring and observability
+    zh: 用于监控和可观察性的开源平台
   type: tool
   crossVersionUpdate: true
   limit: 0

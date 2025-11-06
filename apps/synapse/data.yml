@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Synapse是一个开源的Matrix家庭服务器，自建聊天服务端
   shortDescEn: Synapse is an open-source Matrix homeserver,build your own chat server
+  description:
+    en: Synapse is an open-source Matrix homeserver,build your own chat server
+    zh: Synapse是一个开源的Matrix家庭服务器，自建聊天服务端
   type: tool
   crossVersionUpdate: true
   limit: 1

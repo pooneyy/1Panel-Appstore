@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款围绕您构建的安全通信平台
   shortDescEn: A secure communications platform built around you
+  description:
+    en: A secure communications platform built around you
+    zh: 一款围绕您构建的安全通信平台
   type: tool
   crossVersionUpdate: true
   limit: 0

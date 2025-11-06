@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: qinglong
   name: 青龙
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 定时任务管理平台
   shortDescEn: A scheduled task management platform
+  description:
+    en: A scheduled task management platform
+    zh: 定时任务管理平台
   type: website
   crossVersionUpdate: true
   limit: 0

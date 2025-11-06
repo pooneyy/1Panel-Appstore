@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 新一代的论坛软件，使在线讨论变得有趣
   shortDescEn: The next-generation forum software that makes online discussion fun
+  description:
+    en: The next-generation forum software that makes online discussion fun
+    zh: 新一代的论坛软件，使在线讨论变得有趣
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 自动化中文字幕下载
   shortDescEn: Automatic Chinese subtitle download
+  description:
+    en: Automatic Chinese subtitle download
+    zh: 自动化中文字幕下载
   type: tool
   crossVersionUpdate: true
   limit: 0

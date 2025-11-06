@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个功能强大的开源简历生成器和简历解析器
   shortDescEn: A powerful open-source resume builder and resume parser
+  description:
+    en: A powerful open-source resume builder and resume parser
+    zh: 一个功能强大的开源简历生成器和简历解析器
   type: tool
   crossVersionUpdate: true
   limit: 0

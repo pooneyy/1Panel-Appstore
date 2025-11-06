@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款轻量级主机及 Docker 容器监控工具
   shortDescEn: A lightweight host and Docker container monitoring tool
+  description:
+    en: A lightweight host and Docker container monitoring tool
+    zh: 一款轻量级主机及 Docker 容器监控工具
   type: tool
   crossVersionUpdate: true
   limit: 1

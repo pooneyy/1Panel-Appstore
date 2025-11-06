@@ -12,6 +12,9 @@ additionalProperties:
     - Security
   shortDescZh: 一种极其简单但快速且现代的 VPN
   shortDescEn: An extremely simple yet fast and modern VPN
+  description:
+    en: An extremely simple yet fast and modern VPN
+    zh: 一种极其简单但快速且现代的 VPN
   type: tool
   crossVersionUpdate: true
   limit: 0

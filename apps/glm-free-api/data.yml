@@ -11,6 +11,9 @@ additionalProperties:
     - Tools
   shortDescZh: 🚀 智谱清言ChatGLM-4-Plus大模型逆向API
   shortDescEn: A 1Panel deployment for glm-free-api
+  description:
+    en: A 1Panel deployment for glm-free-api
+    zh: 🚀 智谱清言ChatGLM-4-Plus大模型逆向API
   type: website
   crossVersionUpdate: true
   limit: 0

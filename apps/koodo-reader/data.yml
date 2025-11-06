@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 一个跨平台的电子书阅读器
   shortDescEn: A cross-platform ebook reader
+  description:
+    en: A cross-platform ebook reader
+    zh: 一个跨平台的电子书阅读器
   type: tool
   crossVersionUpdate: true
   limit: 0

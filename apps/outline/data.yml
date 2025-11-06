@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: outline
   name: Outline
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 您团队的知识库
   shortDescEn: Your team's knowledge base
+  description:
+    en: Your team's knowledge base
+    zh: 您团队的知识库
   type: website
   crossVersionUpdate: true
   limit: 0

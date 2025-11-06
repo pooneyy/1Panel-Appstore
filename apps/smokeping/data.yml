@@ -5,6 +5,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个豪华的延迟测量工具
   shortDescEn: A deluxe latency measurement tool
+  description:
+    en: A deluxe latency measurement tool
+    zh: 一个豪华的延迟测量工具
   type: tool
   crossVersionUpdate: true
   limit: 0

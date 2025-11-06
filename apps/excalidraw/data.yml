@@ -7,6 +7,9 @@ additionalProperties:
     - Local
   shortDescZh: 用于绘制手绘图表的虚拟白板
   shortDescEn: Virtual whiteboard for sketching hand-drawn like diagrams
+  description:
+    en: Virtual whiteboard for sketching hand-drawn like diagrams
+    zh: 用于绘制手绘图表的虚拟白板
   type: website
   crossVersionUpdate: true
   limit: 0

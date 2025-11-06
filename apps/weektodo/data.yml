@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款免费的极简主义每周计划应用程序，专注于隐私
   shortDescEn: A free minimalist weekly planner app focused on privacy
+  description:
+    en: A free minimalist weekly planner app focused on privacy
+    zh: 一款免费的极简主义每周计划应用程序，专注于隐私
   type: tool
   crossVersionUpdate: true
   limit: 0

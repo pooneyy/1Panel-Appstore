@@ -11,6 +11,9 @@ additionalProperties:
     - Tools
   shortDescZh: 🚀 即梦3.0逆向API【特长：图像生成顶流】
   shortDescEn: A 1Panel deployment for jimeng-free-api
+  description:
+    en: A 1Panel deployment for jimeng-free-api
+    zh: 🚀 即梦3.0逆向API【特长：图像生成顶流】
   type: website
   crossVersionUpdate: true
   limit: 0

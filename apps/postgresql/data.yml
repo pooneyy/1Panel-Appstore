@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: postgresql
   name: PostgreSQL
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 开源关系型数据库
   shortDescEn: Open Source Relational Database
+  description:
+    en: Open Source Relational Database
+    zh: 开源关系型数据库
   type: runtime
   crossVersionUpdate: false
   limit: 0

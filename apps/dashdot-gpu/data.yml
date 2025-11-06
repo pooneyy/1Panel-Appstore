@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: dashdot-gpu
   name: Dash. (GPU支持)
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 现代服务器仪表板
   shortDescEn: Modern server dashboard
+  description:
+    en: Modern server dashboard
+    zh: 现代服务器仪表板
   type: website
   crossVersionUpdate: true
   limit: 0

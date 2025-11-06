@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 支持 Git clone、raw、releases的 Github 加速项目, 支持自托管的同时带来卓越的性能与极低的资源占用(Golang和HertZ带来的优势), 同时支持多种额外功能
   shortDescEn: Acceleration project for GitHub releases, archives, and project files
+  description:
+    en: Acceleration project for GitHub releases, archives, and project files
+    zh: 支持 Git clone、raw、releases的 Github 加速项目, 支持自托管的同时带来卓越的性能与极低的资源占用(Golang和HertZ带来的优势), 同时支持多种额外功能
   type: tool
   crossVersionUpdate: true
   limit: 0

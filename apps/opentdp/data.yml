@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 可以跨平台部署的云资源管理面板
   shortDescEn: Cloud resource management dashboard for cross-platform deployment
+  description:
+    en: Cloud resource management dashboard for cross-platform deployment
+    zh: 可以跨平台部署的云资源管理面板
   type: tool
   crossVersionUpdate: true
   limit: 0

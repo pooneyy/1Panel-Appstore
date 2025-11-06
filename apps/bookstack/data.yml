@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 一个用于存储和组织信息及文档的平台
   shortDescEn: A platform for storing and organising information and documentation
+  description:
+    en: A platform for storing and organising information and documentation
+    zh: 一个用于存储和组织信息及文档的平台
   type: website
   crossVersionUpdate: true
   limit: 0

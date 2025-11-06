@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 适配 1Panel 应用商店的通用应用模板
   shortDescEn: Universal app template for the 1Panel App Store
+  description:
+    en: Universal app template for the 1Panel App Store
+    zh: 适配 1Panel 应用商店的通用应用模板
   type: website
   crossVersionUpdate: true
   limit: 0

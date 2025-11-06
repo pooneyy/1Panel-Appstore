@@ -7,6 +7,9 @@ additionalProperties:
     - Local
   shortDescZh: BT 反吸血工具
   shortDescEn: BT Anti-Siphon Tool
+  description:
+    en: BT Anti-Siphon Tool
+    zh: BT 反吸血工具
   type: website
   crossVersionUpdate: true
   limit: 0

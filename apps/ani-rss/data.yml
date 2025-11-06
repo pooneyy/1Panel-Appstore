@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: ani-rss
   name: ANI-RSS
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 自动追番、订阅、下载 蜜柑RSS动漫
   shortDescEn: Automatically subscribe to and download Mikan RSS anime
+  description:
+    en: Automatically subscribe to and download Mikan RSS anime
+    zh: 自动追番、订阅、下载 蜜柑RSS动漫
   type: website
   crossVersionUpdate: false
   limit: 0

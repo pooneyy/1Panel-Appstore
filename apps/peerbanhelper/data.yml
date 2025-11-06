@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: BT 客户端反恶意吸血工具
   shortDescEn: BitTorrent client anti malicious leech tool
+  description:
+    en: BitTorrent client anti malicious leech tool
+    zh: BT 客户端反恶意吸血工具
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个开源、简单易用、易于扩展的 RSS 生成器
   shortDescEn: An open-source, easy-to-use, and easy-to-scale RSS generator
+  description:
+    en: An open-source, easy-to-use, and easy-to-scale RSS generator
+    zh: 一个开源、简单易用、易于扩展的 RSS 生成器
   type: tool
   crossVersionUpdate: true
   limit: 0

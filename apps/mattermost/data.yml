@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 开源团队协作平台
   shortDescEn: Open-source team collaboration platform
+  description:
+    en: Open-source team collaboration platform
+    zh: 开源团队协作平台
   type: website
   crossVersionUpdate: true
   limit: 0

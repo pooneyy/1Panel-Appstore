@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: percona
   name: Percona
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 关系型数据库
   shortDescEn: Open source relational database management system
+  description:
+    en: Open source relational database management system
+    zh: 关系型数据库
   type: runtime
   crossVersionUpdate: true
   limit: 0

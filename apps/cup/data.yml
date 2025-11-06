@@ -1,24 +1,27 @@
 name: cup
 tags:
-    - 实用工具
+  - 实用工具
 title: 自动检测 Docker 容器基础镜像的工具
 description:
+  en: Docker container updates made easy
+  zh: 自动检测 Docker 容器基础镜像的工具
+  architectures:
+    - amd64
+    - arm64
+additionalProperties:
+  key: cup
+  name: cup
+  tags:
+    - Tool
+  shortDescZh: 自动检测 Docker 容器基础镜像的工具
+  shortDescEn: Docker container updates made easy
+  description:
     en: Docker container updates made easy
     zh: 自动检测 Docker 容器基础镜像的工具
-    architectures:
-        - amd64
-        - arm64
-additionalProperties:
-    key: cup
-    name: cup
-    tags:
-        - Tool
-    shortDescZh: 自动检测 Docker 容器基础镜像的工具
-    shortDescEn: Docker container updates made easy
-    type: website
-    crossVersionUpdate: true
-    limit: 1
-    recommend: 0
-    website: https://cup.sergi0g.dev/
-    github: https://github.com/sergi0g/cup
-    document: https://cup.sergi0g.dev/docs
+  type: website
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://cup.sergi0g.dev/
+  github: https://github.com/sergi0g/cup
+  document: https://cup.sergi0g.dev/docs

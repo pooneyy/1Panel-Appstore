@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 一款适合任何团队的问答平台软件
   shortDescEn: A Q&A platform software for teams at any scales
+  description:
+    en: A Q&A platform software for teams at any scales
+    zh: 一款适合任何团队的问答平台软件
   type: website
   crossVersionUpdate: true
   limit: 0

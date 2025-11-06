@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 基于大模型的智能对话机器人
   shortDescEn: Intelligent Conversational Bots Based on Large Models
+  description:
+    en: Intelligent Conversational Bots Based on Large Models
+    zh: 基于大模型的智能对话机器人
   type: tool
   crossVersionUpdate: true
   limit: 0

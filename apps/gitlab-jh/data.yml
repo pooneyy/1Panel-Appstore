@@ -5,8 +5,11 @@ additionalProperties:
     - DevOps
   shortDescZh: 极狐GitLab 是 GitLab 中国发行版（JH）
   shortDescEn: GitLab-JH is GitLab China Release (JH)
+  description:
+    en: GitLab-JH is GitLab China Release (JH)
+    zh: 极狐GitLab 是 GitLab 中国发行版（JH）
   type: website
-  crossVersionUpdate: False
+  crossVersionUpdate: false
   limit: 0
   website: https://gitlab.cn/
   github: https://gitlab.cn/

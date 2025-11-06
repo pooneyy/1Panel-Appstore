@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 多平台大模型机器人基础设施
   shortDescEn: The Multi-Platform LLM Bot Infrastructure
+  description:
+    en: The Multi-Platform LLM Bot Infrastructure
+    zh: 多平台大模型机器人基础设施
   type: website
   crossVersionUpdate: true
   limit: 0

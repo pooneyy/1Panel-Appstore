@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Magic Resume 是一个现代化的在线简历编辑器，让创建专业简历变得简单有趣。基于 Next.js 和 Motion 构建，支持实时预览和自定义主题。
   shortDescEn: Magic Resume is a modern online resume editor that makes creating professional resumes simple and enjoyable. Built with Next.js and Framer Motion, it supports real-time preview and custom themes
+  description:
+    en: Magic Resume is a modern online resume editor that makes creating professional resumes simple and enjoyable. Built with Next.js and Framer Motion, it supports real-time preview and custom themes
+    zh: Magic Resume 是一个现代化的在线简历编辑器，让创建专业简历变得简单有趣。基于 Next.js 和 Motion 构建，支持实时预览和自定义主题。
   type: tool
   crossVersionUpdate: true
   limit: 0

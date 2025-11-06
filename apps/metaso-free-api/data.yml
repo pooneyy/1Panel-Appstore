@@ -11,6 +11,9 @@ additionalProperties:
     - Tools
   shortDescZh: 🚀 秘塔AI搜索逆向API【特长：超强检索超长输出】
   shortDescEn: A 1Panel deployment for metaso-free-api
+  description:
+    en: A 1Panel deployment for metaso-free-api
+    zh: 🚀 秘塔AI搜索逆向API【特长：超强检索超长输出】
   type: website
   crossVersionUpdate: true
   limit: 0

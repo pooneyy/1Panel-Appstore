@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: 一款高质量、可视化、开源的 SQLite 文件管理工具
   shortDescEn: A high-quality, visual, open-source SQLite file management tool
+  description:
+    en: A high-quality, visual, open-source SQLite file management tool
+    zh: 一款高质量、可视化、开源的 SQLite 文件管理工具
   type: tool
   crossVersionUpdate: true
   limit: 0

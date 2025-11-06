@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: immich-machine-learning
   name: Immich 机器学习模块
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 高性能自托管照片和视频备份解决方案
   shortDescEn: High performance self-hosted photo and video backup solution
+  description:
+    en: High performance self-hosted photo and video backup solution
+    zh: 高性能自托管照片和视频备份解决方案
   type: tool
   crossVersionUpdate: true
   limit: 0

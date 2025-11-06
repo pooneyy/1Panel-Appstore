@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 一个易用而强大的，跨平台的 V2Ray 客户端
   shortDescEn: An easy-to-use and powerful cross-platform V2Ray client
+  description:
+    en: An easy-to-use and powerful cross-platform V2Ray client
+    zh: 一个易用而强大的，跨平台的 V2Ray 客户端
   type: website
   crossVersionUpdate: true
   limit: 0

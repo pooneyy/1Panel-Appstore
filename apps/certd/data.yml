@@ -10,6 +10,9 @@ additionalProperties:
     - Security
   shortDescZh: 开源 SSL 证书管理工具
   shortDescEn: Open source SSL certificate management tool
+  description:
+    en: Open source SSL certificate management tool
+    zh: 开源 SSL 证书管理工具
   type: tool
   crossVersionUpdate: true
   limit: 0

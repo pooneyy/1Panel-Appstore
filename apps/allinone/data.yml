@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 直播源代理程序
   shortDescEn: Live feed agent program
+  description:
+    en: Live feed agent program
+    zh: 直播源代理程序
   type: tool
   crossVersionUpdate: true
   limit: 0

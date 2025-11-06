@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 大语言模型 (LLMs) 的用户友好型网络界面
   shortDescEn: User-friendly WebUI for LLMs
+  description:
+    en: User-friendly WebUI for LLMs
+    zh: 大语言模型 (LLMs) 的用户友好型网络界面
   type: tool
   crossVersionUpdate: true
   limit: 0

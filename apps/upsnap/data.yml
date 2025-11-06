@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个简单的唤醒网络应用程序
   shortDescEn: A simple wake on lan web app
+  description:
+    en: A simple wake on lan web app
+    zh: 一个简单的唤醒网络应用程序
   type: tool
   crossVersionUpdate: true
   limit: 0

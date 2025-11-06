@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 开源百科引擎
   shortDescEn: Open-source wiki engine
+  description:
+    en: Open-source wiki engine
+    zh: 开源百科引擎
   type: tool
   crossVersionUpdate: true
   limit: 0

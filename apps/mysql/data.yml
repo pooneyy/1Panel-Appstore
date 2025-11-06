@@ -10,6 +10,9 @@ additionalProperties:
     - Database
   shortDescZh: MySQL 开源关系型数据库
   shortDescEn: Open source relational database management system
+  description:
+    en: Open source relational database management system
+    zh: MySQL 开源关系型数据库
   type: runtime
   crossVersionUpdate: false
   limit: 0

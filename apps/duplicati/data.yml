@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 在云存储服务上安全地存储加密备份
   shortDescEn: Store securely encrypted backups on cloud storage services
+  description:
+    en: Store securely encrypted backups on cloud storage services
+    zh: 在云存储服务上安全地存储加密备份
   type: tool
   crossVersionUpdate: true
   limit: 0

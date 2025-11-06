@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: KMS 服务端与 WEB
   shortDescEn: KMS server and WEB
+  description:
+    en: KMS server and WEB
+    zh: KMS 服务端与 WEB
   type: tool
   crossVersionUpdate: true
   limit: 0

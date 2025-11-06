@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 高级 Web 面板 • 专为 SagerNet/Sing-Box 打造
   shortDescEn: Advanced Web Panel • Built for SagerNet/Sing-Box
+  description:
+    en: Advanced Web Panel • Built for SagerNet/Sing-Box
+    zh: 高级 Web 面板 • 专为 SagerNet/Sing-Box 打造
   type: tool
   crossVersionUpdate: true
   limit: 0

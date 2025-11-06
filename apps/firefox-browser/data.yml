@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个免费的开源网络浏览器
   shortDescEn: A free and open-source web browser
+  description:
+    en: A free and open-source web browser
+    zh: 一个免费的开源网络浏览器
   type: tool
   crossVersionUpdate: true
   limit: 0

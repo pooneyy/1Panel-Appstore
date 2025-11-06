@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款文件文档在线预览解决方案
   shortDescEn: A online preview solution for documents
+  description:
+    en: A online preview solution for documents
+    zh: 一款文件文档在线预览解决方案
   type: tool
   crossVersionUpdate: true
   limit: 0

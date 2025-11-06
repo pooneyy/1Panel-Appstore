@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 关心你的阅读体验的 Telegram RSS 机器人
   shortDescEn: A Telegram RSS bot that cares about your reading experience
+  description:
+    en: A Telegram RSS bot that cares about your reading experience
+    zh: 关心你的阅读体验的 Telegram RSS 机器人
   type: tool
   crossVersionUpdate: true
   limit: 0

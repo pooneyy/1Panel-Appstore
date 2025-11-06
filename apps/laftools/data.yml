@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: 免费安全的一键式呼出工具箱
   shortDescEn: Free and Secure One-Click Callout Toolkit
+  description:
+    en: Free and Secure One-Click Callout Toolkit
+    zh: 免费安全的一键式呼出工具箱
   type: tool
   crossVersionUpdate: true
   limit: 0

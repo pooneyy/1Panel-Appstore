@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款协作式数字白板
   shortDescEn: A collaborative digital whiteboard
+  description:
+    en: A collaborative digital whiteboard
+    zh: 一款协作式数字白板
   type: tool
   crossVersionUpdate: true
   limit: 0

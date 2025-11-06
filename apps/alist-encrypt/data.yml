@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 对 Alist 的服务提供 webdav 的加解密功能
   shortDescEn: Provides webdav encryption and decryption for Alist's services
+  description:
+    en: Provides webdav encryption and decryption for Alist's services
+    zh: 对 Alist 的服务提供 webdav 的加解密功能
   type: tool
   crossVersionUpdate: true
   limit: 0

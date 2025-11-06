@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 使阅读和理解 JSON 文件变得简单
   shortDescEn: Makes reading and understand JSON files easy
+  description:
+    en: Makes reading and understand JSON files easy
+    zh: 使阅读和理解 JSON 文件变得简单
   type: tool
   crossVersionUpdate: true
   limit: 0

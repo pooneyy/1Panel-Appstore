@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: RustDesk是一款开源的远程桌面软件
   shortDescEn: RustDesk is an open source remote desktop software
+  description:
+    en: RustDesk is an open source remote desktop software
+    zh: RustDesk是一款开源的远程桌面软件
   type: tool
   crossVersionUpdate: false
   limit: 0

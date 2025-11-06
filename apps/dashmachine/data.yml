@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个具有有趣功能的 Web 应用程序书签仪表板
   shortDescEn: A web application bookmark dashboard, with fun features
+  description:
+    en: A web application bookmark dashboard, with fun features
+    zh: 一个具有有趣功能的 Web 应用程序书签仪表板
   type: tool
   crossVersionUpdate: true
   limit: 0

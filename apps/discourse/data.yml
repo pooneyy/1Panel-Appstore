@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 开源讨论平台
   shortDescEn: Open-source discussion platform
+  description:
+    en: Open-source discussion platform
+    zh: 开源讨论平台
   type: website
   crossVersionUpdate: true
   limit: 0

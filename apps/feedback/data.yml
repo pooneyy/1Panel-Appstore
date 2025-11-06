@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: feedback
   name: 问题反馈平台
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 问题反馈平台 (替兔小巢)
   shortDescEn: Feedback platform (replace Tu Xiaochao)
+  description:
+    en: Feedback platform (replace Tu Xiaochao)
+    zh: 问题反馈平台 (替兔小巢)
   type: website
   crossVersionUpdate: true
   limit: 0

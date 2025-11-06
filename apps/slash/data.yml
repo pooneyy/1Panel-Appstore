@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个开源、自托管书签和链接共享平台
   shortDescEn: An open source, self-hosted bookmarks and link sharing platform
+  description:
+    en: An open source, self-hosted bookmarks and link sharing platform
+    zh: 一个开源、自托管书签和链接共享平台
   type: tool
   crossVersionUpdate: true
   limit: 0

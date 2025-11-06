@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Synapse 管理界面
   shortDescEn: Synapse admin ui
+  description:
+    en: Synapse admin ui
+    zh: Synapse 管理界面
   type: tool
   crossVersionUpdate: true
   limit: 0

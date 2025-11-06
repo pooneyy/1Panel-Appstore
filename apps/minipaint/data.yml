@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 在线图像编辑器，可让您使用HTML5技术创建，编辑图像
   shortDescEn: Online image editor lets you create, edit images using HTML5 technologies
+  description:
+    en: Online image editor lets you create, edit images using HTML5 technologies
+    zh: 在线图像编辑器，可让您使用HTML5技术创建，编辑图像
   type: tool
   crossVersionUpdate: true
   limit: 0

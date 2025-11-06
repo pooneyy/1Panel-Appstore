@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 支持多家云存储的云盘系统
   shortDescEn: A cloud disk system that supports multiple cloud storage
+  description:
+    en: A cloud disk system that supports multiple cloud storage
+    zh: 支持多家云存储的云盘系统
   type: tool
   crossVersionUpdate: true
   limit: 0

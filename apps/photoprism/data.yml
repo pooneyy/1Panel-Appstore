@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 去中心化网络的人工智能照片应用程序
   shortDescEn: AI-Powered Photos App for the Decentralized Web
+  description:
+    en: AI-Powered Photos App for the Decentralized Web
+    zh: 去中心化网络的人工智能照片应用程序
   type: tool
   crossVersionUpdate: true
   limit: 0

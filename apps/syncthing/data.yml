@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 开源的连续文件同步程序
   shortDescEn: Open Source Continuous File Synchronization
+  description:
+    en: Open Source Continuous File Synchronization
+    zh: 开源的连续文件同步程序
   type: tool
   crossVersionUpdate: true
   limit: 1

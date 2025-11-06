@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 最强大、模块化的 stable diffusion GUI，具有图形/节点界面
   shortDescEn: The most powerful and modular stable diffusion GUI with a graph/nodes interface
+  description:
+    en: The most powerful and modular stable diffusion GUI with a graph/nodes interface
+    zh: 最强大、模块化的 stable diffusion GUI，具有图形/节点界面
   type: tool
   crossVersionUpdate: true
   limit: 0

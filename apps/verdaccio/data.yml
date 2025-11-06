@@ -10,6 +10,9 @@ additionalProperties:
     - DevOps
   shortDescZh: 本地私有 NPM 注册中心
   shortDescEn: local private NPM registry
+  description:
+    en: local private NPM registry
+    zh: 本地私有 NPM 注册中心
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款支持独立部署的个人云社交媒体聊天服务
   shortDescEn: a secure chat software that supports independent deployment
+  description:
+    en: a secure chat software that supports independent deployment
+    zh: 一款支持独立部署的个人云社交媒体聊天服务
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 具有隐私保护和团队合作功能的开源云存储系统
   shortDescEn: An open source cloud storage system with privacy protection and teamwork features
+  description:
+    en: An open source cloud storage system with privacy protection and teamwork features
+    zh: 具有隐私保护和团队合作功能的开源云存储系统
   type: tool
   crossVersionUpdate: true
   limit: 1

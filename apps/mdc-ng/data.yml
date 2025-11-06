@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 你的次世代媒体库管理方案
   shortDescEn: Yet another Movie Data Capture tool
+  description:
+    en: Yet another Movie Data Capture tool
+    zh: 你的次世代媒体库管理方案
   type: tool
   crossVersionUpdate: true
   limit: 0

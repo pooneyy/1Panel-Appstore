@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: watchyourlan
   name: 路由设备监控
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 轻量级网络 IP 扫描器
   shortDescEn: Lightweight network IP scanner
+  description:
+    en: Lightweight network IP scanner
+    zh: 轻量级网络 IP 扫描器
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 一款高颜值的第三方网易云播放器
   shortDescEn: A high-end third-party NetEase cloud player
+  description:
+    en: A high-end third-party NetEase cloud player
+    zh: 一款高颜值的第三方网易云播放器
   type: tool
   crossVersionUpdate: true
   limit: 0

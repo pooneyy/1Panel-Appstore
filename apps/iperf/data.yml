@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 网络性能测试工具
   shortDescEn: Network performance testing tool
+  description:
+    en: Network performance testing tool
+    zh: 网络性能测试工具
   type: tool
   crossVersionUpdate: true
   limit: 0

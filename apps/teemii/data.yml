@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: teemii
   name: Teemii
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 漫画阅读器和管理器
   shortDescEn: Comic reader and manager
+  description:
+    en: Comic reader and manager
+    zh: 漫画阅读器和管理器
   type: website
   crossVersionUpdate: true
   limit: 0

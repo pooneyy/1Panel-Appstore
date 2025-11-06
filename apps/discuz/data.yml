@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 开源社交建站系统
   shortDescEn: Open Source Social Building System
+  description:
+    en: Open Source Social Building System
+    zh: 开源社交建站系统
   type: website
   crossVersionUpdate: false
   limit: 0

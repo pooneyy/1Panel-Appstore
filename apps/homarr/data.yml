@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: homarr
   name: Homarr
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 一个时尚、现代化的仪表板
   shortDescEn: A stylish, modern dashboard
+  description:
+    en: A stylish, modern dashboard
+    zh: 一个时尚、现代化的仪表板
   type: website
   crossVersionUpdate: false
   limit: 0

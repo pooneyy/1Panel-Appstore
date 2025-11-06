@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: telegram-bot-api
   name: Telegram Bot Api
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: Telegram Bot API 服务器
   shortDescEn: Telegram Bot API Server
+  description:
+    en: Telegram Bot API Server
+    zh: Telegram Bot API 服务器
   type: tool
   crossVersionUpdate: true
   limit: 0

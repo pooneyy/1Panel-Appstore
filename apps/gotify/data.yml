@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: 自托管通知服务器
   shortDescEn: Self-hosted notification server
+  description:
+    en: Self-hosted notification server
+    zh: 自托管通知服务器
   type: tool
   crossVersionUpdate: true
   limit: 0

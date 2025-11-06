@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 轻量级目录列表程序
   shortDescEn: Lightweight directory listing program
+  description:
+    en: Lightweight directory listing program
+    zh: 轻量级目录列表程序
   type: website
   crossVersionUpdate: true
   limit: 0

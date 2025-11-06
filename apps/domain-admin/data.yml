@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 域名和SSL证书监测平台
   shortDescEn: Domain name and SSL certificate monitoring platform
+  description:
+    en: Domain name and SSL certificate monitoring platform
+    zh: 域名和SSL证书监测平台
   type: tool
   crossVersionUpdate: true
   limit: 0

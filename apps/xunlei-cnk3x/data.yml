@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: xunlei-cnk3x
   name: 迅雷 NAS版
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 迅雷远程下载服务 NAS移植版
   shortDescEn: Thunder Remote Download Service NAS Port
+  description:
+    en: Thunder Remote Download Service NAS Port
+    zh: 迅雷远程下载服务 NAS移植版
   type: website
   crossVersionUpdate: true
   limit: 0

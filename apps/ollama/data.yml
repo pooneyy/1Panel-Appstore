@@ -5,6 +5,9 @@ additionalProperties:
     - AI
   shortDescZh: 一站式大模型部署平台
   shortDescEn: Get up and running with large language models
+  description:
+    en: Get up and running with large language models
+    zh: 一站式大模型部署平台
   type: tool
   crossVersionUpdate: true
   limit: 1

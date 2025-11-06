@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个可视化的 Scrapy 爬虫管理平台，依赖于 Scrapyd
   shortDescEn: A visual Scrapy crawler management platform that relies on Scrapyd
+  description:
+    en: A visual Scrapy crawler management platform that relies on Scrapyd
+    zh: 一个可视化的 Scrapy 爬虫管理平台，依赖于 Scrapyd
   type: tool
   crossVersionUpdate: true
   limit: 0

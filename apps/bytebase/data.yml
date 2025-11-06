@@ -10,6 +10,9 @@ additionalProperties:
     - DevOps
   shortDescZh: 开源的数据库 DevOps 工具
   shortDescEn: An open-source database DevOps tool
+  description:
+    en: An open-source database DevOps tool
+    zh: 开源的数据库 DevOps 工具
   type: tool
   crossVersionUpdate: true
   limit: 0

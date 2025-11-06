@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: puff
   name: Puff
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 域名监控程序
   shortDescEn: Domain monitoring program
+  description:
+    en: Domain monitoring program
+    zh: 域名监控程序
   type: website
   crossVersionUpdate: true
   limit: 0

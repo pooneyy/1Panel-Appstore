@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个简洁但强大的私人书籍管理系统
   shortDescEn: A better online books library management website
+  description:
+    en: A better online books library management website
+    zh: 一个简洁但强大的私人书籍管理系统
   type: tool
   crossVersionUpdate: true
   limit: 0

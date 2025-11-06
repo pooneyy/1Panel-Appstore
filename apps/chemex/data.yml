@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个免费、开源、高效且漂亮的运维资产管理平台
   shortDescEn: A free, open-source, efficient and beautiful O&M asset management platform
+  description:
+    en: A free, open-source, efficient and beautiful O&M asset management platform
+    zh: 一个免费、开源、高效且漂亮的运维资产管理平台
   type: tool
   crossVersionUpdate: false
   limit: 0

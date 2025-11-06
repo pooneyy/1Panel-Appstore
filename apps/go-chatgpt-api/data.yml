@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个尝试绕过 Cloudflare 来使用 ChatGPT 接口的程序
   shortDescEn: A program that attempts to bypass Cloudflare to use the ChatGPT interface
+  description:
+    en: A program that attempts to bypass Cloudflare to use the ChatGPT interface
+    zh: 一个尝试绕过 Cloudflare 来使用 ChatGPT 接口的程序
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 更好的问卷考试系统
   shortDescEn: Better Questionnaire Exam System
+  description:
+    en: Better Questionnaire Exam System
+    zh: 更好的问卷考试系统
   type: tool
   crossVersionUpdate: true
   limit: 0

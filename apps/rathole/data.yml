@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 安全、稳定、高性能的内网穿透工具
   shortDescEn: A secure, stable and high-performance reverse proxy for NAT traversal
+  description:
+    en: A secure, stable and high-performance reverse proxy for NAT traversal
+    zh: 安全、稳定、高性能的内网穿透工具
   type: tool
   crossVersionUpdate: true
   limit: 0

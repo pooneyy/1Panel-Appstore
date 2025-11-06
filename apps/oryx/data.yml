@@ -5,6 +5,9 @@ additionalProperties:
     - Local
   shortDescZh: 开源音视频服务器
   shortDescEn: Open-source audio and video server
+  description:
+    en: Open-source audio and video server
+    zh: 开源音视频服务器
   type: tool
   crossVersionUpdate: true
   limit: 1

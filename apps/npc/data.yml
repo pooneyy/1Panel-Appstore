@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 内网穿透代理服务器 NPS 的客户端
   shortDescEn: Intranet Penetrating Proxy Server NPS Client
+  description:
+    en: Intranet Penetrating Proxy Server NPS Client
+    zh: 内网穿透代理服务器 NPS 的客户端
   type: tool
   crossVersionUpdate: true
   limit: 1

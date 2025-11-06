@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 电影收藏管理器
   shortDescEn: Movie organizer/manager
+  description:
+    en: Movie organizer/manager
+    zh: 电影收藏管理器
   type: tool
   crossVersionUpdate: true
   limit: 0

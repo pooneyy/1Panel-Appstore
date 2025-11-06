@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 宝塔面板，服务器运维管理面板
   shortDescEn: BT-Panel , Server O&M management panel
+  description:
+    en: BT-Panel , Server O&M management panel
+    zh: 宝塔面板，服务器运维管理面板
   type: tool
   crossVersionUpdate: false
   limit: 0

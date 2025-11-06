@@ -10,6 +10,9 @@ additionalProperties:
     - Server
   shortDescZh: Nginx 网络管理界面
   shortDescEn: Yet another WebUI for Nginx
+  description:
+    en: Yet another WebUI for Nginx
+    zh: Nginx 网络管理界面
   type: runtime
   crossVersionUpdate: true
   limit: 1

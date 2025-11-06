@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: reader3
   name: 阅读3
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 阅读3服务器版，不需要手机
   shortDescEn: Reader3 server version, no need for mobile phone
+  description:
+    en: Reader3 server version, no need for mobile phone
+    zh: 阅读3服务器版，不需要手机
   type: website
   crossVersionUpdate: true
   limit: 0

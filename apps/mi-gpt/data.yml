@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 将小爱音箱接入 ChatGPT 和豆包
   shortDescEn: Plugging ChatGPT and Doubao into Xiaomi Speaker
+  description:
+    en: Plugging ChatGPT and Doubao into Xiaomi Speaker
+    zh: 将小爱音箱接入 ChatGPT 和豆包
   type: tool
   crossVersionUpdate: true
   limit: 0

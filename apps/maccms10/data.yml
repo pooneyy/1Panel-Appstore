@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: maccms10
   name: 苹果CMS V10
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 基于ThinkPHP和Layui的多功能开源免费内容管理系统
   shortDescEn: A multi-functional open source free content management system based on ThinkPHP and Layui
+  description:
+    en: A multi-functional open source free content management system based on ThinkPHP and Layui
+    zh: 基于ThinkPHP和Layui的多功能开源免费内容管理系统
   type: website
   crossVersionUpdate: true
   limit: 0

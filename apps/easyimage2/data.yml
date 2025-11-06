@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 简单图床 - 一款功能强大无数据库的图床 2.0版
   shortDescEn: EasyImage - A powerful database-free graph bed version 2.0
+  description:
+    en: EasyImage - A powerful database-free graph bed version 2.0
+    zh: 简单图床 - 一款功能强大无数据库的图床 2.0版
   type: tool
   crossVersionUpdate: true
   limit: 0

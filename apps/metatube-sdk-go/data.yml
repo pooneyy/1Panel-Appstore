@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: MetaTube 服务的后端
   shortDescEn: Backend of the MetaTube service
+  description:
+    en: Backend of the MetaTube service
+    zh: MetaTube 服务的后端
   type: tool
   crossVersionUpdate: true
   limit: 0

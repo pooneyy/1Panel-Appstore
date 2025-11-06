@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: 跨平台的数据库管理器
   shortDescEn: Cross-platform database manager
+  description:
+    en: Cross-platform database manager
+    zh: 跨平台的数据库管理器
   type: tool
   crossVersionUpdate: true
   limit: 0

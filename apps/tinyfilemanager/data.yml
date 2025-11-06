@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 一个基于 PHP 的轻量级文件管理器
   shortDescEn: A lightweight file manager based on PHP
+  description:
+    en: A lightweight file manager based on PHP
+    zh: 一个基于 PHP 的轻量级文件管理器
   type: website
   crossVersionUpdate: true
   limit: 0

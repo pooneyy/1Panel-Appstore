@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Tianji 是一款开源的 all-in-one 数据洞察中心
   shortDescEn: Tianji = Website Analytics + Uptime Monitor + Server Status
+  description:
+    en: Tianji = Website Analytics + Uptime Monitor + Server Status
+    zh: Tianji 是一款开源的 all-in-one 数据洞察中心
   type: tool
   crossVersionUpdate: true
   limit: 0

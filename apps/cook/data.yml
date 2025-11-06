@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 好的，今天我们来做菜！
   shortDescEn: OK, Let's Cook!
+  description:
+    en: OK, Let's Cook!
+    zh: 好的，今天我们来做菜！
   type: tool
   crossVersionUpdate: true
   limit: 0

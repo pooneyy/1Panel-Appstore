@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: iframely
   name: Iframely
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 响应式 Web 嵌入和 URL 元的 Iframely API
   shortDescEn: Responsive Web Embeds and URL Meta with Iframely API
+  description:
+    en: Responsive Web Embeds and URL Meta with Iframely API
+    zh: 响应式 Web 嵌入和 URL 元的 Iframely API
   type: tool
   crossVersionUpdate: true
   limit: 0

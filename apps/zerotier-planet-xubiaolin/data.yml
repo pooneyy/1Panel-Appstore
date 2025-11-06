@@ -7,6 +7,9 @@ additionalProperties:
     - Local
   shortDescZh: 创建和管理虚拟软件定义网络
   shortDescEn: Create and manage virtual software-defined networks
+  description:
+    en: Create and manage virtual software-defined networks
+    zh: 创建和管理虚拟软件定义网络
   type: website
   crossVersionUpdate: true
   limit: 0

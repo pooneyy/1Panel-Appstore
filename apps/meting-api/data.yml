@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 开源的音乐 API 服务
   shortDescEn: Open-source music API service
+  description:
+    en: Open-source music API service
+    zh: 开源的音乐 API 服务
   type: tool
   crossVersionUpdate: true
   limit: 0

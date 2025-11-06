@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 自托管个人服务器的照片库
   shortDescEn: Photo gallery for self-hosted personal servers
+  description:
+    en: Photo gallery for self-hosted personal servers
+    zh: 自托管个人服务器的照片库
   type: tool
   crossVersionUpdate: true
   limit: 0

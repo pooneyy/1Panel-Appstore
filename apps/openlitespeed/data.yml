@@ -10,6 +10,9 @@ additionalProperties:
     - Server
   shortDescZh: 一个高性能、轻量级、开源 的 HTTP 服务器
   shortDescEn: A high-performance, lightweight, open source HTTP server
+  description:
+    en: A high-performance, lightweight, open source HTTP server
+    zh: 一个高性能、轻量级、开源 的 HTTP 服务器
   type: runtime
   crossVersionUpdate: true
   limit: 0

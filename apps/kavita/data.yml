@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 自托管数字图书馆
   shortDescEn: Self-hosted digital library
+  description:
+    en: Self-hosted digital library
+    zh: 自托管数字图书馆
   type: website
   crossVersionUpdate: true
   limit: 0

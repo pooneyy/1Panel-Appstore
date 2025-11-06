@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 软硬路由公网神器
   shortDescEn: A software and hard routing public network artifact
+  description:
+    en: A software and hard routing public network artifact
+    zh: 软硬路由公网神器
   type: tool
   crossVersionUpdate: true
   limit: 0

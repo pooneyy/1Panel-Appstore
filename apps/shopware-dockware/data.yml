@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 电子商务平台
   shortDescEn: E-commerce
+  description:
+    en: E-commerce
+    zh: 电子商务平台
   type: website
   crossVersionUpdate: true
   limit: 0

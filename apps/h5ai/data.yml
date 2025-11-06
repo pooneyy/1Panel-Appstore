@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 用于Apache httpd，lighttpd和nginx的HTTP Web服务器索引
   shortDescEn: HTTP web server index for Apache httpd, lighttpd and nginx
+  description:
+    en: HTTP web server index for Apache httpd, lighttpd and nginx
+    zh: 用于Apache httpd，lighttpd和nginx的HTTP Web服务器索引
   type: tool
   crossVersionUpdate: true
   limit: 0

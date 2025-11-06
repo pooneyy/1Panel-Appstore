@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 阅读3服务器版，不需要手机
   shortDescEn: Legado 3.0 Book Reader Server Version
+  description:
+    en: Legado 3.0 Book Reader Server Version
+    zh: 阅读3服务器版，不需要手机
   type: tool
   crossVersionUpdate: true
   limit: 0

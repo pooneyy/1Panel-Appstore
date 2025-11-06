@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: Wireguard 网络界面
   shortDescEn: Wireguard web interface
+  description:
+    en: Wireguard web interface
+    zh: Wireguard 网络界面
   type: tool
   crossVersionUpdate: true
   limit: 1

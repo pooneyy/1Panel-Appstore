@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 媒体管理工具
   shortDescEn: Media Management Tools
+  description:
+    en: Media Management Tools
+    zh: 媒体管理工具
   type: tool
   crossVersionUpdate: true
   limit: 0

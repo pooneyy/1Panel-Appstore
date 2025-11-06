@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 视频索引和感知哈希元数据API
   shortDescEn: Video indexing and perceptual hash metadata API
+  description:
+    en: Video indexing and perceptual hash metadata API
+    zh: 视频索引和感知哈希元数据API
   type: website
   crossVersionUpdate: true
   limit: 0

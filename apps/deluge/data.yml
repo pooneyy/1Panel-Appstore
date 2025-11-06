@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 跨平台的 BitTorrent 客户端
   shortDescEn: Cross-platform BitTorrent client
+  description:
+    en: Cross-platform BitTorrent client
+    zh: 跨平台的 BitTorrent 客户端
   type: tool
   crossVersionUpdate: true
   limit: 0

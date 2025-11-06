@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 自托管虚拟浏览器
   shortDescEn: A self-hosted virtual browser
+  description:
+    en: A self-hosted virtual browser
+    zh: 自托管虚拟浏览器
   type: tool
   crossVersionUpdate: true
   limit: 0

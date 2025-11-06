@@ -11,6 +11,9 @@ additionalProperties:
     - Tools
   shortDescZh: 🚀 MiniMax大模型海螺AI逆向API【特长：超自然语音】
   shortDescEn: A 1Panel deployment for minimax-free-api
+  description:
+    en: A 1Panel deployment for minimax-free-api
+    zh: 🚀 MiniMax大模型海螺AI逆向API【特长：超自然语音】
   type: website
   crossVersionUpdate: true
   limit: 0

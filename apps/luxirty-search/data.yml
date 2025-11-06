@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 一个搜索引擎，基于 Google
   shortDescEn: A search engine, based on Google
+  description:
+    en: A search engine, based on Google
+    zh: 一个搜索引擎，基于 Google
   type: website
   crossVersionUpdate: true
   limit: 0

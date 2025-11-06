@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 更好用的 Aria2 Docker 容器镜像
   shortDescEn: A better-performing Aria2 Docker container image
+  description:
+    en: A better-performing Aria2 Docker container image
+    zh: 更好用的 Aria2 Docker 容器镜像
   type: tool
   crossVersionUpdate: false
   limit: 0

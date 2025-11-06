@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 让信息传递更简单
   shortDescEn: Make messaging easier
+  description:
+    en: Make messaging easier
+    zh: 让信息传递更简单
   type: tool
   crossVersionUpdate: true
   limit: 0

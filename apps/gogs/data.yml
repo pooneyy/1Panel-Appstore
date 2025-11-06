@@ -13,6 +13,9 @@ additionalProperties:
     - Local
   shortDescZh: 一款极易搭建的自助 Git 服务
   shortDescEn: Gogs is a painless self-hosted Git service.
+  description:
+    en: Gogs is a painless self-hosted Git service.
+    zh: 一款极易搭建的自助 Git 服务
   type: website
   crossVersionUpdate: true
   limit: 0

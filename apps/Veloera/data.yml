@@ -1,6 +1,6 @@
 name: new api by Veloera
 tags:
-    - AI / 大模型
+  - AI / 大模型
 title: OpenAI 接口管理 & 分发系统
 description: OpenAI 接口管理 & 分发系统
 additionalProperties:
@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 优秀的 AI API 网关系统，本项目基于 new-api 二次开发。
   shortDescEn: Excellent AI API gateway system, this project is based on new-api secondary development.
+  description:
+    en: Excellent AI API gateway system, this project is based on new-api secondary development.
+    zh: 优秀的 AI API 网关系统，本项目基于 new-api 二次开发。
   type: tool
   crossVersionUpdate: true
   limit: 0

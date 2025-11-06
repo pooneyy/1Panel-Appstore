@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: 一键免费部署你的跨平台私人 ChatGPT 应用
   shortDescEn: One-Click to get well-designed cross-platform ChatGPT web UI
+  description:
+    en: One-Click to get well-designed cross-platform ChatGPT web UI
+    zh: 一键免费部署你的跨平台私人 ChatGPT 应用
   type: tool
   crossVersionUpdate: true
   limit: 0

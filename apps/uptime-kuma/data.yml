@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: uptime-kuma
   name: Uptime Kuma
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 自托管的监控工具
   shortDescEn: Self-hosted monitoring tool
+  description:
+    en: Self-hosted monitoring tool
+    zh: 自托管的监控工具
   type: website
   crossVersionUpdate: false
   limit: 0

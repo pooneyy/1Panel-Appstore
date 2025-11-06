@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个运行在本地的 DNS 服务器
   shortDescEn: A local DNS server
+  description:
+    en: A local DNS server
+    zh: 一个运行在本地的 DNS 服务器
   type: tool
   crossVersionUpdate: true
   limit: 0

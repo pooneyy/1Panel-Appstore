@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: redis
   name: Redis
   tags:
@@ -8,6 +8,9 @@
     - Local
   shortDescZh: 高性能的开源键值数据库
   shortDescEn: High-performance key-value database
+  description:
+    en: High-performance key-value database
+    zh: 高性能的开源键值数据库
   type: runtime
   crossVersionUpdate: true
   limit: 0

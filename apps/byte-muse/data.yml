@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: byte-muse
   name: Byte Muse
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 自动化订阅AV影片
   shortDescEn: Byte Muse is a tool for automatically subscribing to AV movies
+  description:
+    en: Byte Muse is a tool for automatically subscribing to AV movies
+    zh: 自动化订阅AV影片
   type: website
   crossVersionUpdate: true
   limit: 0

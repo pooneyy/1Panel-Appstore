@@ -10,6 +10,9 @@ additionalProperties:
     - Media
   shortDescZh: 一个开源的漫画存档服务
   shortDescEn: Open source server for archival of comics/manga
+  description:
+    en: Open source server for archival of comics/manga
+    zh: 一个开源的漫画存档服务
   type: tool
   crossVersionUpdate: true
   limit: 0

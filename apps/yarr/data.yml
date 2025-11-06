@@ -1,10 +1,13 @@
-﻿additionalProperties:
+additionalProperties:
   key: yarr
   name: Yarr
   tags:
     - Tool
   shortDescZh: Rss 阅读器
   shortDescEn: Rss Reader
+  description:
+    en: Rss Reader
+    zh: Rss 阅读器
   type: tool
   crossVersionUpdate: true
   limit: 0

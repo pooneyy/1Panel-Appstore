@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一款现代化的下载器
   shortDescEn: High speed downloader that supports all platforms
+  description:
+    en: High speed downloader that supports all platforms
+    zh: 一款现代化的下载器
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: RustDesk 的 API 管理平台
   shortDescEn: RustDesk API management platform
+  description:
+    en: RustDesk API management platform
+    zh: RustDesk 的 API 管理平台
   type: website
   crossVersionUpdate: true
   limit: 0

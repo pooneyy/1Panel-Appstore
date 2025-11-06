@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 卷王问卷考试系统
   shortDescEn: SurveyKing is a survey and exam system
+  description:
+    en: SurveyKing is a survey and exam system
+    zh: 卷王问卷考试系统
   type: website
   crossVersionUpdate: true
   limit: 0

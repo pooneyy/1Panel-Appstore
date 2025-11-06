@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: mariadb
   name: MariaDB
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 开源关系数据库管理系统
   shortDescEn: Open source relational database management system
+  description:
+    en: Open source relational database management system
+    zh: 开源关系数据库管理系统
   type: runtime
   crossVersionUpdate: true
   limit: 0

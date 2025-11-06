@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 哪吒监控 - Dashboard
   shortDescEn: Nezha Monitoring - Dashboard
+  description:
+    en: Nezha Monitoring - Dashboard
+    zh: 哪吒监控 - Dashboard
   type: tool
   crossVersionUpdate: true
   limit: 0

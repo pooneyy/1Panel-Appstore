@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: 支持远程调试多平台的开源工具
   shortDescEn: Open-source tool supporting remote debugging for multi-platform projects
+  description:
+    en: Open-source tool supporting remote debugging for multi-platform projects
+    zh: 支持远程调试多平台的开源工具
   type: tool
   crossVersionUpdate: true
   limit: 0

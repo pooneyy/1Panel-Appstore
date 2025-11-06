@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: elastic-kibana
   name: Kibana
   tags:
@@ -8,6 +8,9 @@
     - Local
   shortDescZh: 基于浏览器的 Elasticsearch 分析和搜索仪表盘
   shortDescEn: Browser-based Elasticsearch analytics and search dashboard
+  description:
+    en: Browser-based Elasticsearch analytics and search dashboard
+    zh: 基于浏览器的 Elasticsearch 分析和搜索仪表盘
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: Redis 图形管理工具
   shortDescEn: Redis graphical management tool
+  description:
+    en: Redis graphical management tool
+    zh: Redis 图形管理工具
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: gitea
   name: Gitea
   tags:
@@ -8,6 +8,9 @@
     - Local
   shortDescZh: 新一代的代码托管平台
   shortDescEn: The next generation of code hosting platform
+  description:
+    en: The next generation of code hosting platform
+    zh: 新一代的代码托管平台
   type: website
   crossVersionUpdate: true
   limit: 0

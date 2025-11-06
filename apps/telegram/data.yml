@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 适用于Kasm Workspaces 的电报桌面
   shortDescEn: Telegram Desktop for Kasm Workspaces
+  description:
+    en: Telegram Desktop for Kasm Workspaces
+    zh: 适用于Kasm Workspaces 的电报桌面
   type: tool
   crossVersionUpdate: true
   limit: 0

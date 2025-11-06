@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个纯前端实现的头像生成网站
   shortDescEn: A playful avatar generator
+  description:
+    en: A playful avatar generator
+    zh: 一个纯前端实现的头像生成网站
   type: tool
   crossVersionUpdate: true
   limit: 0

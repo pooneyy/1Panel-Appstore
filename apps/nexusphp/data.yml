@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: nexusphp
   name: NexusPHP
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 完整的 PT 建站解决方案
   shortDescEn: 完整的 PT 建站解决方案
+  description:
+    en: 完整的 PT 建站解决方案
+    zh: 完整的 PT 建站解决方案
   type: website
   crossVersionUpdate: true
   limit: 0

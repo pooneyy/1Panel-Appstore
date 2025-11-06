@@ -5,6 +5,9 @@ additionalProperties:
     - Tool
   shortDescZh: syncthing 中继服务器
   shortDescEn: the relay server for the syncthing
+  description:
+    en: the relay server for the syncthing
+    zh: syncthing 中继服务器
   type: tool
   crossVersionUpdate: true
   limit: 1

@@ -10,6 +10,9 @@ additionalProperties:
     - AI
   shortDescZh: ChatGPT 国粹版，和 GPT 一起学习地道的中国话吧
   shortDescEn: ChatGPT (swear version), learn "authentic" Chinese with GPT
+  description:
+    en: ChatGPT (swear version), learn "authentic" Chinese with GPT
+    zh: ChatGPT 国粹版，和 GPT 一起学习地道的中国话吧
   type: tool
   crossVersionUpdate: true
   limit: 0

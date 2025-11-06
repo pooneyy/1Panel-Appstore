@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 自动化测试定时任务、接口导入、Mock 服务
   shortDescEn: Automated testing, scheduled tasks, interface import, Mock service
+  description:
+    en: Automated testing, scheduled tasks, interface import, Mock service
+    zh: 自动化测试定时任务、接口导入、Mock 服务
   type: runtime
   crossVersionUpdate: true
   limit: 0

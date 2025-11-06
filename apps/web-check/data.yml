@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 用于分析任何网站的多合一 OSINT 工具
   shortDescEn: All-in-one OSINT tool for analysing any website
+  description:
+    en: All-in-one OSINT tool for analysing any website
+    zh: 用于分析任何网站的多合一 OSINT 工具
   type: tool
   crossVersionUpdate: true
   limit: 0

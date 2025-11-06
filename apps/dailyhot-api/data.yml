@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个聚合了中文热门站点数据的项目 (API)
   shortDescEn: A project that aggregates data for Chinese popular sites (API)
+  description:
+    en: A project that aggregates data for Chinese popular sites (API)
+    zh: 一个聚合了中文热门站点数据的项目 (API)
   type: tool
   crossVersionUpdate: true
   limit: 0

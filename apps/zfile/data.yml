@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 基于 Java 的在线网盘程序
   shortDescEn: Java-based online disk program
+  description:
+    en: Java-based online disk program
+    zh: 基于 Java 的在线网盘程序
   type: tool
   crossVersionUpdate: true
   limit: 0

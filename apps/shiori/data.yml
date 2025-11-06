@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: shiori
   name: Shiori
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 简单书签管理器，旨在作为 Pocket 的简单克隆
   shortDescEn: Simple bookmark manager, aiming to be a simple clone of Pocket
+  description:
+    en: Simple bookmark manager, aiming to be a simple clone of Pocket
+    zh: 简单书签管理器，旨在作为 Pocket 的简单克隆
   type: website
   crossVersionUpdate: true
   limit: 0

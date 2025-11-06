@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 一个 C# 开发的博客朋友圈平台
   shortDescEn: A C#-developed blogosphere platform
+  description:
+    en: A C#-developed blogosphere platform
+    zh: 一个 C# 开发的博客朋友圈平台
   type: website
   crossVersionUpdate: true
   limit: 0

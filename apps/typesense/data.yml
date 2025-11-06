@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 快速、容错率高的搜索引擎，用于构建令人愉悦的搜索体验
   shortDescEn: Fast, typo tolerant, fuzzy search engine for building delightful search experiences
+  description:
+    en: Fast, typo tolerant, fuzzy search engine for building delightful search experiences
+    zh: 快速、容错率高的搜索引擎，用于构建令人愉悦的搜索体验
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 开源自托管网页存档
   shortDescEn: Self-hosted web page archiving
+  description:
+    en: Self-hosted web page archiving
+    zh: 开源自托管网页存档
   type: website
   crossVersionUpdate: true
   limit: 0

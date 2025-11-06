@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 专注于 ACGMN 的内容管理系统 (CMS)
   shortDescEn: Dedicated to ACGMN's Content Management System (CMS)
+  description:
+    en: Dedicated to ACGMN's Content Management System (CMS)
+    zh: 专注于 ACGMN 的内容管理系统 (CMS)
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 高度可定制的链接共享平台，用户界面直观易用
   shortDescEn: A highly customizable link sharing platform with an intuitive, easy to use user interface
+  description:
+    en: A highly customizable link sharing platform with an intuitive, easy to use user interface
+    zh: 高度可定制的链接共享平台，用户界面直观易用
   type: website
   crossVersionUpdate: true
   limit: 0

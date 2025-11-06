@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: mediacms
   name: Media CMS
   tags:
@@ -6,6 +6,9 @@
     - Local
   shortDescZh: 现代、功能齐全的开源视频和媒体内容管理系统
   shortDescEn: Modern, fully featured open source video and media CMS
+  description:
+    en: Modern, fully featured open source video and media CMS
+    zh: 现代、功能齐全的开源视频和媒体内容管理系统
   type: website
   crossVersionUpdate: true
   limit: 0

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: nacos
   name: Nacos
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 动态服务发现、配置管理和服务管理平台
   shortDescEn: Dynamic service discovery, configuration and service management platform
+  description:
+    en: Dynamic service discovery, configuration and service management platform
+    zh: 动态服务发现、配置管理和服务管理平台
   type: website
   crossVersionUpdate: true
   limit: 0

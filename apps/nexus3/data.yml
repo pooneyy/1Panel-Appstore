@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: Sonatype Nexus存储库
   shortDescEn: Sonatype Nexus Repository
+  description:
+    en: Sonatype Nexus Repository
+    zh: Sonatype Nexus存储库
   type: website
   crossVersionUpdate: true
   limit: 0

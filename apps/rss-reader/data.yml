@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个极简的 RSS 在线浏览工具
   shortDescEn: A minimalist RSS online browsing tool
+  description:
+    en: A minimalist RSS online browsing tool
+    zh: 一个极简的 RSS 在线浏览工具
   type: tool
   crossVersionUpdate: true
   limit: 0

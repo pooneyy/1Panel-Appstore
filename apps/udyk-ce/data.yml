@@ -5,6 +5,9 @@ additionalProperties:
     - Website
   shortDescZh: 为房产行业打造的开源的线上营销获客系统
   shortDescEn: An open-source online marketing and customer acquisition system tailored for the real estate industry.
+  description:
+    en: An open-source online marketing and customer acquisition system tailored for the real estate industry.
+    zh: 为房产行业打造的开源的线上营销获客系统
   type: website
   crossVersionUpdate: false
   limit: 1

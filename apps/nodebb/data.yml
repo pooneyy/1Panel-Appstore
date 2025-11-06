@@ -10,6 +10,9 @@ additionalProperties:
     - Website
   shortDescZh: 基于 Node.js 的现代化论坛程序
   shortDescEn: Open source Forum Powered by Node.js
+  description:
+    en: Open source Forum Powered by Node.js
+    zh: 基于 Node.js 的现代化论坛程序
   type: website
   crossVersionUpdate: true
   limit: 0

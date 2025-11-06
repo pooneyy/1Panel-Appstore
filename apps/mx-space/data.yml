@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: 前后端分离个人空间解决方案
   shortDescEn: A frontend-backend separation personal space solution
+  description:
+    en: A frontend-backend separation personal space solution
+    zh: 前后端分离个人空间解决方案
   type: website
   crossVersionUpdate: true
   limit: 0

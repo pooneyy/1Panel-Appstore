@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: prowlarr
   name: Prowlarr
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 终极索引器管理器
   shortDescEn: The ultimate indexer manager
+  description:
+    en: The ultimate indexer manager
+    zh: 终极索引器管理器
   type: website
   crossVersionUpdate: true
   limit: 0

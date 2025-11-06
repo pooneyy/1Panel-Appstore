@@ -4,8 +4,7 @@ tags:
   - 邮件服务
 title: 一个开源的邮件服务器，为智能营销提供电子邮件解决方案
 description:
-  en: An Open-Source MailServer, NewsLetter, Email Marketing Solution for Smarter
-    Campaigns
+  en: An Open-Source MailServer, NewsLetter, Email Marketing Solution for Smarter Campaigns
   zh: 一个开源的邮件服务器，为智能营销提供电子邮件解决方案
 additionalProperties:
   key: billion-mail
@@ -14,8 +13,10 @@ additionalProperties:
     - Tool
     - Email
   shortDescZh: 一个开源的邮件服务器，为智能营销提供电子邮件解决方案
-  shortDescEn: An Open-Source MailServer, NewsLetter, Email Marketing Solution for
-    Smarter Campaigns
+  shortDescEn: An Open-Source MailServer, NewsLetter, Email Marketing Solution for Smarter Campaigns
+  description:
+    en: An Open-Source MailServer, NewsLetter, Email Marketing Solution for Smarter Campaigns
+    zh: 一个开源的邮件服务器，为智能营销提供电子邮件解决方案
   type: website
   crossVersionUpdate: true
   limit: 0

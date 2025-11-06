@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 多点虚拟化网络解决方案
   shortDescEn: A Smart Ethernet Switch for Earth
+  description:
+    en: A Smart Ethernet Switch for Earth
+    zh: 多点虚拟化网络解决方案
   type: tool
   crossVersionUpdate: true
   limit: 1

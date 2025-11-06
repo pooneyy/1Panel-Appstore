@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 哔哩哔哩直播录制工具
   shortDescEn: Bilibili live stream recording tool
+  description:
+    en: Bilibili live stream recording tool
+    zh: 哔哩哔哩直播录制工具
   type: tool
   crossVersionUpdate: true
   limit: 0

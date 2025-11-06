@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个支持私有部署的云端双链笔记软件
   shortDescEn: A note-taking software which support self-hosted and cloud-based dual-chain storing
+  description:
+    en: A note-taking software which support self-hosted and cloud-based dual-chain storing
+    zh: 一个支持私有部署的云端双链笔记软件
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个高性能、全功能的全文检索解决方案
   shortDescEn: A high-performance, full-featured full-text search solution
+  description:
+    en: A high-performance, full-featured full-text search solution
+    zh: 一个高性能、全功能的全文检索解决方案
   type: tool
   crossVersionUpdate: true
   limit: 0

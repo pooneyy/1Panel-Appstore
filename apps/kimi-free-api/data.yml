@@ -11,6 +11,9 @@ additionalProperties:
     - Tools
   shortDescZh: 🚀 KIMI AI 长文本大模型逆向API
   shortDescEn: A 1Panel deployment for kimi-free-api
+  description:
+    en: A 1Panel deployment for kimi-free-api
+    zh: 🚀 KIMI AI 长文本大模型逆向API
   type: website
   crossVersionUpdate: true
   limit: 0

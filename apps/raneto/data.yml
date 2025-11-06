@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 一个免费、开放、简单的 Markdown 支持的 Node.js 知识库
   shortDescEn: A free, open, and simple Markdown supported Node.js knowledge base
+  description:
+    en: A free, open, and simple Markdown supported Node.js knowledge base
+    zh: 一个免费、开放、简单的 Markdown 支持的 Node.js 知识库
   type: tool
   crossVersionUpdate: true
   limit: 0

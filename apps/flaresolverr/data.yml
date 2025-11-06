@@ -10,6 +10,9 @@ additionalProperties:
     - DevTool
   shortDescZh: 绕过 Cloudflare 保护的代理服务器
   shortDescEn: Proxy server to bypass Cloudflare protection
+  description:
+    en: Proxy server to bypass Cloudflare protection
+    zh: 绕过 Cloudflare 保护的代理服务器
   type: tool
   crossVersionUpdate: true
   limit: 0

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: metatube-server-memory
   name: MetaTube (内存模式)
   tags:
@@ -7,6 +7,9 @@
     - Local
   shortDescZh: 为 Jellyfin/Emby/Plex 开发的超级好用的成人元数据刮削插件
   shortDescEn: A super easy-to-use adult metadata scraping plugin developed for Jellyfin/Emby/Plex
+  description:
+    en: A super easy-to-use adult metadata scraping plugin developed for Jellyfin/Emby/Plex
+    zh: 为 Jellyfin/Emby/Plex 开发的超级好用的成人元数据刮削插件
   type: website
   crossVersionUpdate: true
   limit: 0

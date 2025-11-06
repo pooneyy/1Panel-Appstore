@@ -10,6 +10,9 @@ additionalProperties:
     - Tool
   shortDescZh: 在宿主机 hosts 上解析容器名
   shortDescEn: Docker local hostname resolution
+  description:
+    en: Docker local hostname resolution
+    zh: 在宿主机 hosts 上解析容器名
   type: tool
   crossVersionUpdate: true
   limit: 0

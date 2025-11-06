@@ -6,6 +6,9 @@ additionalProperties:
     - Local
   shortDescZh: DNS 沉洞服务器
   shortDescEn: DNS Sinkhole Server
+  description:
+    en: DNS Sinkhole Server
+    zh: DNS 沉洞服务器
   type: website
   crossVersionUpdate: true
   limit: 0
