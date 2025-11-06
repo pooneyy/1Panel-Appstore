@@ -1,6 +1,6 @@
 services:
   stash:
-    image: "stashapp/stash:v0.29.2"
+    image: "stashapp/stash:v0.29.3"
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
