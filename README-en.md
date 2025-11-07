@@ -18,6 +18,10 @@
 
 ***
 
+<!-- ### New This Week -->
+
+<!-- ### Coming Soon -->
+
 ## Disclaimer
 
 ### 1. Image Container Adaptation

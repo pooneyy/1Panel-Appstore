@@ -42,6 +42,10 @@
       "groupName": "immich"
     },
     {
+      "matchPackageNames": ["anheyu/anheyu-backend", "anheyu/pro"],
+      "groupName": "Anheyu Blog"
+    },
+    {
       "matchPackageNames": ["budtmo/docker-android"],
       "matchCurrentVersion": "emulator_9.0_*",
       "allowedVersions": "/^emulator_9.0_*/"
