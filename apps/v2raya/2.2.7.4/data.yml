@@ -1,23 +1,52 @@
 additionalProperties:
   formFields:
-    - default: "./data"
-      edit: true
-      envKey: V2RAYA_ROOT_PATH
-      labelZh: 数据持久化路径
-      labelEn: Data persistence path
-      label:
-        en: Data persistence path
-        zh: 数据持久化路径
-      required: true
-      type: text
     - default: 2017
       edit: true
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
-      labelEn: WebUI port
+      labelEn: WebUI Port
       label:
         en: WebUI port
         zh: WebUI 端口
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: 20170
+      edit: true
+      envKey: SOCKS5_PROXY_PORT
+      labelZh: Socks5 代理端口
+      labelEn: Socks5 Proxy Port
+      label:
+        en: Socks5 Proxy Port
+        zh: Socks5 代理端口
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: 20171
+      edit: true
+      envKey: HTTP_PROXY_PORT
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      label:
+        en: HTTP Proxy Port
+        zh: HTTP 代理端口
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: 20172
+      edit: true
+      envKey: HTTP_SHUNT_PROXY_PORT
+      labelZh: HTTP 代理端口(带分流规则)
+      labelEn: HTTP Port(Usage Shunt Rule)
+      label:
+        en: HTTP Port
+        zh: HTTP 代理端口
+      description:
+        en: Usage Shunt Rule
+        zh: 带分流规则
       required: true
       rule: paramPort
       type: number
