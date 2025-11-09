@@ -4,7 +4,7 @@ networks:
 
 services:
   bookstack:
-    image: linuxserver/bookstack:25.07.2
+    image: linuxserver/bookstack:25.11.20251109
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
