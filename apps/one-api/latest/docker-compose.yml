@@ -1,6 +1,7 @@
 services:
   one-api:
     image: justsong/one-api:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:

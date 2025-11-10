@@ -1,6 +1,7 @@
 services:
   clouddrive:
     image: "cloudnas/clouddrive2:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -18,7 +19,7 @@ services:
       - /dev/fuse:/dev/fuse
     pid: "host"
     privileged: ${PRIVILEGED_MODE}
-    labels:  
+    labels:
       createdBy: "Apps"
 
 networks:

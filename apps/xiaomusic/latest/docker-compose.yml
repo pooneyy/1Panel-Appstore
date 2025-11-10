@@ -1,6 +1,7 @@
 services:
   xiaomusic:
     image: hanxi/xiaomusic:latest
+    pull_policy: always
     container_name: xiaomusic
     restart: unless-stopped
     ports:

@@ -1,6 +1,7 @@
 services:
   pterodactyl-china:
     image: ghcr.io/pterodactyl-china/panel:latest
+    pull_policy: always
     command: >
       /bin/sh -c "
       if [ ! -f /app/var/initialized ]; then

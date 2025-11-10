@@ -1,23 +1,24 @@
 services:
   mdserver-web:
     image: "ddsderek/mdserver-web:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
       - 1panel-network
     ports:
-        - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
-        - "${HTTP_PORT}:80"
-        - "${HTTPS_PORT}:443"
-        - "${PHPMYAYMIN_PORT}:888"
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+      - "${HTTP_PORT}:80"
+      - "${HTTPS_PORT}:443"
+      - "${PHPMYAYMIN_PORT}:888"
     volumes:
-        - mdserver-web-data:/www
+      - mdserver-web-data:/www
     environment:
       - CLOSE_ADMIN_PATH=${CLOSE_ADMIN_PATH}
       - USERNAME=${USERNAME}
       - PASSWORD=${PASSWORD}
       - WEB_PORT=${PANEL_APP_PORT_HTTP}
-    labels:  
+    labels:
       createdBy: "Apps"
 
 volumes:

@@ -21,9 +21,10 @@ services:
       - net.ipv6.conf.all.disable_ipv6=0
     command: ${IP_COMMAND}
     image: activeliang/wgcf-socks5-proxy:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

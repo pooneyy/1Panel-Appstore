@@ -11,5 +11,6 @@ services:
     environment:
       - TZ=${TIME_ZONE}
     image: moelin/1panel:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"

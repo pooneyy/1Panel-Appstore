@@ -1,6 +1,7 @@
 services:
   docker_osx:
     image: "sickcodes/docker-osx:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: ${RESTART_POLICY}
     networks:

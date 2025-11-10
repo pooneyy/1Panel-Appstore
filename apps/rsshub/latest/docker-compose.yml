@@ -12,6 +12,7 @@ services:
       - "REDIS_URL=redis://:${REDIS_PASS}@${REDIS_HOST}:${REDIS_PORT}"
       - "PUPPETEER_WS_ENDPOINT=ws://rsshub-browserless:3000"
     image: diygod/rsshub:latest
+    pull_policy: always
     depends_on:
       - rsshub-browserless
     labels:
@@ -27,9 +28,10 @@ services:
         hard: 0
         soft: 0
     image: browserless/chrome:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

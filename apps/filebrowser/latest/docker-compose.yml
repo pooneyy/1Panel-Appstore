@@ -12,9 +12,10 @@ services:
       - "./data/.filebrowser.json:/.filebrowser.json"
     user: "${UID}:${GID}"
     image: filebrowser/filebrowser:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

@@ -16,6 +16,7 @@ services:
       DDNS_INTERVAL_SECONDS: 120
     command: bash worker.sh
     image: leishi1313/aurora-admin-backend:latest
+    pull_policy: always
     depends_on:
       - redis
     labels:
@@ -35,6 +36,7 @@ services:
       ASYNC_DATABASE_URL: "postgresql+asyncpg://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@postgres:5432/${PANEL_DB_NAME}"
       SECREY_KEY: ${SECRECY_KEY}
     image: leishi1313/aurora-admin-backend:latest
+    pull_policy: always
     command: bash -c "while !</dev/tcp/postgres/5432; do sleep 1; done; alembic upgrade heads && python app/main.py"
     depends_on:
       - postgres
@@ -48,6 +50,7 @@ services:
     networks:
       - aurora-network
     image: leishi1313/aurora-admin-frontend:latest
+    pull_policy: always
     environment:
       TZ: 'Asia/Shanghai'
     ports:
@@ -65,6 +68,7 @@ services:
     environment:
       TZ: 'Asia/Shanghai'
     image: redis:latest
+    pull_policy: always
     labels:
       createdBy: Apps
 

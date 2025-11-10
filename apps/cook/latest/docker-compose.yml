@@ -1,6 +1,7 @@
 services:
   cook:
     image: yunyoujun/cook:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -8,9 +9,9 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:80"
     tty: true
-    labels:  
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

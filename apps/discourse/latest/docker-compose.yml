@@ -1,6 +1,7 @@
 services:
   discourse:
     image: "discourse/discourse:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -57,6 +58,7 @@ services:
 
   discourse-sidekiq:
     image: "discourse/discourse:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}-sidekiq
     restart: always
     networks:

@@ -1,6 +1,7 @@
 services:
   chatnio:
     image: programzmh/chatnio:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
@@ -25,7 +26,7 @@ services:
       - ./data/storage:/storage
     networks:
       - 1panel-network
-    labels:  
+    labels:
       createdBy: "Apps"
 
 networks:

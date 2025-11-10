@@ -1,6 +1,7 @@
 services:
   jdxb:
     image: ionewu/owjdxb:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     networks:
       - 1panel-network
@@ -13,4 +14,4 @@ services:
       createdBy: "Apps"
 networks:
   1panel-network:
-    external: true 
+    external: true

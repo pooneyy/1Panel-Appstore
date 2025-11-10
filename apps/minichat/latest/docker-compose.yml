@@ -1,6 +1,7 @@
 services:
   minichat:
     image: "okhanyu/minichat:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -11,7 +12,7 @@ services:
       - "${CONFIG_PATH}:/app/config.yaml"
     environment:
       - TEMPLATE_NAME=${TEMPLATE_NAME}
-    labels:  
+    labels:
       createdBy: "Apps"
 
 networks:

@@ -1,6 +1,7 @@
 services:
   mdcx:
     image: "stainless403/mdcx-builtin-gui-base:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

@@ -1,6 +1,7 @@
 services:
   mt-photos-deepface:
     image: "mtphotos/mt-photos-deepface:cuda-latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

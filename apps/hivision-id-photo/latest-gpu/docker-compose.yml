@@ -1,6 +1,7 @@
 services:
   hivision-id-photo:
     image: "linzeyi/hivision_idphotos:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -18,7 +19,7 @@ services:
         reservations:
           devices:
             - capabilities: [gpu]
-    labels:  
+    labels:
       createdBy: "Apps"
 
 networks:

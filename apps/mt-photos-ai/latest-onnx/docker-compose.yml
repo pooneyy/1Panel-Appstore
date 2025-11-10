@@ -1,6 +1,7 @@
 services:
   mt-photos-ai:
     image: "mtphotos/mt-photos-ai:onnx-latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

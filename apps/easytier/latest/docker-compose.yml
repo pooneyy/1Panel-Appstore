@@ -1,6 +1,7 @@
 services:
   easytier:
     image: "easytier/easytier:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     network_mode: host

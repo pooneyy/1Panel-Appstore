@@ -1,6 +1,7 @@
 services:
   jdxb:
     image: ionewu/owjdxb:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     network_mode: host
     volumes:
@@ -12,4 +13,4 @@ services:
       - SYS_ADMIN
     restart: unless-stopped
     labels:
-      createdBy: "Apps" 
+      createdBy: "Apps"

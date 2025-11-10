@@ -2,10 +2,10 @@ services:
   lxc:
     container_name: ${CONTAINER_NAME}
     deploy:
-        resources:
-            limits:
-                cpus: ${CPUS}
-                memory: ${MEMORY_LIMIT}
+      resources:
+        limits:
+          cpus: ${CPUS}
+          memory: ${MEMORY_LIMIT}
     restart: always
     networks:
       - 1panel-network
@@ -21,9 +21,10 @@ services:
     hostname: ${LXC_HOSTNAME}
     privileged: true
     image: micwy/lxc:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

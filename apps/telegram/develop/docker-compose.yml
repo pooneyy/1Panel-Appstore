@@ -13,6 +13,7 @@ services:
     shm_size: ${MEM_USE}
     tty: true
     image: kasmweb/telegram:develop
+    pull_policy: always
     labels:  
       createdBy: "Apps"
 

@@ -2,6 +2,7 @@ services:
   diun:
     container_name: ${CONTAINER_NAME}
     image: crazymax/diun:latest
+    pull_policy: always
     command: serve
     restart: always
     networks:
@@ -16,4 +17,4 @@ services:
       - "LOG_JSON=false"
 networks:
   1panel-network:
-    external: true 
+    external: true

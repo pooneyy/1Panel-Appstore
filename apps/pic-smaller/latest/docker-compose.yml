@@ -1,15 +1,15 @@
 services:
   pic-smaller:
     image: "vimiix/pic-smaller:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
       - 1panel-network
     ports:
-        - "${PANEL_APP_PORT_HTTP}:3000"
-    labels:  
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    labels:
       createdBy: "Apps"
-   
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

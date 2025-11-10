@@ -5,19 +5,20 @@ services:
     networks:
       - 1panel-network
     ports:
-        - "${PANEL_APP_PORT_HTTP}:8888"
-        - "${HTTP_PORT}:80"
-        - "${HTTPS_PORT}:443"
-        - "${PHPMYADMIN_PORT}:888"
-        - "${SSH_PORT}:22"
-        - "${FTP_PORT}:21"
+      - "${PANEL_APP_PORT_HTTP}:8888"
+      - "${HTTP_PORT}:80"
+      - "${HTTPS_PORT}:443"
+      - "${PHPMYADMIN_PORT}:888"
+      - "${SSH_PORT}:22"
+      - "${FTP_PORT}:21"
     volumes:
-        - baota:/www
+      - baota:/www
     image: "btpanel/baota:latest"
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 volumes:
   baota:
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

@@ -14,9 +14,10 @@ services:
     environment:
       - JWT_SECRET=${JWT_SECRET}
     image: onlyoffice/documentserver:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

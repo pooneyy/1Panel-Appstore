@@ -19,14 +19,15 @@ services:
       - TZ=Asia/Shanghai
       - UMASK=022
     logging:
-        driver: "json-file"
-        options:
-          max-size: "5m"
+      driver: "json-file"
+      options:
+        max-size: "5m"
     hostname: chinesesubfinder
     image: allanpk716/chinesesubfinder:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

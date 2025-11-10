@@ -17,6 +17,7 @@ services:
     shm_size: ${MEM_USE}
     tty: true
     image: kasmweb/qbittorrent:develop
+    pull_policy: always
     labels:  
       createdBy: "Apps"
 

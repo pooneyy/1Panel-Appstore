@@ -7,9 +7,10 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:80"
     image: liwangsheng/mind-map:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

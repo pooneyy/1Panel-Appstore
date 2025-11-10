@@ -13,8 +13,9 @@ services:
       - PGID=1000
       - TZ=Asia/Shanghai
     image: linuxserver/adguardhome-sync:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 networks:
   1panel-network:
-    external: true 
+    external: true

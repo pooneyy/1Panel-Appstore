@@ -1,6 +1,7 @@
 services:
   sunshine:
     image: "lizardbyte/sunshine:latest-ubuntu-24.04"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

@@ -1,6 +1,7 @@
 services:
   moontv:
     image: ghcr.io/moontechlab/lunatv:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -20,7 +21,7 @@ services:
       - REDIS_URL=${REDIS_URL}
       - UPSTASH_URL=${UPSTASH_URL}
       - UPSTASH_TOKEN=${UPSTASH_TOKEN}
-    labels:  
+    labels:
       createdBy: "Apps"
 
 networks:

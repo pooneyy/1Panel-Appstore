@@ -1,6 +1,7 @@
 services:
   beszel:
     image: "henrygd/beszel:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

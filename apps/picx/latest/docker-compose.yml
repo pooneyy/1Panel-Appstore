@@ -1,6 +1,7 @@
 services:
   picx:
     image: ghcr.io/pooneyy/picx:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -9,9 +10,9 @@ services:
       - "${PANEL_APP_PORT_HTTP}:80"
     volumes:
       - ${DATA_PATH}:/usr/share/nginx/html
-    labels:  
-      createdBy: "Apps" 
+    labels:
+      createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

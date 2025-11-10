@@ -1,6 +1,7 @@
 services:
   dnsmgr:
     image: netcccyun/dnsmgr:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     labels:

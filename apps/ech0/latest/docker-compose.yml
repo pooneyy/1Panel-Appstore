@@ -1,6 +1,7 @@
 services:
   ech0:
     image: sn0wl1n/ech0:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:

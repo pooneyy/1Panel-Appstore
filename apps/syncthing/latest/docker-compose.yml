@@ -19,6 +19,7 @@ services:
       - ${SYNCTHING_PORT}:22000/udp
       - ${SYNCTHING_PORT_EXTRA_UDP}:21027/udp
     image: syncthing/syncthing:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 

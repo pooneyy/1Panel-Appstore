@@ -1,6 +1,7 @@
 services:
   hubproxy:
     image: ghcr.io/sky22333/hubproxy:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     ports:
       - "${PANEL_APP_PORT_HTTP}:5000"
@@ -16,7 +17,6 @@ services:
     networks:
       - 1panel-network
     restart: always
-
 networks:
   1panel-network:
     external: true

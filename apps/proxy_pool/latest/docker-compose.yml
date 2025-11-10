@@ -1,6 +1,7 @@
 services:
   proxy_pool:
     image: "jhao104/proxy_pool:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

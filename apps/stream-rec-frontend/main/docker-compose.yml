@@ -5,6 +5,7 @@ networks:
 services:
   stream-rec-frontend:
     image: streamrec/stream-rec-front:main
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"

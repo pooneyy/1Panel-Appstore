@@ -1,6 +1,7 @@
 services:
   xunlei:
     image: "cnk3x/xunlei:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

@@ -19,6 +19,7 @@ services:
       - PASSWORD=${HTTP_PWD}
     shm_size: ${MEM_USE}
     image: linuxserver/firefox:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 

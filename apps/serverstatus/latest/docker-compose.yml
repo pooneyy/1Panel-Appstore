@@ -1,6 +1,7 @@
 services:
   serverstatus:
     image: "cppla/serverstatus:latest"
+    pull_policy: always
     healthcheck:
       test: ["CMD-SHELL", "curl --fail http://localhost:80 || bash -c 'kill -s 15 -1 && (sleep 10; kill -s 9 -1)'"]
       interval: 30s
@@ -11,7 +12,7 @@ services:
     networks:
       - 1panel-network
     volumes:
-      - ${SERVERSTATUS_CONFIG_PATH}:/ServerStatus/server/config.json 
+      - ${SERVERSTATUS_CONFIG_PATH}:/ServerStatus/server/config.json
       - ${SERVERSTATUS_JSON_PATH}:/usr/share/nginx/html/json
     ports:
       - ${PANEL_APP_PORT_COMM}:35601

@@ -1,15 +1,16 @@
 services:
-    whatsupdocker:
-        image: getwud/wud:latest
-        container_name: ${CONTAINER_NAME}
-        ports:
-            - ${PANEL_APP_PORT_HTTP}:3000
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-        networks:
-            - 1panel-network
-        labels:
-            createdBy: Apps
+  whatsupdocker:
+    image: getwud/wud:latest
+    pull_policy: always
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
 networks:
-    1panel-network:
-        external: true
+  1panel-network:
+    external: true

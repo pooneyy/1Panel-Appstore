@@ -13,6 +13,7 @@ services:
     privileged: true
     tty: true
     image: mauricenino/dashdot:dev
+    pull_policy: always
     labels:  
       createdBy: "Apps"
 

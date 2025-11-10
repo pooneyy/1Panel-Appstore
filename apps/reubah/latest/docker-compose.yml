@@ -1,12 +1,13 @@
 services:
   reubah:
     image: "ghcr.io/dendianugerah/reubah:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
       - 1panel-network
     ports:
-        - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
     volumes:
       - "${DATA_PATH}/tmp:/app/tmp"
       - "${DATA_PATH}/doc-temp:/tmp"

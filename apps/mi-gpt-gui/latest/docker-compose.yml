@@ -1,6 +1,7 @@
 services:
   mi-gpt-gui:
     image: "lmk123/migpt-server:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

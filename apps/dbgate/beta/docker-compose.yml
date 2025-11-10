@@ -9,6 +9,7 @@ services:
     volumes:
         - "${DATA_PATH}:/root/.dbgate"
     image: "dbgate/dbgate:beta"
+    pull_policy: always
     labels:  
       createdBy: "Apps"
 

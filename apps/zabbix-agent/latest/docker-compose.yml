@@ -11,6 +11,7 @@ services:
       - ZBX_SERVER_HOST=${ZABBIX_SERVER}
       - ZBX_SERVER_PORT=${ZABBIX_SERVER_PORT}
     image: zabbix/zabbix-agent:alpine-latest
+    pull_policy: always
     labels:
       createdBy: Apps
 

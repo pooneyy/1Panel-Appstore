@@ -50,6 +50,7 @@ services:
     restart: 'no'
   redis:
     image: redis
+    pull_policy: always
     container_name: ${CONTAINER_NAME}_redis
     healthcheck:
       test:

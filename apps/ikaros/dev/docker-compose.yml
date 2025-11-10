@@ -1,6 +1,7 @@
 services:
   ikaros:
     image: "ikarosrun/ikaros:dev"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

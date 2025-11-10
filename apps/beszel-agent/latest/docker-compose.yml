@@ -1,6 +1,7 @@
 services:
   beszel-agent:
     image: "henrygd/beszel-agent:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     network_mode: host

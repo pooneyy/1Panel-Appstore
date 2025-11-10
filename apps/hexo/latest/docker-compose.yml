@@ -15,11 +15,12 @@ services:
       - GIT_USER=${GIT_USERNAME}
       - GIT_EMAIL=${GIT_MAIL}
     image: bloodstar/hexo:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 volumes:
   hexo_data:
     name: hexo_data
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

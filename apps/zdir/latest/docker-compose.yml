@@ -1,6 +1,7 @@
 services:
   zdir:
     image: helloz/zdir:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -10,9 +11,9 @@ services:
     volumes:
       - "${DATA_PATH}:/data/apps/zdir/data"
       - "${MOUNT_PATH}:/data/apps/zdir/data/public"
-    labels:  
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

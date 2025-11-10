@@ -8,6 +8,7 @@ services:
       - "${PANEL_APP_PORT_HTTP}:1188"
     command: ["/app/deeplx", "-token", "${TOKEN_VAULE}"]
     image: missuo/deeplx:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 

@@ -1,6 +1,7 @@
 services:
   luxury-search:
     image: "ghcr.io/koriiku/luxirty-search:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

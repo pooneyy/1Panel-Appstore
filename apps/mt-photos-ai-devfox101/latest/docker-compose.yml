@@ -1,6 +1,7 @@
 services:
   mt-photos-ai:
     image: "devfox101/mt-photos-ai:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

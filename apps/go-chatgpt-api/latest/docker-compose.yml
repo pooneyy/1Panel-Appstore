@@ -13,6 +13,7 @@ services:
       - GO_CHATGPT_API_OPENAI_EMAIL=${OPENAI_EMAIL}
       - GO_CHATGPT_API_OPENAI_PASSWORD=${OPENAI_PASSWORD}
     image: linweiyuan/go-chatgpt-api:latest
+    pull_policy: always
     depends_on:
       - chatgpt-proxy-server-warp
     logging:
@@ -20,7 +21,7 @@ services:
       options:
         max-size: "20m"
         max-file: "1"
-    labels:  
+    labels:
       createdBy: "Apps"
 
   chatgpt-proxy-server-warp:
@@ -29,6 +30,7 @@ services:
     networks:
       - 1panel-network
     image: linweiyuan/chatgpt-proxy-server-warp:latest
+    pull_policy: always
     environment:
       - LOG_LEVEL=INFO
     logging:
@@ -36,7 +38,7 @@ services:
       options:
         max-size: "20m"
         max-file: "1"
-    labels:  
+    labels:
       createdBy: "Apps"
 networks:
   1panel-network:

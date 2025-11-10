@@ -24,5 +24,6 @@ services:
       - TS_USERSPACE=${TS_USERSPACE}
       - TS_EXTRA_ARGS=${TS_EXTRA_ARGS}
     image: tailscale/tailscale:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"

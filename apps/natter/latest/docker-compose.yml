@@ -1,6 +1,7 @@
 services:
   ${SERVICE_NAME}:
     image: "nattertool/natter:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     command: ${COMMAND}
     volumes:

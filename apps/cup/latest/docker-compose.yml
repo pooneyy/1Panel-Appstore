@@ -1,17 +1,18 @@
 services:
-    cup:
-        image: ghcr.io/sergi0g/cup:latest
-        container_name: ${CONTAINER_NAME}
-        restart: unless-stopped
-        ports:
-            - ${PANEL_APP_PORT_HTTP}:8000
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-        networks:
-            - 1panel-network
-        labels:
-            createdBy: Apps
-        command: serve
+  cup:
+    image: ghcr.io/sergi0g/cup:latest
+    pull_policy: always
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
+    command: serve
 networks:
-    1panel-network:
-        external: true
+  1panel-network:
+    external: true

@@ -21,9 +21,10 @@ services:
     environment:
       - TZ=${TIME_ZONE}
     image: litespeedtech/openlitespeed:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

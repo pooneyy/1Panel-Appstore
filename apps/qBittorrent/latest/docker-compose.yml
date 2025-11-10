@@ -5,23 +5,24 @@ services:
     networks:
       - 1panel-network
     environment:
-        - UID=1000
-        - GID=1000
-        - PEER_PORT=${PEER_PORT_VALUE}
-        - WEB_PORT=${PANEL_APP_PORT_HTTP}
+      - UID=1000
+      - GID=1000
+      - PEER_PORT=${PEER_PORT_VALUE}
+      - WEB_PORT=${PANEL_APP_PORT_HTTP}
     ports:
-        - "${PEER_PORT_VALUE}:${PEER_PORT_VALUE}"
-        - "${PEER_PORT_VALUE}:${PEER_PORT_VALUE}/udp"
-        - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+      - "${PEER_PORT_VALUE}:${PEER_PORT_VALUE}"
+      - "${PEER_PORT_VALUE}:${PEER_PORT_VALUE}/udp"
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
     volumes:
-        - "./data/.config:/data/.config"
-        - "./data/.local:/data/.local"
-        - "${CACHE_PATH}:/data/.cache"
-        - "${DOWNLOAD_PATH}:/data/downloads"
+      - "./data/.config:/data/.config"
+      - "./data/.local:/data/.local"
+      - "${CACHE_PATH}:/data/.cache"
+      - "${DOWNLOAD_PATH}:/data/downloads"
     image: "jarylc/qbittorrent:latest"
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

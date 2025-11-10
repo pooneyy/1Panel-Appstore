@@ -9,6 +9,7 @@ services:
     volumes:
       - hexo_data:/home/hexo/.hexo
     image: taskbjorn/hexo:main
+    pull_policy: always
     labels:  
       createdBy: "Apps"
 

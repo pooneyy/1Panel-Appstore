@@ -1,6 +1,7 @@
 services:
   phtunnel:
     image: "bestoray/phtunnel:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     devices:

@@ -3,6 +3,7 @@ services:
     container_name: ${CONTAINER_NAME}
     restart: always
     image: moonrailgun/tianji:latest
+    pull_policy: always
     networks:
       - 1panel-network
     ports:

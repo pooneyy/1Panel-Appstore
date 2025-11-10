@@ -11,6 +11,7 @@ services:
       - ${ENV1}
     command: ${COMMAND1}
     image: containrrr/watchtower:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 
