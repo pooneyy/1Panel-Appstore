@@ -99,6 +99,21 @@ jobs:
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
           echo "IMAGE_TAG=${{ github.event.inputs.image_tag }}" >> $GITHUB_ENV
 
+      - name: Set multiple tags
+        id: set-tags
+        run: |
+          TAGS_ARRAY=($(echo "${{ env.IMAGE_TAG }}" | tr ',' ' '))
+          TAGS_MULTILINE=""
+          for tag in "${TAGS_ARRAY[@]}"; do
+            TAGS_MULTILINE+="type=raw,value=${tag}\n"
+          done
+          if [[ "${{ env.IMAGE_TAG }}" != *"latest"* ]]; then
+            TAGS_MULTILINE+="type=raw,value=latest\n"
+          fi
+          echo "tags<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$TAGS_MULTILINE" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
       - name: Checkout repository
         env:
           REPO_URL: ${{ github.event.inputs.repo }}
@@ -143,6 +158,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.IMAGE_FULL_NAME }}
+          tags: ${{ steps.set-tags.outputs.tags }}
           annotations: |
             org.opencontainers.image.description=${{ env.IMAGE_DESCRIPTION }}
             org.opencontainers.image.url=${{ github.event.inputs.repo }}
@@ -174,9 +190,7 @@ jobs:
           target: ${{ github.event.inputs.build_target }}
           push: true
           file: ${{ github.event.inputs.dockerfile }}
-          tags: |
-            ${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }}
-            ${{ github.event.inputs.image_tag != 'latest' && format('{0}:latest', env.IMAGE_FULL_NAME) || '' }}
+          tags: ${{ steps.meta.outputs.tags }}
           annotations: ${{ steps.meta.outputs.annotations }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
