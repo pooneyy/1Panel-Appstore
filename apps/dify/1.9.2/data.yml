@@ -1,23 +1,10 @@
 additionalProperties:
   formFields:
-    - default: "./data"
-      edit: true
-      envKey: DIFY_ROOT_PATH
-      labelZh: 数据持久化路径
-      labelEn: Data persistence path
-      label:
-        en: Data persistence path
-        zh: 数据持久化路径
-      required: true
-      type: text
     - default: 8080
       edit: true
       envKey: PANEL_APP_PORT_HTTP
       labelZh: 网站端口
       labelEn: WebUI port
-      label:
-        en: WebUI port
-        zh: 网站端口
       required: true
       rule: paramPort
       type: number
@@ -26,87 +13,6 @@ additionalProperties:
       envKey: PANEL_APP_PORT_HTTPS
       labelZh: HTTPS 端口
       labelEn: HTTPS port
-      label:
-        en: HTTPS port
-        zh: HTTPS 端口
-      required: true
-      rule: paramPort
-      type: number
-    - default: 5432
-      edit: true
-      envKey: EXPOSE_DB_PORT
-      labelZh: 数据库端口
-      labelEn: Database port
-      label:
-        en: Database port
-        zh: 数据库端口
-      required: true
-      rule: paramPort
-      type: number
-    - default: 5003
-      edit: true
-      envKey: EXPOSE_PLUGIN_DEBUGGING_PORT
-      labelZh: 插件调试端口
-      labelEn: Plugin debugging port
-      label:
-        en: Plugin debugging port
-        zh: 插件调试端口
-      required: true
-      rule: paramPort
-      type: number
-    - default: 19530
-      disabled: true
-      edit: true
-      envKey: MILVUS_STANDALONE_API_PORT
-      labelZh: Milvus 接口端口
-      labelEn: Milvus API port
-      label:
-        en: Milvus API port
-        zh: Milvus 接口端口
-      required: true
-      rule: paramPort
-      type: number
-    - default: 9091
-      disabled: true
-      envKey: MILVUS_STANDALONE_SERVER_PORT
-      labelZh: Milvus 服务端口
-      labelEn: Milvus server port
-      label:
-        en: Milvus server port
-        zh: Milvus 服务端口
-      required: true
-      rule: paramPort
-      type: number
-    - default: 8123
-      edit: true
-      envKey: MYSCALE_PORT
-      labelZh: MyScale 端口
-      labelEn: MyScale port
-      label:
-        en: MyScale port
-        zh: MyScale 端口
-      required: true
-      rule: paramPort
-      type: number
-    - default: 9200
-      edit: true
-      envKey: ELASTICSEARCH_PORT
-      labelZh: Elasticsearch 端口
-      labelEn: Elasticsearch port
-      label:
-        en: Elasticsearch port
-        zh: Elasticsearch 端口
-      required: true
-      rule: paramPort
-      type: number
-    - default: 5601
-      edit: true
-      envKey: KIBANA_PORT
-      labelZh: Kibana 端口
-      labelEn: Kibana port
-      label:
-        en: Kibana port
-        zh: Kibana 端口
       required: true
       rule: paramPort
       type: number
