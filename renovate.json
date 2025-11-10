@@ -150,6 +150,10 @@
       "allowedVersions": "/^\\d{6}$/"
     },
     {
+      "matchPackageNames": ["pingcap/**"],
+      "groupName": "PingCAP"
+    },
+    {
       "matchPackageNames": ["prom/prometheus"],
       "matchCurrentVersion": "v2.21.0",
       "matchFileNames": [
