@@ -92,12 +92,14 @@ jobs:
       - name: Set env
         env:
           IMAGE_NAME: ${{ github.event.inputs.image_name }}
+          IMAGE_TAG: ${{ github.event.inputs.image_tag }}
         run: |
           owner=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')
           echo "OWNER=$owner" >> "$GITHUB_ENV"
           echo "IMAGE_FULL_NAME=ghcr.io/$owner/$IMAGE_NAME" >> $GITHUB_ENV
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
-          echo "IMAGE_TAG=${{ github.event.inputs.image_tag }}" >> $GITHUB_ENV
+          echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
+          echo "FIRST_TAG=$(echo $IMAGE_TAG | cut -d',' -f1)" >> $GITHUB_ENV
 
       - name: Set multiple tags
         id: set-tags
@@ -164,14 +166,14 @@ jobs:
             org.opencontainers.image.url=${{ github.event.inputs.repo }}
             org.opencontainers.image.source=${{ github.event.inputs.repo }}
             org.opencontainers.image.title=${{ env.IMAGE_NAME }}
-            org.opencontainers.image.version=${{ env.IMAGE_TAG }}
+            org.opencontainers.image.version=${{ env.FIRST_TAG }}
             ${{ env.LICENSES != 'none' && format('org.opencontainers.image.licenses={0}', env.LICENSES) || '' }}
           labels: |
             org.opencontainers.image.description=${{ env.IMAGE_DESCRIPTION }}
             org.opencontainers.image.url=${{ github.event.inputs.repo }}
             org.opencontainers.image.source=${{ github.event.inputs.repo }}
             org.opencontainers.image.title=${{ env.IMAGE_NAME }}
-            org.opencontainers.image.version=${{ env.IMAGE_TAG }}
+            org.opencontainers.image.version=${{ env.FIRST_TAG }}
             ${{ env.LICENSES != 'none' && format('org.opencontainers.image.licenses={0}', env.LICENSES) || '' }}
         env:
           DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index
@@ -199,7 +201,7 @@ jobs:
 
       - name: Calculate image size
         run: |
-          docker manifest inspect ${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }} -v > manifest.json
+          docker manifest inspect ${{ env.IMAGE_FULL_NAME }}:${{ env.FIRST_TAG }} -v > manifest.json
           curl -o ./get_image_size.sh -s https://raw.githubusercontent.com/${{ github.repository }}/refs/heads/script/get_image_size.sh
           chmod +x get_image_size.sh
 
@@ -210,7 +212,7 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             /users/${{ env.OWNER }}/packages/container/${{ env.IMAGE_NAME }}/versions)
-          version_id=$(echo "$response" | jq -r '.[] | select(.metadata.container.tags[]? == "${{ env.IMAGE_TAG }}") | .id')
+          version_id=$(echo "$response" | jq -r '.[] | select(.metadata.container.tags[]? == "${{ env.FIRST_TAG }}") | .id')
           echo "VERSION_ID=$version_id" >> $GITHUB_ENV
 
       - name: Add a summary for the job
@@ -219,10 +221,10 @@ jobs:
           echo "## Build Report" >> $GITHUB_STEP_SUMMARY
           echo "### Get the image" >> $GITHUB_STEP_SUMMARY
           echo '<pre lang="bash">' >> $GITHUB_STEP_SUMMARY
-          echo "<code>docker pull ${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }}</code>" >> $GITHUB_STEP_SUMMARY
+          echo "<code>docker pull ${{ env.IMAGE_FULL_NAME }}:${{ env.FIRST_TAG }}</code>" >> $GITHUB_STEP_SUMMARY
           echo "</pre>" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Image Url: https://github.com/users/${{ env.OWNER }}/packages/container/${{ env.IMAGE_NAME }}/${{ env.VERSION_ID }}?tag=${{ env.IMAGE_TAG }}" >> $GITHUB_STEP_SUMMARY
+          echo "Image Url: https://github.com/users/${{ env.OWNER }}/packages/container/${{ env.IMAGE_NAME }}/${{ env.VERSION_ID }}?tag=${{ env.FIRST_TAG }}" >> $GITHUB_STEP_SUMMARY
           echo "### Image info" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Repository | Reference / Branch / Tag | Push Time |" >> $GITHUB_STEP_SUMMARY
@@ -237,7 +239,7 @@ jobs:
           echo "### Verify the image" >> $GITHUB_STEP_SUMMARY
           echo "You can use github cli to verify the image, run the command:" >> $GITHUB_STEP_SUMMARY
           echo '<pre lang="bash"><code>' >> $GITHUB_STEP_SUMMARY
-          echo "gh attestation verify oci://${{ env.IMAGE_FULL_NAME }}:${{ env.IMAGE_TAG }} -R ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "gh attestation verify oci://${{ env.IMAGE_FULL_NAME }}:${{ env.FIRST_TAG }} -R ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
           echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
 
       - name: Generate artifact attestation
