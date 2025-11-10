@@ -1,11 +1,12 @@
-version: "3.6" 
-services: 
-  gitlab-jh: 
+version: "3.6"
+services:
+  gitlab-jh:
     image: registry.gitlab.cn/omnibus/gitlab-jh:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     hostname: localhost
     restart: always
-    networks: 
+    networks:
       - 1panel-network
     environment:
       GITLAB_OMNIBUS_CONFIG: |
@@ -17,9 +18,9 @@ services:
       - './config:/etc/gitlab'
       - './logs:/var/log/gitlab'
       - './data:/var/opt/gitlab'
-    labels: 
-      createdBy: "Apps" 
+    labels:
+      createdBy: "Apps"
 
-networks: 
-  1panel-network: 
+networks:
+  1panel-network:
     external: true

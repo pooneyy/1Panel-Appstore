@@ -30,6 +30,7 @@ services:
 
   archivebox-sonic:
     image: archivebox/sonic:latest
+    pull_policy: always
     container_name: sonic-${CONTAINER_NAME}
     restart: always
     networks:

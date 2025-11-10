@@ -35,9 +35,10 @@ services:
       #- OPENAI_MFA_CODE=${OPENAI_MFA}
     tty: true
     image: pengzhile/pandora:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

@@ -1,23 +1,24 @@
 version: "3"
 services:
-    pairdrop:
-        image: linuxserver/pairdrop:latest
-        container_name: ${CONTAINER_NAME}
-        restart: always
-        ports:
-            - ${PANEL_APP_PORT_HTTP}:3000
-        networks:
-            - 1panel-network
-        environment:
-            - PUID=1000
-            - PGID=1000
-            - WS_FALLBACK=false
-            - RATE_LIMIT=false
-            - RTC_CONFIG=false
-            - DEBUG_MODE=false
-            - TZ=Etc/UTC
-        labels:
-            createdBy: Apps
+  pairdrop:
+    image: linuxserver/pairdrop:latest
+    pull_policy: always
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3000
+    networks:
+      - 1panel-network
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - WS_FALLBACK=false
+      - RATE_LIMIT=false
+      - RTC_CONFIG=false
+      - DEBUG_MODE=false
+      - TZ=Etc/UTC
+    labels:
+      createdBy: Apps
 networks:
-    1panel-network:
-        external: true
+  1panel-network:
+    external: true

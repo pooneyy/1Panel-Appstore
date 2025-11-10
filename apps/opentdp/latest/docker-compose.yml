@@ -1,6 +1,7 @@
 services:
   opentdp:
     image: rehiy/tdp-cloud:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:

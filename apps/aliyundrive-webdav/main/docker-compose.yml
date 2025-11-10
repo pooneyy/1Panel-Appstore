@@ -1,6 +1,7 @@
 services:
   aliyundrive-webdav:
     image: "messense/aliyundrive-webdav:main"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

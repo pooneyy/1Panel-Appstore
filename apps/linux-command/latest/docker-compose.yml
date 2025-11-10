@@ -1,6 +1,7 @@
 services:
   linux-command:
     image: "wcjiang/linux-command:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:

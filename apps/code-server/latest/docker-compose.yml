@@ -12,13 +12,14 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Shanghai
-      - PASSWORD=${WEB_PASSWORD} 
-      - SUDO_PASSWORD=${SUDO_PASSWORD} 
+      - PASSWORD=${WEB_PASSWORD}
+      - SUDO_PASSWORD=${SUDO_PASSWORD}
       - DEFAULT_WORKSPACE=/config/workspace
     image: linuxserver/code-server:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

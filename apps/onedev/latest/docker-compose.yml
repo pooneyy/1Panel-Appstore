@@ -11,9 +11,10 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - "${DATA_PATH}:/opt/onedev"
     image: 1dev/server:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

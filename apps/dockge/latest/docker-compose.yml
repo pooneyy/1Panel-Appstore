@@ -14,9 +14,10 @@ services:
     environment:
       - DOCKGE_STACKS_DIR=/opt/stacks
     image: louislam/dockge:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

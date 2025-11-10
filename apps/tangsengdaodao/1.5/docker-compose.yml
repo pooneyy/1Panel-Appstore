@@ -59,6 +59,7 @@ services:
   tangsengdaodaoweb:  # 唐僧叨叨的web服务
     container_name: ${CONTAINER_NAME}-tsdd-web
     image: "registry.cn-shanghai.aliyuncs.com/wukongim/tangsengdaodaoweb:latest"
+    pull_policy: always
     restart: always
     environment:
       - API_URL=http://${EXTERNAL_IP}:${PANEL_APP_PORT_TS_APP_HTTP}/
@@ -71,6 +72,7 @@ services:
   tangsengdaodaomanager:  # 唐僧叨叨的后台管理系统
     container_name: ${CONTAINER_NAME}-tsdd-manager
     image: "registry.cn-shanghai.aliyuncs.com/wukongim/tangsengdaodaomanager:latest"
+    pull_policy: always
     restart: always
     environment:
       - API_URL=http://${EXTERNAL_IP}:${PANEL_APP_PORT_TS_APP_HTTP}/

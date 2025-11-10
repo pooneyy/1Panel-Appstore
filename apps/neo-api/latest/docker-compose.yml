@@ -1,6 +1,7 @@
 services:
   neo-api:
     image: pengzhile/new-api:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:

@@ -1,6 +1,7 @@
 services:
   softether:
     image: "softethervpn/vpnserver:latest"
+    pull_policy: always
     cap_add:
       - NET_ADMIN
     container_name: ${CONTAINER_NAME}

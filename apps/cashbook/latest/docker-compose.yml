@@ -1,6 +1,7 @@
 services:
   cashbook:
     image: "dingdangdog/cashbook:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

@@ -1,6 +1,7 @@
 services:
   nezha-dashboard:
     image: "ghcr.io/naiba/nezha-dashboard:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     volumes:

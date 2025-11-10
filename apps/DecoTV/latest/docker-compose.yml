@@ -1,6 +1,7 @@
 services:
   decotv:
     image: ghcr.io/decohererk/decotv:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -22,7 +23,7 @@ services:
       - UPSTASH_URL=${UPSTASH_URL}
       - UPSTASH_TOKEN=${UPSTASH_TOKEN}
       - DOUBAN_API_KEY=${DOUBAN_API_KEY}
-    labels:  
+    labels:
       createdBy: "Apps"
 
 networks:

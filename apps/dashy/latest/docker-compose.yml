@@ -14,15 +14,16 @@ services:
       - UID=1000
       - GID=1000
     healthcheck:
-     test: ['CMD', 'node', '/app/services/healthcheck']
-     interval: 1m30s
-     timeout: 10s
-     retries: 3
-     start_period: 40s
+      test: ['CMD', 'node', '/app/services/healthcheck']
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
     image: lissy93/dashy:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

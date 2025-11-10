@@ -9,6 +9,7 @@ services:
     environment:
       - NODE_ENV=production
     image: siyueqingchen/magic-resume:main
+    pull_policy: always
     labels:  
       createdBy: "Apps"
 

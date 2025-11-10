@@ -2,6 +2,7 @@ services:
   netbox:
     container_name: ${CONTAINER_NAME}
     image: linuxserver/netbox:latest
+    pull_policy: always
     restart: always
     networks:
       - 1panel-network
@@ -18,4 +19,4 @@ services:
       createdBy: "Apps"
 networks:
   1panel-network:
-    external: true 
+    external: true

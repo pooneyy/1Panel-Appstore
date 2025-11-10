@@ -1,6 +1,7 @@
 services:
   edge:
     image: "kasmweb/edge:develop"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

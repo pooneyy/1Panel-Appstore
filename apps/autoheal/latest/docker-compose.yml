@@ -9,6 +9,7 @@ services:
     environment:
       - ${ENV1}
     image: willfarrell/autoheal:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 

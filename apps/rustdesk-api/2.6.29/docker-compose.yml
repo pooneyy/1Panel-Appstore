@@ -24,6 +24,7 @@ services:
       - RUSTDESK_API_RUSTDESK_KEY=${KEY}
   rustdesk-server-s6:
     image: rustdesk/rustdesk-server-s6:latest
+    pull_policy: always
     container_name: server-${CONTAINER_NAME}
     labels:
       createdBy: "Apps"

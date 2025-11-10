@@ -1,6 +1,7 @@
 services:
   wol-go-web:
     image: "chishin/wol-go-web:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     network_mode: host

@@ -2,6 +2,7 @@ services:
   sd-comfyui:
     build: ./comfy
     image: sd-comfyui:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     runtime: nvidia
@@ -22,9 +23,9 @@ services:
       resources:
         reservations:
           devices:
-              - driver: nvidia
-                device_ids: ['${SD_CONSOLE_DEVICE_IDS}']
-                capabilities: [gpu,compute,utility]
+            - driver: nvidia
+              device_ids: ['${SD_CONSOLE_DEVICE_IDS}']
+              capabilities: [gpu, compute, utility]
     labels:
       createdBy: Apps
 networks:

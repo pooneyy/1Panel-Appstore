@@ -39,6 +39,7 @@ services:
 
   browserless:
     image: browserless/chrome
+    pull_policy: always
     container_name: browserless-${CONTAINER_NAME}
     labels:
       createdBy: "Apps"

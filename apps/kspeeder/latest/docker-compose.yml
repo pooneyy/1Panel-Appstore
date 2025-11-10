@@ -1,6 +1,7 @@
 services:
   kspeeder:
     image: linkease/kspeeder:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     ports:
       - ${PANEL_APP_PORT_HTTP}:5003
@@ -10,4 +11,4 @@ services:
       - ./kspeeder-config:/kspeeder-config
     restart: always
     labels:
-      createdBy: "Apps" 
+      createdBy: "Apps"

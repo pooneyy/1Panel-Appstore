@@ -9,6 +9,7 @@ services:
     volumes:
       - anqicms-data:/app
     image: "anqicms/anqicms:latest"
+    pull_policy: always
     labels:
       createdBy: "Apps"
 

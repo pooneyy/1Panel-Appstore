@@ -15,6 +15,7 @@ services:
       - "${CONFIG_PATH}:/config"
       - "${DOWNLOAD_PATH}:/config/baidunetdiskdownload"
     image: johngong/baidunetdisk:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 networks:

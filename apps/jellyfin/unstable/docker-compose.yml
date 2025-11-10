@@ -14,6 +14,7 @@ services:
       - /dev/dri:/dev/dri # VAAPI/NVDEC/NVENC render nodes
       #- /dev/vchiq:/dev/vchiq # MMAL/OMX on Raspberry Pi
     image: "jellyfin/jellyfin:unstable"
+    pull_policy: always
     labels:  
       createdBy: "Apps"
    

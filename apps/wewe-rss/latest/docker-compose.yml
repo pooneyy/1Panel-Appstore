@@ -1,6 +1,7 @@
 services:
   wewe-rss:
     image: "cooderl/wewe-rss-sqlite:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

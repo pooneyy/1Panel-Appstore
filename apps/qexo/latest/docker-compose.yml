@@ -16,11 +16,12 @@ services:
       - WORKERS=4
       - THREADS=4
     image: abudulin/qexo:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 volumes:
   hexo_data:
     name: hexo_data
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

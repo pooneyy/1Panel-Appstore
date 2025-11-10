@@ -28,6 +28,7 @@ services:
       - DB_TIMEOUT=60
       - FLARUM_BASE_URL=${FLARUM_EXTERNAL_URL}
     image: crazymax/flarum:latest
+    pull_policy: always
     labels:
       createdBy: Apps
 networks:

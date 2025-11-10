@@ -1,6 +1,7 @@
 services:
   sscms:
     image: sscms/core:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -18,9 +19,9 @@ services:
       - SSCMS_DATABASE_USER=${PANEL_DB_USER}
       - SSCMS_DATABASE_PASSWORD=${PANEL_DB_USER_PASSWORD}
       - SSCMS_REDIS_CONNECTION_STRING=${SSCMS_REDIS_CONNECTION_STRING}
-    labels:  
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

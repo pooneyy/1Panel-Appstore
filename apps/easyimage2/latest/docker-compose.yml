@@ -15,9 +15,10 @@ services:
       - PGID=1000
       - DEBUG=false
     image: ddsderek/easyimage:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

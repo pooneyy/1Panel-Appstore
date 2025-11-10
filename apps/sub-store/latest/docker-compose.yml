@@ -1,6 +1,7 @@
 services:
   sub-store:
     image: xream/sub-store:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -13,9 +14,9 @@ services:
       - SUB_STORE_FRONTEND_BACKEND_PATH=${SUB_STORE_FRONTEND_BACKEND_PATH}
     volumes:
       - ${DATA_PATH}:/opt/app/data
-    labels:  
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

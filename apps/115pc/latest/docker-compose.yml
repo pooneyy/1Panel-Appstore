@@ -17,6 +17,7 @@ services:
       - "${CONFIG_PATH}:/config"
       - "${DOWNLOAD_PATH}:/Downloads/115download"
     image: funcman/115pc:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 

@@ -1,6 +1,7 @@
 services:
   glance:
     image: "glanceapp/glance:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

@@ -1,6 +1,7 @@
 services:
   vue-color-avatar:
     image: wenyang0/vue-color-avatar:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:

@@ -1,6 +1,7 @@
 services:
   flaresolverr:
     image: "flaresolverr/flaresolverr:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

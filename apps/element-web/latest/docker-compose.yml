@@ -7,11 +7,12 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:80"
     image: vectorim/element-web:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
     volumes:
-    - ${ELEMENT_WEB_ROOT_PATH}:/app
+      - ${ELEMENT_WEB_ROOT_PATH}:/app
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

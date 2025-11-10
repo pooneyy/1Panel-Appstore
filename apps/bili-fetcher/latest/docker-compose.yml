@@ -5,6 +5,7 @@ networks:
 services:
   bili-fetcher-api:
     image: qyg2297248353/bili-fetcher:latest
+    pull_policy: always
     container_name: api-${CONTAINER_NAME}
     restart: always
     networks:
@@ -20,6 +21,7 @@ services:
 
   bili-fetcher-web:
     image: qyg2297248353/bili-fetcher-web:latest
+    pull_policy: always
     depends_on:
       - bili-fetcher-api
     container_name: ${CONTAINER_NAME}

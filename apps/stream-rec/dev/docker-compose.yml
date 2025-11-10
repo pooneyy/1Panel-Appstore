@@ -5,6 +5,7 @@ networks:
 services:
   stream-rec-backend:
     image: streamrec/stream-rec:dev
+    pull_policy: always
     container_name: ${CONTAINER_NAME}-backend
     labels:
       createdBy: "Apps"
@@ -30,6 +31,7 @@ services:
     depends_on:
       - stream-rec-backend
     image: streamrec/stream-rec-front:dev
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"

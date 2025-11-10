@@ -1,6 +1,7 @@
 services:
   script-hub:
     image: "xream/script-hub:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

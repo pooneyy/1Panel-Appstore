@@ -1,6 +1,7 @@
 services:
   lanraragi:
     image: "difegue/lanraragi:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

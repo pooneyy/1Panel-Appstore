@@ -1,6 +1,7 @@
 services:
   deluge:
     image: "linuxserver/deluge:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

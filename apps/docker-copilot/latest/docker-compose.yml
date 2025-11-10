@@ -1,21 +1,22 @@
 services:
-    dockercopilot:
-        image: 0nlylty/dockercopilot:latest
-        container_name: ${CONTAINER_NAME}
-        restart: always
-        ports:
-            - ${PANEL_APP_PORT_HTTP}:12712
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-            - ./data:/data
-        networks:
-            - 1panel-network
-        environment:
-            - TZ=Asia/Shanghai
-            - DOCKER_HOST=unix:///var/run/docker.sock
-            - secretKey=${SECRET_KEY}
-        labels:
-            createdBy: Apps
+  dockercopilot:
+    image: 0nlylty/dockercopilot:latest
+    pull_policy: always
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:12712
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data:/data
+    networks:
+      - 1panel-network
+    environment:
+      - TZ=Asia/Shanghai
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - secretKey=${SECRET_KEY}
+    labels:
+      createdBy: Apps
 networks:
-    1panel-network:
-        external: true
+  1panel-network:
+    external: true

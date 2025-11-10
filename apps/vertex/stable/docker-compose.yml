@@ -12,6 +12,7 @@ services:
       - TZ=Asia/Shanghai
       - PORT=${PANEL_APP_PORT_HTTP}
     image: lswl/vertex:stable
+    pull_policy: always
     labels:  
       createdBy: "Apps"
 

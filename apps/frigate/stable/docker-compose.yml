@@ -1,6 +1,7 @@
 services:
   frigate:
     image: "ghcr.io/blakeblackshear/frigate:stable"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

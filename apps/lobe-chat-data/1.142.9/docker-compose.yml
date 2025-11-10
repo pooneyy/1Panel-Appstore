@@ -35,6 +35,7 @@ services:
 
   network-service:
     image: alpine
+    pull_policy: always
     container_name: lobe-network
     restart: always
     ports:

@@ -11,12 +11,13 @@ services:
     environment:
       - TZ=Asia/Shanghai
     image: ghcr.io/enchant97/hasty-paste:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
 volumes:
   hpaste_data:
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

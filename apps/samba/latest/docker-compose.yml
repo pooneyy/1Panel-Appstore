@@ -1,6 +1,7 @@
 services:
   samba:
     image: "elswork/samba:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     hostname: ${HOSTNAME}
     restart: always
@@ -13,14 +14,7 @@ services:
       - TZ=${TZ}
     volumes:
       - "${DATA_PATH}:${INTERNAL_DATA_PATH}"
-    command:
-      -u "${USER_1}"
-      -s "${SHARE_1}"
-      #-u "${USER_2}"
-      #-s "${SHARE_2}"
-      #-u "${USER_3}"
-      #-s "${SHARE_3}"
-      
+    command: -u "${USER_1}" -s "${SHARE_1}"
     labels:
       createdBy: "Apps"
 

@@ -1,6 +1,7 @@
 services:
   chatgpt-on-wechat:
     image: "zhayujie/chatgpt-on-wechat:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -128,9 +129,9 @@ services:
       - LINKAI_API_KEY=${LINKAI_API_KEY}
       - LINKAI_APP_CODE=${LINKAI_APP_CODE}
       - LINKAI_API_BASE=${LINKAI_API_BASE}
-    labels:  
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

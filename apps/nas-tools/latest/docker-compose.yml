@@ -1,6 +1,7 @@
 services:
   nas-tools:
     image: "hsuyelin/nas-tools:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

@@ -35,6 +35,7 @@ services:
   mongo:
     container_name: ${CONTAINER_NAME}-mongo
     image: mongo
+    pull_policy: always
     volumes:
       - ./data/db:/data/db
     networks:
@@ -45,6 +46,7 @@ services:
 
   redis:
     image: redis
+    pull_policy: always
     container_name: ${CONTAINER_NAME}-redis
     networks:
       - mixspace-network

@@ -11,6 +11,7 @@ services:
       - "CACHE_TYPE=redis"
       - "REDIS_URL=redis://:${REDIS_PASS}@${REDIS_HOST}:${REDIS_PORT}"
     image: diygod/rsshub:chromium-bundled
+    pull_policy: always
     labels:
       createdBy: Apps
 

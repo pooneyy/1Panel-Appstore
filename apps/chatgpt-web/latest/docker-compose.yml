@@ -35,6 +35,7 @@ services:
       # HTTPS 代理，可选，支持 http，https，socks5
       HTTPS_PROXY: "${HTTPS_PROXY}"
     image: chenzhaoyu94/chatgpt-web:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 networks:

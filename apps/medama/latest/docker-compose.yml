@@ -1,6 +1,7 @@
 services:
   medama:
     image: "ghcr.io/medama-io/medama:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

@@ -11,9 +11,10 @@ services:
     user: "1000:1000"
     command: "--workspace=/siyuan/workspace/"
     image: b3log/siyuan:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

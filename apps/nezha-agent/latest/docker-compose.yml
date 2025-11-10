@@ -1,11 +1,12 @@
 services:
   nezha-agent:
     image: "whoer/nezha-agent:latest"
-    container_name: ${CONTAINER_NAME} 
+    pull_policy: always
+    container_name: ${CONTAINER_NAME}
     restart: always
     command: --tls -s ${NZ_GRPC_URL} -p ${NZ_CLENT_SECRET} -d
     volumes:
       - /etc:/etc:ro
     network_mode: host
-    labels:  
+    labels:
       createdBy: "Apps"

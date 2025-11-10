@@ -13,5 +13,6 @@ services:
       - /lib/modules:/lib/modules:ro
       - /etc/resolv.conf:/etc/resolv.conf
     image: mzz2017/v2raya:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"

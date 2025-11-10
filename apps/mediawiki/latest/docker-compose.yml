@@ -1,6 +1,7 @@
 services:
   mediawiki:
     image: "mediawiki:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

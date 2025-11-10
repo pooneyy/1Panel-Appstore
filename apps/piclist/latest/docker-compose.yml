@@ -1,6 +1,7 @@
 services:
   piclist:
     image: "kuingsmile/piclist:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -12,7 +13,6 @@ services:
     command: node /usr/local/bin/picgo-server -k ${AUTH_KEY}
     labels:
       createdBy: "Apps"
-   
 networks:
   1panel-network:
     external: true

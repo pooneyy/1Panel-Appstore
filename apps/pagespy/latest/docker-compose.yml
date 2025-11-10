@@ -2,6 +2,7 @@ services:
   pageSpy:
     container_name: ${CONTAINER_NAME}
     image: "ghcr.io/huolalatech/page-spy-web:latest"
+    pull_policy: always
     networks:
       - 1panel-network
     ports:

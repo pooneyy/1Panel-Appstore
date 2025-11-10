@@ -1,6 +1,7 @@
 services:
   warp:
     image: caomingjun/warp:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -17,9 +18,9 @@ services:
       - net.ipv4.conf.all.src_valid_mark=1
     volumes:
       - '${DATA_PATH}:/var/lib/cloudflare-warp'
-    labels:  
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

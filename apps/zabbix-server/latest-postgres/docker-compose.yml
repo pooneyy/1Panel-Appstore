@@ -2,6 +2,7 @@ services:
   zabbix-snmptraps:
     container_name: ${CONTAINER_NAME}-snmptraps
     image: zabbix/zabbix-snmptraps:latest
+    pull_policy: always
     volumes:
       - ./data/snmptraps:/var/lib/zabbix/snmptraps:rw
       - ./data/mibs:/usr/share/snmp/mibs:ro
@@ -16,6 +17,7 @@ services:
   zabbix-server-pgsql:
     container_name: ${CONTAINER_NAME}
     image: zabbix/zabbix-server-pgsql:latest
+    pull_policy: always
     environment:
       - DB_SERVER_HOST=${PANEL_DB_HOST}
       - POSTGRES_USER=${PANEL_DB_USER}
@@ -36,6 +38,7 @@ services:
   zabbix-web-nginx-pgsql:
     container_name: ${CONTAINER_NAME}-nginx
     image: zabbix/zabbix-web-nginx-pgsql:latest
+    pull_policy: always
     environment:
       - ZBX_SERVER_HOST=zabbix-server-pgsql
       - DB_SERVER_HOST=${PANEL_DB_HOST}

@@ -1,6 +1,7 @@
 services:
   plex:
     image: "plexinc/pms-docker:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

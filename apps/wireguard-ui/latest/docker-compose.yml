@@ -23,11 +23,12 @@ services:
       - ./data/db:/app/db
       - ./data/config:/etc/wireguard
     image: ngoduykhanh/wireguard-ui:latest
+    pull_policy: always
     logging:
       driver: json-file
       options:
         max-size: 50m
-    labels:  
+    labels:
       createdBy: "Apps"
 
   wireguard:
@@ -48,9 +49,10 @@ services:
       - PEERS=1
       - SERVERPORT=${PANEL_APP_PORT_WIREGUARD}
     image: linuxserver/wireguard:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

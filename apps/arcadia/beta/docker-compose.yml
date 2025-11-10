@@ -1,6 +1,7 @@
 services:
   arcadia:
     image: "supermanito/arcadia:beta"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     hostname: ${HOSTNAME}
     tty: true

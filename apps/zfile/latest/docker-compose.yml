@@ -11,9 +11,10 @@ services:
       - "${DATA_PATH}/logs:/root/.zfile-v4/logs"
       - "${MOUNT_PATH}:/data/file"
     image: zhaojun1998/zfile:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

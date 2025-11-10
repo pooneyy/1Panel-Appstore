@@ -1,6 +1,7 @@
 services:
   gotify:
     image: "gotify/server:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

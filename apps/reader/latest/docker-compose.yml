@@ -20,9 +20,10 @@ services:
       - READER_APP_SECUREKEY=${PASSWORD}
       - READER_APP_INVITECODE=${INVITE_CODE}
     image: hectorqin/reader:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

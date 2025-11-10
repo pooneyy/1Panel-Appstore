@@ -13,9 +13,10 @@ services:
       - APP_GLOBAL_SECRET=${APP_GLOBAL_SECRET}
       - MASTER_RPC_HOST=${MASTER_RPC_HOST}
     image: vaalacat/frp-panel:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

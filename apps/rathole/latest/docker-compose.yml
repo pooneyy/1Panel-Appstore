@@ -1,7 +1,7 @@
-
 services:
   rathole:
     image: "rapiz1/rathole:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     network_mode: "host"

@@ -5,6 +5,7 @@ networks:
 services:
   stash-box:
     image: stashapp/stash-box:development
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     labels:
       - createdBy=Apps

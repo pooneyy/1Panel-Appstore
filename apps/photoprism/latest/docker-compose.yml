@@ -67,14 +67,15 @@ services:
     #  - "/dev/nvidia-uvm:/dev/nvidia-uvm"
     #  - "/dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools"
     #  - "/dev/video11:/dev/video11"                 # Video4Linux Video Encode Device (h264_v4l2m2m)
-    working_dir: "/photoprism" # do not change or remove
+    working_dir: "/photoprism"
     security_opt:
       - seccomp:unconfined
       - apparmor:unconfined
     image: photoprism/photoprism:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

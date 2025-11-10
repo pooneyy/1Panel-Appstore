@@ -5,6 +5,7 @@ networks:
 services:
   nodebb:
     image: ghcr.io/nodebb/nodebb:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"

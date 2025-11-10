@@ -9,6 +9,7 @@ services:
       - ${DATA_PATH}/storage:/better-sync/storage/
       - ${DATA_PATH}/config:/better-sync/config/
     image: haierkeys/obsidian-better-sync-service:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
     networks:

@@ -9,6 +9,7 @@ services:
     volumes:
       - "${DATA_PATH}:/app/data"
     image: lanol/filecodebox:beta
+    pull_policy: always
     labels:  
       createdBy: "Apps"
 

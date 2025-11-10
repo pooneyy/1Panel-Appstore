@@ -1,6 +1,7 @@
 services:
   gh-proxy:
     image: wjqserver/ghproxy:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -14,5 +15,5 @@ services:
       createdBy: "Apps"
 
 networks:
-  1panel-network:  
+  1panel-network:
     external: true

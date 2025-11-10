@@ -1,6 +1,7 @@
 services:
   thunderbird-kasm:
     image: "kasmweb/thunderbird:develop"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

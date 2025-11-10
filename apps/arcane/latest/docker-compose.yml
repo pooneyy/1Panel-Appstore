@@ -1,9 +1,10 @@
 services:
   arcane:
     image: ghcr.io/ofkm/arcane:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     ports:
-      - "${PANEL_APP_PORT_HTTP}:3000" 
+      - "${PANEL_APP_PORT_HTTP}:3000"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./data:/app/data
@@ -15,4 +16,4 @@ services:
     restart: always
 networks:
   1panel-network:
-    external: true 
+    external: true

@@ -1,18 +1,19 @@
 services:
-    agent-image:
-        image: vuldocker/glance-agent:latest
-        container_name: ${CONTAINER_NAME}
-        restart: unless-stopped
-        ports:
-            - ${PANEL_APP_PORT_HTTP}:8000
-        volumes:
-            - /etc/hostname:/host/etc/hostname:ro
-        networks:
-            - 1panel-network
-        environment:
-            - TZ=Asia/Shanghai
-        labels:
-            createdBy: Apps
+  agent-image:
+    image: vuldocker/glance-agent:latest
+    pull_policy: always
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8000
+    volumes:
+      - /etc/hostname:/host/etc/hostname:ro
+    networks:
+      - 1panel-network
+    environment:
+      - TZ=Asia/Shanghai
+    labels:
+      createdBy: Apps
 networks:
-    1panel-network:
-        external: true
+  1panel-network:
+    external: true

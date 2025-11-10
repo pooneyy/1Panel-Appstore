@@ -8,5 +8,6 @@ services:
     environment:
       - TZ=Asia/Shanghai
     image: homeassistant/home-assistant:latest
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"

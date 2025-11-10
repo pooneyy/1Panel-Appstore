@@ -1,6 +1,7 @@
 services:
   lobe-chat:
     image: lobehub/lobe-chat-pglite:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -13,9 +14,9 @@ services:
       - ACCESS_CODE=${ACCESS_CODE}
       - OPENAI_MODEL_LIST=${OPENAI_MODEL_LIST}
       - SEARXNG_URL=${SEARXNG_URL}
-    labels:  
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

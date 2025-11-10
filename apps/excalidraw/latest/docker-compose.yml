@@ -5,6 +5,7 @@ networks:
 services:
   excalidraw:
     image: excalidraw/excalidraw:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
@@ -12,7 +13,7 @@ services:
     stdin_open: true
     healthcheck:
       disable: true
-      test: [ "CMD", "curl", "-f", "http://localhost" ]
+      test: ["CMD", "curl", "-f", "http://localhost"]
     networks:
       - 1panel-network
     ports:

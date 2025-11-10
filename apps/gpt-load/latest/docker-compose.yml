@@ -1,6 +1,7 @@
 services:
   gpt-load:
     image: ghcr.io/tbphp/gpt-load:latest
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
@@ -10,7 +11,7 @@ services:
     volumes:
       - ./data:/app/data
     env_file:
-      - .env     
+      - .env
     labels:
       createdBy: "Apps"
 networks:

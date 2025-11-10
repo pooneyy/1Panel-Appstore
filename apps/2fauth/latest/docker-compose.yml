@@ -1,6 +1,7 @@
 services:
   2fauth:
     image: "2fauth/2fauth:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

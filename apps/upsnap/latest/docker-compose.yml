@@ -1,6 +1,7 @@
 services:
   upsnap:
     image: "seriousm4x/upsnap:latest"
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     network_mode: host
     restart: always

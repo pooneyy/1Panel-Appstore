@@ -1,6 +1,7 @@
 services:
   netdisk-fast-download:
     image: ghcr.io/qaiu/netdisk-fast-download:main
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: unless-stopped
     networks:

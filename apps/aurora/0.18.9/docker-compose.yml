@@ -65,6 +65,7 @@ services:
     environment:
       TZ: 'Asia/Shanghai'
     image: redis:latest
+    pull_policy: always
     labels:
       createdBy: Apps
 

@@ -20,8 +20,9 @@ services:
       - TITLE=Kali Linux
     shm_size: "1gb"
     image: linuxserver/kali-linux:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
 networks:
   1panel-network:
-    external: true 
+    external: true

@@ -7,7 +7,7 @@ services:
       - "${HBBS_PORT}:21116" # 自定义 hbbs 映射端口
       - "${HBBS_PORT}:21116/udp" #自定义 hbbs 映射端口
       - "${WEB_CLIENT_PORT1}:21118" #网页客户端支持端口
-    command: hbbs -r ${HOST_ADDRESS}:${HBBS_PORT} -k _ # 填入个人域名或 IP +  暴露端口
+    command: hbbs -r ${HOST_ADDRESS}:${HBBS_PORT} -k _
     volumes:
       - "./data:/root" # 自定义挂载目录
     networks:
@@ -19,8 +19,8 @@ services:
 #        limits:
 #          memory: 64M
     image: rustdesk/rustdesk-server:latest
-#    image: rustdesk/rustdesk-server:latest-arm64v8 # 镜像选用 arm64 版
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
   hbbr:
@@ -39,11 +39,11 @@ services:
 #        limits:
 #          memory: 64M
     image: rustdesk/rustdesk-server:latest
-#    image: rustdesk/rustdesk-server:latest-arm64v8 # 镜像选用 arm64 版
-    labels:  
+    pull_policy: always
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true
 
