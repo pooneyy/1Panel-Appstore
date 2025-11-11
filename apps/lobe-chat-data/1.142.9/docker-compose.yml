@@ -49,6 +49,7 @@ services:
 
   postgresql:
     image: pgvector/pgvector:pg17
+    pull_policy: always
     container_name: lobe-postgres
     ports:
       - '5432:5432'

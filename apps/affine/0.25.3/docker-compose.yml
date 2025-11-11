@@ -69,6 +69,7 @@ services:
     restart: always
   postgres:
     image: pgvector/pgvector:pg16
+    pull_policy: always
     container_name: ${CONTAINER_NAME}_postgres
     volumes:
       - ${DB_DATA_LOCATION}:/var/lib/postgresql/data
