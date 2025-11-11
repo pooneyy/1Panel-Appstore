@@ -1,9 +1,10 @@
 preview:
-  - desc:
-      zh: 不依赖任何框架、人人可用的创新型多智能体舆情分析系统
-      en: A framework-independent, user-friendly, and innovative multi-agent public opinion analysis system
-    icon: https://f.pz.al/pzal/2025/11/11/15a56d7ebde5a.png
-    name: BettaFish
-    url: https://github.com/666ghj/BettaFish
+  # - desc:
+  #     zh: 
+  #     en: 
+  #   icon: 
+  #   name: 
+  #   url: 
 
 releases:
+  - bettafish
