@@ -18,11 +18,11 @@
 
 ***
 
-<!-- ### New This Week -->
+### New This Week
 
-### Coming Soon
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/bettafish"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/bettafish/logo.png" alt="BettaFish" width="64" height="64"><br><strong>BettaFish</strong></a><br>A framework-independent, user-friendly, and innovative multi-agent public opinion analysis system</td><td width="33%" valign="top" align="center"></td><td width="33%" valign="top" align="center"></td></tr></table>
 
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/666ghj/BettaFish"><img src="https://f.pz.al/pzal/2025/11/11/15a56d7ebde5a.png" alt="BettaFish" width="64" height="64"><br><strong>BettaFish</strong></a><br>A framework-independent, user-friendly, and innovative multi-agent public opinion analysis system</td><td width="33%" valign="top" align="center"></td><td width="33%" valign="top" align="center"></td></tr></table>
+<!-- ### Coming Soon -->
 
 ## Disclaimer
 
