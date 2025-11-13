@@ -6,7 +6,7 @@ description:
   en: High-performance, scalable time-series database designed for Industrial IoT (IIoT) scenarios
   zh: 专为工业物联网（IIoT）场景设计的高性能、可扩展时间序列数据库
 additionalProperties:
-  key: TDengine
+  key: tdengine
   name: TDengine
   tags:
     - Database
