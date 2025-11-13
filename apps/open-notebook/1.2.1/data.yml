@@ -1,7 +1,7 @@
 additionalProperties:
   formFields:
     - default: "8502"
-      envKey: REACT_FRONTEND_PORT
+      envKey: PANEL_APP_PORT_HTTP
       labelZh: 前端端口
       labelEn: Frontend Port
       label:

@@ -6,7 +6,7 @@ services:
     networks:
       - 1panel-network
     ports:
-      - ${REACT_FRONTEND_PORT}:8502
+      - ${PANEL_APP_PORT_HTTP}:8502
       - ${REST_API_BACKEND_PORT}:5055
     # env_file:
     #   - ./.docker.env

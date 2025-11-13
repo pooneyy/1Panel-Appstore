@@ -1,5 +1,6 @@
 name: Open Notebook
 tags:
+  - AI
   - 实用工具
 title: 一个开源的、注重隐私的 Google Notebook LM 替代方案
 description:
@@ -9,6 +10,7 @@ additionalProperties:
   key: open-notebook
   name: Open Notebook
   tags:
+    - AI
     - Tool
   shortDescZh: 一个开源的、注重隐私的 Google Notebook LM 替代方案
   shortDescEn: An open source, privacy-focused alternative to Google's Notebook LM
