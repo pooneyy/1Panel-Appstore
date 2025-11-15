@@ -24,40 +24,43 @@ additionalProperties:
     - default: "https://api.apifox.cn"
       edit: true
       envKey: SERVER_APP_BASE_URL
-      labelZh: 应用服务地址
-      labelEn: App Server address
+      labelZh: 参数 SERVER_APP_BASE_URL
+      labelEn: Parameter SERVER_APP_BASE_URL
       label:
-        en: App Server address
-        zh: 应用服务地址
+        en: Parameter SERVER_APP_BASE_URL
+        zh: 参数 SERVER_APP_BASE_URL
+      description:
+        en: Fill in the parameters provided by the website; all remaining parameters follow the same rule.
+        zh: 填入网站给出的参数，余下参数皆如此
       required: true
       type: text
     - default: ""
       edit: true
       envKey: ACCESS_TOKEN
-      labelZh: 访问令牌
-      labelEn: Access Token
+      labelZh: 参数 ACCESS_TOKEN
+      labelEn: Parameter ACCESS_TOKEN
       label:
-        en: Access Token
-        zh: 访问令牌
+        en: Parameter ACCESS_TOKEN
+        zh: 参数 ACCESS_TOKEN
       required: true
       type: text
     - default: 0
       edit: true
       envKey: TEAM_ID
-      labelZh: 团队 ID
-      labelEn: Team ID
+      labelZh: 参数 TEAM_ID
+      labelEn: Parameter TEAM_ID
       label:
-        en: Team ID
-        zh: 团队 ID
+        en: Parameter TEAM_ID
+        zh: 参数 TEAM_ID
       required: true
       type: number
     - default: 0
       edit: true
       envKey: RUNNER_ID
-      labelZh: Runner ID
-      labelEn: Runner ID
+      labelZh: 参数 RUNNER_ID
+      labelEn: Parameter RUNNER_ID
       label:
-        en: Runner ID
-        zh: Runner ID
+        en: Parameter RUNNER_ID
+        zh: 参数 RUNNER_ID
       required: true
       type: number

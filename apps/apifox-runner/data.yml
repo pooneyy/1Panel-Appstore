@@ -4,14 +4,17 @@ additionalProperties:
   tags:
     - Runtime
     - Local
-  shortDescZh: 自动化测试定时任务、接口导入、Mock 服务
-  shortDescEn: Automated testing, scheduled tasks, interface import, Mock service
+  shortDescZh: Apifox 的自托管通用 Runner
+  shortDescEn: Apifox Self-Hosted Universal Runner
   description:
-    en: Automated testing, scheduled tasks, interface import, Mock service
-    zh: 自动化测试定时任务、接口导入、Mock 服务
-  type: runtime
+    en: Apifox Self-Hosted Universal Runner
+    zh: Apifox 的自托管通用 Runner
+  type: tool
   crossVersionUpdate: true
   limit: 0
   website: https://apifox.com/
   github: https://apifox.com/
   document: https://apifox.com/help/
+  architectures:
+    - amd64
+    - arm64

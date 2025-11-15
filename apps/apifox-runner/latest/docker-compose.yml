@@ -4,7 +4,8 @@ networks:
 
 services:
   apifox-runner:
-    image: registry.cn-hangzhou.aliyuncs.com/apifox/self-hosted-general-runner:1.8.1
+    image: registry.cn-hangzhou.aliyuncs.com/apifox/self-hosted-general-runner:1.9.0
+    pull_policy: always
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"

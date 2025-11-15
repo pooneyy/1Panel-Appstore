@@ -1,0 +1,66 @@
+additionalProperties:
+  formFields:
+    - default: "./data"
+      edit: true
+      envKey: APIFOX_RUNNER_ROOT_PATH
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
+      required: true
+      type: text
+    - default: 4524
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "https://api.apifox.cn"
+      edit: true
+      envKey: SERVER_APP_BASE_URL
+      labelZh: 参数 SERVER_APP_BASE_URL
+      labelEn: Parameter SERVER_APP_BASE_URL
+      label:
+        en: Parameter SERVER_APP_BASE_URL
+        zh: 参数 SERVER_APP_BASE_URL
+      description:
+        en: Fill in the parameters provided by the website; all remaining parameters follow the same rule.
+        zh: 填入网站给出的参数，余下参数皆如此
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: ACCESS_TOKEN
+      labelZh: 参数 ACCESS_TOKEN
+      labelEn: Parameter ACCESS_TOKEN
+      label:
+        en: Parameter ACCESS_TOKEN
+        zh: 参数 ACCESS_TOKEN
+      required: true
+      type: text
+    - default: 0
+      edit: true
+      envKey: TEAM_ID
+      labelZh: 参数 TEAM_ID
+      labelEn: Parameter TEAM_ID
+      label:
+        en: Parameter TEAM_ID
+        zh: 参数 TEAM_ID
+      required: true
+      type: number
+    - default: 0
+      edit: true
+      envKey: RUNNER_ID
+      labelZh: 参数 RUNNER_ID
+      labelEn: Parameter RUNNER_ID
+      label:
+        en: Parameter RUNNER_ID
+        zh: 参数 RUNNER_ID
+      required: true
+      type: number
