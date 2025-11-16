@@ -17,9 +17,7 @@
 
 ***
 
-### 本周上新
-
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/bettafish"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/bettafish/logo.png" alt="BettaFish" width="64" height="64"><br><strong>BettaFish</strong></a><br>不依赖任何框架、人人可用的创新型多智能体舆情分析系统</td><td width="33%" valign="top" align="center"></td><td width="33%" valign="top" align="center"></td></tr></table>
+<!-- ### 本周上新 -->
 
 <!-- ### 即将推出 -->
 
