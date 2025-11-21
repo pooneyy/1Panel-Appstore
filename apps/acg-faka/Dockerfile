@@ -1,4 +1,4 @@
-From php:8.4-apache-bookworm
+From php:8.5-apache-bookworm
 ARG REF main
 RUN apt-get update && apt-get install -y \
       git \
