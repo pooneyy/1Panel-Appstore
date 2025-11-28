@@ -1,6 +1,6 @@
 services:
   oauth2_proxy:
-    image: quay.io/oauth2-proxy/oauth2-proxy:v7.12.0
+    image: quay.io/oauth2-proxy/oauth2-proxy:v7.13.0
     container_name: ${CONTAINER_NAME}
     environment:
       - OAUTH2_PROXY_PROVIDER=${PANEL_OAUTH2_PROXY_PROVIDER}
