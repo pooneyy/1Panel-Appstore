@@ -17,9 +17,7 @@
 
 ***
 
-### 本周上新
-
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/trendradar"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/trendradar/logo.png" alt="TrendRadar" width="64" height="64"><br><strong>TrendRadar</strong></a><br>多平台热点推送</td><td width="33%" valign="top" align="center"></td><td width="33%" valign="top" align="center"></td></tr></table>
+<!-- ### 本周上新 -->
 
 <!-- ### 即将推出 -->
 
