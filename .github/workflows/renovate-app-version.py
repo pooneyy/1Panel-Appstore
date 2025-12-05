@@ -25,7 +25,7 @@ def extract_version_from_string(input_string) -> dict:
     original_candidate = candidate
     
     # 从复杂标签中提取包含数字和分隔符的版本号部分
-    pattern = r'(\d+(?:[\.\-]\d+)+)'
+    pattern = r'(\d+(?:[\.\-]*\d+)+)'
     matches = re.findall(pattern, candidate)
     if matches:
         # 选择最长的匹配项，并统一分隔符为点号
