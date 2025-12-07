@@ -1,6 +1,6 @@
 services:
   picimpact:
-    image: besscroft/picimpact:v2.8.4
+    image: besscroft/picimpact:v2.9.0
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
