@@ -10,7 +10,7 @@ services:
       - TZ=Asia/Shanghai
       - ${ENV1}
     command: ${COMMAND1}
-    image: containrrr/watchtower:latest
+    image: nickfedor/watchtower:latest
     pull_policy: always
     labels:
       createdBy: "Apps"
