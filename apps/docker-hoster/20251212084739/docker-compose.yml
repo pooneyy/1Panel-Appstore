@@ -1,6 +1,6 @@
 services:
   docker-hoster:
-    image: "solipsist01/docker-hoster:20241103005433"
+    image: "solipsist01/docker-hoster:20251212084739"
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
