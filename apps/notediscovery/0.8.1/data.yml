@@ -1,0 +1,111 @@
+additionalProperties:
+  formFields:
+    - default: 8080
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: HTTP 端口
+      labelEn: HTTP Port
+      label:
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+        en: HTTP Port
+        ja: HTTP ポート
+        ko: HTTP 포트
+        ms: Port HTTP
+        pt-br: Porta HTTP
+        ru: HTTP Порт
+        tr: HTTP Portu
+      description:
+        zh: "设置应用的 HTTP 访问端口，有效范围: 1-65535"
+        zh-Hant: "設定應用程式的 HTTP 存取連接埠，有效範圍: 1-65535"
+        en: "Set the HTTP access port for the application, valid range: 1-65535"
+        ja: "アプリケーションのHTTPアクセスポートを設定します。有効範囲: 1-65535"
+        ko: "애플리케이션의 HTTP 접근 포트를 설정합니다. 유효 범위: 1-65535"
+        ms: "Tetapkan port akses HTTP untuk aplikasi, julat sah: 1-65535"
+        pt-br: "Defina a porta de acesso HTTP para o aplicativo, intervalo válido: 1-65535"
+        ru: "Установите порт доступа HTTP для приложения, допустимый диапазон: 1-65535"
+        tr: "Uygulama için HTTP erişim portunu ayarlayın, geçerli aralık: 1-65535"
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: ./data
+      envKey: APP_DATA
+      labelZh: 持久化笔记与数据
+      labelEn: Persist notes and data
+      label:
+        zh: 持久化笔记与数据
+        zh-Hant: 持久化筆記與數據
+        en: Persist notes and data
+        ja: ノートとデータの永続化
+        ko: 노트 및 데이터 지속화
+        ms: Kekalkan nota dan data
+        pt-br: Persistir notas e dados
+        ru: Сохранять заметки и данные
+        tr: Notları ve verileri kalıcı hale getir
+      required: true
+      type: text
+      edit: true
+    - default: "true"
+      envKey: AUTHENTICATION_ENABLED
+      labelZh: 启用/禁用身份验证
+      labelEn: Enable/Disable Authentication
+      label:
+        zh: 启用/禁用身份验证
+        zh-Hant: 啟用/禁用身份驗證
+        en: Enable/Disable Authentication
+        ja: 認証の有効/無効
+        ko: 인증 사용/사용 안 함
+        ms: Dayakan/Nyahdayakan Pengesahan
+        pt-br: Habilitar/Desabilitar Autenticação
+        ru: Включить/Выключить аутентификацию
+        tr: Kimlik Doğrulamayı Etkinleştir/Devre Dışı Bırak
+      description:
+        zh: 身份验证密码在 config.yaml 修改
+        zh-Hant: 身份驗證密碼在 config.yaml 修改
+        en: Authentication password is modified in config.yaml
+        ja: 認証パスワードは config.yaml で変更します
+        ko: 인증 비밀번호는 config.yaml에서 수정합니다
+        ms: Kata laluan pengesahan diubah dalam config.yaml
+        pt-br: A senha de autenticação é modificada no config.yaml
+        ru: Пароль аутентификации изменяется в файле config.yaml
+        tr: Kimlik doğrulama parolası config.yaml dosyasında değiştirilir
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: 启用 / Enable
+          value: "true"
+        - label: 禁用 / Disable
+          value: "false"
+    - default: "false"
+      envKey: DEMO_MODE
+      labelZh: 演示模式
+      labelEn: Demo Mode
+      label:
+        zh: 演示模式
+        zh-Hant: 演示模式
+        en: Demo Mode
+        ja: デモモード
+        ko: 데모 모드
+        ms: Mod Demo
+        pt-br: Modo Demonstração
+        ru: Демо-режим
+        tr: Demo Modu
+      description:
+        zh: 启用速率限制和其他演示限制
+        zh-Hant: 啟用速率限制和其他演示限制
+        en: Enables rate limiting and other demo restrictions
+        ja: レート制限やその他のデモ制限を有効にします
+        ko: 속도 제한 및 기타 데모 제한을 활성화합니다
+        ms: Mengaktifkan had kadar dan sekatan demo lain
+        pt-br: Ativa a limitação de taxa e outras restrições de demonstração
+        ru: Включает ограничение скорости и другие демонстрационные ограничения
+        tr: Hız sınırlamasını ve diğer demo kısıtlamalarını etkinleştirir
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: 启用 / Enable
+          value: "true"
+        - label: 禁用 / Disable
+          value: "false"

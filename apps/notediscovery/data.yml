@@ -1,0 +1,30 @@
+name: Note Discovery
+tags:
+  - 实用工具
+title: 轻量级笔记与知识库管理系统
+description: 轻量级笔记与知识库管理系统
+additionalProperties:
+  key: notediscovery
+  name: Note Discovery
+  tags:
+    - Tool
+  shortDescZh: 轻量级笔记与知识库管理系统
+  shortDescEn: Lightweight Note and Knowledge Base Management System
+  description:
+    en: Lightweight Note and Knowledge Base Management System
+    zh: 轻量级笔记与知识库管理系统
+    zh-Hant: 輕量級筆記與知識庫管理系統
+    ja: 軽量ノート・知識庫管理システム
+    ms: Sistem Pengurusan Nota dan Pangkalan Pengetahuan Ringan
+    pt-br: Sistema Leve de Gerenciamento de Notas e Base de Conhecimento
+    ru: Облегченная система управления заметками и базой знаний
+    ko: 경량 노트 및 지식 베이스 관리 시스템
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://www.notediscovery.com/
+  github: https://github.com/gamosoft/NoteDiscovery
+  document: https://github.com/gamosoft/NoteDiscovery
+  architectures:
+    - amd64
+    - arm64
