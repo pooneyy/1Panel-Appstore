@@ -18,7 +18,9 @@
 
 ***
 
-<!-- ### New This Week -->
+### New This Week
+
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/notediscovery"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/notediscovery/logo.png" alt="Note Discovery" width="64" height="64"><br><strong>Note Discovery</strong></a><br>Lightweight Note and Knowledge Base Management System</td></tr></table>
 
 <!-- ### Coming Soon -->
 
