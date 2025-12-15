@@ -1,0 +1,43 @@
+additionalProperties:
+  formFields:
+    - default: "./data"
+      edit: true
+      envKey: AUTO_LADY_ROOT_PATH
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
+      required: true
+      type: text
+    - default: 8080
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: HTTP_PROXY
+      labelZh: 网络代理地址
+      labelEn: Network proxy address
+      label:
+        en: Network proxy address
+        zh: 网络代理地址
+      required: false
+      type: text
+    - default: "localhost,127.0.0.1,::1,192.168.0.0/16,10.0.0.0/8,*.local"
+      edit: true
+      envKey: NO_PROXY
+      labelZh: 跳过代理地址
+      labelEn: Skip proxy address
+      label:
+        en: Skip proxy address
+        zh: 跳过代理地址
+      required: false
+      type: text
