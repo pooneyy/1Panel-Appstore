@@ -1,11 +1,11 @@
-name: Obsidian BetterSync
+name: Fast Note Sync Service
 tags:
   - 实用工具
 title: Obsidian 在线同步插件
 description: Obsidian 在线同步插件
 additionalProperties:
-  key: better-sync-service
-  name: Obsidian BetterSync
+  key: fast-note-sync-service
+  name: Fast Note Sync Service
   tags:
     - Tool
   shortDescZh: Obsidian 在线同步插件
@@ -17,6 +17,6 @@ additionalProperties:
   crossVersionUpdate: true
   limit: 0
   recommend: 0
-  website: https://github.com/haierkeys/obsidian-better-sync-service
-  github: https://github.com/haierkeys/obsidian-better-sync-service
-  document: https://github.com/haierkeys/obsidian-better-sync-service/blob/master/readme-zh.md
+  website: https://github.com/haierkeys/fast-note-sync-service
+  github: https://github.com/haierkeys/fast-note-sync-service
+  document: https://github.com/haierkeys/fast-note-sync-service/blob/master/docs/README.zh-CN.md
