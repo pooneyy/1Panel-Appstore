@@ -1,0 +1,52 @@
+additionalProperties:
+  formFields:
+    - default: ""
+      edit: true
+      envKey: NZ_GRPC_URL
+      labelEn: "Nezha Agent Endpoint"
+      labelZh: Agent 对接地址
+      label:
+        en: "Nezha Agent Endpoint"
+        zh: Agent 对接地址
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: NZ_CLENT_SECRET
+      labelEn: "Nezha client secret"
+      labelZh: 哪吒客户端密钥
+      label:
+        en: "Nezha client secret"
+        zh: 哪吒客户端密钥
+      required: true
+      type: password
+    - default: "true"
+      envKey: DISABLE_COMMAND_EXECUTE
+      labelZh: 命令执行
+      labelEn: Command Execute
+      label:
+        zh: 命令执行
+        en: Command Execute
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: 启用 / Enabled
+          value: "false"
+        - label: 禁用 / Disabled
+          value: "true"
+    - default: "false"
+      envKey: GPU
+      labelZh: 启用 GPU 监控
+      labelEn: Enable GPU Monitoring
+      label:
+        zh: 启用 GPU 监控
+        en: Enable GPU Monitoring
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: 启用 / Enabled
+          value: "true"
+        - label: 禁用 / Disabled
+          value: "false"

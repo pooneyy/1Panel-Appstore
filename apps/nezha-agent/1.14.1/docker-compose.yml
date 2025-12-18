@@ -1,0 +1,15 @@
+services:
+  nezha-agent:
+    image: kanggle/nezha-agent:v1.14.1
+    container_name: ${CONTAINER_NAME} 
+    restart: always
+    environment:
+      - CLIENT_SECRET=${NZ_CLENT_SECRET}
+      - SERVER=${NZ_GRPC_URL}
+      - GPU=${GPU}
+      - DISABLE_COMMAND_EXECUTE=${DISABLE_COMMAND_EXECUTE}
+      - DISABLE_AUTO_UPDATE=true
+      - DISABLE_FORCE_UPDATE=true
+    network_mode: host
+    labels:  
+      createdBy: "Apps"

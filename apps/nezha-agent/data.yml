@@ -18,5 +18,5 @@ additionalProperties:
   limit: 0
   recommend: 0
   website: https://nezha.wiki
-  github: https://github.com/naiba/nezha
-  document: https://nezha.wiki/guide/agent.html
+  github: https://github.com/nezhahq/agent
+  document: https://github.com/xmusphlkg/nezha-agent-docker
