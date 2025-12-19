@@ -1,0 +1,49 @@
+networks:
+  1panel-network:
+    external: true
+
+name: immich
+
+services:
+  immich-server:
+    depends_on:
+      - immich-pg14-vectors
+    image: ghcr.io/immich-app/immich-server:v2.4.0
+    container_name: immich-server-${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    devices:
+      - /dev/dri:/dev/dri
+      # - /dev/nvidia0:/dev/nvidia0
+      # - /dev/nvidiactl:/dev/nvidiactl
+      # - /dev/nvidia-modeset:/dev/nvidia-modeset
+      # - /dev/nvidia-nvswitchctl:/dev/nvidia-nvswitchctl
+      # - /dev/nvidia-uvm:/dev/nvidia-uvm
+      # - /dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools
+      # - /dev/video11:/dev/video11
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:2283
+    volumes:
+      - ${IMMICH_ROOT_PATH}/data/library:/usr/src/app/upload
+      - /etc/localtime:/etc/localtime
+
+  immich-pg14-vectors:
+    image: ghcr.io/immich-app/postgres:16-vectorchord0.3.0-pgvectors0.2.0
+    container_name: pg14-vectors-${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_DB:-5432}:5432
+    volumes:
+      - ${IMMICH_ROOT_PATH}/pg14/data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_USER: ${DB_USERNAME:-postgres}
+      POSTGRES_DB: ${DB_DATABASE_NAME:-immich}
+      POSTGRES_INITDB_ARGS: '--data-checksums'
