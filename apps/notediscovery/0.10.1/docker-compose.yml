@@ -1,6 +1,6 @@
 services:
   notediscovery:
-    image: ghcr.io/gamosoft/notediscovery:0.10.1
+    image: ghcr.io/gamosoft/notediscovery:0.10.2
     container_name: ${CONTAINER_NAME}
     ports:
       - ${PANEL_APP_PORT_HTTP}:8000
