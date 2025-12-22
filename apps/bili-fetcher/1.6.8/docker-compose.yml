@@ -4,7 +4,7 @@ networks:
 
 services:
   bili-fetcher-api:
-    image: qyg2297248353/bili-fetcher:v1.6.8
+    image: qyg2297248353/bili-fetcher:v1.6.9
     container_name: api-${CONTAINER_NAME}
     restart: always
     networks:
@@ -19,7 +19,7 @@ services:
       - DOCKER_ENV=true
 
   bili-fetcher-web:
-    image: qyg2297248353/bili-fetcher-web:v1.6.8
+    image: qyg2297248353/bili-fetcher-web:v1.6.9
     depends_on:
       - bili-fetcher-api
     container_name: ${CONTAINER_NAME}
