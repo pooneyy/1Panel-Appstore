@@ -136,8 +136,6 @@
     },
     {
       "matchPackageNames": ["linuxserver/calibre-web"],
-      "matchCurrentVersion": "<=5",
-      "allowedVersions": "<5",
       "ignoreUnstable": false,
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-ls(?<build>\\d+)$"
     },
