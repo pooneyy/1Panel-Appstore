@@ -8,7 +8,7 @@ services:
     volumes:
       - ${DATA_PATH}/storage:/fast-note-sync/storage
       - ${DATA_PATH}/config:/fast-note-sync/config
-    image: haierkeys/fast-note-sync-service:0.11.5
+    image: haierkeys/fast-note-sync-service:1.0.0
     labels:
       createdBy: "Apps"
     networks:
