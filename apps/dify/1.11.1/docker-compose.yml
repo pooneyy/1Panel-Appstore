@@ -656,7 +656,7 @@ services:
     networks:
       - ssrf_proxy_network
   plugin_daemon:
-    image: langgenius/dify-plugin-daemon:0.5.1-local
+    image: langgenius/dify-plugin-daemon:0.5.2-local
     env_file:
       - dify.env
     restart: always
