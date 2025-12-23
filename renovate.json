@@ -138,8 +138,7 @@
       "matchCurrentVersion": "<=5",
       "allowedVersions": "<5",
       "ignoreUnstable": false,
-      "versionCompatibility": "^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-ls(?<build>\\d+)$",
-      "versioning": "semver"
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-ls(?<build>\\d+)$"
     },
     {
       "matchPackageNames": ["linuxserver/qbittorrent"],
