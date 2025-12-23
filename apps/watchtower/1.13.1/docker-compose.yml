@@ -10,7 +10,7 @@ services:
       - TZ=Asia/Shanghai
       - ${ENV1}
     command: ${COMMAND1}
-    image: nickfedor/watchtower:1.13.0
+    image: nickfedor/watchtower:1.13.1
     labels:
       createdBy: "Apps"
 
