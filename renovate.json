@@ -135,6 +135,11 @@
       "groupName": "Lobe Chat"
     },
     {
+      "matchPackageNames": ["linuxserver/calibre-web"],
+      "matchCurrentVersion": "<=5",
+      "allowedVersions": "<5"
+    },
+    {
       "matchPackageNames": ["linuxserver/qbittorrent"],
       "matchCurrentVersion": "<=20",
       "allowedVersions": "<20"
