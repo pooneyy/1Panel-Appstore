@@ -1,6 +1,6 @@
 services:
   forgejo_runner:
-    image: code.forgejo.org/forgejo/runner:12.2.0
+    image: code.forgejo.org/forgejo/runner:12.3.0
     container_name: ${CONTAINER_NAME:-forgejo-runner}
     restart: always
     user: root
