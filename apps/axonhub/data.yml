@@ -1,0 +1,19 @@
+name: axonhub
+tags:
+    - AI
+title: All-in-one AI 开发平台
+description: All-in-one AI 开发平台
+additionalProperties:
+  key: axonhub
+  name: axonhub
+  tags:
+    - AI
+  shortDescZh: AxonHub 是一个 All-in-one AI 开发平台，提供统一的 API 网关、项目管理和全面的开发工具。平台提供 OpenAI、Anthropic 和 AI SDK 兼容的 API 层，通过转换器管道架构将请求转换到各种 AI 提供商。系统具备完整的追踪能力、基于项目的组织结构以及集成的 Playground 快速原型开发，帮助开发者和企业更好地管理 AI 开发工作流。
+  shortDescEn: AxonHub is an all-in-one AI development platform that provides unified API gateway, project management, and comprehensive development tools. It offers OpenAI, Anthropic, and AI SDK compatible API layers, transforming requests to various AI providers through a transformer pipeline architecture. The platform features comprehensive tracing capabilities, project-based organization, and integrated playground for rapid prototyping, helping developers and enterprises better manage AI development workflows.
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: axonhub.onrender.com/
+  github: https://github.com/looplj/axonhub
+  document: https://github.com/looplj/axonhub/blob/unstable/README.zh-CN.md
