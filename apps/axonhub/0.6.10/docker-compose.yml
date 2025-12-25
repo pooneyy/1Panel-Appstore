@@ -1,29 +1,25 @@
 services:
   axonhub:
-    image: looplj/axonhub:latest
+    image: looplj/axonhub:v0.6.10
     container_name: ${CONTAINER_NAME}
-    user: "0:0"
     restart: always
     ports:
       - ${PANEL_APP_PORT_HTTP}:8090
     environment:
+      AXONHUB_DB_DIALECT: postgres
+      AXONHUB_DB_DSN: postgres://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@${PANEL_DB_HOST}:${PANEL_DB_PORT}/${PANEL_DB_NAME}?sslmode=disable
       AXONHUB_SERVER_TRACE_EXTRA_TRACE_HEADERS: ${AXONHUB_SERVER_TRACE_EXTRA_TRACE_HEADERS}
       AXONHUB_SERVER_TRACE_CLAUDE_CODE_TRACE_ENABLED: ${AXONHUB_SERVER_TRACE_CLAUDE_CODE_TRACE_ENABLED}
-      AXONHUB_DB_DIALECT: ${AXONHUB_DB_DIALECT}
-      AXONHUB_DB_DSN: ${AXONHUB_DB_DSN}
       AXONHUB_CACHE_MODE: ${AXONHUB_CACHE_MODE}
-      AXONHUB_CACHE_REDIS_ADDR: ${AXONHUB_CACHE_REDIS_ADDR}
-      AXONHUB_CACHE_REDIS_USERNAME: ${AXONHUB_CACHE_REDIS_USERNAME}
-      AXONHUB_CACHE_REDIS_PASSWORD: ${AXONHUB_CACHE_REDIS_PASSWORD}
-      AXONHUB_CACHE_REDIS_DB: ${AXONHUB_CACHE_REDIS_DB}
+      AXONHUB_CACHE_REDIS_URL: redis://default:${PANEL_REDIS_ROOT_PASSWORD}@${PANEL_REDIS_HOST}:6379
       AXONHUB_GC_CRON: ${AXONHUB_GC_CRON}
     volumes:
       - ${DATA_PATH}/data:/app/data
       - ${DATA_PATH}/logs:/app/logs
     labels:
-      createdBy: "Apps"
+      createdBy: Apps
     networks:
-      - 1panel-network  
+      - 1panel-network
 networks:
   1panel-network:
     external: true
