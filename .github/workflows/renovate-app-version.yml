@@ -34,7 +34,6 @@ jobs:
     needs: get-latest-commit-author
     if: |
       github.actor == 'renovate[bot]' &&
-      github.triggering_actor == 'renovate[bot]' &&
       needs.get-latest-commit-author.outputs.latest_commit_author != github.repository_owner &&
       startsWith(github.head_ref, 'renovate/')
     runs-on: ubuntu-latest
@@ -147,8 +146,7 @@ jobs:
   check-labels:
     name: Check labels
     if: |
-      github.actor == 'renovate[bot]' &&
-      github.triggering_actor == 'renovate[bot]'
+      github.actor == 'renovate[bot]'
     runs-on: ubuntu-latest
     outputs:
       enable: ${{ steps.check-labels.outputs.enable }}
