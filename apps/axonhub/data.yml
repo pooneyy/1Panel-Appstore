@@ -1,0 +1,30 @@
+name: axonhub
+tags:
+  - AI
+title: 现代化的多合一 AI 开发平台
+description: 现代化的多合一 AI 开发平台
+additionalProperties:
+  key: axonhub
+  name: axonhub
+  tags:
+    - AI
+  shortDescZh: 现代化的多合一 AI 开发平台
+  shortDescEn: Modern All-in-one AI Development Platform
+  description:
+    en: Modern All-in-one AI Development Platform
+    zh: 现代化的多合一 AI 开发平台
+    zh-Hant: 現代化的一體化 AI 開發平台
+    ja: モダンなオールインワンAI開発プラットフォーム
+    ms: Platform Pembangunan AI All-in-One Moden
+    pt-br: Plataforma de Desenvolvimento em IA Tudo-em-Um Moderna
+    ru: Современная всеобъемлющая платформа для разработки ИИ
+    ko: 현대적인 올인원 AI 개발 플랫폼
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://axonhub.onrender.com
+  github: https://github.com/looplj/axonhub
+  document: https://github.com/looplj/axonhub/blob/unstable/README.zh-CN.md
+  architectures:
+    - amd64
+    - arm64

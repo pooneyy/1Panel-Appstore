@@ -1,0 +1,254 @@
+additionalProperties:
+  formFields:
+    - default: 8090
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: HTTP 端口
+      labelEn: HTTP Port
+      label:
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+        en: HTTP Port
+        ja: HTTP ポート
+        ko: HTTP 포트
+        ms: Port HTTP
+        pt-br: Porta HTTP
+        ru: HTTP Порт
+        tr: HTTP Portu
+      description:
+        zh: "设置应用的 HTTP 访问端口，有效范围: 1-65535"
+        zh-Hant: "設定應用程式的 HTTP 存取連接埠，有效範圍: 1-65535"
+        en: "Set the HTTP access port for the application, valid range: 1-65535"
+        ja: "アプリケーションのHTTPアクセスポートを設定します。有効範囲: 1-65535"
+        ko: "애플리케이션의 HTTP 접근 포트를 설정합니다. 유효 범위: 1-65535"
+        ms: "Tetapkan port akses HTTP untuk aplikasi, julat sah: 1-65535"
+        pt-br: "Defina a porta de acesso HTTP para o aplicativo, intervalo válido: 1-65535"
+        ru: "Установите порт доступа HTTP для приложения, допустимый диапазон: 1-65535"
+        tr: "Uygulama için HTTP erişim portunu ayarlayın, geçerli aralık: 1-65535"
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: ./data
+      envKey: DATA_PATH
+      labelZh: 数据存储位置
+      labelEn: Data Storage Location
+      label:
+        zh: 数据存储位置
+        zh-Hant: 數據儲存位置
+        en: Data Storage Location
+        ja: データ保存場所
+        ko: 데이터 저장 위치
+        ms: Lokasi Penyimpanan Data
+        pt-br: Local de Armazenamento de Dados
+        ru: Местоположение хранилища данных
+        tr: Veri Saklama Konumu
+      required: true
+      type: text
+      edit: true
+    - default: ""
+      envKey: PANEL_DB_HOST
+      labelZh: 数据库
+      labelEn: Database
+      label:
+        zh: 数据库
+        zh-Hant: 資料庫
+        en: Database
+        ja: データベース
+        ko: 데이터베이스
+        ms: Pangkalan Data
+        pt-br: Banco de Dados
+        ru: База данных
+        tr: Veritabanı
+      required: true
+      type: service
+      key: postgres
+    - default: axonhub
+      envKey: PANEL_DB_USER
+      labelZh: 数据库用户名
+      labelEn: Database Username
+      label:
+        zh: 数据库用户名
+        zh-Hant: 資料庫使用者名稱
+        en: Database Username
+        ja: データベースユーザー名
+        ko: 데이터베이스 사용자 이름
+        ms: Nama Pengguna Pangkalan Data
+        pt-br: Nome de Usuário do Banco de Dados
+        ru: Имя пользователя базы данных
+        tr: Veritabanı Kullanıcı Adı
+      required: true
+      type: text
+      rule: paramCommon
+      random: true
+    - default: axonhub_pwd
+      envKey: PANEL_DB_USER_PASSWORD
+      labelZh: 数据库密码
+      labelEn: Database Password
+      label:
+        zh: 数据库密码
+        zh-Hant: 資料庫密碼
+        en: Database Password
+        ja: データベースパスワード
+        ko: 데이터베이스 비밀번호
+        ms: Kata Laluan Pangkalan Data
+        pt-br: Senha do Banco de Dados
+        ru: Пароль базы данных
+        tr: Veritabanı Parolası
+      required: true
+      type: password
+      rule: paramComplexity
+      random: true
+    - default: axonhub
+      envKey: PANEL_DB_NAME
+      labelZh: 数据库名
+      labelEn: Database Name
+      label:
+        zh: 数据库名
+        zh-Hant: 資料庫名稱
+        en: Database Name
+        ja: データベース名
+        ko: 데이터베이스 이름
+        ms: Nama Pangkalan Data
+        pt-br: Nome do Banco de Dados
+        ru: Имя базы данных
+        tr: Veritabanı Adı
+      required: true
+      type: text
+      rule: paramCommon
+      random: true
+    - default: memory
+      envKey: AXONHUB_CACHE_MODE
+      labelZh: 缓存模式
+      labelEn: Cache Mode
+      label:
+        zh: 缓存模式
+        zh-Hant: 快取模式
+        en: Cache Mode
+        ja: キャッシュモード
+        ko: 캐시 모드
+        ms: Mod Cache
+        pt-br: Modo Cache
+        ru: Режим кэширования
+        tr: Önbellek Modu
+      required: true
+      type: select
+      edit: true
+      values:
+        - label: 内存 / Memory
+          value: memory
+        - label: Redis
+          value: redis
+        - label: Memory + Redis
+          value: two-level
+    - default: ""
+      envKey: PANEL_REDIS_HOST
+      labelZh: Redis 服务
+      labelEn: Redis Service
+      label:
+        zh: Redis 服务
+        zh-Hant: Redis 服务
+        en: Redis Service
+        ja: Redisサービス
+        ko: Redis 서비스
+        ms: Perkhidmatan Redis
+        pt-br: Serviço Redis
+        ru: Сервис Redis
+        tr: Redis Hizmeti
+      required: false
+      type: service
+      edit: true
+      key: redis
+    - default: ""
+      envKey: PANEL_REDIS_ROOT_PASSWORD
+      labelZh: Redis 服务密码
+      labelEn: Redis Service Password
+      label:
+        zh: Redis 服务密码
+        zh-Hant: Redis 服務密碼
+        en: Redis Service Password
+        ja: Redis サービスパスワード
+        ko: Redis 서비스 비밀번호
+        ms: Kata Laluan Perkhidmatan Redis
+        pt-br: Senha do Serviço Redis
+        ru: Пароль службы Redis
+        tr: Redis Hizmet Parolası
+      required: false
+      type: password
+      edit: true
+      rule: paramComplexity
+    - default: ""
+      envKey: AXONHUB_SERVER_TRACE_EXTRA_TRACE_HEADERS
+      labelZh: 额外的追踪请求头
+      labelEn: Extra Trace Headers
+      label:
+        zh: 额外的追踪请求头
+        zh-Hant: 額外的追蹤標頭
+        en: Extra Trace Headers
+        ja: 追加のトレースヘッダー
+        ko: 추적 헤더 추가
+        ms: Tajuk Jejakan Tambahan
+        pt-br: Cabeçalhos de Rastreamento Adicionais
+        ru: Дополнительные заголовки трассировки
+        tr: Ek İzleme Başlıkları
+      description:
+        en: "Reference: https://github.com/looplj/axonhub/blob/unstable/docs/en/guides/tracing.md"
+        zh: "参考: https://github.com/looplj/axonhub/blob/unstable/docs/zh/guides/tracing.md"
+        ja: 参考：https://github.com/looplj/axonhub/blob/unstable/docs/en/guides/tracing.md
+        zh-Hant: "参考: https://github.com/looplj/axonhub/blob/unstable/docs/zh/guides/tracing.md"
+        ko: "참조: https://github.com/looplj/axonhub/blob/unstable/docs/en/guides/tracing.md"
+        ms: "Rujukan: https://github.com/looplj/axonhub/blob/unstable/docs/en/guides/tracing.md"
+        pt-br: "Referência: https://github.com/looplj/axonhub/blob/unstable/docs/en/guides/tracing.md"
+        ru: "Ссылка: https://github.com/looplj/axonhub/blob/unstable/docs/en/guides/tracing.md"
+        tr: "Referans: https://github.com/looplj/axonhub/blob/unstable/docs/en/guides/tracing.md"
+      required: false
+      type: text
+      edit: true
+    - default: "true"
+      envKey: AXONHUB_SERVER_TRACE_CLAUDE_CODE_TRACE_ENABLED
+      labelZh: 启用 Claude Code 追踪
+      labelEn: Claude Code Trace Enabled
+      label:
+        zh: 启用 Claude Code 追踪
+        zh-Hant: 啟用 Claude Code 追蹤
+        en: Claude Code Trace Enabled
+        ja: Claude Code トラッキングを有効化
+        ko: Claude Code 추적 활성화
+        ms: Dayakan Penjejakan Claude Code
+        pt-br: Ativar Rastreamento do Claude Code
+        ru: Включить отслеживание Claude Code
+        tr: Claude Code İzlemeyi Etkinleştir
+      description:
+        en: Enable extracting trace IDs from Claude Code request metadata
+        zh: 启用从 Claude Code 请求元数据中提取追踪 ID
+        zh-Hant: 啟用從 Claude Code 請求元資料中提取追蹤 ID
+        ja: Claude Code リクエストメタデータからのトレース ID 抽出を有効にする
+        ko: Claude Code 요청 메타데이터에서 추적 ID 추출 활성화
+        ms: Dayakan pengekstrakan ID jejak daripada metadata permintaan Claude Code
+        pt-br: Ativar extração de IDs de rastreamento dos metadados da solicitação do Claude Code
+        ru: Включить извлечение идентификаторов трассировки из метаданных запроса Claude Code
+        tr: Claude Code istek meta verilerinden iz kimliklerinin çıkarılmasını etkinleştir
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: 启用 / Enabled
+          value: "true"
+        - label: 禁用 / Disabled
+          value: "false"
+    - default: 0 2 * * *
+      envKey: AXONHUB_GC_CRON
+      labelZh: 垃圾回收 Cron 表达式
+      labelEn: GC Cron Expression
+      label:
+        zh: 垃圾回收 Cron 表达式
+        zh-Hant: 垃圾回收 Cron 表達式
+        en: GC Cron Expression
+        ja: GC実行用のCron式
+        ko: 가비지 컬렉션 실행용 Cron 표현식
+        ms: Ungkapan Cron untuk pelaksanaan Pengumpulan Sampah
+        pt-br: Expressão Cron para execução da Coleta de Lixo
+        ru: Cron-выражение для выполнения сборки мусора
+        tr: Çöp Toplama yürütmesi için Cron ifadesi
+      required: false
+      type: text
+      edit: true
