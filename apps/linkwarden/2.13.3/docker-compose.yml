@@ -19,7 +19,7 @@ services:
         labels:
             createdBy: Apps
     meilisearch:
-        image: getmeili/meilisearch:v1.30.1
+        image: getmeili/meilisearch:v1.31.0
         container_name: ${CONTAINER_NAME}-Meilisearch
         restart: always
         volumes:
