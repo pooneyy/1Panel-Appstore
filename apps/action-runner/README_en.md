@@ -1,6 +1,4 @@
-# Simple Github Action Runner In Docker
-
-![](http://fastly.jsdelivr.net/gh/actions/runner@main/docs/res/github-graph.png)
+## Introduction
 
 A simple self-hosted actions runner running in a container
 
@@ -8,7 +6,10 @@ A simple self-hosted actions runner running in a container
 
 - Supports Docker-out-of-Docker
 
-### Environment Variables
+- Built-in [github-cli](https://github.com/cli/cli) python pip [yq](https://github.com/mikefarah/yq)
+
+## Configuration and Usage Instructions
+
 | Parameter | Required | Description |
 | --- | --- | --- |
 | `ROLE` | Required | Used to differentiate between enterprise, organization, and personal repositories.<br />Use `enterprises` for enterprise, `orgs` for organization, and `repos` for personal repositories.<br />**REST API** |

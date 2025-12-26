@@ -1,6 +1,4 @@
-# Github Action Runner
-
-![](https://fastly.jsdelivr.net/gh/actions/runner@main/docs/res/github-graph.png)
+## 产品介绍
 
 运行在容器中的简单的自托管 GitHub Actions 运行器
 
@@ -8,7 +6,10 @@
 
 - 支持 Docker-out-of-Docker
 
-### 环境变量
+- 内置 [github-cli](https://github.com/cli/cli) python pip [yq](https://github.com/mikefarah/yq)
+
+## 配置和使用说明
+
 | 参数 | 是否必须 | 说明 |
 | --- | --- | --- |
 | `ROLE` | 必须 | 用于区分企业、组织与个人仓库<br/>企业为 `enterprises` 组织为 `orgs` ，个人仓库为 `repos`<br/>**REST API** |
