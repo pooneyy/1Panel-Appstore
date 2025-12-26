@@ -4,7 +4,7 @@ networks:
 
 services:
   qinglong:
-    image: whyour/qinglong:2.20.0-debian
+    image: whyour/qinglong:2.20.1-debian
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
