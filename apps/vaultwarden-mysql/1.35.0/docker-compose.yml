@@ -1,11 +1,13 @@
+version: "3.8"
 services:
   vaultwarden:
-    image: vaultwarden/server:1.34.3
+    image: vaultwarden/server:1.35.0
     container_name: ${CONTAINER_NAME}
     restart: always
     environment:
       DOMAIN: ${PANEL_VW_DOMAIN}
       ADMIN_TOKEN: ${PANEL_VW_ADMIN_TOKEN}
+      DATABASE_URL: mysql://${PANEL_VW_DB_USER}:${PANEL_VW_DB_PASSWORD}@${PANEL_VW_DB_HOST}:${PANEL_VW_DB_PORT}/${PANEL_VW_DB_NAME}
     volumes:
       - ./data:/data
     ports:
