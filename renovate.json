@@ -98,10 +98,6 @@
       "groupName": "Emby Server"
     },
     {
-      "matchPackageNames": ["envyafish/byte-muse**"],
-      "groupName": "Byte Muse"
-    },
-    {
       "matchPackageNames": ["gitlab/gitlab**"],
       "groupName": "GitLab"
     },
