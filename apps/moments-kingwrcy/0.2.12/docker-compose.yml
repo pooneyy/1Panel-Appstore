@@ -10,7 +10,7 @@ services:
       - "${DATA_PATH}:/app/data"
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
-    image: kingwrcy/moments:0.2.11
+    image: kingwrcy/moments:0.2.12
     labels:  
       createdBy: "Apps"
 
