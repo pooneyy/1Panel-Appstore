@@ -1,6 +1,6 @@
 services:
   sub2clash:
-    image: nite07/sub2clash:1.1.1
+    image: nite07/sub2clash:1.1.2
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
