@@ -17,7 +17,9 @@
 
 ***
 
-<!-- ### 本周上新 -->
+### 本周上新
+
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/authentik"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/authentik/logo.png" alt="authentik" width="64" height="64"><br><strong>authentik</strong></a><br>单点登录开源身份提供商</td></tr></table>
 
 <!-- ### 即将推出 -->
 
