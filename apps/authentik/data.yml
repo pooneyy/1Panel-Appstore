@@ -1,0 +1,31 @@
+name: authentik
+tags:
+  - 实用工具
+title: 单点登录开源身份提供商
+description: 单点登录开源身份提供商
+additionalProperties:
+  key: authentik
+  name: authentik
+  tags:
+    - Tool
+  shortDescZh: 单点登录开源身份提供商
+  shortDescEn: Open-source Identity Provider for modern SSO
+  description:
+    en: Open-source Identity Provider for modern SSO
+    zh: 单点登录开源身份提供商
+    zh-Hant: 單點登入開源身份提供者
+    ja: モダンなシングルサインオンのためのオープンソース Identity Provider
+    ms: Penyedia Identiti Sumber Terbuka untuk SSO moden
+    pt-br: Provedor de Identidade de Código Aberto para SSO moderno
+    ru: Провайдер идентификации с открытым исходным кодом для современного единого входа
+    ko: 현대식 SSO를 위한 오픈소스 Identity Provider
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://goauthentik.io
+  github: https://github.com/goauthentik/authentik
+  document: https://docs.goauthentik.io
+  memoryRequired: 2048
+  architectures:
+    - amd64
+    - arm64

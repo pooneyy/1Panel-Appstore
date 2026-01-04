@@ -1,0 +1,42 @@
+x-authentik-envs: &a1
+  AUTHENTIK_POSTGRESQL__HOST: ${PANEL_DB_HOST}
+  AUTHENTIK_POSTGRESQL__PORT: ${PANEL_DB_PORT}
+  AUTHENTIK_POSTGRESQL__NAME: ${PANEL_DB_NAME}
+  AUTHENTIK_POSTGRESQL__PASSWORD: ${PANEL_DB_USER_PASSWORD}
+  AUTHENTIK_POSTGRESQL__USER: ${PANEL_DB_USER}
+  AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY}
+services:
+  server:
+    image: ghcr.io/goauthentik/server:2025.10.3
+    command: server
+    environment: *a1
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:9000
+    volumes:
+      - ./geoip:/geoip
+      - ./media:/media
+      - ./custom-templates:/templates
+    container_name: ${CONTAINER_NAME}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
+  worker:
+    image: ghcr.io/goauthentik/server:2025.10.3
+    command: worker
+    user: root
+    environment: *a1
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./geoip:/geoip
+      - ./media:/media
+      - ./certs:/certs
+      - ./custom-templates:/templates
+    container_name: ${CONTAINER_NAME}-worker
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true
