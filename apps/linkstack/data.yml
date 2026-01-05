@@ -1,22 +1,32 @@
 name: LinkStack
 tags:
-  - 建站
-title: 高度可定制的链接共享平台，用户界面直观易用
-description: 高度可定制的链接共享平台，用户界面直观易用
+  - 实用工具
+title: 高度可定制的链接分享平台
+description: 高度可定制的链接分享平台
 additionalProperties:
   key: linkstack
   name: LinkStack
   tags:
-    - Website
-  shortDescZh: 高度可定制的链接共享平台，用户界面直观易用
-  shortDescEn: A highly customizable link sharing platform with an intuitive, easy to use user interface
+    - Tool
+  shortDescZh: 高度可定制的链接分享平台
+  shortDescEn: Highly customizable link sharing platform
   description:
-    en: A highly customizable link sharing platform with an intuitive, easy to use user interface
-    zh: 高度可定制的链接共享平台，用户界面直观易用
+    en: Highly customizable link sharing platform
+    zh: 高度可定制的链接分享平台
+    zh-Hant: 高度可定製的連結分享平台
+    ja: 高度にカスタマイズ可能なリンク共有プラットフォーム
+    ms: Platform perkongsian pautan yang sangat boleh disesuaikan
+    pt-br: Plataforma de compartilhamento de links altamente personalizável
+    ru: Высоко настраиваемая платформа для обмена ссылками
+    ko: 고도로 사용자 정의 가능한 링크 공유 플랫폼
   type: website
   crossVersionUpdate: true
   limit: 0
-  recommend: 0
   website: https://linkstack.org
-  github: https://github.com/LinkStackOrg/LinkStack
+  github: https://github.com/linkstackorg/linkstack
   document: https://docs.linkstack.org
+  architectures:
+    - amd64
+    - arm64
+    - arm/v7
+    - arm/v6
