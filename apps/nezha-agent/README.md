@@ -33,6 +33,6 @@
     
   - PowerShell（Windows）
   
-    - ```powershell
-      New-Guid
-      ```
+    ```powershell
+    New-Guid
+    ```
