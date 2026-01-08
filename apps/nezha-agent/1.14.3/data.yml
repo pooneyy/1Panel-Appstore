@@ -20,6 +20,16 @@ additionalProperties:
         zh: 哪吒客户端密钥
       required: true
       type: password
+    - default: ""
+      edit: true
+      envKey: UUID
+      labelEn: UUID
+      labelZh: UUID
+      label:
+        en: UUID
+        zh: UUID
+      required: true
+      type: text
     - default: "true"
       envKey: DISABLE_COMMAND_EXECUTE
       labelZh: 命令执行

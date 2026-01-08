@@ -1,11 +1,12 @@
 services:
   nezha-agent:
     image: kanggle/nezha-agent:v1.14.3
-    container_name: ${CONTAINER_NAME} 
+    container_name: ${CONTAINER_NAME}
     restart: always
     environment:
       - CLIENT_SECRET=${NZ_CLENT_SECRET}
       - SERVER=${NZ_GRPC_URL}
+      - UUID=${UUID}
       - GPU=${GPU}
       - DISABLE_COMMAND_EXECUTE=${DISABLE_COMMAND_EXECUTE}
       - DISABLE_AUTO_UPDATE=true

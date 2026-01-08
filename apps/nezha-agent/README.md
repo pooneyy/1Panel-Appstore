@@ -1,7 +1,3 @@
-## 配置和使用说明
-
-哪吒监控添加服务器时，从复制的安装命令里找到 `NZ_CLIENT_SECRET=xxx`，此为客户端密钥。
-
 ## 产品介绍
 
 哪吒监控 Agent 端的容器化部署方案，快速、轻松地启动和管理哪吒监控系统的 Agent 组件。
@@ -10,3 +6,33 @@
 
 - **容器化部署**：简化 Nezha Agent 的部署和配置过程，确保环境一致性。
 - **环境变量配置**：通过环境变量灵活配置，确保配置的安全性和灵活性。
+
+## 配置和使用说明
+
+- 哪吒监控添加服务器时，从复制的安装命令里找到 `NZ_CLIENT_SECRET=xxx`，此为客户端密钥。
+
+- `UUID` 是 agent 的唯一标识，使用以下方法生成：
+  
+  - Linux
+  
+    - Linux 内核
+      ```ba
+      cat /proc/sys/kernel/random/uuid
+      ```
+  
+    - uuidgen
+      ```ba
+      uuidgen
+      ```
+    
+      - 高级用法：基于命名空间生成唯一的 UUID
+  
+          ```bash
+          uuidgen -s -n @url -N "www.example.com/machine-001"
+          ```
+    
+  - PowerShell（Windows）
+  
+    - ```powershell
+      New-Guid
+      ```
