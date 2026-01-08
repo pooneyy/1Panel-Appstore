@@ -10,8 +10,6 @@ services:
       - DISABLE_COMMAND_EXECUTE=${DISABLE_COMMAND_EXECUTE}
       - DISABLE_AUTO_UPDATE=true
       - DISABLE_FORCE_UPDATE=true
-    volumes:
-      - ./config.yml:/usr/local/bin/nezha/config.yml
     network_mode: host
     labels:  
       createdBy: "Apps"
