@@ -11,7 +11,7 @@ authentik is an open-source Identity Provider (IdP) for modern SSO.
 2. After installing the application, you can edit `docker-compose.yml` to add other environment variables. Refer to the [documentation](https://docs.goauthentik.io/install-config/configuration/) for environment variables.
 
     For example
-    ```yaml
+   ```yaml
     x-authentik-envs: &a1
       # Reference https://docs.goauthentik.io/install-config/configuration/
       # SMTP Host Emails are sent to
@@ -27,6 +27,6 @@ authentik is an open-source Identity Provider (IdP) for modern SSO.
       AUTHENTIK_EMAIL__TIMEOUT: 10
       # Email address authentik will send from, should have a correct @domain
       AUTHENTIK_EMAIL__FROM: authentik@localhost
-  ```
+   ```
 
 3. After installing the application, copy `GeoLite2-City.mmdb` and `GeoLite2-ASN.mmdb` to the `geoip` directory to enable [GeoIP](https://support.maxmind.com/knowledge-base/articles/create-a-maxmind-account) support.

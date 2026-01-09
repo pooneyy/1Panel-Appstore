@@ -11,7 +11,7 @@ authentik 是一款面向现代单点登录 (SSO) 的开源身份提供商 (IdP)
 2. 安装应用后，可以编辑 `docker-compose.yml` 添加其它环境变量。环境变量参考[文档](https://docs.goauthentik.io/install-config/configuration/)。
 
    示例
-    ```yaml
+   ```yaml
     x-authentik-envs: &a1
       # Reference https://docs.goauthentik.io/install-config/configuration/
       # SMTP Host Emails are sent to
@@ -27,6 +27,6 @@ authentik 是一款面向现代单点登录 (SSO) 的开源身份提供商 (IdP)
       AUTHENTIK_EMAIL__TIMEOUT: 10
       # Email address authentik will send from, should have a correct @domain
       AUTHENTIK_EMAIL__FROM: authentik@localhost
-  ```
+   ```
 
-3. 安装应用后，可将 `GeoLite2-City.mmdb` 与 `GeoLite2-ASN.mmdb` 拷贝到 `geoip` 目录下以启用[GeoIP](https://support.maxmind.com/knowledge-base/articles/create-a-maxmind-account) 支持。
+3. 安装应用后，可将 `GeoLite2-City.mmdb` 与 `GeoLite2-ASN.mmdb` 拷贝到 `geoip` 目录下以启用 [GeoIP](https://support.maxmind.com/knowledge-base/articles/create-a-maxmind-account) 支持。
