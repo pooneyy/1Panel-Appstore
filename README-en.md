@@ -18,9 +18,7 @@
 
 ***
 
-### New This Week
-
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/authentik"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/authentik/logo.png" alt="authentik" width="64" height="64"><br><strong>authentik</strong></a><br>Open-source Identity Provider for modern SSO</td></tr></table>
+<!-- ### New This Week -->
 
 <!-- ### Coming Soon -->
 
