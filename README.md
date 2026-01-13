@@ -17,7 +17,9 @@
 
 ***
 
-<!-- ### 本周上新 -->
+### 本周上新
+
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/gatus"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/gatus/logo.png" alt="Gatus" width="64" height="64"><br><strong>Gatus</strong></a><br>面向开发者的健康监控面板</td></tr></table>
 
 <!-- ### 即将推出 -->
 
