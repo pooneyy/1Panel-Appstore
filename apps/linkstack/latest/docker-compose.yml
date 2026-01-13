@@ -3,7 +3,7 @@ services:
     image: linkstackorg/linkstack:latest
     pull_policy: always
     volumes:
-      - ./data:/htdocs
+      - linkstack_data:/htdocs
     ports:
       - ${PANEL_APP_PORT_HTTP}:80
     container_name: ${CONTAINER_NAME}
@@ -14,3 +14,11 @@ services:
 networks:
   1panel-network:
     external: true
+volumes:
+  linkstack_data:
+    name: ${CONTAINER_NAME}-data
+    driver: local
+    driver_opts:
+      type: none
+      device: ./data
+      o: bind
