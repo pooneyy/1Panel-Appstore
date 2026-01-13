@@ -18,7 +18,9 @@
 
 ***
 
-<!-- ### New This Week -->
+### New This Week
+
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/gatus"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/gatus/logo.png" alt="Gatus" width="64" height="64"><br><strong>Gatus</strong></a><br>Developer-oriented health dashboard</td></tr></table>
 
 <!-- ### Coming Soon -->
 
