@@ -1,22 +1,30 @@
 name: Solara(光域)
 tags:
   - 多媒体
-title: 一个极简风格的基于免费API的音乐播放器
-description: 一个极简风格的基于免费API的音乐播放器
+title: 基于免费API的极简风格音乐播放器
+description: 基于免费API的极简风格音乐播放器
 additionalProperties:
   key: solara
   name: Solara(光域)
   tags:
     - Media
-  shortDescZh: 一个极简风格的基于免费API的音乐播放器
+  shortDescZh: 基于免费API的极简风格音乐播放器
   shortDescEn: A minimalist style music player based on free API
   description:
     en: A minimalist style music player based on free API
-    zh: 一个极简风格的基于免费API的音乐播放器
-  type: tool
+    zh: 基于免费API的极简风格音乐播放器
+    zh-Hant: 基於免費API的極簡風格音樂播放器
+    ja: 無料APIを基にしたミニマリストスタイルの音楽プレーヤー
+    ms: Pemain muzik gaya minimalis berdasarkan API percuma
+    pt-br: Um player de música estilo minimalista baseado em API gratuita
+    ru: Минималистичный музыкальный плеер на основе бесплатного API
+    ko: 무료 API 기반의 미니멀리스트 스타일 음악 플레이어
+  type: website
   crossVersionUpdate: true
   limit: 0
-  recommend: 0
   website: https://github.com/akudamatata/Solara
   github: https://github.com/akudamatata/Solara
   document: https://github.com/akudamatata/Solara
+  architectures:
+    - amd64
+    - arm64
