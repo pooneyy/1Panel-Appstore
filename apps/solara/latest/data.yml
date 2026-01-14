@@ -1,0 +1,28 @@
+additionalProperties:
+  formFields:
+    - default: 63001
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: WebUI Port
+      labelZh: 网页端口
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: solara
+      edit: true
+      envKey: SOLARA_PASSWORD
+      labelEn: Login Password
+      labelZh: 登录密码
+      required: true
+      rule: paramComplexity
+      type: password
+
+    - default: rU5xV3kA8bP2gP1bW9zH8uS2oF1dH1nL
+      edit: true
+      envKey: SESSION_SECRET
+      labelEn: Encrypt session string(32-bit random string)
+      labelZh: 加密会话字符串(32位随机字符串)
+      required: true
+      rule: paramCommon
+      type: text
