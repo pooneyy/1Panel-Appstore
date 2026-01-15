@@ -4,7 +4,7 @@ networks:
 
 services:
   mx-server:
-    image: innei/mx-server:8.5.1
+    image: innei/mx-server:8.6.0
     depends_on:
       - mx-mongo
       - mx-redis
