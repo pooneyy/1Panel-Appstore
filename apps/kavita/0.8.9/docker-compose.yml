@@ -4,7 +4,7 @@ networks:
 
 services:
   kavita:
-    image: jvmilazz0/kavita:0.8.8
+    image: jvmilazz0/kavita:0.8.9
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
