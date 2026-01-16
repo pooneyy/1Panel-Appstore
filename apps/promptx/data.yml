@@ -1,0 +1,30 @@
+name: PromptX
+tags:
+  - AI
+title: 领先的 AI 智能体上下文平台
+description: 领先的 AI 智能体上下文平台
+additionalProperties:
+  key: promptx
+  name: PromptX
+  tags:
+    - AI
+  shortDescZh: 领先的 AI 智能体上下文平台
+  shortDescEn: Leading AI Agent Context Platform
+  description:
+    en: Leading AI Agent Context Platform
+    zh: 领先的 AI 智能体上下文平台
+    zh-Hant: 領先的 AI 智能體上下文平台
+    ja: 最先端のAIエージェントコンテキストプラットフォーム
+    ms: Platform Konteks Ejen AI Terkemuka
+    pt-br: Plataforma de Contexto de Agentes de IA Líder
+    ru: Ведущая платформа контекста ИИ-агентов
+    ko: 선도적인 AI 에이전트 컨텍스트 플랫폼
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://promptx.deepractice.ai
+  github: https://github.com/Deepractice/PromptX
+  document: https://promptx.deepractice.ai/docs
+  architectures:
+    - amd64
+    - arm64
