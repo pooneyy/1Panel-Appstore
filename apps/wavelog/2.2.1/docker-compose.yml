@@ -1,0 +1,22 @@
+services:
+  wavelog:
+    container_name: ${CONTAINER_NAME}
+    image: ghcr.io/pooneyy/wavelog:2.2.2
+    environment:
+      DB_HOST: ${PANEL_DB_HOST}:${PANEL_DB_PORT}
+      DATABASE: ${PANEL_DB_NAME}
+      DATABASE_USERNAME: ${PANEL_DB_USER}
+      DATABASE_PASSWORD: ${PANEL_DB_USER_PASSWORD}
+    networks:
+      - 1panel-network
+    volumes:
+      - ./data/config:/var/www/html/application/config/docker
+      - ./data/uploads:/var/www/html/uploads
+      - ./data/userdata:/var/www/html/userdata
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:80
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true

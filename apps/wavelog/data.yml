@@ -1,0 +1,31 @@
+name: Wavelog
+tags:
+  - 实用工具
+title: 开源业余无线电通联日志
+description: 开源业余无线电通联日志
+additionalProperties:
+  key: wavelog
+  name: Wavelog
+  tags:
+    - Tool
+  shortDescZh: 开源业余无线电通联日志
+  shortDescEn: Open-source amateur radio contact log
+  description:
+    en: Open-source amateur radio contact log
+    zh: 开源业余无线电通联日志
+    zh-Hant: 開源業餘無線電通聯日誌
+    ja: オープンソースアマチュア無線コンタクトログ
+    ms: Log hubungan radio amatur sumber terbuka
+    pt-br: Registro de contatos de rádio amador de código aberto
+    ru: Журнал радиосвязи любительского радио с открытым исходным кодом
+    ko: 오픈소스 아마추어 무선 통신 로그
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://www.wavelog.org/
+  github: https://github.com/wavelog/wavelog
+  document: github.com/wavelog/wavelog/wiki
+  architectures:
+    - amd64
+    - arm64
+    - arm/v7
