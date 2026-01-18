@@ -20,7 +20,7 @@
 
 ### New This Week
 
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/gatus"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/gatus/logo.png" alt="Gatus" width="64" height="64"><br><strong>Gatus</strong></a><br>Developer-oriented health dashboard</td></tr></table>
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/gatus"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/gatus/logo.png" alt="Gatus" width="64" height="64"><br><strong>Gatus</strong></a><br>Developer-oriented health dashboard</td><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/wavelog"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/wavelog/logo.png" alt="Wavelog" width="64" height="64"><br><strong>Wavelog</strong></a><br>Open-source amateur radio contact log</td><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/promptx"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/promptx/logo.png" alt="PromptX" width="64" height="64"><br><strong>PromptX</strong></a><br>Leading AI Agent Context Platform</td></tr></table>
 
 <!-- ### Coming Soon -->
 
