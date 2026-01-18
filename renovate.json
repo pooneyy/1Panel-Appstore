@@ -102,6 +102,36 @@
       "groupName": "GitLab"
     },
     {
+      "matchPackageNames": ["ghcr.io/pooneyy/php", "php"],
+      "matchCurrentVersion": "/^(7.4[^\\s]*)/",
+      "allowedVersions": "/^(7.4[^\\s]*)/"
+    },
+    {
+      "matchPackageNames": ["ghcr.io/pooneyy/php"],
+      "matchCurrentVersion": "/^(8.1[^\\s]*)/",
+      "allowedVersions": "/^(8.1[^\\s]*)/"
+    },
+    {
+      "matchPackageNames": ["ghcr.io/pooneyy/php"],
+      "matchCurrentVersion": "/^(8.2[^\\s]*)/",
+      "allowedVersions": "/^(8.2[^\\s]*)/"
+    },
+    {
+      "matchPackageNames": ["ghcr.io/pooneyy/php"],
+      "matchCurrentVersion": "/^(8.3[^\\s]*)/",
+      "allowedVersions": "/^(8.3[^\\s]*)/"
+    },
+    {
+      "matchPackageNames": ["ghcr.io/pooneyy/php"],
+      "matchCurrentVersion": "/^(8.4[^\\s]*)/",
+      "allowedVersions": "/^(8.4[^\\s]*)/"
+    },
+    {
+      "matchPackageNames": ["ghcr.io/pooneyy/php"],
+      "matchCurrentVersion": "/^(8.5[^\\s]*)/",
+      "allowedVersions": "/^(8.5[^\\s]*)/"
+    },
+    {
       "matchPackageNames": ["tdengine/tsdb**"],
       "groupName": "TDengine"
     },
@@ -265,27 +295,6 @@
         "apps/safeline/8.*.*/*.yml"
       ],
       "allowedVersions": "/^8.*.*/"
-    },
-    {
-      "matchFileNames": [
-        "apps/php-unofficial/7.4.*/*.yml",
-        "apps/php-unofficial/7.4.*/Dockerfile"
-      ],
-      "allowedVersions": "/^7.4.*/"
-    },
-    {
-      "matchFileNames": [
-        "apps/php-unofficial/8.1.*/*.yml",
-        "apps/php-unofficial/8.1.*/Dockerfile"
-      ],
-      "allowedVersions": "/^8.1.*/"
-    },
-    {
-      "matchFileNames": [
-        "apps/php-unofficial/8.4.*/*.yml",
-        "apps/php-unofficial/8.4.*/Dockerfile"
-      ],
-      "allowedVersions": "/^8.4.*/"
     },
     {
       "matchFileNames": [
