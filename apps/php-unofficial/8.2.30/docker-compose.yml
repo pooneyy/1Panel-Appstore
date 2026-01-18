@@ -1,0 +1,21 @@
+services:
+  php84:
+    image: ghcr.io/pooneyy/php:8.2.30-fpm-bookworm-php-unofficial
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:9000"
+    volumes:
+      - "./data/php.ini:/usr/local/etc/php/php.ini"
+      - "./data/php-fpm.conf:/usr/local/etc/php-fpm.d/www.conf"
+      - "${SITE_PATH}:/www"
+    labels:  
+      createdBy: "Apps" 
+
+networks:  
+  1panel-network:  
+    external: true
+
+
