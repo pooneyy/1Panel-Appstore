@@ -7,6 +7,6 @@ preview:
   #   url: 
 
 releases:
-  - gatus
   - wavelog
   - promptx
+  - rallly
