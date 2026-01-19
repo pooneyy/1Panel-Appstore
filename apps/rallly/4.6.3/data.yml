@@ -1,0 +1,314 @@
+additionalProperties:
+  formFields:
+    - default: 8080
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: HTTP 端口
+      labelEn: HTTP Port
+      label:
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+        en: HTTP Port
+        ja: HTTP ポート
+        ko: HTTP 포트
+        ms: Port HTTP
+        pt-br: Porta HTTP
+        ru: HTTP Порт
+        tr: HTTP Portu
+      description:
+        zh: "设置应用的 HTTP 访问端口，有效范围: 1-65535"
+        zh-Hant: "設定應用程式的 HTTP 存取連接埠，有效範圍: 1-65535"
+        en: "Set the HTTP access port for the application, valid range: 1-65535"
+        ja: "アプリケーションのHTTPアクセスポートを設定します。有効範囲: 1-65535"
+        ko: "애플리케이션의 HTTP 접근 포트를 설정합니다. 유효 범위: 1-65535"
+        ms: "Tetapkan port akses HTTP untuk aplikasi, julat sah: 1-65535"
+        pt-br: "Defina a porta de acesso HTTP para o aplicativo, intervalo válido: 1-65535"
+        ru: "Установите порт доступа HTTP для приложения, допустимый диапазон: 1-65535"
+        tr: "Uygulama için HTTP erişim portunu ayarlayın, geçerli aralık: 1-65535"
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: ""
+      envKey: PANEL_DB_HOST
+      labelZh: 数据库
+      labelEn: Database
+      label:
+        zh: 数据库
+        zh-Hant: 資料庫
+        en: Database
+        ja: データベース
+        ko: 데이터베이스
+        ms: Pangkalan Data
+        pt-br: Banco de Dados
+        ru: База данных
+        tr: Veritabanı
+      required: true
+      type: service
+      edit: true
+      key: postgres
+    - default: rallly_db_user
+      envKey: PANEL_DB_USER
+      labelZh: 数据库用户名
+      labelEn: Database Username
+      label:
+        zh: 数据库用户名
+        zh-Hant: 資料庫使用者名稱
+        en: Database Username
+        ja: データベースユーザー名
+        ko: 데이터베이스 사용자 이름
+        ms: Nama Pengguna Pangkalan Data
+        pt-br: Nome de Usuário do Banco de Dados
+        ru: Имя пользователя базы данных
+        tr: Veritabanı Kullanıcı Adı
+      required: true
+      type: text
+      edit: true
+      rule: paramCommon
+      random: true
+    - default: rallly_db_pass
+      envKey: PANEL_DB_USER_PASSWORD
+      labelZh: 数据库密码
+      labelEn: Database Password
+      label:
+        zh: 数据库密码
+        zh-Hant: 資料庫密碼
+        en: Database Password
+        ja: データベースパスワード
+        ko: 데이터베이스 비밀번호
+        ms: Kata Laluan Pangkalan Data
+        pt-br: Senha do Banco de Dados
+        ru: Пароль базы данных
+        tr: Veritabanı Parolası
+      required: true
+      type: password
+      edit: true
+      rule: paramComplexity
+      random: true
+    - default: rallly_db_name
+      envKey: PANEL_DB_NAME
+      labelZh: 数据库名
+      labelEn: Database Name
+      label:
+        zh: 数据库名
+        zh-Hant: 資料庫名稱
+        en: Database Name
+        ja: データベース名
+        ko: 데이터베이스 이름
+        ms: Nama Pangkalan Data
+        pt-br: Nome do Banco de Dados
+        ru: Имя базы данных
+        tr: Veritabanı Adı
+      required: true
+      type: text
+      edit: true
+      rule: paramCommon
+      random: true
+    - default: http://localhost:8080
+      envKey: BASE_URL
+      labelZh: 访问地址
+      labelEn: Access URL
+      label:
+        zh: 访问地址
+        zh-Hant: 訪問地址
+        en: Access URL
+        ja: アクセスURL
+        ko: 접근 URL
+        ms: URL Akses
+        pt-br: URL de Acesso
+        ru: URL доступа
+        tr: Erişim URL'si
+      description:
+        zh: 可访问此实例的基础 URL，包括协议（例如 http://）、域名，以及可选的端口号。不要使用尾随斜杠或包含路径/子文件夹的 URL。
+        zh-Hant: 此實例可被訪問的基礎URL，需包含協定（例如 http://）、網域名稱及可選的埠號。不要使用末尾的斜槓或包含路徑/子資料夾的URL。
+        en: The base URL where this instance is accessible, including the scheme (eg. http://), the domain name, and optionally a port. Do not use trailing slashes or URLs with paths/subfolders.
+        ja: このインスタンスがアクセス可能なベースURL。スキーム（例：http://）、ドメイン名、およびオプションでポートを含めてください。末尾のスラッシュやパス/サブフォルダを含むURLは使用しないでください。
+        ko: "이 인스턴스에 액세스할 수 있는 기본 URL입니다. 스킴(예: http://), 도메인 이름 및 선택적으로 포트를 포함하십시오. 마지막 슬래시나 경로/하위 폴더가 포함된 URL을 사용하지 마십시오."
+        ms: URL asas di mana contoh ini boleh diakses, termasuk skema (cth. http://), nama domain, dan secara pilihan port. Jangan gunakan garis miring di akhir atau URL dengan laluan/subfolder.
+        pt-br: "A URL base onde esta instância está acessível, incluindo o esquema (ex.: http://), o nome de domínio e opcionalmente uma porta. Não use barras finais ou URLs com caminhos/subpastas."
+        ru: Базовый URL-адрес, по которому доступен этот экземпляр, включая схему (напр., http://), имя домена и, при необходимости, порт. Не используйте завершающие косые черты или URL-адреса с путями/подпапками.
+        tr: Bu örneğin erişilebilir olduğu temel URL, şema (örn. http://), alan adı ve isteğe bağlı bir port dahil. Son eğik çizgi veya yol/alt klasör içeren URL'ler kullanmayın.
+      required: true
+      type: text
+      edit: true
+    - default: john@example.com,*@gmail.com,*@qq.com
+      envKey: ALLOWED_EMAILS
+      labelZh: 电子邮箱白名单
+      labelEn: Email Allowlist
+      label:
+        zh: 电子邮箱白名单
+        zh-Hant: 電子信箱白名單
+        en: Email Allowlist
+        ja: メールホワイトリスト
+        ko: 이메일 화이트리스트
+        ms: Senarai Putih E-mel
+        pt-br: Lista Branca de E-mail
+        ru: Белый список электронной почты
+        tr: E-posta Beyaz Listesi
+      description:
+        zh: 白名单内才可以注册。可以是某个具体的邮件地址，或者通配符，多个邮箱用逗号分隔
+        zh-Hant: 白名單內才可以註冊。可以是某個具體的郵件地址，或者萬用字元，多個信箱用逗號分隔。
+        en: Only email addresses within the whitelist can register. It can be a specific email address, or a wildcard; multiple addresses should be separated by commas.
+        ja: ホワイトリストに登録されているメールアドレスのみ登録可能です。特定のメールアドレス、またはワイルドカードを使用でき、複数のアドレスはカンマで区切ります。
+        ko: 화이트리스트에 등록된 이메일 주소만 가입할 수 있습니다. 특정 이메일 주소나 와일드카드를 사용할 수 있으며, 여러 주소는 쉼표로 구분합니다.
+        ms: Hanya alamat e-mel dalam senarai putih yang boleh mendaftar. Ia boleh berupa alamat e-mel tertentu, atau aksara wildcard; pelbagai alamat hendaklah dipisahkan dengan koma.
+        pt-br: Apenas endereços de e-mail dentro da lista branca podem se registrar. Pode ser um endereço de e-mail específico ou um caractere curinga; múltiplos endereços devem ser separados por vírgulas.
+        ru: Регистрация доступна только для адресов электронной почты из белого списка. Это может быть конкретный адрес электронной почты или подстановочный знак; несколько адресов следует разделять запятыми.
+        tr: Yalnızca beyaz listedeki e-posta adresleri kayıt olabilir. Belirli bir e-posta adresi veya joker karakter olabilir; birden fazla adres virgülle ayrılmalıdır.
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: INITIAL_ADMIN_EMAIL
+      labelZh: 初始管理员邮箱
+      labelEn: Initial Admin Email
+      label:
+        zh: 初始管理员邮箱
+        zh-Hant: 初始管理員信箱
+        en: Initial Admin Email
+        ja: 初期管理者メールアドレス
+        ko: 초기 관리자 이메일
+        ms: E-mel Admin Awal
+        pt-br: E-mail de Administrador Inicial
+        ru: Электронная почта начального администратора
+        tr: Başlangıç Yönetici E-postası
+      description:
+        zh: 注意，这并不会为你创建一个初始账户，而是你用此邮箱注册时将会获得管理员权限。
+        zh-Hant: 注意，這並不會為你建立一個初始帳戶，而是你用此信箱註冊時將會獲得管理員權限。
+        en: "Note: This will not create an initial account for you. Instead, when you register using this email, you will be granted administrator privileges."
+        ja: 注意：これにより初期アカウントが自動的に作成されるわけではありません。このメールアドレスで登録した場合に、管理者権限が付与されます。
+        ko: "참고: 이 설정으로 초기 계정이 자동 생성되지는 않습니다. 대신 이 이메일로 등록할 경우 관리자 권한이 부여됩니다."
+        ms: "Perhatian: Ini tidak akan mencipta akaun awal untuk anda. Sebaliknya, apabila anda mendaftar menggunakan e-mel ini, anda akan diberikan keistimewaan pentadbir."
+        pt-br: "Observação: Isso não criará uma conta inicial para você. Em vez disso, ao se registrar usando este e-mail, você receberá privilégios de administrador."
+        ru: "Примечание: это не создаст для вас первоначальную учётную запись. Вместо этого при регистрации с использованием этого адреса электронной почты вам будут предоставлены права администратора."
+        tr: "Not: Bu, sizin için bir başlangıç hesabı oluşturmayacaktır. Bunun yerine, bu e-postayı kullanarak kayıt olduğunuzda, yönetici ayrıcalıkları verilecektir."
+      required: true
+      type: text
+      edit: true
+    - default: ""
+      envKey: SUPPORT_EMAIL
+      labelZh: 支持邮箱
+      labelEn: Support Email
+      label:
+        zh: 支持邮箱
+        zh-Hant: 支援信箱
+        en: Support Email
+        ja: サポートメール
+        ko: 지원 이메일
+        ms: E-mel Sokongan
+        pt-br: E-mail de Suporte
+        ru: Электронная почта поддержки
+        tr: Destek E-postası
+      description:
+        zh: 您的用户将在需要支持时看到此邮箱作为联系邮箱，同时它也将作为所有系统邮件的发件人地址显示。
+        zh-Hant: 您的使用者將在需要支援時看到此信箱作為聯絡信箱，同時它也將作為所有系統信件的寄件人地址顯示。
+        en: Your users will see this as the contact email for any support issues, and it will also appear as the sender address for all system emails.
+        ja: ユーザーはサポートが必要な際の連絡先としてこのメールアドレスを確認でき、また全てのシステムメールの差出人アドレスとして表示されます。
+        ko: 사용자는 지원 문제 발생 시 연락처로 이 이메일을 확인하게 되며, 모든 시스템 이메일의 발신자 주소로도 표시됩니다.
+        ms: Pengguna anda akan melihat ini sebagai e-mel hubungan untuk sebarang isu sokongan, dan ia juga akan muncul sebagai alamat penghantar untuk semua e-mel sistem.
+        pt-br: Seus usuários verão este e-mail como o contato para quaisquer problemas de suporte, e ele também aparecerá como o endereço do remetente de todos os e-mails do sistema.
+        ru: Ваши пользователи увидят этот адрес электронной почты в качестве контактного для любых вопросов поддержки, и он также будет отображаться в качестве адреса отправителя для всех системных писем.
+        tr: Kullanıcılarınız, destek sorunları için iletişim e-postası olarak bunu görecek ve aynı zamanda tüm sistem e-postalarının gönderen adresi olarak görünecektir.
+      required: true
+      type: text
+      edit: true
+    - default: ""
+      envKey: SMTP_USER
+      labelZh: SMTP 用户名
+      labelEn: SMTP User
+      label:
+        zh: SMTP 用户名
+        zh-Hant: SMTP 使用者名稱
+        en: SMTP User
+        ja: SMTPユーザー
+        ko: SMTP 사용자
+        ms: Pengguna SMTP
+        pt-br: Usuário SMTP
+        ru: Пользователь SMTP
+        tr: SMTP Kullanıcısı
+      required: true
+      type: text
+      edit: true
+    - default: ""
+      envKey: SMTP_PWD
+      labelZh: SMTP 密码
+      labelEn: SMTP Password
+      label:
+        zh: SMTP 密码
+        zh-Hant: SMTP 密碼
+        en: SMTP Password
+        ja: SMTPパスワード
+        ko: SMTP 비밀번호
+        ms: Kata Laluan SMTP
+        pt-br: Senha SMTP
+        ru: Пароль SMTP
+        tr: SMTP Parolası
+      required: true
+      type: text
+      edit: true
+    - default: ""
+      envKey: SMTP_HOST
+      labelZh: SMTP 服务器地址
+      labelEn: SMTP Server Address
+      label:
+        zh: SMTP 服务器地址
+        zh-Hant: SMTP 伺服器位址
+        en: SMTP Server Address
+        ja: SMTPサーバーアドレス
+        ko: SMTP 서버 주소
+        ms: Alamat Pelayan SMTP
+        pt-br: Endereço do Servidor SMTP
+        ru: Адрес SMTP-сервера
+        tr: SMTP Sunucu Adresi
+      required: true
+      type: text
+      edit: true
+    - default: 587
+      envKey: SMTP_PORT
+      labelZh: SMTP 端口
+      labelEn: SMTP Port
+      label:
+        zh: SMTP 端口
+        zh-Hant: SMTP 通訊埠
+        en: SMTP Port
+        ja: SMTPポート
+        ko: SMTP 포트
+        ms: Port SMTP
+        pt-br: Porta SMTP
+        ru: Порт SMTP
+        tr: SMTP Bağlantı Noktası
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: "true"
+      envKey: SMTP_SECURE
+      labelZh: SMTP 安全开关
+      labelEn: SMTP Security
+      label:
+        zh: SMTP 安全开关
+        zh-Hant: SMTP 安全開關
+        en: SMTP Security
+        ja: SMTPセキュリティ
+        ko: SMTP 보안
+        ms: Keselamatan SMTP
+        pt-br: Segurança SMTP
+        ru: Безопасность SMTP
+        tr: SMTP Güvenlik
+      description:
+        zh: 如果您的 SMTP 连接启用了 SSL，请设置为 "true"
+        zh-Hant: 如果您的 SMTP 連線啟用了 SSL，請設定為 "true"
+        en: Set to "true" if SSL is enabled for your SMTP connection
+        ja: SMTP接続でSSLが有効な場合は "true" に設定してください
+        ko: SMTP 연결에 SSL이 활성화된 경우 "true"로 설정하세요
+        ms: Tetapkan kepada "true" jika SSL didayakan untuk sambungan SMTP anda
+        pt-br: Defina como "true" se o SSL estiver ativado para sua conexão SMTP
+        ru: Установите значение "true", если для вашего SMTP-соединения включен SSL
+        tr: SMTP bağlantınız için SSL etkinse "true" olarak ayarlayın
+      required: true
+      type: select
+      edit: true
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"

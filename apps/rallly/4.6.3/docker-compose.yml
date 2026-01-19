@@ -1,0 +1,28 @@
+services:
+  rallly:
+    image: lukevella/rallly:4.6.3
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3000
+    environment:
+      - SECRET_PASSWORD=${SECRET_PASSWORD}
+      - DATABASE_URL=postgres://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@${PANEL_DB_HOST}/${PANEL_DB_NAME}
+      - NEXT_PUBLIC_BASE_URL=${BASE_URL}
+      - ALLOWED_EMAILS=${ALLOWED_EMAILS}
+      - INITIAL_ADMIN_EMAIL=${INITIAL_ADMIN_EMAIL}
+      - SUPPORT_EMAIL=${SUPPORT_EMAIL}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_SECURE=${SMTP_SECURE}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PWD=${SMTP_PWD}
+    env_file:
+      - config.env
+    container_name: ${CONTAINER_NAME}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true

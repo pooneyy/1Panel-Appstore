@@ -1,0 +1,30 @@
+name: Rallly
+tags:
+  - 实用工具
+title: 开源日程安排与协作工具
+description: 开源日程安排与协作工具
+additionalProperties:
+  key: rallly
+  name: Rallly
+  tags:
+    - Tool
+  shortDescZh: 开源日程安排与协作工具
+  shortDescEn: Open-source scheduling and collaboration tool
+  description:
+    en: Open-source scheduling and collaboration tool
+    zh: 开源日程安排与协作工具
+    zh-Hant: 開源日程安排與協作工具
+    ja: オープンソースのスケジューリングおよびコラボレーションツール
+    ms: Alat penjadualan dan kerjasama sumber terbuka
+    pt-br: Ferramenta de agendamento e colaboração de código aberto
+    ru: Инструмент планирования и совместной работы с открытым исходным кодом
+    ko: 오픈소스 스케줄링 및 협업 도구
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://rallly.co
+  github: https://github.com/lukevella/rallly
+  document: https://support.rallly.co
+  architectures:
+    - amd64
+    - arm64
