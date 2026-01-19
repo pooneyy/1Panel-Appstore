@@ -4,7 +4,7 @@ networks:
 
 services:
   smanga:
-    image: lkw199711/smanga-nodejs:4.2.72
+    image: lkw199711/smanga-nodejs:4.2.74
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
