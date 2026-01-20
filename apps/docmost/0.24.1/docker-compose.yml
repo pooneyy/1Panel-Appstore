@@ -2,7 +2,6 @@ services:
   docmost:
     image: docmost/docmost:0.24.1
     environment:
-      APP_URL: http://localhost:3000
       APP_SECRET: ${APP_SECRET}
       DATABASE_URL: postgres://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@${PANEL_DB_HOST}:${PANEL_DB_PORT}/${PANEL_DB_NAME}?schema=public
       REDIS_URL: redis://default:${PANEL_REDIS_ROOT_PASSWORD}@${PANEL_REDIS_HOST}:6379
