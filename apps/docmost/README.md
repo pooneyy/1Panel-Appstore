@@ -1,37 +1,31 @@
-<div align="center">
-    <h1><b>Docmost</b></h1>
-    <p>
-        开源协作wiki、文档笔记软件.
-        <br />
-        <a href="https://docmost.com"><strong>Website</strong></a> | 
-        <a href="https://docmost.com/docs"><strong>Documentation</strong></a>
-    </p>
-</div>
-<br />
+## 配置和使用说明
 
-> [!提示]  
-> Docmost 目前处于**测试阶段**。我们非常重视您的反馈，我们正在努力推出稳定版本。.
+安装完成后，你可以通过 `应用安装目录/config.env` 文件配置其它环境变量，请参考[文档](https://docmost.com/docs/self-hosting/environment-variables)了解更多信息。`config.env` 中环境变量的优先级低于安装时填写的配置。
 
-## 开始使用
-要开始使用 Docmost，请参阅的[documentation](https://docmost.com/docs).
+如果你没有多用户需求，可以忽略 `config.env`，多用户协作需求则须完成 `config.env` 中的相关配置后重启应用。
 
-## 功能特色
-- 实时协作
-- 图表（Draw.io、Excalidraw 和 Mermaid）
-- 空间
-- 权限管理
-- 群组
-- 评论
-- 页面历史记录
-- 搜索
-- 文件附件
+## 产品介绍
 
-#### 截图
-<p align="center">
-<img alt="home" src="https://docmost.com/screenshots/home.png" width="70%">
-<img alt="editor" src="https://docmost.com/screenshots/editor.png" width="70%">
-</p>
+Docmost，一款开源协作 wiki 与文档软件。专为无缝实时协作而设计，是 Notion 和 Confluence 等产品的开源替代方案。
 
-### 贡献
-请查看 [开发文档](https://docmost.com/docs/self-hosting/development)
+## 主要功能
 
+- **协作实时编辑器**：实时协作编辑页面。
+- **图表功能**：内置支持 Draw.io、Excalidraw 与 Mermaid 图表工具。
+- **空间管理**：按团队、项目或部门组织页面，实现更高效的协作。
+- **智能搜索（ASK AI）**：直接基于页面内容提问并获取答案。
+- **公开分享**：您可以将页面公开分享，允许任何拥有链接的人查看。
+- **权限管理**：通过直观易懂的权限设置，轻松控制内容的访问权限。
+- **用户组**：通过用户组统一授予权限，操作简便。
+- **评论功能**：可在页面中添加评论，便于沟通和反馈。
+- **页面历史**：通过完整的版本历史来追踪修改记录。
+- **嵌套导航**：您可以通过侧边栏嵌套和重新排序页面。
+- **搜索功能**：凭借强大的搜索能力，快速找到所需信息。
+- **文件附件**：将文件附加到页面，便于参考和共享。
+- **在附件中搜索**：支持在 PDF 和 DOCX 文件附件中搜索内容（企业版功能）
+- **导入/导出**：您可以便捷地以 Markdown 和 HTML 格式导入与导出页面。
+  - 压缩包导入
+  - Notion 导入
+  - Confluence 导入功能（企业版）
+- **阅读/编辑偏好模式**：向意外编辑说再见。
+- **多语言支持**：Docmost 提供超过 10 种语言版本。🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇺🇦
