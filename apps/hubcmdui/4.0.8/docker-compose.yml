@@ -1,6 +1,6 @@
 services:
     hubcmd-ui:
-        image: dqzboy/hubcmd-ui:4.0.8
+        image: dqzboy/hubcmd-ui:v4.0.9
         container_name: ${CONTAINER_NAME}
         restart: always
         ports:
