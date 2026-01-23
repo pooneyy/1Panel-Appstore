@@ -13,7 +13,7 @@ services:
             - driver: ${GPU_DRIVER_TYPE}
               count: all
               capabilities: [gpu]
-    image: ccr.ccs.tencentyun.com/langchain-chatchat/chatchat:0.3.1.3-93e2c87-20240829
+    image: ccr.ccs.tencentyun.com/langchain-chatchat/chatchat:0.3.1.3-f9e3895-20241014
     labels:  
       createdBy: "Apps"
 
