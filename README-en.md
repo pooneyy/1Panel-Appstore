@@ -20,7 +20,7 @@
 
 ### New This Week
 
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/wavelog"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/wavelog/logo.png" alt="Wavelog" width="64" height="64"><br><strong>Wavelog</strong></a><br>Open-source amateur radio contact log</td><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/promptx"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/promptx/logo.png" alt="PromptX" width="64" height="64"><br><strong>PromptX</strong></a><br>Leading AI Agent Context Platform</td><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/rallly"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/rallly/logo.png" alt="Rallly" width="64" height="64"><br><strong>Rallly</strong></a><br>Open-source scheduling and collaboration tool</td></tr></table>
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/phpldapadmin"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/phpldapadmin/logo.png" alt="phpLDAPadmin" width="64" height="64"><br><strong>phpLDAPadmin</strong></a><br>Web based LDAP data management tool</td></tr></table>
 
 <!-- ### Coming Soon -->
 

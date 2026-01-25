@@ -19,7 +19,7 @@
 
 ### 本周上新
 
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/wavelog"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/wavelog/logo.png" alt="Wavelog" width="64" height="64"><br><strong>Wavelog</strong></a><br>开源业余无线电通联日志</td><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/promptx"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/promptx/logo.png" alt="PromptX" width="64" height="64"><br><strong>PromptX</strong></a><br>领先的 AI 智能体上下文平台</td><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/rallly"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/rallly/logo.png" alt="Rallly" width="64" height="64"><br><strong>Rallly</strong></a><br>开源日程安排与协作工具</td></tr></table>
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/phpldapadmin"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/phpldapadmin/logo.png" alt="phpLDAPadmin" width="64" height="64"><br><strong>phpLDAPadmin</strong></a><br>基于 Web 的 LDAP 数据管理工具</td></tr></table>
 
 <!-- ### 即将推出 -->
 
