@@ -1,0 +1,30 @@
+name: phpLDAPadmin
+tags:
+  - 数据库
+title: 基于 Web 的 LDAP 数据管理工具
+description: 基于 Web 的 LDAP 数据管理工具
+additionalProperties:
+  key: phpldapadmin
+  name: phpLDAPadmin
+  tags:
+    - Database
+  shortDescZh: 基于 Web 的 LDAP 数据管理工具
+  shortDescEn: Web based LDAP data management tool
+  description:
+    en: Web based LDAP data management tool
+    zh: 基于 Web 的 LDAP 数据管理工具
+    zh-Hant: 基於 Web 的 LDAP 資料管理工具
+    ja: WebベースのLDAPデータ管理ツール
+    ms: Alat pengurusan data LDAP berasaskan Web
+    pt-br: Ferramenta de gerenciamento de dados LDAP baseada na Web
+    ru: Веб-инструмент управления данными LDAP
+    ko: 웹 기반 LDAP 데이터 관리 도구
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/leenooks/phpLDAPadmin
+  github: https://github.com/leenooks/phpLDAPadmin
+  document: https://github.com/leenooks/phpLDAPadmin
+  architectures:
+    - amd64
+    - arm64

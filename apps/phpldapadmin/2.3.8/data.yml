@@ -1,0 +1,157 @@
+additionalProperties:
+  formFields:
+    - default: 8080
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: HTTP 端口
+      labelEn: HTTP Port
+      label:
+        en: HTTP Port
+        ja: HTTP ポート
+        ko: HTTP 포트
+        ms: Port HTTP
+        pt-br: Porta HTTP
+        ru: HTTP Порт
+        tr: HTTP Portu
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+      description:
+        en: "Set the HTTP access port for the application, valid range: 1-65535"
+        ja: "アプリケーションのHTTPアクセスポートを設定します。有効範囲: 1-65535"
+        ko: "애플리케이션의 HTTP 접근 포트를 설정합니다. 유효 범위: 1-65535"
+        ms: "Tetapkan port akses HTTP untuk aplikasi, julat sah: 1-65535"
+        pt-br: "Defina a porta de acesso HTTP para o aplicativo, intervalo válido: 1-65535"
+        ru: "Установите порт доступа HTTP для приложения, допустимый диапазон: 1-65535"
+        tr: "Uygulama için HTTP erişim portunu ayarlayın, geçerli aralık: 1-65535"
+        zh: "设置应用的 HTTP 访问端口，有效范围: 1-65535"
+        zh-Hant: "設定應用程式的 HTTP 存取連接埠，有效範圍: 1-65535"
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: my.ldap.server.org
+      envKey: LDAP_HOST
+      labelZh: LDAP 服务器
+      labelEn: LDAP Server
+      label:
+        zh: LDAP 服务器
+        zh-Hant: LDAP 伺服器
+        en: LDAP Server
+        ja: LDAP サーバー
+        ko: LDAP 서버
+        ms: Pelayan LDAP
+        pt-br: Servidor LDAP
+        ru: LDAP-сервер
+        tr: LDAP Sunucusu
+      description:
+        zh: 一个可解析的主机名，指向您的 LDAP 服务器，或 LDAP 服务器的 IP 地址
+        zh-Hant: 一個可解析的主機名稱，指向您的 LDAP 伺服器，或 LDAP 伺服器的 IP 位址
+        en: A resolvable hostname that points to your LDAP server, or the IP address of the LDAP server
+        ja: LDAPサーバーを指す解決可能なホスト名、またはLDAPサーバーのIPアドレス
+        ko: LDAP 서버를 가리키는 확인 가능한 호스트명 또는 LDAP 서버의 IP 주소
+        ms: Satu nama hos yang boleh diselesaikan yang menunjuk ke pelayan LDAP anda, atau alamat IP pelayan LDAP
+        pt-br: Um nome de host resolvível que aponta para seu servidor LDAP, ou o endereço IP do servidor LDAP
+        ru: Разрешаемое имя хоста, указывающее на ваш LDAP-сервер, или IP-адрес LDAP-сервера
+        tr: LDAP sunucunuzu işaret eden çözümlenebilir bir ana bilgisayar adı veya LDAP sunucusunun IP adresi
+      required: true
+      type: text
+      edit: true
+    - default: 389
+      envKey: LDAP_PORT
+      labelZh: LDAP 服务端口
+      labelEn: LDAP Service Port
+      label:
+        zh: LDAP 服务端口
+        zh-Hant: LDAP 伺服器的通訊埠
+        en: LDAP Service Port
+        ja: LDAP サービスポート
+        ko: LDAP 서비스 포트
+        ms: Port Perkhidmatan LDAP
+        pt-br: Porta do Serviço LDAP
+        ru: Порт службы LDAP
+        tr: LDAP Servis Bağlantı Noktası
+      description:
+        zh: 如果您的 LDAP 服务器使用非标准端口，或启用了 SSL 的端口，则可能需要更改此设置。
+        zh-Hant: 如果您的 LDAP 伺服器使用非標準埠，或啟用了 SSL 的埠，則可能需要更改此設定。
+        en: You may need to change this if your LDAP server on a non-standard port, or a SSL enabled port
+        ja: LDAPサーバーが非標準ポートまたはSSLが有効なポートを使用している場合、これを変更する必要があるかもしれません。
+        ko: LDAP 서버가 비표준 포트 또는 SSL 활성화 포트를 사용하는 경우 이를 변경해야 할 수 있습니다.
+        ms: Anda mungkin perlu menukar ini jika pelayan LDAP anda berada di port bukan standard, atau port yang didayakan SSL.
+        pt-br: Você pode precisar alterar isso se seu servidor LDAP estiver em uma porta não padrão ou em uma porta com SSL habilitado.
+        ru: Возможно, вам потребуется изменить это, если ваш LDAP-сервер использует нестандартный порт или порт с поддержкой SSL.
+        tr: LDAP sunucunuz standart olmayan bir bağlantı noktasında veya SSL etkin bir bağlantı noktasındaysa, bunu değiştirmeniz gerekebilir.
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: dc=example,dc=org
+      envKey: LDAP_BASE_DN
+      labelZh: LDAP baseDN
+      labelEn: LDAP baseDN
+      label:
+        zh: LDAP baseDN
+        en: LDAP baseDN
+      required: true
+      type: text
+      edit: true
+    - default: cn=admin,dc=example,dc=org
+      envKey: LDAP_ADMIN_USERNAME
+      labelZh: 用于连接 LDAP 服务器的身份验证 DN
+      labelEn: Authentication DN to connect to LDAP server
+      label:
+        zh: 用于连接 LDAP 服务器的身份验证 DN
+        zh-Hant: 用於連接 LDAP 伺服器的身份驗證 DN
+        en: Authentication DN to connect to LDAP server
+        ja: LDAPサーバー接続用の認証DN
+        ko: LDAP 서버 연결용 인증 DN
+        ms: DN Pengesahan untuk menyambung ke pelayan LDAP
+        pt-br: DN de Autenticação para conectar ao servidor LDAP
+        ru: DN аутентификации для подключения к LDAP-серверу
+        tr: LDAP sunucusuna bağlanmak için Kimlik Doğrulama DN'si
+      required: true
+      type: text
+      edit: true
+    - default: ""
+      envKey: LDAP_ADMIN_PASSWORD
+      labelZh: LDAP 服务器密码
+      labelEn: Password for LDAP server
+      label:
+        zh: LDAP 服务器密码
+        zh-Hant: LDAP 伺服器密碼
+        en: Password for LDAP server
+        ja: LDAPサーバーのパスワード
+        ko: LDAP 서버 비밀번호
+        ms: Kata laluan untuk pelayan LDAP
+        pt-br: Senha do servidor LDAP
+        ru: Пароль для LDAP-сервера
+        tr: LDAP sunucusu parolası
+      required: true
+      type: password
+      edit: true
+      rule: paramComplexity
+    - default: Etc/UTC
+      envKey: APP_TIMEZONE
+      labelZh: 时区
+      labelEn: Time Zone
+      label:
+        zh: 时区
+        zh-Hant: 時區
+        en: Time Zone
+        ja: タイムゾーン
+        ko: 시간대
+        ms: Zon Waktu
+        pt-br: Fuso Horário
+        ru: Часовой пояс
+        tr: Saat Dilimi
+      description:
+        zh: 此时区主要用于日志记录
+        zh-Hant: 此時區主要用於日誌記錄
+        en: This timezone used, mostly for, logging.
+        ja: このタイムゾーンは、主にログ記録に使用されます
+        ko: 이 시간대는 주로 로깅에 사용됩니다
+        ms: Zon waktu ini digunakan, kebanyakannya untuk, pembuatan log.
+        pt-br: Este fuso horário é usado, principalmente, para registro de logs.
+        ru: Этот часовой пояс используется, в основном, для ведения журналов.
+        tr: Bu saat dilimi, çoğunlukla günlük kaydı için kullanılır.
+      required: false
+      type: text
+      edit: true
