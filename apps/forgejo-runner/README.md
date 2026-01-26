@@ -1,66 +1,22 @@
-# Forgejo Actions Runner
+## 产品介绍
 
-**Forgejo Actions Runner** 是 Forgejo 的官方运行器组件，用于执行 CI/CD 工作流中的各类任务。它与 Forgejo Actions 系统集成，支持本地或远程运行任务，帮助用户构建自动化 DevOps 流程。
+Forgejo Runner 是一个守护进程，用于连接到 Forgejo 实例并运行持续集成 (CI) 作业。该项目是 Forgejo 生态系统的一部分，旨在为 Forgejo 用户提供类似 GitHub Actions 的自动化工作流能力。其核心价值在于为自托管的 Forgejo 实例提供原生的 CI/CD 功能，目标用户是需要自动化构建、测试和部署流程的开发团队和组织，特别是在需要自托管解决方案的场景中。
 
-适合希望**完全自托管** CI/CD 流水线的个人或组织部署使用。
+## 主要功能
 
-## ✨ 特性
+- **持续集成作业执行**: 作为守护进程连接到 Forgejo 实例，自动拉取并执行工作流中定义的 CI/CD 任务，支持开发者实现自动化构建、测试和部署流程。
 
-- 与 Forgejo Actions 完全集成
-- 支持自定义容器或直接在主机运行
-- 多 Runner 支持并行执行
-- 支持 amd64 / arm64 等架构
-- 简单易用，部署轻量
+- **多架构支持**: 目前正式支持在基于 Linux 内核的操作系统上运行，涵盖 `amd64` 和 `arm64` 架构，并提供二进制文件和容器镜像，同时正在积极开发对其他架构 (如 s390x、powerpc64le、riscv64 和 Windows) 的支持。
 
-## ⚙️ 快速开始（Docker 部署）
+- **与 Forgejo 深度集成**: 作为 Forgejo 的原生 Actions 运行器，能够无缝集成到 Forgejo 的工作流系统中，用户可以通过 Forgejo 界面配置和管理自动化任务。
 
-### 1. 启动 Forgejo 主服务（略）
+## 配置和使用说明
 
-确保 Forgejo 主程序已部署并启用了 Actions 功能。
-
-### 2. 运行 Action Runner 容器
-
-```bash
-docker run -d --name forgejo-runner \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  -v /opt/runner:/data \
-  codeberg.org/forgejo/runner:latest
-```
-
-### 3. 初始化注册
-
-首次运行后，进入容器进行注册：
-
-```bash
-docker exec -it forgejo-runner forgejo-runner register
-```
-
-你需要提供：
-
-- **Forgejo 实例 URL**（例如 `https://git.example.com`）
-- **Runner Token**（从仓库或组织设置中获取）
-- **运行模式**（Docker / shell 等）
-- **标签**（可选，便于任务调度）
-
-## 🔄 自动启动示例（Docker Compose）
-
-```yaml
-version: '3'
-services:
-  forgejo-runner:
-    image: codeberg.org/forgejo/runner:latest
-    container_name: forgejo-runner
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ./runner-data:/data
-    restart: unless-stopped
-```
-
-## 📘 文档与资源
-
-- 项目主页：https://forgejo.org/docs/latest/admin/actions/
-- 源码仓库：https://code.forgejo.org/forgejo/runner
-
-## 🧑‍🤝‍🧑 关于 Forgejo Runner
-
-Forgejo Runner 是社区主导的 CI 执行器，致力于提供安全、可控、可扩展的构建环境。它是 Forgejo 构建完整 DevOps 生态的重要组成部分。
+- **选择版本**: 现提供两种版本，常规版本 (下称 DooD 版本) 与 DinD 版本。
+  - DooD 版权限更高，与宿主机共享 docker 环境，遇到需要在工作流中使用容器的情况，DooD 版本可以在宿主机管理 Runner 中的容器；
+  - DinD 版安全性更强，docker 环境与宿主机完全独立，基本没有越权；
+  - 当 DinD 版本下运行某些 action 权限不足时，请先尝试启用特权模式，若仍报错，再尝试使用 DooD 版。
+- **Forgejo 实例 URL**: (例如 `https://git.example.com`) 
+- **注册令牌**: 从 Create new runner 按钮中获取，仅用于 Runner 实例，需要区别于个人访问令牌 (PAT) 
+- **运行器名称**: 区分不同 Runner 实例的唯一标识符，同一命名空间 (仓库或组织) 下不允许重复
+- **运行器标签**: 用于标记 Runner 实例，工作流中可以根据标签选择 Runner 执行任务，同一个标签可以绑定多个 Runner 实例
