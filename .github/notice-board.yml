@@ -7,6 +7,4 @@ preview:
   #   url: 
 
 releases:
-  - wavelog
-  - promptx
-  - rallly
+  - phpldapadmin
