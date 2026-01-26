@@ -1,5 +1,23 @@
 additionalProperties:
   formFields:
+    - default: "false"
+      edit: true
+      envKey: PRIVILEGED
+      labelEn: "Privilege Mode: Manually enabled for permission issues"
+      labelZh: "特权模式: 遇到权限问题时手动启用"
+      label:
+        en: Privilege Mode
+        zh: 特权模式
+      description:
+        en: Manually enabled for permission issues
+        zh: 遇到权限问题时手动启用
+      required: false
+      type: select
+      values:
+        - label: "启用 Enabled"
+          value: "true"
+        - label: "禁用 Disabled"
+          value: "false"
     - default: http://1.2.3.4:3000
       edit: true
       envKey: FORGEJO_INSTANCE_URL
@@ -21,7 +39,7 @@ additionalProperties:
       edit: true
       envKey: RUNNER_REGISTRATION_TOKEN
       labelEn: Registration Token
-      labelZh: Registration Token
+      labelZh: 注册令牌
       required: true
       type: text
       label:
@@ -37,7 +55,7 @@ additionalProperties:
       edit: true
       envKey: RUNNER_NAME
       labelEn: Runner Name
-      labelZh: Runner Name
+      labelZh: 运行器名称
       required: true
       type: text
       label:
@@ -53,7 +71,7 @@ additionalProperties:
       edit: true
       envKey: RUNNER_LABELS
       labelEn: Runner Labels
-      labelZh: Runner Labels
+      labelZh: 运行器标签
       required: true
       type: text
       label:

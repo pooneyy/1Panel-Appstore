@@ -1,15 +1,15 @@
 services:
-  forgejo_runner:
+  forgejo-runner:
     image: code.forgejo.org/forgejo/runner:12.6.2
-    container_name: ${CONTAINER_NAME:-forgejo-runner}
+    container_name: ${CONTAINER_NAME}
     depends_on:
       dind:
         condition: service_started
     links:
       - dind
     restart: always
-    user: "1000:1000"  # 非 root 用户运行容器
-    command: "/data/scripts/register.sh"
+    user: 1000:1000
+    command: /data/scripts/register.sh
     volumes:
       - ./data/runner-data:/data
       - ./scripts/register.sh:/data/scripts/register.sh:ro
@@ -22,12 +22,12 @@ services:
     networks:
       - 1panel-network
     labels:
-      createdBy: "Apps"
+      createdBy: Apps
   dind:
-    image: docker:dind # [ignore]
-    container_name: forgejo-dind
-    privileged: true
-    restart: 'unless-stopped'
+    image: docker:29.1.5-dind
+    container_name: ${CONTAINER_NAME}-dind
+    privileged: ${PRIVILEGED}
+    restart: unless-stopped
     command: ['dockerd', '-H', 'tcp://0.0.0.0:2375', '--tls=false']
     environment:
       DOCKER_TLS_CERTDIR: ""
@@ -37,8 +37,7 @@ services:
     networks:
       - 1panel-network
     labels:
-      createdBy: "Apps"
-
+      createdBy: Apps
 networks:
   1panel-network:
     external: true

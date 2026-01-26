@@ -1,31 +1,30 @@
-name: Forgejo Runner
+name: Forgejo Actions Runner
 tags:
   - DevOps
-title: Forgejo Actions 的 Runner
-description: Forgejo Actions 的 Runner
+title: Forgejo Runner 是连接 Forgejo 实例并运行持续集成作业的守护进程
+description: Forgejo Runner 是连接 Forgejo 实例并运行持续集成作业的守护进程
 additionalProperties:
   key: forgejo-runner
-  name: Forgejo Runner
+  name: Forgejo Actions Runner
   tags:
     - DevOps
-  shortDescZh: Forgejo Actions 的 Runner
-  shortDescEn: A runner for Forgejo based on Forgejo fork of act
+  shortDescZh: Forgejo Runner 是连接 Forgejo 实例并运行持续集成作业的守护进程
+  shortDescEn: Forgejo Runner is a daemon process that connects to a Forgejo instance and runs continuous integration jobs
   description:
-    en: A runner for Forgejo based on Forgejo fork of act
-    ja: act の Forgejo フォークに基づいた Forgejo 用ランナー
-    ms: Penjalank untuk Forgejo berdasarkan fork Forgejo dari act
-    pt-br: Um runner para Forgejo baseado no fork do Forgejo do act
-    ru: Раннер для Forgejo на основе форка Forgejo от act
-    ko: act의 Forgejo 포크를 기반으로 한 Forgejo용 러너
-    zh-Hant: 基於 Forgejo fork 的 act 的 Forgejo 執行器
-    zh: 基于 Forgejo fork 的 act 的 Forgejo 运行器
+    en: Forgejo Runner is a daemon process that connects to a Forgejo instance and runs continuous integration jobs
+    zh: Forgejo Runner 是连接 Forgejo 实例并运行持续集成作业的守护进程
+    zh-Hant: Forgejo Runner 是連接 Forgejo 實例並執行持續整合作業的守護行程
+    ja: Forgejo Runner は、Forgejo インスタンスに接続し、継続的インテグレーションジョブを実行するデーモンプロセスです
+    ms: Forgejo Runner ialah proses daemon yang menyambung ke contoh Forgejo dan menjalankan kerja integrasi berterusan
+    pt-br: Forgejo Runner é um processo daemon que se conecta a uma instância do Forgejo e executa trabalhos de integração contínua
+    ru: Forgejo Runner — это процесс-демон, который подключается к экземпляру Forgejo и запускает задания непрерывной интеграции
+    ko: Forgejo Runner는 Forgejo 인스턴스에 연결하여 지속적 통합 작업을 실행하는 데몬 프로세스입니다
   type: tool
   crossVersionUpdate: true
   limit: 0
-  recommend: 0
-  website: https://forgejo.org/docs/latest/admin/actions/
+  website: https://forgejo.org
   github: https://code.forgejo.org/forgejo/runner
-  document: https://forgejo.org/docs/latest/admin/actions/
+  document: https://forgejo.org/docs/latest/admin/actions
   architectures:
     - amd64
     - arm64
