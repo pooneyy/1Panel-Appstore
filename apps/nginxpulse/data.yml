@@ -1,0 +1,32 @@
+name: NginxPulse
+tags:
+  - 实用工具
+  - BI
+title: Nginx 访问日志分析与可视化面板
+description: Nginx 访问日志分析与可视化面板
+additionalProperties:
+  key: nginxpulse
+  name: NginxPulse
+  tags:
+    - Tool
+    - BI
+  shortDescZh: Nginx 访问日志分析与可视化面板
+  shortDescEn: Nginx Access Log Analysis and Visualization Panel
+  description:
+    en: Nginx Access Log Analysis and Visualization Panel
+    zh: Nginx 访问日志分析与可视化面板
+    zh-Hant: Nginx 存取日誌分析與視覺化面板
+    ja: Nginx アクセスログ分析・可視化パネル
+    ms: Panel Analisis dan Visualisasi Log Akses Nginx
+    pt-br: Painel de Análise e Visualização de Logs de Acesso do Nginx
+    ru: Панель анализа и визуализации журналов доступа Nginx
+    ko: Nginx 액세스 로그 분석 및 시각화 패널
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://nginx-pulse.kaisir.cn
+  github: https://github.com/likaia/nginxpulse
+  document: https://github.com/likaia/nginxpulse/wiki
+  architectures:
+    - amd64
+    - arm64

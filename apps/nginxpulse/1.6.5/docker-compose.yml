@@ -1,0 +1,21 @@
+services:
+  nginxpulse:
+    image: magiccoders/nginxpulse:v1.6.5
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8088
+    environment:
+      - ACCESS_KEYS=${ACCESS_KEYS}
+      - DB_DSN=postgres://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@${PANEL_DB_HOST}:${PANEL_DB_PORT}/${PANEL_DB_NAME}
+    volumes:
+      - ${WEBSITE_DIR}/sites:/sites:ro
+      - ./data/nginxpulse_data:/app/var/nginxpulse_data
+      - ./data/configs:/app/configs
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true
