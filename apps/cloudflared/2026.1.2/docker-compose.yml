@@ -3,12 +3,7 @@ services:
     image: cloudflare/cloudflared:2026.1.2
     container_name: ${CONTAINER_NAME}
     restart: always
-    networks:
-      - 1panel-network
+    network_mode: host
     command: tunnel --no-autoupdate run --token ${CFD_TOKEN}
     labels:  
       createdBy: "Apps"
-
-networks:
-    1panel-network:
-        external: true
