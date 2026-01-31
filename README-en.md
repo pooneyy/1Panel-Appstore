@@ -20,7 +20,7 @@
 
 ### New This Week
 
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/phpldapadmin"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/phpldapadmin/logo.png" alt="phpLDAPadmin" width="64" height="64"><br><strong>phpLDAPadmin</strong></a><br>Web based LDAP data management tool</td></tr></table>
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/nginxpulse"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/nginxpulse/logo.png" alt="NginxPulse" width="64" height="64"><br><strong>NginxPulse</strong></a><br>Nginx Access Log Analysis and Visualization Panel</td></tr></table>
 
 <!-- ### Coming Soon -->
 
