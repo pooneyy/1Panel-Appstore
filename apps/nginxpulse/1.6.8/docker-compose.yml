@@ -1,6 +1,6 @@
 services:
   nginxpulse:
-    image: magiccoders/nginxpulse:v1.6.7
+    image: magiccoders/nginxpulse:v1.6.8
     container_name: ${CONTAINER_NAME}
     ports:
       - ${PANEL_APP_PORT_HTTP}:8088
