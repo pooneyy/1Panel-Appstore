@@ -1,6 +1,6 @@
 services:
   forgejo:
-    image: codeberg.org/forgejo/forgejo:14.0.2
+    image: ${IMAGE}
     container_name: ${CONTAINER_NAME}
     environment:
       - USER_UID=1000
@@ -14,7 +14,9 @@ services:
     networks:
       - 1panel-network
     volumes:
-      - ./forgejo:/data
+      - ./data:/data
+      - ./data-rootless/forgejo:/var/lib/gitea
+      - ./data-rootless/conf:/etc/gitea
       - /etc/localtime:/etc/localtime:ro
     ports:
       - ${PANEL_APP_PORT_HTTP}:3000
