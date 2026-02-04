@@ -309,5 +309,17 @@
       "allowedVersions": "/^1.*/"
     }
   ],
+  "customManagers": [
+    {
+      "description": "处理 shell 脚本中的镜像",
+      "customType": "regex",
+      "managerFilePatterns": ["/(^|/).+\\.sh$/"],
+      "matchStrings": [
+        // 调试正则表达式: https://regexr.com/8jlns
+        "([\\S]+=)(?<depName>[\\S]+):(?<currentValue>[\\S]+)"
+      ],
+      "datasourceTemplate": "{{#if datasource}}{{{datasource}}}{{else}}docker{{/if}}"
+    }
+  ],
   "prCreation": "immediate"
 }
