@@ -45,6 +45,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "没有文件变更，跳过提交"
           else
-            git commit --quiet -m "📝 docs(readme): update notice board"
+            git commit --quiet -m "docs(readme): update notice board"
           fi
           git push

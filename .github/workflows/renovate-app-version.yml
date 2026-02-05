@@ -84,6 +84,13 @@ jobs:
               old_version=$(echo $file | cut -d'/' -f 3)
               python3 .github/workflows/renovate-app-version.py $app_name $old_version
             fi
+            if [[ $file == *"/scripts/"*.sh ]]; then
+              app_name=$(echo $file | cut -d'/' -f 2)
+              old_version=$(echo $file | cut -d'/' -f 3)
+              new_version=$(grep -P -o '[\S]+=[\S]+:\K[\S]+' $file | head -1)
+              mv apps/$app_name/$old_version apps/$app_name/$new_version
+              echo $new_version > apps/$app_name/${old_version}.version
+            fi
           done
 
       - name: Commit & Push Changes
@@ -91,7 +98,7 @@ jobs:
           IFS=' ' read -ra files <<< "${{ steps.updated-files.outputs.files }}"
           commits_counter=0
           for file in "${files[@]}"; do
-            if [[ $file == *"docker-compose.yml"* ]]; then
+            if [[ $file == *"docker-compose.yml"* || $file == *"/scripts/"*.sh ]]; then
               app_name=$(echo $file | cut -d'/' -f 2)
               old_version=$(echo $file | cut -d'/' -f 3)
               if [ -f "apps/$app_name/${old_version}.version" ]; then
