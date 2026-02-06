@@ -315,7 +315,7 @@
       "managerFilePatterns": ["/(^|/).+\\.sh$/"],
       "matchStrings": [
         // 调试正则表达式: https://regexr.com/8jlns
-        "([\\S]+=)(?<depName>[\\S]+):(?<currentValue>[\\S]+)"
+        "(?:# renovate)(?:\\n+)?([\\S]+=)(?<depName>[\\S]+):(?<currentValue>[\\S]+)"
       ],
       "datasourceTemplate": "{{#if datasource}}{{{datasource}}}{{else}}docker{{/if}}"
     }
