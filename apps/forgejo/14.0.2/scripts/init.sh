@@ -2,7 +2,7 @@
 
 [ -f ./.env ] && source ./.env
 
-# renovate: datasource=docker depName=forgejo/forgejo
+# renovate
 IMAGE=codeberg.org/forgejo/forgejo:14.0.2
 
 if [ "${ROOTLESS}" = "true" ]; then
