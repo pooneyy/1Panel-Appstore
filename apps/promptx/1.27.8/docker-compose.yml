@@ -1,6 +1,6 @@
 services:
   promptx:
-    image: deepracticexs/promptx:1.27.8
+    image: deepracticexs/promptx:1.28.3
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
