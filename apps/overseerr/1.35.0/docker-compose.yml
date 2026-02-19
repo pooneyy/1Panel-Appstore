@@ -4,7 +4,7 @@ networks:
 
 services:
   overseerr:
-    image: sctx/overseerr:1.34.0
+    image: sctx/overseerr:1.35.0
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
