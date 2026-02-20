@@ -4,7 +4,7 @@ networks:
 
 services:
   peerbanhelper:
-    image: ghostchu/peerbanhelper:v9.3.5
+    image: ghostchu/peerbanhelper:v9.3.6
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
