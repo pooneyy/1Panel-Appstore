@@ -18,9 +18,7 @@
 
 ***
 
-### New This Week
-
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/nginxpulse"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/nginxpulse/logo.png" alt="NginxPulse" width="64" height="64"><br><strong>NginxPulse</strong></a><br>Nginx Access Log Analysis and Visualization Panel</td><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/keycloak"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/keycloak/logo.png" alt="Keycloak" width="64" height="64"><br><strong>Keycloak</strong></a><br>Open Source Identity and Access Management For Modern Applications and Services</td></tr></table>
+<!-- ### New This Week -->
 
 <!-- ### Coming Soon -->
 
