@@ -17,9 +17,7 @@
 
 ***
 
-### 本周上新
-
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/nginxpulse"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/nginxpulse/logo.png" alt="NginxPulse" width="64" height="64"><br><strong>NginxPulse</strong></a><br>Nginx 访问日志分析与可视化面板</td><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/keycloak"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/keycloak/logo.png" alt="Keycloak" width="64" height="64"><br><strong>Keycloak</strong></a><br>面向现代应用与服务的开源身份和访问管理器</td></tr></table>
+<!-- ### 本周上新 -->
 
 <!-- ### 即将推出 -->
 
