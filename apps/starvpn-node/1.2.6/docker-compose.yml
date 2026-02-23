@@ -1,12 +1,12 @@
 services:
   stars-node:
-    image: registry.cn-beijing.aliyuncs.com/ld_beijing/stars.node:1.2.5
+    image: registry.cn-beijing.aliyuncs.com/ld_beijing/stars.node:1.2.6
     restart: always
-    container_name: stars.node
+    container_name: ${CONTAINER_NAME}
     network_mode: "host"
     environment:
       - SERVER_ADDR=${SERVER_ADDR}
       - ALLOW_COMMUNITY=${STARS_ACCOUNT}
       - TOKEN=${TOKEN}
-    labels:  
-      createdBy: "Apps"
+    labels:
+      createdBy: Apps
