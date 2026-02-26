@@ -18,6 +18,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["major", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump", "replacement"],
+      "matchManagers": ["!github-actions"],
       "addLabels": ["{{ updateType }}"]
     },
     {
