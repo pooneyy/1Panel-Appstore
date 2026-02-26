@@ -86,6 +86,9 @@ repo_prefixs=(
     'https://ghfast.top/https://github.com'
     'https://githubfast.com'
     'https://ghproxy.net/https://github.com'
+    'https://codeberg.org'
+    'https://code.forgejo.org'
+    'https://gitea.com'
 )
 
 repo_suffix="/pooneyy/1Panel-Appstore.git"
