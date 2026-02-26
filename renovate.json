@@ -21,6 +21,11 @@
       "addLabels": ["{{ updateType }}"]
     },
     {
+      "matchBaseBranches": ["localApps"],
+      "matchManagers": ["github-actions"],
+      "enabled": false
+    },
+    {
       "matchManagers": [
         "docker-compose"
       ],
