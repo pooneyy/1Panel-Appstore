@@ -128,7 +128,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4.7'
+          ruby-version: '4.0.1'
       - name: Get license
         run: |
           gem install licensee
@@ -243,7 +243,7 @@ jobs:
           echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
 
       - name: Generate artifact attestation
-        uses: actions/attest-build-provenance@v3
+        uses: actions/attest@v4
         with:
           subject-name: ${{ env.IMAGE_FULL_NAME }}
           subject-digest: ${{ steps.push.outputs.digest }}
