@@ -4,7 +4,7 @@ networks:
 
 services:
   kvrocks:
-    image: apache/kvrocks:2.14.0
+    image: apache/kvrocks:2.15.0
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
