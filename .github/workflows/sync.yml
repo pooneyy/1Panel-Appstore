@@ -10,7 +10,7 @@ on:
     types:
       - completed
     branches:
-      - localApps
+      - renovate/*
 
 permissions:
   contents: read
