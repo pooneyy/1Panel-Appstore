@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - localApps
+  workflow_run:
+    workflows:
+      - 'App Version CI/CD'
+    types:
+      - completed
+    branches:
+      - localApps
 
 permissions:
   contents: read
