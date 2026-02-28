@@ -12,7 +12,7 @@ services:
       - "${DATA_PATH}:/mnt/host:ro"
     privileged: true
     tty: true
-    image: mauricenino/dashdot:6.3.0
+    image: mauricenino/dashdot:6.3.2
     labels:  
       createdBy: "Apps"
 
