@@ -23,10 +23,12 @@ jobs:
       fail-fast: false
       matrix:
         remote:
-          - name: codeberg.org
+          - name: Codeberg
+            ssh-host: codeberg.org
             ssh-url: git@codeberg.org:pooneyy/1Panel-Appstore.git
             https-url: https://codeberg.org/pooneyy/1Panel-Appstore
-          - name: gitea.com
+          - name: Gitea
+            ssh-host: gitea.com
             ssh-url: git@gitea.com:pooneyy/1Panel-Appstore.git
             https-url: https://gitea.com/pooneyy/1Panel-Appstore
 
@@ -49,14 +51,14 @@ jobs:
       - name: 添加目标主机的公钥
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan ${{ matrix.remote.name }} >> ~/.ssh/known_hosts
+          ssh-keyscan ${{ matrix.remote.ssh-host }} >> ~/.ssh/known_hosts
 
       - name: 配置本地仓库
         run: |
           git config --global --add safe.directory ${{ github.workspace }}
           git config user.name "github-actions[bot]"
           git config user.email ${{ secrets.SYNC_EMAIL }}
-          git remote add ${{ matrix.remote.name }} ${{ matrix.remote.ssh-url }}
+          git remote add ${{ matrix.remote.ssh-host }} ${{ matrix.remote.ssh-url }}
           git branch -r | grep -v '\->' | while read remote; do
             branch=${remote#origin/}
             git branch --track "$branch" "$remote" 2>/dev/null && echo "创建本地分支: $branch" || echo "分支 $branch 已存在"
@@ -68,9 +70,9 @@ jobs:
       - name: 强制推送所有分支和所有标签到 ${{ matrix.remote.name }}
         run: |
           echo "将所有分支推送到 ${{ matrix.remote.name }} (修剪模式)..."
-          git push --force --prune ${{ matrix.remote.name }} --all
+          git push --force --prune ${{ matrix.remote.ssh-host }} --all
           echo "将所有 tags 推送到 ${{ matrix.remote.name }}..."
-          git push --force ${{ matrix.remote.name }} --tags
+          git push --force ${{ matrix.remote.ssh-host }} --tags
 
       - name: 记录成功摘要
         if: success()
