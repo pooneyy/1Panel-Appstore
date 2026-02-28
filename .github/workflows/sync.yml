@@ -23,10 +23,12 @@ jobs:
       fail-fast: false
       matrix:
         remote:
-          - name: codeberg.org
+          - name: Codeberg
+            ssh-host: codeberg.org
             ssh-url: git@codeberg.org:pooneyy/1Panel-Appstore.git
             https-url: https://codeberg.org/pooneyy/1Panel-Appstore
-          - name: gitea.com
+          - name: Gitea
+            ssh-host: gitea.com
             ssh-url: git@gitea.com:pooneyy/1Panel-Appstore.git
             https-url: https://gitea.com/pooneyy/1Panel-Appstore
 
@@ -49,7 +51,7 @@ jobs:
       - name: 添加目标主机的公钥
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan ${{ matrix.remote.name }} >> ~/.ssh/known_hosts
+          ssh-keyscan ${{ matrix.remote.ssh-host }} >> ~/.ssh/known_hosts
 
       - name: 配置本地仓库
         run: |
