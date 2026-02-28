@@ -74,7 +74,7 @@ else
     fi
 fi
 
-TEMP_DIR="/tmp/localApps"
+TEMP_DIR=$(mktemp -d)
 
 repo_prefixs=(
     'https://github.com'
