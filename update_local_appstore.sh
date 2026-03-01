@@ -1,3 +1,5 @@
+#!/bin/bash
+
 check_command() {
     command -v "$1" > /dev/null 2>&1 || {
         echo >&2 "未找到 $1 命令"
@@ -9,11 +11,82 @@ check_command "cp"
 check_command "cut"
 check_command "git"
 check_command "grep"
+check_command "mktemp"
+check_command "printf"
 check_command "rm"
 check_command "which"
 check_command "xargs"
 
-# 参数解析
+USE_ZH=false
+if command -v curl >/dev/null 2>&1; then
+    COUNTRY=$(curl -s --connect-timeout 5 https://myip.ipip.net/json | grep -o '"location":\["[^"]*"' | cut -d '"' -f 4 2>/dev/null)
+    if [[ "$COUNTRY" == "中国" ]]; then
+        USE_ZH=true
+    fi
+fi
+
+if $USE_ZH; then
+    MSG_INTRO=" ###########################################
+ #                  注意                   #
+ # 如果你想复制特定的应用, 请使用参数      #
+ # --app <应用名>                          #
+ #                                         #
+ # 如果你想指定1Panel的安装路径, 请使用参数#
+ # --1panel-path <路径>                    #
+ #                                         #
+ # 例如, 如果你的1Panel安装在/opt, 请使用: #
+ # bash update_local_appstore.sh \\         #
+ #   --app app_name_1 \\                    #
+ #   --app app_name_2 \\                    #
+ #   --1panel-path /opt                    #
+ ###########################################"
+    MSG_CLEANUP_TEMP="克隆中断, 已删除临时文件夹 %s"
+    MSG_CLONE_SUCCESS="从源 %s 克隆成功"
+    MSG_CLONE_FAIL="所有源都已尝试, 但克隆失败"
+    MSG_COPY_NOTE="仅复制: %s"
+    MSG_COPY_SUCCESS="复制成功: %s"
+    MSG_ERR_APP_REQUIRE="错误: --app 参数需要指定应用名"
+    MSG_ERR_PATH_INVALID="错误: 指定的路径 '%s' 不存在或不是目录"
+    MSG_ERR_PATH_REQUIRE="错误: --1panel-path 参数需要指定路径"
+    MSG_ERR_MULTI_PATH="错误: 只能指定一个 --1panel-path 参数"
+    MSG_ERR_NO_1PANEL="未找到1Panel的安装路径"
+    MSG_LATEST_COMMIT="本地仓库的最新提交: "
+    MSG_NOTE_UNKNOWN="注意: 未知参数 %s 被忽略"
+    MSG_WARN_APP_MISSING="警告: 应用 '%s' 在仓库中不存在"
+    MSG_TRY_CLONE="正在尝试克隆 %s"
+else
+    MSG_INTRO=" ###########################################
+ #                 Note                    #
+ # If you want to copy specific apps, use  #
+ # --app <app_name> parameter              #
+ #                                         #
+ # If you want to specify the installation #
+ # path of 1Panel, use the                 #
+ # --1panel-path <path> parameter          #
+ #                                         #
+ # For example, if you 1panel is installed #
+ # in /opt, use:                           #
+ # bash update_local_appstore.sh \\         #
+ #   --app app_name_1 \\                    #
+ #   --app app_name_2 \\                    #
+ #   --1panel-path /opt                    #
+ ###########################################"
+    MSG_CLEANUP_TEMP="Clone interrupted, temporary directory %s deleted"
+    MSG_CLONE_SUCCESS="Successfully cloned from source %s"
+    MSG_CLONE_FAIL="All sources have been attempted, but cloning Failed"
+    MSG_COPY_NOTE="Only copy: %s"
+    MSG_COPY_SUCCESS="Copied success: %s"
+    MSG_ERR_APP_REQUIRE="Error: --app parameter requires an app name"
+    MSG_ERR_PATH_INVALID="Error: Specified path '%s' does not exist or is not a directory"
+    MSG_ERR_PATH_REQUIRE="Error: --1panel-path parameter requires a path"
+    MSG_ERR_MULTI_PATH="Error: Only one --1panel-path parameter can be specified"
+    MSG_ERR_NO_1PANEL="No installation path found for 1panel"
+    MSG_LATEST_COMMIT="Latest commit in the local repository:"
+    MSG_NOTE_UNKNOWN="Note: Unknown parameter %s ignored"
+    MSG_WARN_APP_MISSING="WARNING: App '%s' does not exist in repository"
+    MSG_TRY_CLONE="Trying to clone %s"
+fi
+
 apps_to_copy=()
 custom_base_dir=""
 while [[ $# -gt 0 ]]; do
@@ -23,58 +96,54 @@ while [[ $# -gt 0 ]]; do
                 apps_to_copy+=("$2")
                 shift 2
             else
-                echo "Error: --app parameter requires an app name"
+                echo "$MSG_ERR_APP_REQUIRE"
                 exit 1
             fi
             ;;
         --1panel-path)
             if [[ -n "$2" && "$2" != --* ]]; then
                 if [[ -n "$custom_base_dir" ]]; then
-                    echo "Error: Only one --1panel-path parameter can be specified"
+                    echo "$MSG_ERR_MULTI_PATH"
                     exit 1
                 fi
                 custom_base_dir="$2"
+                if [ ! -d "$custom_base_dir" ]; then
+                    printf "$MSG_ERR_PATH_INVALID\n" "$custom_base_dir"
+                    exit 1
+                fi
                 shift 2
             else
-                echo "Error: --1Panel-path parameter requires a path"
+                echo "$MSG_ERR_PATH_REQUIRE"
                 exit 1
             fi
             ;;
         *)
-            echo "Note: Unknown parameter $1 ignored"
+            printf "$MSG_NOTE_UNKNOWN\n" "$1"
             shift
             ;;
     esac
 done
 
-echo " ###########################################"
-echo " #                 Note                    #"
-echo " # If you want to copy specific apps, use  #"
-echo " # --app <app_name> parameter              #"
-echo " #                                         #"
-echo " # If you want to specify the installation #"
-echo " # path of 1Panel, use the                 #"
-echo " # --1panel-path <path> parameter          #"
-echo " #                                         #"
-echo " # For example, if you 1panel is installed #"
-echo " # in /opt, use:                           #"
-echo " # bash update_local_appstore.sh \\         #"
-echo " #   --app app_name_1 \\                    #"
-echo " #   --app app_name_2 \\                    #"
-echo " #   --1panel-path /opt                    #"
-echo " ###########################################"
+echo "$MSG_INTRO"
 
 if [[ -n "$custom_base_dir" ]]; then
     BASE_DIR="$custom_base_dir"
 else
     BASE_DIR=$(which 1pctl | xargs grep '^BASE_DIR=' | cut -d'=' -f2)
     if [ -z "$BASE_DIR" ]; then
-        echo "No installation path found for 1panel"
+        echo "$MSG_ERR_NO_1PANEL"
         exit 1
     fi
 fi
 
 TEMP_DIR=$(mktemp -d)
+
+cleanup_temp_dir() {
+    rm -rf $TEMP_DIR
+    printf "$MSG_CLEANUP_TEMP\n" "$TEMP_DIR"
+    exit 1
+}
+trap cleanup_temp_dir INT TERM
 
 repo_prefixs=(
     'https://github.com'
@@ -95,25 +164,26 @@ repo_suffix="/pooneyy/1Panel-Appstore.git"
 counter=0
 for repo_prefix in "${repo_prefixs[@]}"; do
     full_url="${repo_prefix}${repo_suffix}"
+    printf "$MSG_TRY_CLONE\n" "$full_url"
     git clone --depth 1 -b localApps $full_url $TEMP_DIR > /dev/null 2>&1 && break
     counter=$((counter + 1))
 done
 if [ $counter -eq ${#repo_prefixs[@]} ]; then
-    echo "All sources have been attempted, but cloning Failed"
+    echo "$MSG_CLONE_FAIL"
 else
-    echo "Successfully cloned from source ${full_url}"
-    echo "Latest commit in the local repository:"
+    printf "$MSG_CLONE_SUCCESS\n" "$full_url"
+    echo "$MSG_LATEST_COMMIT"
     git -C $TEMP_DIR log --pretty=format:"%s - %h - %cr(%ci)" -n 1
     
     if [ ${#apps_to_copy[@]} -gt 0 ]; then
         echo ""
-        echo "Only copy: ${apps_to_copy[*]}"
+        printf "$MSG_COPY_NOTE\n" "${apps_to_copy[*]}"
         for app in "${apps_to_copy[@]}"; do
             if [ -d "$TEMP_DIR/apps/$app" ]; then
                 cp -rf "$TEMP_DIR/apps/$app" "$BASE_DIR/1panel/resource/apps/local/"
-                echo "Copied success: $app"
+                printf "$MSG_COPY_SUCCESS\n" "$app"
             else
-                echo "WARNING: App '$app' does not exist in repository"
+                printf "$MSG_WARN_APP_MISSING\n" "$app"
             fi
         done
     else
