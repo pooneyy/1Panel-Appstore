@@ -31,6 +31,15 @@ jobs:
             ssh-host: gitea.com
             ssh-url: git@gitea.com:pooneyy/1Panel-Appstore.git
             https-url: https://gitea.com/pooneyy/1Panel-Appstore
+          - name: Bitnet
+            ssh-host: git-clone.bitnet.fun
+            ssh-url: git@git-clone.bitnet.fun:pooneyy/1Panel-Appstore.git
+            https-url: https://git.bitnet.fun/pooneyy/1Panel-Appstore
+          - name: Smartscf
+            ssh-host: repo.smartscf.cn
+            ssh-port: 8122
+            ssh-url: ssh://git@repo.smartscf.cn:8122/pooneyy/1Panel-Appstore.git
+            https-url: https://repo.smartscf.cn/pooneyy/1Panel-Appstore
 
     steps:
       - name: 检出完整仓库
