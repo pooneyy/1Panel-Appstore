@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 jobs:
-  sync:
+  ssh-sync:
     name: 同步到 ${{ matrix.remote.name }}
     runs-on: ubuntu-latest
     strategy:
@@ -51,7 +51,13 @@ jobs:
       - name: 添加目标主机的公钥
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan ${{ matrix.remote.ssh-host }} >> ~/.ssh/known_hosts
+          SSH_HOST=${{ matrix.remote.ssh-host }}
+          SSH_PORT=${{ matrix.remote.ssh-port }}
+          if [ -n "$SSH_PORT" ]; then
+            ssh-keyscan -p $SSH_PORT $SSH_HOST >> ~/.ssh/known_hosts
+          else
+            ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
+          fi
 
       - name: 配置本地仓库
         run: |
