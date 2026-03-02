@@ -106,9 +106,9 @@ jobs:
       fail-fast: false
       matrix:
         remote:
-          - name: 
-            https-url: 
-            pat-secret: 
+          - name: piscesys
+            https-url: https://piscesys.com/pooneyy/1Panel-Appstore
+            pat-secret: SYNC_PAT_PISCESYS
 
     steps:
       - name: 检出完整仓库
