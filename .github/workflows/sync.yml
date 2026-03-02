@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 jobs:
-  sync:
+  ssh-sync:
     name: 同步到 ${{ matrix.remote.name }}
     runs-on: ubuntu-latest
     strategy:
@@ -31,6 +31,15 @@ jobs:
             ssh-host: gitea.com
             ssh-url: git@gitea.com:pooneyy/1Panel-Appstore.git
             https-url: https://gitea.com/pooneyy/1Panel-Appstore
+          - name: Bitnet
+            ssh-host: git-clone.bitnet.fun
+            ssh-url: git@git-clone.bitnet.fun:pooneyy/1Panel-Appstore.git
+            https-url: https://git.bitnet.fun/pooneyy/1Panel-Appstore
+          - name: Smartscf
+            ssh-host: repo.smartscf.cn
+            ssh-port: 8122
+            ssh-url: ssh://git@repo.smartscf.cn:8122/pooneyy/1Panel-Appstore.git
+            https-url: https://repo.smartscf.cn/pooneyy/1Panel-Appstore
 
     steps:
       - name: 检出完整仓库
@@ -51,14 +60,20 @@ jobs:
       - name: 添加目标主机的公钥
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan ${{ matrix.remote.ssh-host }} >> ~/.ssh/known_hosts
+          SSH_HOST=${{ matrix.remote.ssh-host }}
+          SSH_PORT=${{ matrix.remote.ssh-port }}
+          if [ -n "$SSH_PORT" ]; then
+            ssh-keyscan -p $SSH_PORT $SSH_HOST >> ~/.ssh/known_hosts
+          else
+            ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
+          fi
 
       - name: 配置本地仓库
         run: |
           git config --global --add safe.directory ${{ github.workspace }}
           git config user.name "github-actions[bot]"
           git config user.email ${{ secrets.SYNC_EMAIL }}
-          git remote add ${{ matrix.remote.ssh-host }} ${{ matrix.remote.ssh-url }}
+          git remote add ${{ matrix.remote.name }} ${{ matrix.remote.ssh-url }}
           git branch -r | grep -v '\->' | while read remote; do
             branch=${remote#origin/}
             git branch --track "$branch" "$remote" 2>/dev/null && echo "创建本地分支: $branch" || echo "分支 $branch 已存在"
@@ -70,9 +85,67 @@ jobs:
       - name: 强制推送所有分支和所有标签到 ${{ matrix.remote.name }}
         run: |
           echo "将所有分支推送到 ${{ matrix.remote.name }} (修剪模式)..."
-          git push --force --prune ${{ matrix.remote.ssh-host }} --all
+          git push --force --prune ${{ matrix.remote.name }} --all
           echo "将所有 tags 推送到 ${{ matrix.remote.name }}..."
-          git push --force ${{ matrix.remote.ssh-host }} --tags
+          git push --force ${{ matrix.remote.name }} --tags
+
+      - name: 记录成功摘要
+        if: success()
+        run: |
+          echo "✅ $(date +"%Y-%m-%d %H:%M:%S %:z") 成功同步到 **${{ matrix.remote.https-url }}**" >> $GITHUB_STEP_SUMMARY
+
+      - name: 记录失败摘要
+        if: failure()
+        run: |
+          echo "❌ $(date +"%Y-%m-%d %H:%M:%S %:z") 未能同步到 **${{ matrix.remote.https-url }}**" >> $GITHUB_STEP_SUMMARY
+
+  http-sync:
+    name: 同步到 ${{ matrix.remote.name }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        remote:
+          - name: piscesys
+            https-url: https://piscesys.com/pooneyy/1Panel-Appstore
+            pat-secret: SYNC_PAT_PISCESYS
+
+    steps:
+      - name: 检出完整仓库
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: 检测默认分支
+        run: |
+          echo "默认分支: ${{ github.event.repository.default_branch }}"
+          echo "当前分支 (pushed): ${{ github.ref_name }}"
+
+      - name: 配置本地仓库
+        run: |
+          git config --global --add safe.directory ${{ github.workspace }}
+          git config user.name "github-actions[bot]"
+          git config user.email ${{ secrets.SYNC_EMAIL }}
+          BASE_PATH="${{ matrix.remote.https-url }}"
+          BASE_PATH="${BASE_PATH#https://}"
+          if [[ ! "$BASE_PATH" =~ \.git$ ]]; then
+            BASE_PATH="${BASE_PATH}.git"
+          fi
+          git remote add ${{ matrix.remote.name }} "https://git:${{ secrets[matrix.remote.pat-secret] }}@${BASE_PATH}"
+          git branch -r | grep -v '\->' | while read remote; do
+            branch=${remote#origin/}
+            git branch --track "$branch" "$remote" 2>/dev/null && echo "创建本地分支: $branch" || echo "分支 $branch 已存在"
+          done
+
+      - name: 列出所有本地分支
+        run: git branch
+
+      - name: 强制推送所有分支和所有标签到 ${{ matrix.remote.name }}
+        run: |
+          echo "将所有分支推送到 ${{ matrix.remote.name }} (修剪模式)..."
+          git push --force --prune ${{ matrix.remote.name }} --all
+          echo "将所有 tags 推送到 ${{ matrix.remote.name }}..."
+          git push --force ${{ matrix.remote.name }} --tags
 
       - name: 记录成功摘要
         if: success()
