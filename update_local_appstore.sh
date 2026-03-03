@@ -17,6 +17,26 @@ check_command "rm"
 check_command "which"
 check_command "xargs"
 
+REPO_PREFIXS=(
+    'https://github.com'
+    'https://gh-proxy.com/https://github.com'
+    'https://edgeone.gh-proxy.com/https://github.com'
+    'https://gh-proxy.net/github.com'
+    'https://kkgithub.com'
+    'https://wget.la/https://github.com'
+    'https://ghfast.top/https://github.com'
+    'https://githubfast.com'
+    'https://ghproxy.net/https://github.com'
+)
+
+declare -A MIRROR_SITES=(
+    [codeberg]='https://codeberg.org/pooneyy/1Panel-Appstore.git'
+    [forgejo]='https://code.forgejo.org/pooneyy/1Panel-Appstore.git'
+    [gitea]='https://gitea.com/pooneyy/1Panel-Appstore.git'
+)
+
+REPO_SUFFIX="/pooneyy/1Panel-Appstore.git"
+
 USE_ZH_IS_NOT_CONFIGURED=false
 case "${USE_ZH:-}" in
     true|false)
@@ -72,6 +92,16 @@ if [[ "$USE_ZH" == "true" ]]; then
     MSG_NOTE_UNKNOWN="注意: 未知参数 %s 被忽略"
     MSG_WARN_APP_MISSING="警告: 应用 '%s' 在仓库中不存在"
     MSG_TRY_CLONE="正在尝试克隆 %s"
+    MSG_ERR_CLONE_SOURCE_REQUIRE="错误: --clone-source 参数需要指定源名称\n以下是可用的源:"
+    MSG_NOTE_SELECT_CLONE_SOURCE="--clone-source 之后跟随一个源名称, 例如 --clone-source codeberg\n若想选择多个源, 请使用多个 --clone-source 参数, 例如 --clone-source codeberg --clone-source forgejo"
+    MSG_ERR_UNKNOWN_SOURCE="错误: 未知的源 '%s'"
+    MSG_DRY_RUN_MODE="试运行模式已启用，不会执行任何实际更改"
+    MSG_DRY_RUN_URL_HEADER="将按以下顺序克隆 URL："
+    MSG_DRY_RUN_URL="将克隆 %s"
+    MSG_DRY_RUN_TARGET_DIR_EXISTS="目标目录 %s 存在"
+    MSG_DRY_RUN_TARGET_DIR_NOT_EXISTS="目标目录 %s 不存在"
+    MSG_DRY_RUN_COPY="将复制应用 '%s' 到 %s"
+    MSG_DRY_RUN_COPY_ALL="将复制所有应用到 %s"
 else
     MSG_INTRO=" ###########################################
  #                 Note                    #
@@ -114,10 +144,23 @@ else
     MSG_NOTE_UNKNOWN="Note: Unknown parameter %s ignored"
     MSG_WARN_APP_MISSING="WARNING: App '%s' does not exist in repository"
     MSG_TRY_CLONE="Trying to clone %s"
+    MSG_ERR_CLONE_SOURCE_REQUIRE="Error: --clone-source parameter requires a source name\nThe following are available sources:"
+    MSG_NOTE_SELECT_CLONE_SOURCE="--clone-source followed by a source name, e.g., --clone-source codeberg\nTo select multiple sources, use multiple --clone-source parameters, e.g., --clone-source codeberg --clone-source forgejo"
+    MSG_ERR_UNKNOWN_SOURCE="Error: Unknown source '%s'"
+    MSG_DRY_RUN_MODE="Dry run mode enabled, no changes will be made"
+    MSG_DRY_RUN_URL_HEADER="URLs to be cloned (in order):"
+    MSG_DRY_RUN_URL="Would clone %s"
+    MSG_DRY_RUN_TARGET_DIR_EXISTS="Target directory %s exists"
+    MSG_DRY_RUN_TARGET_DIR_NOT_EXISTS="Target directory %s does not exist"
+    MSG_DRY_RUN_COPY="Would copy app '%s' to %s"
+    MSG_DRY_RUN_COPY_ALL="Would copy all apps to %s"
 fi
 
 apps_to_copy=()
 custom_base_dir=""
+clone_sources=()
+dry_run=false
+
 while [[ $# -gt 0 ]]; do
     case $1 in
         --app)
@@ -146,6 +189,21 @@ while [[ $# -gt 0 ]]; do
                 exit 1
             fi
             ;;
+        --clone-source)
+            if [[ -n "$2" && "$2" != --* ]]; then
+                clone_sources+=("$2")
+                shift 2
+            else
+                echo -e "$MSG_ERR_CLONE_SOURCE_REQUIRE"
+                printf '%s\n' ${!MIRROR_SITES[@]} | paste -sd' ' - | awk -v w=4 '{ for (i=1; i<=NF; i++) { printf "%s%s", $i, (i%w==0 || i==NF) ? "\n" : " " } }'
+                echo -e "$MSG_NOTE_SELECT_CLONE_SOURCE"
+                exit 1
+            fi
+            ;;
+        --dry-run)
+            dry_run=true
+            shift
+            ;;
         *)
             printf "$MSG_NOTE_UNKNOWN\n" "$1"
             shift
@@ -165,45 +223,126 @@ else
     fi
 fi
 
-repo_prefixs=(
-    'https://github.com'
-    'https://gh-proxy.com/https://github.com'
-    'https://edgeone.gh-proxy.com/https://github.com'
-    'https://gh-proxy.net/github.com'
-    'https://kkgithub.com'
-    'https://wget.la/https://github.com'
-    'https://ghfast.top/https://github.com'
-    'https://githubfast.com'
-    'https://ghproxy.net/https://github.com'
-)
+if [ ${#clone_sources[@]} -eq 0 ]; then
+    clone_sources=("all")
+fi
 
-independent_repos=(
-    'https://codeberg.org/pooneyy/1Panel-Appstore.git'
-    'https://code.forgejo.org/pooneyy/1Panel-Appstore.git'
-    'https://gitea.com/pooneyy/1Panel-Appstore.git'
-)
+declare -A source_map
+unique_sources=()
+for src in "${clone_sources[@]}"; do
+    if [[ -z "${source_map[$src]}" ]]; then
+        source_map[$src]=1
+        unique_sources+=("$src")
+    fi
+done
 
-repo_suffix="/pooneyy/1Panel-Appstore.git"
+if [[ " ${unique_sources[@]} " =~ " all " ]]; then
+    final_sources=("all")
+else
+    has_mirror=false
+    for src in "${unique_sources[@]}"; do
+        if [[ "$src" == "mirror" ]]; then
+            has_mirror=true
+            break
+        fi
+    done
+
+    if $has_mirror; then
+        final_sources=()
+        for src in "${unique_sources[@]}"; do
+            if [[ "$src" == "mirror" ]] || [[ "$src" == "github" ]]; then
+                final_sources+=("$src")
+            else
+                if [[ -n "${MIRROR_SITES[$src]}" ]]; then
+                    :
+                else
+                    printf "$MSG_ERR_UNKNOWN_SOURCE\n" "$src"
+                    exit 1
+                fi
+            fi
+        done
+    else
+        final_sources=()
+        for src in "${unique_sources[@]}"; do
+            if [[ "$src" == "github" ]] || [[ "$src" == "mirror" ]]; then
+                final_sources+=("$src")
+            elif [[ -n "${MIRROR_SITES[$src]}" ]]; then
+                final_sources+=("$src")
+            else
+                printf "$MSG_ERR_UNKNOWN_SOURCE\n" "$src"
+                exit 1
+            fi
+        done
+    fi
+fi
+
 all_urls=()
 
-for prefix in "${repo_prefixs[@]}"; do
-    all_urls+=("${prefix}${repo_suffix}")
-done
+shuffle_array() {
+    local arr=("$@")
+    local len=${#arr[@]}
+    for ((i=0; i<len; i++)); do
+        j=$((RANDOM % (len - i) + i))
+        tmp=${arr[i]}
+        arr[i]=${arr[j]}
+        arr[j]=$tmp
+    done
+    echo "${arr[@]}"
+}
 
-indep_len=${#independent_repos[@]}
-indices=()
-for ((i=0; i<indep_len; i++)); do
-    indices[$i]=$i
-done
-for ((i=0; i<indep_len; i++)); do
-    j=$((RANDOM % (indep_len - i) + i))
-    tmp=${indices[i]}
-    indices[i]=${indices[j]}
-    indices[j]=$tmp
-done
-for idx in "${indices[@]}"; do
-    all_urls+=("${independent_repos[idx]}")
-done
+if [[ " ${final_sources[@]} " =~ " all " ]]; then
+    for prefix in "${REPO_PREFIXS[@]}"; do
+        all_urls+=("${prefix}${REPO_SUFFIX}")
+    done
+    all_indep_urls=("${MIRROR_SITES[@]}")
+    shuffled_indep=($(shuffle_array "${all_indep_urls[@]}"))
+    all_urls+=("${shuffled_indep[@]}")
+else
+    if [[ " ${final_sources[@]} " =~ " github " ]]; then
+        for prefix in "${REPO_PREFIXS[@]}"; do
+            all_urls+=("${prefix}${REPO_SUFFIX}")
+        done
+    fi
+
+    indep_urls_to_add=()
+    for src in "${final_sources[@]}"; do
+        if [[ "$src" == "mirror" ]]; then
+            indep_urls_to_add=("${MIRROR_SITES[@]}")
+            break
+        elif [[ -n "${MIRROR_SITES[$src]}" ]]; then
+            indep_urls_to_add+=("${MIRROR_SITES[$src]}")
+        fi
+    done
+
+    if [ ${#indep_urls_to_add[@]} -gt 0 ]; then
+        shuffled_indep=($(shuffle_array "${indep_urls_to_add[@]}"))
+        all_urls+=("${shuffled_indep[@]}")
+    fi
+fi
+
+if $dry_run; then
+    echo "$MSG_DRY_RUN_MODE"
+    echo ""
+    echo "$MSG_DRY_RUN_URL_HEADER"
+    for url in "${all_urls[@]}"; do
+        printf "$MSG_DRY_RUN_URL\n" "$url"
+    done
+    echo ""
+    target_dir="$BASE_DIR/1panel/resource/apps/local/"
+    if [ ${#apps_to_copy[@]} -gt 0 ]; then
+        for app in "${apps_to_copy[@]}"; do
+            printf "$MSG_DRY_RUN_COPY\n" "$app" "$target_dir"
+        done
+    else
+        printf "$MSG_DRY_RUN_COPY_ALL\n" "$target_dir"
+    fi
+    if [ -d "$target_dir" ]; then
+        printf "$MSG_DRY_RUN_TARGET_DIR_EXISTS\n" "$target_dir"
+    else
+        printf "$MSG_DRY_RUN_TARGET_DIR_NOT_EXISTS\n" "$target_dir"
+    fi
+    exit 0
+fi
 
 TEMP_DIR=$(mktemp -d)
 mkdir -p $BASE_DIR/1panel/resource/apps/local/
