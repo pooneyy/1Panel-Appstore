@@ -189,6 +189,5 @@ else
     else
         cp -rf $TEMP_DIR/apps/* $BASE_DIR/1panel/resource/apps/local/
     fi
-    
-    rm -rf $TEMP_DIR
 fi
+rm -rf $TEMP_DIR
