@@ -136,15 +136,6 @@ else
     fi
 fi
 
-TEMP_DIR=$(mktemp -d)
-
-cleanup_temp_dir() {
-    rm -rf $TEMP_DIR
-    printf "$MSG_CLEANUP_TEMP\n" "$TEMP_DIR"
-    exit 1
-}
-trap cleanup_temp_dir INT TERM
-
 repo_prefixs=(
     'https://github.com'
     'https://gh-proxy.com/https://github.com'
@@ -155,20 +146,54 @@ repo_prefixs=(
     'https://ghfast.top/https://github.com'
     'https://githubfast.com'
     'https://ghproxy.net/https://github.com'
-    'https://codeberg.org'
-    'https://code.forgejo.org'
-    'https://gitea.com'
+)
+
+independent_repos=(
+    'https://codeberg.org/pooneyy/1Panel-Appstore.git'
+    'https://code.forgejo.org/pooneyy/1Panel-Appstore.git'
+    'https://gitea.com/pooneyy/1Panel-Appstore.git'
 )
 
 repo_suffix="/pooneyy/1Panel-Appstore.git"
+all_urls=()
+
+for prefix in "${repo_prefixs[@]}"; do
+    all_urls+=("${prefix}${repo_suffix}")
+done
+
+indep_len=${#independent_repos[@]}
+indices=()
+for ((i=0; i<indep_len; i++)); do
+    indices[$i]=$i
+done
+for ((i=0; i<indep_len; i++)); do
+    j=$((RANDOM % (indep_len - i) + i))
+    tmp=${indices[i]}
+    indices[i]=${indices[j]}
+    indices[j]=$tmp
+done
+for idx in "${indices[@]}"; do
+    all_urls+=("${independent_repos[idx]}")
+done
+
+TEMP_DIR=$(mktemp -d)
+mkdir -p $BASE_DIR/1panel/resource/apps/local/
+
+cleanup_temp_dir() {
+    rm -rf $TEMP_DIR
+    printf "$MSG_CLEANUP_TEMP\n" "$TEMP_DIR"
+    exit 1
+}
+trap cleanup_temp_dir INT TERM
+
 counter=0
-for repo_prefix in "${repo_prefixs[@]}"; do
-    full_url="${repo_prefix}${repo_suffix}"
+for full_url in "${all_urls[@]}"; do
     printf "$MSG_TRY_CLONE\n" "$full_url"
     git clone --depth 1 -b localApps $full_url $TEMP_DIR > /dev/null 2>&1 && break
     counter=$((counter + 1))
 done
-if [ $counter -eq ${#repo_prefixs[@]} ]; then
+
+if [ $counter -eq ${#all_urls[@]} ]; then
     echo "$MSG_CLONE_FAIL"
 else
     printf "$MSG_CLONE_SUCCESS\n" "$full_url"
