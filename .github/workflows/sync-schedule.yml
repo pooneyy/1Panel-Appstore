@@ -3,6 +3,7 @@ name: 同步仓库到其它远程仓库(定时任务)
 on:
   schedule:
     - cron: 0 */1 * * *
+  workflow_dispatch:
 
 permissions:
   contents: read
