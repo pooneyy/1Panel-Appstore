@@ -1,6 +1,6 @@
 services:
   axonhub:
-    image: looplj/axonhub:v0.9.10
+    image: looplj/axonhub:v0.9.11
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
