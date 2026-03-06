@@ -33,6 +33,8 @@ declare -A MIRROR_SITES=(
     [codeberg]='https://codeberg.org/pooneyy/1Panel-Appstore.git'
     [forgejo]='https://code.forgejo.org/pooneyy/1Panel-Appstore.git'
     [gitea]='https://gitea.com/pooneyy/1Panel-Appstore.git'
+    [gitlab]='https://gitlab.com/pooneyy1/1panel-appstore.git'
+    [gitlink]='https://gitlink.org.cn/pooneyy/1Panel-Appstore.git'
 )
 
 REPO_SUFFIX="/pooneyy/1Panel-Appstore.git"
