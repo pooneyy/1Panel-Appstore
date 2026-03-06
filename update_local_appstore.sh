@@ -185,6 +185,8 @@ declare -A mirror_sites=(
     [codeberg]='https://codeberg.org/pooneyy/1Panel-Appstore.git'
     [forgejo]='https://code.forgejo.org/pooneyy/1Panel-Appstore.git'
     [gitea]='https://gitea.com/pooneyy/1Panel-Appstore.git'
+    [gitlab]='https://gitlab.com/pooneyy1/1panel-appstore.git'
+    [gitlink]='https://gitlink.org.cn/pooneyy/1Panel-Appstore.git'
 )
 mirror_names=("${!mirror_sites[@]}")
 
