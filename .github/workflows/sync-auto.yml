@@ -31,6 +31,10 @@ jobs:
             ssh-host: gitea.com
             ssh-url: git@gitea.com:pooneyy/1Panel-Appstore.git
             https-url: https://gitea.com/pooneyy/1Panel-Appstore
+          - name: Gitlab
+            ssh-host: gitlab.com
+            ssh-url: git@gitlab.com:pooneyy1/1panel-appstore.git
+            https-url: https://gitlab.com/pooneyy1/1panel-appstore
 
     steps:
       - name: 检出完整仓库
@@ -76,7 +80,8 @@ jobs:
       - name: 强制推送所有分支和所有标签到 ${{ matrix.remote.name }}
         run: |
           echo "将仓库同步到 ${{ matrix.remote.name }}..."
-          git push --mirror ${{ matrix.remote.name }}
+          git push --force --all --prune ${{ matrix.remote.name }}
+          git push --force --tags ${{ matrix.remote.name }}
 
       - name: 记录成功摘要
         if: success()
@@ -133,7 +138,8 @@ jobs:
       - name: 强制推送所有分支和所有标签到 ${{ matrix.remote.name }}
         run: |
           echo "将仓库同步到 ${{ matrix.remote.name }}..."
-          git push --mirror ${{ matrix.remote.name }}
+          git push --force --all --prune ${{ matrix.remote.name }}
+          git push --force --tags ${{ matrix.remote.name }}
 
       - name: 记录成功摘要
         if: success()
