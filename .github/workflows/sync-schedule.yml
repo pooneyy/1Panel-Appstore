@@ -66,7 +66,8 @@ jobs:
       - name: 强制推送所有分支和所有标签到 ${{ matrix.remote.name }}
         run: |
           echo "将仓库同步到 ${{ matrix.remote.name }}..."
-          git push --mirror ${{ matrix.remote.name }}
+          git push --force --all --prune ${{ matrix.remote.name }}
+          git push --force --tags ${{ matrix.remote.name }}
 
       - name: 记录成功摘要
         if: success()
@@ -122,7 +123,8 @@ jobs:
       - name: 强制推送所有分支和所有标签到 ${{ matrix.remote.name }}
         run: |
           echo "将仓库同步到 ${{ matrix.remote.name }}..."
-          git push --mirror ${{ matrix.remote.name }}
+          git push --force --all --prune ${{ matrix.remote.name }}
+          git push --force --tags ${{ matrix.remote.name }}
 
       - name: 记录成功摘要
         if: success()
