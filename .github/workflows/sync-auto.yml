@@ -31,6 +31,10 @@ jobs:
             ssh-host: gitea.com
             ssh-url: git@gitea.com:pooneyy/1Panel-Appstore.git
             https-url: https://gitea.com/pooneyy/1Panel-Appstore
+          - name: Gitlab
+            ssh-host: gitlab.com
+            ssh-url: git@gitlab.com:pooneyy1/1panel-appstore.git
+            https-url: https://gitlab.com/pooneyy1/1panel-appstore
 
     steps:
       - name: 检出完整仓库
