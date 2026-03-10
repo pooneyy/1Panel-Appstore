@@ -81,14 +81,15 @@ jobs:
 
   http-sync:
     name: 同步到 ${{ matrix.remote.name }}
+    if: false  # 禁用
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         remote:
-          - name: Touchacme
-            https-url: https://git.touchacme.cn/pooneyy/1Panel-Appstore.git
-            pat-secret: SYNC_PAT_TOUCHACME
+          - name: 
+            https-url: 
+            pat-secret: 
 
     steps:
       - name: 检出完整仓库
