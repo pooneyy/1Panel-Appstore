@@ -1,6 +1,6 @@
 services:
   open_notebook:
-    image: lfnovo/open_notebook:1.8.0-single
+    image: lfnovo/open_notebook:1.8.1-single
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
