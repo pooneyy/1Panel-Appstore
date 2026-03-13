@@ -35,7 +35,7 @@ jobs:
           echo "当前分支 (pushed): ${{ github.ref_name }}"
 
       - name: 配置 SSH agent 并加载私钥
-        uses: webfactory/ssh-agent@v0.9.1
+        uses: webfactory/ssh-agent@v0.10.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
