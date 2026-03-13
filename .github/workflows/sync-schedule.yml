@@ -11,16 +11,17 @@ permissions:
 jobs:
   ssh-sync:
     name: 同步到 ${{ matrix.remote.name }}
+    if: false
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         remote:
-          - name: Smartscf
-            ssh-host: repo.smartscf.cn
-            ssh-port: 8122
-            ssh-url: ssh://git@repo.smartscf.cn:8122/pooneyy/1Panel-Appstore.git
-            https-url: https://repo.smartscf.cn/pooneyy/1Panel-Appstore
+          - name: 
+            ssh-host: 
+            ssh-port: 
+            ssh-url: 
+            https-url: 
 
     steps:
       - name: 检出完整仓库
@@ -81,15 +82,15 @@ jobs:
 
   http-sync:
     name: 同步到 ${{ matrix.remote.name }}
-    if: false  # 禁用
+    if: true
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         remote:
-          - name: 
-            https-url: 
-            pat-secret: 
+          - name: Zczcfiles
+            https-url: https://gitea.zczcfiles.com.cn/pooneyy/1Panel-Appstore.git
+            pat-secret: SYNC_PAT_ZCZCFILES
 
     steps:
       - name: 检出完整仓库
