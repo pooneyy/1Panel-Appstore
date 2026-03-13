@@ -35,6 +35,10 @@ jobs:
             ssh-host: gitlab.com
             ssh-url: git@gitlab.com:pooneyy1/1panel-appstore.git
             https-url: https://gitlab.com/pooneyy1/1panel-appstore
+          - name: Gitlink
+            ssh-host: code.gitlink.org.cn
+            ssh-url: git@code.gitlink.org.cn:pooneyy/1Panel-Appstore.git
+            https-url: https://gitlink.org.cn/pooneyy/1Panel-Appstore
 
     steps:
       - name: 检出完整仓库
