@@ -175,7 +175,6 @@ repo_prefixs=(
     'https://gh-proxy.com/https://github.com'
     'https://edgeone.gh-proxy.com/https://github.com'
     'https://gh-proxy.net/github.com'
-    'https://kkgithub.com'
     'https://wget.la/https://github.com'
     'https://ghfast.top/https://github.com'
     'https://githubfast.com'
