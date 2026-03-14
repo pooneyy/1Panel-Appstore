@@ -187,6 +187,15 @@ declare -A mirror_sites=(
     [gitea]='https://gitea.com/pooneyy/1Panel-Appstore.git'
     [gitlab]='https://gitlab.com/pooneyy1/1panel-appstore.git'
     [gitlink]='https://gitlink.org.cn/pooneyy/1Panel-Appstore.git'
+    [nixnet]='https://git.nixnet.services/pooneyy/1Panel-Appstore.git'
+    [bitnet]='https://git.bitnet.fun/pooneyy/1Panel-Appstore.git'
+    [zhiyue]='https://git.zhiyue.cloud/pooneyy/1Panel-Appstore.git'
+    [successkaoyan]='https://git.successkaoyan.com/pooneyy/1Panel-Appstore.git'
+    [wisder]='https://git.wisder.net/pooneyy/1Panel-Appstore.git'
+    [troyrc]='https://git.tech.troyrc.com/pooneyy/1Panel-Appstore.git'
+    [daoyoucloud]='https://git.daoyoucloud.com/pooneyy/1Panel-Appstore.git'
+    [bitahub]='https://code.bitahub.com/pooneyy/1Panel-Appstore.git'
+    [genowisdom]='https://git.genowisdom.cn/pooneyy/1Panel-Appstore.git'
 )
 mirror_names=("${!mirror_sites[@]}")
 
