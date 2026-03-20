@@ -631,7 +631,7 @@ services:
         - redis-cli
         - ping
   sandbox:
-    image: langgenius/dify-sandbox:0.2.12
+    image: langgenius/dify-sandbox:0.2.13
     env_file:
       - dify.env
     restart: always
