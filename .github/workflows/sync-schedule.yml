@@ -82,15 +82,15 @@ jobs:
 
   http-sync:
     name: 同步到 ${{ matrix.remote.name }}
-    if: true
+    if: false
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         remote:
-          - name: Zczcfiles
-            https-url: https://gitea.zczcfiles.com.cn/pooneyy/1Panel-Appstore.git
-            pat-secret: SYNC_PAT_ZCZCFILES
+          - name: 
+            https-url: 
+            pat-secret: SYNC_PAT_
 
     steps:
       - name: 检出完整仓库
