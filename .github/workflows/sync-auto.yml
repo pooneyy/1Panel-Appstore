@@ -35,10 +35,10 @@ jobs:
             ssh-host: gitlab.com
             ssh-url: git@gitlab.com:pooneyy1/1panel-appstore.git
             https-url: https://gitlab.com/pooneyy1/1panel-appstore
-          - name: Gitlink
-            ssh-host: code.gitlink.org.cn
-            ssh-url: git@code.gitlink.org.cn:pooneyy/1Panel-Appstore.git
-            https-url: https://gitlink.org.cn/pooneyy/1Panel-Appstore
+          # - name: Gitlink
+          #   ssh-host: code.gitlink.org.cn
+          #   ssh-url: git@code.gitlink.org.cn:pooneyy/1Panel-Appstore.git
+          #   https-url: https://gitlink.org.cn/pooneyy/1Panel-Appstore
 
     steps:
       - name: 检出完整仓库
@@ -99,15 +99,15 @@ jobs:
 
   http-sync:
     name: 同步到 ${{ matrix.remote.name }}
-    if: false  # 禁用
+    # if: false
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         remote:
-          - name: 
-            https-url: 
-            pat-secret: 
+          - name: Gitlink
+            https-url: https://gitlink.org.cn/pooneyy/1Panel-Appstore
+            pat-secret: SYNC_PAT_GITLINK
 
     steps:
       - name: 检出完整仓库
