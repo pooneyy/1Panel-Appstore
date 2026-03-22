@@ -1,0 +1,117 @@
+additionalProperties:
+  formFields:
+    - default: Only use the following configuration items to create the configuration file if it does not exist. For existing configuration files, please edit them manually and then restart the application.
+      envKey: NOTE
+      labelZh: 注意
+      labelEn: Note
+      label:
+        zh: 注意
+        zh-Hant: 注意
+        en: Note
+        ja: 注意
+        ko: 주의
+        ms: Perhatian
+        pt-br: Atenção
+        ru: Внимание
+        tr: Not
+      description:
+        zh: 仅在配置文件不存在时使用以下配置项创建配置文件，已经存在的配置文件，请手动编辑，然后重启应用。
+        zh-Hant: 僅在設定檔不存在時使用以下設定項建立設定檔，已經存在的設定檔，請手動編輯，然後重新啟動應用程式。
+        en: Only use the following configuration items to create the configuration file if it does not exist. For existing configuration files, please edit them manually and then restart the application.
+        ja: 設定ファイルが存在しない場合のみ、以下の設定項目を使用して設定ファイルを作成してください。既存の設定ファイルは手動で編集し、その後アプリケーションを再起動してください。
+        ko: 설정 파일이 없는 경우에만 다음 설정 항목을 사용하여 설정 파일을 생성하십시오. 기존 설정 파일은 수동으로 편집한 후 애플리케이션을 다시 시작하십시오.
+        ms: Hanya gunakan item konfigurasi berikut untuk mencipta fail konfigurasi jika ia tidak wujud. Untuk fail konfigurasi yang sedia ada, sila edit secara manual dan kemudian mulakan semula aplikasi.
+        pt-br: Use os seguintes itens de configuração apenas para criar o arquivo de configuração se ele não existir. Para arquivos de configuração existentes, edite-os manualmente e, em seguida, reinicie o aplicativo.
+        ru: Используйте следующие параметры конфигурации для создания файла конфигурации, только если он не существует. Для существующих файлов конфигурации отредактируйте их вручную, а затем перезапустите приложение.
+        tr: Yalnızca yapılandırma dosyası mevcut değilse, aşağıdaki yapılandırma öğelerini kullanarak dosyayı oluşturun. Mevcut yapılandırma dosyaları için lütfen manuel olarak düzenleyin ve ardından uygulamayı yeniden başlatın.
+      required: false
+      type: text
+      disabled: true
+    - default: 3128
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: 代理服务器连接端口
+      labelEn: Proxy Server Connection Port
+      label:
+        zh: 代理服务器连接端口
+        zh-Hant: 代理伺服器連線埠
+        en: Proxy Server Connection Port
+        ja: プロキシサーバー接続ポート
+        ko: 프록시 서버 연결 포트
+        ms: Port Sambungan Pelayan Proksi
+        pt-br: Porta de Conexão do Servidor Proxy
+        ru: Порт подключения прокси-сервера
+        tr: Proxy Sunucusu Bağlantı Noktası
+      description:
+        zh: "设置代理服务器的连接端口，有效范围: 1-65535"
+        zh-Hant: "設定代理伺服器的連接埠，有效範圍: 1-65535"
+        en: "Set the connection port for the proxy server. Valid range: 1-65535"
+        ja: "プロキシサーバーの接続ポートを設定します。有効範囲: 1-65535"
+        ko: "프록시 서버의 연결 포트를 설정합니다. 유효 범위: 1-65535"
+        ms: "Tetapkan port sambungan untuk pelayan proksi. Julat sah: 1-65535"
+        pt-br: "Defina a porta de conexão para o servidor proxy. Intervalo válido: 1-65535"
+        ru: "Установите порт подключения для прокси-сервера. Допустимый диапазон: 1-65535"
+        tr: "Proxy sunucusu için bağlantı noktasını ayarlayın. Geçerli aralık: 1-65535"
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: squid_user
+      envKey: SQUID_AUTH_USER
+      labelZh: 代理服务器用户名
+      labelEn: Proxy Server Username
+      label:
+        zh: 代理服务器用户名
+        zh-Hant: 代理伺服器使用者名稱
+        en: Proxy Server Username
+        ja: プロキシサーバーユーザー名
+        ko: 프록시 서버 사용자 이름
+        ms: Nama Pengguna Pelayan Proksi
+        pt-br: Nome de Usuário do Servidor Proxy
+        ru: Имя пользователя прокси-сервера
+        tr: Proxy Sunucusu Kullanıcı Adı
+      required: false
+      type: text
+      edit: true
+      rule: paramCommon
+      random: true
+    - default: squid_pass
+      envKey: SQUID_AUTH_PASS
+      labelZh: 代理服务器密码
+      labelEn: Proxy Server Password
+      label:
+        zh: 代理服务器密码
+        zh-Hant: 代理伺服器密碼
+        en: Proxy Server Password
+        ja: プロキシサーバーパスワード
+        ko: 프록시 서버 비밀번호
+        ms: Kata Laluan Pelayan Proksi
+        pt-br: Senha do Servidor Proxy
+        ru: Пароль прокси-сервера
+        tr: Proxy Sunucusu Parolası
+      required: false
+      type: password
+      edit: true
+      rule: paramComplexity
+      random: true
+    - default: "true"
+      envKey: SQUID_ONLY_HTTPS
+      labelZh: 仅使用 HTTP/HTTPS
+      labelEn: Use HTTP/HTTPS only
+      label:
+        zh: 仅使用 HTTP/HTTPS
+        zh-Hant: 僅使用 HTTP/HTTPS
+        en: Use HTTP/HTTPS only
+        ja: HTTP/HTTPS のみを使用
+        ko: HTTP/HTTPS만 사용
+        ms: Gunakan HTTP/HTTPS sahaja
+        pt-br: Usar apenas HTTP/HTTPS
+        ru: Использовать только HTTP/HTTPS
+        tr: Yalnızca HTTP/HTTPS kullan
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: Only HTTPS
+          value: "true"
+        - label: Only HTTP
+          value: "false"

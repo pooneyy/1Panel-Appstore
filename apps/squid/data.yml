@@ -1,0 +1,35 @@
+name: Squid
+tags:
+  - 实用工具
+title: 开源的 Web 代理服务器
+description: 开源的 Web 代理服务器
+additionalProperties:
+  key: squid
+  name: Squid
+  tags:
+    - Tool
+  shortDescZh: 开源的 Web 代理服务器
+  shortDescEn: Open-source Web Proxy Server
+  description:
+    en: Open-source Web Proxy Server
+    zh: 开源的 Web 代理服务器
+    zh-Hant: 開源的 Web 代理伺服器
+    ja: オープンソースのWebプロキシサーバー
+    ms: Pelayan Proksi Web Sumber Terbuka
+    pt-br: Servidor Proxy Web de Código Aberto
+    ru: Веб-прокси-сервер с открытым исходным кодом
+    ko: 오픈소스 웹 프록시 서버
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  batchInstallSupport: true
+  website: https://www.squid-cache.org/
+  github: https://github.com/squid-cache/squid
+  document: https://www.squid-cache.org/Doc
+  architectures:
+    - amd64
+    - arm64
+    - arm/v7
+    - ppc64le
+    - riscv64
+    - s390x

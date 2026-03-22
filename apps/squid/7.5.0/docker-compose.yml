@@ -1,0 +1,22 @@
+services:
+  squid:
+    image: ghcr.io/pooneyy/squid:7.5
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3128
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./conf:/etc/squid
+      - ./cert:/etc/squid-ssl
+      - ./logs:/var/log/squid
+    environment:
+      SQUID_AUTH_USER: ${SQUID_AUTH_USER}
+      SQUID_AUTH_PASS: ${SQUID_AUTH_PASS}
+      SQUID_ONLY_HTTPS: ${SQUID_ONLY_HTTPS}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true
