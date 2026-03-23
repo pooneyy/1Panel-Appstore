@@ -20,7 +20,7 @@ jobs:
           ref: ${{ github.ref }}
 
       - name: Configure SSH
-        uses: photostructure/git-ssh-signing-action@v1
+        uses: photostructure/git-ssh-signing-action@v2
         with:
           ssh-signing-key: ${{ secrets.SSH_PRIVATE_KEY }}
           git-user-name: ${{ github.actor }}
