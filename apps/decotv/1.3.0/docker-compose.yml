@@ -1,6 +1,6 @@
 services:
   decotv:
-    image: ghcr.io/decohererk/decotv:v1.3.0
+    image: ghcr.io/decohererk/decotv:v1.4.0
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
