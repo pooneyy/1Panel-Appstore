@@ -18,9 +18,7 @@
 
 ***
 
-### New This Week
-
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/squid"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/squid/logo.png" alt="Squid" width="64" height="64"><br><strong>Squid</strong></a><br>Open-source Web Proxy Server</td></tr></table>
+<!-- ### New This Week -->
 
 <!-- ### Coming Soon -->
 
