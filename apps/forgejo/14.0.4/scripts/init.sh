@@ -3,7 +3,7 @@
 [ -f ./.env ] && source ./.env
 
 # renovate
-IMAGE=codeberg.org/forgejo/forgejo:14.0.3
+IMAGE=codeberg.org/forgejo/forgejo:14.0.4
 
 if [ "${ROOTLESS}" = "true" ]; then
     IMAGE="${IMAGE}-rootless"
