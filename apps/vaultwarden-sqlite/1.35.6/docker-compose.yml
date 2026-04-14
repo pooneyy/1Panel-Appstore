@@ -1,6 +1,6 @@
 services:
   vaultwarden:
-    image: vaultwarden/server:1.35.6
+    image: vaultwarden/server:1.35.7
     container_name: ${CONTAINER_NAME}
     restart: always
     environment:
