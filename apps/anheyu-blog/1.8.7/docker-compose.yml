@@ -1,6 +1,6 @@
 services:
   anheyu:
-    image: anheyu/anheyu-backend:1.8.7
+    image: anheyu/anheyu-backend:1.8.8
     container_name: ${CONTAINER_NAME}
     restart: always
     labels:
