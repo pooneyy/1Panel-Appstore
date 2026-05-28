@@ -1,6 +1,5 @@
 services:
-  chrome:
-    image: "kasmweb/chrome:1.18.0"
+  telegram:
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -8,17 +7,18 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTPS}:6901"
     volumes:
-      - "chrome_data:/home/kasm-user"
+      - "telegram_data:/home/kasm-user"
     environment:
       - VNC_PW=${HTTP_PWD}
     shm_size: ${MEM_USE}
-    labels:
+    tty: true
+    image: kasmweb/telegram:1.19.0
+    labels:  
       createdBy: "Apps"
 
 volumes:
-  chrome_data:
-    name: chrome_data
+  telegram_data:
 
-networks:
-  1panel-network:
+networks:  
+  1panel-network:  
     external: true
