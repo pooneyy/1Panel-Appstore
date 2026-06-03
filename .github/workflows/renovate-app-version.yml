@@ -42,7 +42,7 @@ jobs:
       statuses: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           ref: ${{ github.head_ref }}
@@ -120,7 +120,7 @@ jobs:
                 if git diff --cached --quiet; then
                   echo "⚠️ 没有检测到文件变更，跳过提交"
                 else
-                  git commit --quiet -m "🔧 chore($app_name): update app version from $old_version to $new_version" --no-verify
+                  git commit --quiet -m "chore($app_name): update app version from $old_version to $new_version" --no-verify
                   echo $(git show -s --format=%H) >> /tmp/commit-shas.txt
                   commits_counter=$((commits_counter + 1))
                   echo "第 $commits_counter 个提交"
