@@ -1,6 +1,6 @@
 services:
   actions-runner:
-    image: ghcr.io/pooneyy/actions-runner:2.335.0
+    image: ghcr.io/pooneyy/actions-runner:2.335.1
     container_name: ${CONTAINER_NAME}
     restart: always
     privileged: ${PRIVILEGED}
