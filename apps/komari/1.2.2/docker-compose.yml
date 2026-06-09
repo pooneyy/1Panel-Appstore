@@ -1,6 +1,6 @@
 services:
   komari:
-    image: ghcr.io/komari-monitor/komari:1.2.1
+    image: ghcr.io/komari-monitor/komari:1.2.2
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
