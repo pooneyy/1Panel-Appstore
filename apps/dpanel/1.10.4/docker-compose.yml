@@ -4,7 +4,7 @@ networks:
 
 services:
   dpanel:
-    image: dpanel/dpanel:1.10.4
+    image: dpanel/dpanel:1.10.5
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
