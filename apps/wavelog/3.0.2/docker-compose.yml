@@ -1,7 +1,7 @@
 services:
   wavelog:
     container_name: ${CONTAINER_NAME}
-    image: ghcr.io/pooneyy/wavelog:3.0.2
+    image: ghcr.io/pooneyy/wavelog:3.1.0
     environment:
       DB_HOST: ${PANEL_DB_HOST}:${PANEL_DB_PORT}
       DATABASE: ${PANEL_DB_NAME}
