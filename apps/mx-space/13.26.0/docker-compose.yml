@@ -4,7 +4,7 @@ networks:
 
 services:
   mx-server:
-    image: innei/mx-server:13.26.0
+    image: innei/mx-server:13.27.0
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
