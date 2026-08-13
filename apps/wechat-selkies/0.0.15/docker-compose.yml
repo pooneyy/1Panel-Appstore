@@ -1,6 +1,6 @@
 services:
   wechat-selkies:
-    image: nickrunning/wechat-selkies:0.0.15
+    image: nickrunning/wechat-selkies:0.0.16
     container_name: wechat-selkies
     volumes:
       - ${CONFIG_PATH}:/config
