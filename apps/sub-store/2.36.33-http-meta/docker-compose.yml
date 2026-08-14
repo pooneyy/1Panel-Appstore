@@ -1,6 +1,6 @@
 services:
   sub-store:
-    image: xream/sub-store:2.36.33-http-meta
+    image: xream/sub-store:2.36.37-http-meta
     pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
