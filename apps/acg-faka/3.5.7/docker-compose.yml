@@ -4,7 +4,7 @@ networks:
 
 services:
   acg-faka:
-    image: ghcr.io/pooneyy/acg-faka:3.5.7
+    image: ghcr.io/pooneyy/acg-faka:3.5.8
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
