@@ -4,7 +4,7 @@ networks:
 
 services:
   maccms10:
-    image: ghcr.io/pooneyy/maccms10:2026.1000.4055
+    image: ghcr.io/pooneyy/maccms10:2026.1000.4057
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
