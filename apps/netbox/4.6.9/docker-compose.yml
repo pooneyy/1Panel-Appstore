@@ -1,7 +1,7 @@
 services:
   netbox:
     container_name: ${CONTAINER_NAME}
-    image: linuxserver/netbox:4.6.8
+    image: linuxserver/netbox:4.6.9
     restart: always
     networks:
       - 1panel-network
