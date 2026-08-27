@@ -1,7 +1,14 @@
 services:
   nps:
-    image: yisier1/nps:v0.26.37
+    image: yisier1/nps:v0.26.38
     container_name: ${CONTAINER_NAME}
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
+      - ${NPS_BRIDGE_PORT}:${NPS_BRIDGE_PORT}
+      - ${NPS_BRIDGE_TLS_PORT}:${NPS_BRIDGE_TLS_PORT}
+      - ${NPS_HTTP_PROXY_PORT}:${NPS_HTTP_PROXY_PORT}
+      - ${NPS_HTTPS_PROXY_PORT}:${NPS_HTTPS_PROXY_PORT}
+      - ${NPS_RANDOM_PORT_START}-${NPS_RANDOM_PORT_END}:${NPS_RANDOM_PORT_START}-${NPS_RANDOM_PORT_END}
     restart: always
     volumes:
       - ./conf:/conf
@@ -20,6 +27,11 @@ services:
       NPS_HTTP_PROXY_PORT: ${NPS_HTTP_PROXY_PORT}
       NPS_HTTPS_PROXY_PORT: ${NPS_HTTPS_PROXY_PORT}
       TLS_ENABLE_SWITCH: ${TLS_ENABLE_SWITCH}
-    network_mode: "host"
+    networks:
+      - 1panel-network
     labels:
       createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
