@@ -1,6 +1,6 @@
 services:
   php84:
-    image: ghcr.io/pooneyy/php:8.4.24-fpm-bookworm-php-unofficial
+    image: ghcr.io/pooneyy/php:8.4.25-fpm-bookworm-php-unofficial
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
