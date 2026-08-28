@@ -17,7 +17,7 @@ services:
       - TZ=Asia/Shanghai
       - WEBDAV_BACKEND=http://sp-webdav
   sp-webdav:
-    image: hacdias/webdav:v5.14
+    image: hacdias/webdav:v5.15
     restart: always
     networks:
       - 1panel-network
