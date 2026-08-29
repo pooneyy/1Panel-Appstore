@@ -1,7 +1,7 @@
 services:
   nzbget:
     container_name: ${CONTAINER_NAME}
-    image: nzbgetcom/nzbget:v26.2
+    image: nzbgetcom/nzbget:v26.3
     restart: always
     networks:
       - 1panel-network
