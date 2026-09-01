@@ -7,7 +7,7 @@ x-authentik-envs: &a1
   AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY}
 services:
   server:
-    image: ghcr.io/goauthentik/server:2026.8.0
+    image: ghcr.io/goauthentik/server:2026.8.1
     command: server
     environment: *a1
     ports:
@@ -22,7 +22,7 @@ services:
     labels:
       createdBy: Apps
   worker:
-    image: ghcr.io/goauthentik/server:2026.8.0
+    image: ghcr.io/goauthentik/server:2026.8.1
     command: worker
     user: root
     environment: *a1
