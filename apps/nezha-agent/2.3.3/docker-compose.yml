@@ -1,6 +1,6 @@
 services:
   nezha-agent:
-    image: kanggle/nezha-agent:v2.3.3
+    image: kanggle/nezha-agent:v2.3.4
     container_name: ${CONTAINER_NAME}
     restart: always
     environment:
