@@ -125,7 +125,7 @@ services:
       - 1panel-network
 
   webmail-billionmail:
-    image: roundcube/roundcubemail:1.7.3-fpm-alpine
+    image: roundcube/roundcubemail:1.7.4-fpm-alpine
     container_name: ${CONTAINER_NAME}-roundcube
     hostname: billionmail-roundcube
     depends_on:
