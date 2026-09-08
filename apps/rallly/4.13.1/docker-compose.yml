@@ -1,6 +1,6 @@
 services:
   rallly:
-    image: lukevella/rallly:4.13.1
+    image: lukevella/rallly:4.14.0
     restart: always
     ports:
       - ${PANEL_APP_PORT_HTTP}:3000
