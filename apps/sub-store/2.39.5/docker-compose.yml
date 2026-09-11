@@ -1,6 +1,6 @@
 services:
   sub-store:
-    image: xream/sub-store:2.39.5
+    image: xream/sub-store:2.39.6
     pull_policy: always
     container_name: ${CONTAINER_NAME}
     restart: always
