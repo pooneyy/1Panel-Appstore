@@ -11,7 +11,7 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - PORT=${PANEL_APP_PORT_HTTP}
-    image: lswl/vertex:2026.05.27
+    image: lswl/vertex:2026.09.11
     labels:  
       createdBy: "Apps"
 
