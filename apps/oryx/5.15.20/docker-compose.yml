@@ -1,7 +1,7 @@
 version: "3"  
 services:  
   halo:  
-    image: ossrs/oryx:5.15.20
+    image: ossrs/oryx:7.15.26
     container_name: ${CONTAINER_NAME}
     restart: always  
     networks:  
