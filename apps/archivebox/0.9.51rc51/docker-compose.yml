@@ -4,7 +4,9 @@ networks:
 
 services:
   archivebox:
-    image: archivebox/archivebox:0.7.4
+    image: archivebox/archivebox:0.9.51
+    depends_on:
+      - archivebox-init
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
@@ -13,6 +15,29 @@ services:
       - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:8000
+    volumes:
+      - ${ARCHIVEBOX_ROOT_PATH}/data:/data
+    environment:
+      - TZ=Asia/Shanghai
+      - ADMIN_USERNAME=${ADMIN_USERNAME}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - ALLOWED_HOSTS=*
+      - CSRF_TRUSTED_ORIGINS=http://localhost:8000
+      - PUBLIC_INDEX=${}
+      - PUBLIC_SNAPSHOTS=${}
+      - PUBLIC_ADD_VIEW=${}
+      - SEARCH_BACKEND_ENGINE=sonic
+      - SEARCH_BACKEND_HOST_NAME=archivebox-sonic
+      - SEARCH_BACKEND_PASSWORD=${ADMIN_PASSWORD:-}
+
+  archivebox-init:
+    image: archivebox/archivebox:0.9.51
+    container_name: init-${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+    command: archivebox init
     volumes:
       - ${ARCHIVEBOX_ROOT_PATH}/data:/data
     environment:
