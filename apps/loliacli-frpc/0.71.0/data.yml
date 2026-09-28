@@ -1,0 +1,36 @@
+additionalProperties:
+  formFields:
+    - default: ""
+      envKey: TUNNER_ID
+      labelZh: 隧道 ID
+      labelEn: Tunnel ID
+      label:
+        zh: 隧道 ID
+        zh-Hant: 隧道 ID
+        en: Tunnel ID
+        ja: トンネルID
+        ko: 터널 ID
+        ms: ID Terowong
+        pt-br: ID do Túnel
+        ru: ID туннеля
+        tr: Tünel Kimliği
+      required: true
+      type: text
+      edit: true
+    - default: ""
+      envKey: NODE_TOKEN
+      labelZh: 节点 Token
+      labelEn: Node Token
+      label:
+        zh: 节点 Token
+        zh-Hant: 節點 Token
+        en: Node Token
+        ja: ノードトークン
+        ko: 노드 토큰
+        ms: Token Nod
+        pt-br: Token do Nó
+        ru: Токен узла
+        tr: Düğüm Tokeni
+      required: true
+      type: text
+      edit: true

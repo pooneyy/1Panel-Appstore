@@ -1,0 +1,31 @@
+name: Lolia Frp Client
+tags:
+  - 实用工具
+title: 快速，简单，优雅地一键启动 LoliaFRP
+description: 快速，简单，优雅地一键启动 LoliaFRP
+additionalProperties:
+  key: loliacli-frpc
+  name: Lolia Frp Client
+  tags:
+    - Tool
+  shortDescZh: 快速，简单，优雅地一键启动 LoliaFRP
+  shortDescEn: Quickly, simply, and elegantly launch LoliaFRP with one click
+  description:
+    en: Quickly, simply, and elegantly launch LoliaFRP with one click
+    zh: 快速，简单，优雅地一键启动 LoliaFRP
+    zh-Hant: 快速、簡單、優雅地一鍵啟動 LoliaFRP
+    ja: 迅速、シンプル、エレガントにワンクリックで LoliaFRP を起動
+    ms: Lancarkan LoliaFRP dengan pantas, mudah dan elegan dengan satu klik
+    pt-br: Inicie o LoliaFRP de forma rápida, simples e elegante com um clique
+    ru: Быстро, просто и элегантно запускайте LoliaFRP одним кликом
+    ko: 빠르고 간단하며 우아하게 원클릭으로 LoliaFRP를 시작하세요
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  website: https://lolia.link/
+  github: https://github.com/Lolia-FRP/lolia-frp
+  document: https://docs.lolia.link/
+  architectures:
+    - amd64
+    - arm64
+    - arm/v7
