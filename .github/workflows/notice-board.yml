@@ -29,7 +29,9 @@ jobs:
       - uses: actions/setup-python@main
         with:
           python-version: 3.x
-          pip-install: PyYAML requests
+
+      - name: Install python dependencies
+        run: python3 -m pip install PyYAML requests
 
       - name: Run script
         run: |
