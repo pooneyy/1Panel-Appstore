@@ -14,6 +14,16 @@ additionalProperties:
         pt-br: ID do Túnel
         ru: ID туннеля
         tr: Tünel Kimliği
+      description:
+        zh: 同一节点下的多个隧道 id 之间使用半角逗号分隔
+        zh-Hant: 同一節點下的多個隧道 ID 之間使用半角逗號分隔
+        en: Multiple tunnel IDs under the same node should be separated by half-width commas
+        ja: 同じノード下の複数のトンネルIDは半角カンマで区切ってください
+        ko: 동일 노드 아래의 여러 터널 ID는 반각 쉼표로 구분하세요
+        ms: Pelbagai ID terowong di bawah nod yang sama hendaklah dipisahkan dengan koma separuh lebar
+        pt-br: Vários IDs de túnel no mesmo nó devem ser separados por vírgulas de meia largura
+        ru: Несколько ID туннелей под одним узлом следует разделять запятыми полуширины
+        tr: Aynı düğüm altındaki birden çok tünel kimliği yarım genişlikte virgülle ayrılmalıdır
       required: true
       type: text
       edit: true
