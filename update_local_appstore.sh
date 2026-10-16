@@ -33,6 +33,7 @@ declare -A MIRROR_SITES=(
     [gitea]='https://gitea.com/pooneyy/1Panel-Appstore.git'
     [gitlab]='https://gitlab.com/pooneyy1/1panel-appstore.git'
     [gitlink]='https://gitlink.org.cn/pooneyy/1Panel-Appstore.git'
+    [rocketgit]='https://rocketgit.com/user/poney/1Panel-Appstore'
     [sourceforge]='https://git.code.sf.net/p/onepanel-appstore/code'
     [nixnet]='https://git.nixnet.services/pooneyy/1Panel-Appstore.git'
     [bitahub]='https://code.bitahub.com/pooneyy/1Panel-Appstore.git'
