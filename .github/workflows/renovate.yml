@@ -21,4 +21,4 @@ jobs:
           configurationFile: renovate.json
           token: ${{ github.token }}
         env:
-          RENOVATE_REPOSITORIES: '["pooneyy/1Panel-Appstore"]'
+          RENOVATE_REPOSITORIES: '["${{ github.repository }}"]'
