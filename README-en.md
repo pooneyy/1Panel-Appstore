@@ -18,9 +18,7 @@
 
 ***
 
-### New This Week
-
-<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/loliacli-frpc"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/loliacli-frpc/logo.png" alt="Lolia Frp Client" width="64" height="64"><br><strong>Lolia Frp Client</strong></a><br>Quickly, simply, and elegantly launch LoliaFRP with one click</td></tr></table>
+<!-- ### New This Week -->
 
 <!-- ### Coming Soon -->
 
