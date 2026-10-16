@@ -39,6 +39,10 @@ jobs:
             ssh-host: git.code.sf.net
             ssh-url: ssh://pooneyy@git.code.sf.net/p/onepanel-appstore/code
             https-url: https://sourceforge.net/p/onepanel-appstore
+          - name: RocketGit
+            ssh-host: ssh.rocketgit.com
+            ssh-url: ssh://rocketgit@ssh.rocketgit.com/user/poney/1Panel-Appstore
+            https-url: https://rocketgit.com/user/poney/1Panel-Appstore
           # - name: Gitlink
           #   ssh-host: code.gitlink.org.cn
           #   ssh-url: git@code.gitlink.org.cn:pooneyy/1Panel-Appstore.git
