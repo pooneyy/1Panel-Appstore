@@ -1,88 +1,57 @@
 additionalProperties:
   formFields:
-    - default: "./archivebox_data"
-      edit: true
-      envKey: ARCHIVEBOX_ROOT_PATH
-      labelZh: 数据持久化路径
-      labelEn: Data persistence path
-      label:
-        en: Data persistence path
-        zh: 数据持久化路径
-      required: true
-      type: text
-    - default: 8000
+    - default: 5797
       edit: true
       envKey: PANEL_APP_PORT_HTTP
-      labelZh: WebUI 端口
-      labelEn: WebUI port
-      label:
-        en: WebUI port
-        zh: WebUI 端口
       required: true
       rule: paramPort
       type: number
-    - default: "archivebox"
+      label:
+        en: WebUI Port
+        es-es: Puerto web
+        fa: 'پورت WebUI'
+        zh: WebUI 端口
+        ja: WebUI ポート
+        ms: Port WebUI
+        pt-br: Porta do WebUI
+        ru: Порт WebUI
+        ko: WebUI 포트
+        zh-Hant: WebUI 連接埠
+        tr: WebUI portu
+    - default: admin
       edit: true
       envKey: ADMIN_USERNAME
-      labelZh: 管理员用户名
-      labelEn: Admin Username
-      label:
-        en: Admin Username
-        zh: 管理员用户名
       required: true
+      rule: paramCommon
       type: text
-    - default: "archivebox"
+      label:
+        en: Admin username
+        es-es: Nombre de usuario del administrador
+        fa: 'نام کاربری مدیر'
+        zh: 管理员用户名
+        ja: 管理者ユーザー名
+        ms: Nama pengguna pentadbir
+        pt-br: Nome de usuário do administrador
+        ru: Имя пользователя администратора
+        ko: 관리자 사용자 이름
+        zh-Hant: 管理員使用者名稱
+        tr: Yönetici Kullanıcı Adı
+    - default: admin
       edit: true
       envKey: ADMIN_PASSWORD
-      labelZh: 管理员密码
-      labelEn: Admin Password
-      label:
-        en: Admin Password
-        zh: 管理员密码
       required: true
+      rule: paramCommon
       type: password
-    - default: "True"
-      edit: true
-      envKey: PUBLIC_INDEX
-      labelZh: 是否公开快照列表
-      labelEn: Whether to make the snapshot list public
+      random: true
       label:
-        en: Whether to make the snapshot list public
-        zh: 是否公开快照列表
-      required: true
-      type: select
-      values:
-        - label: 公开
-          value: "True"
-        - label: 私密
-          value: "False"
-    - default: "True"
-      edit: true
-      envKey: PUBLIC_SNAPSHOTS
-      labelZh: 是否公开快照内容
-      labelEn: Whether to make snapshot content public
-      label:
-        en: Whether to make snapshot content public
-        zh: 是否公开快照内容
-      required: true
-      type: select
-      values:
-        - label: 公开
-          value: "True"
-        - label: 私密
-          value: "False"
-    - default: "False"
-      edit: true
-      envKey: PUBLIC_ADD_VIEW
-      labelZh: 是否允许匿名用户提交存档
-      labelEn: Whether to allow anonymous users to submit archives
-      label:
-        en: Whether to allow anonymous users to submit archives
-        zh: 是否允许匿名用户提交存档
-      required: true
-      type: select
-      values:
-        - label: 允许
-          value: "True"
-        - label: 禁止
-          value: "False"
+        en: Admin password
+        es-es: Contraseña del administrador
+        fa: 'رمز عبور مدیر'
+        zh: 管理员密码
+        ja: 管理者パスワード
+        ms: Kata laluan pentadbir
+        pt-br: Senha do administrador
+        ru: Пароль администратора
+        ko: 관리자 비밀번호
+        zh-Hant: 管理員密碼
+        tr: Yönetici Parolası
