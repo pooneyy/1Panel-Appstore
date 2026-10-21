@@ -43,10 +43,10 @@ jobs:
             ssh-host: ssh.rocketgit.com
             ssh-url: ssh://rocketgit@ssh.rocketgit.com/user/poney/1Panel-Appstore
             https-url: https://rocketgit.com/user/poney/1Panel-Appstore
-          # - name: Gitlink
-          #   ssh-host: code.gitlink.org.cn
-          #   ssh-url: git@code.gitlink.org.cn:pooneyy/1Panel-Appstore.git
-          #   https-url: https://gitlink.org.cn/pooneyy/1Panel-Appstore
+          - name: Gitlink
+            ssh-host: gitlink.org.cn
+            ssh-url: git@gitlink.org.cn:pooneyy/1Panel-Appstore.git
+            https-url: https://gitlink.org.cn/pooneyy/1Panel-Appstore
 
     steps:
       - name: 检出完整仓库
@@ -112,7 +112,7 @@ jobs:
 
   http-sync:
     name: 同步到 ${{ matrix.remote.name }}
-    # if: false
+    if: false
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
