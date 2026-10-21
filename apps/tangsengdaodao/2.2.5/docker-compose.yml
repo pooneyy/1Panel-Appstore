@@ -1,7 +1,7 @@
 services:
   tsddwukongim:  # 唐僧叨叨通讯服务（悟空IM）
     container_name: ${CONTAINER_NAME}-wukongim
-    image: registry.cn-shanghai.aliyuncs.com/wukongim/wukongim:v2.2.3-20260128
+    image: registry.cn-shanghai.aliyuncs.com/wukongim/wukongim:v2.2.5-20260422
     restart: always
     ports:
       - "${PANEL_APP_PORT_WK_TCP}:5100"  # tcp长连接端口（外网开放）
