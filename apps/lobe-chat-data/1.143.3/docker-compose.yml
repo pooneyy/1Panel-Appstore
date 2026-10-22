@@ -82,7 +82,7 @@ services:
     entrypoint: ["sh", "/entrypoint.sh"]
 
   casdoor:
-    image: casbin/casdoor:4.22.0
+    image: casbin/casdoor:v4.23.0
     container_name: lobe-casdoor
     entrypoint: /bin/sh -c './server --createDatabase=true'
     network_mode: 'service:network-service'
