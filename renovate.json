@@ -14,6 +14,7 @@
   ],
   "rebaseWhen": "never",
   "prConcurrentLimit":0,
+  "prHourlyLimit": 0,
   "packageRules": [
     {
       "matchUpdateTypes": ["major", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump", "replacement"],
