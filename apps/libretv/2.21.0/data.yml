@@ -23,15 +23,3 @@ additionalProperties:
       edit: true
       rule: paramComplexity
       type: password
-    - default: "libretv_admin"      # 管理密码默认值
-      envKey: PANEL_APP_ADMIN_PASSWORD
-      labelEn: Access Password
-      labelZh: 管理密码
-      label:
-        en: Access Password
-        zh: 管理密码
-      random: true
-      required: true
-      edit: true
-      rule: paramComplexity
-      type: password
