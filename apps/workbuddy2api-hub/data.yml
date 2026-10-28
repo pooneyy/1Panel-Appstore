@@ -1,0 +1,30 @@
+name: WorkBuddy2API-Hub
+tags:
+  - AI
+title: WorkBuddy 国际国内多账号反代网关
+description: WorkBuddy 国际国内多账号反代网关
+additionalProperties:
+  key: workbuddy2api-hub
+  name: WorkBuddy2API-Hub
+  tags:
+    - AI
+  shortDescZh: WorkBuddy 国际国内多账号反代网关
+  shortDescEn: WorkBuddy International and Domestic Multi-Account Reverse Proxy Gateway
+  description:
+    en: WorkBuddy International and Domestic Multi-Account Reverse Proxy Gateway
+    zh: WorkBuddy 国际国内多账号反代网关
+    zh-Hant: WorkBuddy 國際國內多帳號反向代理閘道
+    ja: WorkBuddy 国内外マルチアカウントリバースプロキシゲートウェイ
+    ms: WorkBuddy Gerbang Proksi Terbalik Berbilang Akaun Antarabangsa dan Domestik
+    pt-br: WorkBuddy Gateway de Proxy Reverso Multi-conta Internacional e Doméstico
+    ru: WorkBuddy — шлюз обратного прокси с поддержкой нескольких учетных записей для международного и внутреннего рынков
+    ko: WorkBuddy 국내외 멀티 계정 리버스 프록시 게이트웨이
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/ardeyouxipianyi/workbuddy2api-hub
+  github: https://github.com/ardeyouxipianyi/workbuddy2api-hub
+  document: https://github.com/ardeyouxipianyi/workbuddy2api-hub
+  architectures:
+    - amd64
+    - arm64
