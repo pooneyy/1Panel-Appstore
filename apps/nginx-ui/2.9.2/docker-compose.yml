@@ -4,7 +4,7 @@ networks:
 
 services:
   nginx-ui:
-    image: uozi/nginx-ui:v2.9.2
+    image: uozi/nginx-ui:v2.9.3
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
