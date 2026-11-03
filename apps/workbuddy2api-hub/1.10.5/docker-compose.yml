@@ -1,6 +1,6 @@
 services:
   wb-proxy:
-    image: ghcr.io/ardeyouxipianyi/workbuddy2api-hub:v1.10.4
+    image: ghcr.io/ardeyouxipianyi/workbuddy2api-hub:v1.10.5
     ports:
       - ${PANEL_APP_PORT_HTTP}:8788
     environment:
