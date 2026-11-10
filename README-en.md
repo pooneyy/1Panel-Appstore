@@ -18,7 +18,9 @@
 
 ***
 
-<!-- ### New This Week -->
+### New This Week
+
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/magpie"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/magpie/logo.png" alt="magpie" width="64" height="64"><br><strong>magpie</strong></a><br>A unified AI gateway that manages models and providers for all your agents in one place.</td></tr></table>
 
 <!-- ### Coming Soon -->
 
