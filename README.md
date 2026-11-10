@@ -17,7 +17,9 @@
 
 ***
 
-<!-- ### 本周上新 -->
+### 本周上新
+
+<table border="0" cellpadding="10" cellspacing="0"><tr><td width="33%" valign="top" align="center"><a href="https://github.com/pooneyy/1Panel-Appstore/tree/localApps/apps/magpie"><img src="https://raw.githubusercontent.com/pooneyy/1Panel-Appstore/refs/heads/localApps/apps/magpie/logo.png" alt="magpie" width="64" height="64"><br><strong>magpie</strong></a><br>一处管理所有 Agent 的模型与供应商的 AI 网关。</td></tr></table>
 
 <!-- ### 即将推出 -->
 
