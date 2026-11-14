@@ -1,7 +1,7 @@
 services:
     libretv:
         container_name: ${CONTAINER_NAME}
-        image: ghcr.io/librespark/libretv:2.22.0
+        image: ghcr.io/librespark/libretv:2.23.2
         networks:
             - 1panel-network
         restart: always
