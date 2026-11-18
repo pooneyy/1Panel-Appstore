@@ -70,9 +70,9 @@ additionalProperties:
         zh: 恢复模式
         zh-Hant: 恢復模式
       description:
-        zh: 启用后可使用默认密码登录重置密码
-        en: Enable to use default password for password reset
-        zh-Hant: 啟用後可使用默認密碼登錄重置密碼
+        zh: 启用后重启时会把管理员密码重置为随机密码并打印在容器日志中，重置后请关闭
+        en: When enabled, restarting resets the administrator password to a random one printed in the container logs; disable it afterwards
+        zh-Hant: 啟用後重啟時會把管理員密碼重置為隨機密碼並打印在容器日誌中，重置後請關閉
       required: false
       type: select
       options:
