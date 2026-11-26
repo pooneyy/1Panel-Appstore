@@ -1,6 +1,6 @@
 ## Risk Notice
 
-Reverse-proxying Workbuddy carries risks of risk control and account bans. Before use, please check the [project issues](https://github.com/ardeyouxipianyi/workbuddy2api-hub/issues) for recent reports.
+Reverse-proxying Workbuddy carries risks of risk control and account bans. Before use, please check the [project issues](https://github.com/niyouqianma/workbuddy2api-hub/issues) for recent reports.
 
 ## Configuration and Usage Instructions
 

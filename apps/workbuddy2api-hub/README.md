@@ -1,6 +1,6 @@
 ## 风险提示
 
-反代 Workbuddy 具有风控、封号的风险，使用前请前往[项目 issue](https://github.com/ardeyouxipianyi/workbuddy2api-hub/issues) 查看近期报告。
+反代 Workbuddy 具有风控、封号的风险，使用前请前往[项目 issue](https://github.com/niyouqianma/workbuddy2api-hub/issues) 查看近期报告。
 
 ## 配置和使用说明
 

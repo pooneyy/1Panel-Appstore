@@ -22,9 +22,9 @@ additionalProperties:
   type: website
   crossVersionUpdate: true
   limit: 0
-  website: https://github.com/ardeyouxipianyi/workbuddy2api-hub
-  github: https://github.com/ardeyouxipianyi/workbuddy2api-hub
-  document: https://github.com/ardeyouxipianyi/workbuddy2api-hub
+  website: https://github.com/niyouqianma/workbuddy2api-hub
+  github: https://github.com/niyouqianma/workbuddy2api-hub
+  document: https://github.com/niyouqianma/workbuddy2api-hub
   architectures:
     - amd64
     - arm64
